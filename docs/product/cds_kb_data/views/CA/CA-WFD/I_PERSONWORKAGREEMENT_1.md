@@ -38,11 +38,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PersonWorkAgreement` | ✓ | |  |  |  |  |
-| `Person` |  | |  | `BusinessPartner` |  |  |
-| `AuthorizationGroup` |  | |  |  |  |  |
-| `PersonFullName` |  | |  |  |  |  |
-| `DataControllerSet` |  | |  |  |  |  |
+| `PersonWorkAgreement` | ✓ | |  |  | `NUMC(8)` | Personnel Number |
+| `Person` |  | |  | `BusinessPartner` | `CHAR(10)` | Business Partner Number |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `PersonFullName` |  | |  |  | `CHAR(80)` | Full Name |
+| `DataControllerSet` |  | |  |  | `CHAR(1)` | BP: Data Controller Set Flag |
 | `_BusinessPartner` | | ✓ | | | | |
 | `_PersonWrkAgrmtForKeyDate` | | ✓ | | | | |
 | `_WorkforcePerson` | | ✓ | | | | |

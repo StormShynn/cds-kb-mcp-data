@@ -39,28 +39,28 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LglCntntMContextUUID` | ✓ | |  |  |  |  |
-| `LglCntntMContext` |  | |  |  |  |  |
-| `LglCntntMContextVersion` |  | |  |  |  |  |
-| `LglCntntMContextTitle` |  | |  |  |  |  |
-| `LglCntntMContextOwner` |  | |  |  |  |  |
-| `LglCntntMProfile` |  | |  |  |  |  |
-| `LglCntntMContextStatus` |  | |  |  |  |  |
-| `LglCntntMContextValidFromDate` |  | |  |  |  |  |
-| `LglCntntMContextValidToDate` |  | |  |  |  |  |
-| `LglCntntMCntxtLanguage` |  | |  |  |  |  |
-| `LglCntntMPrevCntxtVers` |  | |  |  |  |  |
-| `LglCntntMCntxtIsReadOnly` |  | |  |  |  |  |
-| `LglCntntMGovLaw` |  | |  |  |  |  |
-| `LglCntntMCntxtAccessLvl` |  | |  |  |  |  |
-| `LglCntntMMainOrgType` |  | |  |  |  |  |
-| `LglCntntMMainOrgCoCode` |  | |  |  |  |  |
-| `LglCntntMMainOrgSalesOrg` |  | |  |  |  |  |
-| `LglCntntMMainOrgPurOrg` |  | |  |  |  |  |
-| `LglCntntMCreatedByUser` |  | |  |  |  |  |
-| `LglCntntMCreatedUTCDateTime` |  | |  |  |  |  |
-| `LglCntntMChangedUTCDateTime` |  | |  |  |  |  |
-| `LglCntntMChangedByUser` |  | |  |  |  |  |
+| `LglCntntMContextUUID` | ✓ | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglCntntMContext` |  | |  |  | `CHAR(5)` | Context ID |
+| `LglCntntMContextVersion` |  | |  |  | `CHAR(3)` | Context Version |
+| `LglCntntMContextTitle` |  | |  |  | `CHAR(128)` | Legal Transaction Name |
+| `LglCntntMContextOwner` |  | |  |  | `CHAR(12)` | Owner |
+| `LglCntntMProfile` |  | |  |  | `CHAR(10)` | Profile |
+| `LglCntntMContextStatus` |  | |  |  | `CHAR(2)` | Context Status |
+| `LglCntntMContextValidFromDate` |  | |  |  | `DATS(8)` | Valid From |
+| `LglCntntMContextValidToDate` |  | |  |  | `DATS(8)` | Valid To |
+| `LglCntntMCntxtLanguage` |  | |  |  | `LANG(1)` | Language Key |
+| `LglCntntMPrevCntxtVers` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglCntntMCntxtIsReadOnly` |  | |  |  | `CHAR(1)` | Read Only |
+| `LglCntntMGovLaw` |  | |  |  | `CHAR(7)` | Governing Law |
+| `LglCntntMCntxtAccessLvl` |  | |  |  | `CHAR(4)` | Access Level |
+| `LglCntntMMainOrgType` |  | |  |  | `CHAR(2)` | Entity Technical Type |
+| `LglCntntMMainOrgCoCode` |  | |  |  | `CHAR(10)` | Entity ID |
+| `LglCntntMMainOrgSalesOrg` |  | |  |  | `CHAR(10)` | Entity ID |
+| `LglCntntMMainOrgPurOrg` |  | |  |  | `CHAR(10)` | Entity ID |
+| `LglCntntMCreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `LglCntntMCreatedUTCDateTime` |  | |  |  | `DEC(15)` | Created On |
+| `LglCntntMChangedUTCDateTime` |  | |  |  | `DEC(21)` | Changed UTC Date Time |
+| `LglCntntMChangedByUser` |  | |  |  | `CHAR(12)` | Changed By User |
 
 ## Associations
 

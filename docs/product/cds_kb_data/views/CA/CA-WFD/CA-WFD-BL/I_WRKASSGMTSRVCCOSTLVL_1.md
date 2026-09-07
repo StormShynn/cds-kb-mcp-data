@@ -39,13 +39,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkAssignmentExternalID` | ✓ | | `_Assignment` | `WorkAssignmentExternalID` |  |  |
-| `Country2DigitISOCode` | ✓ | | `_Assignment` | `Country2DigitISOCode` |  |  |
-| `StartDate` | ✓ | | `_SrvcCostLvl` | `StartDate` |  |  |
-| `WorkforcePersonExternalID` |  | | `_Assignment` | `WorkforcePersonExternalID` |  |  |
-| `EndDate` |  | | `_SrvcCostLvl` | `EndDate` |  |  |
-| `ServiceCostLevel` |  | | `_SrvcCostLvl` | `ServiceCostLevel` |  |  |
-| `IsBlocked` |  | | `_Assignment` | `IsBlocked` |  |  |
+| `WorkAssignmentExternalID` | ✓ | | `_Assignment` | `WorkAssignmentExternalID` | `CHAR(100)` | Workforce Assignment External ID |
+| `Country2DigitISOCode` | ✓ | | `_Assignment` | `Country2DigitISOCode` | `CHAR(2)` | Workforce Country ISO Code |
+| `StartDate` | ✓ | | `_SrvcCostLvl` | `StartDate` | `DATS(8)` | Start Date |
+| `WorkforcePersonExternalID` |  | | `_Assignment` | `WorkforcePersonExternalID` | `CHAR(100)` | External Person ID |
+| `EndDate` |  | | `_SrvcCostLvl` | `EndDate` | `DATS(8)` | End Date |
+| `ServiceCostLevel` |  | | `_SrvcCostLvl` | `ServiceCostLevel` | `NUMC(4)` | Service Cost Level |
+| `IsBlocked` |  | | `_Assignment` | `IsBlocked` | `CHAR(1)` | Blocked Indicator |
 | `_WorkAssignment` | | ✓ | | | | |
 | `_WorkforcePerson` | | ✓ | | | | |
 

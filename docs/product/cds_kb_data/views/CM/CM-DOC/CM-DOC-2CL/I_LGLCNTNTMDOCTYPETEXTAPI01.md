@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LglCntntMDocType` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `LglCntntMDocTypeText` |  | |  |  |  |  |
+| `LglCntntMDocType` | ✓ | |  |  | `CHAR(1)` | Document Type |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `LglCntntMDocTypeText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
 
 ## Source Code
 

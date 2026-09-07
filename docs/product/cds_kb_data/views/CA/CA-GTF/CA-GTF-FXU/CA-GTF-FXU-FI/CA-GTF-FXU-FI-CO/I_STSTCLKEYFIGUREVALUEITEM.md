@@ -40,35 +40,35 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  | `kokrs` |  |  |
-| `AccountingDocument` | ✓ | |  | `belnr` |  |  |
-| `AccountingDocumentItem` | ✓ | |  | `buzei` |  |  |
-| `FiscalPeriod` |  | |  | `cast(perio as fins_fiscalperiod preserving type )` |  |  |
-| `StatisticalKeyFigureQuantity` |  | |  | `cast(smebtr as quan1_12)` |  |  |
-| `StstcKeyFigQuantityUnit` |  | |  | `cast(meinh as fis_ui_seinh preserving type )` |  |  |
-| `DocumentItemText` |  | |  | `cast(sgtxt as sgtxt preserving type )` |  |  |
-| `ControllingObject` |  | |  | `objnr` |  |  |
-| `FiscalYear` |  | |  | `gjahr` |  |  |
-| `StatisticalKeyFigure` |  | |  | `cast(stagr as fis_stagr preserving type )` |  |  |
-| `ControllingBusTransacType` |  | |  | `vrgng` |  |  |
-| `PersonnelNumber` |  | |  | `pernr` |  |  |
-| `PartnerFunctionalArea` |  | |  | `fkber` |  |  |
-| `PartnerFund` |  | |  | `geber` |  |  |
-| `PartnerGrant` |  | |  | `grant_nbr` |  |  |
-| `PartnerBudgetPeriod` |  | |  | `budget_pd` |  |  |
-| `PostingDate` |  | |  | `budat` |  |  |
-| `DocumentDate` |  | |  | `bldat` |  |  |
-| `AccountingDocumentCreationDate` |  | |  | `cpudt` |  |  |
-| `AccountingDocCreatedByUser` |  | |  | `usnam` |  |  |
-| `ControllingDocumentHeaderText` |  | |  | `bltxt` |  |  |
-| `IsReversalDocument` |  | |  | `stflg` |  |  |
-| `IsReversed` |  | |  | `stokz` |  |  |
-| `ReversedReferenceDocument` |  | |  | `cast(refbn as reversedreferencedocument preserving type )` |  |  |
-| `ExchangeRateDate` |  | |  | `cast(wsdat as fin_currconvdat preserving type )` |  |  |
-| `ExchangeRateType` |  | |  | `kurst` |  |  |
-| `ControllingAreaCurrency` |  | |  | `kwaer` |  |  |
-| `ReferenceDocumentType` |  | |  | `cast(awtyp as fis_awtyp preserving type )` |  |  |
-| `SettlementReferenceDate` |  | |  | `dabrz` |  |  |
+| `ControllingArea` | ✓ | |  | `kokrs` | `CHAR(4)` | Controlling Area |
+| `AccountingDocument` | ✓ | |  | `belnr` | `CHAR(10)` | Document Number |
+| `AccountingDocumentItem` | ✓ | |  | `buzei` | `NUMC(3)` | Posting Row |
+| `FiscalPeriod` |  | |  | `cast(perio as fins_fiscalperiod preserving type )` | `NUMC(3)` | Fiscal Period |
+| `StatisticalKeyFigureQuantity` |  | |  | `cast(smebtr as quan1_12)` | `QUAN(23)` | Quantity |
+| `StstcKeyFigQuantityUnit` |  | |  | `cast(meinh as fis_ui_seinh preserving type )` | `UNIT(3)` | Statistical Key Figure Quantity Unit |
+| `DocumentItemText` |  | |  | `cast(sgtxt as sgtxt preserving type )` | `CHAR(50)` | Item Text |
+| `ControllingObject` |  | |  | `objnr` | `CHAR(22)` | Object Number |
+| `FiscalYear` |  | |  | `gjahr` | `NUMC(4)` | Fiscal Year |
+| `StatisticalKeyFigure` |  | |  | `cast(stagr as fis_stagr preserving type )` | `CHAR(6)` | Statistical Key Figure |
+| `ControllingBusTransacType` |  | |  | `vrgng` | `CHAR(4)` | CO Business Transaction |
+| `PersonnelNumber` |  | |  | `pernr` | `NUMC(8)` | Personnel Number |
+| `PartnerFunctionalArea` |  | |  | `fkber` | `CHAR(16)` | Functional Area |
+| `PartnerFund` |  | |  | `geber` | `CHAR(10)` | Fund |
+| `PartnerGrant` |  | |  | `grant_nbr` | `CHAR(20)` | Grant |
+| `PartnerBudgetPeriod` |  | |  | `budget_pd` | `CHAR(10)` | Budget Period |
+| `PostingDate` |  | |  | `budat` | `DATS(8)` | Posting Date |
+| `DocumentDate` |  | |  | `bldat` | `DATS(8)` | Document Date |
+| `AccountingDocumentCreationDate` |  | |  | `cpudt` | `DATS(8)` | Date Document Was Created |
+| `AccountingDocCreatedByUser` |  | |  | `usnam` | `CHAR(12)` | User Name |
+| `ControllingDocumentHeaderText` |  | |  | `bltxt` | `CHAR(50)` | Document Header Text |
+| `IsReversalDocument` |  | |  | `stflg` | `CHAR(1)` | Identifier for reversal document |
+| `IsReversed` |  | |  | `stokz` | `CHAR(1)` | Indicator: Document was reversed |
+| `ReversedReferenceDocument` |  | |  | `cast(refbn as reversedreferencedocument preserving type )` | `CHAR(10)` | Reversed Reference Document |
+| `ExchangeRateDate` |  | |  | `cast(wsdat as fin_currconvdat preserving type )` | `DATS(8)` | Date of Translation of Transaction Currency into Local |
+| `ExchangeRateType` |  | |  | `kurst` | `CHAR(4)` | Exchange Rate Type |
+| `ControllingAreaCurrency` |  | |  | `kwaer` | `CUKY(5)` | Controlling area currency |
+| `ReferenceDocumentType` |  | |  | `cast(awtyp as fis_awtyp preserving type )` | `CHAR(5)` | Reference Document Type |
+| `SettlementReferenceDate` |  | |  | `dabrz` | `DATS(8)` | Reference date for settlement |
 | `_ControllingArea` | | ✓ | | | | |
 | `_StstcKeyFigQuantityUnit` | | ✓ | | | | |
 | `_StatisticalKeyFigure` | | ✓ | | | | |

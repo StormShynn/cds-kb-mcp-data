@@ -1,6 +1,6 @@
 {
   "name": "cds-kb-mcp",
-  "version": "2.5.0",
+  "version": "2.6.0",
   "description": "Dataless MCP server for the SAP CDS knowledge base — search, compose, generate, and validate CDS view DDL. Built on the MCP 2026-07-28 SDK (stateless Streamable HTTP + stdio). In this harness, prefers sibling docs/product/cds_kb_data; otherwise S3 when configured, else GitHub remote. Explicit --data/--remote always win over sibling/default.",
   "type": "module",
   "bin": {
@@ -39,6 +39,7 @@
     "express": "^5.2.1",
     "jose": "^6.0.10",
     "minisearch": "^7.2.0",
+    "swagger-ui-express": "^5.0.1",
     "zod": "^4.4.3"
   },
   "devDependencies": {

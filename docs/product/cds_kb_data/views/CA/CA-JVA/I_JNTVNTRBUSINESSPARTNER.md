@@ -41,33 +41,33 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `JointVenturePartner` | ✓ | |  | `cast( jvp.partn as jv_part_cds preserving type )` |  |  |
-| `JointVenturePartnerShortText` |  | |  | `cast( left(_BusinessPartner.BusinessPartnerName, 35) as jv_part_nm preserving type )` |  |  |
-| `JointVenturePartner2ShortText` |  | |  | `cast( left(_BusinessPartner.BusinessPartnerName, 40) as jva_partner_name preserving type )` |  |  |
-| `JntVntrIntcoCode` |  | |  | `intcocd` |  |  |
-| `JntVntrCashCallThld` |  | |  | `ccthresh` |  |  |
-| `JntVntrHardCopyBillgIsSupp` |  | |  | `paper` |  |  |
-| `JntVntrOwnrIsEDITo` |  | |  | `edi` |  |  |
-| `JntVentureIsConvenienceNetting` |  | |  | `convnetind` |  |  |
-| `JntVntrBillgFormat` |  | |  | `bformat` |  |  |
-| `TaxCode` |  | |  | `taxcode` |  |  |
-| `EDIPartner` |  | |  | `edicomp` |  |  |
-| `EDIReceiver` |  | |  | `edicomp` |  |  |
-| `JntVntrPartnerProcessGrp` |  | |  | `ppgroup` |  |  |
-| `JntVntrPartEquityCashCallThld` |  | |  | `veccthresh` |  |  |
-| `JntVntrPartProjCashCallThld` |  | |  | `pjccthresh` |  |  |
-| `PersonResponsible` |  | |  | `person` |  |  |
-| `ResponsibleContact` |  | |  | `person` |  |  |
-| `PhoneNumber` |  | |  | `telfn` |  |  |
-| `ContactPhoneNumber` |  | |  | `telfn` |  |  |
-| `JntVntrGeneratedExpndtrSet` |  | |  | `t819_only` |  |  |
-| `Currency` |  | | `_CompanyCode` | `Currency` |  |  |
-| `JntVntrBillgThldDebit` |  | |  | `billthres` |  |  |
-| `JntVntrBillgThldCredit` |  | |  | `billthresc` |  |  |
-| `JntVntrBillgThldIsActive` |  | |  | `billthresa` |  |  |
-| `JntVntrBillgReportsAreSpprsd` |  | |  | `billthresx` |  |  |
-| `JntVntrSeparateBillgIsPrepared` |  | |  | `billthress` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `JointVenturePartner` | ✓ | |  | `cast( jvp.partn as jv_part_cds preserving type )` | `CHAR(10)` | Joint Venture Partner |
+| `JointVenturePartnerShortText` |  | |  | `cast( left(_BusinessPartner.BusinessPartnerName, 35) as jv_part_nm preserving type )` | `CHAR(35)` | Name of the joint venture partner |
+| `JointVenturePartner2ShortText` |  | |  | `cast( left(_BusinessPartner.BusinessPartnerName, 40) as jva_partner_name preserving type )` | `CHAR(40)` | JVA Partner name |
+| `JntVntrIntcoCode` |  | |  | `intcocd` | `CHAR(4)` | Intercompany code |
+| `JntVntrCashCallThld` |  | |  | `ccthresh` | `DEC(13)` | Cash Call Threshold |
+| `JntVntrHardCopyBillgIsSupp` |  | |  | `paper` | `CHAR(1)` | Indicator: Hardcopy billings |
+| `JntVntrOwnrIsEDITo` |  | |  | `edi` | `CHAR(1)` | Indicator: EDI to Owner |
+| `JntVentureIsConvenienceNetting` |  | |  | `convnetind` | `CHAR(1)` | JV Convenience Netting Indicator |
+| `JntVntrBillgFormat` |  | |  | `bformat` | `CHAR(4)` | JV Billing Format |
+| `TaxCode` |  | |  | `taxcode` | `CHAR(2)` | Tax on Sales/Purchases Code |
+| `EDIPartner` |  | |  | `edicomp` | `CHAR(12)` | EDI Partner Code |
+| `EDIReceiver` |  | |  | `edicomp` | `CHAR(12)` | EDI Partner Code |
+| `JntVntrPartnerProcessGrp` |  | |  | `ppgroup` | `CHAR(3)` | Partner processing group |
+| `JntVntrPartEquityCashCallThld` |  | |  | `veccthresh` | `DEC(13)` | Partner/Venture/Equity Group Cash Call Threshold |
+| `JntVntrPartProjCashCallThld` |  | |  | `pjccthresh` | `DEC(13)` | Partner/Project Cash Call Threshold |
+| `PersonResponsible` |  | |  | `person` | `CHAR(30)` | Name of employee responsible |
+| `ResponsibleContact` |  | |  | `person` | `CHAR(30)` | Name of employee responsible |
+| `PhoneNumber` |  | |  | `telfn` | `CHAR(15)` | Telephone number |
+| `ContactPhoneNumber` |  | |  | `telfn` | `CHAR(15)` | Telephone number |
+| `JntVntrGeneratedExpndtrSet` |  | |  | `t819_only` | `CHAR(1)` | JV Generate 819 Transaction Set Only (no 810) |
+| `Currency` |  | | `_CompanyCode` | `Currency` | `CUKY(5)` | Currency Key |
+| `JntVntrBillgThldDebit` |  | |  | `billthres` | `CURR(13)` | Billing threshold (debit) |
+| `JntVntrBillgThldCredit` |  | |  | `billthresc` | `CURR(13)` | Billing threshold (credit) |
+| `JntVntrBillgThldIsActive` |  | |  | `billthresa` | `CHAR(1)` | Billing threshold active |
+| `JntVntrBillgReportsAreSpprsd` |  | |  | `billthresx` | `CHAR(1)` | All billing reports suppressed |
+| `JntVntrSeparateBillgIsPrepared` |  | |  | `billthress` | `CHAR(1)` | Prepare separate reports for suppressed periods |
 | `_CompanyCode` | | ✓ | | | | |
 | `_BusinessPartner` | | ✓ | | | | |
 

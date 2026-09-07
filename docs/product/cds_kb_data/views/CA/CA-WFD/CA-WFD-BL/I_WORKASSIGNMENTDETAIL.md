@@ -39,19 +39,19 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkAssignmentExternalID` | ✓ | |  |  |  |  |
-| `Country2DigitISOCode` | ✓ | |  |  |  |  |
-| `WorkAssignmentStartDate` | ✓ | |  |  |  |  |
-| `WorkforcePersonExternalID` |  | |  |  |  |  |
-| `WorkAssignmentEndDate` |  | |  |  |  |  |
-| `CompanyCode` |  | |  |  |  |  |
-| `CostCenter` |  | |  |  |  |  |
-| `SupervisorWorkAssignmentExtID` |  | |  |  |  |  |
-| `WeeklyWorkingHours` |  | |  |  |  |  |
-| `WeeklyWorkingDays` |  | |  |  |  |  |
-| `WorkAssignmentStatus` |  | |  |  |  |  |
-| `EmploymentPercent` |  | |  |  |  |  |
-| `IsBlocked` |  | |  |  |  |  |
+| `WorkAssignmentExternalID` | ✓ | |  |  | `CHAR(100)` | Workforce Assignment External ID |
+| `Country2DigitISOCode` | ✓ | |  |  | `CHAR(2)` | Workforce Country ISO Code |
+| `WorkAssignmentStartDate` | ✓ | |  |  | `DATS(8)` | Start Date |
+| `WorkforcePersonExternalID` |  | |  |  | `CHAR(100)` | External Person ID |
+| `WorkAssignmentEndDate` |  | |  |  | `DATS(8)` | End Date |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `SupervisorWorkAssignmentExtID` |  | |  |  | `CHAR(100)` | Manager Workforce Assignment External ID |
+| `WeeklyWorkingHours` |  | |  |  | `DEC(5)` | Working Hours in a Week |
+| `WeeklyWorkingDays` |  | |  |  | `DEC(4)` | Working Days in a Week |
+| `WorkAssignmentStatus` |  | |  |  | `CHAR(1)` | Employment Status |
+| `EmploymentPercent` |  | |  |  | `DEC(5)` | Employment Percentage |
+| `IsBlocked` |  | |  |  | `CHAR(1)` | Blocked Indicator |
 | `_WorkAssignment` | | ✓ | | | | |
 | `_WorkforcePerson` | | ✓ | | | | |
 

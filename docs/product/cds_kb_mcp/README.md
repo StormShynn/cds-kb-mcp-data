@@ -205,6 +205,16 @@ Once configured, restart your IDE. The tools will immediately be available for y
 
 The server exposes **fourteen KB tools** plus an **optional SAP ADT read-only slice** (`sap_*`). Every tool declares an **`outputSchema`** (JSON Schema) and returns both human-readable `content` **and** machine-parseable **`structuredContent`** — so programmatic/agentic integrations can parse results without regex. The flow: search → pick a view → **compose → generate → validate** CDS DDL without leaving MCP.
 
+### Trying tools without an MCP client (Swagger UI / REST)
+
+Every tool above is also reachable as plain REST — same handler, same result, no MCP client needed:
+
+- **`GET /api-docs`** — Swagger UI, "Try it out" against the live server.
+- **`GET /openapi.json`** — the OpenAPI 3.1 spec (generated from the same zod `inputSchema`/`outputSchema` each tool already declares — nothing hand-maintained separately).
+- **`POST /api/tools/<name>`** — call one tool directly, e.g. `POST /api/tools/get_views_by_field` with body `{"name": "MATNR"}`. Response body is the tool's `structuredContent` (the same JSON `search_cds`/`get_views_by_field`/etc. return over MCP); `404` for an unknown tool name, `400` for invalid arguments.
+
+This is a convenience bridge for demos, curl, and clients that don't speak MCP — the canonical interface is still MCP Streamable HTTP at `POST /mcp` above, and both paths run the exact same tool code.
+
 ### 1. `search_cds`
 
 Find CDS views by business meaning, name, tag, or classic SAP keyword (`VBAK`, `BSEG`, etc.). Returns a ranked shortlist.

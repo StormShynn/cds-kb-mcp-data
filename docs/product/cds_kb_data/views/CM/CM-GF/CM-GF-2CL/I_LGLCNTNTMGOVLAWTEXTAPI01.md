@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LglCntntMGovLaw` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `LglCntntMGovLawText` |  | |  |  |  |  |
+| `LglCntntMGovLaw` | ✓ | |  |  | `CHAR(7)` | Governing Law |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `LglCntntMGovLawText` |  | |  |  | `CHAR(92)` | Governing Law Text |
 
 ## Source Code
 

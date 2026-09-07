@@ -37,7 +37,15 @@ await build({
   // hybrid search, so leaving it external keeps the dist small; a deployment
   // without the package installed simply never enables local hybrid (BM25
   // fallback), which is the documented degradation.
-  external: ['@huggingface/transformers'],
+  // swagger-ui-express (via swagger-ui-dist) serves its CSS/JS/images from a
+  // path computed at runtime relative to its own package folder (__dirname).
+  // Bundled into this single file, that path resolves to dist/ instead of
+  // node_modules/swagger-ui-dist/ — every asset request 404s internally and
+  // falls through to the catch-all HTML handler, so the browser gets HTML
+  // where it expected JS ("Unexpected token '<'", blank Swagger UI page).
+  // External keeps its real require() — resolved from node_modules at
+  // runtime, same fix shape as transformers above, different root cause.
+  external: ['@huggingface/transformers', 'swagger-ui-express'],
   // esbuild preserves the shebang already present in src/server.mjs — don't add another.
 });
 

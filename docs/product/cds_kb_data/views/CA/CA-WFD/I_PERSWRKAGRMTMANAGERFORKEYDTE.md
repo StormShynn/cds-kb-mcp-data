@@ -38,10 +38,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PersonWorkAgreement` | ✓ | |  | `cast( PersonWorkAgreement as persno preserving type )` |  |  |
-| `KeyDate` | ✓ | |  | `cast( $parameters.P_KeyDate as dats preserving type )` |  |  |
-| `ManagerPersonWorkAgreement` | ✓ | |  | `cast( ManagerPersonWorkAgreement as mstbr preserving type )` |  |  |
-| `PersonWorkAgrmtAuthznGrpg` |  | |  | `cast( PersonWorkAgrmtAuthznGrpg as vdsk1 preserving type )` |  |  |
+| `PersonWorkAgreement` | ✓ | |  | `cast( PersonWorkAgreement as persno preserving type )` | `NUMC(8)` | Personnel Number |
+| `KeyDate` | ✓ | |  | `cast( $parameters.P_KeyDate as dats preserving type )` | `DATS(8)` | Field of type DATS |
+| `ManagerPersonWorkAgreement` | ✓ | |  | `cast( ManagerPersonWorkAgreement as mstbr preserving type )` | `CHAR(8)` | Supervisor Area |
+| `PersonWorkAgrmtAuthznGrpg` |  | |  | `cast( PersonWorkAgrmtAuthznGrpg as vdsk1 preserving type )` | `CHAR(14)` | Organizational Key |
 | `_ManagerPersonWorkAgreement` | | ✓ | | | | |
 | `_ManagerPersonWorkAgreement_1` | | ✓ | | | | |
 

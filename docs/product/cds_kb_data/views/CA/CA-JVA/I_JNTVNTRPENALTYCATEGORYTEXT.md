@@ -40,10 +40,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `JntVntrPenaltyCategory` | ✓ | |  | `pencat` |  |  |
-| `JntVntrPenaltyCategoryText` |  | |  | `pctext` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `JntVntrPenaltyCategory` | ✓ | |  | `pencat` | `CHAR(1)` | Penalty Category |
+| `JntVntrPenaltyCategoryText` |  | |  | `pctext` | `CHAR(35)` | Penalty Category Text |
 | `_CompanyCode` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 | `_JntVntrPenaltyCategory` | | ✓ | | | | |

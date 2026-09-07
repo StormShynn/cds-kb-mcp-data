@@ -39,10 +39,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `JointVenture` | ✓ | |  | `cast( vname as jv_name preserving type )` |  |  |
-| `JntOpgAgrmtEquityGrp` | ✓ | |  | `egrup` |  |  |
-| `JntOpgAgrmtEquityGrpText` |  | |  | `coalesce( _JntVntrEquityGrpText[1:Language = $session.system_language ].JntOpgAgrmtEquityGrpText, _JntVntrEquityGrpText[1:Language = 'E' ].JntOpgAgrmtEquityGrpText )` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `JointVenture` | ✓ | |  | `cast( vname as jv_name preserving type )` | `CHAR(6)` | Joint Venture |
+| `JntOpgAgrmtEquityGrp` | ✓ | |  | `egrup` | `CHAR(3)` | Equity Group |
+| `JntOpgAgrmtEquityGrpText` |  | |  | `coalesce( _JntVntrEquityGrpText[1:Language = $session.system_language ].JntOpgAgrmtEquityGrpText, _JntVntrEquityGrpText[1:Language = 'E' ].JntOpgAgrmtEquityGrpText )` | `CHAR(35)` |  |
 | `_CompanyCode` | | ✓ | | | | |
 | `_JointVentureMasterFld` | | ✓ | | | | |
 | `_JntVntrEquityGrpText` | | ✓ | | | | |

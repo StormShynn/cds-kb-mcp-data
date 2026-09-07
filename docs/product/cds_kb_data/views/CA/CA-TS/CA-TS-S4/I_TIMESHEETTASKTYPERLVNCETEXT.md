@@ -40,10 +40,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `TimeSheetTaskTypeRelevanceCode` | ✓ | |  | `cast(dd07t.domvalue_l as catsxt_tasktype_relevance)` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
-| `TimeSheetTaskTypeRelevanceText` |  | |  | `ddtext` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `TimeSheetTaskTypeRelevanceCode` | ✓ | |  | `cast(dd07t.domvalue_l as catsxt_tasktype_relevance)` | `CHAR(1)` | Task Type Relevance |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `TimeSheetTaskTypeRelevanceText` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 | `_TimeSheetTaskTypeRelevance` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

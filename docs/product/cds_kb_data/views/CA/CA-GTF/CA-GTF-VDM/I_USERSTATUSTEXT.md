@@ -42,11 +42,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `UserStatus` | ✓ | |  | `estat` |  |  |
-| `StatusProfile` | ✓ | |  | `stsma` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `UserStatusName` |  | |  | `txt30` |  |  |
-| `UserStatusShortName` |  | |  | `txt04` |  |  |
+| `UserStatus` | ✓ | |  | `estat` | `CHAR(5)` | User Status |
+| `StatusProfile` | ✓ | |  | `stsma` | `CHAR(8)` | Status Profile |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `UserStatusName` |  | |  | `txt30` | `CHAR(30)` | Individual Status of an Object |
+| `UserStatusShortName` |  | |  | `txt04` | `CHAR(4)` | Individual status of an object (short form) |
 | `_UserStatus` | | ✓ | | | | |
 | `_StatusProfile` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |

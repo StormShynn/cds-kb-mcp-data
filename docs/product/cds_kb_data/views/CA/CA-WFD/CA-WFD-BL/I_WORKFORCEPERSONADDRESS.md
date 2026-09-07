@@ -40,44 +40,44 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkforcePersonExternalID` | ✓ | |  |  |  |  |
-| `AddressNumber` | ✓ | |  | `AddressID` |  |  |
-| `BusinessPartner` |  | |  |  |  |  |
-| `StartDate` |  | |  | `cast (tstmp_to_dats( EmployeeAddress.ValidityStartDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_start_date)` |  |  |
-| `EndDate` |  | |  | `cast (tstmp_to_dats( EmployeeAddress.ValidityEndDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_end_date)` |  |  |
-| `Country` |  | |  |  |  |  |
-| `PostalCode` |  | |  |  |  |  |
-| `Region` |  | |  |  |  |  |
-| `SecondaryRegion` |  | |  |  |  |  |
-| `SecondaryRegionName` |  | |  |  |  |  |
-| `TertiaryRegion` |  | |  |  |  |  |
-| `TertiaryRegionName` |  | |  |  |  |  |
-| `CityName` |  | |  |  |  |  |
-| `DistrictName` |  | |  |  |  |  |
-| `StreetPrefixName1` |  | |  |  |  |  |
-| `StreetPrefixName2` |  | |  |  |  |  |
-| `StreetName` |  | |  |  |  |  |
-| `StreetSuffixName1` |  | |  |  |  |  |
-| `StreetSuffixName2` |  | |  |  |  |  |
-| `HouseNumber` |  | |  |  |  |  |
-| `HouseNumberSupplementText` |  | |  |  |  |  |
-| `Floor` |  | |  |  |  |  |
-| `RoomNumber` |  | |  |  |  |  |
-| `CareOfName` |  | |  |  |  |  |
-| `POBoxPostalCode` |  | |  |  |  |  |
-| `IsBusinessPurposeCompleted` |  | | `_BP` | `IsBusinessPurposeCompleted` |  |  |
-| `DataControllerSet` |  | | `_BP` | `DataControllerSet` |  |  |
-| `DataController1` |  | | `_BP` | `DataController1` |  |  |
-| `DataController2` |  | | `_BP` | `DataController2` |  |  |
-| `DataController3` |  | | `_BP` | `DataController3` |  |  |
-| `DataController4` |  | | `_BP` | `DataController4` |  |  |
-| `DataController5` |  | | `_BP` | `DataController5` |  |  |
-| `DataController6` |  | | `_BP` | `DataController6` |  |  |
-| `DataController7` |  | | `_BP` | `DataController7` |  |  |
-| `DataController8` |  | | `_BP` | `DataController8` |  |  |
-| `DataController9` |  | | `_BP` | `DataController9` |  |  |
-| `DataController10` |  | | `_BP` | `DataController10` |  |  |
-| `AuthorizationGroup` |  | | `_BP` | `AuthorizationGroup` |  |  |
+| `WorkforcePersonExternalID` | ✓ | |  |  | `CHAR(100)` | External Person ID |
+| `AddressNumber` | ✓ | |  | `AddressID` | `CHAR(10)` | Address Number |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `StartDate` |  | |  | `cast (tstmp_to_dats( EmployeeAddress.ValidityStartDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_start_date)` | `DATS(8)` | Start Date |
+| `EndDate` |  | |  | `cast (tstmp_to_dats( EmployeeAddress.ValidityEndDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_end_date)` | `DATS(8)` | End Date |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `PostalCode` |  | |  |  | `CHAR(10)` | City Postal Code |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `SecondaryRegion` |  | |  |  | `CHAR(8)` | County code for county |
+| `SecondaryRegionName` |  | |  |  | `CHAR(40)` | County |
+| `TertiaryRegion` |  | |  |  | `CHAR(8)` | Township code for Township |
+| `TertiaryRegionName` |  | |  |  | `CHAR(40)` | Township |
+| `CityName` |  | |  |  | `CHAR(40)` | City |
+| `DistrictName` |  | |  |  | `CHAR(40)` | District |
+| `StreetPrefixName1` |  | |  |  | `CHAR(40)` | Street 2 |
+| `StreetPrefixName2` |  | |  |  | `CHAR(40)` | Street 3 |
+| `StreetName` |  | |  |  | `CHAR(60)` | Street |
+| `StreetSuffixName1` |  | |  |  | `CHAR(40)` | Street 4 |
+| `StreetSuffixName2` |  | |  |  | `CHAR(40)` | Street 5 |
+| `HouseNumber` |  | |  |  | `CHAR(10)` | House Number |
+| `HouseNumberSupplementText` |  | |  |  | `CHAR(10)` | House number supplement |
+| `Floor` |  | |  |  | `CHAR(10)` | Floor in Building |
+| `RoomNumber` |  | |  |  | `CHAR(10)` | Room or Apartment Number |
+| `CareOfName` |  | |  |  | `CHAR(40)` | c/o name |
+| `POBoxPostalCode` |  | |  |  | `CHAR(10)` | PO Box Postal Code |
+| `IsBusinessPurposeCompleted` |  | | `_BP` | `IsBusinessPurposeCompleted` | `CHAR(1)` | Business Purpose Completed Flag |
+| `DataControllerSet` |  | | `_BP` | `DataControllerSet` | `CHAR(1)` | BP: Data Controller Set Flag |
+| `DataController1` |  | | `_BP` | `DataController1` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController2` |  | | `_BP` | `DataController2` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController3` |  | | `_BP` | `DataController3` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController4` |  | | `_BP` | `DataController4` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController5` |  | | `_BP` | `DataController5` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController6` |  | | `_BP` | `DataController6` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController7` |  | | `_BP` | `DataController7` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController8` |  | | `_BP` | `DataController8` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController9` |  | | `_BP` | `DataController9` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController10` |  | | `_BP` | `DataController10` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `AuthorizationGroup` |  | | `_BP` | `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
 | `_BPProtectedAddress` | | ✓ | | | | |
 | `_WorkforcePerson` | | ✓ | | | | |
 

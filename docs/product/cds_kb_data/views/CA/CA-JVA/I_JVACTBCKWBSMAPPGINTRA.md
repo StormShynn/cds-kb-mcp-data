@@ -40,14 +40,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `JVAFromProject` | ✓ | |  |  |  |  |
-| `JVAToProject` |  | |  |  |  |  |
-| `JVACutbackCostCenter` |  | |  |  |  |  |
-| `JVACutbackOrder` |  | |  |  |  |  |
-| `JVACutbackWBS` |  | |  |  |  |  |
-| `JVACutbackWBSExt` |  | | `_CutbackWBSElement` | `WBSElementExternalID` |  |  |
-| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |  |  |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `JVAFromProject` | ✓ | |  |  | `CHAR(24)` | WBS Element |
+| `JVAToProject` |  | |  |  | `CHAR(24)` | WBS Element |
+| `JVACutbackCostCenter` |  | |  |  | `CHAR(10)` | Cutback Cost Centre |
+| `JVACutbackOrder` |  | |  |  | `CHAR(12)` | Cutback Order |
+| `JVACutbackWBS` |  | |  |  | `NUMC(8)` | WBS Element |
+| `JVACutbackWBSExt` |  | | `_CutbackWBSElement` | `WBSElementExternalID` | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` | `CHAR(4)` | Controlling Area |
 | `_CompanyCode` | | ✓ | | | | |
 | `_JVAFromProject` | | ✓ | | | | |
 | `_JVAToProject` | | ✓ | | | | |

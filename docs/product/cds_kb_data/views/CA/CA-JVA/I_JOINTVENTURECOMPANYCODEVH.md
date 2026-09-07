@@ -41,8 +41,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `cast(bukrs as fis_bukrs preserving type)` |  |  |
-| `CompanyCodeName` |  | |  | `butxt` |  |  |
+| `CompanyCode` | ✓ | |  | `cast(bukrs as fis_bukrs preserving type)` | `CHAR(4)` | Company Code |
+| `CompanyCodeName` |  | |  | `butxt` | `CHAR(25)` | Name of Company Code or Company |
 
 ## Source Code
 

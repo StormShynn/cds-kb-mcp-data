@@ -38,12 +38,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `JointVenture` | ✓ | |  | `cast( vname as jv_name preserving type )` |  |  |
-| `JointVentureEquityGroup` | ✓ | |  | `egrup` |  |  |
-| `JntVntrIntcoCode` | ✓ | |  | `intcocd` |  |  |
-| `JointVentureIntcoVenture` |  | |  | `intcomvent` |  |  |
-| `JointVentureIntcoEquityGrp` |  | |  | `intcompegp` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `JointVenture` | ✓ | |  | `cast( vname as jv_name preserving type )` | `CHAR(6)` | Joint Venture |
+| `JointVentureEquityGroup` | ✓ | |  | `egrup` | `CHAR(3)` | Equity Group |
+| `JntVntrIntcoCode` | ✓ | |  | `intcocd` | `CHAR(4)` | Intercompany code |
+| `JointVentureIntcoVenture` |  | |  | `intcomvent` | `CHAR(6)` | Joint Venture Intercompany Venture |
+| `JointVentureIntcoEquityGrp` |  | |  | `intcompegp` | `CHAR(3)` | JV Intercompany Equity Group |
 | `_CompanyCode` | | ✓ | | | | |
 | `_JointVentureMasterFld` | | ✓ | | | | |
 | `_JointVentureDesc` | | ✓ | | | | |

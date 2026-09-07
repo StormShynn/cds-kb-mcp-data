@@ -39,14 +39,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FiscalYearVariant` | ✓ | |  |  |  |  |
-| `FiscalYear` | ✓ | |  |  |  |  |
-| `FiscalYearStartDate` |  | |  |  |  |  |
-| `FiscalYearEndDate` |  | |  |  |  |  |
-| `FiscalYearConsecutiveNumber` |  | |  |  |  |  |
-| `NextFiscalYear` |  | |  | `cast( P_FiscalYear.NextFiscalYear as fins_next_fiscalyear_no_conv preserving type )` |  |  |
-| `NextFiscalYearStartDate` |  | |  | `cast( P_FiscalYear.NextFiscalYearStartDate as fins_next_fyear_startdate preserving type )` |  |  |
-| `NextFiscalYearEndDate` |  | |  | `cast( P_FiscalYear.NextFiscalYearEndDate as fins_next_fyear_enddate preserving type )` |  |  |
+| `FiscalYearVariant` | ✓ | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalYearStartDate` |  | |  |  | `DATS(8)` | Start Date of Fiscal Year |
+| `FiscalYearEndDate` |  | |  |  | `DATS(8)` | End Date of Fiscal Year |
+| `FiscalYearConsecutiveNumber` |  | |  |  | `INT4(10)` | Fiscal Year (Integer) |
+| `NextFiscalYear` |  | |  | `cast( P_FiscalYear.NextFiscalYear as fins_next_fiscalyear_no_conv preserving type )` | `NUMC(4)` | Next Fiscal Year |
+| `NextFiscalYearStartDate` |  | |  | `cast( P_FiscalYear.NextFiscalYearStartDate as fins_next_fyear_startdate preserving type )` | `DATS(8)` | Start Date of Next Fiscal Year |
+| `NextFiscalYearEndDate` |  | |  | `cast( P_FiscalYear.NextFiscalYearEndDate as fins_next_fyear_enddate preserving type )` | `DATS(8)` | End Date of Next Fiscal Year |
 
 ## Source Code
 

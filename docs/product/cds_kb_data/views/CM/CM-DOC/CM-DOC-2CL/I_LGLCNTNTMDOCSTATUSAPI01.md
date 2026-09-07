@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `InternalDocumentStatus` | ✓ | |  |  |  |  |
+| `InternalDocumentStatus` | ✓ | |  |  | `CHAR(2)` | Document Status |
 | `_LglCntntMDocStatusTextAPI01` | | ✓ | | | | |
 
 ## Associations

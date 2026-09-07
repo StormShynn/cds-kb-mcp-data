@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |  |  |
-| `TimeSheetRejectionReason` | ✓ | |  | `reason` |  |  |
-| `TimeSheetRejectionReasonText` |  | |  | `cast(text as catsrejetext preserving type )` |  |  |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `TimeSheetRejectionReason` | ✓ | |  | `reason` | `CHAR(4)` | Reason for rejection |
+| `TimeSheetRejectionReasonText` |  | |  | `cast(text as catsrejetext preserving type )` | `CHAR(50)` | Timesheet Rejection Reason Text |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

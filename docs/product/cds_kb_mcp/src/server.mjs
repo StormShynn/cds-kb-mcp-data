@@ -17,6 +17,7 @@ import { McpServer, ResourceTemplate, createMcpHandler, completable } from '@mod
 import { serveStdio } from '@modelcontextprotocol/server/stdio';
 import { toNodeHandler } from '@modelcontextprotocol/node';
 import express from 'express';
+import swaggerUi from 'swagger-ui-express';
 import { resolveDataSource, SECTION_NAMES } from './datasource.mjs';
 import { recordView, recordQueryShape, flushOnExit } from './usage-tracker.mjs';
 import { composeQuery } from './query-compose.mjs';
@@ -25,7 +26,7 @@ import { generateCdsView, validateCdsDdl } from './ddl-tools.mjs';
 import { createAuthMiddleware, describeAuthMode } from './auth.mjs';
 import { proposeQueryLibraryEntry } from './propose-library.mjs';
 import { entryKind, indexLibraryById, resolveLibraryEntry } from './query-library.mjs';
-import { oauthEnabled, describeOAuth, buildOAuthMetadata, authorizeHandler, tokenHandler, registerHandler } from './oauth.mjs';
+import { oauthEnabled, describeOAuth, buildOAuthMetadata, authorizeHandler, tokenHandler, registerHandler, issuerOf } from './oauth.mjs';
 import { inc, histogram, healthHandler, metricsHandler, rateLimitMiddleware } from './metrics.mjs';
 import { logInfo, logWarn, logError } from './log.mjs';
 import { registerSapTools } from './sap/tools.mjs';
@@ -426,7 +427,7 @@ function refreshIndexPeriodically(intervalMs) {
   }, intervalMs);
 }
 
-const SERVER_VERSION = '2.5.0';
+const SERVER_VERSION = '2.6.0';
 const SERVER_INSTRUCTIONS =
   `This is cds-kb-mcp v${SERVER_VERSION}, built by StormShyn. ` +
   'The first time you use a tool from this server in a conversation, briefly mention to the user ' +
@@ -436,6 +437,12 @@ const SERVER_INSTRUCTIONS =
 
 /** Filled when createServer registers optional SAP tools. */
 let sapToolsDescribe = () => ({ configured: false });
+
+// name -> { config: {title, description, inputSchema, outputSchema}, handler }, captured by the
+// registerTool wrapper below. Powers the REST bridge (/api/tools/:name) and its OpenAPI spec
+// (/openapi.json) — every entry here is one of the 14 KB tools registered further down in
+// createServer(); tool definitions/handlers stay untouched, this just observes the registration.
+const toolRegistry = new Map();
 
 // Shared structured snapshot used by the kb_info tool and the cds://stats resource.
 function buildKbInfo() {
@@ -460,11 +467,63 @@ function buildKbInfo() {
   };
 }
 
+// OpenAPI 3.1 spec for the REST bridge, generated from the same zod schemas the MCP tools
+// declare — no separate spec to keep in sync by hand. z.toJSONSchema is zod v4's built-in
+// converter (no zod-to-json-schema dependency needed).
+function buildOpenApiSpec(baseUrl) {
+  const paths = {};
+  for (const [name, { config }] of toolRegistry) {
+    const shape = config.inputSchema || {};
+    const hasParams = Object.keys(shape).length > 0;
+    paths[`/api/tools/${name}`] = {
+      post: {
+        operationId: name,
+        summary: config.title || name,
+        description: config.description,
+        tags: ['cds-kb tools'],
+        requestBody: hasParams
+          ? { required: false, content: { 'application/json': { schema: z.toJSONSchema(z.object(shape)) } } }
+          : undefined,
+        responses: {
+          200: {
+            description: 'Tool result (structuredContent — same shape MCP returns)',
+            content: { 'application/json': { schema: config.outputSchema ? z.toJSONSchema(config.outputSchema) : {} } },
+          },
+          400: { description: 'Invalid arguments, or the tool itself reported an error' },
+          404: { description: 'Unknown tool name' },
+        },
+      },
+    };
+  }
+  return {
+    openapi: '3.1.0',
+    info: {
+      title: 'cds-kb-mcp REST bridge',
+      version: SERVER_VERSION,
+      description:
+        'REST wrapper over the cds-kb MCP tools, for demoing/testing via Swagger UI without an MCP client. ' +
+        'The canonical interface is MCP Streamable HTTP at POST /mcp — every endpoint below calls the exact ' +
+        'same tool handler, so results are identical either way.',
+    },
+    servers: [{ url: baseUrl }],
+    paths,
+  };
+}
+
 function createServer() {
   const server = new McpServer(
     { name: 'cds-knowledge-base', version: SERVER_VERSION },
     { instructions: SERVER_INSTRUCTIONS },
   );
+
+  // Every registerTool call below also lands in toolRegistry (same name, config, handler) so the
+  // REST bridge can invoke the exact same handler MCP does, and build an OpenAPI spec from the
+  // exact same inputSchema/outputSchema — one definition, two transports.
+  const registerToolOriginal = server.registerTool.bind(server);
+  server.registerTool = (name, config, handler) => {
+    toolRegistry.set(name, { config, handler });
+    return registerToolOriginal(name, config, handler);
+  };
 
   // ── Tool 1: search_cds ─────────────────────────────────────────────────────
   server.registerTool(
@@ -1693,6 +1752,43 @@ async function main() {
     app.post('/mcp', limiter, requireAuth, express.json(), mcpMetrics, (req, res) => nodeMcpHandler(req, res, req.body));
     app.get('/mcp', limiter, requireAuth, mcpMetrics, (req, res) => nodeMcpHandler(req, res));
     app.delete('/mcp', limiter, requireAuth, mcpMetrics, (req, res) => nodeMcpHandler(req, res));
+
+    // ── REST bridge (Swagger UI / plain HTTP clients that don't speak MCP) ──────
+    // createServer() is normally called lazily per MCP request; call it once here
+    // just to populate toolRegistry — tool registration is a pure closure-capture
+    // with no side effects, so this extra call is safe and makes /openapi.json and
+    // /api/tools/:name work immediately rather than only after the first MCP call.
+    createServer();
+
+    app.get('/openapi.json', limiter, (req, res) => {
+      // issuerOf prefers CDS_KB_PUBLIC_URL, then x-forwarded-proto, defaulting to
+      // https — req.protocol alone is wrong here: the domain-proxy Worker fetches
+      // this app over plain http, so an unguarded req.protocol/host leaks the raw
+      // BTP route into "servers[].url", and Swagger UI's Execute then gets blocked
+      // as mixed content (https page calling out to that http URL).
+      res.json(buildOpenApiSpec(issuerOf(req)));
+    });
+    app.use('/api-docs', limiter, swaggerUi.serve, swaggerUi.setup(null, { swaggerOptions: { url: '/openapi.json' } }));
+
+    app.post('/api/tools/:name', limiter, requireAuth, express.json(), async (req, res) => {
+      const entry = toolRegistry.get(req.params.name);
+      if (!entry) {
+        res.status(404).json({ error: `Unknown tool "${req.params.name}". See /openapi.json for the list of tool names.` });
+        return;
+      }
+      const parsed = z.object(entry.config.inputSchema || {}).safeParse(req.body ?? {});
+      if (!parsed.success) {
+        res.status(400).json({ error: 'Invalid arguments', issues: parsed.error.issues });
+        return;
+      }
+      try {
+        const result = await entry.handler(parsed.data);
+        res.status(result?.isError ? 400 : 200).json(result?.structuredContent ?? { content: result?.content ?? null });
+      } catch (e) {
+        logError('REST tool call failed', { tool: req.params.name, err: e });
+        res.status(500).json({ error: e?.message || 'Internal error' });
+      }
+    });
 
     const serverPort = port || 8080;
     app.listen(serverPort, () => {

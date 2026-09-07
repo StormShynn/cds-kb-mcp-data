@@ -39,27 +39,27 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DateFunction` | ✓ | |  | `datefunction` |  |  |
-| `FiscalYearVariant` | ✓ | |  | `datefunctionfiscalyearvariant` |  |  |
-| `DateFunctionValidityDate` | ✓ | |  | `valid_for_date` |  |  |
-| `DateFunctionStartDate` |  | |  | `datefunctionstartdate` |  |  |
-| `DateFunctionEndDate` |  | |  | `datefunctionenddate` |  |  |
-| `FiscalWeekStart` |  | |  | `fiscalweekstart` |  |  |
-| `FiscalYearWeekStart` |  | |  | `fiscalyearweekstart` |  |  |
-| `FiscalWeekEnd` |  | |  | `fiscalweekend` |  |  |
-| `FiscalYearWeekEnd` |  | |  | `fiscalyearweekend` |  |  |
-| `FiscalPeriodStart` |  | |  | `fiscalperiodstart` |  |  |
-| `FiscalYearPeriodStart` |  | |  | `fiscalyearperiodstart` |  |  |
-| `FiscalPeriodEnd` |  | |  | `fiscalperiodend` |  |  |
-| `FiscalYearPeriodEnd` |  | |  | `fiscalyearperiodend` |  |  |
-| `FiscalPeriodSingle` |  | |  | `fiscalperiodsingle` |  |  |
-| `FiscalYearPeriodSingle` |  | |  | `fiscalyearperiodsingle` |  |  |
-| `FiscalQuarterStart` |  | |  | `fiscalquarterstart` |  |  |
-| `FiscalYearQuarterStart` |  | |  | `fiscalyearquarterstart` |  |  |
-| `FiscalQuarterEnd` |  | |  | `fiscalquarterend` |  |  |
-| `FiscalYearQuarterEnd` |  | |  | `fiscalyearquarterend` |  |  |
-| `FiscalYearStart` |  | |  | `fiscalyearstart` |  |  |
-| `FiscalYearEnd` |  | |  | `fiscalyearend` |  |  |
+| `DateFunction` | ✓ | |  | `datefunction` | `CHAR(32)` | Relative Date Function ID |
+| `FiscalYearVariant` | ✓ | |  | `datefunctionfiscalyearvariant` | `CHAR(2)` | Fiscal Year Variant |
+| `DateFunctionValidityDate` | ✓ | |  | `valid_for_date` | `DATS(8)` | Validity date for date function |
+| `DateFunctionStartDate` |  | |  | `datefunctionstartdate` | `DATS(8)` | Date Function Start Date |
+| `DateFunctionEndDate` |  | |  | `datefunctionenddate` | `DATS(8)` | Date Function End Date |
+| `FiscalWeekStart` |  | |  | `fiscalweekstart` | `NUMC(2)` | Fiscal Week |
+| `FiscalYearWeekStart` |  | |  | `fiscalyearweekstart` | `NUMC(6)` | Fiscal Year + Fiscal Week |
+| `FiscalWeekEnd` |  | |  | `fiscalweekend` | `NUMC(2)` | Fiscal Week |
+| `FiscalYearWeekEnd` |  | |  | `fiscalyearweekend` | `NUMC(6)` | Fiscal Year + Fiscal Week |
+| `FiscalPeriodStart` |  | |  | `fiscalperiodstart` | `NUMC(3)` | Fiscal Period |
+| `FiscalYearPeriodStart` |  | |  | `fiscalyearperiodstart` | `NUMC(7)` | Fiscal Year + Fiscal Period |
+| `FiscalPeriodEnd` |  | |  | `fiscalperiodend` | `NUMC(3)` | Fiscal Period |
+| `FiscalYearPeriodEnd` |  | |  | `fiscalyearperiodend` | `NUMC(7)` | Fiscal Year + Fiscal Period |
+| `FiscalPeriodSingle` |  | |  | `fiscalperiodsingle` | `NUMC(3)` | Fiscal Period |
+| `FiscalYearPeriodSingle` |  | |  | `fiscalyearperiodsingle` | `NUMC(7)` | Fiscal Year + Fiscal Period |
+| `FiscalQuarterStart` |  | |  | `fiscalquarterstart` | `NUMC(1)` | Fiscal Quarter |
+| `FiscalYearQuarterStart` |  | |  | `fiscalyearquarterstart` | `NUMC(5)` | Fiscal Year + Fiscal Quarter |
+| `FiscalQuarterEnd` |  | |  | `fiscalquarterend` | `NUMC(1)` | Fiscal Quarter |
+| `FiscalYearQuarterEnd` |  | |  | `fiscalyearquarterend` | `NUMC(5)` | Fiscal Year + Fiscal Quarter |
+| `FiscalYearStart` |  | |  | `fiscalyearstart` | `NUMC(4)` | Fiscal Year |
+| `FiscalYearEnd` |  | |  | `fiscalyearend` | `NUMC(4)` | Fiscal Year |
 | `_DateFunction` | | ✓ | | | | |
 | `_FiscalYearVariant` | | ✓ | | | | |
 | `_ValidityDate` | | ✓ | | | | |

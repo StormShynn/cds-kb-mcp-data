@@ -38,23 +38,23 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LegalTransactionUUID` | ✓ | |  | `legaltransactionuuid` |  |  |
-| `LegalTransaction` |  | |  | `legaltransaction` |  |  |
-| `LegalTransactionTitle` |  | |  | `legaltransactiontitle` |  |  |
-| `LegalTransactionHealth` |  | |  | `legaltransactionhealth` |  |  |
-| `LglCntntMLanguage` |  | |  | `lglcntntmlanguage` |  |  |
-| `LglCntntMCreatedByUser` |  | |  | `lglcntntmcreatedbyuser` |  |  |
-| `LglCntntMCreatedUTCDateTime` |  | |  | `lglcntntmcreatedutcdatetime` |  |  |
-| `LglCntntMChangedByUser` |  | |  | `lglcntntmchangedbyuser` |  |  |
-| `LglCntntMChangedUTCDateTime` |  | |  | `lglcntntmchangedutcdatetime` |  |  |
-| `LglCntntMProfile` |  | |  | `lglcntntmprofile` |  |  |
-| `IsEndOfPurposeBlocked` |  | |  | `isendofpurposeblocked` |  |  |
-| `LglCntntMGovLaw` |  | |  | `lglcntntmgovlaw` |  |  |
-| `LglTransAccessLvl` |  | |  | `lgltransaccesslvl` |  |  |
-| `LglCntntMMainOrgType` |  | |  | `lglcntntmmainorgtype` |  |  |
-| `LglCntntMMainOrgCoCode` |  | |  | `lglcntntmmainorgcocode` |  |  |
-| `LglCntntMMainOrgSalesOrg` |  | |  | `lglcntntmmainorgsalesorg` |  |  |
-| `LglCntntMMainOrgPurOrg` |  | |  | `lglcntntmmainorgpurorg` |  |  |
+| `LegalTransactionUUID` | ✓ | |  | `legaltransactionuuid` | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransaction` |  | |  | `legaltransaction` | `CHAR(10)` | Legal Transaction ID |
+| `LegalTransactionTitle` |  | |  | `legaltransactiontitle` | `CHAR(128)` | Legal Transaction Name |
+| `LegalTransactionHealth` |  | |  | `legaltransactionhealth` | `CHAR(4)` | Legal Transaction Status |
+| `LglCntntMLanguage` |  | |  | `lglcntntmlanguage` | `LANG(1)` | Language Key |
+| `LglCntntMCreatedByUser` |  | |  | `lglcntntmcreatedbyuser` | `CHAR(12)` | Created By |
+| `LglCntntMCreatedUTCDateTime` |  | |  | `lglcntntmcreatedutcdatetime` | `DEC(15)` | Created On |
+| `LglCntntMChangedByUser` |  | |  | `lglcntntmchangedbyuser` | `CHAR(12)` | Changed By User |
+| `LglCntntMChangedUTCDateTime` |  | |  | `lglcntntmchangedutcdatetime` | `DEC(21)` | Changed UTC Date Time |
+| `LglCntntMProfile` |  | |  | `lglcntntmprofile` | `CHAR(10)` | Profile |
+| `IsEndOfPurposeBlocked` |  | |  | `isendofpurposeblocked` | `CHAR(1)` | Business Purpose Completed |
+| `LglCntntMGovLaw` |  | |  | `lglcntntmgovlaw` | `CHAR(7)` | Governing Law |
+| `LglTransAccessLvl` |  | |  | `lgltransaccesslvl` | `CHAR(4)` | Access Level |
+| `LglCntntMMainOrgType` |  | |  | `lglcntntmmainorgtype` | `CHAR(2)` | Entity Technical Type |
+| `LglCntntMMainOrgCoCode` |  | |  | `lglcntntmmainorgcocode` | `CHAR(10)` | Entity ID |
+| `LglCntntMMainOrgSalesOrg` |  | |  | `lglcntntmmainorgsalesorg` | `CHAR(10)` | Entity ID |
+| `LglCntntMMainOrgPurOrg` |  | |  | `lglcntntmmainorgpurorg` | `CHAR(10)` | Entity ID |
 
 ## Associations
 

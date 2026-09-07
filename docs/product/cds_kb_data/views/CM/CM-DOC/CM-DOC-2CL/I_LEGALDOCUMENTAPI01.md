@@ -39,23 +39,23 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LglCntntMDocumentUUID` | ✓ | |  |  |  |  |
-| `LglCntntMDocument` |  | |  |  |  |  |
-| `LglCntntMDocumentIsTopVersion` |  | |  |  |  |  |
-| `LegalTransaction` |  | |  |  |  |  |
-| `LegalTransactionUUID` |  | |  |  |  |  |
-| `LglCntntMDocContentType` |  | |  |  |  |  |
-| `LglCntntMDocAccessLvl` |  | |  |  |  |  |
-| `InternalDocumentStatus` |  | |  |  |  |  |
-| `LglCntntMLanguage` |  | |  |  |  |  |
-| `DocumentDescription` |  | |  |  |  |  |
-| `LglCntntMIsMandatory` |  | |  |  |  |  |
-| `DocumentVersion` |  | |  |  |  |  |
-| `LegalDocumentVersion` |  | |  |  |  |  |
-| `LglCntntMChangedByUser` |  | |  |  |  |  |
-| `LglCntntMChangedUTCDateTime` |  | |  |  |  |  |
-| `LglCntntMCreatedByUser` |  | |  |  |  |  |
-| `LglCntntMCreatedUTCDateTime` |  | |  |  |  |  |
+| `LglCntntMDocumentUUID` | ✓ | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglCntntMDocument` |  | |  |  | `CHAR(10)` | Document ID |
+| `LglCntntMDocumentIsTopVersion` |  | |  |  | `CHAR(1)` | Data element for domain BOOLE: TRUE (='X') and FALSE (=' ') |
+| `LegalTransaction` |  | |  |  | `CHAR(10)` | Legal Transaction ID |
+| `LegalTransactionUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglCntntMDocContentType` |  | |  |  | `CHAR(4)` | Document Content Type |
+| `LglCntntMDocAccessLvl` |  | |  |  | `CHAR(4)` | Access Level |
+| `InternalDocumentStatus` |  | |  |  | `CHAR(2)` | Document Status |
+| `LglCntntMLanguage` |  | |  |  | `LANG(1)` | Language Key |
+| `DocumentDescription` |  | |  |  | `CHAR(255)` | Name |
+| `LglCntntMIsMandatory` |  | |  |  | `CHAR(1)` | Mandatory |
+| `DocumentVersion` |  | |  |  | `NUMC(2)` | Obsolete:--Document Version |
+| `LegalDocumentVersion` |  | |  |  | `NUMC(4)` | Legal Document Version |
+| `LglCntntMChangedByUser` |  | |  |  | `CHAR(12)` | Changed By User |
+| `LglCntntMChangedUTCDateTime` |  | |  |  | `DEC(21)` | Changed UTC Date Time |
+| `LglCntntMCreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `LglCntntMCreatedUTCDateTime` |  | |  |  | `DEC(15)` | Created On |
 | `_LegalTransaction` | | ✓ | | | | |
 
 ## Associations

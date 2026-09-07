@@ -38,19 +38,19 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PersonWorkAgreement` | ✓ | |  | `employeenumber` |  |  |
-| `CalendarDate` | ✓ | |  | `validitydate` |  |  |
-| `Origin` |  | |  | `extapplication` |  |  |
-| `PlannedWorkingHours` |  | |  | `regularhours` |  |  |
-| `PlannedStartTime` |  | |  | `regularbegin` |  |  |
-| `PlannedEndTime` |  | |  | `regularend` |  |  |
-| `PublicHolidayClass` |  | |  | `holidayclass` |  |  |
-| `IsNonWorkingDay` |  | |  | `nonworking` |  |  |
-| `AbsenceInHours` |  | |  | `absencehours` |  |  |
-| `AttendanceHours` |  | |  | `attendancehours` |  |  |
-| `OvertimeInHours` |  | |  | `overtimehours` |  |  |
-| `AvailabilityInHours` |  | |  | `( pTime.regularhours + pTime.overtimehours - pTime.absencehours - pTime.attendancehours )` |  |  |
-| `PersonWorkAgrmtAuthznGrpg` |  | | `_PersonWorkAgrmtStatus` | `PersonWorkAgrmtAuthznGrpg` |  |  |
+| `PersonWorkAgreement` | ✓ | |  | `employeenumber` | `NUMC(8)` | Personnel Number |
+| `CalendarDate` | ✓ | |  | `validitydate` | `DATS(8)` | Validity Date |
+| `Origin` |  | |  | `extapplication` | `CHAR(5)` | External Application |
+| `PlannedWorkingHours` |  | |  | `regularhours` | `DEC(5)` | Normal working hours of an employee on one day |
+| `PlannedStartTime` |  | |  | `regularbegin` | `TIMS(6)` | Normal start of employee's working time |
+| `PlannedEndTime` |  | |  | `regularend` | `TIMS(6)` | Normal End of an Employee's Working Time |
+| `PublicHolidayClass` |  | |  | `holidayclass` | `CHAR(1)` | Holiday class |
+| `IsNonWorkingDay` |  | |  | `nonworking` | `CHAR(1)` | Indicator: Employee does not need to work |
+| `AbsenceInHours` |  | |  | `absencehours` | `DEC(5)` | Absence hours of an employee on one day |
+| `AttendanceHours` |  | |  | `attendancehours` | `DEC(5)` | Attendance hours of an employee on one day |
+| `OvertimeInHours` |  | |  | `overtimehours` | `DEC(5)` | Overtime hours of an employee on one day |
+| `AvailabilityInHours` |  | |  | `( pTime.regularhours + pTime.overtimehours - pTime.absencehours - pTime.attendancehours )` | `DEC(8)` |  |
+| `PersonWorkAgrmtAuthznGrpg` |  | | `_PersonWorkAgrmtStatus` | `PersonWorkAgrmtAuthznGrpg` | `CHAR(14)` | Organizational Key |
 
 ## Source Code
 

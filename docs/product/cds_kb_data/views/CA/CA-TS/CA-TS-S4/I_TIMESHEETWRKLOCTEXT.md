@@ -40,10 +40,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |  |  |
-| `TimeSheetWrkLocCode` | ✓ | |  | `cast( tswlt.wrkloc as cats_ssc_wrkloc preserving type )` |  |  |
-| `TimeSheetWrkLocEndDate` | ✓ | |  | `endda` |  |  |
-| `TimeSheetWrkLocCodeName` |  | |  | `cast( tswlt.text as cats_ssc_wrkloctext preserving type )` |  |  |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `TimeSheetWrkLocCode` | ✓ | |  | `cast( tswlt.wrkloc as cats_ssc_wrkloc preserving type )` | `CHAR(4)` | Time Sheet: Work Location |
+| `TimeSheetWrkLocEndDate` | ✓ | |  | `endda` | `DATS(8)` | End Date |
+| `TimeSheetWrkLocCodeName` |  | |  | `cast( tswlt.text as cats_ssc_wrkloctext preserving type )` | `CHAR(40)` | Timesheet Work Location Text |
 | `_TimeSheetWrkLoc` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

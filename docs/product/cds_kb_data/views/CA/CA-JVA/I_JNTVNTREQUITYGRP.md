@@ -38,20 +38,20 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `JointVenture` | ✓ | |  | `cast( vname as jv_name preserving type )` |  |  |
-| `JntOpgAgrmtEquityGrp` | ✓ | |  | `egrup` |  |  |
-| `JntOpgAgrmtEquityGrpText` |  | |  | `coalesce( _JntVntrEquityGrpText[1:Language = $session.system_language ].JntOpgAgrmtEquityGrpText, _JntVntrEquityGrpText[1:Language = 'E' ].JntOpgAgrmtEquityGrpText )` |  |  |
-| `JntVntrOperatedShare` |  | |  | `opshare` |  |  |
-| `JntVntrNonOperatedShare` |  | |  | `nopshare` |  |  |
-| `JointVentureEquityGroupActive` |  | |  | `egroupact` |  |  |
-| `JntVntrEquityGrpIsSuspended` |  | |  | `egroupsus` |  |  |
-| `JntVntrEquityGrpSuspendedPerd` |  | |  | `grpsusper` |  |  |
-| `JntVntrEquityGrpSuspendedYr` |  | |  | `grpsusyear` |  |  |
-| `JntVntrEquityGrpIsNotSuspended` |  | |  | `egroupusus` |  |  |
-| `JntVntrGrpNotSuspendedPerd` |  | |  | `grpususper` |  |  |
-| `JntVntrGrpNotSuspendedYr` |  | |  | `grpususyer` |  |  |
-| `JntVntrNetProfitIntrstGrp` |  | |  | `npigroup` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `JointVenture` | ✓ | |  | `cast( vname as jv_name preserving type )` | `CHAR(6)` | Joint Venture |
+| `JntOpgAgrmtEquityGrp` | ✓ | |  | `egrup` | `CHAR(3)` | Equity Group |
+| `JntOpgAgrmtEquityGrpText` |  | |  | `coalesce( _JntVntrEquityGrpText[1:Language = $session.system_language ].JntOpgAgrmtEquityGrpText, _JntVntrEquityGrpText[1:Language = 'E' ].JntOpgAgrmtEquityGrpText )` | `CHAR(35)` |  |
+| `JntVntrOperatedShare` |  | |  | `opshare` | `DEC(9)` | Operated Share |
+| `JntVntrNonOperatedShare` |  | |  | `nopshare` | `DEC(9)` | Non-Operated Share |
+| `JointVentureEquityGroupActive` |  | |  | `egroupact` | `CHAR(1)` | Equity Group Active Status |
+| `JntVntrEquityGrpIsSuspended` |  | |  | `egroupsus` | `CHAR(1)` | Equity Group Suspended |
+| `JntVntrEquityGrpSuspendedPerd` |  | |  | `grpsusper` | `NUMC(3)` | Equity Group Suspended Period |
+| `JntVntrEquityGrpSuspendedYr` |  | |  | `grpsusyear` | `NUMC(4)` | JV Group Suspended Year |
+| `JntVntrEquityGrpIsNotSuspended` |  | |  | `egroupusus` | `CHAR(1)` | JV Equity Group Unsuspended |
+| `JntVntrGrpNotSuspendedPerd` |  | |  | `grpususper` | `NUMC(3)` | JV Group Unsuspended Period |
+| `JntVntrGrpNotSuspendedYr` |  | |  | `grpususyer` | `NUMC(4)` | JV Group Unsuspended Year |
+| `JntVntrNetProfitIntrstGrp` |  | |  | `npigroup` | `CHAR(4)` | JV Net Profit Interest Group |
 | `_CompanyCode` | | ✓ | | | | |
 | `_JointVentureMasterFld` | | ✓ | | | | |
 | `_JntVntrEquityGrpText` | | ✓ | | | | |

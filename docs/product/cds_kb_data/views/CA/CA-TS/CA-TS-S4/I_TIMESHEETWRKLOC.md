@@ -38,11 +38,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TimeSheetWrkLocCode` | ✓ | |  | `wrkloc` |  |  |
-| `TimeSheetWrkLocEndDate` | ✓ | |  | `endda` |  |  |
-| `TimeSheetWrkLocStartDate` |  | |  | `begda` |  |  |
-| `TimeSheetWrkLocCntry` |  | |  | `country` |  |  |
-| `TimeSheetWrkLocRegion` |  | |  | `state` |  |  |
+| `TimeSheetWrkLocCode` | ✓ | |  | `wrkloc` | `CHAR(4)` | Time Sheet: Work Location |
+| `TimeSheetWrkLocEndDate` | ✓ | |  | `endda` | `DATS(8)` | End Date |
+| `TimeSheetWrkLocStartDate` |  | |  | `begda` | `DATS(8)` | Start Date |
+| `TimeSheetWrkLocCntry` |  | |  | `country` | `CHAR(3)` | Country/Region Key |
+| `TimeSheetWrkLocRegion` |  | |  | `state` | `CHAR(3)` | Region (State, Province, County) |
 | `_TimeSheetWrkLocText` | | ✓ | | | | |
 | `_Country` | | ✓ | | | | |
 | `_Region` | | ✓ | | | | |

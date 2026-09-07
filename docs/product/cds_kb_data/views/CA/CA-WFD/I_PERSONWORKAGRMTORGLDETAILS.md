@@ -38,14 +38,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PersonWorkAgreement` | ✓ | |  | `cast( dets.workforce_assgmt_id as persno preserving type )` |  |  |
-| `StartDate` | ✓ | |  | `cast( dets.start_date as begda preserving type )` |  |  |
-| `EndDate` | ✓ | |  | `cast( dets.end_date as endda preserving type )` |  |  |
-| `CompanyCode` |  | |  | `company_code` |  |  |
-| `CostCenter` |  | |  | `cost_center` |  |  |
-| `Job` |  | |  | `cast( dets.job_code as stell )` |  |  |
-| `OrganizationalUnit` |  | |  | `cast( '' as orgeh )` |  |  |
-| `PersonWorkAgrmtAuthznGrpg` |  | |  | `cast( '' as vdsk1 )` |  |  |
+| `PersonWorkAgreement` | ✓ | |  | `cast( dets.workforce_assgmt_id as persno preserving type )` | `NUMC(8)` | Personnel Number |
+| `StartDate` | ✓ | |  | `cast( dets.start_date as begda preserving type )` | `DATS(8)` | Start Date |
+| `EndDate` | ✓ | |  | `cast( dets.end_date as endda preserving type )` | `DATS(8)` | End Date |
+| `CompanyCode` |  | |  | `company_code` | `CHAR(4)` | Company Code |
+| `CostCenter` |  | |  | `cost_center` | `CHAR(10)` | Cost Center |
+| `Job` |  | |  | `cast( dets.job_code as stell )` | `NUMC(8)` | Job |
+| `OrganizationalUnit` |  | |  | `cast( '' as orgeh )` | `NUMC(8)` | Organizational Unit |
+| `PersonWorkAgrmtAuthznGrpg` |  | |  | `cast( '' as vdsk1 )` | `CHAR(14)` | Organizational Key |
 | `_CompanyCode` | | ✓ | | | | |
 | `_CostCenter` | | ✓ | | | | |
 | `_PersonWorkAgrmtJobText` | | ✓ | | | | |

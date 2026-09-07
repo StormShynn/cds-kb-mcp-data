@@ -40,51 +40,51 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `PaymentAdviceAccountType` | ✓ | |  | `koart` |  |  |
-| `PaymentAdviceAccount` | ✓ | |  | `konto` |  |  |
-| `PaymentAdvice` | ✓ | |  | `cast(avsid as farp_pa_avsid preserving type)` |  |  |
-| `IsOutgoingPayment` |  | |  | `xausg` |  |  |
-| `PaymentDocument` |  | |  | `cast(vblnr as farp_pa_vblnr preserving type)` |  |  |
-| `AccountByShipper` |  | |  | `cast(eikto as farp_pa_eikto preserving type)` |  |  |
-| `PaymentCurrency` |  | |  | `cast(waers as farp_fwaer preserving type)` |  |  |
-| `PaymentDate` |  | |  | `cast(zaldt as farp_payment_date preserving type)` |  |  |
-| `PaidAmountInPaytCurrency` |  | |  | `rwbtr` |  |  |
-| `CashDiscountAmountInPaytCrcy` |  | |  | `cast(rwskt as fis_wskto)` |  |  |
-| `BillOfExchangeDueDate` |  | |  | `wefae` |  |  |
-| `PaymentMethod` |  | |  | `rzawe` |  |  |
-| `PartnerBank` |  | |  | `cast(zbnkl as farp_pa_dzbnkl preserving type)` |  |  |
-| `PartnerBankAccount` |  | |  | `cast(zbnkn as farp_pa_dzbnkn preserving type)` |  |  |
-| `PartnerBankCountry` |  | |  | `zbnks` |  |  |
-| `PartnerBankSWIFTCode` |  | |  | `zbswi` |  |  |
-| `CreatedByUser` |  | |  | `ernam` |  |  |
-| `CreationDate` |  | |  | `erdat` |  |  |
-| `LastChangeDate` |  | |  | `aedat` |  |  |
-| `LastChangeDateTime` |  | |  | `lastchangedatetime` |  |  |
-| `LastChangedByUser` |  | |  | `aenam` |  |  |
-| `PaymentAdviceHeaderText` |  | |  | `cast(avtxt as farp_avtxt_avik preserving type)` |  |  |
-| `PaymentAdviceType` |  | |  | `avsrt` |  |  |
-| `CreationTime` |  | |  | `cputm` |  |  |
-| `PaymentAdviceStatus` |  | |  | `astat` |  |  |
-| `PaymentAdviceIsHeld` |  | |  | `xkeep` |  |  |
-| `PaymentAdviceHasSingleAccount` |  | |  | `xuniq` |  |  |
-| `PaytAdvcDiffDeterminationRule` |  | |  | `cast(vrsdg as farp_vrsdg preserving type)` |  |  |
-| `PaymentAdviceSelectionRule` |  | |  | `sregl` |  |  |
-| `OriginalReferenceDocument` |  | |  | `xbenr` |  |  |
-| `ReferenceDocumentType` |  | |  | `xbtyp` |  |  |
-| `BankReference` |  | |  | `vgref` |  |  |
-| `BankPostingDate` |  | |  | `bvdat` |  |  |
-| `ValueDateTime` |  | |  | `butim` |  |  |
-| `FeeAmountInTransactionCrcy` |  | |  | `spesk` |  |  |
-| `PaymentTransaction` |  | |  | `vorgc` |  |  |
-| `ExchangeRate` |  | |  | `cast(kursf as farp_kursf)` |  |  |
-| `BillOfExchangeFailureDate` |  | |  | `jpdat` |  |  |
-| `Cheque` |  | |  | `chect` |  |  |
-| `ValueDate` |  | |  | `valut` |  |  |
-| `BusinessPartnerName` |  | |  | `zbprn` |  |  |
-| `CAPaymentDocument` |  | |  | `fica_apbel` |  |  |
-| `ContractAccount` |  | |  | `fica_vkont` |  |  |
-| `CAPaymentAdvice` |  | |  | `fica_avkey` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `PaymentAdviceAccountType` | ✓ | |  | `koart` | `CHAR(1)` | Payment Advice Account Type |
+| `PaymentAdviceAccount` | ✓ | |  | `konto` | `CHAR(10)` | Account Number |
+| `PaymentAdvice` | ✓ | |  | `cast(avsid as farp_pa_avsid preserving type)` | `CHAR(16)` | Payment Advice Number |
+| `IsOutgoingPayment` |  | |  | `xausg` | `CHAR(1)` | Indicator: Outgoing Payment Using Payment Advice? |
+| `PaymentDocument` |  | |  | `cast(vblnr as farp_pa_vblnr preserving type)` | `CHAR(10)` | Payment Document Number |
+| `AccountByShipper` |  | |  | `cast(eikto as farp_pa_eikto preserving type)` | `CHAR(12)` | Payee's Account at the Customer |
+| `PaymentCurrency` |  | |  | `cast(waers as farp_fwaer preserving type)` | `CUKY(5)` | Payment Currency Key |
+| `PaymentDate` |  | |  | `cast(zaldt as farp_payment_date preserving type)` | `DATS(8)` | Payment Date |
+| `PaidAmountInPaytCurrency` |  | |  | `rwbtr` | `CURR(23)` | Payment Amount from the Payment Advice Header |
+| `CashDiscountAmountInPaytCrcy` |  | |  | `cast(rwskt as fis_wskto)` | `CURR(23)` | Cash Discount Amount |
+| `BillOfExchangeDueDate` |  | |  | `wefae` | `DATS(8)` | Bill of Exchange Due Date |
+| `PaymentMethod` |  | |  | `rzawe` | `CHAR(1)` | Payment Method for This Payment |
+| `PartnerBank` |  | |  | `cast(zbnkl as farp_pa_dzbnkl preserving type)` | `CHAR(15)` | Bank Number of the Payee |
+| `PartnerBankAccount` |  | |  | `cast(zbnkn as farp_pa_dzbnkn preserving type)` | `CHAR(18)` | Bank Account Number of the Payee |
+| `PartnerBankCountry` |  | |  | `zbnks` | `CHAR(3)` | Country/Region Key of Partner Bank |
+| `PartnerBankSWIFTCode` |  | |  | `zbswi` | `CHAR(11)` | SWIFT Code of Partner Bank |
+| `CreatedByUser` |  | |  | `ernam` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `CreationDate` |  | |  | `erdat` | `DATS(8)` | Record Creation Date |
+| `LastChangeDate` |  | |  | `aedat` | `DATS(8)` | Last Changed On |
+| `LastChangeDateTime` |  | |  | `lastchangedatetime` | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
+| `LastChangedByUser` |  | |  | `aenam` | `CHAR(12)` | Name of Person Who Changed Object |
+| `PaymentAdviceHeaderText` |  | |  | `cast(avtxt as farp_avtxt_avik preserving type)` | `CHAR(25)` | Payment Advice Header Text |
+| `PaymentAdviceType` |  | |  | `avsrt` | `CHAR(2)` | Payment Advice Type |
+| `CreationTime` |  | |  | `cputm` | `TIMS(6)` | Time of Entry |
+| `PaymentAdviceStatus` |  | |  | `astat` | `CHAR(1)` | Payment Advice Status |
+| `PaymentAdviceIsHeld` |  | |  | `xkeep` | `CHAR(1)` | Indicator: Hold Payment Advice in the System? |
+| `PaymentAdviceHasSingleAccount` |  | |  | `xuniq` | `CHAR(1)` | Indicator: Specific Account/Company Code in Payment Advice? |
+| `PaytAdvcDiffDeterminationRule` |  | |  | `cast(vrsdg as farp_vrsdg preserving type)` | `CHAR(3)` | Reason Code Conversion Version |
+| `PaymentAdviceSelectionRule` |  | |  | `sregl` | `CHAR(3)` | Selection Rule for Payment Advices |
+| `OriginalReferenceDocument` |  | |  | `xbenr` | `CHAR(20)` | Object Key |
+| `ReferenceDocumentType` |  | |  | `xbtyp` | `CHAR(5)` | Reference Transaction |
+| `BankReference` |  | |  | `vgref` | `CHAR(35)` | Bank Reference Number |
+| `BankPostingDate` |  | |  | `bvdat` | `DATS(8)` | Posting Date at the Bank |
+| `ValueDateTime` |  | |  | `butim` | `CHAR(6)` | Value Date Time |
+| `FeeAmountInTransactionCrcy` |  | |  | `spesk` | `CURR(23)` | Fees in Account Currency |
+| `PaymentTransaction` |  | |  | `vorgc` | `CHAR(3)` | Business Transaction Code |
+| `ExchangeRate` |  | |  | `cast(kursf as farp_kursf)` | `CHAR(12)` | Accounting Exchange Rate |
+| `BillOfExchangeFailureDate` |  | |  | `jpdat` | `DATS(8)` | Date of Failed Bills of Exchange in Japan |
+| `Cheque` |  | |  | `chect` | `CHAR(13)` | Check number |
+| `ValueDate` |  | |  | `valut` | `DATS(8)` | Value Date |
+| `BusinessPartnerName` |  | |  | `zbprn` | `CHAR(55)` | Business Partner |
+| `CAPaymentDocument` |  | |  | `fica_apbel` | `CHAR(12)` | Number of Usage Document |
+| `ContractAccount` |  | |  | `fica_vkont` | `CHAR(12)` | Contract Account Number |
+| `CAPaymentAdvice` |  | |  | `fica_avkey` | `CHAR(20)` | Payment Advice Note |
 | `_UserContactCard` | | ✓ | | | | |
 | `_CompanyCode` | | ✓ | | | | |
 | `_Currency` | | ✓ | | | | |

@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkforcePersonExternalID` | ✓ | | `_Person` | `WorkforcePersonExternalID` |  |  |
-| `WorkforcePersonSkillTagID` | ✓ | | `_SkillTag` | `EmployeeSkillTagID` |  |  |
-| `BusinessPartner` |  | | `_Person` | `BusinessPartner` |  |  |
+| `WorkforcePersonExternalID` | ✓ | | `_Person` | `WorkforcePersonExternalID` | `CHAR(100)` | External Person ID |
+| `WorkforcePersonSkillTagID` | ✓ | | `_SkillTag` | `EmployeeSkillTagID` | `RAW(16)` | GUID in 'RAW' format |
+| `BusinessPartner` |  | | `_Person` | `BusinessPartner` | `CHAR(10)` | Business Partner Number |
 | `WorkforcePersonTagText` |  | | `_SkillTag` | `EmployeeSkillTagName` |  |  |
 | `_BusinessPartner` | | ✓ | | | | |
 | `_WorkforcePerson` | | ✓ | | | | |

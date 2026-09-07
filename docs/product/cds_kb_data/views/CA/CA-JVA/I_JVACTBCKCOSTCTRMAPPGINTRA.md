@@ -38,14 +38,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `JVAFromCostCenter` | ✓ | |  |  |  |  |
-| `JVAToCostCenter` |  | |  |  |  |  |
-| `JVACutbackCostCenter` |  | |  |  |  |  |
-| `JVACutbackOrder` |  | |  |  |  |  |
-| `JVACutbackWBS` |  | |  |  |  |  |
-| `JVACutbackWBSExt` |  | | `_CutbackWBS` | `WBSElementExternalID` |  |  |
-| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |  |  |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `JVAFromCostCenter` | ✓ | |  |  | `CHAR(10)` | Cost Centre From |
+| `JVAToCostCenter` |  | |  |  | `CHAR(10)` | Cost Centre To |
+| `JVACutbackCostCenter` |  | |  |  | `CHAR(10)` | Cutback Cost Centre |
+| `JVACutbackOrder` |  | |  |  | `CHAR(12)` | Cutback Order |
+| `JVACutbackWBS` |  | |  |  | `NUMC(8)` | WBS Element |
+| `JVACutbackWBSExt` |  | | `_CutbackWBS` | `WBSElementExternalID` | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` | `CHAR(4)` | Controlling Area |
 | `_CompanyCode` | | ✓ | | | | |
 | `_FromCostCenter` | | ✓ | | | | |
 | `_ToCostCenter` | | ✓ | | | | |

@@ -39,28 +39,28 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkforcePersonExternalID` | ✓ | |  |  |  |  |
-| `BusinessPartner` |  | |  |  |  |  |
-| `FirstName` |  | |  |  |  |  |
-| `MiddleName` |  | |  |  |  |  |
-| `LastName` |  | |  |  |  |  |
-| `FullName` |  | |  | `PersonFullName` |  |  |
-| `BirthName` |  | |  | `BusinessPartnerBirthName` |  |  |
-| `Initials` |  | |  |  |  |  |
-| `NativePreferredLanguage` |  | |  | `CorrespondenceLanguage` |  |  |
-| `IsBusinessPurposeCompleted` |  | |  |  |  |  |
-| `DataControllerSet` |  | |  |  |  |  |
-| `DataController1` |  | |  |  |  |  |
-| `DataController2` |  | |  |  |  |  |
-| `DataController3` |  | |  |  |  |  |
-| `DataController4` |  | |  |  |  |  |
-| `DataController5` |  | |  |  |  |  |
-| `DataController6` |  | |  |  |  |  |
-| `DataController7` |  | |  |  |  |  |
-| `DataController8` |  | |  |  |  |  |
-| `DataController9` |  | |  |  |  |  |
-| `DataController10` |  | |  |  |  |  |
-| `AuthorizationGroup` |  | |  |  |  |  |
+| `WorkforcePersonExternalID` | ✓ | |  |  | `CHAR(100)` | External Person ID |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `FirstName` |  | |  |  | `CHAR(40)` | First Name of Business Partner (Person) |
+| `MiddleName` |  | |  |  | `CHAR(40)` | Middle Name or Second Forename of a Person |
+| `LastName` |  | |  |  | `CHAR(40)` | Last Name of Business Partner (Person) |
+| `FullName` |  | |  | `PersonFullName` | `CHAR(80)` | Full Name |
+| `BirthName` |  | |  | `BusinessPartnerBirthName` | `CHAR(40)` | Name at birth of business partner |
+| `Initials` |  | |  |  | `CHAR(10)` | "Middle Initial" or personal initials |
+| `NativePreferredLanguage` |  | |  | `CorrespondenceLanguage` | `LANG(1)` | Business Partner: Correspondence Language |
+| `IsBusinessPurposeCompleted` |  | |  |  | `CHAR(1)` | Business Purpose Completed Flag |
+| `DataControllerSet` |  | |  |  | `CHAR(1)` | BP: Data Controller Set Flag |
+| `DataController1` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController2` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController3` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController4` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController5` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController6` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController7` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController8` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController9` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController10` |  | |  |  | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `AuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
 | `_WorkAssignment` | | ✓ | | | | |
 
 ## Associations

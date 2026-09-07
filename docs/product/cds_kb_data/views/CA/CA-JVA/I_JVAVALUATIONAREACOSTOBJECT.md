@@ -38,12 +38,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ValuationArea` | ✓ | |  | `bwkey` |  |  |
-| `ValuationType` | ✓ | |  | `bwtar` |  |  |
-| `CostCenter` |  | |  | `kostl` |  |  |
-| `WBSElementInternalID` |  | |  | `pspnr` |  |  |
-| `OrderID` |  | |  | `aufnr` |  |  |
-| `JointVentureConditionKey` |  | |  | `condcod` |  |  |
+| `ValuationArea` | ✓ | |  | `bwkey` | `CHAR(4)` | Valuation Area |
+| `ValuationType` | ✓ | |  | `bwtar` | `CHAR(10)` | Valuation Type |
+| `CostCenter` |  | |  | `kostl` | `CHAR(10)` | Cost Center |
+| `WBSElementInternalID` |  | |  | `pspnr` | `NUMC(8)` | WBS Element |
+| `OrderID` |  | |  | `aufnr` | `CHAR(12)` | Order Number |
+| `JointVentureConditionKey` |  | |  | `condcod` | `CHAR(2)` | Joint Venture Indicator (Condition Key) |
 | `_ValuationArea` | | ✓ | | | | |
 | `_JVAValuationType` | | ✓ | | | | |
 | `_InventoryValuationType` | | ✓ | | | | |

@@ -39,13 +39,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkAssignmentExternalID` | ✓ | |  |  |  |  |
-| `Country2DigitISOCode` | ✓ | |  |  |  |  |
-| `WorkforcePersonExternalID` |  | |  |  |  |  |
-| `WorkAssignmentStartDate` |  | |  |  |  |  |
-| `WorkAssignmentEndDate` |  | |  |  |  |  |
-| `IsContingentWorker` |  | |  |  |  |  |
-| `IsBlocked` |  | |  |  |  |  |
+| `WorkAssignmentExternalID` | ✓ | |  |  | `CHAR(100)` | Workforce Assignment External ID |
+| `Country2DigitISOCode` | ✓ | |  |  | `CHAR(2)` | Workforce Country ISO Code |
+| `WorkforcePersonExternalID` |  | |  |  | `CHAR(100)` | External Person ID |
+| `WorkAssignmentStartDate` |  | |  |  | `DATS(8)` | Start Date |
+| `WorkAssignmentEndDate` |  | |  |  | `DATS(8)` | End Date |
+| `IsContingentWorker` |  | |  |  | `CHAR(1)` | Contingent Worker Flag |
+| `IsBlocked` |  | |  |  | `CHAR(1)` | Blocked Indicator |
 | `_WorkAssignmentDetail` | | ✓ | | | | |
 | `_WorkforcePerson` | | ✓ | | | | |
 

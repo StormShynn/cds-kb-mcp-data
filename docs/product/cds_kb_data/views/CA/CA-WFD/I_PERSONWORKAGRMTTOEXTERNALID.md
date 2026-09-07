@@ -38,10 +38,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PersonWorkAgreement` | ✓ | |  | `cast(dets.workforce_assgmt_id as persno preserving type )` |  |  |
-| `CompanyCode` | ✓ | |  | `company_code` |  |  |
-| `PersonWorkAgreementExternalID` |  | |  | `case when keymap.user_id is not null then cast ( keymap.user_id as /shcm/workagreement_externalid ) else cast ( dets.workforce_assgmt_id as /shcm/workagreement_externalid ) end` |  |  |
-| `PersonWorkAgrmtAuthznGrpg` |  | |  | `cast ('' as vdsk1 )` |  |  |
+| `PersonWorkAgreement` | ✓ | |  | `cast(dets.workforce_assgmt_id as persno preserving type )` | `NUMC(8)` | Personnel Number |
+| `CompanyCode` | ✓ | |  | `company_code` | `CHAR(4)` | Company Code |
+| `PersonWorkAgreementExternalID` |  | |  | `case when keymap.user_id is not null then cast ( keymap.user_id as /shcm/workagreement_externalid ) else cast ( dets.workforce_assgmt_id as /shcm/workagreement_externalid ) end` | `CHAR(20)` | Work Agreement External ID |
+| `PersonWorkAgrmtAuthznGrpg` |  | |  | `cast ('' as vdsk1 )` | `CHAR(14)` | Organizational Key |
 | `_CompanyCode` | | ✓ | | | | |
 
 ## Associations

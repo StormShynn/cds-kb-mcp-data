@@ -40,7 +40,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TextObjectCategory` | ✓ | |  | `tdobject` |  |  |
+| `TextObjectCategory` | ✓ | |  | `tdobject` | `CHAR(10)` | Texts: application object |
 | `_TextObjectCategoryText` | | ✓ | | | | |
 
 ## Associations

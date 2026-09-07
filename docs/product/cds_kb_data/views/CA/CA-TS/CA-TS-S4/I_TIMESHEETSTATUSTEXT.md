@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `TimeSheetStatus` | ✓ | |  | `domvalue_l` |  |  |
-| `TimeSheetStatusText` |  | |  | `cast( ddtext as catsstatustext preserving type )` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `TimeSheetStatus` | ✓ | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `TimeSheetStatusText` |  | |  | `cast( ddtext as catsstatustext preserving type )` | `CHAR(60)` | Timesheet Status Text |
 
 ## Source Code
 

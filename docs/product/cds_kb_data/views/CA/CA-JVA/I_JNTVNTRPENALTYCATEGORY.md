@@ -38,8 +38,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `JntVntrPenaltyCategory` | ✓ | |  | `pencat` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `JntVntrPenaltyCategory` | ✓ | |  | `pencat` | `CHAR(1)` | Penalty Category |
 | `_CompanyCode` | | ✓ | | | | |
 | `_JntVntrPenaltyCategoryText` | | ✓ | | | | |
 

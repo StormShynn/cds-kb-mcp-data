@@ -38,30 +38,30 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TimeSheetRecordUUID` | ✓ | |  |  |  |  |
-| `TimeSheetRecord` |  | |  |  |  |  |
-| `WorkAssignment` |  | |  |  |  |  |
-| `TimeSheetDate` |  | |  |  |  |  |
-| `RecordedHours` |  | |  |  |  |  |
-| `HoursUnitOfMeasure` |  | |  |  |  |  |
-| `TimeSheetRecordLongText` |  | |  |  |  |  |
-| `WBSElementInternalID` |  | |  |  |  |  |
-| `ActivityType` |  | |  |  |  |  |
-| `WorkItem` |  | |  |  |  |  |
-| `BillableControl` |  | |  |  |  |  |
-| `TimeSheetStatus` |  | |  |  |  |  |
-| `TimeSheetPredecessorRecord` |  | |  |  |  |  |
-| `TimeSheetAccountingDocument` |  | |  |  |  |  |
-| `WorkflowTaskInternalID` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `LastChangedByUser` |  | |  |  |  |  |
-| `TimeSheetApprovedByUser` |  | |  |  |  |  |
-| `TimeSheetApprovedDate` |  | |  |  |  |  |
-| `TimeSheetCreationDate` |  | |  |  |  |  |
-| `TimeSheetEntryTime` |  | |  |  |  |  |
-| `LastChangeDateTime` |  | |  |  |  |  |
-| `TimeSheetLastChangedDate` |  | |  |  |  |  |
-| `TimeSheetLastChangedTime` |  | |  |  |  |  |
+| `TimeSheetRecordUUID` | ✓ | |  |  | `RAW(16)` | Globally Unique Identifier |
+| `TimeSheetRecord` |  | |  |  | `CHAR(12)` | Counter for Records in Time Recording |
+| `WorkAssignment` |  | |  |  | `NUMC(8)` | Personnel Number |
+| `TimeSheetDate` |  | |  |  | `DATS(8)` | Date |
+| `RecordedHours` |  | |  |  | `QUAN(4)` | Hours |
+| `HoursUnitOfMeasure` |  | |  |  | `UNIT(3)` | Unit of Measure for Display |
+| `TimeSheetRecordLongText` |  | |  |  | `CHAR(1000)` | Timesheet long text |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element |
+| `ActivityType` |  | |  |  | `CHAR(6)` | Activity Type |
+| `WorkItem` |  | |  |  | `CHAR(10)` | Work Item ID |
+| `BillableControl` |  | |  |  | `CHAR(2)` | Accounting Indicator |
+| `TimeSheetStatus` |  | |  |  | `CHAR(2)` | Processing Status |
+| `TimeSheetPredecessorRecord` |  | |  |  | `CHAR(12)` | Reference Counter for Record to be Changed |
+| `TimeSheetAccountingDocument` |  | |  |  | `CHAR(10)` | Document Number |
+| `WorkflowTaskInternalID` |  | |  |  | `NUMC(12)` | Work item ID |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | User Creating Record |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |
+| `TimeSheetApprovedByUser` |  | |  |  | `CHAR(12)` | Name of person who approved data |
+| `TimeSheetApprovedDate` |  | |  |  | `DATS(8)` | Date of Approval |
+| `TimeSheetCreationDate` |  | |  |  | `DATS(8)` | Created On |
+| `TimeSheetEntryTime` |  | |  |  | `TIMS(6)` | Time of Entry |
+| `LastChangeDateTime` |  | |  |  | `DEC(21)` | Last Change Date Time |
+| `TimeSheetLastChangedDate` |  | |  |  | `DATS(8)` | Date of Last Change |
+| `TimeSheetLastChangedTime` |  | |  |  | `TIMS(6)` | Time of Last Change |
 
 ## Associations
 

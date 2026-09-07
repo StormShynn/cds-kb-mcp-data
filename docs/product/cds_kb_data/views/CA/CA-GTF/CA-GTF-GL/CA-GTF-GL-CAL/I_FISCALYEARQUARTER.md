@@ -39,21 +39,21 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FiscalYearVariant` | ✓ | |  |  |  |  |
-| `FiscalYear` | ✓ | |  |  |  |  |
-| `FiscalQuarter` | ✓ | |  |  |  |  |
-| `FiscalYearStartDate` |  | |  |  |  |  |
-| `FiscalYearEndDate` |  | |  |  |  |  |
-| `FiscalYearQuarter` |  | |  |  |  |  |
-| `FiscalQuarterStartDate` |  | |  |  |  |  |
-| `FiscalQuarterEndDate` |  | |  |  |  |  |
-| `FiscalQuarterConsecutiveNumber` |  | |  |  |  |  |
-| `NextFiscalQuarter` |  | |  | `cast( P_FiscalYearQuarter.NextFiscalQuarter as fins_next_fiscalquarter preserving type )` |  |  |
-| `NextFiscalYear` |  | |  | `cast( cast( substring(P_FiscalYearQuarter.NextFiscalYearQuarter,1,4) as abap.numc(4) ) as fins_next_fiscalyear_no_conv preserving type )` |  |  |
-| `NextFiscalYearQuarter` |  | |  | `cast( P_FiscalYearQuarter.NextFiscalYearQuarter as fins_next_fyearquarter preserving type )` |  |  |
-| `NextFiscalQuarterStartDate` |  | |  | `cast( P_FiscalYearQuarter.NextFiscalQuarterStartDate as fins_next_fquarter_startdate preserving type )` |  |  |
-| `NextFiscalQuarterEndDate` |  | |  | `cast( P_FiscalYearQuarter.NextFiscalQuarterEndDate as fins_next_fquarter_enddate preserving type )` |  |  |
-| `NextFsclQuarterConsecutiveNmbr` |  | |  | `cast( P_FiscalYearQuarter.NextFsclQuarterConsecutiveNmbr as fins_next_fyearquarter_i preserving type )` |  |  |
+| `FiscalYearVariant` | ✓ | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalQuarter` | ✓ | |  |  | `NUMC(1)` | Fiscal Quarter |
+| `FiscalYearStartDate` |  | |  |  | `DATS(8)` | Start Date of Fiscal Year |
+| `FiscalYearEndDate` |  | |  |  | `DATS(8)` | End Date of Fiscal Year |
+| `FiscalYearQuarter` |  | |  |  | `NUMC(5)` | Fiscal Year + Fiscal Quarter |
+| `FiscalQuarterStartDate` |  | |  |  | `DATS(8)` | Start Date of Fiscal Quarter |
+| `FiscalQuarterEndDate` |  | |  |  | `DATS(8)` | End Date of Fiscal Quarter |
+| `FiscalQuarterConsecutiveNumber` |  | |  |  | `INT4(10)` | Fiscal Year Quarter (Numbering) |
+| `NextFiscalQuarter` |  | |  | `cast( P_FiscalYearQuarter.NextFiscalQuarter as fins_next_fiscalquarter preserving type )` | `NUMC(1)` | Next Fiscal Quarter |
+| `NextFiscalYear` |  | |  | `cast( cast( substring(P_FiscalYearQuarter.NextFiscalYearQuarter,1,4) as abap.numc(4) ) as fins_next_fiscalyear_no_conv preserving type )` | `NUMC(4)` | Next Fiscal Year |
+| `NextFiscalYearQuarter` |  | |  | `cast( P_FiscalYearQuarter.NextFiscalYearQuarter as fins_next_fyearquarter preserving type )` | `NUMC(5)` | Next Fiscal Quarter with Fiscal Year |
+| `NextFiscalQuarterStartDate` |  | |  | `cast( P_FiscalYearQuarter.NextFiscalQuarterStartDate as fins_next_fquarter_startdate preserving type )` | `DATS(8)` | Start Date of Next Fiscal Quarter |
+| `NextFiscalQuarterEndDate` |  | |  | `cast( P_FiscalYearQuarter.NextFiscalQuarterEndDate as fins_next_fquarter_enddate preserving type )` | `DATS(8)` | End Date of Next Fiscal Quarter |
+| `NextFsclQuarterConsecutiveNmbr` |  | |  | `cast( P_FiscalYearQuarter.NextFsclQuarterConsecutiveNmbr as fins_next_fyearquarter_i preserving type )` | `INT4(10)` | Next Fiscal Year Quarter (Numbering) |
 | `_FiscalYear` | | ✓ | | | | |
 
 ## Associations

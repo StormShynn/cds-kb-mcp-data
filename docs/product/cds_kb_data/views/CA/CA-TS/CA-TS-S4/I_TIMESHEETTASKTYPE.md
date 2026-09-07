@@ -38,8 +38,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TimeSheetTaskType` | ✓ | |  | `tasktype` |  |  |
-| `TimeSheetTaskTypeRelevanceCode` |  | |  | `tasktype_relevance` |  |  |
+| `TimeSheetTaskType` | ✓ | |  | `tasktype` | `CHAR(4)` | Task Type |
+| `TimeSheetTaskTypeRelevanceCode` |  | |  | `tasktype_relevance` | `CHAR(1)` | Task Type Relevance |
 | `_TimeSheetTaskTypeText` | | ✓ | | | | |
 | `_TimeSheetTaskTypeRelevance` | | ✓ | | | | |
 

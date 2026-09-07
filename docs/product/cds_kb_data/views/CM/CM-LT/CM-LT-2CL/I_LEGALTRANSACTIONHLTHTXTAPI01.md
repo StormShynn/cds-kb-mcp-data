@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LegalTransactionHealth` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `LegalTransactionHealthName` |  | |  |  |  |  |
+| `LegalTransactionHealth` | ✓ | |  |  | `CHAR(4)` | Legal Transaction Status |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `LegalTransactionHealthName` |  | |  |  | `CHAR(40)` | Long Text |
 
 ## Source Code
 

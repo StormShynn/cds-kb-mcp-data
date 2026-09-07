@@ -39,10 +39,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FiscalYearVariant` | ✓ | |  | `fiscal_year_variant` |  |  |
-| `FiscalYear` | ✓ | |  | `fiscal_year` |  |  |
-| `FiscalYearStartDate` |  | |  | `fiscal_year_start_date` |  |  |
-| `FiscalYearEndDate` |  | |  | `fiscal_year_end_date` |  |  |
+| `FiscalYearVariant` | ✓ | |  | `fiscal_year_variant` | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalYear` | ✓ | |  | `fiscal_year` | `NUMC(4)` | Fiscal Year |
+| `FiscalYearStartDate` |  | |  | `fiscal_year_start_date` | `DATS(8)` | Start Date of Fiscal Year |
+| `FiscalYearEndDate` |  | |  | `fiscal_year_end_date` | `DATS(8)` | End Date of Fiscal Year |
 | `_FiscalYearVariant` | | ✓ | | | | |
 
 ## Associations

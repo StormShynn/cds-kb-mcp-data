@@ -38,10 +38,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `InventoryValuationType` | ✓ | |  |  |  |  |
-| `AcctCategoryRef` |  | |  |  |  |  |
-| `InternalPurchasingRule` |  | |  |  |  |  |
-| `ExternalPurchasingRule` |  | |  |  |  |  |
+| `InventoryValuationType` | ✓ | |  |  | `CHAR(10)` | Inventory Valuation Type |
+| `AcctCategoryRef` |  | |  |  | `CHAR(4)` | Account Category Reference |
+| `InternalPurchasingRule` |  | |  |  | `CHAR(1)` | Internal Purchasing Rule |
+| `ExternalPurchasingRule` |  | |  |  | `CHAR(1)` | External Purchasing Rule |
 
 ## Source Code
 

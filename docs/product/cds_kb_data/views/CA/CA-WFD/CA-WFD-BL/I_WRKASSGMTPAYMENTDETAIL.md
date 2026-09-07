@@ -40,23 +40,23 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkAssignmentExternalID` | ✓ | | `_Assignment` | `WorkAssignmentExternalID` |  |  |
-| `Country2DigitISOCode` | ✓ | | `_Assignment` | `Country2DigitISOCode` |  |  |
-| `BankIdentification` | ✓ | | `_PaymentDetails` | `BankIdentification` |  |  |
-| `WorkforcePersonExternalID` |  | | `_Assignment` | `WorkforcePersonExternalID` |  |  |
-| `BankAccountHolderName` |  | | `_PaymentDetails` | `BankAccountHolderName` |  |  |
-| `BankAccountName` |  | | `_PaymentDetails` | `BankAccountName` |  |  |
-| `BankControlKey` |  | | `_PaymentDetails` | `BankControlKey` |  |  |
-| `BankCountryKey` |  | | `_PaymentDetails` | `BankCountryKey` |  |  |
-| `BankNumber` |  | | `_PaymentDetails` | `BankNumber` |  |  |
-| `BankName` |  | | `_PaymentDetails` | `BankName` |  |  |
-| `BankAccount` |  | | `_PaymentDetails` | `BankAccount` |  |  |
-| `IBAN` |  | | `_PaymentDetails` | `IBAN` |  |  |
-| `SWIFTCode` |  | | `_PaymentDetails` | `SWIFTCode` |  |  |
-| `StartDate` |  | |  | `cast (tstmp_to_dats( _PaymentDetails.ValidityStartDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_start_date)` |  |  |
-| `EndDate` |  | |  | `cast (tstmp_to_dats( _PaymentDetails.ValidityEndDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_end_date)` |  |  |
-| `BankAccountReferenceText` |  | | `_PaymentDetails` | `BankAccountReferenceText` |  |  |
-| `IsBlocked` |  | | `_Assignment` | `IsBlocked` |  |  |
+| `WorkAssignmentExternalID` | ✓ | | `_Assignment` | `WorkAssignmentExternalID` | `CHAR(100)` | Workforce Assignment External ID |
+| `Country2DigitISOCode` | ✓ | | `_Assignment` | `Country2DigitISOCode` | `CHAR(2)` | Workforce Country ISO Code |
+| `BankIdentification` | ✓ | | `_PaymentDetails` | `BankIdentification` | `CHAR(4)` | Bank Details ID |
+| `WorkforcePersonExternalID` |  | | `_Assignment` | `WorkforcePersonExternalID` | `CHAR(100)` | External Person ID |
+| `BankAccountHolderName` |  | | `_PaymentDetails` | `BankAccountHolderName` | `CHAR(60)` | Account Holder Name |
+| `BankAccountName` |  | | `_PaymentDetails` | `BankAccountName` | `CHAR(40)` | Name of Bank Account |
+| `BankControlKey` |  | | `_PaymentDetails` | `BankControlKey` | `CHAR(2)` | Bank Control Key |
+| `BankCountryKey` |  | | `_PaymentDetails` | `BankCountryKey` | `CHAR(3)` | Bank Country/Region Key |
+| `BankNumber` |  | | `_PaymentDetails` | `BankNumber` | `CHAR(15)` | Bank Key |
+| `BankName` |  | | `_PaymentDetails` | `BankName` | `CHAR(60)` | Name of Financial Institution |
+| `BankAccount` |  | | `_PaymentDetails` | `BankAccount` | `CHAR(18)` | Bank Account Number |
+| `IBAN` |  | | `_PaymentDetails` | `IBAN` | `CHAR(34)` | IBAN (International Bank Account Number) |
+| `SWIFTCode` |  | | `_PaymentDetails` | `SWIFTCode` | `CHAR(11)` | SWIFT/BIC for International Payments |
+| `StartDate` |  | |  | `cast (tstmp_to_dats( _PaymentDetails.ValidityStartDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_start_date)` | `DATS(8)` | Start Date |
+| `EndDate` |  | |  | `cast (tstmp_to_dats( _PaymentDetails.ValidityEndDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_end_date)` | `DATS(8)` | End Date |
+| `BankAccountReferenceText` |  | | `_PaymentDetails` | `BankAccountReferenceText` | `CHAR(20)` | Reference Details for Bank Details |
+| `IsBlocked` |  | | `_Assignment` | `IsBlocked` | `CHAR(1)` | Blocked Indicator |
 | `_WorkAssignment` | | ✓ | | | | |
 | `_WorkforcePerson` | | ✓ | | | | |
 

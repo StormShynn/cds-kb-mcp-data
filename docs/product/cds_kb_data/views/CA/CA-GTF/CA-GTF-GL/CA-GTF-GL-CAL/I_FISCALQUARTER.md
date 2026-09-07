@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FiscalQuarter` | ✓ | |  | `cast ( dd07l.domvalue_l as fis_fiscal_quarter )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `FiscalQuarter` | ✓ | |  | `cast ( dd07l.domvalue_l as fis_fiscal_quarter )` | `NUMC(1)` | Fiscal Quarter |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

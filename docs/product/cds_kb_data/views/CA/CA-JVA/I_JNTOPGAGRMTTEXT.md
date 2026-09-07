@@ -40,11 +40,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `JntOpgAgrmt` | ✓ | |  | `joa` |  |  |
-| `JntOpgAgrmtText` |  | |  | `jtext` |  |  |
-| `JntOpgAgrmtLongText` |  | |  | `ltext` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `JntOpgAgrmt` | ✓ | |  | `joa` | `CHAR(6)` | Joint Operating Agreement |
+| `JntOpgAgrmtText` |  | |  | `jtext` | `CHAR(40)` | JOA Description |
+| `JntOpgAgrmtLongText` |  | |  | `ltext` | `CHAR(80)` | JOA long text (80 Char) |
 | `_Language` | | ✓ | | | | |
 | `_CompanyCode` | | ✓ | | | | |
 | `_JntOpgAgrmt` | | ✓ | | | | |

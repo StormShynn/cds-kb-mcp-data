@@ -38,89 +38,89 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `JVAInceptionToDateActiveVal` |  | |  | `itd` |  |  |
-| `JVANetAccountActiveVal` |  | |  | `netaccopt` |  |  |
-| `JVARegionVal` |  | |  | `int_us` |  |  |
-| `JVAOperator` |  | |  | `opaccnumb` |  |  |
-| `JVABillingBasis` |  | |  | `billbasis` |  |  |
-| `JVADefaultVenture` |  | |  | `corpvent` |  |  |
-| `JVADefaultEquityGroup` |  | |  | `corpeqgp` |  |  |
-| `JVADefaultCostRecoveryCode` |  | |  | `corprecind` |  |  |
-| `JVARecIndVntrFunded` |  | |  | `corpvbacri` |  |  |
-| `JVABalancedVenturesActiveVal` |  | |  | `balancvent` |  |  |
-| `JVAVentureBankAccountVal` |  | |  | `vbank` |  |  |
-| `JVAInputTaxCode` |  | |  | `taxin` |  |  |
-| `JVAInvoiceLevel` |  | |  | `invlevel` |  |  |
-| `JVAOutputTaxCode` |  | |  | `taxout` |  |  |
-| `JVATaxJurisdictionCode` |  | |  | `txjcd` |  |  |
-| `JVACorpTaxCode` |  | |  | `crptaxcode` |  |  |
-| `JVABillingStructure` |  | |  | `bstruct` |  |  |
-| `JVAAcctsExclCnstrctnOvhdVal` |  | |  | `xsetcon` |  |  |
-| `JVAAcctsExclCatastropheOvhdVal` |  | |  | `xsetcat` |  |  |
-| `JVAAcctsExclPctg1OvhdRateVal` |  | |  | `xper1` |  |  |
-| `JVAAcctsExclPctg2OvhdRateVal` |  | |  | `xper2` |  |  |
-| `JVAAccountsExclCptlOvhdVal` |  | |  | `xsetcap` |  |  |
-| `JVADefaultOffsetCostCenterVal` |  | |  | `offcc` |  |  |
-| `JVALineItmsUncompressedActvVal` |  | |  | `expand` |  |  |
-| `JVATxExpndtrDetailsActvVal` |  | |  | `taxexpdtl` |  |  |
-| `JVAPostTaxInNextPeriodActvVal` |  | |  | `taxper` |  |  |
-| `JVAMaxNmbrEquityGrpsPerVntrVal` |  | |  | `eqgnum` |  |  |
-| `JVAOperationalMonthActiveVal` |  | |  | `pomact` |  |  |
-| `JVARegnGSTNumberVal` |  | |  | `gstno` |  |  |
-| `JVADeprAreaForBookDeprVal` |  | |  | `afabe_han` |  |  |
-| `JVADeprAreaForNonBillVal` |  | |  | `afabe_nb` |  |  |
-| `JVADeprAreaForGrossVal` |  | |  | `afabe_bi` |  |  |
-| `JVACstmRtlPrcCalcActvVal` |  | |  | `crpcal` |  |  |
-| `JVAPostgRuleForAstPostingsVal` |  | |  | `am_meth` |  |  |
-| `JVAIndexForEstBookCostVal` |  | |  | `wbind` |  |  |
-| `JVATblForAddlSelFldVal` |  | |  | `seltab` |  |  |
-| `JVAAddSelForCRPTransfersVal` |  | |  | `selfld` |  |  |
-| `JVACutbackYearDateVal` |  | |  | `cbyear` |  |  |
-| `JVACutbackPeriodVal` |  | |  | `cbperi` |  |  |
-| `JVAExchangeRateTypeVal` |  | |  | `kurst` |  |  |
-| `JVACorpParCoOvhdCostCtrVal` |  | |  | `offpcocc` |  |  |
-| `JVACorpParCoOvhdProjectVal` |  | |  | `cast(offpcoproj as ps_s4_pspnr preserving type)` |  |  |
-| `JVACorpParCoOvhdOrderVal` |  | |  | `offpcoornr` |  |  |
-| `JVAPostToDefaultVentureActvVal` |  | |  | `postcorp` |  |  |
-| `JVAVntrDerivationTypeAssetsVal` |  | |  | `asstvent` |  |  |
-| `JVAGrssPostToIntrstPrtnActvVal` |  | |  | `ci_gross` |  |  |
-| `JVACarriedIntrstPostings01Val` |  | |  | `ci_fb01` |  |  |
-| `JVAUseTransCrcyCutbackPostsVal` |  | |  | `cb_tcurr` |  |  |
-| `JVAFldStsTypeCostCtrVal` |  | |  | `fsjvct` |  |  |
-| `JVAFieldStatusTypeOrderVal` |  | |  | `fsjvot` |  |  |
-| `JVAFieldStatusTypeProjectVal` |  | |  | `fsjvpt` |  |  |
-| `JVAMessageImpactActiveVal` |  | |  | `budgetmess` |  |  |
-| `JVAVentureDistrAssetLinesVal` |  | |  | `vidist` |  |  |
-| `JVAOperatorAsPartnerActiveVal` |  | |  | `op_as_part` |  |  |
-| `JVADefaultCostCenterVal` |  | |  | `kostl_corp` |  |  |
-| `JVADfltCostRcvryCodeForAstVal` |  | |  | `am_corp_ri` |  |  |
-| `JVACostRecCodeForBkSwitchVal` |  | |  | `bank_ri_sw` |  |  |
-| `JVADefaultBillingCrcyVal` |  | |  | `bcurr` |  |  |
-| `JVABankAccountSwitchActiveVal` |  | |  | `xvba` |  |  |
-| `JVANoCostObjOnAstActvVal` |  | |  | `xasst_co` |  |  |
-| `Currency` |  | | `_CompanyCode` | `Currency` |  |  |
-| `JVABillingThresholdDebitAmt` |  | |  | `billthres` |  |  |
-| `JVABillingThresholdCreditAmt` |  | |  | `billthresc` |  |  |
-| `JVATransVarInterCompAstVal` |  | |  | `tvarcurr` |  |  |
-| `JVASplitByLineItemVal` |  | |  | `split_by_li` |  |  |
-| `JVARtlPrCalcActvVal` |  | |  | `ec_use` |  |  |
-| `JVASprtRptSpprsdPerdsVal` |  | |  | `billthress` |  |  |
-| `JVAProductionMonthActiveVal` |  | |  | `pm_act` |  |  |
-| `JVADeriveEquityGrpProdnMnthVal` |  | |  | `pm_eg` |  |  |
-| `JVAProductionMonthFromYearVal` |  | |  | `pm_act_year` |  |  |
-| `JVAFundingActvVal` |  | |  | `funding_active` |  |  |
-| `JVAIntrstCalcActvVal` |  | |  | `intcalc_active` |  |  |
-| `JVAIntrstCalcAutoGrpgTypeVal` |  | |  | `ic_auto_group` |  |  |
-| `JVAInterestCalcRefGroupVal` |  | |  | `ic_group_ref` |  |  |
-| `JVALedgerVal` |  | |  | `rldnr` |  |  |
-| `JVAFromYearVal` |  | |  | `coalesce(_MasterData.JVAFromYearVal, _t8jz.fryear)` |  |  |
-| `JVAFromPeriodVal` |  | |  | `coalesce(_MasterData.JVAFromYearVal, _t8jz.frperiod)` |  |  |
-| `JVAToYearVal` |  | |  | `coalesce(_MasterData.JVAToYearVal, _t8jz.toyear)` |  |  |
-| `JVAToPeriodVal` |  | |  | `coalesce(_MasterData.JVAToPeriodVal, _t8jz.toperiod)` |  |  |
-| `JVAStandardPaymentVal` |  | |  | `coalesce(_MasterData.JVAStandardPaymentRate, _t8jz.stpay)` |  |  |
-| `JVANonCompulsoryBenefitsVal` |  | |  | `coalesce(_MasterData.JVANonCompulsoryBenefitsRate, _t8jz.noncomp)` |  |  |
-| `JVACompulsoryBenefitsVal` |  | |  | `coalesce(_MasterData.JVACompulsoryBenefitsRate, _t8jz.compuls)` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `JVAInceptionToDateActiveVal` |  | |  | `itd` | `CHAR(1)` | Inception to date |
+| `JVANetAccountActiveVal` |  | |  | `netaccopt` | `CHAR(1)` | JV Net Account option |
+| `JVARegionVal` |  | |  | `int_us` | `CHAR(1)` | Joint Venture Region |
+| `JVAOperator` |  | |  | `opaccnumb` | `CHAR(10)` | Operator |
+| `JVABillingBasis` |  | |  | `billbasis` | `NUMC(1)` | Billing Basis |
+| `JVADefaultVenture` |  | |  | `corpvent` | `CHAR(6)` | Joint Venture |
+| `JVADefaultEquityGroup` |  | |  | `corpeqgp` | `CHAR(3)` | Equity Group |
+| `JVADefaultCostRecoveryCode` |  | |  | `corprecind` | `CHAR(2)` | Corporate Recovery Indicator (corporately funded) |
+| `JVARecIndVntrFunded` |  | |  | `corpvbacri` | `CHAR(2)` | Corporate Recovery Indicator (Venture Funded) |
+| `JVABalancedVenturesActiveVal` |  | |  | `balancvent` | `CHAR(1)` | JV Balanced Venture Flag |
+| `JVAVentureBankAccountVal` |  | |  | `vbank` | `CHAR(1)` | Venture Bank Accounts |
+| `JVAInputTaxCode` |  | |  | `taxin` | `CHAR(2)` | Input Tax Code (Usually used when posting expense) |
+| `JVAInvoiceLevel` |  | |  | `invlevel` | `CHAR(1)` | Joint Venture Invoice Level |
+| `JVAOutputTaxCode` |  | |  | `taxout` | `CHAR(2)` | Output Tax Code (Usually used when posting revenue) |
+| `JVATaxJurisdictionCode` |  | |  | `txjcd` | `CHAR(15)` | Tax Jurisdiction |
+| `JVACorpTaxCode` |  | |  | `crptaxcode` | `CHAR(2)` | CRP Tax Code |
+| `JVABillingStructure` |  | |  | `bstruct` | `CHAR(4)` | JV Billing Structure |
+| `JVAAcctsExclCnstrctnOvhdVal` |  | |  | `xsetcon` | `CHAR(24)` | Set of Accounts to Exclude from Construction Overhead Calc. |
+| `JVAAcctsExclCatastropheOvhdVal` |  | |  | `xsetcat` | `CHAR(24)` | Set of Accounts to Exclude from Catastrophe Overhead Calc. |
+| `JVAAcctsExclPctg1OvhdRateVal` |  | |  | `xper1` | `CHAR(24)` | Exclusion Set of Accounts - Percent 1 (JVA) |
+| `JVAAcctsExclPctg2OvhdRateVal` |  | |  | `xper2` | `CHAR(24)` | Exclusion Set of Accounts - Percent 2 (JVA) |
+| `JVAAccountsExclCptlOvhdVal` |  | |  | `xsetcap` | `CHAR(24)` | Set of Accounts to Exclude from Capital Overhead Calc. |
+| `JVADefaultOffsetCostCenterVal` |  | |  | `offcc` | `CHAR(10)` | Corporate Offset Cost Centre |
+| `JVALineItmsUncompressedActvVal` |  | |  | `expand` | `CHAR(1)` | Store lines in JV single item ledger not compressed |
+| `JVATxExpndtrDetailsActvVal` |  | |  | `taxexpdtl` | `CHAR(1)` | Flag for tax being reported on expenditure detail |
+| `JVAPostTaxInNextPeriodActvVal` |  | |  | `taxper` | `CHAR(1)` | Post Tax in Next Period |
+| `JVAMaxNmbrEquityGrpsPerVntrVal` |  | |  | `eqgnum` | `NUMC(2)` | Maximum Number of Active Equity Groups per Vent./Equity Type |
+| `JVAOperationalMonthActiveVal` |  | |  | `pomact` | `CHAR(1)` | Processing Operational Month and Billing Month active |
+| `JVARegnGSTNumberVal` |  | |  | `gstno` | `CHAR(20)` | GST registration number |
+| `JVADeprAreaForBookDeprVal` |  | |  | `afabe_han` | `NUMC(2)` | Depreciation Area for Book Depreciation |
+| `JVADeprAreaForNonBillVal` |  | |  | `afabe_nb` | `NUMC(2)` | Depreciation Area for non billable Cost (Gross) |
+| `JVADeprAreaForGrossVal` |  | |  | `afabe_bi` | `NUMC(2)` | Depreciation Area for Gross billable cost |
+| `JVACstmRtlPrcCalcActvVal` |  | |  | `crpcal` | `CHAR(1)` | Flag CRP Calculation: Yes or NO |
+| `JVAPostgRuleForAstPostingsVal` |  | |  | `am_meth` | `CHAR(1)` | Method for AM/MM Postings |
+| `JVAIndexForEstBookCostVal` |  | |  | `wbind` | `CHAR(5)` | Index series to for calculation of estimated book cost (EBC) |
+| `JVATblForAddlSelFldVal` |  | |  | `seltab` | `CHAR(30)` | Table for additional selection field |
+| `JVAAddSelForCRPTransfersVal` |  | |  | `selfld` | `CHAR(30)` | Field for additional selection in CRP transfers |
+| `JVACutbackYearDateVal` |  | |  | `cbyear` | `NUMC(4)` | JV Cutback Year |
+| `JVACutbackPeriodVal` |  | |  | `cbperi` | `NUMC(3)` | JV Cutback Period |
+| `JVAExchangeRateTypeVal` |  | |  | `kurst` | `CHAR(4)` | JV exchange rate type |
+| `JVACorpParCoOvhdCostCtrVal` |  | |  | `offpcocc` | `CHAR(10)` | Corporate PCO Cost Centre |
+| `JVACorpParCoOvhdProjectVal` |  | |  | `cast(offpcoproj as ps_s4_pspnr preserving type)` | `NUMC(8)` | WBS Element |
+| `JVACorpParCoOvhdOrderVal` |  | |  | `offpcoornr` | `CHAR(12)` | Coporate PCO Order |
+| `JVAPostToDefaultVentureActvVal` |  | |  | `postcorp` | `CHAR(1)` | Post also doc. with corporate venture/equity group only_ |
+| `JVAVntrDerivationTypeAssetsVal` |  | |  | `asstvent` | `CHAR(1)` | Venture derivation from Asset |
+| `JVAGrssPostToIntrstPrtnActvVal` |  | |  | `ci_gross` | `CHAR(1)` | Gross postings to CI Partner |
+| `JVACarriedIntrstPostings01Val` |  | |  | `ci_fb01` | `CHAR(1)` | CI Posting in FB01 |
+| `JVAUseTransCrcyCutbackPostsVal` |  | |  | `cb_tcurr` | `CHAR(1)` | JV Cutback in transaction currency |
+| `JVAFldStsTypeCostCtrVal` |  | |  | `fsjvct` | `CHAR(1)` | Field status JV Cost Center Type |
+| `JVAFieldStatusTypeOrderVal` |  | |  | `fsjvot` | `CHAR(1)` | Field status JV Internal Order Type |
+| `JVAFieldStatusTypeProjectVal` |  | |  | `fsjvpt` | `CHAR(1)` | Field status JV project type |
+| `JVAMessageImpactActiveVal` |  | |  | `budgetmess` | `CHAR(1)` | Indicator: Message for impact on budget for JV Asset Xfers |
+| `JVAVentureDistrAssetLinesVal` |  | |  | `vidist` | `CHAR(1)` | Venture info distribution from Asset lines |
+| `JVAOperatorAsPartnerActiveVal` |  | |  | `op_as_part` | `CHAR(1)` | Flag: Operator as partner |
+| `JVADefaultCostCenterVal` |  | |  | `kostl_corp` | `CHAR(10)` | Corporate cost center for JV |
+| `JVADfltCostRcvryCodeForAstVal` |  | |  | `am_corp_ri` | `CHAR(2)` | Coporate Recovery Indicator for AM Postings |
+| `JVACostRecCodeForBkSwitchVal` |  | |  | `bank_ri_sw` | `CHAR(1)` | Recovery Indicator switch for bank lines in non-clearing tr. |
+| `JVADefaultBillingCrcyVal` |  | |  | `bcurr` | `CHAR(2)` | JV Default Billing Currency |
+| `JVABankAccountSwitchActiveVal` |  | |  | `xvba` | `CHAR(1)` | Venture Bank Account Switching is used |
+| `JVANoCostObjOnAstActvVal` |  | |  | `xasst_co` | `CHAR(1)` | No CO object on asset lines |
+| `Currency` |  | | `_CompanyCode` | `Currency` | `CUKY(5)` | Currency Key |
+| `JVABillingThresholdDebitAmt` |  | |  | `billthres` | `CURR(13)` | Billing threshold (debit) |
+| `JVABillingThresholdCreditAmt` |  | |  | `billthresc` | `CURR(13)` | Billing threshold (credit) |
+| `JVATransVarInterCompAstVal` |  | |  | `tvarcurr` | `CHAR(4)` | Transfer variant for intercompany asset transfers |
+| `JVASplitByLineItemVal` |  | |  | `split_by_li` | `CHAR(1)` | Split by line item |
+| `JVARtlPrCalcActvVal` |  | |  | `ec_use` | `CHAR(1)` | CA-JVA-PRC Active in Company Code |
+| `JVASprtRptSpprsdPerdsVal` |  | |  | `billthress` | `CHAR(1)` | Prepare separate reports for suppressed periods |
+| `JVAProductionMonthActiveVal` |  | |  | `pm_act` | `CHAR(1)` | Joint Venture Production month processing active |
+| `JVADeriveEquityGrpProdnMnthVal` |  | |  | `pm_eg` | `CHAR(1)` | Derive Equity Group from Production Month |
+| `JVAProductionMonthFromYearVal` |  | |  | `pm_act_year` | `NUMC(2)` | Number of years Production month information is available |
+| `JVAFundingActvVal` |  | |  | `funding_active` | `CHAR(1)` | JV Funding Is Active |
+| `JVAIntrstCalcActvVal` |  | |  | `intcalc_active` | `CHAR(1)` | JV Interest Calculation Is Active |
+| `JVAIntrstCalcAutoGrpgTypeVal` |  | |  | `ic_auto_group` | `NUMC(1)` | JV Interest Calculation Automatic Group Assignment Indicator |
+| `JVAInterestCalcRefGroupVal` |  | |  | `ic_group_ref` | `CHAR(10)` | JV Interest Calculation Reference Group |
+| `JVALedgerVal` |  | |  | `rldnr` | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `JVAFromYearVal` |  | |  | `coalesce(_MasterData.JVAFromYearVal, _t8jz.fryear)` | `NUMC(4)` |  |
+| `JVAFromPeriodVal` |  | |  | `coalesce(_MasterData.JVAFromYearVal, _t8jz.frperiod)` | `NUMC(4)` |  |
+| `JVAToYearVal` |  | |  | `coalesce(_MasterData.JVAToYearVal, _t8jz.toyear)` | `NUMC(4)` |  |
+| `JVAToPeriodVal` |  | |  | `coalesce(_MasterData.JVAToPeriodVal, _t8jz.toperiod)` | `NUMC(3)` |  |
+| `JVAStandardPaymentVal` |  | |  | `coalesce(_MasterData.JVAStandardPaymentRate, _t8jz.stpay)` | `DEC(5)` |  |
+| `JVANonCompulsoryBenefitsVal` |  | |  | `coalesce(_MasterData.JVANonCompulsoryBenefitsRate, _t8jz.noncomp)` | `DEC(5)` |  |
+| `JVACompulsoryBenefitsVal` |  | |  | `coalesce(_MasterData.JVACompulsoryBenefitsRate, _t8jz.compuls)` | `DEC(5)` |  |
 | `_CompanyCode` | | ✓ | | | | |
 | `_MasterData` | | ✓ | | | | |
 

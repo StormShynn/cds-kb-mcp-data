@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TextObjectCategory` | ✓ | |  | `tdobject` |  |  |
-| `Language` | ✓ | |  | `tdspras` |  |  |
-| `TextObjectCategoryText` |  | |  | `tdtext` |  |  |
+| `TextObjectCategory` | ✓ | |  | `tdobject` | `CHAR(10)` | Texts: application object |
+| `Language` | ✓ | |  | `tdspras` | `LANG(1)` | Language Key |
+| `TextObjectCategoryText` |  | |  | `tdtext` | `CHAR(30)` | Short Text |
 | `_TextObjectCategory` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

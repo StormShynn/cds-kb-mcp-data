@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LglCntntMProfile` | ✓ | |  |  |  |  |
+| `LglCntntMProfile` | ✓ | |  |  | `CHAR(10)` | Profile |
 | `_LglCntntMProfileTextAPI01` | | ✓ | | | | |
 
 ## Associations

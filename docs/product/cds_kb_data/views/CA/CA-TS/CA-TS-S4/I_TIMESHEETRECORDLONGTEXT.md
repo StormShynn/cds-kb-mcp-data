@@ -40,8 +40,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TimeSheetRecord` | ✓ | |  | `counter` |  |  |
-| `Language` | ✓ | | `_TextObjectPlainLongText` | `Language` |  |  |
+| `TimeSheetRecord` | ✓ | |  | `counter` | `CHAR(12)` | Counter for Records in Time Recording |
+| `Language` | ✓ | | `_TextObjectPlainLongText` | `Language` | `LANG(1)` | Language Key |
 | `PlainLongText` |  | | `_TextObjectPlainLongText` | `PlainLongText` |  |  |
 | `_TextObjectPlainLongText` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |

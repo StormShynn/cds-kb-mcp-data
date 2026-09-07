@@ -39,27 +39,27 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FiscalYearVariant` | ✓ | |  | `fiscal_year_variant` |  |  |
-| `CalendarDate` | ✓ | |  | `calendar_date` |  |  |
-| `FiscalYear` |  | |  | `fiscal_year` |  |  |
-| `FiscalYearStartDate` |  | |  | `fiscal_year_start_date` |  |  |
-| `FiscalYearEndDate` |  | |  | `fiscal_year_end_date` |  |  |
-| `FiscalPeriod` |  | |  | `fiscal_period` |  |  |
-| `FiscalPeriodStartDate` |  | |  | `fiscal_period_start_date` |  |  |
-| `FiscalPeriodEndDate` |  | |  | `fiscal_period_end_date` |  |  |
-| `FiscalQuarter` |  | |  | `fiscal_quarter` |  |  |
-| `FiscalQuarterStartDate` |  | |  | `fiscal_quarter_start_date` |  |  |
-| `FiscalQuarterEndDate` |  | |  | `fiscal_quarter_end_date` |  |  |
-| `FiscalWeek` |  | |  | `fiscal_week` |  |  |
-| `FiscalWeekStartDate` |  | |  | `fiscal_week_start_date` |  |  |
-| `FiscalWeekEndDate` |  | |  | `fiscal_week_end_date` |  |  |
-| `FiscalYearPeriod` |  | |  | `fiscal_year_period` |  |  |
-| `FiscalYearQuarter` |  | |  | `fiscal_year_quarter` |  |  |
-| `FiscalYearWeek` |  | |  | `fiscal_year_week` |  |  |
-| `FiscalYearConsecutiveNumber` |  | |  | `cast(P_FiscalCalendarDate.fiscal_year as fins_fiscalyear_i)` |  |  |
-| `FiscalPeriodConsecutiveNumber` |  | |  | `fiscal_year_period_int` |  |  |
-| `FiscalQuarterConsecutiveNumber` |  | |  | `fiscal_year_quarter_int` |  |  |
-| `FiscalWeekConsecutiveNumber` |  | |  | `fiscal_year_week_int` |  |  |
+| `FiscalYearVariant` | ✓ | |  | `fiscal_year_variant` | `CHAR(2)` | Fiscal Year Variant |
+| `CalendarDate` | ✓ | |  | `calendar_date` | `DATS(8)` | Calendar Date |
+| `FiscalYear` |  | |  | `fiscal_year` | `NUMC(4)` | Fiscal Year |
+| `FiscalYearStartDate` |  | |  | `fiscal_year_start_date` | `DATS(8)` | Start Date of Fiscal Year |
+| `FiscalYearEndDate` |  | |  | `fiscal_year_end_date` | `DATS(8)` | End Date of Fiscal Year |
+| `FiscalPeriod` |  | |  | `fiscal_period` | `NUMC(3)` | Fiscal Period |
+| `FiscalPeriodStartDate` |  | |  | `fiscal_period_start_date` | `DATS(8)` | Start Date of Fiscal Period |
+| `FiscalPeriodEndDate` |  | |  | `fiscal_period_end_date` | `DATS(8)` | End Date of Fiscal Period |
+| `FiscalQuarter` |  | |  | `fiscal_quarter` | `NUMC(1)` | Fiscal Quarter |
+| `FiscalQuarterStartDate` |  | |  | `fiscal_quarter_start_date` | `DATS(8)` | Start Date of Fiscal Quarter |
+| `FiscalQuarterEndDate` |  | |  | `fiscal_quarter_end_date` | `DATS(8)` | End Date of Fiscal Quarter |
+| `FiscalWeek` |  | |  | `fiscal_week` | `NUMC(2)` | Fiscal Week |
+| `FiscalWeekStartDate` |  | |  | `fiscal_week_start_date` | `DATS(8)` | Start Date of Fiscal Week |
+| `FiscalWeekEndDate` |  | |  | `fiscal_week_end_date` | `DATS(8)` | End Date of Fiscal Week |
+| `FiscalYearPeriod` |  | |  | `fiscal_year_period` | `NUMC(7)` | Fiscal Year + Fiscal Period |
+| `FiscalYearQuarter` |  | |  | `fiscal_year_quarter` | `NUMC(5)` | Fiscal Year + Fiscal Quarter |
+| `FiscalYearWeek` |  | |  | `fiscal_year_week` | `NUMC(6)` | Fiscal Year + Fiscal Week |
+| `FiscalYearConsecutiveNumber` |  | |  | `cast(P_FiscalCalendarDate.fiscal_year as fins_fiscalyear_i)` | `INT4(10)` | Fiscal Year (Integer) |
+| `FiscalPeriodConsecutiveNumber` |  | |  | `fiscal_year_period_int` | `INT4(10)` | Fiscal Year Period (Numbering) |
+| `FiscalQuarterConsecutiveNumber` |  | |  | `fiscal_year_quarter_int` | `INT4(10)` | Fiscal Year Quarter (Numbering) |
+| `FiscalWeekConsecutiveNumber` |  | |  | `fiscal_year_week_int` | `INT4(10)` | Fiscal Year Week (Numbering) |
 | `_FiscalYearVariant` | | ✓ | | | | |
 | `_CalendarDate` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |

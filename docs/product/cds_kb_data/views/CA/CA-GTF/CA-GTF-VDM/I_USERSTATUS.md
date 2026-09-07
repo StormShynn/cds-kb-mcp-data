@@ -40,12 +40,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `UserStatus` | ✓ | |  | `estat` |  |  |
-| `StatusProfile` | ✓ | |  | `stsma` |  |  |
-| `StatusAuthorizationKey` |  | |  | `bersl` |  |  |
-| `StatusSequenceNumber` |  | |  | `stonr` |  |  |
-| `StatusDisplayPosition` |  | |  | `linep` |  |  |
-| `StatusDisplayPriority` |  | |  | `statp` |  |  |
+| `UserStatus` | ✓ | |  | `estat` | `CHAR(5)` | User Status |
+| `StatusProfile` | ✓ | |  | `stsma` | `CHAR(8)` | Status Profile |
+| `StatusAuthorizationKey` |  | |  | `bersl` | `CHAR(8)` | Authorization key |
+| `StatusSequenceNumber` |  | |  | `stonr` | `NUMC(2)` | Status Order Number |
+| `StatusDisplayPosition` |  | |  | `linep` | `NUMC(2)` | Position of the status in the status display |
+| `StatusDisplayPriority` |  | |  | `statp` | `NUMC(2)` | Status display priority at a particular position |
 | `_UserStatusText` | | ✓ | | | | |
 | `_StatusProfile` | | ✓ | | | | |
 

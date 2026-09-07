@@ -38,38 +38,38 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `JntOpgAgrmt` | ✓ | |  | `joa` |  |  |
-| `JntVntrContractNmbr` |  | |  | `contract` |  |  |
-| `JntVntrPayrollClearingSet` |  | |  | `payset` |  |  |
-| `JntVntrConstructionExclsnSet` |  | |  | `xsetcon` |  |  |
-| `JntVntrCatastropheExclsnSet` |  | |  | `xsetcat` |  |  |
-| `JntVntrConstructionOvhdRule` |  | |  | `conrule` |  |  |
-| `JntVntrCatastropheOvhdRule` |  | |  | `catrule` |  |  |
-| `JVAOvhdPercentProdg` |  | |  | `per1` |  |  |
-| `JVAExclsnAcctSetPercentProdg` |  | |  | `xper1` |  |  |
-| `JVAOvhdPercentDev` |  | |  | `per2` |  |  |
-| `JVAExclsnAcctSetPercentDev` |  | |  | `xper2` |  |  |
-| `JntVntrExplorationOvhdRule` |  | |  | `exprule` |  |  |
-| `JntVntrDrillingOvhdRule` |  | |  | `drlrule` |  |  |
-| `JntVntrCapitalExclsnSet` |  | |  | `xsetcap` |  |  |
-| `JntVntrOvhdOffsetCostCtr` |  | |  | `offcc` |  |  |
-| `JntOpgAgrmtProdgWellThld` |  | |  | `joaprth` |  |  |
-| `JntVntrOvhdRecurringDoc` |  | |  | `recdoc` |  |  |
-| `CompanyCodeCurrency` |  | | `_CompanyCode` | `Currency` |  |  |
-| `JntVntrOvhdFlatRateAmt` |  | |  | `flatrate` |  |  |
-| `JntVntrExpnIsEscalated` |  | |  | `escal` |  |  |
-| `JntOpgAgrmtClass` |  | |  | `aclass` |  |  |
-| `JntOpgAgrmtCreatedByUser` |  | |  | `cruser` |  |  |
-| `JntOpgAgrmtCreationTime` |  | |  | `case when crtime is null or crtime = '' then cast('000000' as abap.tims) else cast(substring(crtime, 1, 6) as abap.tims) end` |  |  |
-| `JntOpgAgrmtCreationDate` |  | |  | `case when crdate is null or crdate = '' then cast('00000000'as jv_crdate ) else crdate end` |  |  |
-| `JntOpgAgrmtLastChangedByUser` |  | |  | `chuser` |  |  |
-| `JntOpgAgrmtLastChangedTime` |  | |  | `case when chtime is null or chtime = '' then cast('000000' as abap.tims) else cast(substring(chtime, 1, 6) as abap.tims) end` |  |  |
-| `JntOpgAgrmtLastChangedDate` |  | |  | `case when chdate is null or chdate = '' then cast('00000000' as jv_chdate) else chdate end` |  |  |
-| `JntVntrPrioPerdDrillingIsCalc` |  | |  | `drillp` |  |  |
-| `JntVntrWBSElmntOvhdIsCalc` |  | |  | `allwbs` |  |  |
-| `JntOpgAgrmtDrillingPayRate` |  | |  | `dfpay` |  |  |
-| `JntOpgAgrmtNonDrillingPayRate` |  | |  | `ndpay` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `JntOpgAgrmt` | ✓ | |  | `joa` | `CHAR(6)` | Joint Operating Agreement |
+| `JntVntrContractNmbr` |  | |  | `contract` | `CHAR(24)` | JV Contract Number |
+| `JntVntrPayrollClearingSet` |  | |  | `payset` | `CHAR(24)` | Set of Accounts to Which Payroll Burden Clearing Applies |
+| `JntVntrConstructionExclsnSet` |  | |  | `xsetcon` | `CHAR(24)` | Set of Accounts to Exclude from Construction Overhead Calc. |
+| `JntVntrCatastropheExclsnSet` |  | |  | `xsetcat` | `CHAR(24)` | Set of Accounts to Exclude from Catastrophe Overhead Calc. |
+| `JntVntrConstructionOvhdRule` |  | |  | `conrule` | `CHAR(6)` | Construction Overhead Rule |
+| `JntVntrCatastropheOvhdRule` |  | |  | `catrule` | `CHAR(6)` | Catastrophe Overhead Rule |
+| `JVAOvhdPercentProdg` |  | |  | `per1` | `DEC(5)` | Percent 1 (% Producing U.S., % Regular Canada)  (JVA) |
+| `JVAExclsnAcctSetPercentProdg` |  | |  | `xper1` | `CHAR(24)` | Exclusion Set of Accounts - Percent 1 (JVA) |
+| `JVAOvhdPercentDev` |  | |  | `per2` | `DEC(5)` | Percent 2 (% Development U.S., % Special Canada)  (JVA) |
+| `JVAExclsnAcctSetPercentDev` |  | |  | `xper2` | `CHAR(24)` | Exclusion Set of Accounts - Percent 2 (JVA) |
+| `JntVntrExplorationOvhdRule` |  | |  | `exprule` | `CHAR(6)` | Exploration Overhead Rule |
+| `JntVntrDrillingOvhdRule` |  | |  | `drlrule` | `CHAR(6)` | Drilling Overhead Rule |
+| `JntVntrCapitalExclsnSet` |  | |  | `xsetcap` | `CHAR(24)` | Set of Accounts to Exclude from Capital Overhead Calc. |
+| `JntVntrOvhdOffsetCostCtr` |  | |  | `offcc` | `CHAR(10)` | Overhead Offset Cost Centre - JV |
+| `JntOpgAgrmtProdgWellThld` |  | |  | `joaprth` | `CHAR(1)` | Perform Producing Well Threshold Calculation at JOA Level |
+| `JntVntrOvhdRecurringDoc` |  | |  | `recdoc` | `CHAR(10)` | Recurring Document Number - JV overheads |
+| `CompanyCodeCurrency` |  | | `_CompanyCode` | `Currency` | `CUKY(5)` | Currency Key |
+| `JntVntrOvhdFlatRateAmt` |  | |  | `flatrate` | `CURR(13)` | Flat Rate - JV overheads |
+| `JntVntrExpnIsEscalated` |  | |  | `escal` | `CHAR(1)` | Escalatable |
+| `JntOpgAgrmtClass` |  | |  | `aclass` | `CHAR(2)` | Joint Operating Agreement Class |
+| `JntOpgAgrmtCreatedByUser` |  | |  | `cruser` | `CHAR(12)` | User who Created |
+| `JntOpgAgrmtCreationTime` |  | |  | `case when crtime is null or crtime = '' then cast('000000' as abap.tims) else cast(substring(crtime, 1, 6) as abap.tims) end` | `TIMS(6)` |  |
+| `JntOpgAgrmtCreationDate` |  | |  | `case when crdate is null or crdate = '' then cast('00000000'as jv_crdate ) else crdate end` | `DATS(8)` | Date Created |
+| `JntOpgAgrmtLastChangedByUser` |  | |  | `chuser` | `CHAR(12)` | User who Last Changed |
+| `JntOpgAgrmtLastChangedTime` |  | |  | `case when chtime is null or chtime = '' then cast('000000' as abap.tims) else cast(substring(chtime, 1, 6) as abap.tims) end` | `TIMS(6)` |  |
+| `JntOpgAgrmtLastChangedDate` |  | |  | `case when chdate is null or chdate = '' then cast('00000000' as jv_chdate) else chdate end` | `DATS(8)` | Date Last Changed |
+| `JntVntrPrioPerdDrillingIsCalc` |  | |  | `drillp` | `CHAR(1)` | Calculate Drilling Days using prior period. |
+| `JntVntrWBSElmntOvhdIsCalc` |  | |  | `allwbs` | `CHAR(1)` | Calculate all WBS elements for overhead |
+| `JntOpgAgrmtDrillingPayRate` |  | |  | `dfpay` | `DEC(5)` | % Drilling Payroll Burden in U.S. |
+| `JntOpgAgrmtNonDrillingPayRate` |  | |  | `ndpay` | `DEC(5)` | Non-Drilling % to Apply for U.S. Payroll Burden Clearing |
 | `_CompanyCode` | | ✓ | | | | |
 | `_JntOpgAgrmtClass` | | ✓ | | | | |
 | `_JntOpgAgrmtText` | | ✓ | | | | |

@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `JVAJointInterestBillingClass` | ✓ | |  | `class` |  |  |
-| `JVAJointInterestBillgSubClass` | ✓ | |  | `subclass` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `JVAJointInterestBillingClass` | ✓ | |  | `class` | `CHAR(3)` | JIB/JIBE Class |
+| `JVAJointInterestBillgSubClass` | ✓ | |  | `subclass` | `CHAR(5)` | JIB/JIBE Subclass A |
 
 ## Source Code
 

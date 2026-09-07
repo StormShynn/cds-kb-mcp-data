@@ -39,19 +39,19 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FiscalYearVariant` | ✓ | |  | `fiscal_year_variant` |  |  |
-| `FiscalYear` | ✓ | |  | `fiscal_year` |  |  |
-| `FiscalPeriod` | ✓ | |  | `fiscal_period` |  |  |
-| `FiscalPeriodStartDate` |  | |  | `fiscal_period_start_date` |  |  |
-| `FiscalPeriodEndDate` |  | |  | `fiscal_period_end_date` |  |  |
-| `IsSpecialPeriod` |  | |  | `is_special_period` |  |  |
-| `FiscalYearStartDate` |  | |  | `fiscal_year_start_date` |  |  |
-| `FiscalYearEndDate` |  | |  | `fiscal_year_end_date` |  |  |
-| `FiscalYearPeriod` |  | |  | `fiscal_year_period` |  |  |
-| `FiscalPeriodConsecutiveNumber` |  | | `_FiscalCalendarDate` | `FiscalPeriodConsecutiveNumber` |  |  |
-| `NextFiscalPeriod` |  | |  | `next_fiscal_period` |  |  |
-| `NextFiscalPeriodFiscalYear` |  | |  | `next_fiscal_period_fiscal_year` |  |  |
-| `NextFsclPeriodConsecutiveNmbr` |  | |  | `_FiscalCalendarDate.FiscalPeriodConsecutiveNumber + 1` |  |  |
+| `FiscalYearVariant` | ✓ | |  | `fiscal_year_variant` | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalYear` | ✓ | |  | `fiscal_year` | `NUMC(4)` | Fiscal Year |
+| `FiscalPeriod` | ✓ | |  | `fiscal_period` | `NUMC(3)` | Fiscal Period |
+| `FiscalPeriodStartDate` |  | |  | `fiscal_period_start_date` | `DATS(8)` | Start Date of Fiscal Period |
+| `FiscalPeriodEndDate` |  | |  | `fiscal_period_end_date` | `DATS(8)` | End Date of Fiscal Period |
+| `IsSpecialPeriod` |  | |  | `is_special_period` | `CHAR(1)` | Indicator: Is Special Period |
+| `FiscalYearStartDate` |  | |  | `fiscal_year_start_date` | `DATS(8)` | Start Date of Fiscal Year |
+| `FiscalYearEndDate` |  | |  | `fiscal_year_end_date` | `DATS(8)` | End Date of Fiscal Year |
+| `FiscalYearPeriod` |  | |  | `fiscal_year_period` | `NUMC(7)` | Fiscal Year + Fiscal Period |
+| `FiscalPeriodConsecutiveNumber` |  | | `_FiscalCalendarDate` | `FiscalPeriodConsecutiveNumber` | `INT4(10)` | Fiscal Year Period (Numbering) |
+| `NextFiscalPeriod` |  | |  | `next_fiscal_period` | `NUMC(3)` | Next Fiscal Period |
+| `NextFiscalPeriodFiscalYear` |  | |  | `next_fiscal_period_fiscal_year` | `NUMC(4)` | Fiscal Year of Next Fiscal Period |
+| `NextFsclPeriodConsecutiveNmbr` |  | |  | `_FiscalCalendarDate.FiscalPeriodConsecutiveNumber + 1` | `INT4(10)` |  |
 | `_FiscalYearVariant` | | ✓ | | | | |
 | `_FiscalPeriodStartDate` | | ✓ | | | | |
 | `_FiscalYear` | | ✓ | | | | |

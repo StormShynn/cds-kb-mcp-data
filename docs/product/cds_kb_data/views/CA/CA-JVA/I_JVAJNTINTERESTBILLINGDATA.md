@@ -39,66 +39,66 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `FiscalYear` | ✓ | |  |  |  |  |
-| `AccountingDocument` | ✓ | |  |  |  |  |
-| `LedgerGLLineItem` | ✓ | |  |  |  |  |
-| `Ledger` | ✓ | |  | `SourceLedger` |  |  |
-| `PostingDate` |  | |  |  |  |  |
-| `FiscalPeriod` |  | |  |  |  |  |
-| `LedgerFiscalYear` |  | |  |  |  |  |
-| `FiscalYearVariant` |  | |  |  |  |  |
-| `JointVenture` |  | |  |  |  |  |
-| `JointVentureName` |  | |  | `coalesce( _JointVentureDesc[1:Language = $session.system_language].JointVentureName, JVItem._JointVentureDesc[1:Language = $session.system_language].JointVentureName )` |  |  |
-| `JointVentureEquityGroup` |  | |  |  |  |  |
-| `JointVentureCostRecoveryCode` |  | |  |  |  |  |
-| `JointVenturePartner` |  | |  |  |  |  |
-| `TransactionCurrency` |  | |  |  |  |  |
-| `AmountInTransactionCurrency` |  | |  |  |  |  |
-| `CompanyCodeCurrency` |  | |  |  |  |  |
-| `AmountInCompanyCodeCurrency` |  | |  |  |  |  |
-| `GlobalCurrency` |  | |  |  |  |  |
-| `AmountInGlobalCurrency` |  | |  |  |  |  |
-| `FunctionalCurrency` |  | |  |  |  |  |
-| `AmountInFunctionalCurrency` |  | |  |  |  |  |
-| `FreeDefinedCurrency1` |  | |  |  |  |  |
-| `AmountInFreeDefinedCurrency1` |  | |  |  |  |  |
-| `FreeDefinedCurrency2` |  | |  |  |  |  |
-| `AmountInFreeDefinedCurrency2` |  | |  |  |  |  |
-| `FreeDefinedCurrency3` |  | |  |  |  |  |
-| `AmountInFreeDefinedCurrency3` |  | |  |  |  |  |
-| `FreeDefinedCurrency4` |  | |  |  |  |  |
-| `AmountInFreeDefinedCurrency4` |  | |  | `JVItem. AmountInFreeDefinedCurrency4` |  |  |
-| `FreeDefinedCurrency5` |  | |  |  |  |  |
-| `AmountInFreeDefinedCurrency5` |  | |  |  |  |  |
-| `FreeDefinedCurrency6` |  | |  |  |  |  |
-| `AmountInFreeDefinedCurrency6` |  | |  |  |  |  |
-| `FreeDefinedCurrency7` |  | |  |  |  |  |
-| `AmountInFreeDefinedCurrency7` |  | |  |  |  |  |
-| `FreeDefinedCurrency8` |  | |  |  |  |  |
-| `AmountInFreeDefinedCurrency8` |  | |  |  |  |  |
-| `JVAFundingCurrency1` |  | |  | `cast( JVItem.JVAFundingCurrency as jv_fundcur preserving type )` |  |  |
-| `AmountInJVAFundingCurrency` |  | |  | `cast( JVItem.AmountInJVAFundingCurrency as jv_fundamt preserving type )` |  |  |
-| `JVAExpenditureType` |  | |  |  |  |  |
-| `JVAProjIsAuthzdForCptlExpndtr` |  | |  |  |  |  |
-| `JntVntrAuthznForExpndtrObject` |  | |  | `cast( _WBSElementBasicData.WBSElementExternalID as jv_afenum_cds )` |  |  |
-| `CostCenter` |  | |  |  |  |  |
-| `CostCenterName` |  | | `_CostCenterText` | `CostCenterName` |  |  |
-| `ControllingArea` |  | |  |  |  |  |
-| `ChartOfAccounts` |  | |  |  |  |  |
-| `WBSElementExternalID` |  | |  |  |  |  |
-| `WBSDescription` |  | |  |  |  |  |
-| `WBSElementInternalID` |  | |  |  |  |  |
-| `OrderID` |  | |  |  |  |  |
-| `SuperiorOrder` |  | |  |  |  |  |
-| `AssetTransactionType` |  | |  |  |  |  |
-| `GLAccount` |  | |  |  |  |  |
-| `JntIntrstBillgClass` |  | |  |  |  |  |
-| `JntIntrstBillgSubClass` |  | |  |  |  |  |
-| `JntIntrstBillgSubClass2` |  | |  |  |  |  |
-| `JntVntrCostTypeText` |  | |  |  |  |  |
-| `JntIntrstBillgCostObjectType` |  | |  |  |  |  |
-| `JntVntrSuspenseStatusText` |  | |  | `cast( case when BillIndex.JntIntrstBillgClass is not initial and BillIndex.JntIntrstBillgSubClass is not initial and BillIndex.JntIntrstBillgSubClass2 is not initial then concat( concat( BillIndex.JntIntrstBillgClass, '/' ), concat( concat( BillIndex.JntIntrstBillgSubClass,'/' ), BillIndex.JntIntrstBillgSubClass2 ) ) when BillIndex.JntIntrstBillgClass is not initial and BillIndex.JntIntrstBillgSubClass is not initial then concat( concat( BillIndex.JntIntrstBillgClass, '/' ), BillIndex.JntIntrstBillgSubClass ) when BillIndex.JntIntrstBillgClass is not initial then BillIndex.JntIntrstBillgClass else ' ' end as abap.char(33) )` |  |  |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocument` | ✓ | |  |  | `CHAR(10)` | Journal Entry |
+| `LedgerGLLineItem` | ✓ | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `Ledger` | ✓ | |  | `SourceLedger` | `CHAR(2)` | Source Ledger |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `JointVenture` |  | |  |  | `CHAR(6)` | Joint Venture |
+| `JointVentureName` |  | |  | `coalesce( _JointVentureDesc[1:Language = $session.system_language].JointVentureName, JVItem._JointVentureDesc[1:Language = $session.system_language].JointVentureName )` | `CHAR(35)` |  |
+| `JointVentureEquityGroup` |  | |  |  | `CHAR(3)` | Joint Venture Equity Group |
+| `JointVentureCostRecoveryCode` |  | |  |  | `CHAR(2)` | Joint Venture Cost Recovery Code |
+| `JointVenturePartner` |  | |  |  | `CHAR(10)` | Joint Venture Partner |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
+| `AmountInTransactionCurrency` |  | |  |  | `CURR(23)` | Amount in Transaction Currency |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
+| `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `AmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Amount in Global Currency |
+| `FunctionalCurrency` |  | |  |  | `CUKY(5)` | Functional Currency |
+| `AmountInFunctionalCurrency` |  | |  |  | `CURR(23)` | Amount in Functional Currency |
+| `FreeDefinedCurrency1` |  | |  |  | `CUKY(5)` | Freely Defined Currency 1 |
+| `AmountInFreeDefinedCurrency1` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 1 |
+| `FreeDefinedCurrency2` |  | |  |  | `CUKY(5)` | Freely Defined Currency 2 |
+| `AmountInFreeDefinedCurrency2` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 2 |
+| `FreeDefinedCurrency3` |  | |  |  | `CUKY(5)` | Freely Defined Currency 3 |
+| `AmountInFreeDefinedCurrency3` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 3 |
+| `FreeDefinedCurrency4` |  | |  |  | `CUKY(5)` | Freely Defined Currency 4 |
+| `AmountInFreeDefinedCurrency4` |  | |  | `JVItem. AmountInFreeDefinedCurrency4` | `CURR(23)` | Amount in Freely Defined Currency 4 |
+| `FreeDefinedCurrency5` |  | |  |  | `CUKY(5)` | Freely Defined Currency 5 |
+| `AmountInFreeDefinedCurrency5` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 5 |
+| `FreeDefinedCurrency6` |  | |  |  | `CUKY(5)` | Freely Defined Currency 6 |
+| `AmountInFreeDefinedCurrency6` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 6 |
+| `FreeDefinedCurrency7` |  | |  |  | `CUKY(5)` | Freely Defined Currency 7 |
+| `AmountInFreeDefinedCurrency7` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 7 |
+| `FreeDefinedCurrency8` |  | |  |  | `CUKY(5)` | Freely Defined Currency 8 |
+| `AmountInFreeDefinedCurrency8` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 8 |
+| `JVAFundingCurrency1` |  | |  | `cast( JVItem.JVAFundingCurrency as jv_fundcur preserving type )` | `CUKY(5)` | Funding Currency |
+| `AmountInJVAFundingCurrency` |  | |  | `cast( JVItem.AmountInJVAFundingCurrency as jv_fundamt preserving type )` | `CURR(23)` | JV Funding currency amount |
+| `JVAExpenditureType` |  | |  |  | `CHAR(1)` | JV Expenditure Type |
+| `JVAProjIsAuthzdForCptlExpndtr` |  | |  |  | `CHAR(1)` | JV Expenditure Type |
+| `JntVntrAuthznForExpndtrObject` |  | |  | `cast( _WBSElementBasicData.WBSElementExternalID as jv_afenum_cds )` | `CHAR(22)` | AFE Object |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `CostCenterName` |  | | `_CostCenterText` | `CostCenterName` | `CHAR(20)` | Cost Center Name |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `WBSElementExternalID` |  | |  |  | `CHAR(24)` | WBS Element External ID |
+| `WBSDescription` |  | |  |  | `CHAR(40)` | Work Breakdown Structure Element Name |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element Internal ID |
+| `OrderID` |  | |  |  | `CHAR(12)` | Order ID |
+| `SuperiorOrder` |  | |  |  | `CHAR(12)` | Number of Superior Order |
+| `AssetTransactionType` |  | |  |  | `CHAR(3)` | Asset Transaction Type |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `JntIntrstBillgClass` |  | |  |  | `CHAR(3)` | JIB/JIBE Class |
+| `JntIntrstBillgSubClass` |  | |  |  | `CHAR(5)` | JIB/JIBE Subclass A |
+| `JntIntrstBillgSubClass2` |  | |  |  | `CHAR(24)` | JV Subclass B |
+| `JntVntrCostTypeText` |  | |  |  | `CHAR(28)` | JIB Cost Objects |
+| `JntIntrstBillgCostObjectType` |  | |  |  | `CHAR(28)` | JIB Cost Objects |
+| `JntVntrSuspenseStatusText` |  | |  | `cast( case when BillIndex.JntIntrstBillgClass is not initial and BillIndex.JntIntrstBillgSubClass is not initial and BillIndex.JntIntrstBillgSubClass2 is not initial then concat( concat( BillIndex.JntIntrstBillgClass, '/' ), concat( concat( BillIndex.JntIntrstBillgSubClass,'/' ), BillIndex.JntIntrstBillgSubClass2 ) ) when BillIndex.JntIntrstBillgClass is not initial and BillIndex.JntIntrstBillgSubClass is not initial then concat( concat( BillIndex.JntIntrstBillgClass, '/' ), BillIndex.JntIntrstBillgSubClass ) when BillIndex.JntIntrstBillgClass is not initial then BillIndex.JntIntrstBillgClass else ' ' end as abap.char(33) )` | `CHAR(33)` |  |
 | `_FiscalPeriod` |  | |  | `_FiscalPeriodCompanyCode` |  |  |
 | `_WBSElementBasicDataText` |  | |  | `_WBSElementBasicData` |  |  |
 | `_JournalEntry` | | ✓ | | | | |

@@ -39,19 +39,19 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DerivativeContrSpecification` | ✓ | |  |  |  |  |
-| `MarketIdentifierCode` | ✓ | |  |  |  |  |
-| `MaturityKeyDate` | ✓ | |  |  |  |  |
-| `PriceQuotationType` | ✓ | |  |  |  |  |
-| `PriceQuotationDate` | ✓ | |  |  |  |  |
-| `PriceQuotationTime` | ✓ | |  |  |  |  |
-| `ValidityStartUTCDateTime` | ✓ | |  |  |  |  |
-| `TimeToMaturity` |  | |  |  |  |  |
-| `PriceQuotation` |  | |  |  |  |  |
-| `UnitOfMeasure` |  | |  |  |  |  |
-| `Currency` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `IsDeleted` |  | |  |  |  |  |
+| `DerivativeContrSpecification` | ✓ | |  |  | `CHAR(20)` | Derivative Contract Specification ID |
+| `MarketIdentifierCode` | ✓ | |  |  | `CHAR(4)` | Market Identifier Code |
+| `MaturityKeyDate` | ✓ | |  |  | `DATS(8)` | Maturity Key Date |
+| `PriceQuotationType` | ✓ | |  |  | `CHAR(2)` | Type of Price Quotation |
+| `PriceQuotationDate` | ✓ | |  |  | `DATS(8)` | Date of Price Quotation |
+| `PriceQuotationTime` | ✓ | |  |  | `TIMS(6)` | Time of Price Quotation |
+| `ValidityStartUTCDateTime` | ✓ | |  |  | `DEC(21)` | Commodity Price Valid From (Date and Time) |
+| `TimeToMaturity` |  | |  |  | `CHAR(10)` | Time to Maturity |
+| `PriceQuotation` |  | |  |  | `DF34(31)` | Quotation Price |
+| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Quotation Unit of Measure |
+| `Currency` |  | |  |  | `CUKY(5)` | Quotation Currency |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | First Entered By |
+| `IsDeleted` |  | |  |  | `CHAR(1)` | Price Quotation Logically Deleted |
 | `_DerivativeContrSpecification` | | ✓ | | | | |
 | `_MarketIdentifierCode` | | ✓ | | | | |
 | `_UnitOfMeasure` | | ✓ | | | | |

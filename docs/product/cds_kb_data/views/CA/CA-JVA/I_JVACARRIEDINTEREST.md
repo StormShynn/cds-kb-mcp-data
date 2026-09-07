@@ -38,12 +38,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `JointVenture` | ✓ | |  | `vname` |  |  |
-| `JointVentureEquityGroup` | ✓ | |  | `egrup` |  |  |
-| `JointVentureCarriedPartner` | ✓ | |  | `carrowner` |  |  |
-| `JointVentureCarryingPartner` | ✓ | |  | `carryowner` |  |  |
-| `JVACarriedSharePercent` |  | |  | `carrshare` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `JointVenture` | ✓ | |  | `vname` | `CHAR(6)` | Joint Venture |
+| `JointVentureEquityGroup` | ✓ | |  | `egrup` | `CHAR(3)` | Equity Group |
+| `JointVentureCarriedPartner` | ✓ | |  | `carrowner` | `CHAR(10)` | JV Carried Partner |
+| `JointVentureCarryingPartner` | ✓ | |  | `carryowner` | `CHAR(10)` | JV Carrying Partner |
+| `JVACarriedSharePercent` |  | |  | `carrshare` | `DEC(9)` | Carried Share |
 | `_CompanyCode` | | ✓ | | | | |
 | `_JointVentureMasterFld` | | ✓ | | | | |
 | `_JointVentureDesc` | | ✓ | | | | |

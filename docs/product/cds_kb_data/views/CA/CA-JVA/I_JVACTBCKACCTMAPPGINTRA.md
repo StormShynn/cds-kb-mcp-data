@@ -38,11 +38,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `FromGLAccount` | ✓ | |  |  |  |  |
-| `ToGLAccount` |  | |  |  |  |  |
-| `CutbackAccount` |  | |  |  |  |  |
-| `JVAIsToKeepOriginalAccount` |  | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `FromGLAccount` | ✓ | |  |  | `CHAR(10)` | Account From |
+| `ToGLAccount` |  | |  |  | `CHAR(10)` | Account To |
+| `CutbackAccount` |  | |  |  | `CHAR(10)` | Cutback Account |
+| `JVAIsToKeepOriginalAccount` |  | |  |  | `CHAR(1)` | Keep original cutback account |
 | `_CompanyCode` | | ✓ | | | | |
 | `_FromGLAccount` | | ✓ | | | | |
 | `_ToGLAccount` | | ✓ | | | | |

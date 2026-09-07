@@ -38,8 +38,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TimeSheetTaskTypeRelevanceCode` | ✓ | |  | `cast(dd07l.domvalue_l as catsxt_tasktype_relevance)` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `TimeSheetTaskTypeRelevanceCode` | ✓ | |  | `cast(dd07l.domvalue_l as catsxt_tasktype_relevance)` | `CHAR(1)` | Task Type Relevance |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

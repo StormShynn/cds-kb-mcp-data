@@ -38,27 +38,27 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LglCntntMCategory` | ✓ | |  |  |  |  |
-| `LglCntntMCatLevel` |  | |  |  |  |  |
-| `LglCntntMCatType` |  | |  |  |  |  |
-| `LglCntntMCatIsSelect` |  | |  |  |  |  |
-| `LglCntntMCatIsMultiSelection` |  | |  |  |  |  |
-| `LglCntntMCatIsObsolete` |  | |  |  |  |  |
-| `LglCntntMCatModel` |  | |  |  |  |  |
-| `LglCntntMCategoryValue` |  | |  |  |  |  |
-| `LglCntntMCatIsUpdateFromTable` |  | |  |  |  |  |
-| `LglCntntMCreatedByUser` |  | |  |  |  |  |
-| `LglCntntMCreatedUTCDateTime` |  | |  |  |  |  |
-| `LglCntntMChangedByUser` |  | |  |  |  |  |
-| `LglCntntMChangedUTCDateTime` |  | |  |  |  |  |
-| `LglCntntMParentCategory` |  | |  |  |  |  |
-| `LglCntntMRootCategory` |  | |  |  |  |  |
-| `LglCntntMCatPurpose` |  | |  |  |  |  |
-| `LglCntntMCatIsSystGenerated` |  | |  |  |  |  |
-| `LglCntntMCatConstant` |  | |  |  |  |  |
-| `LglCntntMCategoryName` |  | |  |  |  |  |
-| `LglCntntMCategoryNameSyst` |  | |  |  |  |  |
-| `LglCntntMCategoryNameInEnglish` |  | |  |  |  |  |
+| `LglCntntMCategory` | ✓ | |  |  | `NUMC(6)` | Category ID |
+| `LglCntntMCatLevel` |  | |  |  | `INT1(3)` | Category Level |
+| `LglCntntMCatType` |  | |  |  | `CHAR(1)` | Category Type |
+| `LglCntntMCatIsSelect` |  | |  |  | `CHAR(1)` | Category Is Selectable |
+| `LglCntntMCatIsMultiSelection` |  | |  |  | `CHAR(1)` | Multiple Selection of Categories |
+| `LglCntntMCatIsObsolete` |  | |  |  | `CHAR(1)` | Category Is Obsolete |
+| `LglCntntMCatModel` |  | |  |  | `CHAR(120)` | Model for Dynamic Categories |
+| `LglCntntMCategoryValue` |  | |  |  | `CHAR(15)` | Category Value |
+| `LglCntntMCatIsUpdateFromTable` |  | |  |  | `CHAR(1)` | Is Update From Table |
+| `LglCntntMCreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `LglCntntMCreatedUTCDateTime` |  | |  |  | `DEC(21)` | Created On |
+| `LglCntntMChangedByUser` |  | |  |  | `CHAR(12)` | Changed By User |
+| `LglCntntMChangedUTCDateTime` |  | |  |  | `DEC(21)` | Changed UTC Date Time |
+| `LglCntntMParentCategory` |  | |  |  | `NUMC(6)` | Parent Category ID |
+| `LglCntntMRootCategory` |  | |  |  | `NUMC(6)` | Root Category ID |
+| `LglCntntMCatPurpose` |  | |  |  | `CHAR(1)` | Category Purpose |
+| `LglCntntMCatIsSystGenerated` |  | |  |  | `CHAR(1)` | System generated category |
+| `LglCntntMCatConstant` |  | |  |  | `CHAR(55)` | Category Qualifier |
+| `LglCntntMCategoryName` |  | |  |  | `CHAR(40)` | Category Name |
+| `LglCntntMCategoryNameSyst` |  | |  |  | `CHAR(40)` | Category Name |
+| `LglCntntMCategoryNameInEnglish` |  | |  |  | `CHAR(40)` | Category Name |
 
 ## Source Code
 

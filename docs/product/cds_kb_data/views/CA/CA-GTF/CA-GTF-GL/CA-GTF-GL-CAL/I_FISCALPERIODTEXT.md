@@ -41,11 +41,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `FiscalYearVariant` | ✓ | |  | `cast( t009c.periv as fis_periv preserving type )` |  |  |
-| `FiscalYear` | ✓ | |  | `cast( finsc_period.fiscal_year as fis_gjahr_no_conv preserving type )` |  |  |
-| `FiscalPeriod` | ✓ | |  | `cast( t009c.poper as fins_fiscalperiod preserving type )` |  |  |
-| `FiscalPeriodName` |  | |  | `ltext` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `FiscalYearVariant` | ✓ | |  | `cast( t009c.periv as fis_periv preserving type )` | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalYear` | ✓ | |  | `cast( finsc_period.fiscal_year as fis_gjahr_no_conv preserving type )` | `NUMC(4)` | Fiscal Year |
+| `FiscalPeriod` | ✓ | |  | `cast( t009c.poper as fins_fiscalperiod preserving type )` | `NUMC(3)` | Fiscal Period |
+| `FiscalPeriodName` |  | |  | `ltext` | `CHAR(20)` | Period name long text |
 | `_FiscalYearVariant` | | ✓ | | | | |
 | `_FiscalYear` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |

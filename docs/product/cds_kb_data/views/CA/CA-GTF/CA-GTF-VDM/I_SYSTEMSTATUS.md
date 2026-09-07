@@ -40,8 +40,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SystemStatus` | ✓ | |  | `istat` |  |  |
-| `StatusIsHidden` |  | |  | `nodis` |  |  |
+| `SystemStatus` | ✓ | |  | `istat` | `CHAR(5)` | System status |
+| `StatusIsHidden` |  | |  | `nodis` | `CHAR(1)` | 'Do not display status' flag |
 | `_SystemStatusText` | | ✓ | | | | |
 
 ## Associations

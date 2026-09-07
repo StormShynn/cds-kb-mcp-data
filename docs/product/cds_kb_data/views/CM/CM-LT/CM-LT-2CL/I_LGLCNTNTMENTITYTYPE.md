@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LglCntntMEntityType` | ✓ | |  |  |  |  |
+| `LglCntntMEntityType` | ✓ | |  |  | `CHAR(4)` | Entity Type |
 | `_LglCntntMEntityTypeText` | | ✓ | | | | |
 
 ## Associations

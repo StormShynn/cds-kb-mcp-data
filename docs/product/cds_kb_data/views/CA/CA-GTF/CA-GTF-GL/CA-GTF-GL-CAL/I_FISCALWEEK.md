@@ -39,20 +39,20 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FiscalYearVariant` | ✓ | |  |  |  |  |
-| `FiscalYear` | ✓ | |  |  |  |  |
-| `FiscalYearWeek` | ✓ | |  |  |  |  |
-| `FiscalWeek` | ✓ | |  |  |  |  |
-| `FiscalYearStartDate` |  | |  |  |  |  |
-| `FiscalYearEndDate` |  | |  |  |  |  |
-| `FiscalWeekStartDate` |  | |  |  |  |  |
-| `FiscalWeekEndDate` |  | |  |  |  |  |
-| `FiscalWeekConsecutiveNumber` |  | |  |  |  |  |
-| `NextFiscalYearWeek` |  | |  |  |  |  |
-| `NextFiscalWeek` |  | |  |  |  |  |
-| `NextFiscalWeekStartDate` |  | |  |  |  |  |
-| `NextFiscalWeekEndDate` |  | |  |  |  |  |
-| `NextFsclWeekConsecutiveNmbr` |  | |  |  |  |  |
+| `FiscalYearVariant` | ✓ | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalYearWeek` | ✓ | |  |  | `NUMC(6)` | Fiscal Year + Fiscal Week |
+| `FiscalWeek` | ✓ | |  |  | `NUMC(2)` | Fiscal Week |
+| `FiscalYearStartDate` |  | |  |  | `DATS(8)` | Start Date of Fiscal Year |
+| `FiscalYearEndDate` |  | |  |  | `DATS(8)` | End Date of Fiscal Year |
+| `FiscalWeekStartDate` |  | |  |  | `DATS(8)` | Start Date of Fiscal Week |
+| `FiscalWeekEndDate` |  | |  |  | `DATS(8)` | End Date of Fiscal Week |
+| `FiscalWeekConsecutiveNumber` |  | |  |  | `INT4(10)` | Fiscal Year Week (Numbering) |
+| `NextFiscalYearWeek` |  | |  |  | `NUMC(6)` |  |
+| `NextFiscalWeek` |  | |  |  | `NUMC(2)` |  |
+| `NextFiscalWeekStartDate` |  | |  |  | `DATS(8)` |  |
+| `NextFiscalWeekEndDate` |  | |  |  | `DATS(8)` |  |
+| `NextFsclWeekConsecutiveNmbr` |  | |  |  | `INT4(10)` |  |
 | `_FiscalYear` | | ✓ | | | | |
 | `_FiscalYearWeek` | | ✓ | | | | |
 

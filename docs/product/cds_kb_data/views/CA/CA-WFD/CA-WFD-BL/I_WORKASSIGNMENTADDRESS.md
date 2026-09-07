@@ -40,47 +40,47 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkAssignmentExternalID` | ✓ | | `_Assignment` | `WorkAssignmentExternalID` |  |  |
-| `Country2DigitISOCode` | ✓ | | `_Assignment` | `Country2DigitISOCode` |  |  |
-| `AddressNumber` | ✓ | | `_EmploymentAddress` | `AddressID` |  |  |
-| `WorkforcePersonExternalID` |  | | `_AssignmentBP` | `WorkforcePersonExternalID` |  |  |
-| `BusinessPartner` |  | | `_AssignmentBP` | `BusinessPartner` |  |  |
-| `StartDate` |  | |  | `cast (tstmp_to_dats( _EmploymentAddress.ValidityStartDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_start_date)` |  |  |
-| `EndDate` |  | |  | `cast (tstmp_to_dats( _EmploymentAddress.ValidityEndDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_end_date)` |  |  |
-| `Country` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `Country` |  |  |
-| `PostalCode` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `PostalCode` |  |  |
-| `Region` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `Region` |  |  |
-| `SecondaryRegion` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `SecondaryRegion` |  |  |
-| `SecondaryRegionName` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `SecondaryRegionName` |  |  |
-| `TertiaryRegion` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `TertiaryRegion` |  |  |
-| `TertiaryRegionName` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `TertiaryRegionName` |  |  |
-| `CityName` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `CityName` |  |  |
-| `DistrictName` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `DistrictName` |  |  |
-| `StreetPrefixName1` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `StreetPrefixName1` |  |  |
-| `StreetPrefixName2` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `StreetPrefixName2` |  |  |
-| `StreetName` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `StreetName` |  |  |
-| `StreetSuffixName1` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `StreetSuffixName1` |  |  |
-| `StreetSuffixName2` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `StreetSuffixName2` |  |  |
-| `HouseNumber` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `HouseNumber` |  |  |
-| `HouseNumberSupplementText` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `HouseNumberSupplementText` |  |  |
-| `Floor` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `Floor` |  |  |
-| `RoomNumber` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `RoomNumber` |  |  |
-| `CareOfName` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `CareOfName` |  |  |
-| `POBoxPostalCode` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `POBoxPostalCode` |  |  |
-| `IsBlocked` |  | | `_Assignment` | `IsBlocked` |  |  |
-| `IsBusinessPurposeCompleted` |  | | `_BP` | `IsBusinessPurposeCompleted` |  |  |
-| `DataControllerSet` |  | | `_BP` | `DataControllerSet` |  |  |
-| `DataController1` |  | | `_BP` | `DataController1` |  |  |
-| `DataController2` |  | | `_BP` | `DataController2` |  |  |
-| `DataController3` |  | | `_BP` | `DataController3` |  |  |
-| `DataController4` |  | | `_BP` | `DataController4` |  |  |
-| `DataController5` |  | | `_BP` | `DataController5` |  |  |
-| `DataController6` |  | | `_BP` | `DataController6` |  |  |
-| `DataController7` |  | | `_BP` | `DataController7` |  |  |
-| `DataController8` |  | | `_BP` | `DataController8` |  |  |
-| `DataController9` |  | | `_BP` | `DataController9` |  |  |
-| `DataController10` |  | | `_BP` | `DataController10` |  |  |
-| `AuthorizationGroup` |  | | `_BP` | `AuthorizationGroup` |  |  |
+| `WorkAssignmentExternalID` | ✓ | | `_Assignment` | `WorkAssignmentExternalID` | `CHAR(100)` | Workforce Assignment External ID |
+| `Country2DigitISOCode` | ✓ | | `_Assignment` | `Country2DigitISOCode` | `CHAR(2)` | Workforce Country ISO Code |
+| `AddressNumber` | ✓ | | `_EmploymentAddress` | `AddressID` | `CHAR(10)` | Address Number |
+| `WorkforcePersonExternalID` |  | | `_AssignmentBP` | `WorkforcePersonExternalID` | `CHAR(100)` | External Person ID |
+| `BusinessPartner` |  | | `_AssignmentBP` | `BusinessPartner` | `CHAR(10)` | Business Partner Number |
+| `StartDate` |  | |  | `cast (tstmp_to_dats( _EmploymentAddress.ValidityStartDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_start_date)` | `DATS(8)` | Start Date |
+| `EndDate` |  | |  | `cast (tstmp_to_dats( _EmploymentAddress.ValidityEndDate, abap_system_timezone( $session.client,'NULL' ), $session.client, 'NULL' ) as vdm_v_end_date)` | `DATS(8)` | End Date |
+| `Country` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `Country` | `CHAR(3)` | Country/Region Key |
+| `PostalCode` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `PostalCode` | `CHAR(10)` | City Postal Code |
+| `Region` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `Region` | `CHAR(3)` | Region (State, Province, County) |
+| `SecondaryRegion` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `SecondaryRegion` | `CHAR(8)` | County code for county |
+| `SecondaryRegionName` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `SecondaryRegionName` | `CHAR(40)` | County |
+| `TertiaryRegion` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `TertiaryRegion` | `CHAR(8)` | Township code for Township |
+| `TertiaryRegionName` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `TertiaryRegionName` | `CHAR(40)` | Township |
+| `CityName` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `CityName` | `CHAR(40)` | City |
+| `DistrictName` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `DistrictName` | `CHAR(40)` | District |
+| `StreetPrefixName1` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `StreetPrefixName1` | `CHAR(40)` | Street 2 |
+| `StreetPrefixName2` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `StreetPrefixName2` | `CHAR(40)` | Street 3 |
+| `StreetName` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `StreetName` | `CHAR(60)` | Street |
+| `StreetSuffixName1` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `StreetSuffixName1` | `CHAR(40)` | Street 4 |
+| `StreetSuffixName2` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `StreetSuffixName2` | `CHAR(40)` | Street 5 |
+| `HouseNumber` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `HouseNumber` | `CHAR(10)` | House Number |
+| `HouseNumberSupplementText` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `HouseNumberSupplementText` | `CHAR(10)` | House number supplement |
+| `Floor` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `Floor` | `CHAR(10)` | Floor in Building |
+| `RoomNumber` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `RoomNumber` | `CHAR(10)` | Room or Apartment Number |
+| `CareOfName` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `CareOfName` | `CHAR(40)` | c/o name |
+| `POBoxPostalCode` |  | | `_EmploymentAddress._AddressDefaultRepresentation` | `POBoxPostalCode` | `CHAR(10)` | PO Box Postal Code |
+| `IsBlocked` |  | | `_Assignment` | `IsBlocked` | `CHAR(1)` | Blocked Indicator |
+| `IsBusinessPurposeCompleted` |  | | `_BP` | `IsBusinessPurposeCompleted` | `CHAR(1)` | Business Purpose Completed Flag |
+| `DataControllerSet` |  | | `_BP` | `DataControllerSet` | `CHAR(1)` | BP: Data Controller Set Flag |
+| `DataController1` |  | | `_BP` | `DataController1` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController2` |  | | `_BP` | `DataController2` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController3` |  | | `_BP` | `DataController3` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController4` |  | | `_BP` | `DataController4` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController5` |  | | `_BP` | `DataController5` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController6` |  | | `_BP` | `DataController6` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController7` |  | | `_BP` | `DataController7` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController8` |  | | `_BP` | `DataController8` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController9` |  | | `_BP` | `DataController9` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `DataController10` |  | | `_BP` | `DataController10` | `CHAR(30)` | BP: Data Controller (Internal Use Only) |
+| `AuthorizationGroup` |  | | `_BP` | `AuthorizationGroup` | `CHAR(4)` | Authorization Group |
 | `_BPProtectedAddress` | | ✓ | | | | |
 | `_WorkAssignment` | | ✓ | | | | |
 | `_WorkforcePerson` | | ✓ | | | | |

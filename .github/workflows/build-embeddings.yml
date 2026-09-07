@@ -58,7 +58,7 @@ jobs:
       # transformers.js downloads the ONNX model (~90 MB) on first run; cache
       # it across weekly runs so embedding doesn't re-fetch every time.
       - name: Cache local embedding model
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/.cache/huggingface
           key: transformersjs-embeddings-${{ runner.os }}

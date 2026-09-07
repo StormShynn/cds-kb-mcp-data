@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DateFunction` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `DateFunctionName` |  | |  |  |  |  |
-| `DateFunctionDescription` |  | |  |  |  |  |
+| `DateFunction` | ✓ | |  |  | `CHAR(32)` | Relative Date Function ID |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `DateFunctionName` |  | |  |  | `CHAR(40)` | Date Function Name |
+| `DateFunctionDescription` |  | |  |  | `CHAR(255)` | Date Function Description |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

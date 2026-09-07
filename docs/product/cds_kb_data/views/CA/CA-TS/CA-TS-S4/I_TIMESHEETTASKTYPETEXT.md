@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |  |  |
-| `TimeSheetTaskType` | ✓ | |  | `tasktype` |  |  |
-| `TimeSheetTaskTypeText` |  | |  | `text` |  |  |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `TimeSheetTaskType` | ✓ | |  | `tasktype` | `CHAR(4)` | Task Type |
+| `TimeSheetTaskTypeText` |  | |  | `text` | `CHAR(25)` | Description |
 | `_TimeSheetTaskType` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

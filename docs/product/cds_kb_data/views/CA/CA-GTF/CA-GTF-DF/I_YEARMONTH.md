@@ -39,15 +39,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `YearMonth` | ✓ | |  | `yearmonth` |  |  |
-| `CalendarMonth` |  | |  | `calendarmonth` |  |  |
-| `CalendarYear` |  | |  | `calendaryear` |  |  |
-| `CalendarQuarter` |  | |  | `calendarquarter` |  |  |
-| `IsLeapYear` |  | |  | `isleapyear` |  |  |
-| `NumberOfDays` |  | |  | `numberofdays` |  |  |
-| `FirstDayOfMonthDate` |  | |  | `firstdayofmonthdate` |  |  |
-| `LastDayOfMonthDate` |  | |  | `lastdayofmonthdate` |  |  |
-| `HalfYear` |  | |  | `halfyear` |  |  |
+| `YearMonth` | ✓ | |  | `yearmonth` | `NUMC(6)` | Year Month |
+| `CalendarMonth` |  | |  | `calendarmonth` | `NUMC(2)` | Calendar Month |
+| `CalendarYear` |  | |  | `calendaryear` | `NUMC(4)` | Calendar Year |
+| `CalendarQuarter` |  | |  | `calendarquarter` | `NUMC(1)` | Calendar Quarter |
+| `IsLeapYear` |  | |  | `isleapyear` | `CHAR(1)` | Is Leap Year |
+| `NumberOfDays` |  | |  | `numberofdays` | `INT4(10)` | Number of Days in Year or Month |
+| `FirstDayOfMonthDate` |  | |  | `firstdayofmonthdate` | `DATS(8)` | First Day of Month Date |
+| `LastDayOfMonthDate` |  | |  | `lastdayofmonthdate` | `DATS(8)` | Last Day of Month Date |
+| `HalfYear` |  | |  | `halfyear` | `NUMC(1)` | Half Year |
 | `_CalendarMonth` | | ✓ | | | | |
 | `_CalendarQuarter` | | ✓ | | | | |
 

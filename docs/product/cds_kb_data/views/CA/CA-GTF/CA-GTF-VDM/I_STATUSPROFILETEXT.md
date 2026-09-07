@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `StatusProfile` | ✓ | |  | `stsma` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `StatusProfileName` |  | |  | `txt` |  |  |
+| `StatusProfile` | ✓ | |  | `stsma` | `CHAR(8)` | Status Profile |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `StatusProfileName` |  | |  | `txt` | `CHAR(30)` | Text (30 Characters) |
 | `_StatusProfile` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

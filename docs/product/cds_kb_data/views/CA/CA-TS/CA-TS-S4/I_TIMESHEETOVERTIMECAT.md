@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TimeSheetOvertimeCategory` | ✓ | |  | `overtimecat` |  |  |
+| `TimeSheetOvertimeCategory` | ✓ | |  | `overtimecat` | `CHAR(4)` | Overtime Category |
 | `_TimeSheetOvertimeCatText` | | ✓ | | | | |
 
 ## Associations

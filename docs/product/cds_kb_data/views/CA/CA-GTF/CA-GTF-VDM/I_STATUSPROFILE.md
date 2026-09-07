@@ -40,8 +40,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `StatusProfile` | ✓ | |  | `stsma` |  |  |
-| `MasterLanguage` |  | |  | `pflsp` |  |  |
+| `StatusProfile` | ✓ | |  | `stsma` | `CHAR(8)` | Status Profile |
+| `MasterLanguage` |  | |  | `pflsp` | `LANG(1)` | Maintenance Language |
 | `_StatusProfileText` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

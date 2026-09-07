@@ -38,10 +38,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `cast( bukrs as fis_bukrs preserving type )` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `JointVenture` | ✓ | |  | `vname` |  |  |
-| `JointVentureName` |  | |  | `cast ( vtext as jv_venturename preserving type )` |  |  |
+| `CompanyCode` | ✓ | |  | `cast( bukrs as fis_bukrs preserving type )` | `CHAR(4)` | Company Code |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `JointVenture` | ✓ | |  | `vname` | `CHAR(6)` | Joint Venture |
+| `JointVentureName` |  | |  | `cast ( vtext as jv_venturename preserving type )` | `CHAR(35)` | Joint Venture Name |
 | `_CompanyCode` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 | `_JointVentureMasterFld` | | ✓ | | | | |

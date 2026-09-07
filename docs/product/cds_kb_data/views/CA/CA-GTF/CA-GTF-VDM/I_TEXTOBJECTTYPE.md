@@ -40,8 +40,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TextObjectType` | ✓ | |  | `tdid` |  |  |
-| `TextObjectCategory` | ✓ | |  | `tdobject` |  |  |
+| `TextObjectType` | ✓ | |  | `tdid` | `CHAR(4)` | Text ID |
+| `TextObjectCategory` | ✓ | |  | `tdobject` | `CHAR(10)` | Texts: application object |
 | `_TextObjectTypeText` | | ✓ | | | | |
 | `_TextObjectCategory` | | ✓ | | | | |
 

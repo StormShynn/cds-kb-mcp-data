@@ -44,6 +44,13 @@ applications:
       # the MCP SDK v2 upgrade). USE_SSE was a v1-era no-op — dropped.
       CDS_KB_REMOTE: https://raw.githubusercontent.com/StormShynn/cds-kb-mcp-data-kit/main/docs/product/cds_kb_data
       CDS_KB_INDEX_REFRESH_MINUTES: "15"
+      # The domain-proxy Worker in front of this app is a pure passthrough (no
+      # x-forwarded-* headers, Host rewritten to the raw BTP route) — without this,
+      # issuerOf() falls back to that internal cfapps.*.hana.ondemand.com route,
+      # which breaks /openapi.json's "servers[].url" for Swagger UI's "Try it out"
+      # (mixed content / CORS calling out from the mcp.tringhia.io.vn page). Also
+      # doubles as the OAuth issuer (oauth.mjs) if CDS_KB_OAUTH_SECRET is ever set.
+      CDS_KB_PUBLIC_URL: https://mcp.tringhia.io.vn
       # Usage collector /ping (NOT bare origin — the worker only accepts
       # pings at /ping; a future `cf push` would silently kill telemetry if
       # this lacks the suffix).

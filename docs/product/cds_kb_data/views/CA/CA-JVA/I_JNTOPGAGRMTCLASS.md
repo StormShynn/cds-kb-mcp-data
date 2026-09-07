@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `JntOpgAgrmtClass` | ✓ | |  | `aclass` |  |  |
-| `JntOpgAgrmtNmbrRange` |  | |  | `anrange` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `JntOpgAgrmtClass` | ✓ | |  | `aclass` | `CHAR(2)` | Joint Operating Agreement Class |
+| `JntOpgAgrmtNmbrRange` |  | |  | `anrange` | `CHAR(2)` | Joint operating agreement number range number |
 | `_CompanyCode` | | ✓ | | | | |
 | `_JntOpgAgrmtClassText` | | ✓ | | | | |
 

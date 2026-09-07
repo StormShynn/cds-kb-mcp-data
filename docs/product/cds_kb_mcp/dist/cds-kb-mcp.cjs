@@ -188357,6 +188357,7 @@ function internalServerErrorResponse2(id) {
 
 // src/server.mjs
 var import_express = __toESM(require_express2(), 1);
+var import_swagger_ui_express = __toESM(require("swagger-ui-express"), 1);
 
 // src/datasource.mjs
 var import_node_fs3 = require("node:fs");
@@ -191365,16 +191366,76 @@ async function createAuthMiddleware() {
   };
 }
 
+// ../cds_kb_data/scripts/lib/query-library.mjs
+var OVERRIDE_KEYS = [
+  "title",
+  "description",
+  "contributor",
+  "select",
+  "where",
+  "groupBy",
+  "having",
+  "orderBy",
+  "viewName",
+  "featured",
+  "rawNote"
+];
+function slugifyLibraryId(title) {
+  return String(title || "query").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 64) || "query";
+}
+function entryKind(entry) {
+  if (entry && typeof entry === "object" && entry.kind === "variant") return "variant";
+  return "recipe";
+}
+function indexLibraryById(library) {
+  const map4 = /* @__PURE__ */ new Map();
+  for (const entry of Array.isArray(library) ? library : []) {
+    if (entry?.id) map4.set(String(entry.id), entry);
+  }
+  return map4;
+}
+function resolveLibraryEntry(entry, libraryOrById) {
+  if (!entry || typeof entry !== "object") return entry;
+  if (entryKind(entry) !== "variant") {
+    return { ...entry, kind: entry.kind || "recipe" };
+  }
+  const byId = libraryOrById instanceof Map ? libraryOrById : indexLibraryById(libraryOrById);
+  const recipe = entry.recipeId ? byId.get(String(entry.recipeId)) : null;
+  if (!recipe || entryKind(recipe) === "variant") {
+    return { ...entry, kind: "variant" };
+  }
+  const resolved = {
+    ...recipe,
+    kind: "variant",
+    id: entry.id,
+    recipeId: entry.recipeId
+  };
+  delete resolved.featured;
+  for (const key of OVERRIDE_KEYS) {
+    if (entry[key] !== void 0 && entry[key] !== null && entry[key] !== "") {
+      resolved[key] = entry[key];
+    }
+  }
+  if (entry.title) resolved.title = entry.title;
+  if (entry.description !== void 0) resolved.description = entry.description;
+  return resolved;
+}
+
 // src/propose-library.mjs
 function slugify2(title) {
-  return String(title || "query").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 48) || "query";
+  return slugifyLibraryId(title).slice(0, 48);
 }
 async function proposeQueryLibraryEntry(input = {}) {
+  const kind = entryKind(input);
   const entry = {
+    id: input.id && String(input.id).trim() || slugifyLibraryId(input.title),
+    kind,
+    recipeId: kind === "variant" ? input.recipeId && String(input.recipeId).trim() || void 0 : void 0,
+    featured: input.featured === true ? true : void 0,
     title: input.title && String(input.title).trim() || "",
     description: input.description && String(input.description).trim() || void 0,
     contributor: input.contributor && String(input.contributor).trim() || void 0,
-    views: Array.isArray(input.views) ? input.views : [],
+    views: Array.isArray(input.views) ? input.views : void 0,
     select: input.select,
     where: input.where,
     groupBy: input.groupBy,
@@ -191382,15 +191443,22 @@ async function proposeQueryLibraryEntry(input = {}) {
     orderBy: input.orderBy,
     viewName: input.viewName
   };
+  if (kind === "variant") {
+    if (!entry.views?.length) delete entry.views;
+  } else if (!entry.views) {
+    entry.views = [];
+  }
   for (const k5 of Object.keys(entry)) {
     if (entry[k5] === void 0 || entry[k5] === "") delete entry[k5];
   }
-  const composed = composeQuery(entry);
+  const composed = kind === "variant" && !entry.views?.length ? { warnings: [], openSql: "" } : composeQuery(entry);
   const libraryPath = (process.env.CDS_KB_PROPOSE_PATH || "").trim() || "docs/product/cds_kb_data/index/query-library.json";
   const jsonSnippet = JSON.stringify(entry, null, 2) + ",";
   let markdown = `## Propose query library entry
 
-Add the following object to \`${libraryPath}\` (array of saved queries), then hand-sync \`DATA.L\` in \`query-builder.html\` (do **not** run the stale \`generate-query-builder\` script without \`--force\`).
+Add the following object to \`${libraryPath}\` (array of saved queries), then run \`npm run sync-query-library-embed\` (rebuilds \`query-library-index.json\` + featured \`DATA.L\` bootstrap; do **not** run the stale \`generate-query-builder\` script without \`--force\`).
+
+Use \`kind: "recipe"\` for a full shape (including joins). Use \`kind: "variant"\` + \`recipeId\` for thin filter/order overrides of an existing recipe \u2014 avoids duplicating the same multi-view body.
 
 \`\`\`json
 ${jsonSnippet}
@@ -192940,21 +193008,26 @@ function searchQueryLibrary(query, limit) {
   if (!query || !Array.isArray(queryLibraryData) || queryLibraryData.length === 0) return [];
   const tokens = String(query).split(/\s+/).map(normalizeTerm).filter(Boolean);
   if (tokens.length === 0) return [];
+  const byId = indexLibraryById(queryLibraryData);
   return queryLibraryData.map((q3) => {
-    const title = normalizeTerm(q3.title || "");
-    const description = normalizeTerm(q3.description || "");
-    const viewName = normalizeTerm(q3.viewName || "");
-    const viewText = (q3.views || []).map((v) => normalizeTerm(v.name || "")).join(" ");
+    const resolved = resolveLibraryEntry(q3, byId);
+    const title = normalizeTerm(q3.title || resolved.title || "");
+    const description = normalizeTerm(q3.description || resolved.description || "");
+    const viewName = normalizeTerm(q3.viewName || resolved.viewName || "");
+    const idText = normalizeTerm(q3.id || "");
+    const viewText = (resolved.views || []).map((v) => normalizeTerm(v.name || "")).join(" ");
     let score = 0;
     for (const t of tokens) {
       if (title === t) score += 5;
       else if (title.includes(t)) score += 4;
+      if (idText === t) score += 4;
+      else if (idText.includes(t)) score += 2;
       if (viewName === t) score += 3;
       else if (viewName.includes(t)) score += 2;
       if (viewText.includes(t)) score += 2;
       if (description.includes(t)) score += 1;
     }
-    return { q: q3, score };
+    return { q: resolved, score };
   }).filter((s2) => s2.score > 0).sort((a5, b5) => b5.score - a5.score).slice(0, limit).map((s2) => s2.q);
 }
 var ds = resolveDataSource();
@@ -193153,9 +193226,10 @@ function refreshIndexPeriodically(intervalMs) {
     }
   }, intervalMs);
 }
-var SERVER_VERSION = "2.4.0";
+var SERVER_VERSION = "2.6.0";
 var SERVER_INSTRUCTIONS = `This is cds-kb-mcp v${SERVER_VERSION}, built by StormShyn. The first time you use a tool from this server in a conversation, briefly mention to the user (in your own words, one short sentence) that you are using the cds-kb-mcp SAP CDS knowledge base, built by StormShyn. Do not repeat this mention on later tool calls in the same conversation. Optional sap_* tools are DEV ADT read-only (Z*/Y* only); when SAP_ADT_* is unset they return configured=false and the KB stays dataless.`;
 var sapToolsDescribe = () => ({ configured: false });
+var toolRegistry = /* @__PURE__ */ new Map();
 function buildKbInfo() {
   return {
     source: ds.describe(),
@@ -193177,11 +193251,50 @@ function buildKbInfo() {
     commit: meta3.commit ? meta3.commit.slice(0, 8) : ""
   };
 }
+function buildOpenApiSpec(baseUrl) {
+  const paths = {};
+  for (const [name, { config: config2 }] of toolRegistry) {
+    const shape = config2.inputSchema || {};
+    const hasParams = Object.keys(shape).length > 0;
+    paths[`/api/tools/${name}`] = {
+      post: {
+        operationId: name,
+        summary: config2.title || name,
+        description: config2.description,
+        tags: ["cds-kb tools"],
+        requestBody: hasParams ? { required: false, content: { "application/json": { schema: external_exports.toJSONSchema(external_exports.object(shape)) } } } : void 0,
+        responses: {
+          200: {
+            description: "Tool result (structuredContent \u2014 same shape MCP returns)",
+            content: { "application/json": { schema: config2.outputSchema ? external_exports.toJSONSchema(config2.outputSchema) : {} } }
+          },
+          400: { description: "Invalid arguments, or the tool itself reported an error" },
+          404: { description: "Unknown tool name" }
+        }
+      }
+    };
+  }
+  return {
+    openapi: "3.1.0",
+    info: {
+      title: "cds-kb-mcp REST bridge",
+      version: SERVER_VERSION,
+      description: "REST wrapper over the cds-kb MCP tools, for demoing/testing via Swagger UI without an MCP client. The canonical interface is MCP Streamable HTTP at POST /mcp \u2014 every endpoint below calls the exact same tool handler, so results are identical either way."
+    },
+    servers: [{ url: baseUrl }],
+    paths
+  };
+}
 function createServer() {
   const server = new McpServer(
     { name: "cds-knowledge-base", version: SERVER_VERSION },
     { instructions: SERVER_INSTRUCTIONS }
   );
+  const registerToolOriginal = server.registerTool.bind(server);
+  server.registerTool = (name, config2, handler) => {
+    toolRegistry.set(name, { config: config2, handler });
+    return registerToolOriginal(name, config2, handler);
+  };
   server.registerTool(
     "search_cds",
     {
@@ -193868,11 +193981,15 @@ ${result.diagnostics.map((d5) => `- ${d5}`).join("\n")}` : "diagnostics: (none)"
     "propose_query_library_entry",
     {
       title: "Propose a query-library.json entry",
-      description: "Build a JSON snippet + markdown PR body for adding a saved query to docs/product/cds_kb_data/index/query-library.json. If GITHUB_TOKEN and CDS_KB_PROPOSE_REPO (owner/name) are set, opens a draft PR on a propose/query-* branch (file path override: CDS_KB_PROPOSE_PATH). Never merges.",
+      description: "Build a JSON snippet + markdown PR body for adding a saved query to docs/product/cds_kb_data/index/query-library.json. Prefer kind=recipe for a full shape (including joins); kind=variant + recipeId for thin where/order overrides of an existing recipe. If GITHUB_TOKEN and CDS_KB_PROPOSE_REPO (owner/name) are set, opens a draft PR on a propose/query-* branch (file path override: CDS_KB_PROPOSE_PATH). Never merges.",
       inputSchema: {
         title: external_exports.string().describe("Short title for the saved query"),
         description: external_exports.string().optional(),
         contributor: external_exports.string().optional(),
+        id: external_exports.string().optional().describe("Stable id (kebab-case); defaults from title"),
+        kind: external_exports.enum(["recipe", "variant"]).optional().describe("recipe = full shape; variant = thin override of recipeId"),
+        recipeId: external_exports.string().optional().describe("Required when kind=variant \u2014 id of the parent recipe"),
+        featured: external_exports.boolean().optional().describe("If true, included in Query Builder DATA.L bootstrap embed"),
         views: external_exports.array(external_exports.object({
           alias: external_exports.string().optional(),
           name: external_exports.string().nullable().optional(),
@@ -193880,7 +193997,7 @@ ${result.diagnostics.map((d5) => `- ${d5}`).join("\n")}` : "diagnostics: (none)"
           on: external_exports.string().nullable().optional(),
           mode: external_exports.enum(["join", "assoc"]).nullable().optional(),
           raw: external_exports.string().nullable().optional()
-        })).describe("FROM/JOIN/assoc rows; views[0].name is required"),
+        })).optional().describe("FROM/JOIN/assoc rows; required for recipes (views[0].name); omit on thin variants"),
         select: external_exports.string().optional(),
         where: external_exports.string().optional(),
         groupBy: external_exports.string().optional(),
@@ -193922,7 +194039,7 @@ GitHub propose failed (local snippet still valid): ${result.error}`);
     "search_query_library",
     {
       title: "Search the shared query library",
-      description: "Find a saved/reusable query in index/query-library.json by title, description, target CDS view name, or generated view name. Entries are curated, PR-reviewed saved queries (propose_query_library_entry produces the snippet + draft PR to add one). Library-first: call this BEFORE search_cds / suggest_base_views when composing from a business intent; on a hit, take views[]/select/where into compose_query or generate_cds_view. On a miss, fall back to open search.",
+      description: "Find a saved/reusable query in index/query-library.json by title, id, description, target CDS view name, or generated view name. Entries are curated recipes or thin variants (variants are resolved onto their recipe before return). Library-first: call this BEFORE search_cds / suggest_base_views when composing from a business intent; on a hit, take views[]/select/where into compose_query or generate_cds_view. On a miss, fall back to open search.",
       inputSchema: {
         query: external_exports.string().describe("Search text \u2014 title words, CDS view name, or business intent"),
         limit: external_exports.number().int().min(1).max(50).optional().describe("Max results (default 10)")
@@ -193931,6 +194048,9 @@ GitHub propose failed (local snippet still valid): ${result.error}`);
         query: external_exports.string(),
         count: external_exports.number(),
         results: external_exports.array(external_exports.object({
+          id: external_exports.string().nullable(),
+          kind: external_exports.enum(["recipe", "variant"]),
+          recipeId: external_exports.string().nullable(),
           title: external_exports.string(),
           description: external_exports.string().nullable(),
           contributor: external_exports.string().nullable(),
@@ -193945,6 +194065,9 @@ GitHub propose failed (local snippet still valid): ${result.error}`);
         query,
         count: hits.length,
         results: hits.map((q3) => ({
+          id: q3.id ?? null,
+          kind: entryKind(q3),
+          recipeId: q3.recipeId ?? null,
           title: q3.title || "(untitled)",
           description: q3.description ?? null,
           contributor: q3.contributor ?? null,
@@ -193961,7 +194084,13 @@ GitHub propose failed (local snippet still valid): ${result.error}`);
         const contrib = q3.contributor ? `  (by ${q3.contributor})` : "";
         const desc = q3.description ? `
    ${q3.description}` : "";
+        const meta4 = [
+          q3.id ? `id=${q3.id}` : null,
+          `kind=${entryKind(q3)}`,
+          q3.recipeId ? `recipe=${q3.recipeId}` : null
+        ].filter(Boolean).join(" \xB7 ");
         return `${i5 + 1}. **${q3.title || "(untitled)"}**${contrib}
+   ${meta4}
    views: ${views}${q3.viewName ? `  -> ${q3.viewName}` : ""}${desc}`;
       });
       return {
@@ -193971,7 +194100,7 @@ GitHub propose failed (local snippet still valid): ${result.error}`);
 
 ${lines.join("\n")}
 
-Load it into compose_query / generate_cds_view (views[] + select/where) to reuse the shape.`
+Load the resolved shape into compose_query / generate_cds_view (views[] + select/where).`
         }],
         structuredContent: structured
       };
@@ -194201,6 +194330,30 @@ async function main() {
     app.post("/mcp", limiter, requireAuth, import_express.default.json(), mcpMetrics, (req, res) => nodeMcpHandler(req, res, req.body));
     app.get("/mcp", limiter, requireAuth, mcpMetrics, (req, res) => nodeMcpHandler(req, res));
     app.delete("/mcp", limiter, requireAuth, mcpMetrics, (req, res) => nodeMcpHandler(req, res));
+    createServer();
+    app.get("/openapi.json", limiter, (req, res) => {
+      res.json(buildOpenApiSpec(issuerOf(req)));
+    });
+    app.use("/api-docs", limiter, import_swagger_ui_express.default.serve, import_swagger_ui_express.default.setup(null, { swaggerOptions: { url: "/openapi.json" } }));
+    app.post("/api/tools/:name", limiter, requireAuth, import_express.default.json(), async (req, res) => {
+      const entry = toolRegistry.get(req.params.name);
+      if (!entry) {
+        res.status(404).json({ error: `Unknown tool "${req.params.name}". See /openapi.json for the list of tool names.` });
+        return;
+      }
+      const parsed = external_exports.object(entry.config.inputSchema || {}).safeParse(req.body ?? {});
+      if (!parsed.success) {
+        res.status(400).json({ error: "Invalid arguments", issues: parsed.error.issues });
+        return;
+      }
+      try {
+        const result = await entry.handler(parsed.data);
+        res.status(result?.isError ? 400 : 200).json(result?.structuredContent ?? { content: result?.content ?? null });
+      } catch (e5) {
+        logError("REST tool call failed", { tool: req.params.name, err: e5 });
+        res.status(500).json({ error: e5?.message || "Internal error" });
+      }
+    });
     const serverPort = port || 8080;
     app.listen(serverPort, () => {
       logInfo("HTTP server ready", { port: serverPort, transport: "streamable-http", source: ds.describe(), views: meta3.viewCount, modules: Object.keys(moduleStats).length });

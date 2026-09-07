@@ -38,11 +38,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `JntOpgAgrmt` | ✓ | |  | `joa` |  |  |
-| `JntVntrPenaltyCategory` | ✓ | |  | `pencat` |  |  |
-| `JntVntrNonSignatoryRcvryPct` |  | |  | `nosigrp` |  |  |
-| `JntVntrNonConsentRcvryPnltyPct` |  | |  | `noconrp` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `JntOpgAgrmt` | ✓ | |  | `joa` | `CHAR(6)` | Joint Operating Agreement |
+| `JntVntrPenaltyCategory` | ✓ | |  | `pencat` | `CHAR(1)` | Penalty Category |
+| `JntVntrNonSignatoryRcvryPct` |  | |  | `nosigrp` | `DEC(11)` | Non-signatory Recovery Percentage |
+| `JntVntrNonConsentRcvryPnltyPct` |  | |  | `noconrp` | `DEC(11)` | Non-consent Recovery Penalty Percentage |
 | `_CompanyCode` | | ✓ | | | | |
 | `_JntOpgAgrmt` | | ✓ | | | | |
 | `_JntVntrPenaltyCategory` | | ✓ | | | | |

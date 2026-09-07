@@ -39,7 +39,21 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `}` |  | |  | `entity: { name: 'I_JointVentureCompanyCodeVH', element: 'CompanyCode' }` |  |  |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalPeriod` | ✓ | |  |  | `NUMC(3)` | Posting Period |
+| `JointVenturePartner` | ✓ | |  |  | `CHAR(10)` | JV Partner |
+| `CreationDate` | ✓ | |  |  | `DATS(8)` | Created On |
+| `LinkedSAPObjectKey` | ✓ | |  | `ObjectKey` | `CHAR(90)` | Document Management Object Key |
+| `JVABillingFileType` | ✓ | |  |  | `CHAR(3)` | Billing File Type |
+| `DocumentInfoRecordDocType` |  | | `_DirObjectLinks` | `DocumentInfoRecordDocType` | `CHAR(3)` | Document Type |
+| `DocumentInfoRecordDocNumber` |  | | `_DirObjectLinks` | `DocumentInfoRecordDocNumber` | `CHAR(25)` | Document Number |
+| `DocumentInfoRecordDocPart` |  | | `_DirObjectLinks` | `DocumentInfoRecordDocPart` | `CHAR(3)` | Document Part |
+| `DocumentInfoRecordDocVersion` |  | | `_DirObjectLinks` | `DocumentInfoRecordDocVersion` | `CHAR(2)` | Document Version |
+| `LinkedSAPObject` |  | | `_DirObjectLinks` | `LinkedSAPObject` | `CHAR(10)` | Linked SAP Object |
+| `LogicalDocument` |  | | `_DirOriginals` | `LogicalDocument` | `CHAR(32)` | Logical document |
+| `PhysicalDocument` |  | | `_DirOriginals` | `PhysicalDocument` | `CHAR(32)` | Physical document |
+| `WorkstationApplication` |  | | `_DirOriginals` | `WorkstationApplication` | `CHAR(3)` | Application |
 
 ## Source Code
 

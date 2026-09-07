@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LglCntntMGovLaw` | ✓ | |  |  |  |  |
+| `LglCntntMGovLaw` | ✓ | |  |  | `CHAR(7)` | Governing Law |
 | `_LglCntntMGovLawTextAPI01` | | ✓ | | | | |
 
 ## Associations

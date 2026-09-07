@@ -39,11 +39,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `cast( jv.bukrs as fis_bukrs preserving type )` |  |  |
-| `JointVenture` | ✓ | |  | `cast(vname as jv_name_cds preserving type )` |  |  |
-| `JointVentureType` |  | |  | `vtype` |  |  |
-| `JointVentureClass` |  | |  | `vclass` |  |  |
-| `JntOpgAgrmt` |  | |  | `joa` |  |  |
+| `CompanyCode` | ✓ | |  | `cast( jv.bukrs as fis_bukrs preserving type )` | `CHAR(4)` | Company Code |
+| `JointVenture` | ✓ | |  | `cast(vname as jv_name_cds preserving type )` | `CHAR(6)` | Joint Venture |
+| `JointVentureType` |  | |  | `vtype` | `CHAR(1)` | Venture Type |
+| `JointVentureClass` |  | |  | `vclass` | `CHAR(2)` | Venture Class |
+| `JntOpgAgrmt` |  | |  | `joa` | `CHAR(6)` | Joint Operating Agreement |
 | `_CompanyCode` | | ✓ | | | | |
 | `_JntOpgAgrmt` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |

@@ -135,7 +135,7 @@ function randomCode() {
   return randomBytes(24).toString('hex');
 }
 
-function issuerOf(req) {
+export function issuerOf(req) {
   const explicit = (process.env.CDS_KB_PUBLIC_URL || '').trim();
   if (explicit) return explicit.replace(/\/+$/, '');
   const proto = req.headers['x-forwarded-proto'] || req.protocol || 'https';

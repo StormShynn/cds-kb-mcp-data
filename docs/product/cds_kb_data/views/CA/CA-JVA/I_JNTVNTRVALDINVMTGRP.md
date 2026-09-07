@@ -38,17 +38,17 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `JointVenture` | ✓ | |  | `cast( vname as jv_name preserving type )` |  |  |
-| `JointVentureEquityType` | ✓ | |  | `etype` |  |  |
-| `JntVntrEquityFundingDateValue` | ✓ | |  | `fdate` |  |  |
-| `JointVentureEquityFundingDate` |  | |  | `fdate` |  |  |
-| `JointVentureEquityGroup` |  | |  | `egrup` |  |  |
-| `JointVentureEquityGroupActive` |  | |  | `egroupact` |  |  |
-| `JointVentureDefBillCurrency` |  | |  | `bcurr` |  |  |
-| `JVAFundingGrpInEquityGrp` |  | |  | `fundgroup` |  |  |
-| `JVAEquityGroupIntrstCalcGrpID` |  | |  | `ic_group` |  |  |
-| `JointVentureEquityTypeName` |  | | `_JntVntrEquityTypeDesc` | `JointVentureEquityTypeName` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `JointVenture` | ✓ | |  | `cast( vname as jv_name preserving type )` | `CHAR(6)` | Joint Venture |
+| `JointVentureEquityType` | ✓ | |  | `etype` | `CHAR(3)` | Equity Type |
+| `JntVntrEquityFundingDateValue` | ✓ | |  | `fdate` | `NUMC(8)` | Valid from date (inverted: 99999999 - YYYYMMDD) |
+| `JointVentureEquityFundingDate` |  | |  | `fdate` | `NUMC(8)` | Valid from date (inverted: 99999999 - YYYYMMDD) |
+| `JointVentureEquityGroup` |  | |  | `egrup` | `CHAR(3)` | Equity Group |
+| `JointVentureEquityGroupActive` |  | |  | `egroupact` | `CHAR(1)` | Equity Group Active Status |
+| `JointVentureDefBillCurrency` |  | |  | `bcurr` | `CHAR(2)` | JV Default Billing Currency |
+| `JVAFundingGrpInEquityGrp` |  | |  | `fundgroup` | `CHAR(6)` | JV Funding group |
+| `JVAEquityGroupIntrstCalcGrpID` |  | |  | `ic_group` | `CHAR(10)` | JV Interest Calculation Group ID |
+| `JointVentureEquityTypeName` |  | | `_JntVntrEquityTypeDesc` | `JointVentureEquityTypeName` | `CHAR(35)` | Investment Type Description |
 | `_CompanyCode` | | ✓ | | | | |
 | `_JointVenture` | | ✓ | | | | |
 | `_JntVntrEquityType` | | ✓ | | | | |

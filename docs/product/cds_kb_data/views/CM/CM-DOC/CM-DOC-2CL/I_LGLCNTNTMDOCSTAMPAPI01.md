@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LglCntntMDocumentStamp` | ✓ | |  |  |  |  |
+| `LglCntntMDocumentStamp` | ✓ | |  |  | `CHAR(4)` | Document Stamp Name |
 | `_LglCntntMDocStampTextAPI01` | | ✓ | | | | |
 
 ## Associations

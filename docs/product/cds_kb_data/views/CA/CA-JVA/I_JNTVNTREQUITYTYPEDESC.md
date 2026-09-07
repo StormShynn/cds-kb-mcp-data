@@ -38,10 +38,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `JointVentureEquityType` | ✓ | |  | `etype` |  |  |
-| `JointVentureEquityTypeName` |  | |  | `etext` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `JointVentureEquityType` | ✓ | |  | `etype` | `CHAR(3)` | Equity Type |
+| `JointVentureEquityTypeName` |  | |  | `etext` | `CHAR(35)` | Investment Type Description |
 | `_Language` | | ✓ | | | | |
 | `_CompanyCode` | | ✓ | | | | |
 | `_JntVntrEquityType` | | ✓ | | | | |

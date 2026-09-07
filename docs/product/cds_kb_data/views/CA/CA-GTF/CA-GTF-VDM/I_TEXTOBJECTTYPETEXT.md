@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TextObjectCategory` | ✓ | |  | `tdobject` |  |  |
-| `TextObjectType` | ✓ | |  | `tdid` |  |  |
-| `Language` | ✓ | |  | `tdspras` |  |  |
-| `TextObjectTypeName` |  | |  | `tdtext` |  |  |
+| `TextObjectCategory` | ✓ | |  | `tdobject` | `CHAR(10)` | Texts: application object |
+| `TextObjectType` | ✓ | |  | `tdid` | `CHAR(4)` | Text ID |
+| `Language` | ✓ | |  | `tdspras` | `LANG(1)` | Language Key |
+| `TextObjectTypeName` |  | |  | `tdtext` | `CHAR(30)` | Short Text |
 | `_TextObjectCategory` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 | `_TextObjectType` | | ✓ | | | | |

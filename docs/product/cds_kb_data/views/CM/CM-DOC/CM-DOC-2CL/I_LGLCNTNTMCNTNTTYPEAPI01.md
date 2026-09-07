@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LglCntntMDocContentType` | ✓ | |  |  |  |  |
+| `LglCntntMDocContentType` | ✓ | |  |  | `CHAR(4)` | Document Content Type |
 | `_LglCntntMCntntTypeTxtAPI01` | | ✓ | | | | |
 
 ## Associations

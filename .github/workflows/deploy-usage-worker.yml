@@ -43,7 +43,7 @@ jobs:
 
       - name: Deploy worker
         if: ${{ env.HAS_CLOUDFLARE_TOKEN == 'true' }}
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -66,7 +66,7 @@ jobs:
       # the rest of the worker (ping/totals/shape-totals) works fine either way.
       - name: Set optional Propose Issue bot secret
         if: ${{ env.HAS_CLOUDFLARE_TOKEN == 'true' && env.HAS_ISSUE_TOKEN == 'true' }}
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

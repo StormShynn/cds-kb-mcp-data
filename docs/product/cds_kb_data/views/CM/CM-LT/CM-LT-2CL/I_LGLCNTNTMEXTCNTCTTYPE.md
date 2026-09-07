@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LglCntntMExtCntctType` | ✓ | |  |  |  |  |
+| `LglCntntMExtCntctType` | ✓ | |  |  | `CHAR(4)` | External context type |
 | `_LglCntntMExtCntctTypeText` | | ✓ | | | | |
 
 ## Associations

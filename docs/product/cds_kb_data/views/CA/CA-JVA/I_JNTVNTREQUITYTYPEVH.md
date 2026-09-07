@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `JointVentureEquityType` | ✓ | |  | `etype` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `JointVentureEquityType` | ✓ | |  | `etype` | `CHAR(3)` | Equity Type |
 | `_CompanyCode` | | ✓ | | | | |
 | `_JntVntrEquityTypeDesc` | | ✓ | | | | |
 

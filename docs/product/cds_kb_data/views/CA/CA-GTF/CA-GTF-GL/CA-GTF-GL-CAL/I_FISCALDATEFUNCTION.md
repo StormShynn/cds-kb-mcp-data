@@ -39,23 +39,23 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DateFunction` | ✓ | |  |  |  |  |
-| `DateFunctionType` |  | |  |  |  |  |
-| `DateFunctionGranularity` |  | |  |  |  |  |
-| `DateFunctionStartPoint` |  | |  |  |  |  |
-| `DateFunctionStartOffsetValue` |  | |  |  |  |  |
-| `DateFuncStartRelativeOffset` |  | |  |  |  |  |
-| `DateFunctionStartOffsetUnit` |  | |  |  |  |  |
-| `DateFunctionStartRelOffsetUnit` |  | |  |  |  |  |
-| `DateFunctionStartYearOffset` |  | |  |  |  |  |
-| `DateFunctionStartFixedDate` |  | |  |  |  |  |
-| `DateFunctionEndPoint` |  | |  |  |  |  |
-| `DateFunctionEndOffsetValue` |  | |  |  |  |  |
-| `DateFunctionEndRelativeOffset` |  | |  |  |  |  |
-| `DateFunctionEndOffsetUnit` |  | |  |  |  |  |
-| `DateFunctionEndRelOffsetUnit` |  | |  |  |  |  |
-| `DateFunctionEndYearOffset` |  | |  |  |  |  |
-| `DateFunctionEndFixedDate` |  | |  |  |  |  |
+| `DateFunction` | ✓ | |  |  | `CHAR(32)` | Relative Date Function ID |
+| `DateFunctionType` |  | |  |  | `NUMC(2)` | Date Function Type |
+| `DateFunctionGranularity` |  | |  |  | `NUMC(2)` | Date Function Granularity |
+| `DateFunctionStartPoint` |  | |  |  | `NUMC(2)` | Start Point of Date Function |
+| `DateFunctionStartOffsetValue` |  | |  |  | `INT4(10)` | Offset Value for Start Date of Date Function |
+| `DateFuncStartRelativeOffset` |  | |  |  | `NUMC(2)` | Relative Offset for Start Date of Date Function |
+| `DateFunctionStartOffsetUnit` |  | |  |  | `NUMC(2)` | Offset Unit for Start Date of Date Function |
+| `DateFunctionStartRelOffsetUnit` |  | |  |  | `NUMC(2)` | Relative Offset Unit for Start Date of Date Function |
+| `DateFunctionStartYearOffset` |  | |  |  | `NUMC(2)` | Year Offset for Start Date of Date Function |
+| `DateFunctionStartFixedDate` |  | |  |  | `DATS(8)` | Fixed Start Date of Date Function |
+| `DateFunctionEndPoint` |  | |  |  | `NUMC(2)` | End Point of Date Function |
+| `DateFunctionEndOffsetValue` |  | |  |  | `INT4(10)` | Offset Value for End Date of Date Function |
+| `DateFunctionEndRelativeOffset` |  | |  |  | `NUMC(2)` | Relative Offset for End Date of Date Function |
+| `DateFunctionEndOffsetUnit` |  | |  |  | `NUMC(2)` | Year Offset for End Date of Date Function |
+| `DateFunctionEndRelOffsetUnit` |  | |  |  | `NUMC(2)` | Relative Offset Unit for End Date of Date Function |
+| `DateFunctionEndYearOffset` |  | |  |  | `NUMC(2)` | Offset Unit for End Date of Date Function |
+| `DateFunctionEndFixedDate` |  | |  |  | `DATS(8)` | Fixed End Date of Date Function |
 | `_DateFunctionText` | | ✓ | | | | |
 
 ## Associations

@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `JntOpgAgrmt` | ✓ | |  | `joa` |  |  |
-| `JntOpgAgrmtText` |  | |  | `coalesce( _JntOpgAgrmtText[1:Language = $session.system_language ].JntOpgAgrmtText , _JntOpgAgrmtText[1:Language = 'E' ].JntOpgAgrmtText )` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `JntOpgAgrmt` | ✓ | |  | `joa` | `CHAR(6)` | Joint Operating Agreement |
+| `JntOpgAgrmtText` |  | |  | `coalesce( _JntOpgAgrmtText[1:Language = $session.system_language ].JntOpgAgrmtText , _JntOpgAgrmtText[1:Language = 'E' ].JntOpgAgrmtText )` | `CHAR(40)` |  |
 | `_CompanyCode` | | ✓ | | | | |
 | `_JntOpgAgrmtText` | | ✓ | | | | |
 

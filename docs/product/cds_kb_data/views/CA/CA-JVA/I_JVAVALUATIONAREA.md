@@ -38,8 +38,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ValuationArea` | ✓ | |  |  |  |  |
-| `CompanyCode` |  | |  |  |  |  |
+| `ValuationArea` | ✓ | |  |  | `CHAR(4)` | Valuation Area |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
 | `_CompanyCode` | | ✓ | | | | |
 
 ## Associations

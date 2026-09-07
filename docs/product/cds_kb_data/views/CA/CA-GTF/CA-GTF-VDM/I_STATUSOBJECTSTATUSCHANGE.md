@@ -40,15 +40,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `StatusObject` | ✓ | |  | `objnr` |  |  |
-| `StatusCode` | ✓ | |  | `stat` |  |  |
-| `StatusObjectStatusChangeNumber` | ✓ | |  | `chgnr` |  |  |
-| `LastChangedByUser` |  | |  | `usnam` |  |  |
-| `LastChangeDate` |  | |  | `udate` |  |  |
-| `LastChangeTime` |  | |  | `utime` |  |  |
-| `ChangeTransactionCode` |  | |  | `cdtcode` |  |  |
-| `StatusIsInactive` |  | |  | `inact` |  |  |
-| `StatusChangeOperationCode` |  | |  | `chind` |  |  |
+| `StatusObject` | ✓ | |  | `objnr` | `CHAR(22)` | Object Number |
+| `StatusCode` | ✓ | |  | `stat` | `CHAR(5)` | Object status |
+| `StatusObjectStatusChangeNumber` | ✓ | |  | `chgnr` | `NUMC(3)` | Change number |
+| `LastChangedByUser` |  | |  | `usnam` | `CHAR(12)` | User Name of Person Making Change in Change Document |
+| `LastChangeDate` |  | |  | `udate` | `DATS(8)` | Creation Date of Change Document |
+| `LastChangeTime` |  | |  | `utime` | `TIMS(6)` | Time of Change |
+| `ChangeTransactionCode` |  | |  | `cdtcode` | `CHAR(20)` | Transaction in which a change was made |
+| `StatusIsInactive` |  | |  | `inact` | `CHAR(1)` | Indicator: Status Is Inactive |
+| `StatusChangeOperationCode` |  | |  | `chind` | `CHAR(1)` | Change Indicator |
 
 ## Source Code
 

@@ -38,8 +38,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LglCntntMDateType` | ✓ | |  |  |  |  |
-| `LglCntntMDateIsPeriod` |  | |  |  |  |  |
+| `LglCntntMDateType` | ✓ | |  |  | `CHAR(4)` | Date Type |
+| `LglCntntMDateIsPeriod` |  | |  |  | `CHAR(1)` | Data element for domain BOOLE: TRUE (='X') and FALSE (=' ') |
 | `_LglCntntMDateTypeText` | | ✓ | | | | |
 
 ## Associations

@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `JntVntrSuspenseStatus` | ✓ | |  | `cast (left(domvalue_l, 1) as jv_suspense_status_cds preserving type)` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `JntVntrSuspenseStatusText` |  | |  | `cast( ddtext as jv_suspsts_text_cds preserving type )` |  |  |
+| `JntVntrSuspenseStatus` | ✓ | |  | `cast (left(domvalue_l, 1) as jv_suspense_status_cds preserving type)` | `CHAR(1)` | Suspense Status in JVA |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `JntVntrSuspenseStatusText` |  | |  | `cast( ddtext as jv_suspsts_text_cds preserving type )` | `CHAR(60)` | JV Suspense Status Text |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

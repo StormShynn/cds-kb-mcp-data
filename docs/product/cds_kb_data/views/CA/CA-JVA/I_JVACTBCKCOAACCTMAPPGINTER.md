@@ -38,12 +38,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `JVAChartOfAccounts` | ✓ | |  |  |  |  |
-| `JVAInterCompanyCOA` | ✓ | |  |  |  |  |
-| `FromGLAccount` | ✓ | |  |  |  |  |
-| `ToGLAccount` |  | |  |  |  |  |
-| `CutbackAccount` |  | |  |  |  |  |
-| `JVAIsToKeepOriginalAccount` |  | |  |  |  |  |
+| `JVAChartOfAccounts` | ✓ | |  |  | `CHAR(4)` | Chart of Accounts |
+| `JVAInterCompanyCOA` | ✓ | |  |  | `CHAR(4)` | Intercompany Chart of Accounts |
+| `FromGLAccount` | ✓ | |  |  | `CHAR(10)` | Account From |
+| `ToGLAccount` |  | |  |  | `CHAR(10)` | Account To |
+| `CutbackAccount` |  | |  |  | `CHAR(10)` | Cutback Account |
+| `JVAIsToKeepOriginalAccount` |  | |  |  | `CHAR(1)` | Keep original cutback account |
 | `_ChartOfAccounts` | | ✓ | | | | |
 | `_JVAInterCompanyCOA` | | ✓ | | | | |
 | `_FromGLAccount` | | ✓ | | | | |

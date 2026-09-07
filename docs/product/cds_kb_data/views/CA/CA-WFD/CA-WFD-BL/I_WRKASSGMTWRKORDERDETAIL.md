@@ -39,13 +39,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkAssignmentExternalID` | ✓ | | `_Assignment` | `WorkAssignmentExternalID` |  |  |
-| `Country2DigitISOCode` | ✓ | | `_Assignment` | `Country2DigitISOCode` |  |  |
-| `StartDate` | ✓ | | `_BPRelationship` | `ValidityStartDate` |  |  |
-| `EndDate` |  | | `_BPRelationship` | `ValidityEndDate` |  |  |
-| `WorkforcePersonExternalID` |  | | `_AssignmentBP` | `WorkforcePersonExternalID` |  |  |
-| `Supplier` |  | | `_BPRelationship` | `BusinessPartner1` |  |  |
-| `IsBlocked` |  | | `_Assignment` | `IsBlocked` |  |  |
+| `WorkAssignmentExternalID` | ✓ | | `_Assignment` | `WorkAssignmentExternalID` | `CHAR(100)` | Workforce Assignment External ID |
+| `Country2DigitISOCode` | ✓ | | `_Assignment` | `Country2DigitISOCode` | `CHAR(2)` | Workforce Country ISO Code |
+| `StartDate` | ✓ | | `_BPRelationship` | `ValidityStartDate` | `DATS(8)` | Validity Date (Valid From) |
+| `EndDate` |  | | `_BPRelationship` | `ValidityEndDate` | `DATS(8)` | Validity Date (Valid To) |
+| `WorkforcePersonExternalID` |  | | `_AssignmentBP` | `WorkforcePersonExternalID` | `CHAR(100)` | External Person ID |
+| `Supplier` |  | | `_BPRelationship` | `BusinessPartner1` | `CHAR(10)` | Business Partner Number |
+| `IsBlocked` |  | | `_Assignment` | `IsBlocked` | `CHAR(1)` | Blocked Indicator |
 | `_WorkAssignment` | | ✓ | | | | |
 | `_WorkforcePerson` | | ✓ | | | | |
 

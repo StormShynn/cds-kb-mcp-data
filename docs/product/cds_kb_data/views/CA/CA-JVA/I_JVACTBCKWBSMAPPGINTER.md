@@ -40,15 +40,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `JntVntrIntcoCode` | ✓ | |  |  |  |  |
-| `JVAFromProject` | ✓ | |  |  |  |  |
-| `JVAToProject` |  | |  |  |  |  |
-| `JVACutbackCostCenter` |  | |  |  |  |  |
-| `JVACutbackOrder` |  | |  |  |  |  |
-| `JVACutbackWBS` |  | |  |  |  |  |
-| `JVACutbackWBSExt` |  | | `_CutbackWBSElement` | `WBSElementExternalID` |  |  |
-| `JVAInterCompanyControllingArea` |  | | `_InterCompanyCompanyCode` | `ControllingArea` |  |  |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `JntVntrIntcoCode` | ✓ | |  |  | `CHAR(4)` | Intercompany code |
+| `JVAFromProject` | ✓ | |  |  | `CHAR(24)` | WBS Element |
+| `JVAToProject` |  | |  |  | `CHAR(24)` | WBS Element |
+| `JVACutbackCostCenter` |  | |  |  | `CHAR(10)` | Cutback Cost Centre |
+| `JVACutbackOrder` |  | |  |  | `CHAR(12)` | Cutback Order |
+| `JVACutbackWBS` |  | |  |  | `NUMC(8)` | WBS Element |
+| `JVACutbackWBSExt` |  | | `_CutbackWBSElement` | `WBSElementExternalID` | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `JVAInterCompanyControllingArea` |  | | `_InterCompanyCompanyCode` | `ControllingArea` | `CHAR(4)` | Controlling Area |
 | `_CompanyCode` | | ✓ | | | | |
 | `_InterCompanyCompanyCode` | | ✓ | | | | |
 | `_JVAFromProject` | | ✓ | | | | |

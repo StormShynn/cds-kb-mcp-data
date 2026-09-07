@@ -38,32 +38,32 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LegalTransactionUUID` | ✓ | |  |  |  |  |
-| `LegalTransaction` |  | |  |  |  |  |
-| `LegalTransactionTitle` |  | |  |  |  |  |
-| `LglCntntMContextUUID` |  | |  |  |  |  |
-| `LegalTransactionHealth` |  | |  |  |  |  |
-| `LglCntntMLanguage` |  | |  |  |  |  |
-| `LglTransWrkFlwModInstce` |  | |  |  |  |  |
-| `LegalTransactionSource` |  | |  |  |  |  |
-| `LglCntntMAgingTemperature` |  | |  |  |  |  |
-| `LglCntntMRtntnPerdStartDate` |  | |  |  |  |  |
-| `LglCntntMGovLaw` |  | |  |  |  |  |
-| `LglCntntMMainOrgType` |  | |  |  |  |  |
-| `LglCntntMLongTextUUID` |  | |  |  |  |  |
-| `CopiedFromLegalTransactionUUID` |  | |  | `LglCntntMCrtedFrmLglTransUUID` |  |  |
-| `IsEndOfPurposeBlocked` |  | |  |  |  |  |
+| `LegalTransactionUUID` | ✓ | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransaction` |  | |  |  | `CHAR(10)` | Legal Transaction ID |
+| `LegalTransactionTitle` |  | |  |  | `CHAR(128)` | Legal Transaction Name |
+| `LglCntntMContextUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransactionHealth` |  | |  |  | `CHAR(4)` | Legal Transaction Status |
+| `LglCntntMLanguage` |  | |  |  | `LANG(1)` | Language Key |
+| `LglTransWrkFlwModInstce` |  | |  |  | `CHAR(70)` | Instance Ident. in BOR Compat. Persistent Object References |
+| `LegalTransactionSource` |  | |  |  | `CHAR(3)` | LT Integration source |
+| `LglCntntMAgingTemperature` |  | |  |  | `DATS(8)` | Data Filter Value for Data Aging |
+| `LglCntntMRtntnPerdStartDate` |  | |  |  | `DATS(8)` | Start of Retention Period |
+| `LglCntntMGovLaw` |  | |  |  | `CHAR(7)` | Governing Law |
+| `LglCntntMMainOrgType` |  | |  |  | `CHAR(2)` | Entity Technical Type |
+| `LglCntntMLongTextUUID` |  | |  |  | `RAW(16)` | Description |
+| `CopiedFromLegalTransactionUUID` |  | |  | `LglCntntMCrtedFrmLglTransUUID` | `RAW(16)` | Universal Unique Identifier |
+| `IsEndOfPurposeBlocked` |  | |  |  | `CHAR(1)` | Business Purpose Completed |
 | `LglCntntMLongText` |  | |  |  |  |  |
-| `LglCntntMLongTextMimeType` |  | |  |  |  |  |
-| `LglCntntMProfile` |  | |  |  |  |  |
-| `LglTransAccessLvl` |  | |  |  |  |  |
-| `LglCntntMMainOrgCoCode` |  | |  |  |  |  |
-| `LglCntntMMainOrgSalesOrg` |  | |  |  |  |  |
-| `LglCntntMMainOrgPurOrg` |  | |  |  |  |  |
-| `LglCntntMCreatedByUser` |  | |  |  |  |  |
-| `LglCntntMCreatedUTCDateTime` |  | |  |  |  |  |
-| `LglCntntMChangedByUser` |  | |  |  |  |  |
-| `LglCntntMChangedUTCDateTime` |  | |  |  |  |  |
+| `LglCntntMLongTextMimeType` |  | |  |  | `CHAR(127)` | MIME Type |
+| `LglCntntMProfile` |  | |  |  | `CHAR(10)` | Profile |
+| `LglTransAccessLvl` |  | |  |  | `CHAR(4)` | Access Level |
+| `LglCntntMMainOrgCoCode` |  | |  |  | `CHAR(10)` | Entity ID |
+| `LglCntntMMainOrgSalesOrg` |  | |  |  | `CHAR(10)` | Entity ID |
+| `LglCntntMMainOrgPurOrg` |  | |  |  | `CHAR(10)` | Entity ID |
+| `LglCntntMCreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `LglCntntMCreatedUTCDateTime` |  | |  |  | `DEC(15)` | Created On |
+| `LglCntntMChangedByUser` |  | |  |  | `CHAR(12)` | Changed By User |
+| `LglCntntMChangedUTCDateTime` |  | |  |  | `DEC(21)` | Changed UTC Date Time |
 | `_LegalContextAPI01` | | ✓ | | | | |
 
 ## Associations

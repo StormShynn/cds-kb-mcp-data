@@ -40,10 +40,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `JntOpgAgrmtClass` | ✓ | |  | `aclass` |  |  |
-| `JntOpgAgrmtClassText` |  | |  | `actext` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `JntOpgAgrmtClass` | ✓ | |  | `aclass` | `CHAR(2)` | Joint Operating Agreement Class |
+| `JntOpgAgrmtClassText` |  | |  | `actext` | `CHAR(35)` | Joint operating agreement class text |
 | `_Language` | | ✓ | | | | |
 | `_CompanyCode` | | ✓ | | | | |
 | `_JntOpgAgrmtClass` | | ✓ | | | | |

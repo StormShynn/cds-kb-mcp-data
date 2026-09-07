@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LglCntntMProfile` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `LglCntntMProfileName` |  | |  |  |  |  |
+| `LglCntntMProfile` | ✓ | |  |  | `CHAR(10)` | Profile |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `LglCntntMProfileName` |  | |  |  | `CHAR(40)` | Long Text |
 
 ## Source Code
 

@@ -40,11 +40,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `JointVenturePartner` | ✓ | |  | `cast( jvp.partn as jv_part_cds preserving type )` |  |  |
-| `JointVenturePartnerShortText` |  | |  | `cast( left(_BusinessPartner.BusinessPartnerName, 35) as jv_part_nm preserving type )` |  |  |
-| `JointVenturePartner2ShortText` |  | |  | `cast( left(_BusinessPartner.BusinessPartnerName, 40) as jva_partner_name preserving type )` |  |  |
-| `JntVntrIntcoCode` |  | |  | `intcocd` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `JointVenturePartner` | ✓ | |  | `cast( jvp.partn as jv_part_cds preserving type )` | `CHAR(10)` | Joint Venture Partner |
+| `JointVenturePartnerShortText` |  | |  | `cast( left(_BusinessPartner.BusinessPartnerName, 35) as jv_part_nm preserving type )` | `CHAR(35)` | Name of the joint venture partner |
+| `JointVenturePartner2ShortText` |  | |  | `cast( left(_BusinessPartner.BusinessPartnerName, 40) as jva_partner_name preserving type )` | `CHAR(40)` | JVA Partner name |
+| `JntVntrIntcoCode` |  | |  | `intcocd` | `CHAR(4)` | Intercompany code |
 | `_CompanyCode` | | ✓ | | | | |
 | `_BusinessPartner` | | ✓ | | | | |
 

@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LglCntntMAccessLvl` | ✓ | |  |  |  |  |
+| `LglCntntMAccessLvl` | ✓ | |  |  | `CHAR(4)` | Access Level |
 | `_LglCntntMAccessLvlTextAPI01` | | ✓ | | | | |
 
 ## Associations

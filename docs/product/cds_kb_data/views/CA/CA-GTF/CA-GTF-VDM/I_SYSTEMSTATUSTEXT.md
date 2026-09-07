@@ -42,10 +42,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SystemStatus` | ✓ | |  | `istat` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `SystemStatusName` |  | |  | `txt30` |  |  |
-| `SystemStatusShortName` |  | |  | `txt04` |  |  |
+| `SystemStatus` | ✓ | |  | `istat` | `CHAR(5)` | System status |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `SystemStatusName` |  | |  | `txt30` | `CHAR(30)` | Individual Status of an Object |
+| `SystemStatusShortName` |  | |  | `txt04` | `CHAR(4)` | Individual status of an object (short form) |
 | `_SystemStatus` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 
