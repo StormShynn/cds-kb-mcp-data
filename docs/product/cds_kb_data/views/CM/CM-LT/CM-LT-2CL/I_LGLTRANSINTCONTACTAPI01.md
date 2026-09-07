@@ -38,16 +38,16 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LegalTransactionIntCntctUUID` | ✓ | |  |  |  |  |
-| `LglCntntMRank` |  | |  |  |  |  |
-| `LglCntntMIntCntctUser` |  | |  |  |  |  |
-| `LglCntntMIntContactTeam` |  | |  |  |  |  |
-| `LglCntntMIntCntctType` |  | |  |  |  |  |
-| `LglCntntMIntContactUserType` |  | |  |  |  |  |
-| `LegalTransactionUUID` |  | |  |  |  |  |
-| `LegalTransactionMandatoryFlag` |  | |  |  |  |  |
-| `LglCntntMIsIntegRelevant` |  | |  |  |  |  |
-| `LglCntntMIsAddedByIntegVarbl` |  | |  |  |  |  |
+| `LegalTransactionIntCntctUUID` | ✓ | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglCntntMRank` |  | |  |  | `INT2(5)` | Sequence Number |
+| `LglCntntMIntCntctUser` |  | |  |  | `CHAR(12)` | User Name |
+| `LglCntntMIntContactTeam` |  | |  |  | `CHAR(40)` | Team |
+| `LglCntntMIntCntctType` |  | |  |  | `CHAR(4)` | Contact Type |
+| `LglCntntMIntContactUserType` |  | |  |  | `CHAR(2)` | Assignment Type |
+| `LegalTransactionUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransactionMandatoryFlag` |  | |  |  | `CHAR(1)` | Control Parameter Legal Transaction Mandatory State |
+| `LglCntntMIsIntegRelevant` |  | |  |  | `CHAR(1)` | Integrated |
+| `LglCntntMIsAddedByIntegVarbl` |  | |  |  | `CHAR(1)` | Added By Integration Variable BAdI |
 | `_LegalTransaction` | | ✓ | | | | |
 
 ## Associations

@@ -42,13 +42,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostCenter` | ✓ | |  | `kostl` |  |  |
-| `ControllingArea` | ✓ | |  | `kokrs` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `ValidityEndDate` | ✓ | |  | `datbi` |  |  |
-| `ValidityStartDate` |  | | `_md` | `datab` |  |  |
-| `CostCenterName` |  | |  | `cast(cskt.ktext as fis_kostl_name preserving type)` |  |  |
-| `CostCenterDescription` |  | |  | `cast(cskt.ltext as fis_kostl_ltext preserving type)` |  |  |
+| `CostCenter` | ✓ | |  | `kostl` | `CHAR(10)` | Cost Center |
+| `ControllingArea` | ✓ | |  | `kokrs` | `CHAR(4)` | Controlling Area |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `ValidityEndDate` | ✓ | |  | `datbi` | `DATS(8)` | Valid To Date |
+| `ValidityStartDate` |  | | `_md` | `datab` | `DATS(8)` | Valid-From Date |
+| `CostCenterName` |  | |  | `cast(cskt.ktext as fis_kostl_name preserving type)` | `CHAR(20)` | Cost Center Name |
+| `CostCenterDescription` |  | |  | `cast(cskt.ltext as fis_kostl_ltext preserving type)` | `CHAR(40)` | Description of Cost Center |
 | `_ControllingAreaText` | | ✓ | | | | |
 | `_ControllingArea` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |

@@ -37,276 +37,276 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `docid` | ✓ | |  |  |  |  |
-| `version` | ✓ | |  |  |  |  |
-| `doctag` |  | |  |  |  |  |
-| `docqprov` |  | |  |  |  |  |
-| `tra_00001` |  | |  |  |  |  |
-| `sva_00001` |  | |  |  |  |  |
-| `tra_00002` |  | |  |  |  |  |
-| `sva_00002` |  | |  |  |  |  |
-| `tra_plant` |  | |  |  |  |  |
-| `sva_plant` |  | |  |  |  |  |
-| `svh_plant` |  | |  |  |  |  |
-| `hnm_plant` |  | |  |  |  |  |
-| `hno_plant` |  | |  |  |  |  |
-| `hio_plant` |  | |  |  |  |  |
-| `tra_customer` |  | |  |  |  |  |
-| `sva_customer` |  | |  |  |  |  |
-| `svh_customer` |  | |  |  |  |  |
-| `hnm_customer` |  | |  |  |  |  |
-| `hno_customer` |  | |  |  |  |  |
-| `hio_customer` |  | |  |  |  |  |
-| `tra_fiscalperiod` |  | |  |  |  |  |
-| `sva_fiscalperiod` |  | |  |  |  |  |
-| `svh_fiscalperiod` |  | |  |  |  |  |
-| `hnm_fiscalperiod` |  | |  |  |  |  |
-| `hno_fiscalperiod` |  | |  |  |  |  |
-| `hio_fiscalperiod` |  | |  |  |  |  |
-| `tra_postingdate` |  | |  |  |  |  |
-| `sva_postingdate` |  | |  |  |  |  |
-| `svh_postingdate` |  | |  |  |  |  |
-| `hnm_postingdate` |  | |  |  |  |  |
-| `hno_postingdate` |  | |  |  |  |  |
-| `hio_postingdate` |  | |  |  |  |  |
-| `tra_fiscalyear` |  | |  |  |  |  |
-| `sva_fiscalyear` |  | |  |  |  |  |
-| `tra_profitcenter` |  | |  |  |  |  |
-| `sva_profitcenter` |  | |  |  |  |  |
-| `svh_profitcenter` |  | |  |  |  |  |
-| `hnm_profitcenter` |  | |  |  |  |  |
-| `hno_profitcenter` |  | |  |  |  |  |
-| `hio_profitcenter` |  | |  |  |  |  |
-| `tra_valuationarea` |  | |  |  |  |  |
-| `sva_valuationarea` |  | |  |  |  |  |
-| `tra_00003` |  | |  |  |  |  |
-| `sva_00003` |  | |  |  |  |  |
-| `tra_wbselement` |  | |  |  |  |  |
-| `sva_wbselement` |  | |  |  |  |  |
-| `tra_semantictag` |  | |  |  |  |  |
-| `sva_semantictag` |  | |  |  |  |  |
-| `tra_00004` |  | |  |  |  |  |
-| `sva_00004` |  | |  |  |  |  |
-| `svh_00004` |  | |  |  |  |  |
-| `hnm_00004` |  | |  |  |  |  |
-| `hno_00004` |  | |  |  |  |  |
-| `hio_00004` |  | |  |  |  |  |
-| `tra_00005` |  | |  |  |  |  |
-| `sva_00005` |  | |  |  |  |  |
-| `tra_00006` |  | |  |  |  |  |
-| `sva_00006` |  | |  |  |  |  |
-| `tra_00007` |  | |  |  |  |  |
-| `sva_00007` |  | |  |  |  |  |
-| `tra_00008` |  | |  |  |  |  |
-| `sva_00008` |  | |  |  |  |  |
-| `tra_00009` |  | |  |  |  |  |
-| `sva_00009` |  | |  |  |  |  |
-| `svh_00009` |  | |  |  |  |  |
-| `hnm_00009` |  | |  |  |  |  |
-| `hno_00009` |  | |  |  |  |  |
-| `hio_00009` |  | |  |  |  |  |
-| `tra_salesdistrict` |  | |  |  |  |  |
-| `sva_salesdistrict` |  | |  |  |  |  |
-| `svh_salesdistrict` |  | |  |  |  |  |
-| `hnm_salesdistrict` |  | |  |  |  |  |
-| `hno_salesdistrict` |  | |  |  |  |  |
-| `hio_salesdistrict` |  | |  |  |  |  |
-| `tra_c1` |  | |  |  |  |  |
-| `sva_c1` |  | |  |  |  |  |
-| `tra_00010` |  | |  |  |  |  |
-| `sva_00010` |  | |  |  |  |  |
-| `tra_salesorder` |  | |  |  |  |  |
-| `sva_salesorder` |  | |  |  |  |  |
-| `tra_costcenter` |  | |  |  |  |  |
-| `sva_costcenter` |  | |  |  |  |  |
-| `svh_costcenter` |  | |  |  |  |  |
-| `hnm_costcenter` |  | |  |  |  |  |
-| `hno_costcenter` |  | |  |  |  |  |
-| `hio_costcenter` |  | |  |  |  |  |
-| `tra_00011` |  | |  |  |  |  |
-| `sva_00011` |  | |  |  |  |  |
-| `tra_product` |  | |  |  |  |  |
-| `sva_product` |  | |  |  |  |  |
-| `svh_product` |  | |  |  |  |  |
-| `hnm_product` |  | |  |  |  |  |
-| `hno_product` |  | |  |  |  |  |
-| `hio_product` |  | |  |  |  |  |
-| `tra_00012` |  | |  |  |  |  |
-| `sva_00012` |  | |  |  |  |  |
-| `tra_currency` |  | |  |  |  |  |
-| `sva_currency` |  | |  |  |  |  |
-| `tra_glaccount` |  | |  |  |  |  |
-| `sva_glaccount` |  | |  |  |  |  |
-| `svh_glaccount` |  | |  |  |  |  |
-| `hnm_glaccount` |  | |  |  |  |  |
-| `hno_glaccount` |  | |  |  |  |  |
-| `hio_glaccount` |  | |  |  |  |  |
-| `tra_sourceledger` |  | |  |  |  |  |
-| `sva_sourceledger` |  | |  |  |  |  |
-| `tra_functionalarea` |  | |  |  |  |  |
-| `sva_functionalarea` |  | |  |  |  |  |
-| `svh_functionalarea` |  | |  |  |  |  |
-| `hnm_functionalarea` |  | |  |  |  |  |
-| `hno_functionalarea` |  | |  |  |  |  |
-| `hio_functionalarea` |  | |  |  |  |  |
-| `tra_00013` |  | |  |  |  |  |
-| `sva_00013` |  | |  |  |  |  |
-| `tra_00014` |  | |  |  |  |  |
-| `sva_00014` |  | |  |  |  |  |
-| `tra_segment` |  | |  |  |  |  |
-| `sva_segment` |  | |  |  |  |  |
-| `tra_billtoparty` |  | |  |  |  |  |
-| `sva_billtoparty` |  | |  |  |  |  |
-| `svh_billtoparty` |  | |  |  |  |  |
-| `hnm_billtoparty` |  | |  |  |  |  |
-| `hno_billtoparty` |  | |  |  |  |  |
-| `hio_billtoparty` |  | |  |  |  |  |
-| `tra_00015` |  | |  |  |  |  |
-| `sva_00015` |  | |  |  |  |  |
-| `svh_00015` |  | |  |  |  |  |
-| `hnm_00015` |  | |  |  |  |  |
-| `hno_00015` |  | |  |  |  |  |
-| `hio_00015` |  | |  |  |  |  |
-| `tra_assetclass` |  | |  |  |  |  |
-| `sva_assetclass` |  | |  |  |  |  |
-| `tra_currencyfield` |  | |  |  |  |  |
-| `sva_currencyfield` |  | |  |  |  |  |
-| `tra_customergroup` |  | |  |  |  |  |
-| `sva_customergroup` |  | |  |  |  |  |
-| `svh_customergroup` |  | |  |  |  |  |
-| `hnm_customergroup` |  | |  |  |  |  |
-| `hno_customergroup` |  | |  |  |  |  |
-| `hio_customergroup` |  | |  |  |  |  |
-| `tra_00016` |  | |  |  |  |  |
-| `sva_00016` |  | |  |  |  |  |
-| `svh_00016` |  | |  |  |  |  |
-| `hnm_00016` |  | |  |  |  |  |
-| `hno_00016` |  | |  |  |  |  |
-| `hio_00016` |  | |  |  |  |  |
-| `tra_00017` |  | |  |  |  |  |
-| `sva_00017` |  | |  |  |  |  |
-| `svh_00017` |  | |  |  |  |  |
-| `hnm_00017` |  | |  |  |  |  |
-| `hno_00017` |  | |  |  |  |  |
-| `hio_00017` |  | |  |  |  |  |
-| `tra_00018` |  | |  |  |  |  |
-| `sva_00018` |  | |  |  |  |  |
-| `tra_00019` |  | |  |  |  |  |
-| `sva_00019` |  | |  |  |  |  |
-| `tra_globalcurrency` |  | |  |  |  |  |
-| `sva_globalcurrency` |  | |  |  |  |  |
-| `tra_companycode` |  | |  |  |  |  |
-| `sva_companycode` |  | |  |  |  |  |
-| `svh_companycode` |  | |  |  |  |  |
-| `hnm_companycode` |  | |  |  |  |  |
-| `hno_companycode` |  | |  |  |  |  |
-| `hio_companycode` |  | |  |  |  |  |
-| `tra_shiptoparty` |  | |  |  |  |  |
-| `sva_shiptoparty` |  | |  |  |  |  |
-| `svh_shiptoparty` |  | |  |  |  |  |
-| `hnm_shiptoparty` |  | |  |  |  |  |
-| `hno_shiptoparty` |  | |  |  |  |  |
-| `hio_shiptoparty` |  | |  |  |  |  |
-| `tra_00020` |  | |  |  |  |  |
-| `sva_00020` |  | |  |  |  |  |
-| `tra_00021` |  | |  |  |  |  |
-| `sva_00021` |  | |  |  |  |  |
-| `tra_00022` |  | |  |  |  |  |
-| `sva_00022` |  | |  |  |  |  |
-| `tra_00023` |  | |  |  |  |  |
-| `sva_00023` |  | |  |  |  |  |
-| `tra_equipment` |  | |  |  |  |  |
-| `sva_equipment` |  | |  |  |  |  |
-| `tra_supplier` |  | |  |  |  |  |
-| `sva_supplier` |  | |  |  |  |  |
-| `tra_soldproduct` |  | |  |  |  |  |
-| `sva_soldproduct` |  | |  |  |  |  |
-| `svh_soldproduct` |  | |  |  |  |  |
-| `hnm_soldproduct` |  | |  |  |  |  |
-| `hno_soldproduct` |  | |  |  |  |  |
-| `hio_soldproduct` |  | |  |  |  |  |
-| `tra_00024` |  | |  |  |  |  |
-| `sva_00024` |  | |  |  |  |  |
-| `svh_00024` |  | |  |  |  |  |
-| `hnm_00024` |  | |  |  |  |  |
-| `hno_00024` |  | |  |  |  |  |
-| `hio_00024` |  | |  |  |  |  |
-| `tra_00025` |  | |  |  |  |  |
-| `sva_00025` |  | |  |  |  |  |
-| `svh_00025` |  | |  |  |  |  |
-| `hnm_00025` |  | |  |  |  |  |
-| `hno_00025` |  | |  |  |  |  |
-| `hio_00025` |  | |  |  |  |  |
-| `tra_00026` |  | |  |  |  |  |
-| `sva_00026` |  | |  |  |  |  |
-| `tra_00027` |  | |  |  |  |  |
-| `sva_00027` |  | |  |  |  |  |
-| `svh_00027` |  | |  |  |  |  |
-| `hnm_00027` |  | |  |  |  |  |
-| `hno_00027` |  | |  |  |  |  |
-| `hio_00027` |  | |  |  |  |  |
-| `tra_00028` |  | |  |  |  |  |
-| `sva_00028` |  | |  |  |  |  |
-| `tra_00029` |  | |  |  |  |  |
-| `sva_00029` |  | |  |  |  |  |
-| `tra_ledger` |  | |  |  |  |  |
-| `sva_ledger` |  | |  |  |  |  |
-| `tra_00030` |  | |  |  |  |  |
-| `sva_00030` |  | |  |  |  |  |
-| `tra_00031` |  | |  |  |  |  |
-| `sva_00031` |  | |  |  |  |  |
-| `tra_00032` |  | |  |  |  |  |
-| `sva_00032` |  | |  |  |  |  |
-| `svh_00032` |  | |  |  |  |  |
-| `hnm_00032` |  | |  |  |  |  |
-| `hno_00032` |  | |  |  |  |  |
-| `hio_00032` |  | |  |  |  |  |
-| `tra_fiscalquarter` |  | |  |  |  |  |
-| `sva_fiscalquarter` |  | |  |  |  |  |
-| `tra_salesorderitem` |  | |  |  |  |  |
-| `sva_salesorderitem` |  | |  |  |  |  |
-| `tra_00033` |  | |  |  |  |  |
-| `sva_00033` |  | |  |  |  |  |
-| `svh_00033` |  | |  |  |  |  |
-| `hnm_00033` |  | |  |  |  |  |
-| `hno_00033` |  | |  |  |  |  |
-| `hio_00033` |  | |  |  |  |  |
-| `tra_partnercompany` |  | |  |  |  |  |
-| `sva_partnercompany` |  | |  |  |  |  |
-| `tra_00034` |  | |  |  |  |  |
-| `sva_00034` |  | |  |  |  |  |
-| `tra_00035` |  | |  |  |  |  |
-| `sva_00035` |  | |  |  |  |  |
-| `tra_00036` |  | |  |  |  |  |
-| `sva_00036` |  | |  |  |  |  |
-| `tra_00037` |  | |  |  |  |  |
-| `sva_00037` |  | |  |  |  |  |
-| `svh_00037` |  | |  |  |  |  |
-| `hnm_00037` |  | |  |  |  |  |
-| `hno_00037` |  | |  |  |  |  |
-| `hio_00037` |  | |  |  |  |  |
-| `tra_salesdocument` |  | |  |  |  |  |
-| `sva_salesdocument` |  | |  |  |  |  |
-| `tra_orderid` |  | |  |  |  |  |
-| `sva_orderid` |  | |  |  |  |  |
-| `svh_orderid` |  | |  |  |  |  |
-| `hnm_orderid` |  | |  |  |  |  |
-| `hno_orderid` |  | |  |  |  |  |
-| `hio_orderid` |  | |  |  |  |  |
-| `tra_00038` |  | |  |  |  |  |
-| `sva_00038` |  | |  |  |  |  |
-| `tra_baseunit` |  | |  |  |  |  |
-| `sva_baseunit` |  | |  |  |  |  |
-| `tra_00039` |  | |  |  |  |  |
-| `sva_00039` |  | |  |  |  |  |
-| `doctype` |  | |  |  |  |  |
-| `owner` |  | |  |  |  |  |
-| `infoprov` |  | |  |  |  |  |
-| `sva_infoprov` |  | |  |  |  |  |
-| `kyfnm` |  | |  |  |  |  |
-| `docstat` |  | |  |  |  |  |
-| `session_id` |  | |  |  |  |  |
-| `timestamp` |  | |  |  |  |  |
+| `docid` | ✓ | |  |  | `NUMC(16)` |  |
+| `version` | ✓ | |  |  | `NUMC(6)` |  |
+| `doctag` |  | |  |  | `CHAR(60)` |  |
+| `docqprov` |  | |  |  | `CHAR(30)` |  |
+| `tra_00001` |  | |  |  | `CHAR(2)` |  |
+| `sva_00001` |  | |  |  | `CHAR(1)` |  |
+| `tra_00002` |  | |  |  | `NUMC(6)` |  |
+| `sva_00002` |  | |  |  | `CHAR(1)` |  |
+| `tra_plant` |  | |  |  | `CHAR(4)` |  |
+| `sva_plant` |  | |  |  | `CHAR(1)` |  |
+| `svh_plant` |  | |  |  | `CHAR(1)` |  |
+| `hnm_plant` |  | |  |  | `CHAR(30)` |  |
+| `hno_plant` |  | |  |  | `CHAR(32)` |  |
+| `hio_plant` |  | |  |  | `CHAR(30)` |  |
+| `tra_customer` |  | |  |  | `CHAR(10)` |  |
+| `sva_customer` |  | |  |  | `CHAR(1)` |  |
+| `svh_customer` |  | |  |  | `CHAR(1)` |  |
+| `hnm_customer` |  | |  |  | `CHAR(30)` |  |
+| `hno_customer` |  | |  |  | `CHAR(32)` |  |
+| `hio_customer` |  | |  |  | `CHAR(30)` |  |
+| `tra_fiscalperiod` |  | |  |  | `NUMC(3)` |  |
+| `sva_fiscalperiod` |  | |  |  | `CHAR(1)` |  |
+| `svh_fiscalperiod` |  | |  |  | `CHAR(1)` |  |
+| `hnm_fiscalperiod` |  | |  |  | `CHAR(30)` |  |
+| `hno_fiscalperiod` |  | |  |  | `CHAR(32)` |  |
+| `hio_fiscalperiod` |  | |  |  | `CHAR(30)` |  |
+| `tra_postingdate` |  | |  |  | `DATS(8)` |  |
+| `sva_postingdate` |  | |  |  | `CHAR(1)` |  |
+| `svh_postingdate` |  | |  |  | `CHAR(1)` |  |
+| `hnm_postingdate` |  | |  |  | `CHAR(30)` |  |
+| `hno_postingdate` |  | |  |  | `CHAR(32)` |  |
+| `hio_postingdate` |  | |  |  | `CHAR(30)` |  |
+| `tra_fiscalyear` |  | |  |  | `NUMC(4)` |  |
+| `sva_fiscalyear` |  | |  |  | `CHAR(1)` |  |
+| `tra_profitcenter` |  | |  |  | `CHAR(10)` |  |
+| `sva_profitcenter` |  | |  |  | `CHAR(1)` |  |
+| `svh_profitcenter` |  | |  |  | `CHAR(1)` |  |
+| `hnm_profitcenter` |  | |  |  | `CHAR(30)` |  |
+| `hno_profitcenter` |  | |  |  | `CHAR(32)` |  |
+| `hio_profitcenter` |  | |  |  | `CHAR(30)` |  |
+| `tra_valuationarea` |  | |  |  | `CHAR(4)` |  |
+| `sva_valuationarea` |  | |  |  | `CHAR(1)` |  |
+| `tra_00003` |  | |  |  | `CHAR(10)` |  |
+| `sva_00003` |  | |  |  | `CHAR(1)` |  |
+| `tra_wbselement` |  | |  |  | `CHAR(24)` |  |
+| `sva_wbselement` |  | |  |  | `CHAR(1)` |  |
+| `tra_semantictag` |  | |  |  | `CHAR(10)` |  |
+| `sva_semantictag` |  | |  |  | `CHAR(1)` |  |
+| `tra_00004` |  | |  |  | `CHAR(24)` |  |
+| `sva_00004` |  | |  |  | `CHAR(1)` |  |
+| `svh_00004` |  | |  |  | `CHAR(1)` |  |
+| `hnm_00004` |  | |  |  | `CHAR(30)` |  |
+| `hno_00004` |  | |  |  | `CHAR(32)` |  |
+| `hio_00004` |  | |  |  | `CHAR(30)` |  |
+| `tra_00005` |  | |  |  | `CUKY(5)` |  |
+| `sva_00005` |  | |  |  | `CHAR(1)` |  |
+| `tra_00006` |  | |  |  | `CHAR(4)` |  |
+| `sva_00006` |  | |  |  | `CHAR(1)` |  |
+| `tra_00007` |  | |  |  | `NUMC(6)` |  |
+| `sva_00007` |  | |  |  | `CHAR(1)` |  |
+| `tra_00008` |  | |  |  | `CHAR(2)` |  |
+| `sva_00008` |  | |  |  | `CHAR(1)` |  |
+| `tra_00009` |  | |  |  | `DATS(8)` |  |
+| `sva_00009` |  | |  |  | `CHAR(1)` |  |
+| `svh_00009` |  | |  |  | `CHAR(1)` |  |
+| `hnm_00009` |  | |  |  | `CHAR(30)` |  |
+| `hno_00009` |  | |  |  | `CHAR(32)` |  |
+| `hio_00009` |  | |  |  | `CHAR(30)` |  |
+| `tra_salesdistrict` |  | |  |  | `CHAR(6)` |  |
+| `sva_salesdistrict` |  | |  |  | `CHAR(1)` |  |
+| `svh_salesdistrict` |  | |  |  | `CHAR(1)` |  |
+| `hnm_salesdistrict` |  | |  |  | `CHAR(30)` |  |
+| `hno_salesdistrict` |  | |  |  | `CHAR(32)` |  |
+| `hio_salesdistrict` |  | |  |  | `CHAR(30)` |  |
+| `tra_c1` |  | |  |  | `CHAR(10)` |  |
+| `sva_c1` |  | |  |  | `CHAR(1)` |  |
+| `tra_00010` |  | |  |  | `NUMC(8)` |  |
+| `sva_00010` |  | |  |  | `CHAR(1)` |  |
+| `tra_salesorder` |  | |  |  | `CHAR(10)` |  |
+| `sva_salesorder` |  | |  |  | `CHAR(1)` |  |
+| `tra_costcenter` |  | |  |  | `CHAR(10)` |  |
+| `sva_costcenter` |  | |  |  | `CHAR(1)` |  |
+| `svh_costcenter` |  | |  |  | `CHAR(1)` |  |
+| `hnm_costcenter` |  | |  |  | `CHAR(30)` |  |
+| `hno_costcenter` |  | |  |  | `CHAR(32)` |  |
+| `hio_costcenter` |  | |  |  | `CHAR(30)` |  |
+| `tra_00011` |  | |  |  | `CHAR(24)` |  |
+| `sva_00011` |  | |  |  | `CHAR(1)` |  |
+| `tra_product` |  | |  |  | `CHAR(40)` |  |
+| `sva_product` |  | |  |  | `CHAR(1)` |  |
+| `svh_product` |  | |  |  | `CHAR(1)` |  |
+| `hnm_product` |  | |  |  | `CHAR(30)` |  |
+| `hno_product` |  | |  |  | `CHAR(32)` |  |
+| `hio_product` |  | |  |  | `CHAR(30)` |  |
+| `tra_00012` |  | |  |  | `CHAR(12)` |  |
+| `sva_00012` |  | |  |  | `CHAR(1)` |  |
+| `tra_currency` |  | |  |  | `CUKY(5)` |  |
+| `sva_currency` |  | |  |  | `CHAR(1)` |  |
+| `tra_glaccount` |  | |  |  | `CHAR(10)` |  |
+| `sva_glaccount` |  | |  |  | `CHAR(1)` |  |
+| `svh_glaccount` |  | |  |  | `CHAR(1)` |  |
+| `hnm_glaccount` |  | |  |  | `CHAR(30)` |  |
+| `hno_glaccount` |  | |  |  | `CHAR(32)` |  |
+| `hio_glaccount` |  | |  |  | `CHAR(30)` |  |
+| `tra_sourceledger` |  | |  |  | `CHAR(2)` |  |
+| `sva_sourceledger` |  | |  |  | `CHAR(1)` |  |
+| `tra_functionalarea` |  | |  |  | `CHAR(16)` |  |
+| `sva_functionalarea` |  | |  |  | `CHAR(1)` |  |
+| `svh_functionalarea` |  | |  |  | `CHAR(1)` |  |
+| `hnm_functionalarea` |  | |  |  | `CHAR(30)` |  |
+| `hno_functionalarea` |  | |  |  | `CHAR(32)` |  |
+| `hio_functionalarea` |  | |  |  | `CHAR(30)` |  |
+| `tra_00013` |  | |  |  | `NUMC(5)` |  |
+| `sva_00013` |  | |  |  | `CHAR(1)` |  |
+| `tra_00014` |  | |  |  | `CHAR(1)` |  |
+| `sva_00014` |  | |  |  | `CHAR(1)` |  |
+| `tra_segment` |  | |  |  | `CHAR(10)` |  |
+| `sva_segment` |  | |  |  | `CHAR(1)` |  |
+| `tra_billtoparty` |  | |  |  | `CHAR(10)` |  |
+| `sva_billtoparty` |  | |  |  | `CHAR(1)` |  |
+| `svh_billtoparty` |  | |  |  | `CHAR(1)` |  |
+| `hnm_billtoparty` |  | |  |  | `CHAR(30)` |  |
+| `hno_billtoparty` |  | |  |  | `CHAR(32)` |  |
+| `hio_billtoparty` |  | |  |  | `CHAR(30)` |  |
+| `tra_00015` |  | |  |  | `CHAR(4)` |  |
+| `sva_00015` |  | |  |  | `CHAR(1)` |  |
+| `svh_00015` |  | |  |  | `CHAR(1)` |  |
+| `hnm_00015` |  | |  |  | `CHAR(30)` |  |
+| `hno_00015` |  | |  |  | `CHAR(32)` |  |
+| `hio_00015` |  | |  |  | `CHAR(30)` |  |
+| `tra_assetclass` |  | |  |  | `CHAR(8)` |  |
+| `sva_assetclass` |  | |  |  | `CHAR(1)` |  |
+| `tra_currencyfield` |  | |  |  | `CHAR(4)` |  |
+| `sva_currencyfield` |  | |  |  | `CHAR(1)` |  |
+| `tra_customergroup` |  | |  |  | `CHAR(2)` |  |
+| `sva_customergroup` |  | |  |  | `CHAR(1)` |  |
+| `svh_customergroup` |  | |  |  | `CHAR(1)` |  |
+| `hnm_customergroup` |  | |  |  | `CHAR(30)` |  |
+| `hno_customergroup` |  | |  |  | `CHAR(32)` |  |
+| `hio_customergroup` |  | |  |  | `CHAR(30)` |  |
+| `tra_00016` |  | |  |  | `CHAR(2)` |  |
+| `sva_00016` |  | |  |  | `CHAR(1)` |  |
+| `svh_00016` |  | |  |  | `CHAR(1)` |  |
+| `hnm_00016` |  | |  |  | `CHAR(30)` |  |
+| `hno_00016` |  | |  |  | `CHAR(32)` |  |
+| `hio_00016` |  | |  |  | `CHAR(30)` |  |
+| `tra_00017` |  | |  |  | `CHAR(2)` |  |
+| `sva_00017` |  | |  |  | `CHAR(1)` |  |
+| `svh_00017` |  | |  |  | `CHAR(1)` |  |
+| `hnm_00017` |  | |  |  | `CHAR(30)` |  |
+| `hno_00017` |  | |  |  | `CHAR(32)` |  |
+| `hio_00017` |  | |  |  | `CHAR(30)` |  |
+| `tra_00018` |  | |  |  | `NUMC(6)` |  |
+| `sva_00018` |  | |  |  | `CHAR(1)` |  |
+| `tra_00019` |  | |  |  | `CHAR(10)` |  |
+| `sva_00019` |  | |  |  | `CHAR(1)` |  |
+| `tra_globalcurrency` |  | |  |  | `CUKY(5)` |  |
+| `sva_globalcurrency` |  | |  |  | `CHAR(1)` |  |
+| `tra_companycode` |  | |  |  | `CHAR(4)` |  |
+| `sva_companycode` |  | |  |  | `CHAR(1)` |  |
+| `svh_companycode` |  | |  |  | `CHAR(1)` |  |
+| `hnm_companycode` |  | |  |  | `CHAR(30)` |  |
+| `hno_companycode` |  | |  |  | `CHAR(32)` |  |
+| `hio_companycode` |  | |  |  | `CHAR(30)` |  |
+| `tra_shiptoparty` |  | |  |  | `CHAR(10)` |  |
+| `sva_shiptoparty` |  | |  |  | `CHAR(1)` |  |
+| `svh_shiptoparty` |  | |  |  | `CHAR(1)` |  |
+| `hnm_shiptoparty` |  | |  |  | `CHAR(30)` |  |
+| `hno_shiptoparty` |  | |  |  | `CHAR(32)` |  |
+| `hio_shiptoparty` |  | |  |  | `CHAR(30)` |  |
+| `tra_00020` |  | |  |  | `CHAR(10)` |  |
+| `sva_00020` |  | |  |  | `CHAR(1)` |  |
+| `tra_00021` |  | |  |  | `CHAR(4)` |  |
+| `sva_00021` |  | |  |  | `CHAR(1)` |  |
+| `tra_00022` |  | |  |  | `CHAR(9)` |  |
+| `sva_00022` |  | |  |  | `CHAR(1)` |  |
+| `tra_00023` |  | |  |  | `CHAR(2)` |  |
+| `sva_00023` |  | |  |  | `CHAR(1)` |  |
+| `tra_equipment` |  | |  |  | `CHAR(18)` |  |
+| `sva_equipment` |  | |  |  | `CHAR(1)` |  |
+| `tra_supplier` |  | |  |  | `CHAR(10)` |  |
+| `sva_supplier` |  | |  |  | `CHAR(1)` |  |
+| `tra_soldproduct` |  | |  |  | `CHAR(40)` |  |
+| `sva_soldproduct` |  | |  |  | `CHAR(1)` |  |
+| `svh_soldproduct` |  | |  |  | `CHAR(1)` |  |
+| `hnm_soldproduct` |  | |  |  | `CHAR(30)` |  |
+| `hno_soldproduct` |  | |  |  | `CHAR(32)` |  |
+| `hio_soldproduct` |  | |  |  | `CHAR(30)` |  |
+| `tra_00024` |  | |  |  | `CHAR(6)` |  |
+| `sva_00024` |  | |  |  | `CHAR(1)` |  |
+| `svh_00024` |  | |  |  | `CHAR(1)` |  |
+| `hnm_00024` |  | |  |  | `CHAR(30)` |  |
+| `hno_00024` |  | |  |  | `CHAR(32)` |  |
+| `hio_00024` |  | |  |  | `CHAR(30)` |  |
+| `tra_00025` |  | |  |  | `NUMC(7)` |  |
+| `sva_00025` |  | |  |  | `CHAR(1)` |  |
+| `svh_00025` |  | |  |  | `CHAR(1)` |  |
+| `hnm_00025` |  | |  |  | `CHAR(30)` |  |
+| `hno_00025` |  | |  |  | `CHAR(32)` |  |
+| `hio_00025` |  | |  |  | `CHAR(30)` |  |
+| `tra_00026` |  | |  |  | `CHAR(20)` |  |
+| `sva_00026` |  | |  |  | `CHAR(1)` |  |
+| `tra_00027` |  | |  |  | `NUMC(5)` |  |
+| `sva_00027` |  | |  |  | `CHAR(1)` |  |
+| `svh_00027` |  | |  |  | `CHAR(1)` |  |
+| `hnm_00027` |  | |  |  | `CHAR(30)` |  |
+| `hno_00027` |  | |  |  | `CHAR(32)` |  |
+| `hio_00027` |  | |  |  | `CHAR(30)` |  |
+| `tra_00028` |  | |  |  | `CHAR(4)` |  |
+| `sva_00028` |  | |  |  | `CHAR(1)` |  |
+| `tra_00029` |  | |  |  | `CHAR(5)` |  |
+| `sva_00029` |  | |  |  | `CHAR(1)` |  |
+| `tra_ledger` |  | |  |  | `CHAR(2)` |  |
+| `sva_ledger` |  | |  |  | `CHAR(1)` |  |
+| `tra_00030` |  | |  |  | `CHAR(2)` |  |
+| `sva_00030` |  | |  |  | `CHAR(1)` |  |
+| `tra_00031` |  | |  |  | `CHAR(4)` |  |
+| `sva_00031` |  | |  |  | `CHAR(1)` |  |
+| `tra_00032` |  | |  |  | `CHAR(3)` |  |
+| `sva_00032` |  | |  |  | `CHAR(1)` |  |
+| `svh_00032` |  | |  |  | `CHAR(1)` |  |
+| `hnm_00032` |  | |  |  | `CHAR(30)` |  |
+| `hno_00032` |  | |  |  | `CHAR(32)` |  |
+| `hio_00032` |  | |  |  | `CHAR(30)` |  |
+| `tra_fiscalquarter` |  | |  |  | `NUMC(1)` |  |
+| `sva_fiscalquarter` |  | |  |  | `CHAR(1)` |  |
+| `tra_salesorderitem` |  | |  |  | `NUMC(6)` |  |
+| `sva_salesorderitem` |  | |  |  | `CHAR(1)` |  |
+| `tra_00033` |  | |  |  | `CHAR(4)` |  |
+| `sva_00033` |  | |  |  | `CHAR(1)` |  |
+| `svh_00033` |  | |  |  | `CHAR(1)` |  |
+| `hnm_00033` |  | |  |  | `CHAR(30)` |  |
+| `hno_00033` |  | |  |  | `CHAR(32)` |  |
+| `hio_00033` |  | |  |  | `CHAR(30)` |  |
+| `tra_partnercompany` |  | |  |  | `CHAR(6)` |  |
+| `sva_partnercompany` |  | |  |  | `CHAR(1)` |  |
+| `tra_00034` |  | |  |  | `CHAR(4)` |  |
+| `sva_00034` |  | |  |  | `CHAR(1)` |  |
+| `tra_00035` |  | |  |  | `NUMC(4)` |  |
+| `sva_00035` |  | |  |  | `CHAR(1)` |  |
+| `tra_00036` |  | |  |  | `CHAR(42)` |  |
+| `sva_00036` |  | |  |  | `CHAR(1)` |  |
+| `tra_00037` |  | |  |  | `CHAR(4)` |  |
+| `sva_00037` |  | |  |  | `CHAR(1)` |  |
+| `svh_00037` |  | |  |  | `CHAR(1)` |  |
+| `hnm_00037` |  | |  |  | `CHAR(30)` |  |
+| `hno_00037` |  | |  |  | `CHAR(32)` |  |
+| `hio_00037` |  | |  |  | `CHAR(30)` |  |
+| `tra_salesdocument` |  | |  |  | `CHAR(10)` |  |
+| `sva_salesdocument` |  | |  |  | `CHAR(1)` |  |
+| `tra_orderid` |  | |  |  | `CHAR(12)` |  |
+| `sva_orderid` |  | |  |  | `CHAR(1)` |  |
+| `svh_orderid` |  | |  |  | `CHAR(1)` |  |
+| `hnm_orderid` |  | |  |  | `CHAR(30)` |  |
+| `hno_orderid` |  | |  |  | `CHAR(32)` |  |
+| `hio_orderid` |  | |  |  | `CHAR(30)` |  |
+| `tra_00038` |  | |  |  | `CUKY(5)` |  |
+| `sva_00038` |  | |  |  | `CHAR(1)` |  |
+| `tra_baseunit` |  | |  |  | `UNIT(3)` |  |
+| `sva_baseunit` |  | |  |  | `CHAR(1)` |  |
+| `tra_00039` |  | |  |  | `CHAR(6)` |  |
+| `sva_00039` |  | |  |  | `CHAR(1)` |  |
+| `doctype` |  | |  |  | `CHAR(1)` |  |
+| `owner` |  | |  |  | `CHAR(12)` |  |
+| `infoprov` |  | |  |  | `CHAR(30)` |  |
+| `sva_infoprov` |  | |  |  | `CHAR(1)` |  |
+| `kyfnm` |  | |  |  | `CHAR(30)` |  |
+| `docstat` |  | |  |  | `CHAR(1)` |  |
+| `session_id` |  | |  |  | `CHAR(30)` |  |
+| `timestamp` |  | |  |  | `DEC(15)` |  |
 | `document` |  | |  |  |  |  |
 | `seldr` |  | |  |  |  |  |
 | `docprop` |  | |  |  |  |  |
