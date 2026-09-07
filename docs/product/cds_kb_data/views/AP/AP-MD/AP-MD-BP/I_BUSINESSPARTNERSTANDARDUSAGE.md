@@ -1,6 +1,17 @@
 ---
 name: I_BUSINESSPARTNERSTANDARDUSAGE
 description: "Business PartnerSTANDARDUSAGE"
+semantic_vi: "Chỉ ra thông tin sử dụng tiêu chuẩn cho đối tác kinh doanh, có thể được sử dụng để xác định các vai trò hoặc chức năng điển hình của đối tác kinh doanh trong tổ chức."
+keywords:
+  - "business partner"
+  - "standard usage"
+  - "đối tác kinh doanh"
+  - "sử dụng tiêu chuẩn"
+  - "ap-md-bp"
+  - "interface view"
+  - "lob other"
+  - "bo business partner"
+semantic_en: "Exposes standard usage information for business partners, which can be used to determine the typical roles or functions of a business partner within an organization."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

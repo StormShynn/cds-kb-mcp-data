@@ -1,6 +1,18 @@
 ---
 name: I_BR_TAXJURISDICTIONVALUEHELP
 description: "BR Taxjurisdictionvaluehelp"
+semantic_vi: "Cung cấp giá trị khu vực thuế cho Brazil, được sử dụng để xác định nghĩa vụ thuế cho các giao dịch quốc tế."
+keywords:
+  - "tax jurisdiction"
+  - "brazil"
+  - "international transaction"
+  - "điều kiện thuế"
+  - "brazil khu vực thuế"
+  - "giao dịch quốc tế"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "tax obligation"
+semantic_en: "Provides tax jurisdiction values for Brazil, used to determine tax obligations for international transactions."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

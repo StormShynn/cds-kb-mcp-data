@@ -1,6 +1,18 @@
 ---
 name: I_BUSSOLNORDITMREFOBJECTTP
 description: "Bussolnorditmrefobjecttp"
+semantic_vi: "Chứa dữ liệu đối tượng tham chiếu dịch vụ cho đơn hàng giải pháp kinh doanh, được sử dụng để quản lý đối tượng tham chiếu dịch vụ trong thành phần CRM-S4-SOL-SLO."
+keywords:
+  - "service reference"
+  - "business solution order"
+  - "crm-s4-sol-slo"
+  - "đối tượng tham chiếu dịch vụ"
+  - "đơn hàng giải pháp kinh doanh"
+  - "thành phần crm-s4-sol-slo"
+  - "sản phẩm dịch vụ"
+  - "dịch vụ"
+  - "giải pháp kinh doanh"
+semantic_en: "Exposes service reference object data for business solution orders, used to manage service references in CRM-S4-SOL-SLO component."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

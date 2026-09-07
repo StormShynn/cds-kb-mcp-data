@@ -1,6 +1,20 @@
 ---
 name: I_BUSINESSPARTNEROCCUPATION
 description: "Business PartnerOCCUPATION"
+semantic_vi: "View Business Partner Occupation cung cấp thông tin về các nghề nghiệp của đối tác kinh doanh, có thể được sử dụng để phân loại và phân tích mối quan hệ kinh doanh."
+keywords:
+  - "business partner"
+  - "occupation"
+  - "công việc"
+  - "đối tác kinh doanh"
+  - "categorization"
+  - "analysis"
+  - "công ty"
+  - "partner"
+  - "ap-md-bp-rap"
+  - "lob:other"
+  - "bo:businesspartner"
+semantic_en: "The Business Partner Occupation view provides information about the occupations of business partners, which can be used to categorize and analyze business relationships."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

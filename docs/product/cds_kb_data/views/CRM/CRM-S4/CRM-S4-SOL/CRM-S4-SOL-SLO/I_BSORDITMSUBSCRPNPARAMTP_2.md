@@ -1,6 +1,18 @@
 ---
 name: I_BSORDITMSUBSCRPNPARAMTP_2
 description: "Bsorditmsubscrpnparamtp 2"
+semantic_vi: "Chỉ ra các tham số đăng ký cho các mục đơn hàng giải pháp kinh doanh, được sử dụng trong xử lý giao dịch CRM."
+keywords:
+  - "crm"
+  - "subscription"
+  - "parameter"
+  - "business solution order"
+  - "transactional processing"
+  - "đăng ký"
+  - "tham số"
+  - "đơn hàng giải pháp kinh doanh"
+  - "xử lý giao dịch"
+semantic_en: "Exposes subscription parameters for business solution order items, used in CRM transactional processing."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

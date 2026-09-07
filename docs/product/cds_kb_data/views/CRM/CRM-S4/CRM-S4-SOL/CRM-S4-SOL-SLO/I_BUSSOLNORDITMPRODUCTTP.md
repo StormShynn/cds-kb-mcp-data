@@ -1,6 +1,17 @@
 ---
 name: I_BUSSOLNORDITMPRODUCTTP
 description: "Bussolnorditmproducttp"
+semantic_vi: "Chứa thông tin sản phẩm liên quan đến đơn hàng giải pháp kinh doanh trong CRM. Sử dụng để truy cập chi tiết sản phẩm cho đơn hàng giải pháp kinh doanh."
+keywords:
+  - "crm"
+  - "business solution order"
+  - "product information"
+  - "sản phẩm"
+  - "đơn hàng giải pháp kinh doanh"
+  - "s4-sol-slo"
+  - "service product list"
+  - "lob other"
+semantic_en: "Exposes product information related to business solution orders in CRM. Used to access product details for business solution orders."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

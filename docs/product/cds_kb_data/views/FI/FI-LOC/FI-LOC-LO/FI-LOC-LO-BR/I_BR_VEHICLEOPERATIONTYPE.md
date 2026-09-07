@@ -1,6 +1,17 @@
 ---
 name: I_BR_VEHICLEOPERATIONTYPE
 description: "BR Vehicleoperationtype"
+semantic_vi: "View I_BR_VEHICLEOPERATIONTYPE hiển thị các loại hoạt động xe được sử dụng trong thành phần FI-LOC-LO-BR, cung cấp danh sách các hoạt động xe có thể xảy ra."
+keywords:
+  - "vehicle operation type"
+  - "loại hoạt động xe"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "vehicle operation"
+  - "hoạt động xe"
+  - "sap"
+  - "cds view"
+semantic_en: "The I_BR_VEHICLEOPERATIONTYPE view exposes vehicle operation types used in the FI-LOC-LO-BR component, providing a list of possible vehicle operations."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

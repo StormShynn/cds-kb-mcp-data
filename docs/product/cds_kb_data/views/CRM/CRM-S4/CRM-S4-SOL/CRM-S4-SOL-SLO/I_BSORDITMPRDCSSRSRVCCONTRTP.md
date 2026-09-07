@@ -1,6 +1,18 @@
 ---
 name: I_BSORDITMPRDCSSRSRVCCONTRTP
 description: "Bsorditmprdcssrsrvccontrtp"
+semantic_vi: "View này hiển thị dữ liệu hợp đồng dịch vụ cho đơn hàng giải pháp kinh doanh, được sử dụng để quản lý hợp đồng dịch vụ cho đơn hàng giải pháp kinh doanh. Nó thường được sử dụng trong bối cảnh thành phần CRM-S4-SOL-SLO."
+keywords:
+  - "business solution order"
+  - "hợp đồng dịch vụ"
+  - "crm"
+  - "service contract"
+  - "business solution order item"
+  - "đơn hàng giải pháp kinh doanh"
+  - "s4-sol-slo"
+  - "transactional processing"
+  - "interface view"
+semantic_en: "This view exposes business solution order item service contract data, which is used to manage service contracts for business solution orders. It is typically used in the context of CRM-S4-SOL-SLO component."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_BR_VEHICLEFUELTYPETEXT_2
 description: "BR Vehiclefueltypetext 2"
+semantic_vi: "View I_BR_VEHICLEFUELTYPETEXT_2 cung cấp mô tả văn bản cho các loại nhiên liệu xe hơi trong các ngôn ngữ khác nhau, có thể được sử dụng để hiển thị thông tin loại nhiên liệu trong các ứng dụng đa ngôn ngữ."
+keywords:
+  - "vehicle fuel type"
+  - "nhiên liệu xe hơi"
+  - "text description"
+  - "mô tả văn bản"
+  - "language"
+  - "ngôn ngữ"
+  - "sap cds view"
+  - "view"
+  - "fi-loc-lo-br"
+  - "finance"
+semantic_en: "The I_BR_VEHICLEFUELTYPETEXT_2 view provides text descriptions for vehicle fuel types in different languages, which can be used to display fuel type information in multilingual applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

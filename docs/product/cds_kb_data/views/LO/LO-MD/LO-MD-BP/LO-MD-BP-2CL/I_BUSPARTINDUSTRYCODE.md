@@ -1,6 +1,19 @@
 ---
 name: I_BUSPARTINDUSTRYCODE
 description: "Business PartnerINDUSTRYCODE"
+semantic_vi: "View I_BUSPARTINDUSTRYCODE cung cấp mã ngành cho đối tác kinh doanh, có thể được sử dụng để phân loại và phân tích dữ liệu đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "industry code"
+  - "mã ngành"
+  - "sap cds view"
+  - "cds view"
+  - "lob logistics general"
+  - "logistics general"
+  - "ekko"
+  - "ekko view"
+semantic_en: "The I_BUSPARTINDUSTRYCODE view provides industry codes for business partners, which can be used to categorize and analyze business partner data."
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

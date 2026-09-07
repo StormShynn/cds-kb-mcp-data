@@ -1,6 +1,18 @@
 ---
 name: I_BUSPARTADDRDEPDNTTAXTYPEVH
 description: "Business PartnerADDRDEPDNTTAXTYPEVH"
+semantic_vi: "View ADDRDEPDNTTAXTYPEVH của Đối tác Kinh doanh cung cấp hỗ trợ giá trị cho loại thuế liên quan đến đối tác kinh doanh, thường được sử dụng khi tạo hoặc cập nhật dữ liệu cơ bản của đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "tax type"
+  - "loại thuế"
+  - "value help"
+  - "hỗ trợ giá trị"
+  - "sap"
+  - "ca-gtf-csc"
+  - "cross-application components"
+semantic_en: "The Business Partner ADDRDEPDNTTAXTYPEVH view provides a value help for tax types associated with business partners, typically used when creating or maintaining business partner master data."
 app_component: CA-GTF-CSC
 software_component: SAP_BASIS
 release_state: released

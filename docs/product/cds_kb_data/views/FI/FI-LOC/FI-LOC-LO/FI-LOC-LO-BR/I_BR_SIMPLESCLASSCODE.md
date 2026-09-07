@@ -1,6 +1,19 @@
 ---
 name: I_BR_SIMPLESCLASSCODE
 description: "BR Simplesclasscode"
+semantic_vi: "View BR Simplesclasscode hiển thị mã phân loại thuế Brazil được sử dụng trong các giao dịch tài chính. Nó được sử dụng để lấy hoặc cập nhật các mã này cho mục đích kế toán."
+keywords:
+  - "br simplesclasscode"
+  - "tax classification"
+  - "mã phân loại thuế"
+  - "financial transactions"
+  - "giao dịch tài chính"
+  - "accounting"
+  - "kế toán"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo-br"
+semantic_en: "The BR Simplesclasscode view exposes Brazilian tax classification codes used in financial transactions. It is used to retrieve or update these codes for accounting purposes."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

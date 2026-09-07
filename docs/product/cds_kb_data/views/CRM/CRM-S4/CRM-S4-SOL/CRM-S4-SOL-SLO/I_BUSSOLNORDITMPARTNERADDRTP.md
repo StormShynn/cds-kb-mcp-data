@@ -1,6 +1,19 @@
 ---
 name: I_BUSSOLNORDITMPARTNERADDRTP
 description: "Bussolnorditmpartneraddrtp"
+semantic_vi: "View này hiển thị dữ liệu địa chỉ đối tác tạm thời cho các giải pháp kinh doanh, thường được sử dụng trong quá trình xử lý giao dịch trong thành phần CRM-S4-SOL-SLO."
+keywords:
+  - "crm"
+  - "business solution"
+  - "partner address"
+  - "transactional processing"
+  - "temporal data"
+  - "crm-s4-sol-slo"
+  - "lob-other"
+  - "partner function"
+  - "address object"
+  - "correspondence language"
+semantic_en: "This view exposes temporary partner address data for business solutions, typically used during transactional processing in CRM-S4-SOL-SLO component."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

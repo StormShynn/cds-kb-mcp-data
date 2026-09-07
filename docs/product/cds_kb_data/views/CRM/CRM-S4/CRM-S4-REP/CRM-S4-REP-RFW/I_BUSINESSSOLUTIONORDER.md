@@ -1,6 +1,16 @@
 ---
 name: I_BUSINESSSOLUTIONORDER
 description: "Businesssolutionorder"
+semantic_vi: "CDS view Businesssolutionorder hiển thị dữ liệu đơn hàng giải pháp kinh doanh, được sử dụng để quản lý và theo dõi giải pháp kinh doanh trong hệ thống CRM."
+keywords:
+  - "business solution order"
+  - "đơn hàng giải pháp kinh doanh"
+  - "crm"
+  - "sap"
+  - "business solution"
+  - "service document"
+  - "service object type"
+semantic_en: "The Businesssolutionorder CDS view exposes business solution order data, which is used to manage and track business solutions in the CRM system."
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

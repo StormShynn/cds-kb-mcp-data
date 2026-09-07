@@ -1,6 +1,16 @@
 ---
 name: I_BUDGETDOCWORKFLOWSTATUS
 description: "Budgetdocworkflowstatus"
+semantic_vi: "View Budgetdocworkflowstatus hiển thị trạng thái của các tài liệu ngân sách trong một luồng làm việc, cung cấp cách để theo dõi trạng thái hiện tại của các tài liệu ngân sách khi chúng di chuyển qua một luồng làm việc."
+keywords:
+  - "budget document"
+  - "tài liệu ngân sách"
+  - "workflow status"
+  - "trạng thái luồng làm việc"
+  - "psm"
+  - "sap"
+  - "budgetdocworkflowstatus"
+semantic_en: "The Budgetdocworkflowstatus view exposes the status of budget documents in a workflow, providing a way to track the current state of budget documents as they move through a workflow."
 app_component: PSM
 software_component: SAPSCORE
 release_state: released

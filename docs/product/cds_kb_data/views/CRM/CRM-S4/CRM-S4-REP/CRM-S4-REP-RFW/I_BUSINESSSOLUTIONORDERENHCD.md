@@ -1,6 +1,18 @@
 ---
 name: I_BUSINESSSOLUTIONORDERENHCD
 description: "Businesssolutionorderenhcd"
+semantic_vi: "Chứa dữ liệu nâng cao về đơn hàng giải pháp kinh doanh, được sử dụng trong báo cáo CRM và giao tiếp. Dữ liệu này liên quan đến quản lý đơn hàng giải pháp kinh doanh và báo cáo liên quan."
+keywords:
+  - "business solution order"
+  - "đơn hàng giải pháp kinh doanh"
+  - "crm reporting"
+  - "giao tiếp"
+  - "quản lý đơn hàng"
+  - "báo cáo"
+  - "ekko"
+  - "s4-hana"
+  - "crm-s4-rep-rfw"
+semantic_en: "Exposes business solution order enhancement data, which is used in CRM reporting and interfacing. This data is relevant for business solution order management and related reporting."
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

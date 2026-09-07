@@ -1,6 +1,18 @@
 ---
 name: I_BUSPARTADDRDEPDNTTAXNMBR
 description: "Business PartnerADDRDEPDNTTAXNMBR"
+semantic_vi: "View ADDRDEPDNTTAXNMBR của đối tác kinh doanh hiển thị số thuế cho đối tác kinh doanh và địa chỉ của họ, được sử dụng khi quản lý dữ liệu đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "tax number"
+  - "đối tác kinh doanh"
+  - "số thuế"
+  - "address"
+  - "địa chỉ"
+  - "ca-gtf-csc"
+  - "cross-application components"
+  - "lob:cross-application components"
+semantic_en: "The Business Partner ADDRDEPDNTTAXNMBR view exposes tax numbers for business partners and their addresses, used when managing business partner data."
 app_component: CA-GTF-CSC
 software_component: SAP_BASIS
 release_state: released

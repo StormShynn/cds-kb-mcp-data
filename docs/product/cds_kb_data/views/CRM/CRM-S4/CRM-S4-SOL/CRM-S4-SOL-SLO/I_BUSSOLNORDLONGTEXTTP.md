@@ -1,6 +1,19 @@
 ---
 name: I_BUSSOLNORDLONGTEXTTP
 description: "Bussolnordlongtexttp"
+semantic_vi: "View Bussolnordlongtexttp hiển thị dữ liệu văn bản dài của giải pháp kinh doanh, được sử dụng trong thành phần CRM-S4-SOL-SLO cho xử lý giao dịch văn bản."
+keywords:
+  - "business solution order"
+  - "văn bản dài"
+  - "transactional processing"
+  - "crm"
+  - "sap"
+  - "text data"
+  - "giải pháp kinh doanh"
+  - "thành phần crm-s4-sol-slo"
+  - "xử lý giao dịch"
+  - "văn bản"
+semantic_en: "The Bussolnordlongtexttp view exposes business solution order long text data, which is used in CRM-S4-SOL-SLO component for transactional processing of text data."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

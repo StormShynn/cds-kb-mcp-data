@@ -1,6 +1,17 @@
 ---
 name: I_BUSPARTSTANDARDUSAGETEXT
 description: "Business PartnerSTANDARDUSAGETEXT"
+semantic_vi: "Chỉ ra văn bản sử dụng tiêu chuẩn cho đối tác kinh doanh, được sử dụng để hiển thị thông tin mô tả về việc sử dụng tiêu chuẩn của đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "standard usage"
+  - "text view"
+  - "interface view"
+  - "ap-md-bp"
+  - "business partner standard usage"
+  - "lob other"
+  - "sap md bp"
+semantic_en: "Exposes standard usage text for business partners, used to display descriptive information about a business partner's standard usage."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

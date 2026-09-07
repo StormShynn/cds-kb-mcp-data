@@ -1,6 +1,21 @@
 ---
 name: I_BR_VEHICLEUSAGETEXT_2
 description: "BR Vehicleusagetext 2"
+semantic_vi: "View BR Vehicleusagetext 2 cung cấp danh sách mô tả sử dụng xe trong các ngôn ngữ khác nhau, có thể được sử dụng để hiển thị thông tin sử dụng xe trong các ứng dụng khác nhau."
+keywords:
+  - "vehicle usage"
+  - "description"
+  - "language"
+  - "fi-loc-lo-br"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo"
+  - "interface-view"
+  - "text"
+  - "component:fi-loc-lo-br"
+  - "lob:finance"
+  - "released"
+semantic_en: "The BR Vehicleusagetext 2 view provides a list of vehicle usage descriptions in different languages, which can be used to display vehicle usage information in various applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

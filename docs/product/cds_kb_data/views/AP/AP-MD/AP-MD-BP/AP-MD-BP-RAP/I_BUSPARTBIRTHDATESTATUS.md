@@ -1,6 +1,19 @@
 ---
 name: I_BUSPARTBIRTHDATESTATUS
 description: "Business PartnerBIRTHDATESTATUS"
+semantic_vi: "View Business Partner BIRTHDATESTATUS hiển thị trạng thái ngày sinh của đối tác kinh doanh, có thể được sử dụng để xác thực hoặc cập nhật thông tin đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "birth date status"
+  - "đối tác kinh doanh"
+  - "ngày sinh"
+  - "trạng thái"
+  - "validate"
+  - "update"
+  - "sap"
+  - "cds view"
+  - "ap-md-bp-rap"
+semantic_en: "The Business Partner BIRTHDATESTATUS view exposes the status of a business partner's birthdate, which can be used to validate or update a business partner's information."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

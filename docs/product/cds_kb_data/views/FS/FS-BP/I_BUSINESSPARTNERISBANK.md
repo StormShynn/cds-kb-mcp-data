@@ -1,6 +1,18 @@
 ---
 name: I_BUSINESSPARTNERISBANK
 description: "Business PartnerISBANK"
+semantic_vi: "Chỉ ra thông tin ngân hàng đối tác kinh doanh, được sử dụng khi truy cập hoặc cập nhật thông tin ngân hàng của đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "bank"
+  - "bank information"
+  - "partner"
+  - "bank details"
+  - "business partner bank"
+  - "sap cds view"
+  - "fs-bp"
+  - "interface view"
+semantic_en: "Exposes business partner bank information, used when accessing or updating bank details for a business partner."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

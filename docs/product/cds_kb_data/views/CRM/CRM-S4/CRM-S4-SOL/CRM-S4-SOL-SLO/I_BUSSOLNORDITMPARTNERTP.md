@@ -1,6 +1,17 @@
 ---
 name: I_BUSSOLNORDITMPARTNERTP
 description: "Bussolnorditmpartnertp"
+semantic_vi: "Chỉ ra các mục đơn hàng giải pháp kinh doanh và các đối tác liên quan cho mục đích tạm thời trong thành phần CRM-S4-SOL-SLO."
+keywords:
+  - "crm"
+  - "business solution order"
+  - "partner"
+  - "temporary use"
+  - "crm-s4-sol-slo"
+  - "business partner"
+  - "partner function"
+  - "business solution order item"
+semantic_en: "Exposes business solution order items and their associated partners for temporary use in CRM-S4-SOL-SLO component."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

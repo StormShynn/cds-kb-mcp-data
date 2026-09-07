@@ -1,6 +1,20 @@
 ---
 name: I_BUSINESSPARTNERADDRESSTP_3
 description: "Business PartnerADDRESSTP 3"
+semantic_vi: "Chứa thông tin địa chỉ đối tác kinh doanh cho xử lý giao dịch, bao gồm các trường khóa chính và xác thực."
+keywords:
+  - "business partner"
+  - "address"
+  - "transactional processing"
+  - "partner"
+  - "address id"
+  - "business partner address"
+  - "sap"
+  - "ap-md-bp-rap"
+  - "business partner address uuid"
+  - "validity start date"
+  - "validity end date"
+semantic_en: "Exposes business partner addresses for transactional processing, including key fields for identification and validation."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

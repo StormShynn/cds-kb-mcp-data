@@ -1,6 +1,18 @@
 ---
 name: I_BUSINESSPARTNERROLETP_3
 description: "Business PartnerROLETP 3"
+semantic_vi: "Chứa thông tin về vai trò của đối tác kinh doanh và dữ liệu liên quan, được sử dụng để quản lý mối quan hệ và giao dịch đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "partner"
+  - "role"
+  - "transactional processing"
+  - "business partner role"
+  - "ap-md-bp-rap"
+  - "sap"
+  - "lob other"
+  - "bo business partner"
+semantic_en: "Exposes business partner roles and their associated data, used for managing business partner relationships and transactions."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

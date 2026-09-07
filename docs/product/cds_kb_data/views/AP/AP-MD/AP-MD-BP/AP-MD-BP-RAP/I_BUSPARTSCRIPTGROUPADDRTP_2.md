@@ -1,6 +1,19 @@
 ---
 name: I_BUSPARTSCRIPTGROUPADDRTP_2
 description: "Business PartnerSCRIPTGROUPADDRTP 2"
+semantic_vi: "Chứa thông tin địa chỉ nhóm kịch bản đối tác kinh doanh, được sử dụng trong quá trình xử lý giao dịch trong thành phần AP-MD-BP-RAP."
+keywords:
+  - "business partner"
+  - "script group address"
+  - "transactional processing"
+  - "ap-md-bp-rap"
+  - "address"
+  - "partner"
+  - "script"
+  - "group"
+  - "address representation code"
+  - "correspondence language"
+semantic_en: "Exposes business partner script group addresses, used for transactional processing in the AP-MD-BP-RAP component."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

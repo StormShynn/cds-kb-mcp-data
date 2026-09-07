@@ -1,6 +1,19 @@
 ---
 name: I_BUSINESSPARTNERVH
 description: "Business PartnerVH"
+semantic_vi: "View Business PartnerVH cung cấp danh sách các đối tác kinh doanh cùng địa chỉ và tên liên quan, hữu ích cho việc hiển thị danh sách các đối tác trong chức năng giúp đỡ giá trị hoặc chức năng tìm kiếm."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "value help"
+  - "giúp đỡ giá trị"
+  - "search function"
+  - "chức năng tìm kiếm"
+  - "sap"
+  - "ap-md-bp"
+  - "business partner category"
+  - "loại đối tác kinh doanh"
+semantic_en: "The Business PartnerVH view provides a list of business partners with their associated addresses and names, useful for displaying a list of partners in a value help or search function."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

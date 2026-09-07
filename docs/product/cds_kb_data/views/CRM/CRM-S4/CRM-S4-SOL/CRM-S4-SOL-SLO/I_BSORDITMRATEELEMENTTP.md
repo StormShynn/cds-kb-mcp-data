@@ -1,6 +1,17 @@
 ---
 name: I_BSORDITMRATEELEMENTTP
 description: "Bsorditmrateelementtp"
+semantic_vi: "Chứa dữ liệu về yếu tố giá cả đăng ký cho một mục đơn hàng giải pháp kinh doanh, bao gồm cả các mức giá, số tiền và thuế."
+keywords:
+  - "subscription rate element"
+  - "business solution order item"
+  - "crm-s4-sol-slo"
+  - "transactional processing"
+  - "đơn hàng giải pháp kinh doanh"
+  - "yếu tố giá cả đăng ký"
+  - "số tiền"
+  - "thuế"
+semantic_en: "Exposes subscription rate element data for a business solution order item, including rates, amounts, and taxes. Used in CRM-S4-SOL-SLO component for transactional processing."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

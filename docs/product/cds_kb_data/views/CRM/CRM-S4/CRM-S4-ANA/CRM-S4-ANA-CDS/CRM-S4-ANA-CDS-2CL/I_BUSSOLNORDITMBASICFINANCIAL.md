@@ -1,6 +1,19 @@
 ---
 name: I_BUSSOLNORDITMBASICFINANCIAL
 description: "Bussolnorditmbasicfinancial"
+semantic_vi: "Chứa dữ liệu tài chính cơ bản cho các giải pháp kinh doanh, bao gồm đơn hàng và mục đơn hàng, tài liệu dịch vụ và ngày ghi nhận. Sử dụng view này để truy cập thông tin tài chính cho các giải pháp kinh doanh trong CRM."
+keywords:
+  - "business solution"
+  - "financial data"
+  - "crm"
+  - "service document"
+  - "posting date"
+  - "business solution order"
+  - "business solution order item"
+  - "service object type"
+  - "service document description"
+  - "service document type"
+semantic_en: "Exposes basic financial data for business solutions, including orders and order items, service documents, and posting dates. Use this view to access financial information for business solutions in CRM."
 app_component: CRM-S4-ANA-CDS-2CL
 software_component: SAPSCORE
 release_state: released

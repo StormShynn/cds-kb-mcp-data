@@ -1,6 +1,17 @@
 ---
 name: I_BUSPARTIDENTIFICATIONTP_3
 description: "Business PartnerIDENTIFICATIONTP 3"
+semantic_vi: "Chứa thông tin xác định đối tác kinh doanh, bao gồm loại, số, tổ chức cấp và ngày hiệu lực, cho việc quản lý đối tác kinh doanh và xử lý giao dịch."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "identification"
+  - "xác định"
+  - "transactional processing"
+  - "xử lý giao dịch"
+  - "sap"
+  - "ap-md-bp-rap"
+semantic_en: "Exposes business partner identification information, including type, number, issuing institute, and validity dates, for use in business partner management and transactional processing."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

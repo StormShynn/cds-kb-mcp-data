@@ -1,6 +1,21 @@
 ---
 name: I_BUSPARTWEBSITETP_3
 description: "Business PartnerWEBSITETP 3"
+semantic_vi: "View Business Partner WEBSITETP 3 hiển thị thông tin trang web đối tác kinh doanh, có liên quan khi quản lý dữ liệu đối tác kinh doanh trong thành phần AP-MD-BP-RAP."
+keywords:
+  - "business partner"
+  - "website"
+  - "ap-md-bp-rap"
+  - "transactional processing"
+  - "interface view"
+  - "lob other"
+  - "data controller"
+  - "address number"
+  - "person"
+  - "ordinal number"
+  - "default url address"
+  - "search url address"
+semantic_en: "The Business Partner WEBSITETP 3 view exposes business partner website information, which is relevant when managing business partner data in the AP-MD-BP-RAP component."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

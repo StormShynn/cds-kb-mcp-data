@@ -1,6 +1,16 @@
 ---
 name: I_BUSINESSPARTNERCUSTOMER
 description: "Business PartnerCUSTOMER"
+semantic_vi: "Chứa dữ liệu đối tác kinh doanh khách hàng, hữu ích cho các ứng dụng yêu cầu thông tin khách hàng từ đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "customer"
+  - "business partner customer"
+  - "customer information"
+  - "đối tác kinh doanh"
+  - "khách hàng"
+  - "thông tin khách hàng"
+semantic_en: "Exposes business partner customer data, useful for applications requiring customer information from business partners."
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

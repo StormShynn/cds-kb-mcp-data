@@ -1,6 +1,19 @@
 ---
 name: I_BUSINESSPLACE
 description: "Businessplace"
+semantic_vi: "View Businessplace CDS hiển thị dữ liệu địa điểm kinh doanh của công ty, bao gồm địa chỉ, số thuế và mô tả. Nó được sử dụng để lấy và quản lý địa điểm kinh doanh trong thành phần FI-LOC-BUP."
+keywords:
+  - "businessplace"
+  - "business location"
+  - "address"
+  - "tax number"
+  - "description"
+  - "fi-loc-bup"
+  - "finance"
+  - "company code"
+  - "business place start date"
+  - "business place end date"
+semantic_en: "The Businessplace CDS view exposes business location data for a company, including address, tax numbers, and description. It is used to retrieve and manage business locations in the FI-LOC-BUP component."
 app_component: FI-LOC-BUP
 software_component: SAPSCORE
 release_state: released

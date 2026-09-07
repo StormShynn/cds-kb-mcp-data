@@ -1,6 +1,18 @@
 ---
 name: I_BUSSOLNORDITMDURATIONTP
 description: "Bussolnorditmdurationtp"
+semantic_vi: "Phân tích dữ liệu thời gian của tài liệu dịch vụ cho các giải pháp kinh doanh, được sử dụng trong xử lý giao dịch trong thành phần CRM-S4-SOL-SLO."
+keywords:
+  - "crm"
+  - "service document"
+  - "business solution"
+  - "transactional processing"
+  - "duration data"
+  - "crm-s4-sol-slo"
+  - "dữ liệu thời gian"
+  - "tài liệu dịch vụ"
+  - "giải pháp kinh doanh"
+semantic_en: "Exposes service document duration data for business solutions, used in transactional processing within CRM-S4-SOL-SLO component."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

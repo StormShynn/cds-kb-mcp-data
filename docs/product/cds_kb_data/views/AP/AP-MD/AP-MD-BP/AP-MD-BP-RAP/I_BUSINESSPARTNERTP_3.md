@@ -1,6 +1,18 @@
 ---
 name: I_BUSINESSPARTNERTP_3
 description: "Business PartnerTP 3"
+semantic_vi: "View Business Partner TP 3 hiển thị dữ liệu đối tác kinh doanh cho xử lý giao dịch, bao gồm các trường khóa chính như ID đối tác kinh doanh và tên, và được sử dụng trong thành phần AP-MD-BP-RAP."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "ap-md-bp-rap"
+  - "transactional processing"
+  - "xử lý giao dịch"
+  - "business partner id"
+  - "id đối tác kinh doanh"
+  - "business partner name"
+  - "tên đối tác kinh doanh"
+semantic_en: "The Business Partner TP 3 view exposes business partner data for transactional processing, including key fields such as business partner ID and name, and is used in the AP-MD-BP-RAP component."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

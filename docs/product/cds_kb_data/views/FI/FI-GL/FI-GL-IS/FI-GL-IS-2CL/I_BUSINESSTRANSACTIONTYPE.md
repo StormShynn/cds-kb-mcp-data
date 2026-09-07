@@ -1,6 +1,21 @@
 ---
 name: I_BUSINESSTRANSACTIONTYPE
 description: "Businesstransactiontype"
+semantic_vi: "View Business Transaction Type hiển thị các loại và danh mục giao dịch tài chính, cho phép các nhà phát triển truy cập và quản lý dữ liệu giao dịch trong SAP FI-GL-IS-2CL. Nó được sử dụng để truy xuất và phân tích các loại giao dịch cho mục đích báo cáo tài chính và kế toán."
+keywords:
+  - "business transaction type"
+  - "financial transaction"
+  - "fi-gl-is-2cl"
+  - "sap fi"
+  - "financial reporting"
+  - "accounting"
+  - "transaction data"
+  - "giao dịch tài chính"
+  - "loại giao dịch"
+  - "danh mục giao dịch"
+  - "fi-gl"
+  - "fi-gl-is"
+semantic_en: "The Business Transaction Type view exposes financial transaction types and categories, enabling developers to access and manage transaction data in SAP FI-GL-IS-2CL. It is used to retrieve and analyze transaction types for financial reporting and accounting purposes."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

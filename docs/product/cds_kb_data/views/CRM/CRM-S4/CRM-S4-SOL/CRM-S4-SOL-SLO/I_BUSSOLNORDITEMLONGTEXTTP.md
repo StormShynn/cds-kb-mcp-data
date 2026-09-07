@@ -1,6 +1,21 @@
 ---
 name: I_BUSSOLNORDITEMLONGTEXTTP
 description: "Bussolnorditemlongtexttp"
+semantic_vi: "Chứa dữ liệu văn bản dài cho các mặt hàng giải pháp kinh doanh, cung cấp thông tin về các đối tượng văn bản, ngôn ngữ và loại MIME. View này được sử dụng cho xử lý giao dịch và quản lý văn bản tại mức mặt hàng trong CRM-S4-SOL-SLO."
+keywords:
+  - "business solution order item"
+  - "long text"
+  - "text object"
+  - "language"
+  - "mime type"
+  - "transactional processing"
+  - "item-level"
+  - "crm-s4-sol-slo"
+  - "đối tượng văn bản"
+  - "loại mime"
+  - "quản lý văn bản"
+  - "giải pháp kinh doanh"
+semantic_en: "Exposes long text data for business solution order items, providing information on text objects, languages, and mime types. This view is used for transactional processing and item-level text management in CRM-S4-SOL-SLO."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

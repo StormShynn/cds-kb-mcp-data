@@ -1,6 +1,18 @@
 ---
 name: I_BUSTRANSACTIONCATEGORYVH
 description: "Bustransactioncategoryvh"
+semantic_vi: "View I_BUSTRANSACTIONCATEGORYVH cung cấp danh sách các loại giao dịch kinh doanh, được sử dụng để phân loại giao dịch tài chính trong FI-GL-IS-2CL của SAP. Nó được sử dụng để lấy giúp giá trị cho loại giao dịch kinh doanh."
+keywords:
+  - "business transaction category"
+  - "giao dịch kinh doanh"
+  - "fi-gl-is-2cl"
+  - "value help"
+  - "sap fi"
+  - "finance"
+  - "transaction classification"
+  - "loại giao dịch"
+  - "giúp giá trị"
+semantic_en: "The I_BUSTRANSACTIONCATEGORYVH view provides a list of business transaction categories, which are used to classify financial transactions in SAP FI-GL-IS-2CL. It is used to retrieve a value help for business transaction categories."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

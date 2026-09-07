@@ -1,6 +1,19 @@
 ---
 name: I_BUSSOLNORDPARTNERADDRESSTP
 description: "Bussolnordpartneraddresstp"
+semantic_vi: "Chứa dữ liệu địa chỉ đối tác kinh doanh cho Bussolnord, được sử dụng trong thành phần CRM-S4-SOL-SLO cho xử lý giao dịch."
+keywords:
+  - "crm"
+  - "bussolnord"
+  - "partner"
+  - "address"
+  - "transactional"
+  - "processing"
+  - "crm-s4-sol-slo"
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "địa chỉ"
+semantic_en: "Exposes business partner address data for Bussolnord partners, used in CRM-S4-SOL-SLO component for transactional processing."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

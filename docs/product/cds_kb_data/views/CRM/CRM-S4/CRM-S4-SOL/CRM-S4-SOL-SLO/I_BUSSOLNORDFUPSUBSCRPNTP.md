@@ -1,6 +1,18 @@
 ---
 name: I_BUSSOLNORDFUPSUBSCRPNTP
 description: "Bussolnordfupsubscrpntp"
+semantic_vi: "View Bussolnordfupsubscrpntp hiển thị dữ liệu đăng ký giải pháp kinh doanh, được sử dụng trong xử lý giao dịch cho thành phần CRM-S4-SOL-SLO."
+keywords:
+  - "crm"
+  - "business solution order"
+  - "subscription"
+  - "transactional processing"
+  - "crm-s4-sol-slo"
+  - "bussolnordfupsubscrpntp"
+  - "giải pháp kinh doanh"
+  - "đăng ký"
+  - "xử lý giao dịch"
+semantic_en: "The Bussolnordfupsubscrpntp view exposes business solution order subscription data, used in transactional processing for CRM-S4-SOL-SLO component."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

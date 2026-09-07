@@ -1,6 +1,19 @@
 ---
 name: I_BR_SDBUSINESSTRANSACTIONVH
 description: "BR Sdbusinesstransactionvh"
+semantic_vi: "View I_BR_SDBUSINESSTRANSACTIONVH cung cấp truy cập dữ liệu giao dịch kinh doanh cho SAP FI-LOC-TXS, cho phép các nhà phát triển truy xuất và sử dụng thông tin giao dịch."
+keywords:
+  - "business transaction"
+  - "dữ liệu giao dịch kinh doanh"
+  - "sap fi-loc-txs"
+  - "transaction information"
+  - "thông tin giao dịch"
+  - "fi-loc-txs"
+  - "business data"
+  - "dữ liệu kinh doanh"
+  - "transaction data"
+  - "dữ liệu giao dịch"
+semantic_en: "The I_BR_SDBUSINESSTRANSACTIONVH view provides access to business transaction data for SAP FI-LOC-TXS, enabling developers to retrieve and utilize transaction information."
 app_component: FI-LOC-TXS
 software_component: SAPSCORE
 release_state: released

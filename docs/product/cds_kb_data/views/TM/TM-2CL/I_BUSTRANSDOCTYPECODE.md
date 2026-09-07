@@ -1,6 +1,18 @@
 ---
 name: I_BUSTRANSDOCTYPECODE
 description: "Bustransdoctypecode"
+semantic_vi: "View Bustransdoctypecode hiển thị các loại tài liệu giao dịch kinh doanh, được sử dụng để phân loại và quản lý giao dịch trong hệ thống quản lý vận tải. Nó được sử dụng để truy xuất và thao tác các loại tài liệu này, chẳng hạn như khi tạo đơn vận chuyển hoặc khi xử lý hàng hóa."
+keywords:
+  - "transportation management"
+  - "business transaction document type"
+  - "đơn vận chuyển"
+  - "tài liệu giao dịch kinh doanh"
+  - "ekko"
+  - "sap"
+  - "cds view"
+  - "transport order"
+  - "shipment processing"
+semantic_en: "The Bustransdoctypecode view exposes business transaction document types, which are used to categorize and manage transactions in a transportation management system. It is used to retrieve and manipulate these document types, such as in the creation of transportation orders or in the processing of shipments."
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

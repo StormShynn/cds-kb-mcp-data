@@ -1,6 +1,20 @@
 ---
 name: I_BUSPARTSCRIPTPERSONADDRTP_2
 description: "Business PartnerSCRIPTPERSONADDRTP 2"
+semantic_vi: "Chứa thông tin địa chỉ đối tác kinh doanh, bao gồm phương thức liên lạc ưa thích, để sử dụng trong xử lý giao dịch và báo cáo."
+keywords:
+  - "business partner"
+  - "address"
+  - "transactional processing"
+  - "reporting"
+  - "business partner address"
+  - "address information"
+  - "communication medium"
+  - "đối tác kinh doanh"
+  - "thông tin địa chỉ"
+  - "xử lý giao dịch"
+  - "báo cáo"
+semantic_en: "Exposes business partner address information, including preferred communication medium, for use in transactional processing and reporting."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

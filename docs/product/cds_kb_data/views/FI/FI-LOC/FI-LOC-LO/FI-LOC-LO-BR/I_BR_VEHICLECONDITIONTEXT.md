@@ -1,6 +1,21 @@
 ---
 name: I_BR_VEHICLECONDITIONTEXT
 description: "BR Vehicleconditiontext"
+semantic_vi: "View I_BR_VEHICLECONDITIONTEXT cung cấp mô tả văn bản của điều kiện xe hơi để sử dụng trong ứng dụng tài chính và giá cả khác. Nó được sử dụng để lấy mô tả văn bản của điều kiện xe hơi trong các ngôn ngữ khác nhau."
+keywords:
+  - "vehicle condition"
+  - "điều kiện xe hơi"
+  - "text view"
+  - "view"
+  - "pricing"
+  - "giá cả"
+  - "financial"
+  - "tài chính"
+  - "language"
+  - "ngôn ngữ"
+  - "sap"
+  - "fi-loc-lo-br"
+semantic_en: "The I_BR_VEHICLECONDITIONTEXT view provides text descriptions of vehicle conditions for use in pricing and other financial applications. It is used to retrieve the text representation of vehicle conditions in different languages."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

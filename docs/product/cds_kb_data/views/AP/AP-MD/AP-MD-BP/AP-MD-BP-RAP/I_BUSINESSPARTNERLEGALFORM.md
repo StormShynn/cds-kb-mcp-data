@@ -1,6 +1,17 @@
 ---
 name: I_BUSINESSPARTNERLEGALFORM
 description: "Business PartnerLEGALFORM"
+semantic_vi: "View I_BUSINESSPARTNERLEGALFORM hiển thị các hình thức pháp lý của đối tác kinh doanh và được sử dụng khi truy xuất hoặc cập nhật thông tin hình thức pháp lý của đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "legal form"
+  - "partner"
+  - "form"
+  - "business partner legal form"
+  - "đối tác kinh doanh"
+  - "hình thức pháp lý"
+  - "partner kinh doanh"
+semantic_en: "The I_BUSINESSPARTNERLEGALFORM view exposes business partner legal forms and is used when retrieving or updating business partner legal form information."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

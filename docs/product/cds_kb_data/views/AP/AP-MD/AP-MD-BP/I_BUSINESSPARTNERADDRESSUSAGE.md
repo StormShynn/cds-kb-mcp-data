@@ -1,6 +1,19 @@
 ---
 name: I_BUSINESSPARTNERADDRESSUSAGE
 description: "Business PartnerADDRESSUSAGE"
+semantic_vi: "View Business Partner ADDRESSUSAGE cung cấp thông tin về việc sử dụng địa chỉ cho đối tác kinh doanh, bao gồm ngày bắt đầu và kết thúc của hiệu lực và việc sử dụng tiêu chuẩn."
+keywords:
+  - "business partner"
+  - "address usage"
+  - "address"
+  - "partner"
+  - "sap"
+  - "ap-md-bp"
+  - "address number"
+  - "standard usage"
+  - "validity start date"
+  - "validity end date"
+semantic_en: "The Business Partner ADDRESSUSAGE view provides information about the usage of addresses for business partners, including the start and end dates of validity and the standard usage."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

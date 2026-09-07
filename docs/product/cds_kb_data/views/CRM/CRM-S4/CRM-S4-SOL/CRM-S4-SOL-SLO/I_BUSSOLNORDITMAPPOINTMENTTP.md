@@ -1,6 +1,19 @@
 ---
 name: I_BUSSOLNORDITMAPPOINTMENTTP
 description: "Bussolnorditmappointmenttp"
+semantic_vi: "View này hiển thị dữ liệu hẹn lịch dịch vụ cho giải pháp kinh doanh, bao gồm thông tin đơn hàng và mục hàng, loại hẹn lịch và ngày giờ bắt đầu và kết thúc. Nó được sử dụng trong xử lý giao dịch cho thành phần CRM-S4-SOL-SLO."
+keywords:
+  - "service appointment"
+  - "hẹn lịch dịch vụ"
+  - "business solution"
+  - "giải pháp kinh doanh"
+  - "transactional processing"
+  - "xử lý giao dịch"
+  - "crm"
+  - "crm-s4-sol-slo"
+  - "s4hana"
+  - "sap"
+semantic_en: "This view exposes service appointment data for business solutions, including order and item information, appointment types, and start and end dates. It is used in transactional processing for CRM-S4-SOL-SLO component."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

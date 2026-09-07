@@ -1,6 +1,21 @@
 ---
 name: I_BSORDPRDCSSRSRVCCONTRTP
 description: "Bsordprdcssrsrvccontrtp"
+semantic_vi: "Chứa dữ liệu hợp đồng dịch vụ sản phẩm cho giải pháp kinh doanh, được sử dụng để quản lý và theo dõi hợp đồng dịch vụ cho giải pháp kinh doanh."
+keywords:
+  - "business solution"
+  - "order"
+  - "product service contract"
+  - "service contract"
+  - "crm"
+  - "s4hana"
+  - "sap"
+  - "solution"
+  - "order management"
+  - "hợp đồng dịch vụ"
+  - "giải pháp kinh doanh"
+  - "đơn hàng"
+semantic_en: "Exposes business solution order product service contract data, used to manage and track service contracts for business solutions."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

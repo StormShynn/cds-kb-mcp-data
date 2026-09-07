@@ -1,6 +1,18 @@
 ---
 name: I_CAACCOUNTDETNCODETEXT
 description: "Caaccountdetncodetext"
+semantic_vi: "View I_CAACCOUNTDETNCODETEXT cung cấp tên và mô tả mã xác định tài khoản trong nhiều ngôn ngữ, hữu ích cho việc hiển thị chi tiết xác định tài khoản."
+keywords:
+  - "account determination"
+  - "mã xác định tài khoản"
+  - "code name"
+  - "description"
+  - "language"
+  - "fi-ca"
+  - "fi"
+  - "finance"
+  - "sap"
+semantic_en: "The I_CAACCOUNTDETNCODETEXT view provides account determination code names and descriptions in multiple languages, useful for displaying account determination details."
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

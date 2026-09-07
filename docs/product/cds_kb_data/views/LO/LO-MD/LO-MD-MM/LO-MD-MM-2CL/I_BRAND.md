@@ -1,6 +1,18 @@
 ---
 name: I_BRAND
 description: "Brand"
+semantic_vi: "View I_BRAND CDS hiển thị dữ liệu nhãn hiệu, có liên quan khi làm việc với thông tin sản phẩm trong logistics."
+keywords:
+  - "brand"
+  - "nhãn hiệu"
+  - "logistics"
+  - "lo"
+  - "lo-md"
+  - "lo-md-mm"
+  - "product information"
+  - "thông tin sản phẩm"
+  - "ekko"
+semantic_en: "The I_BRAND CDS view exposes brand data, which is relevant when working with product information in logistics."
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

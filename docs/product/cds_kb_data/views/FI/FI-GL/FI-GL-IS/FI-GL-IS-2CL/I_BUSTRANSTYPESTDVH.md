@@ -1,6 +1,21 @@
 ---
 name: I_BUSTRANSTYPESTDVH
 description: "Bustranstypestdvh"
+semantic_vi: "View Bustranstypestdvh CDS cung cấp danh sách các loại giao dịch kinh doanh tiêu chuẩn, được sử dụng để phân loại giao dịch tài chính trong thành phần FI-GL-IS-2CL của SAP. View này hữu ích cho các nhà phát triển cần truy cập và sử dụng các loại giao dịch này trong ứng dụng của họ."
+keywords:
+  - "business transaction type"
+  - "loại giao dịch kinh doanh"
+  - "fi-gl-is-2cl"
+  - "sap fi-gl-is-2cl"
+  - "financial transaction"
+  - "giao dịch tài chính"
+  - "standard value help"
+  - "trợ giúp giá trị tiêu chuẩn"
+  - "interface view"
+  - "view giao diện"
+  - "value help"
+  - "trợ giúp giá trị"
+semantic_en: "The Bustranstypestdvh CDS view provides a list of standard business transaction types, which are used to categorize financial transactions in SAP FI-GL-IS-2CL component. This view is useful for developers who need to access and utilize these transaction types in their applications."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

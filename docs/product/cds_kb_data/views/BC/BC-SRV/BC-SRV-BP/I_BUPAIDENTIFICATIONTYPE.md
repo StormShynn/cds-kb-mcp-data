@@ -1,6 +1,20 @@
 ---
 name: I_BUPAIDENTIFICATIONTYPE
 description: "Bupaidentificationtype"
+semantic_vi: "View Bupaidentificationtype cung cấp thông tin về loại xác định đối tác kinh doanh, loại và các dấu hiệu liên quan."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "identification type"
+  - "loại xác định"
+  - "sap cds view"
+  - "view bupaidentificationtype"
+  - "bp identification type"
+  - "bp identification category"
+  - "is bpperson"
+  - "is bporganization"
+  - "is bp group"
+semantic_en: "The Bupaidentificationtype view provides information about business partner identification types, categories, and related flags. It is used to determine the type of business partner identification."
 app_component: BC-SRV-BP
 software_component: SAP_BASIS
 release_state: released

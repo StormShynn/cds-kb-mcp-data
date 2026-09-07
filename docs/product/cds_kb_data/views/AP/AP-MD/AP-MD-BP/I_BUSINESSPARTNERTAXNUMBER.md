@@ -1,6 +1,21 @@
 ---
 name: I_BUSINESSPARTNERTAXNUMBER
 description: "Business PartnerTAXNUMBER"
+semantic_vi: "Chỉ ra số thuế của đối tác kinh doanh cho các loại thuế và nhóm xác thực khác nhau, được sử dụng để lấy và quản lý thông tin thuế cho đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "tax number"
+  - "tax type"
+  - "authorization group"
+  - "lob other"
+  - "bo business partner"
+  - "ap md bp"
+  - "ap md"
+  - "ap"
+  - "interface view"
+  - "partner"
+  - "tax"
+semantic_en: "Exposes business partner tax numbers for various tax types and authorization groups, used to retrieve and manage tax information for business partners."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

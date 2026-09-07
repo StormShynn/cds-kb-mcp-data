@@ -1,6 +1,17 @@
 ---
 name: I_BUSPARTEMAILADDRESSTP_3
 description: "Business PartnerEMAILADDRESSTP 3"
+semantic_vi: "View EMAILADDRESSTP 3 của Đối tác Kinh doanh hiển thị địa chỉ email liên quan đến đối tác kinh doanh, bao gồm ngày bắt đầu và kết thúc có hiệu lực. Nó được sử dụng để quản lý và xác minh địa chỉ email cho đối tác kinh doanh trong quá trình xử lý giao dịch."
+keywords:
+  - "business partner"
+  - "email address"
+  - "transactional processing"
+  - "validity date"
+  - "đối tác kinh doanh"
+  - "địa chỉ email"
+  - "quá trình giao dịch"
+  - "ngày có hiệu lực"
+semantic_en: "The Business Partner EMAILADDRESSTP 3 view exposes email addresses associated with business partners, including their validity start and end dates. It is used to manage and validate email addresses for business partners in transactional processing."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

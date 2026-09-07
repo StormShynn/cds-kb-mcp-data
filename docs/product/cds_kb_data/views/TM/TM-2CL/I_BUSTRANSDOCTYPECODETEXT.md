@@ -1,6 +1,21 @@
 ---
 name: I_BUSTRANSDOCTYPECODETEXT
 description: "Bustransdoctypecodetext"
+semantic_vi: "View I_BUSTRANSDOCTYPECODETEXT cung cấp mô tả văn bản của các loại tài liệu giao dịch kinh doanh trong các ngôn ngữ khác nhau, có thể được sử dụng để hiển thị tên loại tài liệu trong giao diện người dùng."
+keywords:
+  - "business transaction"
+  - "document type"
+  - "text description"
+  - "language"
+  - "interface"
+  - "document type name"
+  - "business transaction document type"
+  - "tm-2cl"
+  - "sap cds view"
+  - "tài liệu giao dịch"
+  - "loại tài liệu"
+  - "mô tả văn bản"
+semantic_en: "The I_BUSTRANSDOCTYPECODETEXT view provides text descriptions of business transaction document types in different languages, which can be used to display document type names in a user interface."
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

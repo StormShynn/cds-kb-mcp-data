@@ -1,6 +1,18 @@
 ---
 name: I_BUSPARTINDUSTRYKEYTEXT
 description: "Business PartnerINDUSTRYKEYTEXT"
+semantic_vi: "Chứa dữ liệu văn bản khóa ngành cho đối tác kinh doanh, hữu ích khi hiển thị thông tin ngành cụ thể."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "industry key text"
+  - "text view"
+  - "interface view"
+  - "sap business partner"
+  - "ap-md-bp-rap"
+  - "industry sector"
+  - "industry system type"
+semantic_en: "Exposes industry key text data for business partners, useful when displaying industry-specific information."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

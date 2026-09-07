@@ -1,6 +1,20 @@
 ---
 name: I_BUSEVTLOGBUSINESSACTIVITY
 description: "Busevtlogbusinessactivity"
+semantic_vi: "View I_BUSEVTLOGBUSINESSACTIVITY hiển thị dữ liệu nhật ký hoạt động kinh doanh cho các đối tượng SAP, cho phép các nhà phát triển theo dõi và phân tích các sự kiện liên quan đến các đối tượng kinh doanh và các hoạt động."
+keywords:
+  - "business activity log"
+  - "sap object"
+  - "event tracking"
+  - "business object"
+  - "operation"
+  - "sap object type"
+  - "event operation"
+  - "sabusinessobjectnodekey"
+  - "cross-application components"
+  - "ca-gtf-bel"
+  - "interface view"
+semantic_en: "The I_BUSEVTLOGBUSINESSACTIVITY view exposes business activity log data for SAP objects, allowing developers to track and analyze events related to business objects and operations."
 app_component: CA-GTF-BEL
 software_component: SAP_BASIS
 release_state: released

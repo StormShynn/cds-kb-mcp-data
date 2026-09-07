@@ -1,6 +1,21 @@
 ---
 name: I_BUSSOLNORDBASICFINANCIAL
 description: "Bussolnordbasicfinancial"
+semantic_vi: "View I_BUSSOLNORDBASICFINANCIAL CDS hiển thị dữ liệu tài chính cơ bản cho các giải pháp kinh doanh, chẳng hạn như số tiền của đơn hàng và thông tin thuế, có thể được sử dụng trong phân tích và báo cáo CRM."
+keywords:
+  - "business solution"
+  - "financial data"
+  - "crm analytics"
+  - "basic financial"
+  - "service document"
+  - "tax amount"
+  - "posting date"
+  - "service document type"
+  - "service object type"
+  - "business solution order"
+  - "service document description"
+  - "language"
+semantic_en: "The I_BUSSOLNORDBASICFINANCIAL CDS view exposes basic financial data for business solutions, such as order amounts and tax information, which can be used in CRM analytics and reporting."
 app_component: CRM-S4-ANA-CDS-2CL
 software_component: SAPSCORE
 release_state: released

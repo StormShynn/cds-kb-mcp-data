@@ -1,6 +1,20 @@
 ---
 name: I_BUSINESSTYPEVH
 description: "Businesstypevh"
+semantic_vi: "View BusinessType cung cấp danh sách các loại hình kinh doanh cho các giao dịch tài chính, có thể được sử dụng để lọc hoặc phân loại dữ liệu tài chính."
+keywords:
+  - "business type"
+  - "loại hình kinh doanh"
+  - "financial transaction"
+  - "giao dịch tài chính"
+  - "fi"
+  - "finance"
+  - "cds view"
+  - "view"
+  - "business"
+  - "kinh doanh"
+  - "tài chính"
+semantic_en: "The BusinessType view provides a list of business types for financial transactions, which can be used to filter or categorize financial data."
 app_component: FI-LOC-FI-KR
 software_component: SAPSCORE
 release_state: released

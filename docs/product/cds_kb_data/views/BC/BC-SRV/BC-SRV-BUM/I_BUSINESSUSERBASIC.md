@@ -1,6 +1,19 @@
 ---
 name: I_BUSINESSUSERBASIC
 description: "Businessuserbasic"
+semantic_vi: "View Businessuserbasic cung cấp thông tin cơ bản về người dùng kinh doanh, bao gồm tên, địa chỉ và thông tin liên hệ. Nó được sử dụng để lấy và hiển thị dữ liệu người dùng trong các ứng dụng kinh doanh khác nhau."
+keywords:
+  - "business user"
+  - "business partner"
+  - "business user basic"
+  - "business partner basic"
+  - "sap cds view"
+  - "interface view"
+  - "basis components"
+  - "lob basis components"
+  - "business user data"
+  - "thông tin người dùng kinh doanh"
+semantic_en: "The Businessuserbasic view provides basic information about business users, including their names, addresses, and contact details. It is used to retrieve and display user data in various business applications."
 app_component: BC-SRV-BUM
 software_component: SAP_BASIS
 release_state: released

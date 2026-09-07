@@ -1,6 +1,17 @@
 ---
 name: I_BUSINESSPARTNERTOBPROLE_2
 description: "Business PartnerTOBPROLE 2"
+semantic_vi: "Chỉ ra các vai trò đối tác kinh doanh và dữ liệu liên quan, hữu ích cho việc quản lý mối quan hệ đối tác kinh doanh và quyền truy cập."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "role"
+  - "quyền truy cập"
+  - "sap"
+  - "ap-md-bp"
+  - "business partner role"
+  - "business partner relationship"
+semantic_en: "Exposes business partner roles and their associated data, useful for managing business partner relationships and permissions."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

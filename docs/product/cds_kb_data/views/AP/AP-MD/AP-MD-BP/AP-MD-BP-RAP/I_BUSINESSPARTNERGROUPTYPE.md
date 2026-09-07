@@ -1,6 +1,17 @@
 ---
 name: I_BUSINESSPARTNERGROUPTYPE
 description: "Business PartnerGROUPTYPE"
+semantic_vi: "View Business Partner Group Type cung cấp thông tin về loại nhóm đối tác kinh doanh, được sử dụng để phân loại đối tác kinh doanh trong một công ty. View này có thể được sử dụng để truy xuất và quản lý loại nhóm đối tác kinh doanh trong hệ thống SAP."
+keywords:
+  - "business partner"
+  - "partner"
+  - "group type"
+  - "đối tác kinh doanh"
+  - "loại nhóm"
+  - "sap"
+  - "ap-md-bp-rap"
+  - "business partner group type"
+semantic_en: "The Business Partner Group Type view provides information about business partner group types, which are used to categorize business partners in a company. This view can be used to retrieve and manage business partner group types in a SAP system."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

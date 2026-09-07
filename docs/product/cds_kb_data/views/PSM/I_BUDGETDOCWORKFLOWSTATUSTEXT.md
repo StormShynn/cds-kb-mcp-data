@@ -1,6 +1,18 @@
 ---
 name: I_BUDGETDOCWORKFLOWSTATUSTEXT
 description: "Budgetdocworkflowstatustext"
+semantic_vi: "View I_BUDGETDOCWORKFLOWSTATUSTEXT cung cấp dữ liệu văn bản trạng thái luồng công việc tài chính ngân sách, có thể được sử dụng để hiển thị thông tin trạng thái trong thành phần PSM."
+keywords:
+  - "budget document"
+  - "workflow status"
+  - "text view"
+  - "psm component"
+  - "status text"
+  - "budgetdocworkflowstatustext"
+  - "tài chính ngân sách"
+  - "trạng thái luồng công việc"
+  - "trạng thái văn bản"
+semantic_en: "The I_BUDGETDOCWORKFLOWSTATUSTEXT view provides budget document workflow status text data, which can be used to display status information in the PSM component."
 app_component: PSM
 software_component: SAPSCORE
 release_state: released

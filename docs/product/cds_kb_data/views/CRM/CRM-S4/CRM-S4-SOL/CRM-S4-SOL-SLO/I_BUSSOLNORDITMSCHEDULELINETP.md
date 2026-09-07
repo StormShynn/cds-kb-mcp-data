@@ -1,6 +1,21 @@
 ---
 name: I_BUSSOLNORDITMSCHEDULELINETP
 description: "BUSSOLNORDITMSchedule LineTP"
+semantic_vi: "View BUSSOLNORDITMSchedule LineTP hiển thị dữ liệu dòng lịch trình cho các giải pháp kinh doanh trong CRM, hữu ích khi quản lý và theo dõi lịch trình giao hàng cho đơn hàng."
+keywords:
+  - "schedule line"
+  - "dòng lịch trình"
+  - "business solution"
+  - "giải pháp kinh doanh"
+  - "crm"
+  - "scheduling"
+  - "lịch trình"
+  - "delivery schedule"
+  - "lịch trình giao hàng"
+  - "order"
+  - "đơn hàng"
+  - "sap cds"
+semantic_en: "The BUSSOLNORDITMSchedule LineTP view exposes schedule line data for business solutions in CRM, useful when managing and tracking delivery schedules for orders."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

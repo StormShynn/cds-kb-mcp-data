@@ -1,6 +1,19 @@
 ---
 name: I_CAACCOUNTASSIGNMENTCATEGORYT
 description: "Caaccountassignmentcategoryt"
+semantic_vi: "View I_CAACCOUNTASSIGNMENTCATEGORYT hiển thị các loại phân bổ tài khoản cho kế toán tài chính, được sử dụng để phân loại và theo dõi các giao dịch tài chính."
+keywords:
+  - "account assignment"
+  - "financial accounting"
+  - "caaccountassignmentcategory"
+  - "caaccountassignmentcatname"
+  - "fi-ca"
+  - "finance"
+  - "tài khoản"
+  - "phân bổ tài khoản"
+  - "kế toán tài chính"
+  - "loại phân bổ tài khoản"
+semantic_en: "The I_CAACCOUNTASSIGNMENTCATEGORYT view exposes account assignment categories for financial accounting, which are used to categorize and track financial transactions."
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

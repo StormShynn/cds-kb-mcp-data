@@ -1,6 +1,17 @@
 ---
 name: I_BUSSOLNORDPARTNERTP
 description: "Bussolnordpartnertp"
+semantic_vi: "Chứa thông tin đối tác kinh doanh cho một đơn hàng giải pháp kinh doanh cụ thể trong CRM, được sử dụng để quản lý mối quan hệ đối tác."
+keywords:
+  - "crm"
+  - "business partner"
+  - "business solution order"
+  - "partner relationship"
+  - "đối tác kinh doanh"
+  - "đơn hàng giải pháp kinh doanh"
+  - "quản lý mối quan hệ đối tác"
+  - "sap crm"
+semantic_en: "Exposes business partner information for a specific business solution order in CRM, used to manage partner relationships."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

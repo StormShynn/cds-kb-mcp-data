@@ -1,6 +1,17 @@
 ---
 name: I_BUSINESSACTIVITYCATEGORY
 description: "Businessactivitycategory"
+semantic_vi: "View I_BUSINESSACTIVITYCATEGORY cung cấp truy cập vào các loại và lớp hoạt động kinh doanh, được sử dụng để phân loại hoạt động kinh doanh trong ứng dụng CRM."
+keywords:
+  - "business activity"
+  - "loại hoạt động kinh doanh"
+  - "lớp hoạt động kinh doanh"
+  - "categorize"
+  - "crm"
+  - "activity category"
+  - "loại hoạt động"
+  - "loại và lớp hoạt động kinh doanh"
+semantic_en: "The I_BUSINESSACTIVITYCATEGORY view provides access to business activity categories and classes, which are used to categorize business activities in CRM applications."
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

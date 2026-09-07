@@ -1,6 +1,20 @@
 ---
 name: I_BR_PAYTINTEGRATIONTYPETEXT
 description: "BR Paytintegrationtypetext"
+semantic_vi: "Chứa mô tả loại tích hợp hệ thống thanh toán để sử dụng trong các giao dịch tài chính và thiết lập tích hợp."
+keywords:
+  - "payment system integration"
+  - "financial transactions"
+  - "integration setup"
+  - "thanh toán"
+  - "tích hợp hệ thống"
+  - "giao dịch tài chính"
+  - "loại tích hợp"
+  - "mô tả"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo-br"
+semantic_en: "Exposes payment system integration type descriptions for use in financial transactions and integration setup."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released
