@@ -39,32 +39,32 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostEstimate` | ✓ | |  |  |  |  |
-| `CurrencyRole` | ✓ | |  |  |  |  |
-| `Ledger` | ✓ | |  |  |  |  |
-| `MaterialLedgerCategory` | ✓ | |  |  |  |  |
-| `ProcessCategory` | ✓ | |  |  |  |  |
-| `ValuationArea` | ✓ | |  |  |  |  |
-| `PriceDeterminationControl` | ✓ | |  |  |  |  |
-| `Material` |  | |  |  |  |  |
-| `InventoryValuationType` |  | |  |  |  |  |
-| `SalesOrder` |  | |  |  |  |  |
-| `SalesOrderItem` |  | |  |  |  |  |
-| `InventorySpecialStockType` |  | |  |  |  |  |
-| `Supplier` |  | |  |  |  |  |
-| `WBSElementExternalID` |  | |  |  |  |  |
-| `MaterialLedgerCategoryText` |  | |  |  |  |  |
-| `ProcessCategoryName` |  | |  |  |  |  |
-| `InventorySpecialStockTypeName` |  | |  |  |  |  |
-| `TotalVltdStockQuantity` |  | |  |  |  |  |
-| `ValuationQuantityUnit` |  | |  |  |  |  |
-| `InventoryAmtInDspCrcy` |  | |  |  |  |  |
-| `InvtryTransacAmtInDisplayCrcy` |  | |  |  |  |  |
-| `PriceDiffAmtInDisplayCrcy` |  | |  |  |  |  |
-| `ExchRateDiffAmtInDspCurrency` |  | |  |  |  |  |
-| `Currency` |  | |  |  |  |  |
-| `ControllingArea` |  | |  |  |  |  |
-| `ControllingValuationType` |  | |  |  |  |  |
+| `CostEstimate` | ✓ | |  |  | `NUMC(12)` | Cost Estimate Number for Cost Est. w/o Qty Structure |
+| `CurrencyRole` | ✓ | |  |  | `CHAR(2)` | External Currency Type and Valuation View |
+| `Ledger` | ✓ | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `MaterialLedgerCategory` | ✓ | |  |  | `CHAR(2)` | Material Ledger Category |
+| `ProcessCategory` | ✓ | |  |  | `CHAR(4)` | Process Category |
+| `ValuationArea` | ✓ | |  |  | `CHAR(4)` | Valuation Area |
+| `PriceDeterminationControl` | ✓ | |  |  | `CHAR(1)` | Material Price Determination: Control |
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `InventoryValuationType` |  | |  |  | `CHAR(10)` | Valuation Type |
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales and Distribution Document Number |
+| `SalesOrderItem` |  | |  |  | `NUMC(6)` | Item number of the SD document |
+| `InventorySpecialStockType` |  | |  |  | `CHAR(1)` | Special Stock Indicator |
+| `Supplier` |  | |  |  | `CHAR(10)` | Account Number of Supplier |
+| `WBSElementExternalID` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `MaterialLedgerCategoryText` |  | |  |  | `CHAR(60)` | Material Ledger Category Text |
+| `ProcessCategoryName` |  | |  |  | `CHAR(40)` | Process Category Text |
+| `InventorySpecialStockTypeName` |  | |  |  | `CHAR(20)` | Special Stock Type Name |
+| `TotalVltdStockQuantity` |  | |  |  | `QUAN(23)` | Transaction Quantity in Valuation Quantity Unit of Mesure |
+| `ValuationQuantityUnit` |  | |  |  | `UNIT(3)` | Quantity Unit for Valuation |
+| `InventoryAmtInDspCrcy` |  | |  |  | `CURR(23)` | Inventory Value |
+| `InvtryTransacAmtInDisplayCrcy` |  | |  |  | `CURR(23)` | Preliminary Value |
+| `PriceDiffAmtInDisplayCrcy` |  | |  |  | `CURR(23)` | Price Difference |
+| `ExchRateDiffAmtInDspCurrency` |  | |  |  | `CURR(23)` | Exchange Rate Difference |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `ControllingValuationType` |  | |  |  | `NUMC(1)` | Valuation View (for Transfer Prices) |
 | `_Product` | | ✓ | | | | |
 | `_Plant` | | ✓ | | | | |
 | `_Ledger` | | ✓ | | | | |

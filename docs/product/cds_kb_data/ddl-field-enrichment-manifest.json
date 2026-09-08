@@ -19683,5 +19683,240 @@
     "attemptedAt": "2026-09-07T14:01:36.260Z",
     "found": true,
     "matched": 28
+  },
+  "I_STATISTICALKEYFIGURE": {
+    "attemptedAt": "2026-09-08T12:39:25.411Z",
+    "found": true,
+    "matched": 14
+  },
+  "I_STATISTICALKEYFIGURESTDVH": {
+    "attemptedAt": "2026-09-08T12:39:25.971Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_STATISTICALKEYFIGURETEXT": {
+    "attemptedAt": "2026-09-08T12:39:26.597Z",
+    "found": true,
+    "matched": 4
+  },
+  "C_COSTCENTERACTUALQUERY": {
+    "attemptedAt": "2026-09-08T12:39:27.135Z",
+    "found": true,
+    "matched": 58
+  },
+  "C_COSTCENTERPLANACTUALQUERY": {
+    "attemptedAt": "2026-09-08T12:39:27.668Z",
+    "found": true,
+    "matched": 46
+  },
+  "I_ACTPLNCOSTCENTERRPTGCUBE": {
+    "attemptedAt": "2026-09-08T12:39:28.198Z",
+    "found": true,
+    "matched": 101
+  },
+  "I_COSTCENTERBUDGET": {
+    "attemptedAt": "2026-09-08T12:39:28.685Z",
+    "found": true,
+    "matched": 62
+  },
+  "I_PROFITABILITYSEGMENT": {
+    "attemptedAt": "2026-09-08T12:39:29.232Z",
+    "found": true,
+    "matched": 40
+  },
+  "I_ACTCOSTINGRUNTYPEVH": {
+    "attemptedAt": "2026-09-08T12:39:29.742Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_ACTLCOSTGMATLVALUECHAINITEM": {
+    "attemptedAt": "2026-09-08T12:39:30.225Z",
+    "found": true,
+    "matched": 34
+  },
+  "I_ACTUALCOSTINGACTIVITYRESULT": {
+    "attemptedAt": "2026-09-08T12:39:30.806Z",
+    "found": true,
+    "matched": 29
+  },
+  "I_ACTUALCOSTINGRUNRESULT": {
+    "attemptedAt": "2026-09-08T12:39:31.344Z",
+    "found": true,
+    "matched": 25
+  },
+  "I_MATLINVTRYLDGRQTYSTRUCTURE": {
+    "attemptedAt": "2026-09-08T12:39:31.844Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_TRANSBSDMATLVALUECHAINITEM": {
+    "attemptedAt": "2026-09-08T12:39:32.374Z",
+    "found": true,
+    "matched": 34
+  },
+  "I_WIPQUANTITYDOCUMENT": {
+    "attemptedAt": "2026-09-08T12:39:32.857Z",
+    "found": true,
+    "matched": 29
+  },
+  "I_INVENTORYAMTBYFSCLPERD": {
+    "attemptedAt": "2026-09-08T12:39:33.339Z",
+    "found": true,
+    "matched": 21
+  },
+  "I_INVENTORYPRICEBYKEYDATE": {
+    "attemptedAt": "2026-09-08T12:39:33.848Z",
+    "found": true,
+    "matched": 29
+  },
+  "I_INVENTORYPRICEBYKEYDATE_2": {
+    "attemptedAt": "2026-09-08T12:39:34.382Z",
+    "found": true,
+    "matched": 30
+  },
+  "I_MATERIALLEDGERCUBE_LIT": {
+    "attemptedAt": "2026-09-08T12:39:34.880Z",
+    "found": true,
+    "matched": 59
+  },
+  "I_MATERIALVALUATIONTYPEVH": {
+    "attemptedAt": "2026-09-08T12:39:35.446Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_PRICEDETERMINATIONCONTROL": {
+    "attemptedAt": "2026-09-08T12:39:35.960Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_PRICEDETERMINATIONCONTROLTXT": {
+    "attemptedAt": "2026-09-08T12:39:36.468Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_EVENTBASEDERRORSITUATION": {
+    "attemptedAt": "2026-09-08T12:39:37.030Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_EVENTBASEDORDERPOSTINGRULE": {
+    "attemptedAt": "2026-09-08T12:39:37.537Z",
+    "found": true,
+    "matched": 33
+  },
+  "I_EVENTBASEDORDERPOSTINGRULETP": {
+    "attemptedAt": "2026-09-08T12:39:37.686Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_EVENTBASEDORDERPOSTINGRULETP\" (404)"
+  },
+  "I_EVENTBASEDPROCESSINGKEY": {
+    "attemptedAt": "2026-09-08T12:39:38.421Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_EVENTBASEDPROCESSINGKEYSTDVH": {
+    "attemptedAt": "2026-09-08T12:39:38.899Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_EVENTBASEDPROCESSINGKEYTEXT": {
+    "attemptedAt": "2026-09-08T12:39:39.414Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_MFGORDERACTLPLANTGTLDGRCOST": {
+    "attemptedAt": "2026-09-08T12:39:39.952Z",
+    "found": true,
+    "matched": 44
+  },
+  "I_MFGORDEREVTBSDWIPVARIANCE": {
+    "attemptedAt": "2026-09-08T12:39:40.462Z",
+    "found": true,
+    "matched": 34
+  },
+  "I_MFGORDNONMATRCVRACCTDETNMETH": {
+    "attemptedAt": "2026-09-08T12:39:40.951Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_PCCACTLTGTCOSTCUBE": {
+    "attemptedAt": "2026-09-08T12:39:41.528Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_PCCEVTBSDWIPVARIANCECUBE": {
+    "attemptedAt": "2026-09-08T12:39:42.012Z",
+    "found": true,
+    "matched": 20
+  },
+  "I_ACCOUNTINGSERVICEDOCUMENT": {
+    "attemptedAt": "2026-09-08T12:39:42.530Z",
+    "found": true,
+    "matched": 77
+  },
+  "I_ACCTGSERVICECONTRACTVH": {
+    "attemptedAt": "2026-09-08T12:39:43.034Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ACCTGSERVICEDOCUMENTITEMVH": {
+    "attemptedAt": "2026-09-08T12:39:43.526Z",
+    "found": true,
+    "matched": 14
+  },
+  "I_ACCTGSERVICEDOCUMENTTYPE": {
+    "attemptedAt": "2026-09-08T12:39:44.016Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_ACCTGSERVICEDOCUMENTTYPEVH": {
+    "attemptedAt": "2026-09-08T12:39:44.496Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_ACCTGSERVICEDOCUMENTVH": {
+    "attemptedAt": "2026-09-08T12:39:45.001Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_ACCTGSRVCDOCUMENTITEMBASIC": {
+    "attemptedAt": "2026-09-08T12:39:45.582Z",
+    "found": true,
+    "matched": 90
+  },
+  "D_COSTESTCOSTCOMPONENTR": {
+    "attemptedAt": "2026-09-08T12:39:45.733Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_COSTESTCOSTCOMPONENTR\" (404)"
+  },
+  "D_COSTESTGETBRKDWNBYCOMPVIEWP": {
+    "attemptedAt": "2026-09-08T12:39:46.147Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_COSTESTGETBRKDWNBYCOMPVIEWP\" (404)"
+  },
+  "D_COSTESTGETBRKDWNBYCOMPVIEWR": {
+    "attemptedAt": "2026-09-08T12:39:46.547Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_COSTESTGETBRKDWNBYCOMPVIEWR\" (404)"
+  },
+  "D_COSTINGVARIANTEXPLAINWITHAIP": {
+    "attemptedAt": "2026-09-08T12:39:46.959Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_COSTINGVARIANTEXPLAINWITHAIP\" (404)"
+  },
+  "D_COSTINGVARIANTEXPLAINWITHAIR": {
+    "attemptedAt": "2026-09-08T12:39:47.371Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_COSTINGVARIANTEXPLAINWITHAIR\" (404)"
+  },
+  "I_COMPONENTBREAKDOWNMETHOD": {
+    "attemptedAt": "2026-09-08T12:39:48.132Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_COMPONENTBREAKDOWNMETHODTEXT": {
+    "attemptedAt": "2026-09-08T12:39:48.645Z",
+    "found": true,
+    "matched": 3
   }
 }

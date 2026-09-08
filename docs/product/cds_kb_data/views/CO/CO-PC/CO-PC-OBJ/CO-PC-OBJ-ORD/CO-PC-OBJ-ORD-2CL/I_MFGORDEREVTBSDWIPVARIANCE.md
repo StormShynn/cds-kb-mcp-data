@@ -39,40 +39,40 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Ledger` | ✓ | |  |  |  |  |
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `OrderID` | ✓ | |  |  |  |  |
-| `OrderItem` | ✓ | |  |  |  |  |
-| `OrderType` | ✓ | |  |  |  |  |
-| `OrderCategory` | ✓ | |  |  |  |  |
-| `ResultAnalysisInternalID` | ✓ | |  |  |  |  |
-| `ChartOfAccounts` | ✓ | |  |  |  |  |
-| `GLAccount` | ✓ | |  |  |  |  |
-| `Plant` | ✓ | |  |  |  |  |
-| `ProducedProduct` | ✓ | |  |  |  |  |
-| `OriginProduct` | ✓ | |  |  |  |  |
-| `OriginCostCenter` | ✓ | |  |  |  |  |
-| `OriginCostCtrActivityType` | ✓ | |  |  |  |  |
-| `SalesOrder` | ✓ | |  |  |  |  |
-| `SalesOrderItem` | ✓ | |  |  |  |  |
-| `WBSElementInternalID` |  | |  | `cast(WBSElementInternalID as fco_ebpr_wbs_element_int_id preserving type )` |  |  |
-| `ControllingArea` |  | | `_Order` | `ControllingArea` |  |  |
-| `CompanyCodeName` |  | | `_CompanyCode` | `CompanyCodeName` |  |  |
-| `OrderDescription` |  | | `_Order` | `OrderDescription` |  |  |
-| `PlantName` |  | | `_Plant` | `PlantName` |  |  |
-| `SalesOrderItemText` |  | | `_SalesOrderItem` | `SalesOrderItemText` |  |  |
-| `WBSDescription` |  | | `_WBSElement` | `WBSDescription` |  |  |
-| `DisplayCurrency` |  | |  |  |  |  |
-| `InptPrVarcAmtInDspCrcy` |  | |  |  |  |  |
-| `InptQtyVarcAmtInDspCrcy` |  | |  |  |  |  |
-| `RsceUsgeVarcAmtInDspCrcy` |  | |  |  |  |  |
-| `OutpPrVarcAmtInDspCrcy` |  | |  |  |  |  |
-| `LotSizeVarcAmtInDspCrcy` |  | |  |  |  |  |
-| `RmngVarcAmtInDspCrcy` |  | |  |  |  |  |
-| `CostVarianceInDspCrcy` |  | |  |  |  |  |
-| `WIPCostInDspCrcy` |  | |  |  |  |  |
-| `UnrlzdCostRsrvAmtInDspCrcy` |  | |  |  |  |  |
-| `TotalWIPAmountInDspCrcy` |  | |  |  |  |  |
+| `Ledger` | ✓ | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `OrderID` | ✓ | |  |  | `CHAR(12)` | Order Number |
+| `OrderItem` | ✓ | |  |  | `NUMC(4)` | Order Item |
+| `OrderType` | ✓ | |  |  | `CHAR(4)` | Order Type |
+| `OrderCategory` | ✓ | |  |  | `NUMC(2)` | Order Category |
+| `ResultAnalysisInternalID` | ✓ | |  |  | `CHAR(6)` | Event-Based Processing Key |
+| `ChartOfAccounts` | ✓ | |  |  | `CHAR(4)` | Chart of Accounts |
+| `GLAccount` | ✓ | |  |  | `CHAR(10)` | G/L Account |
+| `Plant` | ✓ | |  |  | `CHAR(4)` | Plant |
+| `ProducedProduct` | ✓ | |  |  | `CHAR(40)` | Material Number for Order |
+| `OriginProduct` | ✓ | |  |  | `CHAR(40)` | Origin Product |
+| `OriginCostCenter` | ✓ | |  |  | `CHAR(10)` | Origin Cost Center |
+| `OriginCostCtrActivityType` | ✓ | |  |  | `CHAR(6)` | Origin Cost Center Activity Type |
+| `SalesOrder` | ✓ | |  |  | `CHAR(10)` | Sales Order |
+| `SalesOrderItem` | ✓ | |  |  | `NUMC(6)` | Sales Order Item |
+| `WBSElementInternalID` |  | |  | `cast(WBSElementInternalID as fco_ebpr_wbs_element_int_id preserving type )` | `NUMC(8)` | WBS Element |
+| `ControllingArea` |  | | `_Order` | `ControllingArea` | `CHAR(4)` | Controlling Area |
+| `CompanyCodeName` |  | | `_CompanyCode` | `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
+| `OrderDescription` |  | | `_Order` | `OrderDescription` | `CHAR(40)` | Order Description |
+| `PlantName` |  | | `_Plant` | `PlantName` | `CHAR(30)` | Plant Name |
+| `SalesOrderItemText` |  | | `_SalesOrderItem` | `SalesOrderItemText` | `CHAR(40)` | Short Text for Sales Order Item |
+| `WBSDescription` |  | | `_WBSElement` | `WBSDescription` | `CHAR(40)` | Work Breakdown Structure Element Name |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `InptPrVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Input Price Variance in Display Currency |
+| `InptQtyVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Input Quantity Variance |
+| `RsceUsgeVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Resource Usage Variance |
+| `OutpPrVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Output Price Variance in Display Currency |
+| `LotSizeVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Lot Size Variance |
+| `RmngVarcAmtInDspCrcy` |  | |  |  | `CURR(23)` | Remaining Variance in Display Currency |
+| `CostVarianceInDspCrcy` |  | |  |  | `CURR(23)` | Total Cost Variance in Display Currency |
+| `WIPCostInDspCrcy` |  | |  |  | `CURR(23)` | Work In Process |
+| `UnrlzdCostRsrvAmtInDspCrcy` |  | |  |  | `CURR(23)` | Reserves for Unrealized Costs |
+| `TotalWIPAmountInDspCrcy` |  | |  |  | `CURR(23)` | Total Work in Process Amount in Display Currency |
 | `_Ledger` | | ✓ | | | | |
 | `_CompanyCode` | | ✓ | | | | |
 | `_Order` | | ✓ | | | | |

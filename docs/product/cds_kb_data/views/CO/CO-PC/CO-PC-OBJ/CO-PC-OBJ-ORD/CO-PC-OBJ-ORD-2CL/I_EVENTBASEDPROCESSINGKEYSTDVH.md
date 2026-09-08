@@ -41,7 +41,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EventBasedProcessingKey` | ✓ | |  |  |  |  |
+| `EventBasedProcessingKey` | ✓ | |  |  | `CHAR(6)` | Event-Based Processing Key |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

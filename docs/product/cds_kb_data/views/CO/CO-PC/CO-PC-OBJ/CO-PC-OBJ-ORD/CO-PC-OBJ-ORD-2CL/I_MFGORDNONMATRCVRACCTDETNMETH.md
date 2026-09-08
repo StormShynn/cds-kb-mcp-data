@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `MfgOrdNonMatlRcvrAcctDetnMeth` | ✓ | |  | `cast( domvalue_l as fco_acct_determination_method)` |  |  |
-| `MfgOrdNonMatlRcvrDetnMethName` |  | |  | `cast(ddtext as fco_acct_detn_meth_text)` |  |  |
+| `MfgOrdNonMatlRcvrAcctDetnMeth` | ✓ | |  | `cast( domvalue_l as fco_acct_determination_method)` | `CHAR(2)` | Account Determination Method |
+| `MfgOrdNonMatlRcvrDetnMethName` |  | |  | `cast(ddtext as fco_acct_detn_meth_text)` | `CHAR(60)` | Account Determination Method Text |
 
 ## Source Code
 

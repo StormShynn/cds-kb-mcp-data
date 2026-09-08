@@ -52,9 +52,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentType` | ✓ | |  |  |  |  |
-| `ServiceContract` | ✓ | |  | `ServiceDocument` |  |  |
-| `ObjectType` |  | |  |  |  |  |
+| `ServiceDocumentType` | ✓ | |  |  | `CHAR(4)` | Service Document Type |
+| `ServiceContract` | ✓ | |  | `ServiceDocument` | `CHAR(10)` | Service Document ID |
+| `ObjectType` |  | |  |  | `CHAR(2)` | Object Type |
 
 ## Source Code
 

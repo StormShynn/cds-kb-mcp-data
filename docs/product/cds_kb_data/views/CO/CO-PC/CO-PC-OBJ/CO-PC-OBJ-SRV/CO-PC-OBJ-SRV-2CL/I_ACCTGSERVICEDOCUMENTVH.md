@@ -56,12 +56,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocument` | ✓ | |  |  |  |  |
-| `ServiceDocumentType` | ✓ | |  |  |  |  |
-| `ServiceDocumentDescription` |  | |  |  |  |  |
-| `ServiceDocumentTypeName` |  | |  |  |  |  |
-| `CompanyCode` |  | |  |  |  |  |
-| `ProfitCenter` |  | |  |  |  |  |
+| `ServiceDocument` | ✓ | |  |  | `CHAR(10)` | Service Document ID |
+| `ServiceDocumentType` | ✓ | |  |  | `CHAR(4)` | Service Document Type |
+| `ServiceDocumentDescription` |  | |  |  | `CHAR(40)` | Service Document Description |
+| `ServiceDocumentTypeName` |  | |  |  | `CHAR(40)` | Description |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
 
 ## Source Code
 

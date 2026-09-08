@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EventBasedProcessingKey` | ✓ | |  | `ebw_key` |  |  |
-| `EventBasedWIPCalculationMethod` |  | |  | `ebw_method` |  |  |
+| `EventBasedProcessingKey` | ✓ | |  | `ebw_key` | `CHAR(6)` | Event-Based Processing Key |
+| `EventBasedWIPCalculationMethod` |  | |  | `ebw_method` | `CHAR(1)` | Event-Based Posting: WIP Calculation Method |
 | `_Text` | | ✓ | | | | |
 
 ## Associations
