@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ValuationVariant` | ✓ | |  | `bwvar` |  |  |
-| `OverheadCostingSheet` |  | |  | `kalsm` |  |  |
-| `ExtProcuredMatlOvhdCostingSht` |  | |  | `cast(kalsm_raw as fml_kalsm_raw preserving type)` |  |  |
+| `ValuationVariant` | ✓ | |  | `bwvar` | `CHAR(3)` | Valuation Variant in Costing |
+| `OverheadCostingSheet` |  | |  | `kalsm` | `CHAR(6)` | Costing Sheet for Calculating Overhead |
+| `ExtProcuredMatlOvhdCostingSht` |  | |  | `cast(kalsm_raw as fml_kalsm_raw preserving type)` | `CHAR(6)` | Costing Sheet for Externally Procured Materials |
 | `_Text` | | ✓ | | | | |
 | `_CostingSheetText` | | ✓ | | | | |
 | `_CostingSheetExtText` | | ✓ | | | | |

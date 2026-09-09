@@ -39,12 +39,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostComponentView` | ✓ | |  |  |  |  |
-| `CostCompIsForSalesAndAdminCost` |  | |  |  |  |  |
-| `CostCompIsForCOGM` |  | |  |  |  |  |
-| `CostCompIsForInvtryValuation` |  | |  |  |  |  |
-| `CostCompIsForInvtryOnCommlLaw` |  | |  |  |  |  |
-| `CostCompIsForInvtryOnTaxLaw` |  | |  |  |  |  |
+| `CostComponentView` | ✓ | |  |  | `NUMC(2)` | Cost Component View |
+| `CostCompIsForSalesAndAdminCost` |  | |  |  | `CHAR(1)` | Display Cost Components for Sales and Administration Costs |
+| `CostCompIsForCOGM` |  | |  |  | `CHAR(1)` | Display Cost Components for Cost of Goods Manufactured |
+| `CostCompIsForInvtryValuation` |  | |  |  | `CHAR(1)` | Display Cost Components for Inventory Valuation |
+| `CostCompIsForInvtryOnCommlLaw` |  | |  |  | `CHAR(1)` | Display Cost Components for Inventory Based on Commerc. Law |
+| `CostCompIsForInvtryOnTaxLaw` |  | |  |  | `CHAR(1)` | Display Cost Components for Inventory Based on Tax Law |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

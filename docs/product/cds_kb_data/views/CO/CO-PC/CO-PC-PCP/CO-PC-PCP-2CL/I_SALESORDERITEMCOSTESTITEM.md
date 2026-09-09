@@ -42,55 +42,55 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostingReferenceObject` | ✓ | |  |  |  |  |
-| `CostEstimate` | ✓ | |  |  |  |  |
-| `CostingType` | ✓ | |  |  |  |  |
-| `CostingDate` | ✓ | |  |  |  |  |
-| `CostingVersion` | ✓ | |  |  |  |  |
-| `ValuationVariant` | ✓ | |  |  |  |  |
-| `CostIsEnteredManually` | ✓ | |  |  |  |  |
-| `CostingItem` | ✓ | |  |  |  |  |
-| `CostingItemCategory` |  | |  |  |  |  |
-| `CostElement` |  | |  |  |  |  |
-| `CostOriginGroup` |  | |  |  |  |  |
-| `Plant` |  | |  |  |  |  |
-| `Product` |  | |  |  |  |  |
-| `ValuationType` |  | |  |  |  |  |
-| `Creditor` |  | |  |  |  |  |
-| `GlobalCurrency` |  | | `_SalesOrderItemCostEstimate` | `GlobalCurrency` |  |  |
-| `TotalPriceInGlobalCurrency` |  | |  | `cast(TotalPriceInInCtrlgAreaCrcy as fpc_total_price_global_crcy preserving type)` |  |  |
-| `FixedPriceInGlobalCurrency` |  | |  | `cast(FixedPriceInCtrlgAreaCrcy as fpc_fixed_price_global_crcy preserving type)` |  |  |
-| `TotalAmountInGlobalCurrency` |  | |  | `cast(TotalAmountInCtrlgAreaCrcy as fis_ksl)` |  |  |
-| `FixedAmountInGlobalCrcy` |  | |  | `cast(FixedAmountInCtrlgAreaCrcy as fis_kfsl)` |  |  |
-| `CompanyCodeCurrency` |  | |  |  |  |  |
-| `TotalPriceInCompanyCodeCrcy` |  | |  |  |  |  |
-| `FixedPriceInCompanyCodeCrcy` |  | |  |  |  |  |
-| `TotalAmountInCoCodeCrcy` |  | |  |  |  |  |
-| `FixedAmountInCoCodeCrcy` |  | |  |  |  |  |
-| `UnitOfMeasure` |  | |  | `BaseUnit` |  |  |
-| `Quantity` |  | |  | `QuantityInBaseUnit` |  |  |
-| `CostingPriceQtyUnit` |  | |  |  |  |  |
-| `CostingPriceUnitQty` |  | |  |  |  |  |
-| `CostingValuationStrategy` |  | |  |  |  |  |
-| `ProductValnPurgInfoRecdStrgy` |  | |  |  |  |  |
-| `BillOfMaterialItemNumber` |  | |  |  |  |  |
-| `CostingItemIsAssembly` |  | |  |  |  |  |
-| `CostCtrActivityType` |  | |  |  |  |  |
-| `CostCenter` |  | |  |  |  |  |
-| `ProfitCenter` |  | |  |  |  |  |
-| `Operation` |  | |  |  |  |  |
-| `PurchasingInfoRecord` |  | |  |  |  |  |
-| `PurchasingOrganization` |  | |  |  |  |  |
-| `PurchasingInfoRecordCategory` |  | |  |  |  |  |
-| `PurchasingDocument` |  | |  |  |  |  |
-| `PurchasingDocumentItem` |  | |  |  |  |  |
-| `IsLotSizeIndependent` |  | |  |  |  |  |
-| `HasError` |  | |  |  |  |  |
-| `TransferCostEstimate` |  | |  |  |  |  |
-| `TransferCostingType` |  | |  |  |  |  |
-| `TransferCostingDate` |  | |  |  |  |  |
-| `TransferCostingVersion` |  | |  |  |  |  |
-| `TransferValuationVariant` |  | |  |  |  |  |
+| `CostingReferenceObject` | ✓ | |  |  | `CHAR(1)` | Reference Object |
+| `CostEstimate` | ✓ | |  |  | `NUMC(12)` | Cost Estimate |
+| `CostingType` | ✓ | |  |  | `CHAR(2)` | Costing Type |
+| `CostingDate` | ✓ | |  |  | `DATS(8)` | Costing Date (Key) |
+| `CostingVersion` | ✓ | |  |  | `NUMC(2)` | Costing Version |
+| `ValuationVariant` | ✓ | |  |  | `CHAR(3)` | Valuation Variant in Costing |
+| `CostIsEnteredManually` | ✓ | |  |  | `CHAR(1)` | Costs Entered Manually in Additive or Automatic Cost Est. |
+| `CostingItem` | ✓ | |  |  | `NUMC(5)` | Unit Costing Line Item Number |
+| `CostingItemCategory` |  | |  |  | `CHAR(1)` | Item Category |
+| `CostElement` |  | |  |  | `CHAR(10)` | Cost Element |
+| `CostOriginGroup` |  | |  |  | `CHAR(4)` | Origin Group as Subdivision of Cost Element |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `ValuationType` |  | |  |  | `CHAR(10)` | Valuation Type |
+| `Creditor` |  | |  |  | `CHAR(10)` | Account Number of Supplier |
+| `GlobalCurrency` |  | | `_SalesOrderItemCostEstimate` | `GlobalCurrency` | `CUKY(5)` | Global Currency |
+| `TotalPriceInGlobalCurrency` |  | |  | `cast(TotalPriceInInCtrlgAreaCrcy as fpc_total_price_global_crcy preserving type)` | `CURR(15)` | Total Price in Global Currency |
+| `FixedPriceInGlobalCurrency` |  | |  | `cast(FixedPriceInCtrlgAreaCrcy as fpc_fixed_price_global_crcy preserving type)` | `CURR(15)` | Fixed Price in Global Currency |
+| `TotalAmountInGlobalCurrency` |  | |  | `cast(TotalAmountInCtrlgAreaCrcy as fis_ksl)` | `CURR(23)` | Amount in Global Currency |
+| `FixedAmountInGlobalCrcy` |  | |  | `cast(FixedAmountInCtrlgAreaCrcy as fis_kfsl)` | `CURR(23)` | Fixed Amount in Global Currency |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `TotalPriceInCompanyCodeCrcy` |  | |  |  | `CURR(15)` | Total Price in Company Code Currency |
+| `FixedPriceInCompanyCodeCrcy` |  | |  |  | `CURR(15)` | Fixed Price in Company Code Currency |
+| `TotalAmountInCoCodeCrcy` |  | |  |  | `CURR(15)` | Total Amount in Company Code Currency |
+| `FixedAmountInCoCodeCrcy` |  | |  |  | `CURR(15)` | Fixed Amount in Company Code Currency |
+| `UnitOfMeasure` |  | |  | `BaseUnit` | `UNIT(3)` | Base Unit of Measure |
+| `Quantity` |  | |  | `QuantityInBaseUnit` | `QUAN(15)` | Quantity |
+| `CostingPriceQtyUnit` |  | |  |  | `UNIT(3)` | Price Quantity Unit |
+| `CostingPriceUnitQty` |  | |  |  | `DEC(5)` | Price Unit of Prices in Controlling Area Currency |
+| `CostingValuationStrategy` |  | |  |  | `CHAR(1)` | Valuation Strategy for Material Component |
+| `ProductValnPurgInfoRecdStrgy` |  | |  |  | `CHAR(1)` | Substrategy for Material Valuat. with Purchasing Info Record |
+| `BillOfMaterialItemNumber` |  | |  |  | `CHAR(4)` | Bill of Material Item Number |
+| `CostingItemIsAssembly` |  | |  |  | `CHAR(1)` | Assembly Indicator for Item |
+| `CostCtrActivityType` |  | |  |  | `CHAR(6)` | Activity Type |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `Operation` |  | |  |  | `CHAR(4)` | Operation or Phase Number |
+| `PurchasingInfoRecord` |  | |  |  | `CHAR(10)` | Purchasing Info Record Number |
+| `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |
+| `PurchasingInfoRecordCategory` |  | |  |  | `CHAR(1)` | Purchasing info record category |
+| `PurchasingDocument` |  | |  |  | `CHAR(10)` | Purchasing Document Number |
+| `PurchasingDocumentItem` |  | |  |  | `NUMC(5)` | Item Number of Purchasing Document |
+| `IsLotSizeIndependent` |  | |  |  | `CHAR(1)` | Lot-Size-Independent Indicator |
+| `HasError` |  | |  |  | `CHAR(1)` | Error Indicator |
+| `TransferCostEstimate` |  | |  |  | `NUMC(12)` | Transfer Cost Estimate |
+| `TransferCostingType` |  | |  |  | `CHAR(2)` | Transfer Costing Type |
+| `TransferCostingDate` |  | |  |  | `DATS(8)` | Transfer Costing Date |
+| `TransferCostingVersion` |  | |  |  | `NUMC(2)` | Transfer Costing Version |
+| `TransferValuationVariant` |  | |  |  | `CHAR(3)` | Transfer Valuation Variant |
 | `_SalesOrderItemCostEstimate` | | ✓ | | | | |
 | `_CostingType` | | ✓ | | | | |
 | `_CostingVersion` | | ✓ | | | | |

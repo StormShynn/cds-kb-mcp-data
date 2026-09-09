@@ -39,11 +39,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostBreakdownStructure` | ✓ | |  |  |  |  |
-| `CostBreakdownComponent` | ✓ | |  |  |  |  |
-| `CostBreakdownComponentSequence` |  | |  |  |  |  |
-| `IncludeInInventory` |  | |  |  |  |  |
-| `IncludeInCOGS` |  | |  |  |  |  |
+| `CostBreakdownStructure` | ✓ | |  |  | `CHAR(2)` | Cost Breakdown Structure |
+| `CostBreakdownComponent` | ✓ | |  |  | `CHAR(10)` | Cost Breakdown Component |
+| `CostBreakdownComponentSequence` |  | |  |  | `NUMC(4)` | Cost Breakdown Component Sequence |
+| `IncludeInInventory` |  | |  |  | `CHAR(1)` | Include in Inventory |
+| `IncludeInCOGS` |  | |  |  | `CHAR(1)` | Include in Cost of Goods Sold |
 | `_Structure` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |
 | `_CostBreakdownStructureText` | | ✓ | | | | |

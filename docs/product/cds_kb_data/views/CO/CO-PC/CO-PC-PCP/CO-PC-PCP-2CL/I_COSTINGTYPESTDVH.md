@@ -41,8 +41,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostingType` | ✓ | |  |  |  |  |
-| `CostingTypeName` |  | | `_CostingTypeText` | `CostingTypeName` |  |  |
+| `CostingType` | ✓ | |  |  | `CHAR(2)` | Costing Type |
+| `CostingTypeName` |  | | `_CostingTypeText` | `CostingTypeName` | `CHAR(25)` | Name of Costing Type |
 | `_CostingTypeText` | | ✓ | | | | |
 
 ## Associations

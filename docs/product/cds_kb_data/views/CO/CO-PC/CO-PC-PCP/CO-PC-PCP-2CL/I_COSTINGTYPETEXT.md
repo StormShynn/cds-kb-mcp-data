@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CostingType` | ✓ | |  | `kalka` |  |  |
-| `CostingTypeName` |  | |  | `cast(txkla as fpc_costing_type_name preserving type)` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CostingType` | ✓ | |  | `kalka` | `CHAR(2)` | Costing Type |
+| `CostingTypeName` |  | |  | `cast(txkla as fpc_costing_type_name preserving type)` | `CHAR(25)` | Name of Costing Type |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

@@ -19918,5 +19918,240 @@
     "attemptedAt": "2026-09-08T12:39:48.645Z",
     "found": true,
     "matched": 3
+  },
+  "I_COSTBREAKDOWNCOMPONENT": {
+    "attemptedAt": "2026-09-09T12:46:20.983Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_COSTBREAKDOWNCOMPONENTTEXT": {
+    "attemptedAt": "2026-09-09T12:46:21.625Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_COSTBREAKDOWNMETHOD": {
+    "attemptedAt": "2026-09-09T12:46:22.253Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_COSTBREAKDOWNSTRUCTURE": {
+    "attemptedAt": "2026-09-09T12:46:22.819Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_COSTBREAKDOWNSTRUCTURETEXT": {
+    "attemptedAt": "2026-09-09T12:46:23.417Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTCOMPONENTSTDVH": {
+    "attemptedAt": "2026-09-09T12:46:24.044Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTCOMPONENTVIEW": {
+    "attemptedAt": "2026-09-09T12:46:24.618Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_COSTCOMPONENTVIEWTEXT": {
+    "attemptedAt": "2026-09-09T12:46:25.256Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTINGOVERHEADGROUP": {
+    "attemptedAt": "2026-09-09T12:46:25.834Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTINGOVERHEADGROUPTEXT": {
+    "attemptedAt": "2026-09-09T12:46:26.473Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_COSTINGTYPE": {
+    "attemptedAt": "2026-09-09T12:46:27.041Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_COSTINGTYPESTDVH": {
+    "attemptedAt": "2026-09-09T12:46:27.736Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_COSTINGTYPETEXT": {
+    "attemptedAt": "2026-09-09T12:46:28.327Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTINGVALUATIONVARIANT": {
+    "attemptedAt": "2026-09-09T12:46:28.980Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTINGVALUATIONVARIANTSTDVH": {
+    "attemptedAt": "2026-09-09T12:46:29.546Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_COSTINGVALUATIONVARTEXT": {
+    "attemptedAt": "2026-09-09T12:46:30.131Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTINGVARIANT": {
+    "attemptedAt": "2026-09-09T12:46:30.746Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_COSTINGVARIANTSTDVH": {
+    "attemptedAt": "2026-09-09T12:46:31.342Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_COSTINGVARIANTTEXT": {
+    "attemptedAt": "2026-09-09T12:46:31.936Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTINGVERSION": {
+    "attemptedAt": "2026-09-09T12:46:32.511Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_COSTINGVERSIONTEXT": {
+    "attemptedAt": "2026-09-09T12:46:33.131Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_COSTORIGINGROUP": {
+    "attemptedAt": "2026-09-09T12:46:33.702Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTORIGINGROUPSTDVH": {
+    "attemptedAt": "2026-09-09T12:46:34.347Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTORIGINGROUPTEXT": {
+    "attemptedAt": "2026-09-09T12:46:35.019Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_ESTIMATEDCOSTCOSTINGRUNSTDVH": {
+    "attemptedAt": "2026-09-09T12:46:35.586Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PRODCOSTESTCOSTCOMPRAWDEX": {
+    "attemptedAt": "2026-09-09T12:46:36.144Z",
+    "found": true,
+    "matched": 134
+  },
+  "I_PRODCOSTINGCOSTINGVARIANTVH": {
+    "attemptedAt": "2026-09-09T12:46:36.728Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_PRODUCTCOSTESTIMATE": {
+    "attemptedAt": "2026-09-09T12:46:37.317Z",
+    "found": true,
+    "matched": 76
+  },
+  "I_PRODUCTCOSTESTIMATEITEM": {
+    "attemptedAt": "2026-09-09T12:46:37.925Z",
+    "found": true,
+    "matched": 59
+  },
+  "I_PRODUCTCOSTESTIMATEITEMTP": {
+    "attemptedAt": "2026-09-09T12:46:38.137Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODUCTCOSTESTIMATEITEMTP\" (404)"
+  },
+  "I_PRODUCTCOSTESTIMATETP": {
+    "attemptedAt": "2026-09-09T12:46:38.599Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODUCTCOSTESTIMATETP\" (404)"
+  },
+  "I_SALESORDERITEMCOSTESTIMATE": {
+    "attemptedAt": "2026-09-09T12:46:39.392Z",
+    "found": true,
+    "matched": 55
+  },
+  "I_SALESORDERITEMCOSTESTITEM": {
+    "attemptedAt": "2026-09-09T12:46:39.966Z",
+    "found": true,
+    "matched": 49
+  },
+  "I_SLSDOCCOSTINGVARIANTVH": {
+    "attemptedAt": "2026-09-09T12:46:40.521Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SLSORDPROJVALNSTRATEGYSTDVH": {
+    "attemptedAt": "2026-09-09T12:46:41.089Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SLSORDPROJVALNSTRATEGYTEXT": {
+    "attemptedAt": "2026-09-09T12:46:41.658Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SLSORDPROJVALUATIONSTRATEGY": {
+    "attemptedAt": "2026-09-09T12:46:42.279Z",
+    "found": true,
+    "matched": 1
+  },
+  "C_BUSINESSSOLUTIONORDERITEMDEX": {
+    "attemptedAt": "2026-09-09T12:46:42.819Z",
+    "found": true,
+    "matched": 120
+  },
+  "C_SERVICECONFIRMATIONITEMDEX": {
+    "attemptedAt": "2026-09-09T12:46:43.402Z",
+    "found": true,
+    "matched": 113
+  },
+  "C_SERVICECONTRACTITEMDEX": {
+    "attemptedAt": "2026-09-09T12:46:43.987Z",
+    "found": true,
+    "matched": 137
+  },
+  "C_SERVICEORDERITEMDEX": {
+    "attemptedAt": "2026-09-09T12:46:44.553Z",
+    "found": true,
+    "matched": 142
+  },
+  "C_SERVICEQUOTATIONDEX": {
+    "attemptedAt": "2026-09-09T12:46:45.125Z",
+    "found": true,
+    "matched": 32
+  },
+  "C_SERVICEQUOTATIONITEMDEX": {
+    "attemptedAt": "2026-09-09T12:46:45.720Z",
+    "found": true,
+    "matched": 38
+  },
+  "I_BSORDGLACCTLINEITEMCUBE": {
+    "attemptedAt": "2026-09-09T12:46:46.281Z",
+    "found": true,
+    "matched": 40
+  },
+  "I_BUSINESSSOLUTIONORDERCUBE": {
+    "attemptedAt": "2026-09-09T12:46:46.837Z",
+    "found": true,
+    "matched": 25
+  },
+  "I_BUSSOLNORDBASICFINANCIAL": {
+    "attemptedAt": "2026-09-09T12:46:47.444Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_BUSSOLNORDITMBASICFINANCIAL": {
+    "attemptedAt": "2026-09-09T12:46:48.004Z",
+    "found": true,
+    "matched": 41
   }
 }

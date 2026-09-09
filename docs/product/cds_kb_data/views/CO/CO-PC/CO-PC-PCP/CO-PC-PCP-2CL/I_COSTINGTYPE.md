@@ -39,10 +39,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostingType` | ✓ | |  | `kalka` |  |  |
-| `ControllingValuationType` |  | |  | `valuation` |  |  |
-| `CostingReferenceObject` |  | |  | `bzobj` |  |  |
-| `Ledger` |  | |  | `rldnr` |  |  |
+| `CostingType` | ✓ | |  | `kalka` | `CHAR(2)` | Costing Type |
+| `ControllingValuationType` |  | |  | `valuation` | `NUMC(1)` | Valuation View (for Transfer Prices) |
+| `CostingReferenceObject` |  | |  | `bzobj` | `CHAR(1)` | Reference Object |
+| `Ledger` |  | |  | `rldnr` | `CHAR(2)` | Ledger in General Ledger Accounting |
 | `_CostingTypeText` | | ✓ | | | | |
 | `_Ledger` | | ✓ | | | | |
 | `_LedgerText` | | ✓ | | | | |
