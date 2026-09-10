@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-09T10:25:49.516Z",
-  "coverageGeneratedAt": "2026-09-09T10:25:49.291Z",
+  "generatedAt": "2026-09-10T10:16:47.600Z",
+  "coverageGeneratedAt": "2026-09-10T10:16:47.157Z",
   "hubContainer": "SAPS4HANACloud",
   "note": "Locally tagged release_state: released, but not on the Hub's current RELEASED list for this container as of coverageGeneratedAt. Not proof the view is wrong — the Hub reflects the current moment only (deprecated/renamed/different-container views drop off it too) — needs a human look, not an automatic relabel. release_state is left untouched by this script.",
-  "totalCandidates": 1710,
+  "totalCandidates": 1708,
   "likelyStillValid": {
     "note": "Not Hub-confirmed, but has Full DDL (real SAP-generated source) — treat as validated by that instead, no action needed.",
     "total": 1697,
@@ -11891,7 +11891,7 @@
   },
   "needsReview": {
     "note": "Neither Hub-confirmed nor Full DDL — no independent evidence either way, the actual candidates worth a human look.",
-    "total": 13,
+    "total": 11,
     "candidates": [
       {
         "name": "C_AVGDAILYTRIALBALANCE",
@@ -11919,20 +11919,6 @@
         "path": "views/PLM/PLM-CR/PLM-CR-2CL/C_CHANGERECORDITEMEXTDEX.md",
         "appComponent": "PLM-CR-2CL",
         "description": "\"Data Extraction for Change Record Item\"",
-        "hasFullDdl": false
-      },
-      {
-        "name": "C_CMHDGEVALRPTKEYDATEQUERY",
-        "path": "views/FIN/FIN-FSCM/FIN-FSCM-CMM/FIN-FSCM-CMM-HACC/C_CMHDGEVALRPTKEYDATEQUERY.md",
-        "appComponent": "FIN-FSCM-CMM-HACC",
-        "description": "\"CMMF Hedge Acc Eval Report Keydate - Qry\"",
-        "hasFullDdl": false
-      },
-      {
-        "name": "C_CMMDTYHDGEVALREPORTQUERY",
-        "path": "views/FIN/FIN-FSCM/FIN-FSCM-CMM/FIN-FSCM-CMM-HACC/C_CMMDTYHDGEVALREPORTQUERY.md",
-        "appComponent": "FIN-FSCM-CMM-HACC",
-        "description": "\"CMMF Hedge Acc Evaluation Report - Qry\"",
         "hasFullDdl": false
       },
       {
