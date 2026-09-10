@@ -4,6 +4,10 @@ description: "CMMF Hedge Acc Evaluation Report - Qry"
 app_component: FIN-FSCM-CMM-HACC
 software_component: SAPSCORE
 release_state: released
+dev_ext_status: not_released
+key_user_ext_status: released
+extensible_key_user: no
+extensible_dev_ext: no
 system_type: S/4HANA Cloud Public Edition
 source_available: false
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYHDGEVALREPORTQUERY')/$value
@@ -29,6 +33,10 @@ tags:
 | App Component | `FIN-FSCM-CMM-HACC` |
 | Software Component | `SAPSCORE` |
 | Release State | Released |
+| Release State (Developer Extensibility) | Not Released — separate from "Release State" above; see [dev-ext check procedure](https://github.com/StormShynn/cds-kb-mcp-data-kit/blob/main/docs/product/cds_kb_data/hook/quy-trinh-check-cds-released-developer-extensibility.md) before `association to`/`select from` this entity in custom ABAP Developer Extensibility CDS views |
+| Release State (Key User Extensibility) | Released — can this entity be used as a data source when building a new custom CDS view via the no-code/low-code "Custom CDS Views" app; independent from the Developer Extensibility row above |
+| Extensible (Key User Extensibility) | No — can custom fields be added directly to THIS entity itself via Key User Extensibility (a different question from "used as a data source" above) |
+| Extensible (Developer Extensibility) | No — can custom fields be added directly to THIS entity itself via ABAP Developer Extensibility |
 | System Type | S/4HANA Cloud Public Edition |
 | Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMMDTYHDGEVALREPORTQUERY')/$value) |
 
@@ -72,17 +80,17 @@ tags:
 | `CmmdtyHdgFinTransFXCrcyRate` |  | |  |  | `DEC(13)` | Rate of Foreign Exchange Transaction |
 | `CmmdtyHdgFinTransFXSpotRate` |  | |  |  | `DEC(13)` | Spot Rate |
 | `CmmdtyHdgFinTransFXSwapRate` |  | |  |  | `DEC(13)` | Swap Rate |
-| `CommodityHedgePlanExposureID` |  | |  |  | `CHAR(13)` | Plan Exposure ID |
-| `CmmdtyHdgPlanExposureDirection` |  | |  |  | `CHAR(4)` | Buy or Sell Transaction |
+| `CommodityHedgePlanExposureID` |  | |  |  | `CHAR(13)` | Character field 13 digits |
+| `CmmdtyHdgPlanExposureDirection` |  | |  |  | `CHAR(4)` | Undefined range (can be used for patch levels) |
 | `CmmdtyHedgePlanExposureDCSID` |  | |  |  | `CHAR(20)` | Derivative Contract Specification ID |
-| `CmmdtyHdgPlnExpsrPrcgStartDate` |  | |  |  | `DATS(8)` | Start of Pricing Period |
-| `CmmdtyHdgPlnExpsrPrcgEndDate` |  | |  |  | `DATS(8)` | End of Pricing Period |
-| `CmmdtyHdgPlnExpsrDelivStrtDate` |  | |  |  | `DATS(8)` | Start of Delivery Period |
-| `CmmdtyHdgPlnExpsrDelivEndDate` |  | |  |  | `DATS(8)` | End of Delivery Period |
-| `CmmdtyHdgPlanExposureHedgeBook` |  | |  |  | `CHAR(10)` | Commodity Hedge Book |
-| `CmmdtyHdgPlnExpsrIsAcctgRlvt` |  | |  |  | `CHAR(1)` | Hedge Accounting Relevance |
-| `CmmdtyHdgPlnExpsrHedgingArea` |  | |  |  | `CHAR(20)` | Commodity Hedging Area |
-| `CmmdtyHdgPlnExpsrValidFromDate` |  | |  |  | `DATS(8)` | Valid-From Date of Planning Data |
+| `CmmdtyHdgPlnExpsrPrcgStartDate` |  | |  |  | `DATS(8)` | Date data element for SYST |
+| `CmmdtyHdgPlnExpsrPrcgEndDate` |  | |  |  | `DATS(8)` | Date data element for SYST |
+| `CmmdtyHdgPlnExpsrDelivStrtDate` |  | |  |  | `DATS(8)` | Date data element for SYST |
+| `CmmdtyHdgPlnExpsrDelivEndDate` |  | |  |  | `DATS(8)` | Date data element for SYST |
+| `CmmdtyHdgPlanExposureHedgeBook` |  | |  |  | `CHAR(10)` | Character Field with Length 10 |
+| `CmmdtyHdgPlnExpsrIsAcctgRlvt` |  | |  |  | `CHAR(1)` | New Input Values |
+| `CmmdtyHdgPlnExpsrHedgingArea` |  | |  |  | `CHAR(20)` | Char 20 |
+| `CmmdtyHdgPlnExpsrValidFromDate` |  | |  |  | `DATS(8)` | Date data element for SYST |
 | `CmmdtyHedgePlnExposureQuantity` |  | |  |  | `QUAN(13)` | Quantity |
 | `CmmdtyHdgPlnExpsrQuantityUnit` |  | |  |  | `UNIT(3)` | Unit of Measure for the Commodity |
 | `CmHdgExtCmmdtyTransCompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
