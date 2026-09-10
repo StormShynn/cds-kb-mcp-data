@@ -37,11 +37,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `OrgUnitTypeIDConcatenated` | ✓ | |  | `otjid` |  |  |
-| `OrganizationalUnit` |  | |  | `objid` |  |  |
-| `Language` |  | |  | `langu` |  |  |
-| `StartDate` |  | |  | `begda` |  |  |
-| `EndDate` |  | |  | `endda` |  |  |
+| `OrgUnitTypeIDConcatenated` | ✓ | |  | `otjid` | `CHAR(10)` | Concatenation of Object Type and Object ID |
+| `OrganizationalUnit` |  | |  | `objid` | `NUMC(8)` | Object ID |
+| `Language` |  | |  | `langu` | `LANG(1)` | Language Key |
+| `StartDate` |  | |  | `begda` | `DATS(8)` | Start Date |
+| `EndDate` |  | |  | `endda` | `DATS(8)` | End Date |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

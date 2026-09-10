@@ -38,49 +38,49 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceObjectType` | ✓ | |  |  |  |  |
-| `BusinessSolutionOrder` | ✓ | |  |  |  |  |
-| `BusinessSolutionOrderItem` | ✓ | |  |  |  |  |
-| `BusSolnOrdType` |  | |  |  |  |  |
-| `BusSolnOrdDescription` |  | |  |  |  |  |
-| `BusSolnOrdItmDescription` |  | |  |  |  |  |
-| `DistributionChannel` |  | |  |  |  |  |
-| `Division` |  | |  |  |  |  |
-| `SalesOrganization` |  | |  |  |  |  |
-| `SalesOffice` |  | |  |  |  |  |
-| `SalesGroup` |  | |  |  |  |  |
-| `SoldToParty` |  | |  |  |  |  |
-| `Country` |  | |  |  |  |  |
-| `Region` |  | |  |  |  |  |
-| `BusSolnOrdItmStatus` |  | |  |  |  |  |
-| `DisplayCurrency` |  | |  | `$parameters.P_DisplayCurrency` |  |  |
-| `TransactionCurrency` |  | |  |  |  |  |
-| `TotBusSolnOrdItmNetAmtPerPerd` |  | |  |  |  |  |
-| `ServiceDocumentItemObjectType` |  | |  |  |  |  |
-| `CompanyCodeCurrency` |  | |  |  |  |  |
-| `RevenueAmountInCompanyCodeCrcy` |  | |  |  |  |  |
-| `CostAmountInCompanyCodeCrcy` |  | |  |  |  |  |
-| `RecognizedMarginAmtInCCCrcy` |  | |  |  |  |  |
-| `BusSolnOrdStatus` |  | |  |  |  |  |
-| `ServiceDocItemCategory` |  | |  |  |  |  |
-| `Product` |  | |  |  |  |  |
-| `ProductGroup` |  | | `_Product` | `ProductGroup` |  |  |
-| `PostingDate` |  | |  |  |  |  |
-| `SlsItmNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000131' then TotBusSolnOrdItmNetAmtPerPerd end` |  |  |
-| `ServiceContractItemNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000137' then TotBusSolnOrdItmNetAmtPerPerd end` |  |  |
-| `ExpnItmNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000159' then TotBusSolnOrdItmNetAmtPerPerd end` |  |  |
-| `SbscrBilgItmNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000189' then TotBusSolnOrdItmNetAmtPerPerd end` |  |  |
-| `SrvcPrtItmNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000146' then TotBusSolnOrdItmNetAmtPerPerd end` |  |  |
-| `SrvcItmNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000140' then TotBusSolnOrdItmNetAmtPerPerd end` |  |  |
-| `EnterpriseProjectItemNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000193' then TotBusSolnOrdItmNetAmtPerPerd end` |  |  |
-| `NrOfOpenBusSolnOrders` |  | |  |  |  |  |
-| `NrOfReldBusSolnOrders` |  | |  |  |  |  |
-| `NrOfCmpltdBusSolnOrders` |  | |  |  |  |  |
-| `BusSolnOrdCreationQuarter` |  | | `_Period` | `CalendarQuarter` |  |  |
-| `BusSolnOrdCreationMonth` |  | | `_Period` | `CalendarMonth` |  |  |
-| `BusSolnOrdCreationYear` |  | | `_Period` | `CalendarYear` |  |  |
-| `ServiceDocItemCreationDate` |  | |  |  |  |  |
-| `ServiceDocumentCreationDate` |  | |  |  |  |  |
+| `ServiceObjectType` | ✓ | |  |  | `CHAR(10)` | Business Trans. Cat. |
+| `BusinessSolutionOrder` | ✓ | |  |  | `CHAR(10)` | Transaction ID |
+| `BusinessSolutionOrderItem` | ✓ | |  |  | `NUMC(6)` | Shortened Item Number in Document |
+| `BusSolnOrdType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `BusSolnOrdDescription` |  | |  |  | `CHAR(40)` | Transaction Description |
+| `BusSolnOrdItmDescription` |  | |  |  | `CHAR(40)` | Product Description |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `SalesOffice` |  | |  |  | `CHAR(4)` | Sales Office |
+| `SalesGroup` |  | |  |  | `CHAR(3)` | Sales Group |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-To Party |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `BusSolnOrdItmStatus` |  | |  |  | `CHAR(4)` | Life Cycle Status |
+| `DisplayCurrency` |  | |  | `$parameters.P_DisplayCurrency` | `CUKY(5)` |  |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `TotBusSolnOrdItmNetAmtPerPerd` |  | |  |  | `CURR(15)` | Net Value |
+| `ServiceDocumentItemObjectType` |  | |  |  | `CHAR(10)` | CRM Item Object Type |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `RevenueAmountInCompanyCodeCrcy` |  | |  |  | `CURR(23)` |  |
+| `CostAmountInCompanyCodeCrcy` |  | |  |  | `CURR(23)` |  |
+| `RecognizedMarginAmtInCCCrcy` |  | |  |  | `CURR(23)` |  |
+| `BusSolnOrdStatus` |  | |  |  | `CHAR(4)` | Life Cycle Status |
+| `ServiceDocItemCategory` |  | |  |  | `CHAR(4)` | Item Category |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `ProductGroup` |  | | `_Product` | `ProductGroup` | `CHAR(9)` | Product Group |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date for a Business Transaction |
+| `SlsItmNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000131' then TotBusSolnOrdItmNetAmtPerPerd end` | `CURR(15)` | Net Value |
+| `ServiceContractItemNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000137' then TotBusSolnOrdItmNetAmtPerPerd end` | `CURR(15)` | Net Value |
+| `ExpnItmNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000159' then TotBusSolnOrdItmNetAmtPerPerd end` | `CURR(15)` | Net Value |
+| `SbscrBilgItmNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000189' then TotBusSolnOrdItmNetAmtPerPerd end` | `CURR(15)` | Net Value |
+| `SrvcPrtItmNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000146' then TotBusSolnOrdItmNetAmtPerPerd end` | `CURR(15)` | Net Value |
+| `SrvcItmNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000140' then TotBusSolnOrdItmNetAmtPerPerd end` | `CURR(15)` | Net Value |
+| `EnterpriseProjectItemNetAmount` |  | |  | `case when ServiceDocumentItemObjectType = 'BUS2000193' then TotBusSolnOrdItmNetAmtPerPerd end` | `CURR(15)` | Net Value |
+| `NrOfOpenBusSolnOrders` |  | |  |  | `INT4(10)` |  |
+| `NrOfReldBusSolnOrders` |  | |  |  | `INT4(10)` |  |
+| `NrOfCmpltdBusSolnOrders` |  | |  |  | `INT4(10)` |  |
+| `BusSolnOrdCreationQuarter` |  | | `_Period` | `CalendarQuarter` | `NUMC(1)` | Calendar Quarter |
+| `BusSolnOrdCreationMonth` |  | | `_Period` | `CalendarMonth` | `NUMC(2)` | Calendar Month |
+| `BusSolnOrdCreationYear` |  | | `_Period` | `CalendarYear` | `NUMC(4)` | Calendar Year |
+| `ServiceDocItemCreationDate` |  | |  |  | `DATS(8)` | Created On |
+| `ServiceDocumentCreationDate` |  | |  |  | `DATS(8)` | Created On |
 | `_Period` | | ✓ | | | | |
 | `_ServiceObjType` | | ✓ | | | | |
 | `_ServiceDocumentType` | | ✓ | | | | |

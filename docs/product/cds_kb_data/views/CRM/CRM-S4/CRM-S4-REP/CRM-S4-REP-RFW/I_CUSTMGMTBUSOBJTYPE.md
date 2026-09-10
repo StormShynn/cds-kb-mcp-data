@@ -37,7 +37,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessObjectType` | ✓ | |  | `subobj_category` |  |  |
+| `BusinessObjectType` | ✓ | |  | `subobj_category` | `CHAR(10)` | Business Transaction Category |
 | `_Text` | | ✓ | | | | |
 
 ## Associations
