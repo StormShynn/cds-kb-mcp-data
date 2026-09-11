@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-11T02:07:48.680Z",
-  "coverageGeneratedAt": "2026-09-11T02:07:48.194Z",
+  "generatedAt": "2026-09-11T10:15:28.326Z",
+  "coverageGeneratedAt": "2026-09-11T10:15:27.810Z",
   "hubContainer": "SAPS4HANACloud",
   "note": "Locally tagged release_state: released, but not on the Hub's current RELEASED list for this container as of coverageGeneratedAt. Not proof the view is wrong — the Hub reflects the current moment only (deprecated/renamed/different-container views drop off it too) — needs a human look, not an automatic relabel. release_state is left untouched by this script.",
   "totalCandidates": 1708,
