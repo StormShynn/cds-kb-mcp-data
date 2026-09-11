@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceContractCanclnParty` | ✓ | |  | `canc_party` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `ServiceContrCanclnPartyName` |  | |  | `canc_party_t` |  |  |
+| `ServiceContractCanclnParty` | ✓ | |  | `canc_party` | `CHAR(4)` | Cancelling Party |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key of Description |
+| `ServiceContrCanclnPartyName` |  | |  | `canc_party_t` | `CHAR(40)` | Description (40 Characters) |
 | `_ServiceCancellationParty` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

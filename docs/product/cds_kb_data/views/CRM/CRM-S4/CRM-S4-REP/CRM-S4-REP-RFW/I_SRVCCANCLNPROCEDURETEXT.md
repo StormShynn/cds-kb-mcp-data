@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SrvcCanclnProcedure` | ✓ | |  | `cancproc` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `SrvcCanclnProcedureText` |  | |  | `cancproc_t` |  |  |
+| `SrvcCanclnProcedure` | ✓ | |  | `cancproc` | `CHAR(4)` | Cancellation Procedure |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key of Description |
+| `SrvcCanclnProcedureText` |  | |  | `cancproc_t` | `CHAR(40)` | Description (40 Characters) |
 | `_SrvcCanclnProcedure` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

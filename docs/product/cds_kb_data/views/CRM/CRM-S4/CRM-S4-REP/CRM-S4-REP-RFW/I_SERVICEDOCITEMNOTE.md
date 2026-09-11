@@ -40,17 +40,17 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TextObjectKey` | ✓ | |  |  |  |  |
-| `TextObjectType` | ✓ | |  |  |  |  |
-| `TextObjectCategory` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `ServiceDocumentItemUUID` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `CreationDate` |  | |  |  |  |  |
-| `CreationTime` |  | |  |  |  |  |
-| `LastChangedByUser` |  | |  |  |  |  |
-| `LastChangeDate` |  | |  |  |  |  |
-| `LastChangeTime` |  | |  |  |  |  |
+| `TextObjectKey` | ✓ | |  |  | `CHAR(70)` | Name |
+| `TextObjectType` | ✓ | |  |  | `CHAR(4)` | Text ID |
+| `TextObjectCategory` | ✓ | |  |  | `CHAR(10)` | Texts: application object |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `ServiceDocumentItemUUID` |  | |  |  | `RAW(16)` | GUID of a CRM Order Object |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created by |
+| `CreationDate` |  | |  |  | `DATS(8)` | Date created |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time Created |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last changed by |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Changed On |
+| `LastChangeTime` |  | |  |  | `TIMS(6)` | Last Changed At |
 | `ServiceOrderNoteText` |  | | `_inotetemp` | `text` |  |  |
 | `_Language` | | ✓ | | | | |
 | `_TextObjectCategory` | | ✓ | | | | |

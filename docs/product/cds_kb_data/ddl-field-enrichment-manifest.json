@@ -20388,5 +20388,240 @@
     "attemptedAt": "2026-09-10T12:44:52.283Z",
     "found": true,
     "matched": 7
+  },
+  "I_SERVICECANCELLATIONPARTY": {
+    "attemptedAt": "2026-09-11T12:38:35.312Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SERVICECANCELLATIONPARTYTEXT": {
+    "attemptedAt": "2026-09-11T12:38:35.810Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SERVICECANCELLATIONREASON": {
+    "attemptedAt": "2026-09-11T12:38:36.333Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SERVICECANCLNREASONTEXT": {
+    "attemptedAt": "2026-09-11T12:38:36.816Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SERVICECONTRACT": {
+    "attemptedAt": "2026-09-11T12:38:37.338Z",
+    "found": true,
+    "matched": 56
+  },
+  "I_SERVICECONTRACTCANCLNSTS": {
+    "attemptedAt": "2026-09-11T12:38:37.834Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SERVICECONTRACTCANCLNSTSTXT": {
+    "attemptedAt": "2026-09-11T12:38:38.312Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SERVICECONTRACTENHCD": {
+    "attemptedAt": "2026-09-11T12:38:38.890Z",
+    "found": true,
+    "matched": 60
+  },
+  "I_SERVICECONTRACTITEM": {
+    "attemptedAt": "2026-09-11T12:38:39.400Z",
+    "found": true,
+    "matched": 86
+  },
+  "I_SERVICECONTRACTITEMENHCD": {
+    "attemptedAt": "2026-09-11T12:38:39.968Z",
+    "found": true,
+    "matched": 94
+  },
+  "I_SERVICECONTRACTTYPESTDVH": {
+    "attemptedAt": "2026-09-11T12:38:40.495Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SERVICEDOCBILLINGSTATUS": {
+    "attemptedAt": "2026-09-11T12:38:41.017Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SERVICEDOCBILLINGSTATUSTEXT": {
+    "attemptedAt": "2026-09-11T12:38:41.533Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SERVICEDOCERRORSTATUS": {
+    "attemptedAt": "2026-09-11T12:38:42.016Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SERVICEDOCERRORSTATUSTEXT": {
+    "attemptedAt": "2026-09-11T12:38:42.592Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SERVICEDOCITEMCATEGORY": {
+    "attemptedAt": "2026-09-11T12:38:43.093Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_SERVICEDOCITEMCATEGORYTEXT": {
+    "attemptedAt": "2026-09-11T12:38:43.569Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SERVICEDOCITEMNOTE": {
+    "attemptedAt": "2026-09-11T12:38:44.056Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_SERVICEDOCITEMTYPESLSSTTG": {
+    "attemptedAt": "2026-09-11T12:38:44.538Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SERVICEDOCOPENSTATUS": {
+    "attemptedAt": "2026-09-11T12:38:45.041Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SERVICEDOCOPENSTATUSTEXT": {
+    "attemptedAt": "2026-09-11T12:38:45.616Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SERVICEDOCPROBLEMCATEGORY": {
+    "attemptedAt": "2026-09-11T12:38:46.105Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SERVICEDOCUMENT": {
+    "attemptedAt": "2026-09-11T12:38:46.608Z",
+    "found": true,
+    "matched": 125
+  },
+  "I_SERVICEDOCUMENTENHCD": {
+    "attemptedAt": "2026-09-11T12:38:47.176Z",
+    "found": true,
+    "matched": 131
+  },
+  "I_SERVICEDOCUMENTITEM": {
+    "attemptedAt": "2026-09-11T12:38:47.704Z",
+    "found": true,
+    "matched": 292
+  },
+  "I_SERVICEDOCUMENTITEMENHCD": {
+    "attemptedAt": "2026-09-11T12:38:48.200Z",
+    "found": true,
+    "matched": 301
+  },
+  "I_SERVICEDOCUMENTITEMPRDCSSR_2": {
+    "attemptedAt": "2026-09-11T12:38:48.703Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_SERVICEDOCUMENTITEMPRDCSSR_3": {
+    "attemptedAt": "2026-09-11T12:38:49.218Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_SERVICEDOCUMENTITEMSUCCSSR_2": {
+    "attemptedAt": "2026-09-11T12:38:49.695Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_SERVICEDOCUMENTITEMSUCCSSR_3": {
+    "attemptedAt": "2026-09-11T12:38:50.231Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_SERVICEDOCUMENTITEM_2": {
+    "attemptedAt": "2026-09-11T12:38:50.744Z",
+    "found": true,
+    "matched": 190
+  },
+  "I_SERVICEDOCUMENTPREDECESSOR": {
+    "attemptedAt": "2026-09-11T12:38:51.307Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_SERVICEDOCUMENTPRIORITY": {
+    "attemptedAt": "2026-09-11T12:38:51.825Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SERVICEDOCUMENTPRIORITYTEXT": {
+    "attemptedAt": "2026-09-11T12:38:52.330Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SERVICEDOCUMENTREFOBJECT": {
+    "attemptedAt": "2026-09-11T12:38:52.844Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_SERVICEDOCUMENTSTATUS": {
+    "attemptedAt": "2026-09-11T12:38:53.382Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SERVICEDOCUMENTSTATUSTEXT": {
+    "attemptedAt": "2026-09-11T12:38:53.983Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SERVICEDOCUMENTSUCCESSOR": {
+    "attemptedAt": "2026-09-11T12:38:54.499Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_SERVICEDOCUMENTTYPE": {
+    "attemptedAt": "2026-09-11T12:38:54.987Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_SERVICEDOCUMENTTYPETEXT": {
+    "attemptedAt": "2026-09-11T12:38:55.491Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SERVICEDOCUMENT_2": {
+    "attemptedAt": "2026-09-11T12:38:56.101Z",
+    "found": true,
+    "matched": 93
+  },
+  "I_SERVICEPROFILE": {
+    "attemptedAt": "2026-09-11T12:38:56.630Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SERVICEPROFILETEXT": {
+    "attemptedAt": "2026-09-11T12:38:57.136Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCCANCLNPROCEDURE": {
+    "attemptedAt": "2026-09-11T12:38:57.704Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SRVCCANCLNPROCEDURETEXT": {
+    "attemptedAt": "2026-09-11T12:38:58.206Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCCONTRITEMPRICEELEMENT": {
+    "attemptedAt": "2026-09-11T12:38:58.765Z",
+    "found": true,
+    "matched": 47
+  },
+  "I_SRVCCONTRITEMWITHAUTORENEWAL": {
+    "attemptedAt": "2026-09-11T12:38:59.282Z",
+    "found": true,
+    "matched": 11
   }
 }

@@ -40,100 +40,100 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceContract` | ✓ | |  |  |  |  |
-| `ServiceContractItem` | ✓ | |  |  |  |  |
-| `ServiceObjectType` |  | |  |  |  |  |
-| `ServiceContractItemCategory` |  | |  |  |  |  |
-| `ServiceContractItemDescription` |  | |  |  |  |  |
-| `ServiceContractDescription` |  | |  |  |  |  |
-| `ServiceDocumentType` |  | |  |  |  |  |
-| `ServiceContractItemUUID` |  | |  |  |  |  |
-| `ServiceContractItemCharUUID` |  | |  |  |  |  |
-| `ServiceDocumentItemObjectType` |  | |  |  |  |  |
-| `ServiceContractUUID` |  | |  |  |  |  |
-| `Language` |  | |  |  |  |  |
-| `PostingDate` |  | |  |  |  |  |
-| `ServiceDocItemCreationDateTime` |  | |  |  |  |  |
-| `ServiceDocItemChangedDateTime` |  | |  |  |  |  |
-| `ServiceDocItemCreatedByUser` |  | |  |  |  |  |
-| `ServiceDocItemChangedByUser` |  | |  |  |  |  |
-| `Product` |  | |  |  |  |  |
-| `ServiceContractItemQuantity` |  | |  |  |  |  |
-| `ServiceContrItemQuantityUnit` |  | |  |  |  |  |
-| `BillingPlanTimeZone` |  | |  |  |  |  |
-| `BillingPriceSourceName` |  | |  |  |  |  |
-| `SoldToParty` |  | |  |  |  |  |
-| `SoldToPartyCountry` |  | |  |  |  |  |
-| `SoldToPartyRegion` |  | |  |  |  |  |
-| `ShipToParty` |  | |  |  |  |  |
-| `BillToParty` |  | |  |  |  |  |
-| `PayerParty` |  | |  |  |  |  |
-| `ContactPersonBusinessPartnerId` |  | |  |  |  |  |
-| `RespEmployeeBusinessPartnerId` |  | |  |  |  |  |
-| `ServiceEmployee` |  | |  |  |  |  |
-| `PaymentTerms` |  | |  |  |  |  |
-| `PaymentMethod` |  | |  |  |  |  |
-| `SEPAMandate` |  | |  |  |  |  |
-| `SrvcSEPAMandateRelevance` |  | |  |  |  |  |
-| `BillableControl` |  | |  |  |  |  |
-| `ServiceDocumentItemIsOpen` |  | |  |  |  |  |
-| `ServiceContractItemIsReleased` |  | |  |  |  |  |
-| `ServiceContractItemStatus` |  | |  |  |  |  |
-| `ServiceContrItemBillingStatus` |  | |  |  |  |  |
-| `ServiceContractItemIsRejected` |  | |  |  |  |  |
-| `ServiceContractItemHasError` |  | |  |  |  |  |
-| `ServiceContrItemStartDateTime` |  | |  |  |  |  |
-| `ServiceContrItemEndDateTime` |  | |  |  |  |  |
-| `SrvcContrItemRenewalDateTime` |  | |  |  |  |  |
-| `SrvcContrItemRnwlDuration` |  | |  |  |  |  |
-| `SrvcContrItemRnwlDurationUnit` |  | |  |  |  |  |
-| `SrvcContrItemExtensionDuration` |  | |  |  |  |  |
-| `SrvcContrItemExtnDurationUnit` |  | |  |  |  |  |
-| `ResponseProfile` |  | |  |  |  |  |
-| `ServiceProfile` |  | |  |  |  |  |
-| `ControllingArea` |  | |  |  |  |  |
-| `ProfitCenter` |  | |  |  |  |  |
-| `ProfitCenterDeterminationDate` |  | |  |  |  |  |
-| `RefBusinessSolutionOrder` |  | |  |  |  |  |
-| `RefBusinessSolutionOrderItem` |  | |  |  |  |  |
-| `ServiceContractItemGrossAmount` |  | |  |  |  |  |
-| `ServiceContractItemNetAmount` |  | |  |  |  |  |
-| `ServiceDocumentItemTaxAmount` |  | |  |  |  |  |
-| `TransactionCurrency` |  | |  |  |  |  |
-| `SrvcDocItemTransferStatus` |  | |  |  |  |  |
-| `SubscrpnContrTrmsAreSpecified` |  | |  |  |  |  |
-| `MidBillgCycExprtnIsAllowed` |  | |  |  |  |  |
-| `ServiceContractItemCanclnParty` |  | |  |  |  |  |
-| `ServiceContractItmCanclnReason` |  | |  |  |  |  |
-| `SrvcContrItmCanclnProcedure` |  | |  |  |  |  |
-| `SettlementPeriodRuleUUID` |  | |  |  |  |  |
-| `SettlementPeriodRule` |  | | `_SettlementPeriodRule` | `CustMgmtDateRuleName` |  |  |
-| `BillingPlanBillingDateRuleUUID` |  | |  |  |  |  |
-| `SrvcMgmtBillgPlanBillgDateRule` |  | | `_BillingPlanBillingDateRule` | `CustMgmtDateRuleName` |  |  |
-| `SrvcContrItemCanclnDateTime` |  | |  | `cast( case ServiceContractItemCanclnParty when '' then 0 else ServiceContrItemEndDateTime end as timestamp preserving type )` |  |  |
-| `BillingPlanPriceDateRule` |  | |  |  |  |  |
-| `BillingBlockReason` |  | |  |  |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |  |  |
-| `PurchaseOrderByShipToParty` |  | |  |  |  |  |
-| `SrvcContrItemRejectionReason` |  | |  |  |  |  |
-| `BillingPlanIsFinalized` |  | |  |  |  |  |
-| `SrvcContrExternalReference` |  | | `_ExtRefServiceContract` | `CustMgmtExtRefID` |  |  |
-| `SrvcContrItmExternalReference` |  | | `_ExtRefServiceContractItem` | `CustMgmtExtRefID` |  |  |
-| `ServiceQtanExtReference` |  | | `_ExtRefServiceQtan` | `CustMgmtExtRefID` |  |  |
-| `ServiceQtanItemExtReference` |  | | `_ExtRefServiceQtanItem` | `CustMgmtExtRefID` |  |  |
-| `SalesOrganization` |  | |  |  |  |  |
-| `DistributionChannel` |  | |  |  |  |  |
-| `Division` |  | |  |  |  |  |
-| `SalesOffice` |  | |  |  |  |  |
-| `SalesGroup` |  | |  |  |  |  |
-| `SrvcContrRenewalDuration` |  | |  |  |  |  |
-| `SrvcContrRenewalDurationUnit` |  | |  |  |  |  |
-| `SrvcContrExtensionDuration` |  | |  |  |  |  |
-| `SrvcContrExtensionDurationUnit` |  | |  |  |  |  |
-| `SrvcContrItemCreditStatus` |  | |  |  |  |  |
-| `WBSElementInternalID` |  | |  |  |  |  |
-| `WBSElementExternalID` |  | | `_WBSElementBasicData` | `WBSElementExternalID` |  |  |
-| `SrvcDocItmPartReferenceItem` |  | |  |  |  |  |
+| `ServiceContract` | ✓ | |  |  | `CHAR(10)` | Transaction ID |
+| `ServiceContractItem` | ✓ | |  |  | `NUMC(6)` | Shortened Item Number in Document |
+| `ServiceObjectType` |  | |  |  | `CHAR(10)` | Business Trans. Cat. |
+| `ServiceContractItemCategory` |  | |  |  | `CHAR(4)` | Item Category |
+| `ServiceContractItemDescription` |  | |  |  | `CHAR(40)` | Product Description |
+| `ServiceContractDescription` |  | |  |  | `CHAR(40)` | Transaction Description |
+| `ServiceDocumentType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `ServiceContractItemUUID` |  | |  |  | `RAW(16)` | GUID of a CRM Order Object |
+| `ServiceContractItemCharUUID` |  | |  |  | `CHAR(32)` | UUID in Character Format |
+| `ServiceDocumentItemObjectType` |  | |  |  | `CHAR(10)` | CRM Item Object Type |
+| `ServiceContractUUID` |  | |  |  | `RAW(16)` | GUID of a CRM Order Object |
+| `Language` |  | |  |  | `LANG(1)` | Short Text Language for an Item |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date for a Business Transaction |
+| `ServiceDocItemCreationDateTime` |  | |  |  | `DEC(15)` | Created At |
+| `ServiceDocItemChangedDateTime` |  | |  |  | `DEC(15)` | Changed At |
+| `ServiceDocItemCreatedByUser` |  | |  |  | `CHAR(12)` | User that Created the Transaction |
+| `ServiceDocItemChangedByUser` |  | |  |  | `CHAR(12)` | Transaction Last Changed By |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `ServiceContractItemQuantity` |  | |  |  | `QUAN(13)` | CRM: Order Quantity |
+| `ServiceContrItemQuantityUnit` |  | |  |  | `UNIT(3)` | Unit of Measure in Which the Product Is Sold |
+| `BillingPlanTimeZone` |  | |  |  | `CHAR(6)` | Time Zone of Billing Plan Set |
+| `BillingPriceSourceName` |  | |  |  | `CHAR(15)` | Source of price in service confirmation |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-To Party |
+| `SoldToPartyCountry` |  | |  |  | `CHAR(3)` | Country/Region |
+| `SoldToPartyRegion` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `ShipToParty` |  | |  |  | `CHAR(10)` | Ship-To Party |
+| `BillToParty` |  | |  |  | `CHAR(10)` | Bill-To Party |
+| `PayerParty` |  | |  |  | `CHAR(10)` | Payer |
+| `ContactPersonBusinessPartnerId` |  | |  |  | `CHAR(10)` | Customer Contact Person |
+| `RespEmployeeBusinessPartnerId` |  | |  |  | `CHAR(10)` | Employee Responsible |
+| `ServiceEmployee` |  | |  |  | `CHAR(10)` | Executing Service Employee |
+| `PaymentTerms` |  | |  |  | `CHAR(4)` | Terms of Payment |
+| `PaymentMethod` |  | |  |  | `CHAR(1)` | Payment Method |
+| `SEPAMandate` |  | |  |  | `CHAR(35)` | Unique Reference to Mandate per Payment Recipient |
+| `SrvcSEPAMandateRelevance` |  | |  |  | `CHAR(1)` | Indicator for SEPA-Relevant Transactions |
+| `BillableControl` |  | |  |  | `CHAR(2)` | Accounting Indicator |
+| `ServiceDocumentItemIsOpen` |  | |  |  | `CHAR(1)` | Status "Open" |
+| `ServiceContractItemIsReleased` |  | |  |  | `CHAR(1)` | Release Status |
+| `ServiceContractItemStatus` |  | |  |  | `CHAR(4)` | Life Cycle Status |
+| `ServiceContrItemBillingStatus` |  | |  |  | `CHAR(1)` | Billing Status |
+| `ServiceContractItemIsRejected` |  | |  |  | `CHAR(1)` | Cancellation Status |
+| `ServiceContractItemHasError` |  | |  |  | `CHAR(1)` | Error Status |
+| `ServiceContrItemStartDateTime` |  | |  |  | `DEC(15)` | Contract Start date |
+| `ServiceContrItemEndDateTime` |  | |  |  | `DEC(15)` | Contract End Date |
+| `SrvcContrItemRenewalDateTime` |  | |  |  | `DEC(15)` | Start Date of Auto Renewal Period |
+| `SrvcContrItemRnwlDuration` |  | |  |  | `QUAN(13)` | Unit for Auto Renewal Period |
+| `SrvcContrItemRnwlDurationUnit` |  | |  |  | `UNIT(3)` | UOM for Auto Renewal Period |
+| `SrvcContrItemExtensionDuration` |  | |  |  | `QUAN(13)` | Unit for Contract Extension |
+| `SrvcContrItemExtnDurationUnit` |  | |  |  | `UNIT(3)` | UOM for Contract Extension |
+| `ResponseProfile` |  | |  |  | `CHAR(10)` | Response Profile |
+| `ServiceProfile` |  | |  |  | `CHAR(10)` | Service Profile |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `ProfitCenterDeterminationDate` |  | |  |  | `DATS(8)` | Date |
+| `RefBusinessSolutionOrder` |  | |  |  | `CHAR(10)` | Reference Solution Order ID |
+| `RefBusinessSolutionOrderItem` |  | |  |  | `NUMC(6)` | Item Number in Referenced Solution Order |
+| `ServiceContractItemGrossAmount` |  | |  |  | `CURR(15)` | Gross Order Value in PO Currency |
+| `ServiceContractItemNetAmount` |  | |  |  | `CURR(15)` | Net Value |
+| `ServiceDocumentItemTaxAmount` |  | |  |  | `CURR(15)` | Tax amount in document currency |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `SrvcDocItemTransferStatus` |  | |  |  | `CHAR(1)` | Transfer Status |
+| `SubscrpnContrTrmsAreSpecified` |  | |  |  | `CHAR(1)` | Overwrite Default Terms |
+| `MidBillgCycExprtnIsAllowed` |  | |  |  | `CHAR(1)` | Allow Mid-Bill-Cycle Expiration |
+| `ServiceContractItemCanclnParty` |  | |  |  | `CHAR(4)` | Cancelling Party |
+| `ServiceContractItmCanclnReason` |  | |  |  | `CHAR(4)` | CRM Service : Reason for Cancellation |
+| `SrvcContrItmCanclnProcedure` |  | |  |  | `CHAR(4)` | Cancellation Procedure |
+| `SettlementPeriodRuleUUID` |  | |  |  | `RAW(16)` | Rule for Determining the Period Date |
+| `SettlementPeriodRule` |  | | `_SettlementPeriodRule` | `CustMgmtDateRuleName` | `CHAR(12)` | Date Rule |
+| `BillingPlanBillingDateRuleUUID` |  | |  |  | `RAW(16)` | Rule for Determining the Next Billing Date |
+| `SrvcMgmtBillgPlanBillgDateRule` |  | | `_BillingPlanBillingDateRule` | `CustMgmtDateRuleName` | `CHAR(12)` | Date Rule |
+| `SrvcContrItemCanclnDateTime` |  | |  | `cast( case ServiceContractItemCanclnParty when '' then 0 else ServiceContrItemEndDateTime end as timestamp preserving type )` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `BillingPlanPriceDateRule` |  | |  |  | `CHAR(1)` | Rule for Determining the Pricing Date |
+| `BillingBlockReason` |  | |  |  | `CHAR(2)` | Business Partner: Billing Block Reason |
+| `PurchaseOrderByCustomer` |  | |  |  | `CHAR(35)` | Sold-To Party's External Reference Number |
+| `PurchaseOrderByShipToParty` |  | |  |  | `CHAR(35)` | Ship-To Party's External Reference Number |
+| `SrvcContrItemRejectionReason` |  | |  |  | `CHAR(2)` | Cancellation Reason Code |
+| `BillingPlanIsFinalized` |  | |  |  | `CHAR(1)` | Billing Plan Is Finalized |
+| `SrvcContrExternalReference` |  | | `_ExtRefServiceContract` | `CustMgmtExtRefID` | `CHAR(80)` | External Reference Number |
+| `SrvcContrItmExternalReference` |  | | `_ExtRefServiceContractItem` | `CustMgmtExtRefID` | `CHAR(80)` | External Reference Number |
+| `ServiceQtanExtReference` |  | | `_ExtRefServiceQtan` | `CustMgmtExtRefID` | `CHAR(80)` | External Reference Number |
+| `ServiceQtanItemExtReference` |  | | `_ExtRefServiceQtanItem` | `CustMgmtExtRefID` | `CHAR(80)` | External Reference Number |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `SalesOffice` |  | |  |  | `CHAR(4)` | Sales Office |
+| `SalesGroup` |  | |  |  | `CHAR(3)` | Sales Group |
+| `SrvcContrRenewalDuration` |  | |  |  | `QUAN(13)` | Unit for Auto Renewal Period |
+| `SrvcContrRenewalDurationUnit` |  | |  |  | `UNIT(3)` | UOM for Auto Renewal Period |
+| `SrvcContrExtensionDuration` |  | |  |  | `QUAN(13)` | Unit for Contract Extension |
+| `SrvcContrExtensionDurationUnit` |  | |  |  | `UNIT(3)` | UOM for Contract Extension |
+| `SrvcContrItemCreditStatus` |  | |  |  | `CHAR(1)` | Credit Status of Item |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element |
+| `WBSElementExternalID` |  | | `_WBSElementBasicData` | `WBSElementExternalID` | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `SrvcDocItmPartReferenceItem` |  | |  |  | `NUMC(6)` | Shortened Item Number in Document |
 | `_ServiceContract` | | ✓ | | | | |
 | `_ServiceContractItemLongText` | | ✓ | | | | |
 | `_ServiceContractItemRefObj` | | ✓ | | | | |

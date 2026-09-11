@@ -38,53 +38,53 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceContract` | ✓ | |  | `ServiceDocument` |  |  |
-| `ServiceContractItem` | ✓ | |  | `ServiceDocumentItem` |  |  |
-| `PricingProcedureStep` | ✓ | |  |  |  |  |
-| `PricingProcedureCounter` | ✓ | |  |  |  |  |
-| `ConditionApplication` |  | |  |  |  |  |
-| `ConditionType` |  | |  |  |  |  |
-| `PriceConditionDeterminationDte` |  | |  |  |  |  |
-| `ConditionCalculationType` |  | |  |  |  |  |
-| `ConditionBaseValue` |  | |  |  |  |  |
-| `ConditionRateValue` |  | |  |  |  |  |
-| `ConditionCurrency` |  | |  |  |  |  |
-| `ConditionQuantity` |  | |  |  |  |  |
-| `ConditionQuantityUnit` |  | |  |  |  |  |
-| `ConditionCategory` |  | |  |  |  |  |
-| `ConditionIsForStatistics` |  | |  |  |  |  |
-| `PricingScaleType` |  | |  |  |  |  |
-| `IsRelevantForAccrual` |  | |  |  |  |  |
-| `CndnIsRelevantForInvoiceList` |  | |  |  |  |  |
-| `ConditionOrigin` |  | |  |  |  |  |
-| `IsGroupCondition` |  | |  |  |  |  |
-| `ConditionRecord` |  | |  |  |  |  |
-| `ConditionSequentialNumber` |  | |  |  |  |  |
-| `TaxCode` |  | |  |  |  |  |
-| `WithholdingTaxCode` |  | |  |  |  |  |
-| `CndnRoundingOffDiffAmount` |  | |  |  |  |  |
-| `ConditionAmount` |  | |  |  |  |  |
-| `TransactionCurrency` |  | |  |  |  |  |
-| `ConditionControl` |  | |  |  |  |  |
-| `ConditionInactiveReason` |  | |  |  |  |  |
-| `ConditionClass` |  | |  |  |  |  |
-| `PrcgProcedureCounterForHeader` |  | |  |  |  |  |
-| `FactorForConditionBasisValue` |  | |  |  |  |  |
-| `StructureCondition` |  | |  |  |  |  |
-| `PeriodFactorForCndnBasisValue` |  | |  |  |  |  |
-| `PricingScaleBasis` |  | |  |  |  |  |
-| `ConditionScaleBasisValue` |  | |  |  |  |  |
-| `ConditionScaleBasisUnit` |  | |  |  |  |  |
-| `ConditionScaleBasisCurrency` |  | |  |  |  |  |
-| `CndnIsRelevantForIntcoBilling` |  | |  |  |  |  |
-| `ConditionIsManuallyChanged` |  | |  |  |  |  |
-| `ConditionIsForConfiguration` |  | |  |  |  |  |
-| `VariantCondition` |  | |  |  |  |  |
-| `ConditionRateAmount` |  | |  |  |  |  |
-| `ConditionRateRatio` |  | |  |  |  |  |
-| `ConditionRateRatioUnit` |  | |  |  |  |  |
-| `ConditionBaseAmount` |  | |  |  |  |  |
-| `ConditionBaseQuantity` |  | |  |  |  |  |
+| `ServiceContract` | ✓ | |  | `ServiceDocument` | `CHAR(10)` | Transaction ID |
+| `ServiceContractItem` | ✓ | |  | `ServiceDocumentItem` | `NUMC(6)` | Shortened Item Number in Document |
+| `PricingProcedureStep` | ✓ | |  |  | `NUMC(3)` | Step Number |
+| `PricingProcedureCounter` | ✓ | |  |  | `NUMC(3)` | Condition Counter |
+| `ConditionApplication` |  | |  |  | `CHAR(2)` | Application |
+| `ConditionType` |  | |  |  | `CHAR(4)` | Condition Type |
+| `PriceConditionDeterminationDte` |  | |  |  | `DATS(8)` | Condition Pricing Date |
+| `ConditionCalculationType` |  | |  |  | `CHAR(3)` | Calculation Type for Condition |
+| `ConditionBaseValue` |  | |  |  | `DEC(24)` | Condition Basis |
+| `ConditionRateValue` |  | |  |  | `DEC(24)` | Condition Amount or Percentage |
+| `ConditionCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `ConditionQuantity` |  | |  |  | `DEC(5)` | Condition Pricing Unit |
+| `ConditionQuantityUnit` |  | |  |  | `UNIT(3)` | Condition Unit in the Document |
+| `ConditionCategory` |  | |  |  | `CHAR(1)` | Condition Category (Examples: Tax, Freight, Price, Cost) |
+| `ConditionIsForStatistics` |  | |  |  | `CHAR(1)` | Condition is used for statistics |
+| `PricingScaleType` |  | |  |  | `CHAR(1)` | Scale Type |
+| `IsRelevantForAccrual` |  | |  |  | `CHAR(1)` | Condition is Relevant for Accrual  (e.g. Freight) |
+| `CndnIsRelevantForInvoiceList` |  | |  |  | `CHAR(1)` | Condition for Invoice List |
+| `ConditionOrigin` |  | |  |  | `CHAR(1)` | Origin of the Condition |
+| `IsGroupCondition` |  | |  |  | `CHAR(1)` | Group Condition |
+| `ConditionRecord` |  | |  |  | `CHAR(10)` | Number of Condition Record |
+| `ConditionSequentialNumber` |  | |  |  | `NUMC(3)` | Sequential Number of the Condition |
+| `TaxCode` |  | |  |  | `CHAR(2)` | Tax on Sales/Purchases Code |
+| `WithholdingTaxCode` |  | |  |  | `CHAR(2)` | Withholding Tax Code |
+| `CndnRoundingOffDiffAmount` |  | |  |  | `CURR(5)` | Rounding-Off Difference of a Condition |
+| `ConditionAmount` |  | |  |  | `CURR(15)` | Condition Value |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | SD Document Currency |
+| `ConditionControl` |  | |  |  | `CHAR(1)` | Condition Control |
+| `ConditionInactiveReason` |  | |  |  | `CHAR(1)` | Condition is Inactive |
+| `ConditionClass` |  | |  |  | `CHAR(1)` | Condition Class |
+| `PrcgProcedureCounterForHeader` |  | |  |  | `NUMC(3)` | Condition Counter (Header) |
+| `FactorForConditionBasisValue` |  | |  |  | `FLTP(16)` | Factor for Condition Base Value |
+| `StructureCondition` |  | |  |  | `CHAR(1)` | Structure Condition |
+| `PeriodFactorForCndnBasisValue` |  | |  |  | `FLTP(16)` | Factor for Condition Basis (Period) |
+| `PricingScaleBasis` |  | |  |  | `CHAR(3)` | Scale Basis Indicator |
+| `ConditionScaleBasisValue` |  | |  |  | `DEC(24)` | Scale Base Value |
+| `ConditionScaleBasisUnit` |  | |  |  | `UNIT(3)` | Condition Scale Unit of Measure |
+| `ConditionScaleBasisCurrency` |  | |  |  | `CUKY(5)` | Scale Currency |
+| `CndnIsRelevantForIntcoBilling` |  | |  |  | `CHAR(1)` | Condition for Intercompany Billing |
+| `ConditionIsManuallyChanged` |  | |  |  | `CHAR(1)` | Condition Changed Manually |
+| `ConditionIsForConfiguration` |  | |  |  | `CHAR(1)` | Condition Used for Variant Configuration |
+| `VariantCondition` |  | |  |  | `CHAR(26)` | Variant Condition Key |
+| `ConditionRateAmount` |  | |  |  | `DEC(24)` | Condition Amount |
+| `ConditionRateRatio` |  | |  |  | `DEC(24)` | Condition Ratio (in Percent or Per Mille) |
+| `ConditionRateRatioUnit` |  | |  |  | `UNIT(3)` | Unit of Measurement |
+| `ConditionBaseAmount` |  | |  |  | `DEC(24)` | Amount of the Condition Basis |
+| `ConditionBaseQuantity` |  | |  |  | `DEC(24)` | Quantity of the Condition Basis |
 | `_ServiceContract` | | ✓ | | | | |
 | `_ServiceContractItem` | | ✓ | | | | |
 | `_ConditionApplication` | | ✓ | | | | |

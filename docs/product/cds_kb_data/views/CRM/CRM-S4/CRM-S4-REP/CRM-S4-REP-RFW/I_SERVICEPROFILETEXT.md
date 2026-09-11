@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceProfile` | ✓ | |  | `srv_serwi` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `ServiceProfileName` |  | |  | `description` |  |  |
+| `ServiceProfile` | ✓ | |  | `srv_serwi` | `CHAR(10)` | Service Profile |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key of Description |
+| `ServiceProfileName` |  | |  | `description` | `CHAR(40)` | Description (40 Characters) |
 | `_Language` | | ✓ | | | | |
 | `_ServiceProfile` | | ✓ | | | | |
 

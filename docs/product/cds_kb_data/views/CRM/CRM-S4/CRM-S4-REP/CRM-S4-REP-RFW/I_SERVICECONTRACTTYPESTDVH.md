@@ -41,8 +41,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentType` | ✓ | |  |  |  |  |
-| `ServiceObjectType` |  | |  |  |  |  |
+| `ServiceDocumentType` | ✓ | |  |  | `CHAR(4)` | Business Transaction Type |
+| `ServiceObjectType` |  | |  |  | `CHAR(10)` | Leading Business Transaction Category |
 | `_ServiceDocumentTypeText` | | ✓ | | | | |
 | `_ServiceObjectTypeText` | | ✓ | | | | |
 
