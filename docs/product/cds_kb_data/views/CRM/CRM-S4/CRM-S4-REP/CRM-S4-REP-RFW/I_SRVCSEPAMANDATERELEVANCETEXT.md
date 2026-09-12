@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `SrvcSEPAMandateRelevance` | ✓ | |  | `cast(domvalue_l as crm_sepa_on)` |  |  |
-| `SrvcSEPAMandateRelevanceText` |  | |  | `ddtext` |  |  |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `SrvcSEPAMandateRelevance` | ✓ | |  | `cast(domvalue_l as crm_sepa_on)` | `CHAR(1)` | Sepa : Mandate Relevance for Service |
+| `SrvcSEPAMandateRelevanceText` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 | `_SrvcSEPAMandateRelevance` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

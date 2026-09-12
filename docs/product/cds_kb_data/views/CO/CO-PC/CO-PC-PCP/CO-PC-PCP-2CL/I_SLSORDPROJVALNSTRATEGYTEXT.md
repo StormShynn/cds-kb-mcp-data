@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SlsOrdProjValnStrategy` | ✓ | |  | `cast( domvalue_l as fpc_val_strat_sls_order )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `SlsOrdProjValnStrgyName` |  | |  | `cast( ddtext as fpc_val_strat_sls_ord_name preserving type )` |  |  |
+| `SlsOrdProjValnStrategy` | ✓ | |  | `cast( domvalue_l as fpc_val_strat_sls_order )` | `CHAR(1)` | Valuation Strategy for Material in Valuated Special Stock |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `SlsOrdProjValnStrgyName` |  | |  | `cast( ddtext as fpc_val_strat_sls_ord_name preserving type )` | `CHAR(60)` | Name of Val. Strategy for Material in Valuated Spec. Stock |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

@@ -41,12 +41,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostingVariant` | ✓ | |  |  |  |  |
-| `CostingVariantName` |  | | `_CostingVariantText` | `CostingVariantName` |  |  |
-| `ValuationVariant` |  | |  |  |  |  |
-| `ValuationVariantName` |  | | `_CostingValuationVarText` | `ValuationVariantName` |  |  |
-| `CostingType` |  | |  |  |  |  |
-| `CostingReferenceObject` |  | |  |  |  |  |
+| `CostingVariant` | ✓ | |  |  | `CHAR(4)` | Costing Variant |
+| `CostingVariantName` |  | | `_CostingVariantText` | `CostingVariantName` | `CHAR(25)` | Name for Costing Variant |
+| `ValuationVariant` |  | |  |  | `CHAR(3)` | Valuation Variant in Costing |
+| `ValuationVariantName` |  | | `_CostingValuationVarText` | `ValuationVariantName` | `CHAR(25)` | Valuation Variant Name |
+| `CostingType` |  | |  |  | `CHAR(2)` | Costing Type |
+| `CostingReferenceObject` |  | |  |  | `CHAR(1)` | Reference Object |
 | `_CostingVariantText` | | ✓ | | | | |
 
 ## Associations

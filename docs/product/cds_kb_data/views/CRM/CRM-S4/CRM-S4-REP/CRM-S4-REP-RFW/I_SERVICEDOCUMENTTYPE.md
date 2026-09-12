@@ -39,15 +39,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentType` | ✓ | |  | `process_type` |  |  |
-| `ServiceObjectType` |  | |  | `object_type` |  |  |
-| `CustMgmtServiceTeamProfile` |  | |  | `service_team_profile` |  |  |
-| `SrvcProcessStepOverviewProfile` |  | |  | `proc_stp_ovw_prfl` |  |  |
-| `ServiceDocumentTemplateType` |  | |  | `template_type` |  |  |
-| `SrvcDocTypeBlockingStatus` |  | |  | `process_blocked` |  |  |
-| `StatusProfile` |  | |  | `user_stat_proc` |  |  |
-| `SrvcRejectionReasonProfile` |  | |  | `rejprofile` |  |  |
-| `SrvcMgmtPrtnDetnProcedure` |  | |  | `part_determ_proc` |  |  |
+| `ServiceDocumentType` | ✓ | |  | `process_type` | `CHAR(4)` | Business Transaction Type |
+| `ServiceObjectType` |  | |  | `object_type` | `CHAR(10)` | Leading Business Transaction Category |
+| `CustMgmtServiceTeamProfile` |  | |  | `service_team_profile` | `CHAR(12)` | Service Team Profile |
+| `SrvcProcessStepOverviewProfile` |  | |  | `proc_stp_ovw_prfl` | `CHAR(8)` | Profile for Process Step Overview |
+| `ServiceDocumentTemplateType` |  | |  | `template_type` | `CHAR(1)` | Service Transaction: Template Type |
+| `SrvcDocTypeBlockingStatus` |  | |  | `process_blocked` | `CHAR(1)` | Active Indicator: Transaction |
+| `StatusProfile` |  | |  | `user_stat_proc` | `CHAR(8)` | Status Profile |
+| `SrvcRejectionReasonProfile` |  | |  | `rejprofile` | `CHAR(8)` | Rejection Profile Name |
+| `SrvcMgmtPrtnDetnProcedure` |  | |  | `part_determ_proc` | `CHAR(8)` | ID of a Partner Determination Procedure |
 | `_ServiceDocumentTypeText` | | ✓ | | | | |
 | `_ServiceObjectTypeText` | | ✓ | | | | |
 

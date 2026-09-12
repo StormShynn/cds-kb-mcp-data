@@ -38,14 +38,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LegalTransactionDateUUID` | ✓ | |  |  |  |  |
-| `LegalTransactionUUID` |  | |  |  |  |  |
-| `LglCntntMFromDate` |  | |  |  |  |  |
-| `LglCntntMToDate` |  | |  |  |  |  |
-| `LglCntntMDateType` |  | |  |  |  |  |
-| `LegalTransactionMandatoryFlag` |  | |  |  |  |  |
-| `LglCntntMIsIntegRelevant` |  | |  |  |  |  |
-| `LglCntntMIsAddedByIntegVarbl` |  | |  |  |  |  |
+| `LegalTransactionDateUUID` | ✓ | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransactionUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglCntntMFromDate` |  | |  |  | `DATS(8)` | Valid From |
+| `LglCntntMToDate` |  | |  |  | `DATS(8)` | Valid To |
+| `LglCntntMDateType` |  | |  |  | `CHAR(4)` | Date Type |
+| `LegalTransactionMandatoryFlag` |  | |  |  | `CHAR(1)` | Control Parameter Legal Transaction Mandatory State |
+| `LglCntntMIsIntegRelevant` |  | |  |  | `CHAR(1)` | Integrated |
+| `LglCntntMIsAddedByIntegVarbl` |  | |  |  | `CHAR(1)` | Added By Integration Variable BAdI |
 | `_LegalTransaction` | | ✓ | | | | |
 
 ## Associations

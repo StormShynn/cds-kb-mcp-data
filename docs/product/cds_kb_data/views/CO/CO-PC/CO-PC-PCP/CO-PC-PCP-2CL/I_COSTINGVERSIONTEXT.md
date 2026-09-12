@@ -41,11 +41,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostingVersion` | ✓ | |  |  |  |  |
-| `CostingType` | ✓ | |  |  |  |  |
-| `ValuationVariant` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CostingVersionName` |  | |  | `text` |  |  |
+| `CostingVersion` | ✓ | |  |  | `NUMC(2)` | Costing Version |
+| `CostingType` | ✓ | |  |  | `CHAR(2)` | Costing Type |
+| `ValuationVariant` | ✓ | |  |  | `CHAR(3)` | Valuation Variant in Costing |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CostingVersionName` |  | |  | `text` | `CHAR(25)` | Description of Costing Version |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

@@ -41,50 +41,50 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `OrderID` | ✓ | |  |  |  |  |
-| `OrderItem` | ✓ | |  |  |  |  |
-| `WorkCenterInternalID` | ✓ | |  |  |  |  |
-| `OrderOperation` | ✓ | |  |  |  |  |
-| `GLAccount` | ✓ | |  |  |  |  |
-| `PartnerCostCtrActivityType` | ✓ | |  |  |  |  |
-| `PartnerCostCenter` | ✓ | |  |  |  |  |
-| `Plant` | ✓ | |  |  |  |  |
-| `Product` | ✓ | |  |  |  |  |
-| `UnitOfMeasure` | ✓ | |  |  |  |  |
-| `CurPlanProjSlsOrdValnStrategy` | ✓ | |  |  |  |  |
-| `Ledger` |  | |  | `cast( :P_Ledger as fins_ledger )` |  |  |
-| `ControllingArea` |  | |  |  |  |  |
-| `CompanyCode` |  | |  |  |  |  |
-| `ProducedProduct` |  | |  |  |  |  |
-| `SalesOrder` |  | |  |  |  |  |
-| `SalesOrderItem` |  | |  |  |  |  |
-| `WBSElementInternalID` |  | |  |  |  |  |
-| `WBSElementExternalID` |  | | `_WBSElement` | `WBSElementExternalID` |  |  |
-| `WorkCenter` |  | | `_WorkCenter` | `WorkCenter` |  |  |
-| `ChartOfAccounts` |  | |  |  |  |  |
-| `OrderType` |  | |  |  |  |  |
-| `OrderCategory` |  | |  |  |  |  |
-| `DisplayCurrency` |  | |  |  |  |  |
-| `OrderDescription` |  | | `_Order` | `OrderDescription` |  |  |
-| `MfgOrderOperationText` |  | | `_ManufacturingOrderOperation` | `MfgOrderOperationText` |  |  |
-| `PlantName` |  | | `_Plant` | `PlantName` |  |  |
-| `ControllingAreaName` |  | | `_ControllingArea` | `ControllingAreaName` |  |  |
-| `CompanyCodeName` |  | | `_CompanyCode` | `CompanyCodeName` |  |  |
-| `SalesOrderItemText` |  | | `_SalesOrderItem` | `SalesOrderItemText` |  |  |
-| `WBSDescription` |  | | `_WBSElement` | `WBSDescription` |  |  |
-| `CreditActlCostInDspCrcy` |  | |  | `cast(CreditActlCostInDisplayCrcy as fis_cr_actlcost_in_dspcrcy)` |  |  |
-| `DebitActlCostInDspCrcy` |  | |  | `cast(DebitActlCostInDisplayCrcy as fis_dr_actlcost_in_dspcrcy)` |  |  |
-| `CrdtActlFxdCostInDspCrcy` |  | |  | `cast(CrdtActlFixedCostInDspCrcy as fis_cr_actlfxdcost_in_dspcrcy)` |  |  |
-| `DebitActlFxdCostInDspCrcy` |  | |  | `cast(DebitActlFixedCostInDspCrcy as fis_dr_actlfxdcost_in_dspcrcy)` |  |  |
-| `ActualQtyInCostSourceUnit` |  | |  | `cast(ActualQtyInCostSourceUnit as fis_actlqty_in_costsrceunit)` |  |  |
-| `CreditPlanCostInDspCrcy` |  | |  | `cast(CreditPlanCostInDisplayCrcy as fis_cr_plancost_in_dspcrcy)` |  |  |
-| `DebitPlanCostInDspCrcy` |  | |  | `cast(DebitPlanCostInDisplayCrcy as fis_dr_plancost_in_dspcrcy)` |  |  |
-| `CrdtPlnFxdCostInDspCrcy` |  | |  | `cast(CrdtPlanFixedCostInDspCrcy as fis_cr_plnfxdcost_in_dspcrcy)` |  |  |
-| `DebitPlnFxdCostInDspCrcy` |  | |  | `cast(DebitPlanFixedCostInDspCrcy as fis_dr_plnfxdcost_in_dspcrcy)` |  |  |
-| `PlanQtyInCostSourceUnit` |  | |  | `cast(PlanQtyInCostSourceUnit as fis_planqty_in_costsrceunit)` |  |  |
-| `CrdtTargetCostInDspCrcy` |  | |  | `cast(CreditTgtCostInDisplayCrcy as fis_cr_tgtcost_in_dspcrcy)` |  |  |
-| `DebitTargetCostInDspCrcy` |  | |  | `cast(DebitTgtCostInDisplayCrcy as fis_dr_tgtcost_in_dspcrcy)` |  |  |
-| `TargetQtyInCostSourceUnit` |  | |  | `cast(TargetQtyInCostSourceUnit as fis_tgtqty_in_costsrceunit)` |  |  |
+| `OrderID` | ✓ | |  |  | `CHAR(12)` | Order Number |
+| `OrderItem` | ✓ | |  |  | `NUMC(4)` | Number of Order Item |
+| `WorkCenterInternalID` | ✓ | |  |  | `NUMC(8)` | Object ID of the resource |
+| `OrderOperation` | ✓ | |  |  | `CHAR(4)` | Operation or Phase Number |
+| `GLAccount` | ✓ | |  |  | `CHAR(10)` | G/L Account |
+| `PartnerCostCtrActivityType` | ✓ | |  |  | `CHAR(6)` | Partner Cost Center Activity Type |
+| `PartnerCostCenter` | ✓ | |  |  | `CHAR(10)` | Partner Cost Center |
+| `Plant` | ✓ | |  |  | `CHAR(4)` | Plant |
+| `Product` | ✓ | |  |  | `CHAR(40)` | Product |
+| `UnitOfMeasure` | ✓ | |  |  | `UNIT(3)` | Cost Source Unit |
+| `CurPlanProjSlsOrdValnStrategy` | ✓ | |  |  | `CHAR(1)` | Val. Strat. for Current Plan Price, Sales Order/Proj. Stock |
+| `Ledger` |  | |  | `cast( :P_Ledger as fins_ledger )` | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `ProducedProduct` |  | |  |  | `CHAR(40)` | Product |
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales Order |
+| `SalesOrderItem` |  | |  |  | `NUMC(6)` | Sales Order Item |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element |
+| `WBSElementExternalID` |  | | `_WBSElement` | `WBSElementExternalID` | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `WorkCenter` |  | | `_WorkCenter` | `WorkCenter` | `CHAR(8)` | Work Center |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `OrderType` |  | |  |  | `CHAR(4)` | Order Type |
+| `OrderCategory` |  | |  |  | `NUMC(2)` | Order Category |
+| `DisplayCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `OrderDescription` |  | | `_Order` | `OrderDescription` | `CHAR(40)` | Order Description |
+| `MfgOrderOperationText` |  | | `_ManufacturingOrderOperation` | `MfgOrderOperationText` | `CHAR(40)` | Manufacturing Order Operation Text |
+| `PlantName` |  | | `_Plant` | `PlantName` | `CHAR(30)` | Plant Name |
+| `ControllingAreaName` |  | | `_ControllingArea` | `ControllingAreaName` | `CHAR(25)` | Controlling Area Name |
+| `CompanyCodeName` |  | | `_CompanyCode` | `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
+| `SalesOrderItemText` |  | | `_SalesOrderItem` | `SalesOrderItemText` | `CHAR(40)` | Short Text for Sales Order Item |
+| `WBSDescription` |  | | `_WBSElement` | `WBSDescription` | `CHAR(40)` | Work Breakdown Structure Element Name |
+| `CreditActlCostInDspCrcy` |  | |  | `cast(CreditActlCostInDisplayCrcy as fis_cr_actlcost_in_dspcrcy)` | `CURR(23)` | Actual Cost Credit |
+| `DebitActlCostInDspCrcy` |  | |  | `cast(DebitActlCostInDisplayCrcy as fis_dr_actlcost_in_dspcrcy)` | `CURR(23)` | Actual Cost Debit |
+| `CrdtActlFxdCostInDspCrcy` |  | |  | `cast(CrdtActlFixedCostInDspCrcy as fis_cr_actlfxdcost_in_dspcrcy)` | `CURR(23)` | Actual Fixed Cost Credit |
+| `DebitActlFxdCostInDspCrcy` |  | |  | `cast(DebitActlFixedCostInDspCrcy as fis_dr_actlfxdcost_in_dspcrcy)` | `CURR(23)` | Actual Fixed Cost Debit |
+| `ActualQtyInCostSourceUnit` |  | |  | `cast(ActualQtyInCostSourceUnit as fis_actlqty_in_costsrceunit)` | `QUAN(23)` | Actual Quantity |
+| `CreditPlanCostInDspCrcy` |  | |  | `cast(CreditPlanCostInDisplayCrcy as fis_cr_plancost_in_dspcrcy)` | `CURR(23)` | Plan Cost Credit |
+| `DebitPlanCostInDspCrcy` |  | |  | `cast(DebitPlanCostInDisplayCrcy as fis_dr_plancost_in_dspcrcy)` | `CURR(23)` | Plan Cost Debit |
+| `CrdtPlnFxdCostInDspCrcy` |  | |  | `cast(CrdtPlanFixedCostInDspCrcy as fis_cr_plnfxdcost_in_dspcrcy)` | `CURR(23)` | Plan Fixed Cost Credit |
+| `DebitPlnFxdCostInDspCrcy` |  | |  | `cast(DebitPlanFixedCostInDspCrcy as fis_dr_plnfxdcost_in_dspcrcy)` | `CURR(23)` | Plan Fixed Cost Debit |
+| `PlanQtyInCostSourceUnit` |  | |  | `cast(PlanQtyInCostSourceUnit as fis_planqty_in_costsrceunit)` | `QUAN(23)` | Plan Quantity |
+| `CrdtTargetCostInDspCrcy` |  | |  | `cast(CreditTgtCostInDisplayCrcy as fis_cr_tgtcost_in_dspcrcy)` | `CURR(23)` | Target Cost Credit |
+| `DebitTargetCostInDspCrcy` |  | |  | `cast(DebitTgtCostInDisplayCrcy as fis_dr_tgtcost_in_dspcrcy)` | `CURR(23)` | Target Cost Debit |
+| `TargetQtyInCostSourceUnit` |  | |  | `cast(TargetQtyInCostSourceUnit as fis_tgtqty_in_costsrceunit)` | `QUAN(23)` | Target Quantity |
 | `_Plant` | | ✓ | | | | |
 | `_Product` | | ✓ | | | | |
 | `_ProducedProduct` | | ✓ | | | | |

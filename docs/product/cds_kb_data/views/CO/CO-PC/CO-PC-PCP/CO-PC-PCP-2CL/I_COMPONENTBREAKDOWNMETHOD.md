@@ -39,10 +39,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ComponentBreakdownMethod` | ✓ | |  |  |  |  |
-| `ComponentBreakdownMethodType` |  | |  |  |  |  |
-| `CostBreakdownStructure` |  | |  |  |  |  |
-| `QuantityBreakdownStructure` |  | |  |  |  |  |
+| `ComponentBreakdownMethod` | ✓ | |  |  | `CHAR(4)` | Component Breakdown Method |
+| `ComponentBreakdownMethodType` |  | |  |  | `CHAR(6)` | Component Breakdown Method Type |
+| `CostBreakdownStructure` |  | |  |  | `CHAR(2)` | Cost Breakdown Structure |
+| `QuantityBreakdownStructure` |  | |  |  | `CHAR(2)` | Quantity Breakdown Structure |
 | `_CostBreakdownStructure` | | ✓ | | | | |
 | `_QtyComponentStructure` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |

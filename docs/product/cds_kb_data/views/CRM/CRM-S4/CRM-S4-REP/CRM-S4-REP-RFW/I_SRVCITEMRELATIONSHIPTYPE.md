@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SrvcItemRelshpType` | ✓ | |  | `item_relationship_type` |  |  |
+| `SrvcItemRelshpType` | ✓ | |  | `item_relationship_type` | `CHAR(3)` | Item Relationship Type |
 | `_ItemRelationshipTypeText` | | ✓ | | | | |
 
 ## Associations

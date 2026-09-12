@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostOriginGroup` | ✓ | |  |  |  |  |
-| `CostOriginType` | ✓ | |  |  |  |  |
-| `ControllingArea` | ✓ | |  |  |  |  |
+| `CostOriginGroup` | ✓ | |  |  | `CHAR(4)` | Origin Group as Subdivision of Cost Element |
+| `CostOriginType` | ✓ | |  |  | `CHAR(2)` | Origin Type |
+| `ControllingArea` | ✓ | |  |  | `CHAR(4)` | Controlling Area |
 | `_Text` | | ✓ | | | | |
 | `_ControllingArea` | | ✓ | | | | |
 | `_CostOriginType` | | ✓ | | | | |

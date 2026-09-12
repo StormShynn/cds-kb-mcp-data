@@ -40,15 +40,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentItmRelationUUID` | ✓ | |  | `relationid` |  |  |
-| `ServiceDocItmRltnSqncNumber` | ✓ | |  | `posno` |  |  |
-| `ServiceDocumentItemCharUUID` |  | |  | `cast(objkey_a as crms4_object_charguid32 preserving type )` |  |  |
-| `ServiceDocumentItemSuccessor` |  | |  | `objkey_b` |  |  |
-| `ServiceDocumentItmRelationType` |  | |  | `breltyp` |  |  |
-| `ServiceDocumentItemObjectType` |  | |  | `objtype_a` |  |  |
-| `ServiceDocumentItmRelationKind` |  | |  | `vona_kind` |  |  |
-| `ServiceDocItmSuccssrBusObjType` |  | |  | `objtype_b` |  |  |
-| `SrvcDocItmDocFlwCrtnDateTime` |  | |  | `cast (date as crmt_doc_flow_datetime preserving type)` |  |  |
+| `ServiceDocumentItmRelationUUID` | ✓ | |  | `relationid` | `CHAR(22)` | Object Relationship Service : GUID binary link |
+| `ServiceDocItmRltnSqncNumber` | ✓ | |  | `posno` | `NUMC(4)` | Sequential Number of Segment in IDoc Type |
+| `ServiceDocumentItemCharUUID` |  | |  | `cast(objkey_a as crms4_object_charguid32 preserving type )` | `CHAR(32)` | 32 Character CRM Object GUID |
+| `ServiceDocumentItemSuccessor` |  | |  | `objkey_b` | `CHAR(32)` | Identification of a Reference Object for Items |
+| `ServiceDocumentItmRelationType` |  | |  | `breltyp` | `CHAR(4)` | Relationship type |
+| `ServiceDocumentItemObjectType` |  | |  | `objtype_a` | `CHAR(10)` | Object Type |
+| `ServiceDocumentItmRelationKind` |  | |  | `vona_kind` | `CHAR(1)` | Type of binary relationship types VONA |
+| `ServiceDocItmSuccssrBusObjType` |  | |  | `objtype_b` | `CHAR(10)` | Object Type |
+| `SrvcDocItmDocFlwCrtnDateTime` |  | |  | `cast (date as crmt_doc_flow_datetime preserving type)` | `DEC(15)` | CRM document flow date time |
 | `_ServiceDocItm` | | ✓ | | | | |
 
 ## Associations

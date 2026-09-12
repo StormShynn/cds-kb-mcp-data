@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentIsReleased` | ✓ | |  | `domvalue_l` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `SrvcDocReleasedStatusText` |  | |  | `ddtext` |  |  |
+| `ServiceDocumentIsReleased` | ✓ | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `SrvcDocReleasedStatusText` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 | `_SrvcDocReleaseStatus` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

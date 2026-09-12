@@ -39,10 +39,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostingVersion` | ✓ | |  | `tvers` |  |  |
-| `CostingType` | ✓ | |  | `kalka` |  |  |
-| `ValuationVariant` | ✓ | |  | `bwvar` |  |  |
-| `ExchangeRateType` |  | |  | `kurst` |  |  |
+| `CostingVersion` | ✓ | |  | `tvers` | `NUMC(2)` | Costing Version |
+| `CostingType` | ✓ | |  | `kalka` | `CHAR(2)` | Costing Type |
+| `ValuationVariant` | ✓ | |  | `bwvar` | `CHAR(3)` | Valuation Variant in Costing |
+| `ExchangeRateType` |  | |  | `kurst` | `CHAR(4)` | Exchange Rate Type |
 | `_CostingVersionText` | | ✓ | | | | |
 | `_CostingType` | | ✓ | | | | |
 | `_CostingValuationVariant` | | ✓ | | | | |

@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceContrCancellationReason` | ✓ | |  | `canc_reason` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `ServiceContrCanclnReasonName` |  | |  | `canc_reason_t` |  |  |
+| `ServiceContrCancellationReason` | ✓ | |  | `canc_reason` | `CHAR(4)` | CRM Service : Reason for Cancellation |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key of Description |
+| `ServiceContrCanclnReasonName` |  | |  | `canc_reason_t` | `CHAR(40)` | Description (40 Characters) |
 | `_ServiceCancellationReason` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

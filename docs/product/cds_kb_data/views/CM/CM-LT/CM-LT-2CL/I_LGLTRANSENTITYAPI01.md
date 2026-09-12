@@ -38,16 +38,16 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LegalTransactionEntityUUID` | ✓ | |  |  |  |  |
-| `LglCntntMRank` |  | |  |  |  |  |
-| `LglCntntMEntity` |  | |  |  |  |  |
-| `LglCntntMEntityType` |  | |  |  |  |  |
-| `LglCntntMTechEntityType` |  | |  |  |  |  |
-| `LegalTransactionUUID` |  | |  |  |  |  |
-| `LegalTransactionMandatoryFlag` |  | |  |  |  |  |
-| `LglCntntMIsMainEntity` |  | |  |  |  |  |
-| `LglCntntMIsIntegRelevant` |  | |  |  |  |  |
-| `LglCntntMIsAddedByIntegVarbl` |  | |  |  |  |  |
+| `LegalTransactionEntityUUID` | ✓ | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglCntntMRank` |  | |  |  | `INT2(5)` | Sequence Number |
+| `LglCntntMEntity` |  | |  |  | `CHAR(10)` | Entity ID |
+| `LglCntntMEntityType` |  | |  |  | `CHAR(4)` | Entity Type |
+| `LglCntntMTechEntityType` |  | |  |  | `CHAR(2)` | Entity Technical Type |
+| `LegalTransactionUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransactionMandatoryFlag` |  | |  |  | `CHAR(1)` | Control Parameter Legal Transaction Mandatory State |
+| `LglCntntMIsMainEntity` |  | |  |  | `CHAR(1)` | Entity is Main Entity of Legal Transaction |
+| `LglCntntMIsIntegRelevant` |  | |  |  | `CHAR(1)` | Integrated |
+| `LglCntntMIsAddedByIntegVarbl` |  | |  |  | `CHAR(1)` | Added By Integration Variable BAdI |
 | `_LegalTransaction` | | ✓ | | | | |
 
 ## Associations

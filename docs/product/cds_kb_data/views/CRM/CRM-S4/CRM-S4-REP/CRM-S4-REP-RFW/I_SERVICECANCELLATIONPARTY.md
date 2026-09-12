@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceContractCanclnParty` | ✓ | |  | `canc_party` |  |  |
+| `ServiceContractCanclnParty` | ✓ | |  | `canc_party` | `CHAR(4)` | Cancelling Party |
 | `_ServiceCancellationPartyText` | | ✓ | | | | |
 
 ## Associations

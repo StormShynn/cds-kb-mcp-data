@@ -39,11 +39,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EventbasedProductCostgErrorID` | ✓ | |  |  |  |  |
-| `CompanyCode` |  | |  |  |  |  |
-| `SystemMessageClass` |  | |  |  |  |  |
-| `SystemMessageNumber` |  | |  |  |  |  |
-| `LogMessageText` |  | |  | `cast ( Text as le_msg_text)` |  |  |
+| `EventbasedProductCostgErrorID` | ✓ | |  |  | `CHAR(36)` | Event-Based Product Costing Error ID |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `SystemMessageClass` |  | |  |  | `CHAR(20)` | Message Class |
+| `SystemMessageNumber` |  | |  |  | `CHAR(3)` | Message number |
+| `LogMessageText` |  | |  | `cast ( Text as le_msg_text)` | `CHAR(132)` | Message Text composed with variables |
 
 ## Source Code
 

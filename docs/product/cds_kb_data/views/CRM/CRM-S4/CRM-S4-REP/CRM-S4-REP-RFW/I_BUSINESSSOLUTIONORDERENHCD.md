@@ -37,47 +37,47 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessSolutionOrder` | ✓ | |  |  |  |  |
-| `ServiceObjectType` |  | |  |  |  |  |
-| `BusinessSolutionOrderUUID` |  | |  |  |  |  |
-| `ServiceDocumentCharUUID` |  | |  |  |  |  |
-| `ServiceDocumentType` |  | |  |  |  |  |
-| `BusSolnOrdDescription` |  | |  |  |  |  |
-| `Language` |  | |  |  |  |  |
-| `PostingDate` |  | |  |  |  |  |
-| `ServiceDocCreationDateTime` |  | |  |  |  |  |
-| `ServiceDocChangedDateTime` |  | |  |  |  |  |
-| `ServiceDocumentCreatedByUser` |  | |  |  |  |  |
-| `ServiceDocumentChangedByUser` |  | |  |  |  |  |
-| `ServiceDocGrossAmount` |  | |  |  |  |  |
-| `BusSolnOrdNetAmount` |  | |  |  |  |  |
-| `ServiceDocTaxAmount` |  | |  |  |  |  |
-| `TransactionCurrency` |  | |  |  |  |  |
-| `SoldToParty` |  | |  |  |  |  |
-| `SoldToPartyCountry` |  | |  |  |  |  |
-| `SoldToPartyRegion` |  | |  |  |  |  |
-| `ShipToParty` |  | |  |  |  |  |
-| `BillToParty` |  | |  |  |  |  |
-| `PayerParty` |  | |  |  |  |  |
-| `RespEmployeeBusinessPartnerId` |  | |  |  |  |  |
-| `ContactPersonBusinessPartnerId` |  | |  |  |  |  |
-| `PaymentTerms` |  | |  |  |  |  |
-| `PaymentMethod` |  | |  |  |  |  |
-| `SalesOrganization` |  | |  |  |  |  |
-| `SalesOffice` |  | |  |  |  |  |
-| `SalesGroup` |  | |  |  |  |  |
-| `DistributionChannel` |  | |  |  |  |  |
-| `Division` |  | |  |  |  |  |
-| `Region` |  | |  |  |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
-| `ServiceDocumentRejectionReason` |  | |  |  |  |  |
-| `BusSolnOrdStatus` |  | |  |  |  |  |
-| `BusSolnOrdIsReleased` |  | |  |  |  |  |
-| `BusSolnOrdHasError` |  | |  |  |  |  |
-| `ServiceDocumentIsOpen` |  | |  |  |  |  |
-| `BusSolnOrdRejectionStatus` |  | |  |  |  |  |
-| `BusSolnOrdExtReference` |  | | `_ExtRefBusinessSolutionOrder` | `CustMgmtExtRefID` |  |  |
+| `BusinessSolutionOrder` | ✓ | |  |  | `CHAR(10)` | Transaction ID |
+| `ServiceObjectType` |  | |  |  | `CHAR(10)` | Business Trans. Cat. |
+| `BusinessSolutionOrderUUID` |  | |  |  | `RAW(16)` | GUID of a CRM Order Object |
+| `ServiceDocumentCharUUID` |  | |  |  | `CHAR(32)` | UUID in Character Format |
+| `ServiceDocumentType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `BusSolnOrdDescription` |  | |  |  | `CHAR(40)` | Transaction Description |
+| `Language` |  | |  |  | `LANG(1)` | Language Key of Description |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date for a Business Transaction |
+| `ServiceDocCreationDateTime` |  | |  |  | `DEC(15)` | Created At |
+| `ServiceDocChangedDateTime` |  | |  |  | `DEC(15)` | Changed At |
+| `ServiceDocumentCreatedByUser` |  | |  |  | `CHAR(12)` | User that Created the Transaction |
+| `ServiceDocumentChangedByUser` |  | |  |  | `CHAR(12)` | Transaction Last Changed By |
+| `ServiceDocGrossAmount` |  | |  |  | `CURR(15)` | Total Gross Value of Document in Document Currency |
+| `BusSolnOrdNetAmount` |  | |  |  | `CURR(15)` | Total Net Value of Document in Document Currency |
+| `ServiceDocTaxAmount` |  | |  |  | `CURR(15)` | Total Tax Amount in Document Currency |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-To Party |
+| `SoldToPartyCountry` |  | |  |  | `CHAR(3)` | Country/Region |
+| `SoldToPartyRegion` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `ShipToParty` |  | |  |  | `CHAR(10)` | Ship-To Party |
+| `BillToParty` |  | |  |  | `CHAR(10)` | Bill-To Party |
+| `PayerParty` |  | |  |  | `CHAR(10)` | Payer |
+| `RespEmployeeBusinessPartnerId` |  | |  |  | `CHAR(10)` | Employee Responsible |
+| `ContactPersonBusinessPartnerId` |  | |  |  | `CHAR(10)` | Customer Contact Person |
+| `PaymentTerms` |  | |  |  | `CHAR(4)` | Terms of Payment |
+| `PaymentMethod` |  | |  |  | `CHAR(1)` | Payment Method |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `SalesOffice` |  | |  |  | `CHAR(4)` | Sales Office |
+| `SalesGroup` |  | |  |  | `CHAR(3)` | Sales Group |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `PurchaseOrderByCustomer` |  | |  |  | `CHAR(35)` | Sold-To Party's External Reference Number |
+| `CustomerPurchaseOrderDate` |  | |  |  | `DATS(8)` | Reference Document Date |
+| `ServiceDocumentRejectionReason` |  | |  |  | `CHAR(2)` | Cancellation Reason Code |
+| `BusSolnOrdStatus` |  | |  |  | `CHAR(4)` | Life Cycle Status |
+| `BusSolnOrdIsReleased` |  | |  |  | `CHAR(1)` | Release Status |
+| `BusSolnOrdHasError` |  | |  |  | `CHAR(1)` | Error Status |
+| `ServiceDocumentIsOpen` |  | |  |  | `CHAR(1)` | Status "Open" |
+| `BusSolnOrdRejectionStatus` |  | |  |  | `CHAR(1)` | Rejection Status |
+| `BusSolnOrdExtReference` |  | | `_ExtRefBusinessSolutionOrder` | `CustMgmtExtRefID` | `CHAR(80)` | External Reference Number |
 | `_BillToParty` | | ✓ | | | | |
 | `_ContactPerson` | | ✓ | | | | |
 | `_DistributionChannel` | | ✓ | | | | |

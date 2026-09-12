@@ -41,11 +41,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostOriginGroup` | ✓ | |  | `hrkft` |  |  |
-| `CostOriginType` | ✓ | |  | `koaty` |  |  |
-| `ControllingArea` | ✓ | |  | `cast( kokrs as fis_kokrs preserving type )` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CostOriginGroupName` |  | |  | `hrktx` |  |  |
+| `CostOriginGroup` | ✓ | |  | `hrkft` | `CHAR(4)` | Origin Group as Subdivision of Cost Element |
+| `CostOriginType` | ✓ | |  | `koaty` | `CHAR(2)` | Origin Type |
+| `ControllingArea` | ✓ | |  | `cast( kokrs as fis_kokrs preserving type )` | `CHAR(4)` | Controlling Area |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CostOriginGroupName` |  | |  | `hrktx` | `CHAR(40)` | Name |
 | `_Language` | | ✓ | | | | |
 | `_CostOriginType` | | ✓ | | | | |
 | `_ControllingArea` | | ✓ | | | | |

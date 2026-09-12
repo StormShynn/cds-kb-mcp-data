@@ -57,107 +57,107 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SourceLedger` | ✓ | |  |  |  |  |
-| `Ledger` | ✓ | |  |  |  |  |
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `FiscalYear` | ✓ | |  |  |  |  |
-| `AccountingDocument` | ✓ | |  |  |  |  |
-| `FinancialPlanningReqTransSqnc` | ✓ | |  |  |  |  |
-| `FinancialPlanningDataPacket` | ✓ | |  |  |  |  |
-| `ActualPlanJournalEntryItem` | ✓ | |  |  |  |  |
-| `LedgerGLLineItem` |  | |  |  |  |  |
-| `FinancialPlanningEntryItem` |  | |  |  |  |  |
-| `ControllingArea` |  | |  |  |  |  |
-| `LedgerFiscalYear` |  | |  |  |  |  |
-| `GLAccount` |  | |  |  |  |  |
-| `ChartOfAccounts` |  | |  |  |  |  |
-| `ActualPlanCode` |  | |  |  |  |  |
-| `DebitCreditCode` |  | |  |  |  |  |
-| `ProfitCenter` |  | |  |  |  |  |
-| `CostCenter` |  | |  |  |  |  |
-| `ProjectExternalID` |  | |  |  |  |  |
-| `PartnerProjectInternalID` |  | |  |  |  |  |
-| `PartnerProjectExternalID` |  | |  |  |  |  |
-| `WBSElementExternalID` |  | |  |  |  |  |
-| `PartnerWBSElementExternalID` |  | |  |  |  |  |
-| `FunctionalArea` |  | |  |  |  |  |
-| `Segment` |  | |  |  |  |  |
-| `CostCtrActivityType` |  | |  |  |  |  |
-| `CostAnalysisResource` |  | |  |  |  |  |
-| `OrderID` |  | |  |  |  |  |
-| `WorkPackage` |  | |  |  |  |  |
-| `PartnerAccountAssignmentType` |  | |  |  |  |  |
-| `PartnerCompanyCode` |  | |  |  |  |  |
-| `PartnerProfitCenter` |  | |  |  |  |  |
-| `PartnerCostCenter` |  | |  |  |  |  |
-| `PartnerFunctionalArea` |  | |  |  |  |  |
-| `PartnerSegment` |  | |  |  |  |  |
-| `PartnerCostCtrActivityType` |  | |  |  |  |  |
-| `PartnerOrder` |  | |  | `PartnerOrder_2` |  |  |
-| `PostingDate` |  | |  |  |  |  |
-| `DocumentDate` |  | |  |  |  |  |
-| `FiscalPeriod` |  | |  |  |  |  |
-| `FiscalYearPeriod` |  | |  |  |  |  |
-| `FiscalYearVariant` |  | |  |  |  |  |
-| `PlanningCategory` |  | |  |  |  |  |
-| `ServicesRenderedDate` |  | |  |  |  |  |
-| `AccountAssignmentType` |  | |  |  |  |  |
-| `BusinessTransactionCategory` |  | |  |  |  |  |
-| `BusinessTransactionType` |  | |  |  |  |  |
-| `FinancialTransactionType` |  | |  |  |  |  |
-| `Customer` |  | |  |  |  |  |
-| `Supplier` |  | |  |  |  |  |
-| `IsStatisticalCostCenter` |  | |  |  |  |  |
-| `IsCommitment` |  | |  |  |  |  |
-| `TransactionCurrency` |  | |  |  |  |  |
-| `CompanyCodeCurrency` |  | |  |  |  |  |
-| `GlobalCurrency` |  | |  |  |  |  |
-| `FunctionalCurrency` |  | |  |  |  |  |
-| `FreeDefinedCurrency1` |  | |  |  |  |  |
-| `CostSourceUnit` |  | |  |  |  |  |
-| `AmountInTransactionCurrency` |  | |  |  |  |  |
-| `AmountInCompanyCodeCurrency` |  | |  |  |  |  |
-| `AmountInGlobalCurrency` |  | |  |  |  |  |
-| `AmountInFunctionalCurrency` |  | |  |  |  |  |
-| `AmountInFreeDefinedCurrency1` |  | |  |  |  |  |
-| `FixedAmountInGlobalCrcy` |  | |  |  |  |  |
-| `FixedAmountInCoCodeCrcy` |  | |  |  |  |  |
-| `FixedAmountInTransCrcy` |  | |  |  |  |  |
-| `ValuationQuantity` |  | |  |  |  |  |
-| `ValuationFixedQuantity` |  | |  |  |  |  |
-| `BaseUnit` |  | |  |  |  |  |
-| `Quantity` |  | |  |  |  |  |
-| `FixedQuantity` |  | |  |  |  |  |
-| `ActualAmountInTransactionCrcy` |  | |  |  |  |  |
-| `ActualAmountInCompanyCodeCrcy` |  | |  |  |  |  |
-| `ActualAmountInGlobalCurrency` |  | |  |  |  |  |
-| `ActualAmountInFreeDfndCrcy1` |  | |  |  |  |  |
-| `ActualValuationQuantity` |  | |  |  |  |  |
-| `ActualQuantityInBaseUnit` |  | |  |  |  |  |
-| `PlanAmountInTransactionCrcy` |  | |  |  |  |  |
-| `PlanAmountInCompanyCodeCrcy` |  | |  |  |  |  |
-| `PlanAmountInGlobalCurrency` |  | |  |  |  |  |
-| `PlanAmountInFreeDefinedCrcy1` |  | |  |  |  |  |
-| `PlanValuationQuantity` |  | |  |  |  |  |
-| `PlanPriceInGlobalCurrency` |  | |  |  |  |  |
-| `PlanPriceInCompanyCodeCurrency` |  | |  |  |  |  |
-| `PlanPriceInTransactionCurrency` |  | |  |  |  |  |
-| `ActlPlnDiffAmtInTransCrcy` |  | |  |  |  |  |
-| `ActlPlnDiffAmtInCoCodeCrcy` |  | |  |  |  |  |
-| `ActlPlnDiffAmtInGlobalCrcy` |  | |  |  |  |  |
-| `ActlPlnDiffAmtInFreeDfndCrcy1` |  | |  |  |  |  |
-| `ActlPanDiffValuationQuantity` |  | |  |  |  |  |
-| `CalendarYear` |  | |  |  |  |  |
-| `CalendarQuarter` |  | |  |  |  |  |
-| `YearQuarter` |  | |  |  |  |  |
-| `CalendarMonth` |  | |  |  |  |  |
-| `YearMonth` |  | |  |  |  |  |
-| `CalendarWeek` |  | |  |  |  |  |
-| `YearWeek` |  | |  |  |  |  |
-| `FiscalQuarter` |  | |  |  |  |  |
-| `FiscalWeek` |  | |  |  |  |  |
-| `FiscalYearQuarter` |  | |  |  |  |  |
-| `FiscalYearWeek` |  | |  |  |  |  |
+| `SourceLedger` | ✓ | |  |  | `CHAR(2)` | Source Ledger |
+| `Ledger` | ✓ | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocument` | ✓ | |  |  | `CHAR(10)` | Journal Entry |
+| `FinancialPlanningReqTransSqnc` | ✓ | |  |  | `NUMC(23)` | Financial Planning Request Transaction Sequence Number |
+| `FinancialPlanningDataPacket` | ✓ | |  |  | `NUMC(6)` | Financial Planning Data Packet Number |
+| `ActualPlanJournalEntryItem` | ✓ | |  |  | `CHAR(12)` | Actual Plan Journal Entry Item |
+| `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `FinancialPlanningEntryItem` |  | |  |  | `INT4(10)` | Financial Planning Entry Item |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `ActualPlanCode` |  | |  |  | `CHAR(1)` | Actual Plan Code |
+| `DebitCreditCode` |  | |  |  | `CHAR(1)` | Debit/Credit Code |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `ProjectExternalID` |  | |  |  | `CHAR(24)` | Project External ID |
+| `PartnerProjectInternalID` |  | |  |  | `NUMC(8)` | Partner Project Internal ID |
+| `PartnerProjectExternalID` |  | |  |  | `CHAR(24)` | Partner Project External ID |
+| `WBSElementExternalID` |  | |  |  | `CHAR(24)` | WBS Element External ID |
+| `PartnerWBSElementExternalID` |  | |  |  | `CHAR(24)` | Partner WBS Element External ID |
+| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
+| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
+| `CostCtrActivityType` |  | |  |  | `CHAR(6)` | Activity Type |
+| `CostAnalysisResource` |  | |  |  | `CHAR(10)` | Cost Analysis Resource |
+| `OrderID` |  | |  |  | `CHAR(12)` | Order ID |
+| `WorkPackage` |  | |  |  | `CHAR(50)` | Plan Item |
+| `PartnerAccountAssignmentType` |  | |  |  | `CHAR(2)` | Partner Account Assignment Type |
+| `PartnerCompanyCode` |  | |  |  | `CHAR(4)` | Partner Company Code |
+| `PartnerProfitCenter` |  | |  |  | `CHAR(10)` | Partner Profit Center |
+| `PartnerCostCenter` |  | |  |  | `CHAR(10)` | Partner Cost Center |
+| `PartnerFunctionalArea` |  | |  |  | `CHAR(16)` | Partner Functional Area |
+| `PartnerSegment` |  | |  |  | `CHAR(10)` | Partner Segment for Segmental Reporting |
+| `PartnerCostCtrActivityType` |  | |  |  | `CHAR(6)` | Partner Cost Center Activity Type |
+| `PartnerOrder` |  | |  | `PartnerOrder_2` | `CHAR(12)` | Partner Order |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
+| `DocumentDate` |  | |  |  | `DATS(8)` | Journal Entry Date |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `FiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year Period |
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `PlanningCategory` |  | |  |  | `CHAR(10)` | Plan Category |
+| `ServicesRenderedDate` |  | |  |  | `DATS(8)` | Date on which services are rendered |
+| `AccountAssignmentType` |  | |  |  | `CHAR(2)` | Account Assignment Type |
+| `BusinessTransactionCategory` |  | |  |  | `CHAR(4)` | Business Transaction Category |
+| `BusinessTransactionType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `FinancialTransactionType` |  | |  |  | `CHAR(3)` | Financial Transaction Type |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier |
+| `IsStatisticalCostCenter` |  | |  |  | `CHAR(1)` | Indicator: Cost Center is Statistical Account Assignment |
+| `IsCommitment` |  | |  |  | `CHAR(1)` | Indicator: Is Commitment |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `FunctionalCurrency` |  | |  |  | `CUKY(5)` | Functional Currency |
+| `FreeDefinedCurrency1` |  | |  |  | `CUKY(5)` | Freely Defined Currency 1 |
+| `CostSourceUnit` |  | |  |  | `UNIT(3)` | Cost Source Unit |
+| `AmountInTransactionCurrency` |  | |  |  | `CURR(23)` | Amount in Transaction Currency |
+| `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
+| `AmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Amount in Global Currency |
+| `AmountInFunctionalCurrency` |  | |  |  | `CURR(23)` | Amount in Functional Currency |
+| `AmountInFreeDefinedCurrency1` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 1 |
+| `FixedAmountInGlobalCrcy` |  | |  |  | `CURR(23)` | Fixed Amount in Global Currency |
+| `FixedAmountInCoCodeCrcy` |  | |  |  | `CURR(23)` | Fixed Amount in Company Currency |
+| `FixedAmountInTransCrcy` |  | |  |  | `CURR(23)` | Fixed Amount in Transaction Currency |
+| `ValuationQuantity` |  | |  |  | `QUAN(23)` | Valuation Quantity |
+| `ValuationFixedQuantity` |  | |  |  | `QUAN(23)` | Valuation Fixed Quantity |
+| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `Quantity` |  | |  |  | `QUAN(23)` | Quantity |
+| `FixedQuantity` |  | |  |  | `QUAN(23)` | Fixed Quantity |
+| `ActualAmountInTransactionCrcy` |  | |  |  | `CURR(23)` | Actual Amount in Transaction Currency |
+| `ActualAmountInCompanyCodeCrcy` |  | |  |  | `CURR(23)` | Actual Amount in Company Code Currency |
+| `ActualAmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Actual Amount in Global Currency |
+| `ActualAmountInFreeDfndCrcy1` |  | |  |  | `CURR(23)` | Actual Amount in Freely Defined Currency 1 |
+| `ActualValuationQuantity` |  | |  |  | `QUAN(23)` | Actual Valuation Quantity |
+| `ActualQuantityInBaseUnit` |  | |  |  | `QUAN(23)` | Actual Quantity in Base Unit |
+| `PlanAmountInTransactionCrcy` |  | |  |  | `CURR(23)` | Plan Amount in Transaction Currency |
+| `PlanAmountInCompanyCodeCrcy` |  | |  |  | `CURR(23)` | Plan Amount in Company Code Currency |
+| `PlanAmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Plan Amount in Global Currency |
+| `PlanAmountInFreeDefinedCrcy1` |  | |  |  | `CURR(23)` | Plan Amount in Freely Defined Currency 1 |
+| `PlanValuationQuantity` |  | |  |  | `QUAN(23)` | Plan Valuation Quantity |
+| `PlanPriceInGlobalCurrency` |  | |  |  | `CURR(23)` | Price in Global Currency |
+| `PlanPriceInCompanyCodeCurrency` |  | |  |  | `CURR(23)` | Price in Company Code Currency |
+| `PlanPriceInTransactionCurrency` |  | |  |  | `CURR(23)` | Price in Transaction Currency |
+| `ActlPlnDiffAmtInTransCrcy` |  | |  |  | `CURR(23)` | Actual plan difference in transaction currency |
+| `ActlPlnDiffAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` | Actual plan difference in company code currency |
+| `ActlPlnDiffAmtInGlobalCrcy` |  | |  |  | `CURR(23)` | Actual plan difference in global currency |
+| `ActlPlnDiffAmtInFreeDfndCrcy1` |  | |  |  | `CURR(23)` | Actual plan difference in freely defined currency 1 |
+| `ActlPanDiffValuationQuantity` |  | |  |  | `QUAN(23)` | Actual Plan Difference Valuation Quantity |
+| `CalendarYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `CalendarQuarter` |  | |  |  | `NUMC(1)` | Calendar Quarter |
+| `YearQuarter` |  | |  |  | `NUMC(5)` | Year Quarter |
+| `CalendarMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `YearMonth` |  | |  |  | `NUMC(6)` | Year Month |
+| `CalendarWeek` |  | |  |  | `NUMC(2)` | Calendar Week |
+| `YearWeek` |  | |  |  | `NUMC(6)` | Year Week |
+| `FiscalQuarter` |  | |  |  | `NUMC(1)` | Fiscal Quarter |
+| `FiscalWeek` |  | |  |  | `NUMC(2)` | Fiscal Week |
+| `FiscalYearQuarter` |  | |  |  | `NUMC(5)` | Fiscal Year + Fiscal Quarter |
+| `FiscalYearWeek` |  | |  |  | `NUMC(6)` | Fiscal Year + Fiscal Week |
 | `_CalendarMonth` | | ✓ | | | | |
 | `_CalendarQuarter` | | ✓ | | | | |
 | `_CalendarYearMonth` | | ✓ | | | | |

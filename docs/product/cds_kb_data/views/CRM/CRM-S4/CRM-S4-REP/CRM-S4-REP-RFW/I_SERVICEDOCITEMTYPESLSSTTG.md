@@ -39,10 +39,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocItemCategory` | ✓ | |  | `itm_type` |  |  |
-| `ItemIsBillingRelevant` |  | |  | `billing_relevant` |  |  |
-| `SrvcDocItemCategoryIsQuotation` |  | |  | `case is_quotation when '0' then ' ' when '2' then 'X' when '3' then ' ' else ' ' end` |  |  |
-| `SrvcDocQuotationItemIsCopied` |  | |  | `copy_quote` |  |  |
+| `ServiceDocItemCategory` | ✓ | |  | `itm_type` | `CHAR(4)` | Item Category |
+| `ItemIsBillingRelevant` |  | |  | `billing_relevant` | `CHAR(1)` | Billing Relevance |
+| `SrvcDocItemCategoryIsQuotation` |  | |  | `case is_quotation when '0' then ' ' when '2' then 'X' when '3' then ' ' else ' ' end` | `CHAR(1)` |  |
+| `SrvcDocQuotationItemIsCopied` |  | |  | `copy_quote` | `CHAR(1)` | Subsequent Processing for Quotation |
 | `_ServiceDocItemCategory` | | ✓ | | | | |
 
 ## Associations

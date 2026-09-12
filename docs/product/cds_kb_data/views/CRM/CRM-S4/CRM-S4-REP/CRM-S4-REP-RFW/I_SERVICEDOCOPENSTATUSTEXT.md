@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentIsOpen` | ✓ | |  | `domvalue_l` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `ServiceDocumentIsOpenName` |  | |  | `ddtext` |  |  |
+| `ServiceDocumentIsOpen` | ✓ | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `ServiceDocumentIsOpenName` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 | `_ServiceDocOpenStatus` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

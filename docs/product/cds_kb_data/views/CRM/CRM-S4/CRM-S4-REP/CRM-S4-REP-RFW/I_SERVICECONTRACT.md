@@ -39,62 +39,62 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceContract` | ✓ | |  | `ServiceDocument` |  |  |
-| `ServiceObjectType` |  | |  |  |  |  |
-| `ServiceContractUUID` |  | |  | `ServiceDocumentUUID` |  |  |
-| `ServiceContractCharUUID` |  | |  | `cast( ServiceDocumentCharUUID as sysuuid_c preserving type )` |  |  |
-| `ServiceDocumentType` |  | |  |  |  |  |
-| `ServiceContractDescription` |  | |  | `ServiceDocumentDescription` |  |  |
-| `Language` |  | |  |  |  |  |
-| `PostingDate` |  | |  |  |  |  |
-| `ServiceDocCreationDateTime` |  | |  |  |  |  |
-| `ServiceDocChangedDateTime` |  | |  |  |  |  |
-| `ServiceDocumentCreatedByUser` |  | |  |  |  |  |
-| `ServiceDocumentChangedByUser` |  | |  |  |  |  |
-| `PricingDocument` |  | |  |  |  |  |
-| `RefBusinessSolutionOrder` |  | |  |  |  |  |
-| `ServiceContractNetAmount` |  | |  | `ServiceDocNetAmount` |  |  |
-| `ServiceContractGrossAmount` |  | |  | `ServiceDocGrossAmount` |  |  |
-| `ServiceDocTaxAmount` |  | |  |  |  |  |
-| `SoldToParty` |  | |  |  |  |  |
-| `SoldToPartyRegion` |  | |  |  |  |  |
-| `SoldToPartyCountry` |  | |  |  |  |  |
-| `RespEmployeeBusinessPartnerId` |  | |  | `cast( ResponsibleEmployee as crmt_person_resp preserving type )` |  |  |
-| `ContactPersonBusinessPartnerId` |  | |  | `cast( ContactPerson as crmt_contact_person preserving type )` |  |  |
-| `ShipToParty` |  | |  |  |  |  |
-| `BillToParty` |  | |  |  |  |  |
-| `PayerParty` |  | |  |  |  |  |
-| `ServiceContractStartDateTime` |  | |  |  |  |  |
-| `ServiceContractEndDateTime` |  | |  |  |  |  |
-| `SrvcContrEarliestStartDateTime` |  | |  |  |  |  |
-| `SrvcContrLatestEndDateTime` |  | |  |  |  |  |
-| `PaymentTerms` |  | |  |  |  |  |
-| `PaymentMethod` |  | |  |  |  |  |
-| `SrvcSEPAMandateRelevance` |  | |  |  |  |  |
-| `SEPAMandate` |  | |  |  |  |  |
-| `WBSElementInternalID` |  | |  |  |  |  |
-| `TransactionCurrency` |  | |  |  |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
-| `ServiceContractRejectionReason` |  | |  | `ServiceDocumentRejectionReason` |  |  |
-| `Region` |  | |  |  |  |  |
-| `ServiceContractStatus` |  | |  | `ServiceDocumentStatus` |  |  |
-| `ServiceContractIsReleased` |  | |  | `ServiceDocumentIsReleased` |  |  |
-| `ServiceContractHasError` |  | |  | `ServiceDocumentHasError` |  |  |
-| `SrvcContrBillingStatus` |  | |  | `ServiceDocBillingStatus` |  |  |
-| `ServiceContractIsRejected` |  | |  | `ServiceDocumentIsRejected` |  |  |
-| `ServiceContractIsOpen` |  | |  | `ServiceDocumentIsOpen` |  |  |
-| `ServiceContractCanclnSts` |  | |  |  |  |  |
-| `SrvcContrRejectionStatus` |  | |  | `SrvcDocRejectionStatus` |  |  |
-| `SalesOrganization` |  | |  |  |  |  |
-| `SalesOffice` |  | |  |  |  |  |
-| `SalesGroup` |  | |  |  |  |  |
-| `Division` |  | |  |  |  |  |
-| `DistributionChannel` |  | |  |  |  |  |
-| `BillingBlockReason` |  | |  |  |  |  |
-| `ServiceContractCanclnParty` |  | |  | `ServiceDocumentCanclnParty` |  |  |
-| `ServiceContrCancellationReason` |  | |  | `ServiceDocumentCanclnReason` |  |  |
-| `SrvcContrCreditStatus` |  | |  | `SrvcDocCreditStatus` |  |  |
+| `ServiceContract` | ✓ | |  | `ServiceDocument` | `CHAR(10)` | Transaction ID |
+| `ServiceObjectType` |  | |  |  | `CHAR(10)` | Business Trans. Cat. |
+| `ServiceContractUUID` |  | |  | `ServiceDocumentUUID` | `RAW(16)` | GUID of a CRM Order Object |
+| `ServiceContractCharUUID` |  | |  | `cast( ServiceDocumentCharUUID as sysuuid_c preserving type )` | `CHAR(32)` | UUID in Character Format |
+| `ServiceDocumentType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `ServiceContractDescription` |  | |  | `ServiceDocumentDescription` | `CHAR(40)` | Transaction Description |
+| `Language` |  | |  |  | `LANG(1)` | Language Key of Description |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date for a Business Transaction |
+| `ServiceDocCreationDateTime` |  | |  |  | `DEC(15)` | Created At |
+| `ServiceDocChangedDateTime` |  | |  |  | `DEC(15)` | Changed At |
+| `ServiceDocumentCreatedByUser` |  | |  |  | `CHAR(12)` | User that Created the Transaction |
+| `ServiceDocumentChangedByUser` |  | |  |  | `CHAR(12)` | Transaction Last Changed By |
+| `PricingDocument` |  | |  |  | `CHAR(10)` | Number of the Document Condition |
+| `RefBusinessSolutionOrder` |  | |  |  | `CHAR(10)` | Reference Solution Order ID |
+| `ServiceContractNetAmount` |  | |  | `ServiceDocNetAmount` | `CURR(15)` | Total Net Value of Document in Document Currency |
+| `ServiceContractGrossAmount` |  | |  | `ServiceDocGrossAmount` | `CURR(15)` | Total Gross Value of Document in Document Currency |
+| `ServiceDocTaxAmount` |  | |  |  | `CURR(15)` | Total Tax Amount in Document Currency |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-To Party |
+| `SoldToPartyRegion` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `SoldToPartyCountry` |  | |  |  | `CHAR(3)` | Country/Region |
+| `RespEmployeeBusinessPartnerId` |  | |  | `cast( ResponsibleEmployee as crmt_person_resp preserving type )` | `CHAR(10)` | Employee Responsible |
+| `ContactPersonBusinessPartnerId` |  | |  | `cast( ContactPerson as crmt_contact_person preserving type )` | `CHAR(10)` | Customer Contact Person |
+| `ShipToParty` |  | |  |  | `CHAR(10)` | Ship-To Party |
+| `BillToParty` |  | |  |  | `CHAR(10)` | Bill-To Party |
+| `PayerParty` |  | |  |  | `CHAR(10)` | Payer |
+| `ServiceContractStartDateTime` |  | |  |  | `DEC(15)` | Contract Start date |
+| `ServiceContractEndDateTime` |  | |  |  | `DEC(15)` | Contract End Date |
+| `SrvcContrEarliestStartDateTime` |  | |  |  | `DEC(15)` | Earliest Start Date for Service Contract |
+| `SrvcContrLatestEndDateTime` |  | |  |  | `DEC(15)` | Latest End Date for Service Contract |
+| `PaymentTerms` |  | |  |  | `CHAR(4)` | Terms of Payment |
+| `PaymentMethod` |  | |  |  | `CHAR(1)` | Payment Method |
+| `SrvcSEPAMandateRelevance` |  | |  |  | `CHAR(1)` | Indicator for SEPA-Relevant Transactions |
+| `SEPAMandate` |  | |  |  | `CHAR(35)` | Unique Reference to Mandate per Payment Recipient |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `PurchaseOrderByCustomer` |  | |  |  | `CHAR(35)` | Sold-To Party's External Reference Number |
+| `CustomerPurchaseOrderDate` |  | |  |  | `DATS(8)` | Reference Document Date |
+| `ServiceContractRejectionReason` |  | |  | `ServiceDocumentRejectionReason` | `CHAR(2)` | Cancellation Reason Code |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `ServiceContractStatus` |  | |  | `ServiceDocumentStatus` | `CHAR(4)` | Life Cycle Status |
+| `ServiceContractIsReleased` |  | |  | `ServiceDocumentIsReleased` | `CHAR(1)` | Release Status |
+| `ServiceContractHasError` |  | |  | `ServiceDocumentHasError` | `CHAR(1)` | Error Status |
+| `SrvcContrBillingStatus` |  | |  | `ServiceDocBillingStatus` | `CHAR(1)` | Billing Status |
+| `ServiceContractIsRejected` |  | |  | `ServiceDocumentIsRejected` | `CHAR(1)` | Cancellation Status |
+| `ServiceContractIsOpen` |  | |  | `ServiceDocumentIsOpen` | `CHAR(1)` | Status "Open" |
+| `ServiceContractCanclnSts` |  | |  |  | `CHAR(1)` | Contract Cancellation Status |
+| `SrvcContrRejectionStatus` |  | |  | `SrvcDocRejectionStatus` | `CHAR(1)` | Rejection Status |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `SalesOffice` |  | |  |  | `CHAR(4)` | Sales Office |
+| `SalesGroup` |  | |  |  | `CHAR(3)` | Sales Group |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `BillingBlockReason` |  | |  |  | `CHAR(2)` | Business Partner: Billing Block Reason |
+| `ServiceContractCanclnParty` |  | |  | `ServiceDocumentCanclnParty` | `CHAR(4)` | Cancelling Party |
+| `ServiceContrCancellationReason` |  | |  | `ServiceDocumentCanclnReason` | `CHAR(4)` | CRM Service : Reason for Cancellation |
+| `SrvcContrCreditStatus` |  | |  | `SrvcDocCreditStatus` | `CHAR(1)` | Credit Status of Header |
 | `_RespEmployee` | | ✓ | | | | |
 | `_ContactPerson` | | ✓ | | | | |
 | `_PaymentMethod` | | ✓ | | | | |

@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SrvcProductHierarchy` | ✓ | |  | `cast ( ProductHierarchy as abap.char(20) )` |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `SrvcProductHierarchyText` |  | |  | `ProductHierarchyText` |  |  |
+| `SrvcProductHierarchy` | ✓ | |  | `cast ( ProductHierarchy as abap.char(20) )` | `CHAR(20)` |  |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `SrvcProductHierarchyText` |  | |  | `ProductHierarchyText` | `CHAR(40)` | Product Hierarchy Text |
 | `_SrvcMgmtProductHierarchy` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

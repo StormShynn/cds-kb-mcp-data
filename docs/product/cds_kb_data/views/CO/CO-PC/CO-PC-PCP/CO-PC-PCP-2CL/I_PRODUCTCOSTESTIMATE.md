@@ -40,82 +40,82 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostingReferenceObject` | ✓ | |  |  |  |  |
-| `CostEstimate` | ✓ | |  |  |  |  |
-| `CostingType` | ✓ | |  |  |  |  |
-| `CostingDate` | ✓ | |  |  |  |  |
-| `CostingVersion` | ✓ | |  |  |  |  |
-| `ValuationVariant` | ✓ | |  |  |  |  |
-| `CostIsEnteredManually` | ✓ | |  |  |  |  |
-| `Product` |  | |  |  |  |  |
-| `Plant` |  | |  |  |  |  |
-| `ValuationArea` |  | |  |  |  |  |
-| `ValuationType` |  | |  |  |  |  |
-| `ControllingArea` |  | |  |  |  |  |
-| `CompanyCode` |  | | `_ValuationArea` | `CompanyCode` |  |  |
-| `CostEstimateValidityStartDate` |  | |  |  |  |  |
-| `CostEstimateValidityEndDate` |  | |  |  |  |  |
-| `ValuationDate` |  | |  |  |  |  |
-| `QuantityStructureDate` |  | |  |  |  |  |
-| `ProductionVersion` |  | |  |  |  |  |
-| `BillOfMaterial` |  | |  |  |  |  |
-| `ProductBOMUsage` |  | |  |  |  |  |
-| `AlternativeBillOfMaterial` |  | |  |  |  |  |
-| `TaskListGroup` |  | |  |  |  |  |
-| `TaskListType` |  | |  |  |  |  |
-| `TaskListGroupCounter` |  | |  |  |  |  |
-| `CostingItemIsProductComp` |  | |  |  |  |  |
-| `CostEstIsMarkedForDeletion` |  | |  |  |  |  |
-| `CostingLotSize` |  | |  |  |  |  |
-| `ValuationQuantityUnit` |  | |  |  |  |  |
-| `CostEstimateCreatedByUser` |  | |  |  |  |  |
-| `AdditiveCostCreatedByUser` |  | |  |  |  |  |
-| `CostEstimateCreationDate` |  | |  |  |  |  |
-| `CostEstimateMarkingDate` |  | |  |  |  |  |
-| `CostEstimateMarkingUser` |  | |  | `CostEstimateMarkedByUser` |  |  |
-| `CostEstimateMarkedByUser` |  | |  |  |  |  |
-| `CostEstimateReleaseDate` |  | |  |  |  |  |
-| `CostEstimateReleaseUser` |  | |  | `CostEstimateReleasedByUser` |  |  |
-| `CostEstimateReleasedByUser` |  | |  |  |  |  |
-| `CostEstimateStatus` |  | |  |  |  |  |
-| `CostingErrorMessageType` |  | |  |  |  |  |
-| `CostEstimateIsReleased` |  | |  |  |  |  |
-| `CostEstIsMixedCosting` |  | |  |  |  |  |
-| `CostEstimateIsForProcmtAltv` |  | |  |  |  |  |
-| `ProcmtAltvCostEstimate` |  | |  |  |  |  |
-| `ProcessCategory` |  | |  |  |  |  |
-| `CostgMixingRatioValue` |  | |  |  |  |  |
-| `ProcmtAltvValuationVariant` |  | |  |  |  |  |
-| `SpecialProcurementType` |  | |  |  |  |  |
-| `ProductProcurementType` |  | |  |  |  |  |
-| `SpecialProcurementPlant` |  | |  |  |  |  |
-| `CostingSheet` |  | |  |  |  |  |
-| `CostingOverheadType` |  | |  |  |  |  |
-| `ProductValuationStrategy` |  | |  |  |  |  |
-| `ProductValnPurgInfoRecdStrgy` |  | |  |  |  |  |
-| `CostingVariant` |  | |  |  |  |  |
-| `Ledger` |  | |  |  |  |  |
-| `ReferenceLedger` |  | |  |  |  |  |
-| `CostingOverheadGroup` |  | |  |  |  |  |
-| `CostingOverhead` |  | |  |  |  |  |
-| `PostingPeriod` |  | |  |  |  |  |
-| `PostingFiscalYear` |  | |  |  |  |  |
-| `CostingErrorLogID` |  | |  |  |  |  |
-| `CostEstimateTransferControl` |  | |  |  |  |  |
-| `LowLevelCode` |  | |  |  |  |  |
-| `CostEstimateCostingLevel` |  | |  |  |  |  |
-| `CostComponentStructure` |  | |  |  |  |  |
-| `AuxiliaryCostCompStructure` |  | |  |  |  |  |
-| `BusinessArea` |  | |  |  |  |  |
-| `ProfitCenter` |  | |  |  |  |  |
-| `CompanyCodeCurrency` |  | |  |  |  |  |
-| `ControllingAreaCurrency` |  | |  |  |  |  |
-| `ExchangeRateType` |  | |  |  |  |  |
-| `ComponentBreakdown` |  | |  |  |  |  |
-| `EstimatedCostCostingRun` |  | |  |  |  |  |
-| `EstimatedCostCostingRunDate` |  | |  |  |  |  |
-| `ConfiguredProduct` |  | |  |  |  |  |
-| `ProductIsCostedWithQtyStruc` |  | |  |  |  |  |
+| `CostingReferenceObject` | ✓ | |  |  | `CHAR(1)` | Reference Object |
+| `CostEstimate` | ✓ | |  |  | `NUMC(12)` | Cost Estimate |
+| `CostingType` | ✓ | |  |  | `CHAR(2)` | Costing Type |
+| `CostingDate` | ✓ | |  |  | `DATS(8)` | Costing Date (Key) |
+| `CostingVersion` | ✓ | |  |  | `NUMC(2)` | Costing Version |
+| `ValuationVariant` | ✓ | |  |  | `CHAR(3)` | Valuation Variant in Costing |
+| `CostIsEnteredManually` | ✓ | |  |  | `CHAR(1)` | Costs Entered Manually in Additive or Automatic Cost Est. |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `ValuationArea` |  | |  |  | `CHAR(4)` | Valuation Area |
+| `ValuationType` |  | |  |  | `CHAR(10)` | Valuation Type |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `CompanyCode` |  | | `_ValuationArea` | `CompanyCode` | `CHAR(4)` | Company Code |
+| `CostEstimateValidityStartDate` |  | |  |  | `DATS(8)` | Costing Date From |
+| `CostEstimateValidityEndDate` |  | |  |  | `DATS(8)` | Costing Date To |
+| `ValuationDate` |  | |  |  | `DATS(8)` | Valuation Date of a Cost Estimate |
+| `QuantityStructureDate` |  | |  |  | `DATS(8)` | Quantity Structure Date for Costing |
+| `ProductionVersion` |  | |  |  | `CHAR(4)` | Production Version |
+| `BillOfMaterial` |  | |  |  | `CHAR(8)` | Bill of Material |
+| `ProductBOMUsage` |  | |  |  | `CHAR(1)` | BOM Usage |
+| `AlternativeBillOfMaterial` |  | |  |  | `CHAR(2)` | Alternative BOM |
+| `TaskListGroup` |  | |  |  | `CHAR(8)` | Key for Task List Group |
+| `TaskListType` |  | |  |  | `CHAR(1)` | Task List Type |
+| `TaskListGroupCounter` |  | |  |  | `CHAR(2)` | Group Counter |
+| `CostingItemIsProductComp` |  | |  |  | `CHAR(1)` | Material Component |
+| `CostEstIsMarkedForDeletion` |  | |  |  | `CHAR(1)` | Deletion Indicator for Product Costing |
+| `CostingLotSize` |  | |  |  | `QUAN(13)` | Lot Size for Product Costing |
+| `ValuationQuantityUnit` |  | |  |  | `UNIT(3)` | Valuation Unit of Measure |
+| `CostEstimateCreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `AdditiveCostCreatedByUser` |  | |  |  | `CHAR(12)` | User ID of Person Who Created Additive Cost Estimate |
+| `CostEstimateCreationDate` |  | |  |  | `DATS(8)` | Date on Which Cost Estimate Was Created |
+| `CostEstimateMarkingDate` |  | |  |  | `DATS(8)` | Date on Which Cost Estimate Was Marked |
+| `CostEstimateMarkingUser` |  | |  | `CostEstimateMarkedByUser` | `CHAR(12)` | User Who Marked Cost Estimate in Material Master |
+| `CostEstimateMarkedByUser` |  | |  |  | `CHAR(12)` | User Who Marked Cost Estimate in Material Master |
+| `CostEstimateReleaseDate` |  | |  |  | `DATS(8)` | Date on Which Cost Estimate Released in Material Master |
+| `CostEstimateReleaseUser` |  | |  | `CostEstimateReleasedByUser` | `CHAR(12)` | User Who Released Cost Estimate in Material Master Record |
+| `CostEstimateReleasedByUser` |  | |  |  | `CHAR(12)` | User Who Released Cost Estimate in Material Master Record |
+| `CostEstimateStatus` |  | |  |  | `CHAR(2)` | Costing Status |
+| `CostingErrorMessageType` |  | |  |  | `CHAR(1)` | Message Type |
+| `CostEstimateIsReleased` |  | |  |  | `CHAR(1)` | Release of Standard Cost Estimate |
+| `CostEstIsMixedCosting` |  | |  |  | `CHAR(1)` | Mixed Costing Indicator |
+| `CostEstimateIsForProcmtAltv` |  | |  |  | `CHAR(1)` | Cost Estimate for a Procurement Alternative |
+| `ProcmtAltvCostEstimate` |  | |  |  | `NUMC(12)` | Cost Estimate Number of Procurement Alternative |
+| `ProcessCategory` |  | |  |  | `CHAR(4)` | Process Category |
+| `CostgMixingRatioValue` |  | |  |  | `DEC(13)` | Mixed Costing: Mixing Ratio |
+| `ProcmtAltvValuationVariant` |  | |  |  | `CHAR(3)` | Valuation Variant of Procurement Alternative |
+| `SpecialProcurementType` |  | |  |  | `CHAR(2)` | Special Procurement Key for the Costing Object |
+| `ProductProcurementType` |  | |  |  | `CHAR(1)` | Special procurement type |
+| `SpecialProcurementPlant` |  | |  |  | `CHAR(4)` | Special Procurement Plant - Costing |
+| `CostingSheet` |  | |  |  | `CHAR(6)` | Costing Sheet for Calculating Overhead |
+| `CostingOverheadType` |  | |  |  | `CHAR(1)` | Overhead Type |
+| `ProductValuationStrategy` |  | |  |  | `CHAR(1)` | Valuation Strategy for Raw Materials and Purchased Parts |
+| `ProductValnPurgInfoRecdStrgy` |  | |  |  | `CHAR(1)` | Substrategy for Material Valuat. with Purchasing Info Record |
+| `CostingVariant` |  | |  |  | `CHAR(4)` | Costing Variant |
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `ReferenceLedger` |  | |  |  | `CHAR(2)` | GL ledger to which a cost esatimate refers to |
+| `CostingOverheadGroup` |  | |  |  | `CHAR(10)` | Costing Overhead Group |
+| `CostingOverhead` |  | |  |  | `CHAR(6)` | Overhead key |
+| `PostingPeriod` |  | |  |  | `NUMC(3)` | Posting Period |
+| `PostingFiscalYear` |  | |  |  | `NUMC(4)` | Posting Date YYYY |
+| `CostingErrorLogID` |  | |  |  | `NUMC(12)` | Error Management Number |
+| `CostEstimateTransferControl` |  | |  |  | `CHAR(4)` | Transfer Control |
+| `LowLevelCode` |  | |  |  | `CHAR(3)` | Low-Level Code |
+| `CostEstimateCostingLevel` |  | |  |  | `NUMC(4)` | Costing Level |
+| `CostComponentStructure` |  | |  |  | `CHAR(2)` | Cost Component Structure - CGM and Sales/Administr. Costs |
+| `AuxiliaryCostCompStructure` |  | |  |  | `CHAR(2)` | Cost Component Structure for Auxiliary Cost Component Split |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `ControllingAreaCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `ExchangeRateType` |  | |  |  | `CHAR(4)` | Exchange Rate Type |
+| `ComponentBreakdown` |  | |  |  | `CHAR(16)` | Breakdown ID |
+| `EstimatedCostCostingRun` |  | |  |  | `CHAR(8)` | Name of Costing Run |
+| `EstimatedCostCostingRunDate` |  | |  |  | `DATS(8)` | Costing Run Date |
+| `ConfiguredProduct` |  | |  |  | `CHAR(40)` | Configured Material (Variant) |
+| `ProductIsCostedWithQtyStruc` |  | |  |  | `CHAR(1)` | Material Is Costed with Quantity Structure |
 | `_ProductCostEstimateItem` | | ✓ | | | | |
 | `_Product` | | ✓ | | | | |
 | `_ProductText` | | ✓ | | | | |

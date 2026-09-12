@@ -38,17 +38,17 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceContract` | ✓ | |  |  |  |  |
-| `ServiceContractItem` | ✓ | |  |  |  |  |
-| `ServiceObjectType` |  | |  |  |  |  |
-| `ServiceContractItemDescription` |  | |  |  |  |  |
-| `ServiceDocumentType` |  | |  |  |  |  |
-| `RespEmployeeBusinessPartnerId` |  | |  |  |  |  |
-| `SalesOrganization` |  | |  |  |  |  |
-| `DistributionChannel` |  | |  |  |  |  |
-| `Division` |  | |  |  |  |  |
-| `SalesOffice` |  | |  |  |  |  |
-| `SalesGroup` |  | |  |  |  |  |
+| `ServiceContract` | ✓ | |  |  | `CHAR(10)` | Transaction ID |
+| `ServiceContractItem` | ✓ | |  |  | `NUMC(6)` | Shortened Item Number in Document |
+| `ServiceObjectType` |  | |  |  | `CHAR(10)` | Business Trans. Cat. |
+| `ServiceContractItemDescription` |  | |  |  | `CHAR(40)` | Product Description |
+| `ServiceDocumentType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `RespEmployeeBusinessPartnerId` |  | |  |  | `CHAR(10)` | Employee Responsible |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `SalesOffice` |  | |  |  | `CHAR(4)` | Sales Office |
+| `SalesGroup` |  | |  |  | `CHAR(3)` | Sales Group |
 | `_ServiceContractItemEnhcd` | | ✓ | | | | |
 | `_ServiceContract` | | ✓ | | | | |
 | `_ServiceObjType` | | ✓ | | | | |

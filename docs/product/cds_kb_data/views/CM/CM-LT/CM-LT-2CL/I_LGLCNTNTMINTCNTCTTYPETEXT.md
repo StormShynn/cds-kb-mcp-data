@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LglCntntMIntCntctType` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `LglCntntMIntCntctTypeName` |  | |  |  |  |  |
+| `LglCntntMIntCntctType` | ✓ | |  |  | `CHAR(4)` | Contact Type |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `LglCntntMIntCntctTypeName` |  | |  |  | `CHAR(40)` | Long Text |
 
 ## Source Code
 

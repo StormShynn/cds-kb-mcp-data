@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SlsOrdProjValnStrategy` | ✓ | |  | `cast( cast ( substring( domvalue_l, 1, 1) as abap.char( 1 ) ) as fpc_val_strat_sls_order )` |  |  |
+| `SlsOrdProjValnStrategy` | ✓ | |  | `cast( cast ( substring( domvalue_l, 1, 1) as abap.char( 1 ) ) as fpc_val_strat_sls_order )` | `CHAR(1)` | Valuation Strategy for Material in Valuated Special Stock |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

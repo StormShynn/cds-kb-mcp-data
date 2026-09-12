@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentStatus` | ✓ | |  | `cast(CustMgmtLifecycleUserStatus as crms4_stat_lifecycle preserving type )` |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `ServiceDocumentStatusName` |  | |  | `cast(CustMgmtLifecycleUserStsName as crms4_stat_lifecycle_desc )` |  |  |
+| `ServiceDocumentStatus` | ✓ | |  | `cast(CustMgmtLifecycleUserStatus as crms4_stat_lifecycle preserving type )` | `CHAR(4)` | Life Cycle Status |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key of Description |
+| `ServiceDocumentStatusName` |  | |  | `cast(CustMgmtLifecycleUserStsName as crms4_stat_lifecycle_desc )` | `CHAR(60)` | Lifecycle Status Description |
 | `_ServiceDocumentStatus` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

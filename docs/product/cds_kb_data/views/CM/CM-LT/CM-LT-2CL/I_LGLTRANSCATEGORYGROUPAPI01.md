@@ -38,10 +38,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LegalTransactionCatGroupUUID` | ✓ | |  |  |  |  |
-| `LegalTransactionUUID` |  | |  |  |  |  |
-| `LglCntntMCatGroupTitle` |  | |  |  |  |  |
-| `LglCntntMIndex` |  | |  |  |  |  |
+| `LegalTransactionCatGroupUUID` | ✓ | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransactionUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglCntntMCatGroupTitle` |  | |  |  | `CHAR(128)` | Legal Transaction Name |
+| `LglCntntMIndex` |  | |  |  | `INT1(3)` | Index |
 | `_LegalTransaction` | | ✓ | | | | |
 | `_LglTransParentCategory` | | ✓ | | | | |
 

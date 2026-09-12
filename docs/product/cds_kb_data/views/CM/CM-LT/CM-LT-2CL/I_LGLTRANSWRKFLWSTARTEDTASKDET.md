@@ -39,18 +39,18 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LegalTransactionTask` | ✓ | |  |  |  |  |
-| `LegalTransactionUUID` | ✓ | |  |  |  |  |
-| `LegalTransaction` |  | |  |  |  |  |
-| `LegalTransactionTitle` |  | |  |  |  |  |
-| `LglTransTskCrtnUTCDteTme` |  | |  |  |  |  |
-| `LglCntntMTaskCompltnUTCDteTme` |  | |  |  |  |  |
-| `LegalTransactionTaskStatus` |  | |  |  |  |  |
-| `LegalTransactionTaskStatusName` |  | |  |  |  |  |
-| `LegalTransactionTaskCurUsr` |  | |  |  |  |  |
-| `LegalTransactionTaskCurUsrName` |  | | `_User` | `UserDescription` |  |  |
-| `WorkflowTaskResult` |  | |  |  |  |  |
-| `WorkflowStepResultText` |  | |  | `_WorkflowTaskStepResult[1:Language=$session.system_language].WorkflowStepResultText` |  |  |
+| `LegalTransactionTask` | ✓ | |  |  | `NUMC(12)` | Work Item ID |
+| `LegalTransactionUUID` | ✓ | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransaction` |  | |  |  | `CHAR(10)` | Legal Transaction ID |
+| `LegalTransactionTitle` |  | |  |  | `CHAR(128)` | Legal Transaction Name |
+| `LglTransTskCrtnUTCDteTme` |  | |  |  | `DEC(21)` | Workflow: Creation Time Stamp |
+| `LglCntntMTaskCompltnUTCDteTme` |  | |  |  | `DEC(21)` | Workflow: Timestamp completion |
+| `LegalTransactionTaskStatus` |  | |  |  | `CHAR(12)` | Processing Status of a Work Item |
+| `LegalTransactionTaskStatusName` |  | |  |  | `CHAR(20)` | Workflow: Work Item Status |
+| `LegalTransactionTaskCurUsr` |  | |  |  | `CHAR(12)` | Actual Agent of Work Item |
+| `LegalTransactionTaskCurUsrName` |  | | `_User` | `UserDescription` | `CHAR(80)` | User Description |
+| `WorkflowTaskResult` |  | |  |  | `CHAR(255)` | Workflow: Returncode flexible workflow |
+| `WorkflowStepResultText` |  | |  | `_WorkflowTaskStepResult[1:Language=$session.system_language].WorkflowStepResultText` | `CHAR(80)` | Language-dependent text of a workflow definition |
 | `WorkflowTaskResultComment` |  | |  |  |  |  |
 | `_LegalTransaction` | | ✓ | | | | |
 

@@ -40,29 +40,29 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  | `cast( kokrs as fis_kokrs preserving type )` |  |  |
-| `CostCtrActivityType` | ✓ | |  | `lstar` |  |  |
-| `ValidityEndDate` | ✓ | |  | `datbi` |  |  |
-| `ValidityStartDate` |  | |  | `datab` |  |  |
-| `CostCtrActivityTypeQtyUnit` |  | |  | `leinh` |  |  |
-| `CostCtrActivityTypeCategory` |  | |  | `latyp` |  |  |
-| `AllocationCostElement` |  | |  | `vksta` |  |  |
-| `CostCtrActivityTypeOutpQtyUnit` |  | |  | `auseh` |  |  |
-| `CreationDate` |  | |  | `ersda` |  |  |
-| `EnteredByUser` |  | |  | `usnam` |  |  |
-| `CostOriginGroup` |  | |  | `hrkft` |  |  |
-| `ActlPostgCostCenterActyTypeCat` |  | |  | `latypi` |  |  |
-| `OutputQuantityFactor` |  | |  | `ausfk` |  |  |
-| `ActivityTypeIsBlocked` |  | |  | `sprkz` |  |  |
-| `FixedCostIsPredistributed` |  | |  | `fixvo` |  |  |
-| `PriceAllocationMethod` |  | |  | `tarkz` |  |  |
-| `PeriodPriceIsAverage` |  | |  | `yrate` |  |  |
-| `ActualPriceAllocationMethod` |  | |  | `tarkz_i` |  |  |
-| `ActualQuantityIsSetManually` |  | |  | `manist` |  |  |
-| `PlanQuantityIsSetManually` |  | |  | `manplan` |  |  |
-| `CostCtrActivityTypeValidCat` |  | |  | `kstty` |  |  |
-| `CostCtrActyTypeIsCtrlgRlvtComp` |  | |  | `lark1` |  |  |
-| `CostCtrActyTypeIsHumRsceRlvt` |  | |  | `lark2` |  |  |
+| `ControllingArea` | ✓ | |  | `cast( kokrs as fis_kokrs preserving type )` | `CHAR(4)` | Controlling Area |
+| `CostCtrActivityType` | ✓ | |  | `lstar` | `CHAR(6)` | Activity Type |
+| `ValidityEndDate` | ✓ | |  | `datbi` | `DATS(8)` | Valid To Date |
+| `ValidityStartDate` |  | |  | `datab` | `DATS(8)` | Valid-From Date |
+| `CostCtrActivityTypeQtyUnit` |  | |  | `leinh` | `UNIT(3)` | Activity Unit |
+| `CostCtrActivityTypeCategory` |  | |  | `latyp` | `CHAR(1)` | Activity Type Category |
+| `AllocationCostElement` |  | |  | `vksta` | `CHAR(10)` | Allocation Cost Element |
+| `CostCtrActivityTypeOutpQtyUnit` |  | |  | `auseh` | `UNIT(3)` | Output Unit |
+| `CreationDate` |  | |  | `ersda` | `DATS(8)` | Entered On |
+| `EnteredByUser` |  | |  | `usnam` | `CHAR(12)` | Entered By |
+| `CostOriginGroup` |  | |  | `hrkft` | `CHAR(4)` | Origin Group as Subdivision of Cost Element |
+| `ActlPostgCostCenterActyTypeCat` |  | |  | `latypi` | `CHAR(1)` | Variant Activity Type Category for Actual Postings |
+| `OutputQuantityFactor` |  | |  | `ausfk` | `DEC(5)` | Output factor |
+| `ActivityTypeIsBlocked` |  | |  | `sprkz` | `CHAR(1)` | Lock Indicator |
+| `FixedCostIsPredistributed` |  | |  | `fixvo` | `CHAR(1)` | Predistribution of fixed costs for acty type/bus. process |
+| `PriceAllocationMethod` |  | |  | `tarkz` | `CHAR(3)` | Price Indicator: Calculate Allocation Price |
+| `PeriodPriceIsAverage` |  | |  | `yrate` | `CHAR(1)` | Price Calculation with Period-Based Average Prices |
+| `ActualPriceAllocationMethod` |  | |  | `tarkz_i` | `CHAR(3)` | Indicator: Actual Allocation Price |
+| `ActualQuantityIsSetManually` |  | |  | `manist` | `CHAR(1)` | Indicator: Confirm quantity manually in actual |
+| `PlanQuantityIsSetManually` |  | |  | `manplan` | `CHAR(1)` | Indicator: Plan quantity manually set. |
+| `CostCtrActivityTypeValidCat` |  | |  | `kstty` | `CHAR(8)` | Valid Cost Center Categories |
+| `CostCtrActyTypeIsCtrlgRlvtComp` |  | |  | `lark1` | `CHAR(1)` | Indicator for component relevancy CO |
+| `CostCtrActyTypeIsHumRsceRlvt` |  | |  | `lark2` | `CHAR(1)` | Indicator: Component Relevance, HR |
 | `_ControllingAreaText` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |
 | `_ControllingArea` | | ✓ | | | | |

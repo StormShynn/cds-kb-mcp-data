@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EstimatedCostCostingRun` | ✓ | |  |  |  |  |
-| `EstimatedCostCostingRunDate` | ✓ | |  |  |  |  |
-| `CostingVersion` | ✓ | |  |  |  |  |
-| `EstimatedCostCostingRunDesc` |  | |  | `cast(EstimatedCostCostingRunDesc as fpc_costing_run_description preserving type)` |  |  |
+| `EstimatedCostCostingRun` | ✓ | |  |  | `CHAR(8)` | Name of Costing Run |
+| `EstimatedCostCostingRunDate` | ✓ | |  |  | `DATS(8)` | Costing Run Date |
+| `CostingVersion` | ✓ | |  |  | `NUMC(2)` | Costing Version |
+| `EstimatedCostCostingRunDesc` |  | |  | `cast(EstimatedCostCostingRunDesc as fpc_costing_run_description preserving type)` | `CHAR(50)` | Description of Costing Run |
 
 ## Source Code
 

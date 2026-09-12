@@ -39,15 +39,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LglTransWrkFlwModInstce` | ✓ | |  | `cast( LglTransWrkFlwModInstce as lcm_uuid_c32 )` |  |  |
-| `LegalTransactionUUID` |  | |  |  |  |  |
-| `LglTransWrkFlwCreatedByUser` |  | |  |  |  |  |
-| `LglCntntMGovLaw` |  | | `_LegalTransaction` | `LglCntntMGovLaw` |  |  |
-| `LglCntntMProfile` |  | | `_LegalTransaction` | `LglCntntMProfile` |  |  |
-| `LglTransAccessLvl` |  | | `_LegalTransaction` | `LglTransAccessLvl` |  |  |
-| `LglCntntMMainOrgCoCode` |  | | `_LegalTransaction` | `LglCntntMMainOrgCoCode` |  |  |
-| `LglCntntMMainOrgSalesOrg` |  | | `_LegalTransaction` | `LglCntntMMainOrgSalesOrg` |  |  |
-| `LglCntntMMainOrgPurOrg` |  | | `_LegalTransaction` | `LglCntntMMainOrgPurOrg` |  |  |
+| `LglTransWrkFlwModInstce` | ✓ | |  | `cast( LglTransWrkFlwModInstce as lcm_uuid_c32 )` | `CHAR(32)` | UUID Char32 |
+| `LegalTransactionUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglTransWrkFlwCreatedByUser` |  | |  |  | `CHAR(12)` | User Who Created the Work Item |
+| `LglCntntMGovLaw` |  | | `_LegalTransaction` | `LglCntntMGovLaw` | `CHAR(7)` | Governing Law |
+| `LglCntntMProfile` |  | | `_LegalTransaction` | `LglCntntMProfile` | `CHAR(10)` | Profile |
+| `LglTransAccessLvl` |  | | `_LegalTransaction` | `LglTransAccessLvl` | `CHAR(4)` | Access Level |
+| `LglCntntMMainOrgCoCode` |  | | `_LegalTransaction` | `LglCntntMMainOrgCoCode` | `CHAR(10)` | Entity ID |
+| `LglCntntMMainOrgSalesOrg` |  | | `_LegalTransaction` | `LglCntntMMainOrgSalesOrg` | `CHAR(10)` | Entity ID |
+| `LglCntntMMainOrgPurOrg` |  | | `_LegalTransaction` | `LglCntntMMainOrgPurOrg` | `CHAR(10)` | Entity ID |
 | `_LegalTransaction` | | ✓ | | | | |
 
 ## Associations

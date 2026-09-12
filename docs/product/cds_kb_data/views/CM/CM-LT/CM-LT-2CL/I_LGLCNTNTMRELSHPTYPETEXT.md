@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LglCntntMRelshpType` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `LglCntntMRelTypeName` |  | |  |  |  |  |
+| `LglCntntMRelshpType` | ✓ | |  |  | `CHAR(4)` | Relationship Type |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `LglCntntMRelTypeName` |  | |  |  | `CHAR(40)` | Relationship Type Name |
 
 ## Source Code
 

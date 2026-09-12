@@ -37,8 +37,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessActivityCategory` | ✓ | |  | `category` |  |  |
-| `BusinessActivityClass` |  | |  | `class` |  |  |
+| `BusinessActivityCategory` | ✓ | |  | `category` | `CHAR(3)` | Activity Category (Communication Type) |
+| `BusinessActivityClass` |  | |  | `class` | `CHAR(1)` | Activity Class |
 | `_BusinessActivityCategoryText` | | ✓ | | | | |
 
 ## Associations

@@ -39,39 +39,39 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EventBasedDistrPostingRuleUUID` | ✓ | |  |  |  |  |
-| `OrderID` |  | |  |  |  |  |
-| `OrderItem` |  | |  |  |  |  |
-| `EventBasedDistributionRuleSqnc` |  | |  |  |  |  |
-| `CompanyCode` |  | | `_ManufacturingOrder` | `CompanyCode` |  |  |
-| `ProductionPlant` |  | | `_ManufacturingOrder` | `ProductionPlant` |  |  |
-| `EventBasedDistributionType` |  | |  |  |  |  |
-| `EvtBsdDistrSourceStructure` |  | |  |  |  |  |
-| `EvtBsdDistrSourceAssignment` |  | |  |  |  |  |
-| `EventBasedDistrRateInPercent` |  | |  |  |  |  |
-| `EvtBsdDistrEquivalenceFactor` |  | |  |  |  |  |
-| `EventBasedDistributionDfltRule` |  | |  |  |  |  |
-| `OrderCategory` |  | |  |  |  |  |
-| `SalesOrder` |  | |  |  |  |  |
-| `SalesOrderItem` |  | |  |  |  |  |
-| `WBSElementInternalID` |  | |  |  |  |  |
-| `WBSElementExternalID` |  | | `_WBSElementBasicData` | `WBSElementExternalID` |  |  |
-| `PartnerControllingObjectType` |  | |  |  |  |  |
-| `EvtBsdPostingRuleReceiver` |  | |  |  |  |  |
-| `EvtBsdPostingRuleReceiverText` |  | |  |  |  |  |
-| `EvtBsdDistrTracingFctrDetnMeth` |  | |  |  |  |  |
-| `MfgOrdNonMatlRcvrAcctDetnMeth` |  | |  |  |  |  |
-| `EnteredByUser` |  | |  |  |  |  |
-| `CreationDate` |  | |  |  |  |  |
-| `CreationTime` |  | |  |  |  |  |
-| `LastChangedByUser` |  | |  |  |  |  |
-| `LastChangeDate` |  | |  |  |  |  |
-| `RecentlyChangedDateTime` |  | |  |  |  |  |
-| `MfgOrderHasMultipleItems` |  | | `_ManufacturingOrder` | `MfgOrderHasMultipleItems` |  |  |
-| `ManufacturingOrderText` |  | | `_ManufacturingOrder` | `ManufacturingOrderText` |  |  |
-| `SalesOrderItemText` |  | | `_SalesOrderItem` | `SalesOrderItemText` |  |  |
-| `WBSDescription` |  | | `_WBSElementBasicData` | `WBSDescription` |  |  |
-| `MfgOrdNonMatlRcvrDetnMethName` |  | | `_MfgOrdNonMatRcvrAcctDetnMeth` | `MfgOrdNonMatlRcvrDetnMethName` |  |  |
+| `EventBasedDistrPostingRuleUUID` | ✓ | |  |  | `RAW(16)` | Event-Based Distribution Rule UUID |
+| `OrderID` |  | |  |  | `CHAR(12)` | Order Number |
+| `OrderItem` |  | |  |  | `NUMC(4)` | Number of Order Item |
+| `EventBasedDistributionRuleSqnc` |  | |  |  | `NUMC(7)` | Sequence Number of Distribution Rule |
+| `CompanyCode` |  | | `_ManufacturingOrder` | `CompanyCode` | `CHAR(4)` | Company Code |
+| `ProductionPlant` |  | | `_ManufacturingOrder` | `ProductionPlant` | `CHAR(4)` | Production Plant |
+| `EventBasedDistributionType` |  | |  |  | `CHAR(3)` | Event-Based Production Cost Posting Type |
+| `EvtBsdDistrSourceStructure` |  | |  |  | `CHAR(2)` | Source Structure |
+| `EvtBsdDistrSourceAssignment` |  | |  |  | `CHAR(3)` | Source Assignment |
+| `EventBasedDistrRateInPercent` |  | |  |  | `DEC(5)` | Event-Based Production Cost Posting Percentage Rate |
+| `EvtBsdDistrEquivalenceFactor` |  | |  |  | `DEC(10)` | Equivalent Number for Event-Based Production Cost Posting |
+| `EventBasedDistributionDfltRule` |  | |  |  | `CHAR(3)` | Default Rule |
+| `OrderCategory` |  | |  |  | `NUMC(2)` | Order Category |
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales Order Number |
+| `SalesOrderItem` |  | |  |  | `NUMC(6)` | Item Number in Sales Order |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element Internal ID |
+| `WBSElementExternalID` |  | | `_WBSElementBasicData` | `WBSElementExternalID` | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `PartnerControllingObjectType` |  | |  |  | `CHAR(2)` | Event-Based Production Cost Posting Receiver Type |
+| `EvtBsdPostingRuleReceiver` |  | |  |  | `CHAR(40)` | Event-Based Posting Rule Receiver |
+| `EvtBsdPostingRuleReceiverText` |  | |  |  | `CHAR(40)` | Event-Based Posting Rule Receiver Text |
+| `EvtBsdDistrTracingFctrDetnMeth` |  | |  |  | `NUMC(3)` | Event-Based Distribution Rule Indicator |
+| `MfgOrdNonMatlRcvrAcctDetnMeth` |  | |  |  | `CHAR(2)` | Account Determination Method |
+| `EnteredByUser` |  | |  |  | `CHAR(12)` | Created By User |
+| `CreationDate` |  | |  |  | `DATS(8)` | Created On |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Creation Time of Event-Based Posting Rule |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Last Changed By |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Changed On |
+| `RecentlyChangedDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `MfgOrderHasMultipleItems` |  | | `_ManufacturingOrder` | `MfgOrderHasMultipleItems` | `CHAR(1)` | Order Has Multiple Items |
+| `ManufacturingOrderText` |  | | `_ManufacturingOrder` | `ManufacturingOrderText` | `CHAR(40)` | Manufacturing Order Text |
+| `SalesOrderItemText` |  | | `_SalesOrderItem` | `SalesOrderItemText` | `CHAR(40)` | Short Text for Sales Order Item |
+| `WBSDescription` |  | | `_WBSElementBasicData` | `WBSDescription` | `CHAR(40)` | Work Breakdown Structure Element Name |
+| `MfgOrdNonMatlRcvrDetnMethName` |  | | `_MfgOrdNonMatRcvrAcctDetnMeth` | `MfgOrdNonMatlRcvrDetnMethName` | `CHAR(60)` | Account Determination Method Text |
 | `_ManufacturingOrder` | | ✓ | | | | |
 | `_ManufacturingOrderItem` | | ✓ | | | | |
 | `_OrderCategory` | | ✓ | | | | |

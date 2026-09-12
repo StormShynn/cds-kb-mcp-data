@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CostComponentView` | ✓ | |  | `sicht` |  |  |
-| `CostComponentViewName` |  | |  | `txsic` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CostComponentView` | ✓ | |  | `sicht` | `NUMC(2)` | Cost Component View |
+| `CostComponentViewName` |  | |  | `txsic` | `CHAR(40)` | Name of View for Display |
 | `_Language` | | ✓ | | | | |
 | `_CostComponentView` | | ✓ | | | | |
 

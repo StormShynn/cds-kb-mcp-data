@@ -39,10 +39,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessObjectType` | ✓ | |  | `subobj_category` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `BusinessObjectTypeName` |  | |  | `s_description_20` |  |  |
-| `BusinessObjectTypeDescription` |  | |  | `s_description` |  |  |
+| `BusinessObjectType` | ✓ | |  | `subobj_category` | `CHAR(10)` | Service Item Object Type |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key of Description |
+| `BusinessObjectTypeName` |  | |  | `s_description_20` | `CHAR(20)` | Description (20 Characters) |
+| `BusinessObjectTypeDescription` |  | |  | `s_description` | `CHAR(40)` | Description |
 | `_Language` | | ✓ | | | | |
 | `_BusinessObjectType` | | ✓ | | | | |
 

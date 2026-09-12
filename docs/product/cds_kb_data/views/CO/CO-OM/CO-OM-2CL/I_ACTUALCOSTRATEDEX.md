@@ -53,28 +53,28 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AccountingCostRateUUID` | ✓ | |  |  |  |  |
-| `CurrencyRole` |  | |  |  |  |  |
-| `Ledger` |  | |  |  |  |  |
-| `CompanyCode` |  | |  |  |  |  |
-| `CostCenter` |  | |  |  |  |  |
-| `ActivityType` |  | |  |  |  |  |
-| `ValidityStartFiscalYear` |  | |  |  |  |  |
-| `ValidityStartFiscalPeriod` |  | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `ValidityEndFiscalYear` |  | |  |  |  |  |
-| `ValidityEndFiscalPeriod` |  | |  |  |  |  |
-| `ValidityEndDate` |  | |  |  |  |  |
-| `ControllingArea` |  | |  |  |  |  |
-| `Currency` |  | |  |  |  |  |
-| `CostRateTotalAmount` |  | |  |  |  |  |
-| `CostRateFixedAmount` |  | |  |  |  |  |
-| `CostRateVarblAmount` |  | |  |  |  |  |
-| `CostRateScaleFactor` |  | |  |  |  |  |
-| `CostCtrActivityTypeQtyUnit` |  | |  |  |  |  |
-| `PlanningCategory` |  | |  |  |  |  |
-| `BusinessTransactionType` |  | |  |  |  |  |
-| `ComponentBreakdown` |  | |  |  |  |  |
+| `AccountingCostRateUUID` | ✓ | |  |  | `RAW(16)` | Cost Rate UUID |
+| `CurrencyRole` |  | |  |  | `CHAR(2)` | Currency and Valuation Type |
+| `Ledger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `ActivityType` |  | |  |  | `CHAR(6)` | Activity Type |
+| `ValidityStartFiscalYear` |  | |  |  | `NUMC(4)` | From Fiscal Year |
+| `ValidityStartFiscalPeriod` |  | |  |  | `NUMC(3)` | From Period |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Validity Start Date |
+| `ValidityEndFiscalYear` |  | |  |  | `NUMC(4)` | To Fiscal Year |
+| `ValidityEndFiscalPeriod` |  | |  |  | `NUMC(3)` | To Period |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Validity End Date |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `CostRateTotalAmount` |  | |  |  | `CURR(23)` | Total Rate |
+| `CostRateFixedAmount` |  | |  |  | `CURR(23)` | Fixed Rate |
+| `CostRateVarblAmount` |  | |  |  | `CURR(23)` | Variable Rate |
+| `CostRateScaleFactor` |  | |  |  | `DEC(5)` | Per |
+| `CostCtrActivityTypeQtyUnit` |  | |  |  | `UNIT(3)` | Activity Unit |
+| `PlanningCategory` |  | |  |  | `CHAR(10)` | Plan Category |
+| `BusinessTransactionType` |  | |  |  | `CHAR(4)` | Business Transaction Category |
+| `ComponentBreakdown` |  | |  |  | `CHAR(16)` | Breakdown ID |
 
 ## Source Code
 

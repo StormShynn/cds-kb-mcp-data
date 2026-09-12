@@ -55,44 +55,44 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceObjectType` | ✓ | |  |  |  |  |
-| `ServiceDocument` | ✓ | |  |  |  |  |
-| `ServiceDocumentItem` | ✓ | |  |  |  |  |
-| `ServiceDocumentType` |  | |  |  |  |  |
-| `ServiceDocumentItemDescription` |  | |  |  |  |  |
-| `ServiceDocumentItemIsRejected` |  | |  |  |  |  |
-| `SoldToParty` |  | |  |  |  |  |
-| `ShipToParty` |  | |  |  |  |  |
-| `RespEmployeeBusinessPartnerId` |  | |  | `ResponsibleEmployee` |  |  |
-| `RespyMgmtGlobalTeamID` |  | |  |  |  |  |
-| `SalesOrganization` |  | |  |  |  |  |
-| `DistributionChannel` |  | |  |  |  |  |
-| `Division` |  | |  |  |  |  |
-| `SalesOffice` |  | |  |  |  |  |
-| `SalesGroup` |  | |  |  |  |  |
-| `PaymentTerms` |  | |  |  |  |  |
-| `TransactionCurrency` |  | |  |  |  |  |
-| `Product` |  | |  |  |  |  |
-| `ServiceDocumentItemQuantity` |  | |  |  |  |  |
-| `ServiceDocItemQuantityUnit` |  | |  |  |  |  |
-| `ServiceDuration` |  | |  |  |  |  |
-| `ServiceDurationUnit` |  | |  |  |  |  |
-| `ServiceDocumentItemIsQuotation` |  | |  |  |  |  |
-| `TimeSheetOvertimeCategory` |  | |  |  |  |  |
-| `ServiceDocumentItemStatus` |  | |  |  |  |  |
-| `ServiceDocItemCategory` |  | |  |  |  |  |
-| `ServiceDocItemGrossAmount` |  | |  |  |  |  |
-| `ServiceDocumentItemNetAmount` |  | |  |  |  |  |
-| `ServiceDocumentItemTaxAmount` |  | |  |  |  |  |
-| `ServiceDocItemRejectionReason` |  | |  |  |  |  |
-| `ParentServiceQuotationItem` |  | |  | `ServiceDocumentItem` |  |  |
-| `ServiceDocumentItemObjectType` |  | |  |  |  |  |
-| `ReferenceServiceContract` |  | |  | `ServiceDocument` |  |  |
-| `ReferenceServiceContractItem` |  | |  | `ServiceDocumentItem` |  |  |
-| `SerialNumber` |  | |  |  |  |  |
-| `Equipment` |  | |  |  |  |  |
-| `SrvcQtanItemFunctionalLocation` |  | |  | `cast ( ServiceQtanItemRefObj.FunctionalLocation as functionallocation preserving type )` |  |  |
-| `ProductID` |  | |  |  |  |  |
+| `ServiceObjectType` | ✓ | |  |  | `CHAR(10)` | Business Trans. Cat. |
+| `ServiceDocument` | ✓ | |  |  | `CHAR(10)` | Transaction ID |
+| `ServiceDocumentItem` | ✓ | |  |  | `NUMC(6)` | Shortened Item Number in Document |
+| `ServiceDocumentType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `ServiceDocumentItemDescription` |  | |  |  | `CHAR(40)` | Product Description |
+| `ServiceDocumentItemIsRejected` |  | |  |  | `CHAR(1)` | Cancellation Status |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-To Party |
+| `ShipToParty` |  | |  |  | `CHAR(10)` | Ship-To Party |
+| `RespEmployeeBusinessPartnerId` |  | |  | `ResponsibleEmployee` | `CHAR(10)` | Employee Responsible |
+| `RespyMgmtGlobalTeamID` |  | |  |  | `CHAR(40)` | Global Team ID in Responsibility Mgmt. |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `SalesOffice` |  | |  |  | `CHAR(4)` | Sales Office |
+| `SalesGroup` |  | |  |  | `CHAR(3)` | Sales Group |
+| `PaymentTerms` |  | |  |  | `CHAR(4)` | Terms of Payment |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `ServiceDocumentItemQuantity` |  | |  |  | `QUAN(13)` | CRM: Order Quantity |
+| `ServiceDocItemQuantityUnit` |  | |  |  | `UNIT(3)` | Unit of Measure in Which the Product Is Sold |
+| `ServiceDuration` |  | |  |  | `QUAN(13)` | Duration |
+| `ServiceDurationUnit` |  | |  |  | `UNIT(3)` | Unit for Duration of Work |
+| `ServiceDocumentItemIsQuotation` |  | |  |  | `CHAR(1)` | Quotation Status |
+| `TimeSheetOvertimeCategory` |  | |  |  | `CHAR(4)` | Overtime Category |
+| `ServiceDocumentItemStatus` |  | |  |  | `CHAR(4)` | Life Cycle Status |
+| `ServiceDocItemCategory` |  | |  |  | `CHAR(4)` | Item Category |
+| `ServiceDocItemGrossAmount` |  | |  |  | `CURR(15)` | Gross Order Value in PO Currency |
+| `ServiceDocumentItemNetAmount` |  | |  |  | `CURR(15)` | Net Value |
+| `ServiceDocumentItemTaxAmount` |  | |  |  | `CURR(15)` | Tax amount in document currency |
+| `ServiceDocItemRejectionReason` |  | |  |  | `CHAR(2)` | Cancellation Reason Code |
+| `ParentServiceQuotationItem` |  | |  | `ServiceDocumentItem` | `NUMC(6)` | Shortened Item Number in Document |
+| `ServiceDocumentItemObjectType` |  | |  |  | `CHAR(10)` | CRM Item Object Type |
+| `ReferenceServiceContract` |  | |  | `ServiceDocument` | `CHAR(10)` | Transaction ID |
+| `ReferenceServiceContractItem` |  | |  | `ServiceDocumentItem` | `NUMC(6)` | Shortened Item Number in Document |
+| `SerialNumber` |  | |  |  | `CHAR(18)` | Serial Number |
+| `Equipment` |  | |  |  | `CHAR(18)` | Equipment Number |
+| `SrvcQtanItemFunctionalLocation` |  | |  | `cast ( ServiceQtanItemRefObj.FunctionalLocation as functionallocation preserving type )` | `CHAR(30)` | Functional Location |
+| `ProductID` |  | |  |  | `CHAR(40)` | Material Number |
 
 ## Associations
 

@@ -41,68 +41,68 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `KeyDate` |  | |  |  |  |  |
-| `ControllingArea` |  | |  |  |  |  |
-| `FiscalYear` |  | |  |  |  |  |
-| `FiscalPeriod` |  | |  |  |  |  |
-| `BudgetCarryingCostCenter` |  | |  |  |  |  |
-| `GLAccountHierarchy` |  | |  |  |  |  |
-| `HierarchyNode` |  | |  |  |  |  |
-| `GLAccountHierNodeSemanticKey` |  | |  |  |  |  |
-| `CompanyCode` |  | |  |  |  |  |
-| `ChartOfAccounts` |  | |  |  |  |  |
-| `OrderID` |  | |  |  |  |  |
-| `AccountingDocumentType` |  | |  |  |  |  |
-| `Customer` |  | |  |  |  |  |
-| `Segment` |  | |  |  |  |  |
-| `BusinessArea` |  | |  |  |  |  |
-| `ProfitCenter` |  | |  |  |  |  |
-| `Supplier` |  | |  |  |  |  |
-| `SalesOrganization` |  | |  |  |  |  |
-| `Plant` |  | |  |  |  |  |
-| `ServiceDocumentType` |  | |  |  |  |  |
-| `ValuationArea` |  | |  |  |  |  |
-| `SalesDocument` |  | |  |  |  |  |
-| `CostCenter` |  | |  |  |  |  |
-| `GLAccount` |  | |  |  |  |  |
-| `Ledger` |  | |  |  |  |  |
-| `DistributionChannel` |  | |  |  |  |  |
-| `PlanningCategory` |  | |  |  |  |  |
-| `OrganizationDivision` |  | |  |  |  |  |
-| `ServiceDocument` |  | |  |  |  |  |
-| `FinancialAccountType` |  | |  |  |  |  |
-| `AssetClass` |  | |  |  |  |  |
-| `GlobalCurrency` |  | |  |  |  |  |
-| `CompanyCodeCurrency` |  | |  |  |  |  |
-| `LedgerFiscalYear` |  | |  |  |  |  |
-| `FiscalYearVariant` |  | |  |  |  |  |
-| `PredictionLedger` |  | |  |  |  |  |
-| `PostingDate` |  | |  |  |  |  |
-| `FunctionalArea` |  | |  |  |  |  |
-| `BudgetCarryingCostCenterName` |  | |  |  |  |  |
-| `CostCenterName` |  | |  |  |  |  |
-| `GLAccountName` |  | |  |  |  |  |
-| `HierarchyNodeText` |  | |  |  |  |  |
-| `GLAccountHierarchyName` |  | |  |  |  |  |
-| `PlanningCategoryName` |  | |  |  |  |  |
-| `JointVenture` |  | |  |  |  |  |
-| `JointVentureName` |  | |  |  |  |  |
-| `JointVentureEquityGroup` |  | |  |  |  |  |
-| `JointVentureEquityGroupName` |  | |  |  |  |  |
-| `JointVentureRecoveryCode` |  | |  |  |  |  |
-| `JointVentureRecoveryCodeName` |  | |  |  |  |  |
-| `PlanAmountInCompanyCodeCrcy` |  | |  |  |  |  |
-| `BudgetAmountInCompanyCodeCrcy` |  | |  |  |  |  |
-| `ActualCostAmtInCCCrcy` |  | |  |  |  |  |
-| `CmtmtCostInCCCrcy` |  | |  |  |  |  |
-| `TotAssgdAmtInCoCodeCurrency` |  | |  |  |  |  |
-| `AvailableBdgtAmtInCoCodeCrcy` |  | |  |  |  |  |
-| `PlanAmountInGlobalCurrency` |  | |  |  |  |  |
-| `BudgetInGlobalCrcy` |  | |  |  |  |  |
-| `ActualCostInGlobalCrcy` |  | |  |  |  |  |
-| `CmtmtCostInGlobalCurrency` |  | |  |  |  |  |
-| `TotAssgdAmtInGlobalCurrency` |  | |  |  |  |  |
-| `AvailableBudgetInGlobalCrcy` |  | |  |  |  |  |
+| `KeyDate` |  | |  |  | `DATS(8)` |  |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `BudgetCarryingCostCenter` |  | |  |  | `CHAR(10)` | Budget-Carrying Cost Center |
+| `GLAccountHierarchy` |  | |  |  | `CHAR(42)` | Hierarchy ID |
+| `HierarchyNode` |  | |  |  | `CHAR(50)` | Hierarchy node |
+| `GLAccountHierNodeSemanticKey` |  | |  |  | `CHAR(63)` |  |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `OrderID` |  | |  |  | `CHAR(12)` | Order ID |
+| `AccountingDocumentType` |  | |  |  | `CHAR(2)` | Journal Entry Type |
+| `Customer` |  | |  |  | `CHAR(10)` | Customer Number |
+| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `ServiceDocumentType` |  | |  |  | `CHAR(4)` | Service Document Type |
+| `ValuationArea` |  | |  |  | `CHAR(4)` | Valuation Area |
+| `SalesDocument` |  | |  |  | `CHAR(10)` | Sales Document |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
+| `Ledger` |  | |  |  | `CHAR(2)` | Source Ledger |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `PlanningCategory` |  | |  |  | `CHAR(10)` | Plan Category |
+| `OrganizationDivision` |  | |  |  | `CHAR(2)` | Division |
+| `ServiceDocument` |  | |  |  | `CHAR(10)` | Service Document ID |
+| `FinancialAccountType` |  | |  |  | `CHAR(1)` | Account Type |
+| `AssetClass` |  | |  |  | `CHAR(8)` | Asset Class |
+| `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `PredictionLedger` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
+| `FunctionalArea` |  | |  |  | `CHAR(16)` | Functional Area |
+| `BudgetCarryingCostCenterName` |  | |  |  | `CHAR(20)` | Cost Center Name |
+| `CostCenterName` |  | |  |  | `CHAR(20)` | Cost Center Name |
+| `GLAccountName` |  | |  |  | `CHAR(20)` | G/L Account Name |
+| `HierarchyNodeText` |  | |  |  | `CHAR(50)` | Hierarchy node description |
+| `GLAccountHierarchyName` |  | |  |  | `CHAR(50)` | Hierarchy description |
+| `PlanningCategoryName` |  | |  |  | `CHAR(40)` | Planning Category |
+| `JointVenture` |  | |  |  | `CHAR(6)` | Joint Venture |
+| `JointVentureName` |  | |  |  | `CHAR(35)` | Joint Venture Name |
+| `JointVentureEquityGroup` |  | |  |  | `CHAR(3)` | Joint Venture Equity Group |
+| `JointVentureEquityGroupName` |  | |  |  | `CHAR(35)` | Equity Group Description |
+| `JointVentureRecoveryCode` |  | |  |  | `CHAR(2)` | Joint Venture Cost Recovery Code |
+| `JointVentureRecoveryCodeName` |  | |  |  | `CHAR(35)` | Recovery Indicator Description |
+| `PlanAmountInCompanyCodeCrcy` |  | |  |  | `CURR(23)` | Amount in Global Currency |
+| `BudgetAmountInCompanyCodeCrcy` |  | |  |  | `CURR(23)` | Amount in Global Currency |
+| `ActualCostAmtInCCCrcy` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
+| `CmtmtCostInCCCrcy` |  | |  |  | `CURR(23)` | Amount in Global Currency |
+| `TotAssgdAmtInCoCodeCurrency` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
+| `AvailableBdgtAmtInCoCodeCrcy` |  | |  |  | `CURR(23)` |  |
+| `PlanAmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Amount in Global Currency |
+| `BudgetInGlobalCrcy` |  | |  |  | `CURR(23)` | Amount in Global Currency |
+| `ActualCostInGlobalCrcy` |  | |  |  | `CURR(23)` | Amount in Global Currency |
+| `CmtmtCostInGlobalCurrency` |  | |  |  | `CURR(23)` | Amount in Global Currency |
+| `TotAssgdAmtInGlobalCurrency` |  | |  |  | `CURR(23)` | Amount in Global Currency |
+| `AvailableBudgetInGlobalCrcy` |  | |  |  | `CURR(23)` |  |
 | `_GlobalCurrency` | | ✓ | | | | |
 | `_ControllingArea` | | ✓ | | | | |
 | `_FiscalYear` | | ✓ | | | | |

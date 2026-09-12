@@ -37,7 +37,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessObjectType` | ✓ | |  | `subobj_category` |  |  |
+| `BusinessObjectType` | ✓ | |  | `subobj_category` | `CHAR(10)` | Service Item Object Type |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

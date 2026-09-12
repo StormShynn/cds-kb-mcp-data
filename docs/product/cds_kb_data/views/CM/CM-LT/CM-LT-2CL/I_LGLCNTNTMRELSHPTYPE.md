@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LglCntntMRelshpType` | ✓ | |  |  |  |  |
+| `LglCntntMRelshpType` | ✓ | |  |  | `CHAR(4)` | Relationship Type |
 | `_LglCntntMRelshpTypeText` | | ✓ | | | | |
 
 ## Associations

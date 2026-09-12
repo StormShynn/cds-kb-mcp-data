@@ -39,13 +39,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostingVariant` | ✓ | |  | `klvar` |  |  |
-| `ValuationVariant` |  | |  | `bwvar` |  |  |
-| `CostEstimateReferenceVariant` |  | |  | `refid` |  |  |
-| `CostingType` |  | |  | `kalka` |  |  |
-| `CostEstimateTransferControl` |  | |  | `uebid` |  |  |
-| `CostEstTransfCtrlIsChangeable` |  | |  | `voraend` |  |  |
-| `CostingReferenceObject` |  | |  | `bzobj` |  |  |
+| `CostingVariant` | ✓ | |  | `klvar` | `CHAR(4)` | Costing Variant |
+| `ValuationVariant` |  | |  | `bwvar` | `CHAR(3)` | Valuation Variant in Costing |
+| `CostEstimateReferenceVariant` |  | |  | `refid` | `NUMC(2)` | Reference Variant |
+| `CostingType` |  | |  | `kalka` | `CHAR(2)` | Costing Type |
+| `CostEstimateTransferControl` |  | |  | `uebid` | `CHAR(4)` | Transfer Control |
+| `CostEstTransfCtrlIsChangeable` |  | |  | `voraend` | `CHAR(1)` | Defaults Can Be Changed |
+| `CostingReferenceObject` |  | |  | `bzobj` | `CHAR(1)` | Reference Object |
 | `_Text` | | ✓ | | | | |
 | `_CostingValuationVariant` | | ✓ | | | | |
 | `_CostingType` | | ✓ | | | | |

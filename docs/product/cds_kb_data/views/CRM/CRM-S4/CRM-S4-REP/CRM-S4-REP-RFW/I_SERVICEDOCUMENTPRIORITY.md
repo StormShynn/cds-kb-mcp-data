@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentPriority` | ✓ | |  | `priority` |  |  |
+| `ServiceDocumentPriority` | ✓ | |  | `priority` | `NUMC(1)` | Appointment priority |
 | `_ServiceDocumentPriorityText` | | ✓ | | | | |
 
 ## Associations

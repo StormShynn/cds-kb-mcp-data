@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceCostLevel` | ✓ | |  | `srv_cost_level` |  |  |
-| `ValidityStartDate` | ✓ | |  | `start_date` |  |  |
-| `ValidityEndDate` |  | |  | `end_date` |  |  |
+| `ServiceCostLevel` | ✓ | |  | `srv_cost_level` | `NUMC(4)` | Service Cost Level |
+| `ValidityStartDate` | ✓ | |  | `start_date` | `DATS(8)` | Valid-From Date |
+| `ValidityEndDate` |  | |  | `end_date` | `DATS(8)` | Valid To Date |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

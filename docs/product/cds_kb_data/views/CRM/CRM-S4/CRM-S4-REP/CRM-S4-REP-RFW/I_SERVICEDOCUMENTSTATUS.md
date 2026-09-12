@@ -40,7 +40,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentStatus` | ✓ | |  | `domvalue_l` |  |  |
+| `ServiceDocumentStatus` | ✓ | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_ServiceDocumentStatusText` | | ✓ | | | | |
 
 ## Associations

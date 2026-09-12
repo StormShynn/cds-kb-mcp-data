@@ -37,32 +37,32 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessSolutionOrder` | ✓ | |  | `ServiceDocument` |  |  |
-| `ServiceObjectType` |  | |  |  |  |  |
-| `BusinessSolutionOrderUUID` |  | |  | `ServiceDocumentUUID` |  |  |
-| `ServiceDocumentType` |  | |  |  |  |  |
-| `ServiceDocumentDescription` |  | |  |  |  |  |
-| `Language` |  | |  |  |  |  |
-| `PostingDate` |  | |  |  |  |  |
-| `ServiceDocNetAmount` |  | |  |  |  |  |
-| `ServiceDocGrossAmount` |  | |  |  |  |  |
-| `ServiceDocTaxAmount` |  | |  |  |  |  |
-| `TransactionCurrency` |  | |  |  |  |  |
-| `SoldToParty` |  | |  |  |  |  |
-| `SoldToPartyCountry` |  | |  |  |  |  |
-| `SoldToPartyRegion` |  | |  |  |  |  |
-| `ResponsibleEmployee` |  | |  |  |  |  |
-| `ServiceDocumentStatus` |  | |  |  |  |  |
-| `SalesOrganizationOrgUnitID` |  | |  |  |  |  |
-| `SalesOfficeOrgUnitID` |  | |  |  |  |  |
-| `SalesGroupOrgUnitID` |  | |  |  |  |  |
-| `DistributionChannel` |  | |  |  |  |  |
-| `Division` |  | |  |  |  |  |
-| `ServiceOrganization` |  | |  |  |  |  |
-| `ResponsibleServiceOrganization` |  | |  |  |  |  |
-| `SalesOrganization` |  | |  |  |  |  |
-| `SalesOffice` |  | |  |  |  |  |
-| `SalesGroup` |  | |  |  |  |  |
+| `BusinessSolutionOrder` | ✓ | |  | `ServiceDocument` | `CHAR(10)` | Transaction ID |
+| `ServiceObjectType` |  | |  |  | `CHAR(10)` | Business Trans. Cat. |
+| `BusinessSolutionOrderUUID` |  | |  | `ServiceDocumentUUID` | `RAW(16)` | GUID of a CRM Order Object |
+| `ServiceDocumentType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `ServiceDocumentDescription` |  | |  |  | `CHAR(40)` | Transaction Description |
+| `Language` |  | |  |  | `LANG(1)` | Language Key of Description |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date for a Business Transaction |
+| `ServiceDocNetAmount` |  | |  |  | `CURR(15)` | Total Net Value of Document in Document Currency |
+| `ServiceDocGrossAmount` |  | |  |  | `CURR(15)` | Total Gross Value of Document in Document Currency |
+| `ServiceDocTaxAmount` |  | |  |  | `CURR(15)` | Total Tax Amount in Document Currency |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-To Party |
+| `SoldToPartyCountry` |  | |  |  | `CHAR(3)` | Country/Region |
+| `SoldToPartyRegion` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `ResponsibleEmployee` |  | |  |  | `CHAR(10)` | Employee Responsible |
+| `ServiceDocumentStatus` |  | |  |  | `CHAR(4)` | Life Cycle Status |
+| `SalesOrganizationOrgUnitID` |  | |  |  | `CHAR(14)` | Sales Organization ID |
+| `SalesOfficeOrgUnitID` |  | |  |  | `CHAR(14)` | Sales Office |
+| `SalesGroupOrgUnitID` |  | |  |  | `CHAR(14)` | Sales Group |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `ServiceOrganization` |  | |  |  | `CHAR(14)` | Service Organization |
+| `ResponsibleServiceOrganization` |  | |  |  | `CHAR(14)` | Organizational Unit (Service) |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `SalesOffice` |  | |  |  | `CHAR(4)` | Sales Office |
+| `SalesGroup` |  | |  |  | `CHAR(3)` | Sales Group |
 | `_ServiceDocumentType` | | ✓ | | | | |
 | `_SoldToParty` | | ✓ | | | | |
 | `_SoldToPartyCountry` | | ✓ | | | | |

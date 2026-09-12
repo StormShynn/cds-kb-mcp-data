@@ -42,10 +42,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  |  |  |  |
-| `CostCtrActivityType` | ✓ | |  |  |  |  |
-| `ValidityEndDate` | ✓ | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
+| `ControllingArea` | ✓ | |  |  | `CHAR(4)` | Controlling Area |
+| `CostCtrActivityType` | ✓ | |  |  | `CHAR(6)` | Activity Type |
+| `ValidityEndDate` | ✓ | |  |  | `DATS(8)` | Valid To Date |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
 | `_Text` | | ✓ | | | | |
 | `_ControllingArea` | | ✓ | | | | |
 

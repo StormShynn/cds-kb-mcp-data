@@ -40,8 +40,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostingVariant` | ✓ | |  |  |  |  |
-| `CostingVariantName` |  | |  |  |  |  |
+| `CostingVariant` | ✓ | |  |  | `CHAR(4)` | Costing Variant |
+| `CostingVariantName` |  | |  |  | `CHAR(25)` | Name for Costing Variant |
 
 ## Source Code
 

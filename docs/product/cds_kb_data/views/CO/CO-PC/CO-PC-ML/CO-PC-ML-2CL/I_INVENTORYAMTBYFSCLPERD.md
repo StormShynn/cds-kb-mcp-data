@@ -41,27 +41,27 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Ledger` | ✓ | |  |  |  |  |
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `CostEstimate` | ✓ | |  |  |  |  |
-| `Material` |  | |  |  |  |  |
-| `ValuationType` |  | |  |  |  |  |
-| `ValuationArea` |  | |  |  |  |  |
-| `InvtryValnSpecialStockType` |  | |  |  |  |  |
-| `SalesOrder` |  | |  |  |  |  |
-| `SalesOrderItem` |  | |  |  |  |  |
-| `Supplier` |  | |  |  |  |  |
-| `WBSElementInternalID` |  | |  |  |  |  |
-| `FiscalPeriod` |  | |  | `$parameters.P_FiscalPeriod` |  |  |
-| `FiscalYear` |  | |  | `$parameters.P_FiscalYear` |  |  |
-| `ValuationQuantity` |  | |  |  |  |  |
-| `UnitOfMeasure` |  | |  |  |  |  |
-| `AmountInCompanyCodeCurrency` |  | |  |  |  |  |
-| `CompanyCodeCurrency` |  | |  |  |  |  |
-| `AmountInGlobalCurrency` |  | |  |  |  |  |
-| `GlobalCurrency` |  | |  |  |  |  |
-| `AmountInFreeDefinedCurrency1` |  | |  |  |  |  |
-| `FreeDefinedCurrency1` |  | |  |  |  |  |
+| `Ledger` | ✓ | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `CostEstimate` | ✓ | |  |  | `NUMC(12)` | Cost Estimate Number for Cost Est. w/o Qty Structure |
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `ValuationType` |  | |  |  | `CHAR(10)` | Valuation Type |
+| `ValuationArea` |  | |  |  | `CHAR(4)` | Valuation Area |
+| `InvtryValnSpecialStockType` |  | |  |  | `CHAR(1)` | Special Stock Indicator |
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales Document Number of Valuated Special Inventory |
+| `SalesOrderItem` |  | |  |  | `NUMC(6)` | Sales Document Item Number of Valuated Special Inventory |
+| `Supplier` |  | |  |  | `CHAR(10)` | Supplier of Valuated Special Inventory |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element Internal ID |
+| `FiscalPeriod` |  | |  | `$parameters.P_FiscalPeriod` | `NUMC(3)` | Posting Period |
+| `FiscalYear` |  | |  | `$parameters.P_FiscalYear` | `NUMC(4)` | Fiscal Year |
+| `ValuationQuantity` |  | |  |  | `QUAN(23)` | Valuation Quantity |
+| `UnitOfMeasure` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `AmountInGlobalCurrency` |  | |  |  | `CURR(23)` | Amount in Global Currency |
+| `GlobalCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `AmountInFreeDefinedCurrency1` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 1 |
+| `FreeDefinedCurrency1` |  | |  |  | `CUKY(5)` | Currency Key |
 
 ## Source Code
 

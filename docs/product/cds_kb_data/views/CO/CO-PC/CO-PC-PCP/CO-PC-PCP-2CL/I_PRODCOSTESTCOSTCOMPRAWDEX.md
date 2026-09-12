@@ -40,140 +40,140 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostingReferenceObject` | ✓ | |  |  |  |  |
-| `CostEstimate` | ✓ | |  |  |  |  |
-| `CostingType` | ✓ | |  |  |  |  |
-| `CostingDate` | ✓ | |  |  |  |  |
-| `CostingVersion` | ✓ | |  |  |  |  |
-| `ValuationVariant` | ✓ | |  |  |  |  |
-| `CostIsEnteredManually` | ✓ | |  |  |  |  |
-| `CostingPartnerNumber` | ✓ | |  |  |  |  |
-| `CostComponentSplitType` | ✓ | |  |  |  |  |
-| `CostIsInCtrlgAreaCrcy` | ✓ | |  |  |  |  |
-| `IsCostComponentSplitLowerLevel` | ✓ | |  |  |  |  |
-| `CostEstWQSIsInclAdditiveCosts` | ✓ | |  |  |  |  |
-| `CostCompSpltDrctPrtnCharc` | ✓ | |  |  |  |  |
-| `Currency` |  | |  | `cast ( case when keph.CostIsInCtrlgAreaCrcy = 'X' then _ProductCostEstimate.ControllingAreaCurrency when keph.CostIsInCtrlgAreaCrcy = ' ' then _ProductCostEstimate.CompanyCodeCurrency end as waers )` |  |  |
-| `CostComponentCostField1Amt` |  | |  |  |  |  |
-| `CostComponentCostField2Amt` |  | |  |  |  |  |
-| `CostComponentCostField3Amt` |  | |  |  |  |  |
-| `CostComponentCostField4Amt` |  | |  |  |  |  |
-| `CostComponentCostField5Amt` |  | |  |  |  |  |
-| `CostComponentCostField6Amt` |  | |  |  |  |  |
-| `CostComponentCostField7Amt` |  | |  |  |  |  |
-| `CostComponentCostField8Amt` |  | |  |  |  |  |
-| `CostComponentCostField9Amt` |  | |  |  |  |  |
-| `CostComponentCostField10Amt` |  | |  |  |  |  |
-| `CostComponentCostField11Amt` |  | |  |  |  |  |
-| `CostComponentCostField12Amt` |  | |  |  |  |  |
-| `CostComponentCostField13Amt` |  | |  |  |  |  |
-| `CostComponentCostField14Amt` |  | |  |  |  |  |
-| `CostComponentCostField15Amt` |  | |  |  |  |  |
-| `CostComponentCostField16Amt` |  | |  |  |  |  |
-| `CostComponentCostField17Amt` |  | |  |  |  |  |
-| `CostComponentCostField18Amt` |  | |  |  |  |  |
-| `CostComponentCostField19Amt` |  | |  |  |  |  |
-| `CostComponentCostField20Amt` |  | |  |  |  |  |
-| `CostComponentCostField21Amt` |  | |  |  |  |  |
-| `CostComponentCostField22Amt` |  | |  |  |  |  |
-| `CostComponentCostField23Amt` |  | |  |  |  |  |
-| `CostComponentCostField24Amt` |  | |  |  |  |  |
-| `CostComponentCostField25Amt` |  | |  |  |  |  |
-| `CostComponentCostField26Amt` |  | |  |  |  |  |
-| `CostComponentCostField27Amt` |  | |  |  |  |  |
-| `CostComponentCostField28Amt` |  | |  |  |  |  |
-| `CostComponentCostField29Amt` |  | |  |  |  |  |
-| `CostComponentCostField30Amt` |  | |  |  |  |  |
-| `CostComponentCostField31Amt` |  | |  |  |  |  |
-| `CostComponentCostField32Amt` |  | |  |  |  |  |
-| `CostComponentCostField33Amt` |  | |  |  |  |  |
-| `CostComponentCostField34Amt` |  | |  |  |  |  |
-| `CostComponentCostField35Amt` |  | |  |  |  |  |
-| `CostComponentCostField36Amt` |  | |  |  |  |  |
-| `CostComponentCostField37Amt` |  | |  |  |  |  |
-| `CostComponentCostField38Amt` |  | |  |  |  |  |
-| `CostComponentCostField39Amt` |  | |  |  |  |  |
-| `CostComponentCostField40Amt` |  | |  |  |  |  |
-| `CostComponentCostField41Amt` |  | |  |  |  |  |
-| `CostComponentCostField42Amt` |  | |  |  |  |  |
-| `CostComponentCostField43Amt` |  | |  |  |  |  |
-| `CostComponentCostField44Amt` |  | |  |  |  |  |
-| `CostComponentCostField45Amt` |  | |  |  |  |  |
-| `CostComponentCostField46Amt` |  | |  |  |  |  |
-| `CostComponentCostField47Amt` |  | |  |  |  |  |
-| `CostComponentCostField48Amt` |  | |  |  |  |  |
-| `CostComponentCostField49Amt` |  | |  |  |  |  |
-| `CostComponentCostField50Amt` |  | |  |  |  |  |
-| `CostComponentCostField51Amt` |  | |  |  |  |  |
-| `CostComponentCostField52Amt` |  | |  |  |  |  |
-| `CostComponentCostField53Amt` |  | |  |  |  |  |
-| `CostComponentCostField54Amt` |  | |  |  |  |  |
-| `CostComponentCostField55Amt` |  | |  |  |  |  |
-| `CostComponentCostField56Amt` |  | |  |  |  |  |
-| `CostComponentCostField57Amt` |  | |  |  |  |  |
-| `CostComponentCostField58Amt` |  | |  |  |  |  |
-| `CostComponentCostField59Amt` |  | |  |  |  |  |
-| `CostComponentCostField60Amt` |  | |  |  |  |  |
-| `CostComponentCostField61Amt` |  | |  |  |  |  |
-| `CostComponentCostField62Amt` |  | |  |  |  |  |
-| `CostComponentCostField63Amt` |  | |  |  |  |  |
-| `CostComponentCostField64Amt` |  | |  |  |  |  |
-| `CostComponentCostField65Amt` |  | |  |  |  |  |
-| `CostComponentCostField66Amt` |  | |  |  |  |  |
-| `CostComponentCostField67Amt` |  | |  |  |  |  |
-| `CostComponentCostField68Amt` |  | |  |  |  |  |
-| `CostComponentCostField69Amt` |  | |  |  |  |  |
-| `CostComponentCostField70Amt` |  | |  |  |  |  |
-| `CostComponentCostField71Amt` |  | |  |  |  |  |
-| `CostComponentCostField72Amt` |  | |  |  |  |  |
-| `CostComponentCostField73Amt` |  | |  |  |  |  |
-| `CostComponentCostField74Amt` |  | |  |  |  |  |
-| `CostComponentCostField75Amt` |  | |  |  |  |  |
-| `CostComponentCostField76Amt` |  | |  |  |  |  |
-| `CostComponentCostField77Amt` |  | |  |  |  |  |
-| `CostComponentCostField78Amt` |  | |  |  |  |  |
-| `CostComponentCostField79Amt` |  | |  |  |  |  |
-| `CostComponentCostField80Amt` |  | |  |  |  |  |
-| `CostComponentCostField81Amt` |  | |  |  |  |  |
-| `CostComponentCostField82Amt` |  | |  |  |  |  |
-| `CostComponentCostField83Amt` |  | |  |  |  |  |
-| `CostComponentCostField84Amt` |  | |  |  |  |  |
-| `CostComponentCostField85Amt` |  | |  |  |  |  |
-| `CostComponentCostField86Amt` |  | |  |  |  |  |
-| `CostComponentCostField87Amt` |  | |  |  |  |  |
-| `CostComponentCostField88Amt` |  | |  |  |  |  |
-| `CostComponentCostField89Amt` |  | |  |  |  |  |
-| `CostComponentCostField90Amt` |  | |  |  |  |  |
-| `CostComponentCostField91Amt` |  | |  |  |  |  |
-| `CostComponentCostField92Amt` |  | |  |  |  |  |
-| `CostComponentCostField93Amt` |  | |  |  |  |  |
-| `CostComponentCostField94Amt` |  | |  |  |  |  |
-| `CostComponentCostField95Amt` |  | |  |  |  |  |
-| `CostComponentCostField96Amt` |  | |  |  |  |  |
-| `CostComponentCostField97Amt` |  | |  |  |  |  |
-| `CostComponentCostField98Amt` |  | |  |  |  |  |
-| `CostComponentCostField99Amt` |  | |  |  |  |  |
-| `CostComponentCostField100Amt` |  | |  |  |  |  |
-| `CostComponentCostField101Amt` |  | |  |  |  |  |
-| `CostComponentCostField102Amt` |  | |  |  |  |  |
-| `CostComponentCostField103Amt` |  | |  |  |  |  |
-| `CostComponentCostField104Amt` |  | |  |  |  |  |
-| `CostComponentCostField105Amt` |  | |  |  |  |  |
-| `CostComponentCostField106Amt` |  | |  |  |  |  |
-| `CostComponentCostField107Amt` |  | |  |  |  |  |
-| `CostComponentCostField108Amt` |  | |  |  |  |  |
-| `CostComponentCostField109Amt` |  | |  |  |  |  |
-| `CostComponentCostField110Amt` |  | |  |  |  |  |
-| `CostComponentCostField111Amt` |  | |  |  |  |  |
-| `CostComponentCostField112Amt` |  | |  |  |  |  |
-| `CostComponentCostField113Amt` |  | |  |  |  |  |
-| `CostComponentCostField114Amt` |  | |  |  |  |  |
-| `CostComponentCostField115Amt` |  | |  |  |  |  |
-| `CostComponentCostField116Amt` |  | |  |  |  |  |
-| `CostComponentCostField117Amt` |  | |  |  |  |  |
-| `CostComponentCostField118Amt` |  | |  |  |  |  |
-| `CostComponentCostField119Amt` |  | |  |  |  |  |
-| `CostComponentCostField120Amt` |  | |  |  |  |  |
+| `CostingReferenceObject` | ✓ | |  |  | `CHAR(1)` | Reference Object |
+| `CostEstimate` | ✓ | |  |  | `NUMC(12)` | Cost Estimate Number for Cost Est. w/o Qty Structure |
+| `CostingType` | ✓ | |  |  | `CHAR(2)` | Costing Type |
+| `CostingDate` | ✓ | |  |  | `DATS(8)` | Costing Date (Key) |
+| `CostingVersion` | ✓ | |  |  | `NUMC(2)` | Costing Version |
+| `ValuationVariant` | ✓ | |  |  | `CHAR(3)` | Valuation Variant in Costing |
+| `CostIsEnteredManually` | ✓ | |  |  | `CHAR(1)` | Costs Entered Manually in Additive or Automatic Cost Est. |
+| `CostingPartnerNumber` | ✓ | |  |  | `NUMC(6)` | Partner number for costing |
+| `CostComponentSplitType` | ✓ | |  |  | `CHAR(1)` | Type of Cost Component Split for Product Costing |
+| `CostIsInCtrlgAreaCrcy` | ✓ | |  |  | `CHAR(1)` | Link Field for Currency Type |
+| `IsCostComponentSplitLowerLevel` | ✓ | |  |  | `CHAR(1)` | Indicator Lower Level/Level |
+| `CostEstWQSIsInclAdditiveCosts` | ✓ | |  |  | `CHAR(1)` | Costs Were Entered Manually in an Additive Cost Estimate |
+| `CostCompSpltDrctPrtnCharc` | ✓ | |  |  | `CHAR(1)` | Direct Partner Characteristic |
+| `Currency` |  | |  | `cast ( case when keph.CostIsInCtrlgAreaCrcy = 'X' then _ProductCostEstimate.ControllingAreaCurrency when keph.CostIsInCtrlgAreaCrcy = ' ' then _ProductCostEstimate.CompanyCodeCurrency end as waers )` | `CUKY(5)` | Currency Key |
+| `CostComponentCostField1Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField2Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField3Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField4Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField5Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField6Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField7Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField8Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField9Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField10Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField11Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField12Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField13Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField14Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField15Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField16Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField17Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField18Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField19Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField20Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField21Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField22Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField23Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField24Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField25Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField26Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField27Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField28Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField29Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField30Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField31Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField32Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField33Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField34Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField35Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField36Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField37Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField38Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField39Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField40Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField41Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField42Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField43Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField44Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField45Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField46Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField47Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField48Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField49Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField50Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField51Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField52Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField53Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField54Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField55Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField56Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField57Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField58Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField59Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField60Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField61Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField62Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField63Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField64Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField65Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField66Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField67Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField68Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField69Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField70Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField71Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField72Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField73Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField74Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField75Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField76Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField77Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField78Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField79Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField80Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField81Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField82Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField83Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField84Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField85Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField86Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField87Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField88Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField89Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField90Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField91Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField92Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField93Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField94Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField95Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField96Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField97Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField98Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField99Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField100Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField101Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField102Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField103Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField104Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField105Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField106Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField107Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField108Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField109Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField110Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField111Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField112Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField113Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField114Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField115Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField116Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField117Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField118Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField119Amt` |  | |  |  | `CURR(13)` | Cost Field |
+| `CostComponentCostField120Amt` |  | |  |  | `CURR(13)` | Cost Field |
 | `_ProductCostEstimate` | | ✓ | | | | |
 
 ## Associations
