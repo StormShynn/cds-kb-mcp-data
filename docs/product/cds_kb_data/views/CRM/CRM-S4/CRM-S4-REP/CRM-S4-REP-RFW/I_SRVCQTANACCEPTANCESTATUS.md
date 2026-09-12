@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SrvcDocIsAccepted` | ✓ | |  | `domvalue_l` |  |  |
+| `SrvcDocIsAccepted` | ✓ | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_SrvcQtanAcceptanceStatusText` | | ✓ | | | | |
 
 ## Associations

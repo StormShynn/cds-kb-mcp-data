@@ -37,7 +37,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceReferenceObjectType` | ✓ | |  | `cast(domvalue_l as abap.char(1))` |  |  |
+| `ServiceReferenceObjectType` | ✓ | |  | `cast(domvalue_l as abap.char(1))` | `CHAR(1)` |  |
 | `_SrvcReferenceObjectTypeText` | | ✓ | | | | |
 
 ## Associations

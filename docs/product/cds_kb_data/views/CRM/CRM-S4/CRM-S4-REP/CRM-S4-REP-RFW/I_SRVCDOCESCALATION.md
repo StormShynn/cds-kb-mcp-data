@@ -37,7 +37,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceEscalationLevel` | ✓ | |  | `domvalue_l` |  |  |
+| `ServiceEscalationLevel` | ✓ | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_SrvcDocEscalationText` | | ✓ | | | | |
 
 ## Associations

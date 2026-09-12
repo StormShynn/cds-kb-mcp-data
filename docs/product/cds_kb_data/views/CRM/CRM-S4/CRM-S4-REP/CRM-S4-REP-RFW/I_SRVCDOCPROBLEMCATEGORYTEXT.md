@@ -39,10 +39,18 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `'ISRVCDOCPCATTXT'` |  | |  | `sqlViewName: 'ISRVCDOCPCATTXT'` |  |  |
-| `preserveKey` |  | |  | `true` |  |  |
-| `true` |  | |  | `compiler.compareFilter: true` |  |  |
-| `}` |  | |  | `buffering: { status: #ACTIVE, type: #FULL }` |  |  |
+| `ServiceDocumentProblemCategory` | ✓ | |  | `problem_category` | `CHAR(3)` | Problem Category |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `SrvcDocProblemCategoryName` |  | |  | `description` | `CHAR(40)` | Description |
+| `_Language` | | ✓ | | | | |
+| `_ServiceDocProblemCategory` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Language` | `I_Language` | [0..1] |
+| `_ServiceDocProblemCategory` | `I_ServiceDocProblemCategory` | [0..1] |
 
 ## Source Code
 

@@ -40,15 +40,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentLongTextUUID` | ✓ | |  | `text_uuid` |  |  |
-| `TextObjectCategory` |  | |  | `text_object` |  |  |
-| `TextObjectType` |  | |  | `text_id` |  |  |
-| `Language` |  | |  | `language` |  |  |
-| `ServiceObjectType` |  | |  | `objtype_h` |  |  |
-| `ServiceDocument` |  | |  | `object_id` |  |  |
-| `ServiceDocumentItem` |  | |  | `number_int` |  |  |
+| `ServiceDocumentLongTextUUID` | ✓ | |  | `text_uuid` | `RAW(16)` | UUID in X form (binary) |
+| `TextObjectCategory` |  | |  | `text_object` | `CHAR(10)` | Texts: application object |
+| `TextObjectType` |  | |  | `text_id` | `CHAR(4)` | Text ID |
+| `Language` |  | |  | `language` | `LANG(1)` | Language Key |
+| `ServiceObjectType` |  | |  | `objtype_h` | `CHAR(10)` | Business Trans. Cat. |
+| `ServiceDocument` |  | |  | `object_id` | `CHAR(10)` | Transaction ID |
+| `ServiceDocumentItem` |  | |  | `number_int` | `NUMC(6)` | Shortened Item Number in Document |
 | `ServiceDocumentLongText` |  | |  | `text_content` |  |  |
-| `SrvcDocLongTextMimeType` |  | |  | `mimetype` |  |  |
+| `SrvcDocLongTextMimeType` |  | |  | `mimetype` | `CHAR(127)` | MIME Type |
 | `_TextObjectCategory` | | ✓ | | | | |
 | `_TextObjectType` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
