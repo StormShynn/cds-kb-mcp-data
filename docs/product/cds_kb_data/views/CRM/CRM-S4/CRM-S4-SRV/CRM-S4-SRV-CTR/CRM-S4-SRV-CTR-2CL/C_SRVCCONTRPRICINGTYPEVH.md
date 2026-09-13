@@ -52,7 +52,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PricingType` | ✓ | |  |  |  |  |
+| `PricingType` | ✓ | |  |  | `CHAR(1)` | Pricing Type |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code
