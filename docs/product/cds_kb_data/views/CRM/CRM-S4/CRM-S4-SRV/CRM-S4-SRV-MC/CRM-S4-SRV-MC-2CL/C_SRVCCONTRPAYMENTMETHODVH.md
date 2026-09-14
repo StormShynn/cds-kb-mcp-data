@@ -51,9 +51,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BillingCompanyCode` | ✓ | | `_CompanyCode` | `CompanyCode` |  |  |
-| `PaymentMethod` | ✓ | | `_PaymentMethod` | `PaymentMethod` |  |  |
-| `PaymentMethodName` |  | | `_PaymentMethod` | `PaymentMethodName` |  |  |
+| `BillingCompanyCode` | ✓ | | `_CompanyCode` | `CompanyCode` | `CHAR(4)` | Company Code |
+| `PaymentMethod` | ✓ | | `_PaymentMethod` | `PaymentMethod` | `CHAR(1)` | Payment Method |
+| `PaymentMethodName` |  | | `_PaymentMethod` | `PaymentMethodName` | `CHAR(30)` | Name of Payment Method in Language of the Country/Region |
 
 ## Source Code
 
