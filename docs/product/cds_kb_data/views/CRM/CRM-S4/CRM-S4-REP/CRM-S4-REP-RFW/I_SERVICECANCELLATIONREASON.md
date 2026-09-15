@@ -38,8 +38,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceContrCancellationReason` | ✓ | |  | `canc_reason` |  |  |
-| `ServiceContractCanclnParty` |  | |  | `cancparty` |  |  |
+| `ServiceContrCancellationReason` | ✓ | |  | `canc_reason` | `CHAR(4)` | CRM Service : Reason for Cancellation |
+| `ServiceContractCanclnParty` |  | |  | `cancparty` | `CHAR(4)` | Cancelling Party |
 | `_ServiceCanclnReasonText` | | ✓ | | | | |
 
 ## Associations

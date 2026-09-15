@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PaymentTerms` | ✓ | |  |  |  |  |
+| `PaymentTerms` | ✓ | |  |  | `CHAR(4)` | Terms of Payment Key |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `EventBasedProcessingKey` | ✓ | |  | `ebw_key` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `EventBasedProcessingKeyName` |  | |  | `cast(texta as ebw_key_text preserving type )` |  |  |
+| `EventBasedProcessingKey` | ✓ | |  | `ebw_key` | `CHAR(6)` | Event-Based Processing Key |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `EventBasedProcessingKeyName` |  | |  | `cast(texta as ebw_key_text preserving type )` | `CHAR(60)` | Event-Based Processing Key Description |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

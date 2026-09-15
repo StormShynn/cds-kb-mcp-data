@@ -41,65 +41,65 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostingReferenceObject` | ✓ | |  |  |  |  |
-| `CostEstimate` | ✓ | |  |  |  |  |
-| `CostingType` | ✓ | |  |  |  |  |
-| `CostingDate` | ✓ | |  |  |  |  |
-| `CostingVersion` | ✓ | |  |  |  |  |
-| `ValuationVariant` | ✓ | |  |  |  |  |
-| `CostIsEnteredManually` | ✓ | |  |  |  |  |
-| `CostingItem` | ✓ | |  |  |  |  |
-| `CostingItemCategory` |  | |  |  |  |  |
-| `Plant` |  | |  |  |  |  |
-| `Product` |  | |  |  |  |  |
-| `ValuationType` |  | |  |  |  |  |
-| `ControllingAreaCurrency` |  | |  |  |  |  |
-| `TotalPriceInInCtrlgAreaCrcy` |  | |  |  |  |  |
-| `FixedPriceInCtrlgAreaCrcy` |  | |  |  |  |  |
-| `TotalAmountInCtrlgAreaCrcy` |  | |  |  |  |  |
-| `FixedAmountInCtrlgAreaCrcy` |  | |  |  |  |  |
-| `CompanyCodeCurrency` |  | |  |  |  |  |
-| `TotalPriceInCompanyCodeCrcy` |  | |  |  |  |  |
-| `FixedPriceInCompanyCodeCrcy` |  | |  |  |  |  |
-| `TotalAmountInCoCodeCrcy` |  | |  |  |  |  |
-| `FixedAmountInCoCodeCrcy` |  | |  |  |  |  |
-| `BaseUnit` |  | |  |  |  |  |
-| `QuantityInBaseUnit` |  | |  |  |  |  |
-| `AssyScrapQuantityInValnQtyUnit` |  | |  |  |  |  |
-| `CompScrapQuantityInValnQtyUnit` |  | |  |  |  |  |
-| `CostingPriceUnitQty` |  | |  |  |  |  |
-| `CostingPriceQtyUnit` |  | |  |  |  |  |
-| `CostElement` |  | |  |  |  |  |
-| `CostOriginGroup` |  | |  |  |  |  |
-| `CostComponent` |  | |  |  |  |  |
-| `AuxiliaryCostComponent` |  | |  |  |  |  |
-| `Creditor` |  | |  |  |  |  |
-| `TransferCostEstimate` |  | |  |  |  |  |
-| `TransferCostingType` |  | |  |  |  |  |
-| `TransferCostingDate` |  | |  |  |  |  |
-| `TransferCostingVersion` |  | |  |  |  |  |
-| `TransferValuationVariant` |  | |  |  |  |  |
-| `CostCenter` |  | |  |  |  |  |
-| `ProfitCenter` |  | |  |  |  |  |
-| `BusinessArea` |  | |  |  |  |  |
-| `CostCtrActivityType` |  | |  |  |  |  |
-| `CostingObject` |  | |  |  |  |  |
-| `Operation` |  | |  |  |  |  |
-| `PurchasingInfoRecord` |  | |  |  |  |  |
-| `PurchasingOrganization` |  | |  |  |  |  |
-| `PurchasingInfoRecordCategory` |  | |  |  |  |  |
-| `PurchasingDocument` |  | |  |  |  |  |
-| `PurchasingDocumentItem` |  | |  |  |  |  |
-| `CostingValuationStrategy` |  | |  |  |  |  |
-| `ProductValnPurgInfoRecdStrgy` |  | |  |  |  |  |
-| `BillOfMaterialItemNumber` |  | |  |  |  |  |
-| `CostEstIsMixedCosting` |  | |  |  |  |  |
-| `CostgMixingRatioValue` |  | |  |  |  |  |
-| `ProcmtAltvCostEstimate` |  | |  |  |  |  |
-| `CostingItemIsAssembly` |  | |  |  |  |  |
-| `WBSElementInternalID` |  | |  |  |  |  |
-| `CostCompSplitIsExisting` |  | |  |  |  |  |
-| `HasError` |  | |  |  |  |  |
+| `CostingReferenceObject` | ✓ | |  |  | `CHAR(1)` | Reference Object |
+| `CostEstimate` | ✓ | |  |  | `NUMC(12)` | Cost Estimate |
+| `CostingType` | ✓ | |  |  | `CHAR(2)` | Costing Type |
+| `CostingDate` | ✓ | |  |  | `DATS(8)` | Costing Date (Key) |
+| `CostingVersion` | ✓ | |  |  | `NUMC(2)` | Costing Version |
+| `ValuationVariant` | ✓ | |  |  | `CHAR(3)` | Valuation Variant in Costing |
+| `CostIsEnteredManually` | ✓ | |  |  | `CHAR(1)` | Costs Entered Manually in Additive or Automatic Cost Est. |
+| `CostingItem` | ✓ | |  |  | `NUMC(5)` | Unit Costing Line Item Number |
+| `CostingItemCategory` |  | |  |  | `CHAR(1)` | Item Category |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `ValuationType` |  | |  |  | `CHAR(10)` | Valuation Type |
+| `ControllingAreaCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `TotalPriceInInCtrlgAreaCrcy` |  | |  |  | `CURR(15)` | Total Price in Controlling Area Currency |
+| `FixedPriceInCtrlgAreaCrcy` |  | |  |  | `CURR(15)` | Fixed Price in Controlling Area Currency |
+| `TotalAmountInCtrlgAreaCrcy` |  | |  |  | `CURR(15)` | Total Amount in Controlling Area Currency |
+| `FixedAmountInCtrlgAreaCrcy` |  | |  |  | `CURR(15)` | Fixed Amount in Controlling Area Currency |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `TotalPriceInCompanyCodeCrcy` |  | |  |  | `CURR(15)` | Total Price in Company Code Currency |
+| `FixedPriceInCompanyCodeCrcy` |  | |  |  | `CURR(15)` | Fixed Price in Company Code Currency |
+| `TotalAmountInCoCodeCrcy` |  | |  |  | `CURR(15)` | Total Amount in Company Code Currency |
+| `FixedAmountInCoCodeCrcy` |  | |  |  | `CURR(15)` | Fixed Amount in Company Code Currency |
+| `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
+| `QuantityInBaseUnit` |  | |  |  | `QUAN(15)` | Quantity |
+| `AssyScrapQuantityInValnQtyUnit` |  | |  |  | `QUAN(15)` | Scrap Quantity |
+| `CompScrapQuantityInValnQtyUnit` |  | |  |  | `QUAN(15)` | Component Scrap Quantity |
+| `CostingPriceUnitQty` |  | |  |  | `DEC(5)` | Price Unit of Prices in Controlling Area Currency |
+| `CostingPriceQtyUnit` |  | |  |  | `UNIT(3)` | Price Quantity Unit |
+| `CostElement` |  | |  |  | `CHAR(10)` | Cost Element |
+| `CostOriginGroup` |  | |  |  | `CHAR(4)` | Origin Group as Subdivision of Cost Element |
+| `CostComponent` |  | |  |  | `NUMC(3)` | Cost Component Number of Main Cost Component Split |
+| `AuxiliaryCostComponent` |  | |  |  | `NUMC(3)` | Cost Component Number of Auxiliary Cost Component Split |
+| `Creditor` |  | |  |  | `CHAR(10)` | Account Number of Supplier |
+| `TransferCostEstimate` |  | |  |  | `NUMC(12)` | Transfer Cost Estimate |
+| `TransferCostingType` |  | |  |  | `CHAR(2)` | Transfer Costing Type |
+| `TransferCostingDate` |  | |  |  | `DATS(8)` | Transfer Costing Date |
+| `TransferCostingVersion` |  | |  |  | `NUMC(2)` | Transfer Costing Version |
+| `TransferValuationVariant` |  | |  |  | `CHAR(3)` | Transfer Valuation Variant |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `CostCtrActivityType` |  | |  |  | `CHAR(6)` | Activity Type |
+| `CostingObject` |  | |  |  | `NUMC(8)` | Object ID |
+| `Operation` |  | |  |  | `CHAR(4)` | Operation or Phase Number |
+| `PurchasingInfoRecord` |  | |  |  | `CHAR(10)` | Purchasing Info Record Number |
+| `PurchasingOrganization` |  | |  |  | `CHAR(4)` | Purchasing Organization |
+| `PurchasingInfoRecordCategory` |  | |  |  | `CHAR(1)` | Purchasing info record category |
+| `PurchasingDocument` |  | |  |  | `CHAR(10)` | Purchasing Document Number |
+| `PurchasingDocumentItem` |  | |  |  | `NUMC(5)` | Item Number of Purchasing Document |
+| `CostingValuationStrategy` |  | |  |  | `CHAR(1)` | Valuation Strategy for Material Component |
+| `ProductValnPurgInfoRecdStrgy` |  | |  |  | `CHAR(1)` | Substrategy for Material Valuat. with Purchasing Info Record |
+| `BillOfMaterialItemNumber` |  | |  |  | `CHAR(4)` | Bill of Material Item Number |
+| `CostEstIsMixedCosting` |  | |  |  | `CHAR(1)` | Mixed Costing Indicator |
+| `CostgMixingRatioValue` |  | |  |  | `DEC(13)` | Mixing Ratio |
+| `ProcmtAltvCostEstimate` |  | |  |  | `NUMC(12)` | Cost Estimate Number of Procurement Alternative |
+| `CostingItemIsAssembly` |  | |  |  | `CHAR(1)` | Assembly Indicator for Item |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element |
+| `CostCompSplitIsExisting` |  | |  |  | `CHAR(1)` | Main Cost Component Split for KALKTAB Item Exists |
+| `HasError` |  | |  |  | `CHAR(1)` | Error Indicator |
 | `_CostEstimate` | | ✓ | | | | |
 | `_Product` | | ✓ | | | | |
 | `_ProductText` | | ✓ | | | | |

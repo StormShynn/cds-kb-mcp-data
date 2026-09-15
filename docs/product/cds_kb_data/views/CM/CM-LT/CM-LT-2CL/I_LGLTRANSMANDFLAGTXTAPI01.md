@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LegalTransactionMandatoryFlag` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `LglCntntMLglTransMandFlagText` |  | |  |  |  |  |
+| `LegalTransactionMandatoryFlag` | ✓ | |  |  | `CHAR(1)` | Control Parameter Legal Transaction Mandatory State |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `LglCntntMLglTransMandFlagText` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
 
 ## Source Code
 

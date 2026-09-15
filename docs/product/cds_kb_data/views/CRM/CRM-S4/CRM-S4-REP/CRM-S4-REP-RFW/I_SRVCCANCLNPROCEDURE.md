@@ -37,7 +37,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SrvcCanclnProcedure` | ✓ | |  | `cancproc` |  |  |
+| `SrvcCanclnProcedure` | ✓ | |  | `cancproc` | `CHAR(4)` | Cancellation Procedure |
 | `_SrvcCanclnProcedureText` | | ✓ | | | | |
 
 ## Associations

@@ -53,8 +53,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceContractStatus` | ✓ | |  | `cast( ServiceDocumentStatus as crms4_stat_lifecycle )` |  |  |
-| `ServiceContractStatusName` |  | |  | `ServiceDocumentStatusName` |  |  |
+| `ServiceContractStatus` | ✓ | |  | `cast( ServiceDocumentStatus as crms4_stat_lifecycle )` | `CHAR(4)` | Life Cycle Status |
+| `ServiceContractStatusName` |  | |  | `ServiceDocumentStatusName` | `CHAR(60)` | Short Text for Fixed Values |
 
 ## Source Code
 

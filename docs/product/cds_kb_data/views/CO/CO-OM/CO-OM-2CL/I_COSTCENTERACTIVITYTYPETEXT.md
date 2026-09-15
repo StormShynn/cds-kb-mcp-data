@@ -42,14 +42,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ValidityEndDate` | ✓ | |  | `datbi` |  |  |
-| `ControllingArea` | ✓ | |  | `cast( cslt.kokrs as fis_kokrs preserving type )` |  |  |
-| `CostCtrActivityType` | ✓ | |  | `lstar` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CostCtrActivityTypeName` |  | |  | `cast( ktext as fis_costctractivitytypename preserving type )` |  |  |
-| `CostCtrActivityTypeDesc` |  | |  | `cast( ltext as fis_costctractivitytypedesc preserving type )` |  |  |
-| `ValidityStartDate` |  | |  | `datab` |  |  |
-| `CostCtrActyTypeTxtSearchTerm` |  | |  | `mctxt` |  |  |
+| `ValidityEndDate` | ✓ | |  | `datbi` | `DATS(8)` | Valid To Date |
+| `ControllingArea` | ✓ | |  | `cast( cslt.kokrs as fis_kokrs preserving type )` | `CHAR(4)` | Controlling Area |
+| `CostCtrActivityType` | ✓ | |  | `lstar` | `CHAR(6)` | Activity Type |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CostCtrActivityTypeName` |  | |  | `cast( ktext as fis_costctractivitytypename preserving type )` | `CHAR(20)` | Cost Center Activity Type Name |
+| `CostCtrActivityTypeDesc` |  | |  | `cast( ltext as fis_costctractivitytypedesc preserving type )` | `CHAR(40)` | Cost Center Activity Type Description |
+| `ValidityStartDate` |  | |  | `datab` | `DATS(8)` | Valid-From Date |
+| `CostCtrActyTypeTxtSearchTerm` |  | |  | `mctxt` | `CHAR(20)` | Search Term for Matchcode Use |
 | `_ControllingAreaText` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 | `_ControllingArea` | | ✓ | | | | |

@@ -38,10 +38,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PaymentMethod` | ✓ | | `_PaymentMethod` | `PaymentMethod` |  |  |
-| `SalesOrganization` | ✓ | | `_SlsOrgIDDetmCountry` | `SalesOrganization` |  |  |
-| `OrgUnitTypeIDConcatenated` | ✓ | | `_SlsOrgIDDetmCountry` | `OrgUnitTypeIDConcatenated` |  |  |
-| `Country` |  | | `_PaymentMethod` | `Country` |  |  |
+| `PaymentMethod` | ✓ | | `_PaymentMethod` | `PaymentMethod` | `CHAR(1)` | Payment Method |
+| `SalesOrganization` | ✓ | | `_SlsOrgIDDetmCountry` | `SalesOrganization` | `CHAR(4)` | Sales Organization |
+| `OrgUnitTypeIDConcatenated` | ✓ | | `_SlsOrgIDDetmCountry` | `OrgUnitTypeIDConcatenated` | `CHAR(10)` | Concatenation of Object Type and Object ID |
+| `Country` |  | | `_PaymentMethod` | `Country` | `CHAR(3)` | Country/Region Key |
 | `_SalesOrganizationOrgUnit` | | ✓ | | | | |
 | `_SalesOrganization` | | ✓ | | | | |
 

@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |  |  |
-| `CostBreakdownStructure` | ✓ | |  | `cost_comp_struc` |  |  |
-| `CostBreakdownStructureName` |  | |  | `name` |  |  |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `CostBreakdownStructure` | ✓ | |  | `cost_comp_struc` | `CHAR(2)` | Cost Breakdown Structure |
+| `CostBreakdownStructureName` |  | |  | `name` | `CHAR(30)` | Cost Breakdown Structure Name |
 | `_CostBreakdownStructure` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

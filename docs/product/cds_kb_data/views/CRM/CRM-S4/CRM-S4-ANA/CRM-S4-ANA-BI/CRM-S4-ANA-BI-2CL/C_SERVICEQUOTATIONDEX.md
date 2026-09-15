@@ -54,38 +54,38 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceObjectType` | ✓ | |  |  |  |  |
-| `ServiceDocument` | ✓ | |  |  |  |  |
-| `ServiceDocumentDescription` |  | |  |  |  |  |
-| `RequestedServiceStartDateTime` |  | |  |  |  |  |
-| `RequestedServiceEndDateTime` |  | |  |  |  |  |
-| `SrvcQtanValidityStartDateTime` |  | |  |  |  |  |
-| `SrvcQtanValidityEndDateTime` |  | |  |  |  |  |
-| `ServiceDocumentIsReleased` |  | |  |  |  |  |
-| `ServiceDocumentIsOpen` |  | |  |  |  |  |
-| `ServiceDocumentIsRejected` |  | |  |  |  |  |
-| `ServiceDocumentStatus` |  | |  |  |  |  |
-| `SalesOrganization` |  | |  |  |  |  |
-| `DistributionChannel` |  | |  |  |  |  |
-| `Division` |  | |  |  |  |  |
-| `SalesOffice` |  | |  |  |  |  |
-| `SalesGroup` |  | |  |  |  |  |
-| `ContactPersonBusinessPartnerId` |  | |  | `ContactPerson` |  |  |
-| `RespyMgmtGlobalTeamID` |  | |  |  |  |  |
-| `SoldToParty` |  | |  |  |  |  |
-| `ShipToParty` |  | |  |  |  |  |
-| `PaymentTerms` |  | |  |  |  |  |
-| `ServiceDocumentRejectionReason` |  | |  |  |  |  |
-| `TransactionCurrency` |  | |  |  |  |  |
-| `ServiceDocGrossAmount` |  | |  |  |  |  |
-| `ServiceDocNetAmount` |  | |  |  |  |  |
-| `ServiceDocTaxAmount` |  | |  |  |  |  |
-| `ReferenceInHouseRepair` |  | |  |  |  |  |
-| `ServiceDocumentType` |  | |  |  |  |  |
-| `SerialNumber` |  | |  |  |  |  |
-| `Equipment` |  | |  |  |  |  |
-| `SrvcQtanFunctionalLocation` |  | |  | `cast ( ServiceQtanRefObj.FunctionalLocation as functionallocation preserving type )` |  |  |
-| `ProductID` |  | |  |  |  |  |
+| `ServiceObjectType` | ✓ | |  |  | `CHAR(10)` | Business Trans. Cat. |
+| `ServiceDocument` | ✓ | |  |  | `CHAR(10)` | Transaction ID |
+| `ServiceDocumentDescription` |  | |  |  | `CHAR(40)` | Transaction Description |
+| `RequestedServiceStartDateTime` |  | |  |  | `DEC(15)` | Service Request Start Date |
+| `RequestedServiceEndDateTime` |  | |  |  | `DEC(15)` | Service Request Due Date |
+| `SrvcQtanValidityStartDateTime` |  | |  |  | `DEC(15)` | Contract Start date |
+| `SrvcQtanValidityEndDateTime` |  | |  |  | `DEC(15)` | Contract End Date |
+| `ServiceDocumentIsReleased` |  | |  |  | `CHAR(1)` | Release Status |
+| `ServiceDocumentIsOpen` |  | |  |  | `CHAR(1)` | Status "Open" |
+| `ServiceDocumentIsRejected` |  | |  |  | `CHAR(1)` | Cancellation Status |
+| `ServiceDocumentStatus` |  | |  |  | `CHAR(4)` | Life Cycle Status |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `SalesOffice` |  | |  |  | `CHAR(4)` | Sales Office |
+| `SalesGroup` |  | |  |  | `CHAR(3)` | Sales Group |
+| `ContactPersonBusinessPartnerId` |  | |  | `ContactPerson` | `CHAR(10)` | Customer Contact Person |
+| `RespyMgmtGlobalTeamID` |  | |  |  | `CHAR(40)` | Global Team ID in Responsibility Mgmt. |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-To Party |
+| `ShipToParty` |  | |  |  | `CHAR(10)` | Ship-To Party |
+| `PaymentTerms` |  | |  |  | `CHAR(4)` | Terms of Payment |
+| `ServiceDocumentRejectionReason` |  | |  |  | `CHAR(2)` | Cancellation Reason Code |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `ServiceDocGrossAmount` |  | |  |  | `CURR(15)` | Total Gross Value of Document in Document Currency |
+| `ServiceDocNetAmount` |  | |  |  | `CURR(15)` | Total Net Value of Document in Document Currency |
+| `ServiceDocTaxAmount` |  | |  |  | `CURR(15)` | Total Tax Amount in Document Currency |
+| `ReferenceInHouseRepair` |  | |  |  | `CHAR(10)` | Reference In-House Repair |
+| `ServiceDocumentType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `SerialNumber` |  | |  |  | `CHAR(18)` | Serial Number |
+| `Equipment` |  | |  |  | `CHAR(18)` | Equipment Number |
+| `SrvcQtanFunctionalLocation` |  | |  | `cast ( ServiceQtanRefObj.FunctionalLocation as functionallocation preserving type )` | `CHAR(30)` | Functional Location |
+| `ProductID` |  | |  |  | `CHAR(40)` | Material Number |
 
 ## Associations
 

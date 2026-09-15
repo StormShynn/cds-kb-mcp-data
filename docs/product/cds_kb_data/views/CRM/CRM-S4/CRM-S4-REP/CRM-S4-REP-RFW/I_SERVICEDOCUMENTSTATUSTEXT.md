@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentStatus` | ✓ | |  | `domvalue_l` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `ServiceDocumentStatusName` |  | |  | `ddtext` |  |  |
+| `ServiceDocumentStatus` | ✓ | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `ServiceDocumentStatusName` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 | `_ServiceDocumentStatus` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

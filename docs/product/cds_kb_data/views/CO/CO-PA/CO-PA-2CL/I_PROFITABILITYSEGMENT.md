@@ -38,46 +38,46 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ProfitabilitySegment` | ✓ | |  | `paobjnr` |  |  |
-| `ControllingArea` |  | |  | `kokrs` |  |  |
-| `CompanyCode` |  | |  | `bukrs` |  |  |
-| `CostCenter` |  | |  | `copa_kostl` |  |  |
-| `FunctionalArea` |  | |  | `fkber` |  |  |
-| `BusinessArea` |  | |  | `gsber` |  |  |
-| `SalesDocument` |  | |  | `cast( kaufn as vbeln_va preserving type )` |  |  |
-| `SalesDocumentItem` |  | |  | `kdpos` |  |  |
-| `Customer` |  | |  | `kndnr` |  |  |
-| `CostObject` |  | |  | `kstrg` |  |  |
-| `PartnerProfitCenter` |  | |  | `pprctr` |  |  |
-| `ProfitCenter` |  | |  | `prctr` |  |  |
-| `WBSElementInternalID` |  | |  | `cast( pspnr as fis_wbsint_no_conv preserving type )` |  |  |
-| `Segment` |  | |  | `segment` |  |  |
-| `ServiceDocumentType` |  | |  | `service_doc_type` |  |  |
-| `ServiceDocument` |  | |  | `service_doc_id` |  |  |
-| `ServiceDocumentItem` |  | |  | `service_doc_item_id` |  |  |
-| `BusinessSolutionOrder` |  | |  | `solution_order_id` |  |  |
-| `BusinessSolutionOrderItem` |  | |  | `solution_order_item_id` |  |  |
-| `ProviderContract` |  | |  | `vtkey` |  |  |
-| `ProviderContractItem` |  | |  | `vtpos` |  |  |
-| `Plant` |  | |  | `werks` |  |  |
-| `OrderID` |  | |  | `AUFNR` |  |  |
-| `SoldProduct` |  | |  | `artnr` |  |  |
-| `CustomerSupplierIndustry` |  | |  | `brsch` |  |  |
-| `SalesDistrict` |  | |  | `bzirk` |  |  |
-| `BillingDocumentType` |  | |  | `fkart` |  |  |
-| `CustomerGroup` |  | |  | `kdgrp` |  |  |
-| `BillToParty` |  | |  | `kunre` |  |  |
-| `ShipToParty` |  | |  | `kunwe` |  |  |
-| `CustomerSupplierCountry` |  | |  | `land1` |  |  |
-| `SoldProductGroup` |  | |  | `matkl` |  |  |
-| `OrganizationDivision` |  | |  | `spart` |  |  |
-| `SalesOrganization` |  | |  | `vkorg` |  |  |
-| `DistributionChannel` |  | |  | `vtweg` |  |  |
-| `IncmpltSummableValnQtyUnt` |  | |  | `meinh` |  |  |
-| `AdditionalQuantity1Unit` |  | |  | `qunit1` |  |  |
-| `AdditionalQuantity2Unit` |  | |  | `qunit2` |  |  |
-| `AdditionalQuantity3Unit` |  | |  | `qunit3` |  |  |
-| `CreationDateTime` |  | |  | `timestamp` |  |  |
+| `ProfitabilitySegment` | ✓ | |  | `paobjnr` | `CHAR(10)` | Profitability Segment Number (CO-PA) |
+| `ControllingArea` |  | |  | `kokrs` | `CHAR(4)` | Controlling Area |
+| `CompanyCode` |  | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `CostCenter` |  | |  | `copa_kostl` | `CHAR(10)` | Cost center |
+| `FunctionalArea` |  | |  | `fkber` | `CHAR(16)` | Functional Area |
+| `BusinessArea` |  | |  | `gsber` | `CHAR(4)` | Business Area |
+| `SalesDocument` |  | |  | `cast( kaufn as vbeln_va preserving type )` | `CHAR(10)` | Sales Document |
+| `SalesDocumentItem` |  | |  | `kdpos` | `NUMC(6)` | Sales Document Item |
+| `Customer` |  | |  | `kndnr` | `CHAR(10)` | Customer |
+| `CostObject` |  | |  | `kstrg` | `CHAR(12)` | Cost Object |
+| `PartnerProfitCenter` |  | |  | `pprctr` | `CHAR(10)` | Partner Profit Center |
+| `ProfitCenter` |  | |  | `prctr` | `CHAR(10)` | Profit Center |
+| `WBSElementInternalID` |  | |  | `cast( pspnr as fis_wbsint_no_conv preserving type )` | `NUMC(8)` | WBS Element Internal ID |
+| `Segment` |  | |  | `segment` | `CHAR(10)` | Segment for Segmental Reporting |
+| `ServiceDocumentType` |  | |  | `service_doc_type` | `CHAR(4)` | Service Document Type |
+| `ServiceDocument` |  | |  | `service_doc_id` | `CHAR(10)` | Service Document ID |
+| `ServiceDocumentItem` |  | |  | `service_doc_item_id` | `NUMC(6)` | Service Document Item ID |
+| `BusinessSolutionOrder` |  | |  | `solution_order_id` | `CHAR(10)` | Solution Order ID |
+| `BusinessSolutionOrderItem` |  | |  | `solution_order_item_id` | `NUMC(6)` | Solution Order Item ID |
+| `ProviderContract` |  | |  | `vtkey` | `CHAR(20)` | Identification of a Provider Contract |
+| `ProviderContractItem` |  | |  | `vtpos` | `NUMC(6)` | Contract: Item Number |
+| `Plant` |  | |  | `werks` | `CHAR(4)` | Plant |
+| `OrderID` |  | |  | `AUFNR` | `CHAR(12)` | Order Number |
+| `SoldProduct` |  | |  | `artnr` | `CHAR(40)` | Product number |
+| `CustomerSupplierIndustry` |  | |  | `brsch` | `CHAR(4)` | Industry Key |
+| `SalesDistrict` |  | |  | `bzirk` | `CHAR(6)` | Sales District |
+| `BillingDocumentType` |  | |  | `fkart` | `CHAR(4)` | Billing Type |
+| `CustomerGroup` |  | |  | `kdgrp` | `CHAR(2)` | Customer Group |
+| `BillToParty` |  | |  | `kunre` | `CHAR(10)` | Bill-to Party |
+| `ShipToParty` |  | |  | `kunwe` | `CHAR(10)` | Ship-to Party |
+| `CustomerSupplierCountry` |  | |  | `land1` | `CHAR(3)` | Country/Region Key |
+| `SoldProductGroup` |  | |  | `matkl` | `CHAR(9)` | Material Group |
+| `OrganizationDivision` |  | |  | `spart` | `CHAR(2)` | Division |
+| `SalesOrganization` |  | |  | `vkorg` | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  | `vtweg` | `CHAR(2)` | Distribution Channel |
+| `IncmpltSummableValnQtyUnt` |  | |  | `meinh` | `UNIT(3)` | Unit of Measure |
+| `AdditionalQuantity1Unit` |  | |  | `qunit1` | `UNIT(3)` | Additional Unit of Measure 1 |
+| `AdditionalQuantity2Unit` |  | |  | `qunit2` | `UNIT(3)` | Additional Unit of Measure 2 |
+| `AdditionalQuantity3Unit` |  | |  | `qunit3` | `UNIT(3)` | Additional Unit of Measure 3 |
+| `CreationDateTime` |  | |  | `timestamp` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
 | `_CompanyCode` | | ✓ | | | | |
 | `_ControllingArea` | | ✓ | | | | |
 | `_ProfitCenter` | | ✓ | | | | |

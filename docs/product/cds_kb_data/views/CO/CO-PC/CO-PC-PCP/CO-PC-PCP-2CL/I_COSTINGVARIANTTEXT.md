@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CostingVariant` | ✓ | |  | `klvar` |  |  |
-| `CostingVariantName` |  | |  | `cast(txklv as fpc_costing_variant_name preserving type)` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CostingVariant` | ✓ | |  | `klvar` | `CHAR(4)` | Costing Variant |
+| `CostingVariantName` |  | |  | `cast(txklv as fpc_costing_variant_name preserving type)` | `CHAR(25)` | Name for Costing Variant |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

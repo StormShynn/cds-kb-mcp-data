@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostBreakdownStructure` | ✓ | |  |  |  |  |
-| `CostBreakdownType` |  | |  |  |  |  |
+| `CostBreakdownStructure` | ✓ | |  |  | `CHAR(2)` | Cost Breakdown Structure |
+| `CostBreakdownType` |  | |  |  | `CHAR(1)` | Cost Breakdown Type |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

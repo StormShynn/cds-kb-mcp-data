@@ -41,65 +41,65 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SourceLedger` | ✓ | |  |  |  |  |
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `Ledger` | ✓ | |  |  |  |  |
-| `GLAccount` | ✓ | |  |  |  |  |
-| `FiscalYear` | ✓ | |  |  |  |  |
-| `AccountingDocument` | ✓ | |  |  |  |  |
-| `LedgerGLLineItem` | ✓ | |  |  |  |  |
-| `Material` | ✓ | |  |  |  |  |
-| `ChartOfAccounts` |  | |  |  |  |  |
-| `AccountingDocumentType` |  | |  |  |  |  |
-| `ValuationArea` |  | |  |  |  |  |
-| `InventoryValuationType` |  | |  |  |  |  |
-| `FiscalPeriod` |  | |  |  |  |  |
-| `LedgerFiscalYear` |  | |  |  |  |  |
-| `PostingDate` |  | |  |  |  |  |
-| `MatlDocLatestPostgDate` |  | |  |  |  |  |
-| `ReferenceDocument` |  | |  |  |  |  |
-| `BusinessTransactionType` |  | |  |  |  |  |
-| `DocumentDate` |  | |  |  |  |  |
-| `ProfitCenter` |  | |  |  |  |  |
-| `CostCenter` |  | |  |  |  |  |
-| `Segment` |  | |  |  |  |  |
-| `AccountingDocCreatedByUser` |  | |  |  |  |  |
-| `LastChangeDateTime` |  | |  |  |  |  |
-| `FiscalYearPeriod` |  | |  |  |  |  |
-| `ReferenceDocumentType` |  | |  |  |  |  |
-| `PurchasingDocument` |  | |  |  |  |  |
-| `ProductionOrder` |  | |  |  |  |  |
-| `TransactionTypeDetermination` |  | |  |  |  |  |
-| `MaterialGroup` |  | |  |  |  |  |
-| `MaterialValuationClass` |  | |  |  |  |  |
-| `InventoryValuationCategory` |  | |  |  |  |  |
-| `ControllingArea` |  | |  |  |  |  |
-| `Plant` |  | |  |  |  |  |
-| `MaterialLedgerProcessType` |  | |  |  |  |  |
-| `MaterialLedgerCategory` |  | |  |  |  |  |
-| `CompanyCodeCurrency` |  | |  |  |  |  |
-| `AmountInCompanyCodeCurrency` |  | |  |  |  |  |
-| `SlsPriceAmountInCoCodeCrcy` |  | |  |  |  |  |
-| `GroupCurrency` |  | |  |  |  |  |
-| `AmountInGroupCurrency` |  | |  |  |  |  |
-| `FreeDefinedCurrency1` |  | |  |  |  |  |
-| `AmountInFreeDefinedCurrency1` |  | |  |  |  |  |
-| `FreeDefinedCurrency2` |  | |  |  |  |  |
-| `AmountInFreeDefinedCurrency2` |  | |  |  |  |  |
-| `FreeDefinedCurrency3` |  | |  |  |  |  |
-| `AmountInFreeDefinedCurrency3` |  | |  |  |  |  |
-| `FreeDefinedCurrency4` |  | |  |  |  |  |
-| `AmountInFreeDefinedCurrency4` |  | |  |  |  |  |
-| `FreeDefinedCurrency5` |  | |  |  |  |  |
-| `AmountInFreeDefinedCurrency5` |  | |  |  |  |  |
-| `FreeDefinedCurrency6` |  | |  |  |  |  |
-| `AmountInFreeDefinedCurrency6` |  | |  |  |  |  |
-| `FreeDefinedCurrency7` |  | |  |  |  |  |
-| `AmountInFreeDefinedCurrency7` |  | |  |  |  |  |
-| `FreeDefinedCurrency8` |  | |  |  |  |  |
-| `AmountInFreeDefinedCurrency8` |  | |  |  |  |  |
-| `BaseUnit` |  | |  |  |  |  |
-| `InventoryQty` |  | |  |  |  |  |
+| `SourceLedger` | ✓ | |  |  | `CHAR(2)` | Source Ledger |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `Ledger` | ✓ | |  |  | `CHAR(2)` | Ledger |
+| `GLAccount` | ✓ | |  |  | `CHAR(10)` | G/L Account |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocument` | ✓ | |  |  | `CHAR(10)` | Journal Entry |
+| `LedgerGLLineItem` | ✓ | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `Material` | ✓ | |  |  | `CHAR(40)` | Material Number |
+| `ChartOfAccounts` |  | |  |  | `CHAR(4)` | Chart of Accounts |
+| `AccountingDocumentType` |  | |  |  | `CHAR(2)` | Journal Entry Type |
+| `ValuationArea` |  | |  |  | `CHAR(4)` | Valuation Area |
+| `InventoryValuationType` |  | |  |  | `CHAR(10)` | Valuation Type |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
+| `MatlDocLatestPostgDate` |  | |  |  | `DATS(8)` | Posting Date |
+| `ReferenceDocument` |  | |  |  | `CHAR(10)` | Reference Doc. Number |
+| `BusinessTransactionType` |  | |  |  | `CHAR(4)` | Business Transaction Category |
+| `DocumentDate` |  | |  |  | `DATS(8)` | Journal Entry Date |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
+| `AccountingDocCreatedByUser` |  | |  |  | `CHAR(12)` | User that created the journal entry |
+| `LastChangeDateTime` |  | |  |  | `DEC(15)` | Time Stamp of Creation |
+| `FiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year Period |
+| `ReferenceDocumentType` |  | |  |  | `CHAR(5)` | Reference Document Type |
+| `PurchasingDocument` |  | |  |  | `CHAR(10)` | Purchasing Document |
+| `ProductionOrder` |  | |  |  | `CHAR(12)` | Order ID |
+| `TransactionTypeDetermination` |  | |  |  | `CHAR(3)` | Transaction Key |
+| `MaterialGroup` |  | |  |  | `CHAR(9)` | Material Group |
+| `MaterialValuationClass` |  | |  |  | `CHAR(4)` | Valuation Class |
+| `InventoryValuationCategory` |  | |  |  | `CHAR(1)` | Valuation Category |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `Plant` |  | |  |  | `CHAR(4)` | Plant |
+| `MaterialLedgerProcessType` |  | |  |  | `CHAR(4)` | Original Process Category |
+| `MaterialLedgerCategory` |  | |  |  | `CHAR(2)` | Category in Material Update Structure |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
+| `SlsPriceAmountInCoCodeCrcy` |  | |  |  | `CURR(23)` | Value at Sales Price in Local Currency |
+| `GroupCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `AmountInGroupCurrency` |  | |  |  | `CURR(23)` | Amount in Global Currency |
+| `FreeDefinedCurrency1` |  | |  |  | `CUKY(5)` | Freely Defined Currency 1 |
+| `AmountInFreeDefinedCurrency1` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 1 |
+| `FreeDefinedCurrency2` |  | |  |  | `CUKY(5)` | Freely Defined Currency 2 |
+| `AmountInFreeDefinedCurrency2` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 2 |
+| `FreeDefinedCurrency3` |  | |  |  | `CUKY(5)` | Freely Defined Currency 3 |
+| `AmountInFreeDefinedCurrency3` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 3 |
+| `FreeDefinedCurrency4` |  | |  |  | `CUKY(5)` | Freely Defined Currency 4 |
+| `AmountInFreeDefinedCurrency4` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 4 |
+| `FreeDefinedCurrency5` |  | |  |  | `CUKY(5)` | Freely Defined Currency 5 |
+| `AmountInFreeDefinedCurrency5` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 5 |
+| `FreeDefinedCurrency6` |  | |  |  | `CUKY(5)` | Freely Defined Currency 6 |
+| `AmountInFreeDefinedCurrency6` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 6 |
+| `FreeDefinedCurrency7` |  | |  |  | `CUKY(5)` | Freely Defined Currency 7 |
+| `AmountInFreeDefinedCurrency7` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 7 |
+| `FreeDefinedCurrency8` |  | |  |  | `CUKY(5)` | Freely Defined Currency 8 |
+| `AmountInFreeDefinedCurrency8` |  | |  |  | `CURR(23)` | Amount in Freely Defined Currency 8 |
+| `BaseUnit` |  | |  |  | `UNIT(3)` | Cost Source Unit |
+| `InventoryQty` |  | |  |  | `QUAN(23)` | Inventory Quantity |
 | `_MaterialGroup` | | ✓ | | | | |
 | `_ProductPlant` | | ✓ | | | | |
 | `_GLAccountInChartOfAccounts` | | ✓ | | | | |

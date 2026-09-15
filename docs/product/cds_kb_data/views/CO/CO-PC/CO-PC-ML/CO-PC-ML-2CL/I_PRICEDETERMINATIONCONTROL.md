@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PriceDeterminationControl` | ✓ | |  | `cast( domvalue_l as fml_abst )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `PriceDeterminationControl` | ✓ | |  | `cast( domvalue_l as fml_abst )` | `CHAR(1)` | Price Determination |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

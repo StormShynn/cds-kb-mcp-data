@@ -39,46 +39,46 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceObjectType` | ✓ | |  |  |  |  |
-| `BusinessSolutionOrder` | ✓ | |  |  |  |  |
-| `BusinessSolutionOrderItem` | ✓ | |  |  |  |  |
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `FiscalYear` | ✓ | |  |  |  |  |
-| `AccountingDocument` | ✓ | |  |  |  |  |
-| `LedgerGLLineItem` | ✓ | |  |  |  |  |
-| `SemanticTag` | ✓ | |  |  |  |  |
-| `BusSolnOrdType` |  | |  |  |  |  |
-| `BusSolnOrdDescription` |  | |  |  |  |  |
-| `BusSolnOrdItmDescription` |  | |  |  |  |  |
-| `BusSolnOrdItmStatus` |  | |  |  |  |  |
-| `BusSolnOrdStatus` |  | |  |  |  |  |
-| `TransactionCurrency` |  | |  |  |  |  |
-| `DisplayCurrency` |  | |  | `$parameters.P_DisplayCurrency` |  |  |
-| `SalesOrganization` |  | |  |  |  |  |
-| `DistributionChannel` |  | |  |  |  |  |
-| `Division` |  | |  |  |  |  |
-| `SalesOffice` |  | |  |  |  |  |
-| `SalesGroup` |  | |  |  |  |  |
-| `SoldToParty` |  | |  |  |  |  |
-| `PostingDate` |  | |  |  |  |  |
-| `CompanyCodeCurrency` |  | |  |  |  |  |
-| `RevenueAmountInCompanyCodeCrcy` |  | |  |  |  |  |
-| `CostAmountInCompanyCodeCrcy` |  | |  |  |  |  |
-| `RecognizedMarginAmtInCCCrcy` |  | |  |  |  |  |
-| `SlsItmRevenueAmount` |  | |  |  |  |  |
-| `SrvcContrItmRevenueAmount` |  | |  |  |  |  |
-| `ExpnItmRevenueAmount` |  | |  |  |  |  |
-| `SbscrBilgItmRevenueAmount` |  | |  |  |  |  |
-| `SrvcPrtItmRevenueAmount` |  | |  |  |  |  |
-| `SrvcItmRevenueAmount` |  | |  |  |  |  |
-| `EntProjItmRevenueAmount` |  | |  |  |  |  |
-| `CalendarYear` |  | | `_CalendarPeriod` | `CalendarYear` |  |  |
-| `CalendarQuarter` |  | | `_CalendarPeriod` | `CalendarQuarter` |  |  |
-| `CalendarMonth` |  | | `_CalendarPeriod` | `CalendarMonth` |  |  |
-| `FiscalYearVariant` |  | |  |  |  |  |
-| `FiscalPeriod` |  | |  |  |  |  |
-| `FiscalQuarter` |  | |  |  |  |  |
-| `Product` |  | |  |  |  |  |
+| `ServiceObjectType` | ✓ | |  |  | `CHAR(10)` | Business Trans. Cat. |
+| `BusinessSolutionOrder` | ✓ | |  |  | `CHAR(10)` | Transaction ID |
+| `BusinessSolutionOrderItem` | ✓ | |  |  | `NUMC(6)` | Shortened Item Number in Document |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `AccountingDocument` | ✓ | |  |  | `CHAR(10)` | Journal Entry |
+| `LedgerGLLineItem` | ✓ | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+| `SemanticTag` | ✓ | |  |  | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
+| `BusSolnOrdType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `BusSolnOrdDescription` |  | |  |  | `CHAR(40)` | Transaction Description |
+| `BusSolnOrdItmDescription` |  | |  |  | `CHAR(40)` | Product Description |
+| `BusSolnOrdItmStatus` |  | |  |  | `CHAR(4)` | Life Cycle Status |
+| `BusSolnOrdStatus` |  | |  |  | `CHAR(4)` | Life Cycle Status |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `DisplayCurrency` |  | |  | `$parameters.P_DisplayCurrency` | `CUKY(5)` |  |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `SalesOffice` |  | |  |  | `CHAR(4)` | Sales Office |
+| `SalesGroup` |  | |  |  | `CHAR(3)` | Sales Group |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-To Party |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `RevenueAmountInCompanyCodeCrcy` |  | |  |  | `CURR(23)` | Revenue Amount in Company Code Currency |
+| `CostAmountInCompanyCodeCrcy` |  | |  |  | `CURR(23)` | Cost Amount in Company Code Currency |
+| `RecognizedMarginAmtInCCCrcy` |  | |  |  | `CURR(23)` | Recognized Margin |
+| `SlsItmRevenueAmount` |  | |  |  | `CURR(23)` | Revenue Amount in Company Code Currency |
+| `SrvcContrItmRevenueAmount` |  | |  |  | `CURR(23)` | Revenue Amount in Company Code Currency |
+| `ExpnItmRevenueAmount` |  | |  |  | `CURR(23)` | Revenue Amount in Company Code Currency |
+| `SbscrBilgItmRevenueAmount` |  | |  |  | `CURR(23)` | Revenue Amount in Company Code Currency |
+| `SrvcPrtItmRevenueAmount` |  | |  |  | `CURR(23)` | Revenue Amount in Company Code Currency |
+| `SrvcItmRevenueAmount` |  | |  |  | `CURR(23)` | Revenue Amount in Company Code Currency |
+| `EntProjItmRevenueAmount` |  | |  |  | `CURR(23)` | Revenue Amount in Company Code Currency |
+| `CalendarYear` |  | | `_CalendarPeriod` | `CalendarYear` | `NUMC(4)` | Calendar Year |
+| `CalendarQuarter` |  | | `_CalendarPeriod` | `CalendarQuarter` | `NUMC(1)` | Calendar Quarter |
+| `CalendarMonth` |  | | `_CalendarPeriod` | `CalendarMonth` | `NUMC(2)` | Calendar Month |
+| `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
+| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `FiscalQuarter` |  | |  |  | `NUMC(1)` | Fiscal Quarter |
+| `Product` |  | |  |  | `CHAR(40)` | Product Sold |
 | `_ServiceObjType` | | ✓ | | | | |
 | `_CompanyCode` | | ✓ | | | | |
 | `_FiscalYear` | | ✓ | | | | |

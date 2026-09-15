@@ -41,12 +41,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ValuationVariant` | ✓ | |  |  |  |  |
-| `ValuationVariantName` |  | | `_CostingValuationVarText` | `ValuationVariantName` |  |  |
-| `OverheadCostingSheet` |  | |  |  |  |  |
-| `OverheadCostingSheetDesc` |  | |  | `cast(_CostingSheetText.CostingSheetProcedureDesc as fpc_costing_sheet_description preserving type)` |  |  |
-| `ExtProcuredMatlOvhdCostingSht` |  | |  |  |  |  |
-| `ExtProcMatlOvhdCostgShtDesc` |  | |  | `cast(_CostingSheetExtText.CostingSheetProcedureDesc as fpc_costing_sheet_ext_desc preserving type)` |  |  |
+| `ValuationVariant` | ✓ | |  |  | `CHAR(3)` | Valuation Variant in Costing |
+| `ValuationVariantName` |  | | `_CostingValuationVarText` | `ValuationVariantName` | `CHAR(25)` | Valuation Variant Name |
+| `OverheadCostingSheet` |  | |  |  | `CHAR(6)` | Costing Sheet for Calculating Overhead |
+| `OverheadCostingSheetDesc` |  | |  | `cast(_CostingSheetText.CostingSheetProcedureDesc as fpc_costing_sheet_description preserving type)` | `CHAR(30)` | Description of Costing Sheet |
+| `ExtProcuredMatlOvhdCostingSht` |  | |  |  | `CHAR(6)` | Costing Sheet for Externally Procured Materials |
+| `ExtProcMatlOvhdCostgShtDesc` |  | |  | `cast(_CostingSheetExtText.CostingSheetProcedureDesc as fpc_costing_sheet_ext_desc preserving type)` | `CHAR(30)` | Description of Costing Sheet for Ext. Procured Materials |
 | `_CostingValuationVarText` | | ✓ | | | | |
 | `_CostingSheetText` | | ✓ | | | | |
 | `_CostingSheetExtText` | | ✓ | | | | |

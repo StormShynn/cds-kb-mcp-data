@@ -42,11 +42,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  |  |  |  |
-| `CostCenter` | ✓ | |  |  |  |  |
-| `ValidityEndDate` | ✓ | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `CompanyCode` |  | |  |  |  |  |
+| `ControllingArea` | ✓ | |  |  | `CHAR(4)` | Controlling Area |
+| `CostCenter` | ✓ | |  |  | `CHAR(10)` | Cost Center |
+| `ValidityEndDate` | ✓ | |  |  | `DATS(8)` | Valid To Date |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
 | `_Text` | | ✓ | | | | |
 | `_ControllingArea` | | ✓ | | | | |
 

@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  | `cast( kokrs as fis_kokrs preserving type )` |  |  |
-| `CostOriginType` | ✓ | |  | `koaty` |  |  |
-| `CostOriginGroup` | ✓ | |  | `hrkft` |  |  |
+| `ControllingArea` | ✓ | |  | `cast( kokrs as fis_kokrs preserving type )` | `CHAR(4)` | Controlling Area |
+| `CostOriginType` | ✓ | |  | `koaty` | `CHAR(2)` | Origin Type |
+| `CostOriginGroup` | ✓ | |  | `hrkft` | `CHAR(4)` | Origin Group as Subdivision of Cost Element |
 | `_Text` | | ✓ | | | | |
 | `_ControllingArea` | | ✓ | | | | |
 | `_CostOriginType` | | ✓ | | | | |

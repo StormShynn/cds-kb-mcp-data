@@ -39,11 +39,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocItemCategory` | ✓ | |  | `itm_type` |  |  |
-| `ServiceObjectType` |  | |  | `object_type` |  |  |
-| `ItemIsBillingRelevant` |  | | `_ServiceDocItemTypeSlsSttg` | `ItemIsBillingRelevant` |  |  |
-| `StatusProfile` |  | |  | `user_stat_proc` |  |  |
-| `SrvcMgmtPrtnDetnProcedure` |  | |  | `part_determ_proc` |  |  |
+| `ServiceDocItemCategory` | ✓ | |  | `itm_type` | `CHAR(4)` | Item Category |
+| `ServiceObjectType` |  | |  | `object_type` | `CHAR(10)` | Service Item Object Type |
+| `ItemIsBillingRelevant` |  | | `_ServiceDocItemTypeSlsSttg` | `ItemIsBillingRelevant` | `CHAR(1)` | Billing Relevance |
+| `StatusProfile` |  | |  | `user_stat_proc` | `CHAR(8)` | Status Profile |
+| `SrvcMgmtPrtnDetnProcedure` |  | |  | `part_determ_proc` | `CHAR(8)` | ID of a Partner Determination Procedure |
 | `_ServiceDocItemCategoryText` | | ✓ | | | | |
 | `_ServiceDocItemTypeSlsSttg` | | ✓ | | | | |
 | `_SrvcMgmtPrtnDetnProcedure` | | ✓ | | | | |

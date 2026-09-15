@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CostCenterCategory` | ✓ | |  | `kosar` |  |  |
-| `CostCenterCategoryName` |  | |  | `cast(ktext as fis_kosar_name)` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CostCenterCategory` | ✓ | |  | `kosar` | `CHAR(1)` | Cost Center Category |
+| `CostCenterCategoryName` |  | |  | `cast(ktext as fis_kosar_name)` | `CHAR(20)` | Cost Center Category Name |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

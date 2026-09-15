@@ -40,40 +40,40 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostEstimate` | ✓ | |  |  |  |  |
-| `CurrencyRole` | ✓ | |  |  |  |  |
-| `Ledger` | ✓ | |  |  |  |  |
-| `FiscalYearPeriod` | ✓ | |  | `cast( FiscalYearPeriod as fins_fyearperiod )` |  |  |
-| `MaterialLedgerCategory` | ✓ | |  |  |  |  |
-| `ProcessCategory` | ✓ | |  |  |  |  |
-| `MatlLdgrDocIsCostingRelevant` | ✓ | |  |  |  |  |
-| `ProcurementAlternative` | ✓ | |  |  |  |  |
-| `ProductionProcess` | ✓ | |  |  |  |  |
-| `MovementType` | ✓ | |  |  |  |  |
-| `GLAccount` | ✓ | |  |  |  |  |
-| `PriceDeterminationControl` |  | |  |  |  |  |
-| `ValuationArea` |  | |  |  |  |  |
-| `Material` |  | |  |  |  |  |
-| `InventoryValuationType` |  | |  |  |  |  |
-| `SalesOrder` |  | |  |  |  |  |
-| `SalesOrderItem` |  | |  |  |  |  |
-| `InventorySpecialStockType` |  | |  |  |  |  |
-| `Supplier` |  | |  |  |  |  |
-| `WBSElementExternalID` |  | |  |  |  |  |
-| `MaterialLedgerCategoryText` |  | |  |  |  |  |
-| `ProcessCategoryName` |  | |  |  |  |  |
-| `GoodsMovementTypeName` |  | |  |  |  |  |
-| `GLAccountName` |  | |  |  |  |  |
-| `InventorySpecialStockTypeName` |  | |  |  |  |  |
-| `TotalVltdStockQuantity` |  | |  |  |  |  |
-| `ValuationQuantityUnit` |  | |  |  |  |  |
-| `InventoryAmtInDspCrcy` |  | |  |  |  |  |
-| `InvtryTransacAmtInDisplayCrcy` |  | |  |  |  |  |
-| `PriceDiffAmtInDisplayCrcy` |  | |  |  |  |  |
-| `ExchRateDiffAmtInDspCurrency` |  | |  |  |  |  |
-| `Currency` |  | |  |  |  |  |
-| `ControllingArea` |  | |  |  |  |  |
-| `ControllingValuationType` |  | |  |  |  |  |
+| `CostEstimate` | ✓ | |  |  | `NUMC(12)` | Cost Estimate Number for Cost Est. w/o Qty Structure |
+| `CurrencyRole` | ✓ | |  |  | `CHAR(2)` | External Currency Type and Valuation View |
+| `Ledger` | ✓ | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `FiscalYearPeriod` | ✓ | |  | `cast( FiscalYearPeriod as fins_fyearperiod )` | `NUMC(7)` | Fiscal Year + Fiscal Period |
+| `MaterialLedgerCategory` | ✓ | |  |  | `CHAR(2)` | Material Ledger Category |
+| `ProcessCategory` | ✓ | |  |  | `CHAR(4)` | Process Category |
+| `MatlLdgrDocIsCostingRelevant` | ✓ | |  |  | `CHAR(1)` | Costing Document |
+| `ProcurementAlternative` | ✓ | |  |  | `NUMC(12)` | Procurement Alternative/Process |
+| `ProductionProcess` | ✓ | |  |  | `NUMC(12)` | Production Process |
+| `MovementType` | ✓ | |  |  | `CHAR(3)` | Movement Type (Inventory Management) |
+| `GLAccount` | ✓ | |  |  | `CHAR(10)` | G/L Account Number |
+| `PriceDeterminationControl` |  | |  |  | `CHAR(1)` | Material Price Determination: Control |
+| `ValuationArea` |  | |  |  | `CHAR(4)` | Valuation Area |
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `InventoryValuationType` |  | |  |  | `CHAR(10)` | Valuation Type |
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales and Distribution Document Number |
+| `SalesOrderItem` |  | |  |  | `NUMC(6)` | Item number of the SD document |
+| `InventorySpecialStockType` |  | |  |  | `CHAR(1)` | Special Stock Indicator |
+| `Supplier` |  | |  |  | `CHAR(10)` | Account Number of Supplier |
+| `WBSElementExternalID` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `MaterialLedgerCategoryText` |  | |  |  | `CHAR(60)` | Material Ledger Category Text |
+| `ProcessCategoryName` |  | |  |  | `CHAR(40)` | Process Category Text |
+| `GoodsMovementTypeName` |  | |  |  | `CHAR(20)` | Movement Type Text (Inventory Management) |
+| `GLAccountName` |  | |  |  | `CHAR(20)` | G/L Account Name |
+| `InventorySpecialStockTypeName` |  | |  |  | `CHAR(20)` | Special Stock Type Name |
+| `TotalVltdStockQuantity` |  | |  |  | `QUAN(23)` | Transaction Quantity in Valuation Quantity Unit of Mesure |
+| `ValuationQuantityUnit` |  | |  |  | `UNIT(3)` | Quantity Unit for Valuation |
+| `InventoryAmtInDspCrcy` |  | |  |  | `CURR(15)` | Actual Value |
+| `InvtryTransacAmtInDisplayCrcy` |  | |  |  | `CURR(23)` | Preliminary Value |
+| `PriceDiffAmtInDisplayCrcy` |  | |  |  | `CURR(23)` | Price Difference |
+| `ExchRateDiffAmtInDspCurrency` |  | |  |  | `CURR(23)` | Exchange Rate Difference |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `ControllingValuationType` |  | |  |  | `NUMC(1)` | Valuation View (for Transfer Prices) |
 | `_Product` | | ✓ | | | | |
 | `_Plant` | | ✓ | | | | |
 | `_Ledger` | | ✓ | | | | |

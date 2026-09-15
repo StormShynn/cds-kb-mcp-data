@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessActivityCategory` | ✓ | |  | `category` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `BusinessActivityCategoryName` |  | |  | `description` |  |  |
+| `BusinessActivityCategory` | ✓ | |  | `category` | `CHAR(3)` | Activity Category (Communication Type) |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key of Description |
+| `BusinessActivityCategoryName` |  | |  | `description` | `CHAR(20)` | Description (20 Characters) |
 | `_BusinessActivityCategory` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

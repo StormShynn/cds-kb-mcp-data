@@ -37,7 +37,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PlanningCategory` | ✓ | |  |  |  |  |
+| `PlanningCategory` | ✓ | |  |  | `CHAR(10)` | Plan Category |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

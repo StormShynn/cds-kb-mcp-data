@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ComponentBreakdownMethod` | ✓ | |  |  |  |  |
+| `ComponentBreakdownMethod` | ✓ | |  |  | `CHAR(4)` | Component Breakdown Method |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

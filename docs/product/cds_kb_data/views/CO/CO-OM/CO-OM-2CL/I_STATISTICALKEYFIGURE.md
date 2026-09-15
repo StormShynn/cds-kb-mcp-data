@@ -38,20 +38,20 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `StatisticalKeyFigure` | ✓ | |  | `cast(stagr as fis_stagr preserving type )` |  |  |
-| `ControllingArea` | ✓ | |  | `cast(kokrs as fis_kokrs preserving type )` |  |  |
-| `StstcKeyFigQuantityUnit` |  | |  | `msehi` |  |  |
-| `StstcKeyFigCategory` |  | |  | `grtyp` |  |  |
-| `StstclKeyFigCreatedAtDateTime` |  | |  | `created_on` |  |  |
-| `StstclKeyFigLastChgdAtDteTme` |  | |  | `last_changed_on` |  |  |
-| `StstclKeyFigureCreatedByUser` |  | |  | `created_by` |  |  |
-| `StstclKeyFigLastChangedByUser` |  | |  | `last_changed_by` |  |  |
-| `StstclKeyFigureOrigin` |  | |  | `hktyp` |  |  |
-| `LogsInformationSystemTable` |  | |  | `struct` |  |  |
-| `LogsInfoSystemKeyFigure` |  | |  | `kennz` |  |  |
-| `StstclKeyFigureIsCurrency` |  | |  | `w_flag` |  |  |
-| `StstclKeyFigProcgPlndValType` |  | |  | `m_plan` |  |  |
-| `StstclKeyFigProcgActlValType` |  | |  | `m_ist` |  |  |
+| `StatisticalKeyFigure` | ✓ | |  | `cast(stagr as fis_stagr preserving type )` | `CHAR(6)` | Statistical Key Figure |
+| `ControllingArea` | ✓ | |  | `cast(kokrs as fis_kokrs preserving type )` | `CHAR(4)` | Controlling Area |
+| `StstcKeyFigQuantityUnit` |  | |  | `msehi` | `UNIT(3)` | Unit for Statistical Key Figure |
+| `StstcKeyFigCategory` |  | |  | `grtyp` | `CHAR(1)` | Statistical Key Figure Category |
+| `StstclKeyFigCreatedAtDateTime` |  | |  | `created_on` | `DEC(15)` | Time Stamp of Creation |
+| `StstclKeyFigLastChgdAtDteTme` |  | |  | `last_changed_on` | `DEC(15)` | Time Stamp of Last Change |
+| `StstclKeyFigureCreatedByUser` |  | |  | `created_by` | `CHAR(12)` | Created By |
+| `StstclKeyFigLastChangedByUser` |  | |  | `last_changed_by` | `CHAR(12)` | Last Changed By |
+| `StstclKeyFigureOrigin` |  | |  | `hktyp` | `CHAR(1)` | Flag if indicator is derived from LIS or set manually |
+| `LogsInformationSystemTable` |  | |  | `struct` | `CHAR(30)` | Generated DDIC table for LIS, conditions, messages |
+| `LogsInfoSystemKeyFigure` |  | |  | `kennz` | `CHAR(30)` | Key Figure from LIS |
+| `StstclKeyFigureIsCurrency` |  | |  | `w_flag` | `CHAR(1)` | Indicator if statistical ratio describes a currency |
+| `StstclKeyFigProcgPlndValType` |  | |  | `m_plan` | `CHAR(1)` | Process planned values |
+| `StstclKeyFigProcgActlValType` |  | |  | `m_ist` | `CHAR(1)` | Actual value processing |
 | `_Text` | | ✓ | | | | |
 | `_ControllingArea` | | ✓ | | | | |
 | `_StatisticalKeyFigureCat` | | ✓ | | | | |
