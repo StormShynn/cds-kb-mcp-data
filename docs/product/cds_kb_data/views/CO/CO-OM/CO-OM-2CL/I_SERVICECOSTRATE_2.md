@@ -39,34 +39,34 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AccountingCostRateUUID` | ✓ | |  |  |  |  |
-| `Ledger` |  | | `_Rate` | `Ledger` |  |  |
-| `CurrencyRole` |  | |  |  |  |  |
-| `CompanyCode` |  | |  |  |  |  |
-| `ControllingArea` |  | |  |  |  |  |
-| `CostCenter` |  | |  |  |  |  |
-| `ActivityType` |  | |  |  |  |  |
-| `IsIntercompanyRate` |  | |  |  |  |  |
-| `ReceivingCompanyCode` |  | |  |  |  |  |
-| `ServiceCostLevel` |  | |  |  |  |  |
-| `PersonnelNumber` |  | |  |  |  |  |
-| `WBSElementInternalID` |  | |  | `WBSElementInternalID_2` |  |  |
-| `WBSElementExternalID` |  | |  | `WBSElementExternalID_2` |  |  |
-| `WorkItem` |  | |  |  |  |  |
-| `TimeSheetOvertimeCategory` |  | |  |  |  |  |
-| `ValidityStartFiscalYear` |  | |  |  |  |  |
-| `ValidityStartFiscalPeriod` |  | |  |  |  |  |
-| `ValidityStartFiscalYearPeriod` |  | |  | `cast((concat( ValidityStartFiscalYear, ValidityStartFiscalPeriod )) as fins_fyearperiod)` |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `ValidityEndFiscalYear` |  | |  |  |  |  |
-| `ValidityEndFiscalPeriod` |  | |  |  |  |  |
-| `ValidityEndFiscalYearPeriod` |  | |  | `cast((concat( ValidityEndFiscalYear, ValidityEndFiscalPeriod )) as fins_fyearperiod)` |  |  |
-| `ValidityEndDate` |  | |  |  |  |  |
-| `CostCtrActivityTypeQtyUnit` |  | |  |  |  |  |
-| `Currency` |  | |  |  |  |  |
-| `CostRateVarblAmount` |  | |  | `cast(CostRateTotalAmount - CostRateFixedAmount as fco_rate_varbl_amount)` |  |  |
-| `CostRateScaleFactor` |  | |  |  |  |  |
-| `LedgerForAuthorization` |  | |  |  |  |  |
+| `AccountingCostRateUUID` | ✓ | |  |  | `RAW(16)` | Cost Rate UUID |
+| `Ledger` |  | | `_Rate` | `Ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `CurrencyRole` |  | |  |  | `CHAR(2)` | Currency and Valuation Type |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `ActivityType` |  | |  |  | `CHAR(6)` | Activity Type |
+| `IsIntercompanyRate` |  | |  |  | `CHAR(1)` | Intercompany Cost Rate Indicator |
+| `ReceivingCompanyCode` |  | |  |  | `CHAR(4)` | Receiving Company Code |
+| `ServiceCostLevel` |  | |  |  | `NUMC(4)` | Service Cost Level |
+| `PersonnelNumber` |  | |  |  | `NUMC(8)` | Personnel Number |
+| `WBSElementInternalID` |  | |  | `WBSElementInternalID_2` | `NUMC(8)` | WBS Element |
+| `WBSElementExternalID` |  | |  | `WBSElementExternalID_2` | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `WorkItem` |  | |  |  | `CHAR(10)` | Work Item ID |
+| `TimeSheetOvertimeCategory` |  | |  |  | `CHAR(4)` | Overtime Category |
+| `ValidityStartFiscalYear` |  | |  |  | `NUMC(4)` | From Fiscal Year |
+| `ValidityStartFiscalPeriod` |  | |  |  | `NUMC(3)` | From Period |
+| `ValidityStartFiscalYearPeriod` |  | |  | `cast((concat( ValidityStartFiscalYear, ValidityStartFiscalPeriod )) as fins_fyearperiod)` | `NUMC(7)` | Fiscal Year + Fiscal Period |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Validity Start Date |
+| `ValidityEndFiscalYear` |  | |  |  | `NUMC(4)` | To Fiscal Year |
+| `ValidityEndFiscalPeriod` |  | |  |  | `NUMC(3)` | To Period |
+| `ValidityEndFiscalYearPeriod` |  | |  | `cast((concat( ValidityEndFiscalYear, ValidityEndFiscalPeriod )) as fins_fyearperiod)` | `NUMC(7)` | Fiscal Year + Fiscal Period |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Validity End Date |
+| `CostCtrActivityTypeQtyUnit` |  | |  |  | `UNIT(3)` | Activity Unit |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `CostRateVarblAmount` |  | |  | `cast(CostRateTotalAmount - CostRateFixedAmount as fco_rate_varbl_amount)` | `CURR(23)` | Variable Rate |
+| `CostRateScaleFactor` |  | |  |  | `DEC(5)` | Per |
+| `LedgerForAuthorization` |  | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
 | `_CompanyCode` | | ✓ | | | | |
 | `_ReceivingCompanyCode` | | ✓ | | | | |
 | `_Currency` | | ✓ | | | | |

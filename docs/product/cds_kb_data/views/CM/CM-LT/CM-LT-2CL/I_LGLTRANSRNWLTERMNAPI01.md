@@ -38,19 +38,19 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LglCntntMRnwlAndTermnUUID` | ✓ | |  |  |  |  |
-| `LegalTransactionUUID` |  | |  |  |  |  |
-| `LglCntntMRnwlType` |  | |  |  |  |  |
-| `LglCntntMRnwlPeriod` |  | |  |  |  |  |
-| `LglCntntMRnwlPeriodUnit` |  | |  |  |  |  |
-| `LglCntntMRenewalClause` |  | |  |  |  |  |
-| `LglCntntMTerminationClause` |  | |  |  |  |  |
-| `LglCntntMNextTermnClause` |  | |  |  |  |  |
-| `LglCntntMNmbrOfRenewals` |  | |  |  |  |  |
-| `LglCntntMRnwlReminderUser` |  | |  |  |  |  |
-| `LglCntntMTermnReminderUser` |  | |  |  |  |  |
-| `LglCntntMRnwlReminderDays` |  | |  |  |  |  |
-| `LglCntntMTermnReminderDays` |  | |  |  |  |  |
+| `LglCntntMRnwlAndTermnUUID` | ✓ | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransactionUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglCntntMRnwlType` |  | |  |  | `CHAR(2)` | Renewal Type |
+| `LglCntntMRnwlPeriod` |  | |  |  | `INT1(3)` | Duration of Renewal |
+| `LglCntntMRnwlPeriodUnit` |  | |  |  | `UNIT(3)` | Unit of Measurement from Renewal Period |
+| `LglCntntMRenewalClause` |  | |  |  | `CHAR(4)` | Renewal Clause |
+| `LglCntntMTerminationClause` |  | |  |  | `CHAR(4)` | Termination Clause |
+| `LglCntntMNextTermnClause` |  | |  |  | `CHAR(4)` | Next Termination Clause |
+| `LglCntntMNmbrOfRenewals` |  | |  |  | `INT1(3)` | Number of Auto Renewals |
+| `LglCntntMRnwlReminderUser` |  | |  |  | `CHAR(12)` | Renewal Recipient User |
+| `LglCntntMTermnReminderUser` |  | |  |  | `CHAR(12)` | Termination Recipient User |
+| `LglCntntMRnwlReminderDays` |  | |  |  | `INT1(3)` | Renewal Reminder Days in advance |
+| `LglCntntMTermnReminderDays` |  | |  |  | `INT1(3)` | Termination Reminder Days in advance |
 | `_LegalTransaction` | | ✓ | | | | |
 
 ## Associations

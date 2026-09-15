@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentHasError` | ✓ | |  | `domvalue_l` |  |  |
+| `ServiceDocumentHasError` | ✓ | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_ServiceDocHasErrorText` | | ✓ | | | | |
 
 ## Associations

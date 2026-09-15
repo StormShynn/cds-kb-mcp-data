@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `ValuationArea` | ✓ | |  | `bwkey` |  |  |
-| `CostingOverheadGroup` | ✓ | |  | `kosgr` |  |  |
-| `CostingOverheadGroupName` |  | |  | `txzschl` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `ValuationArea` | ✓ | |  | `bwkey` | `CHAR(4)` | Valuation Area |
+| `CostingOverheadGroup` | ✓ | |  | `kosgr` | `CHAR(10)` | Costing Overhead Group |
+| `CostingOverheadGroupName` |  | |  | `txzschl` | `CHAR(25)` | Name of Overhead Group |
 | `_Language` | | ✓ | | | | |
 | `_ValuationArea` | | ✓ | | | | |
 

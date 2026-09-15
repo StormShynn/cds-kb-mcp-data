@@ -38,81 +38,81 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentType` | ✓ | |  |  |  |  |
-| `ServiceDocument` | ✓ | |  |  |  |  |
-| `ServiceObjectType` |  | |  |  |  |  |
-| `ServiceDocumentUUID` |  | |  |  |  |  |
-| `ServiceDocumentDescription` |  | |  |  |  |  |
-| `PricingDocument` |  | |  |  |  |  |
-| `PricingProcedure` |  | |  |  |  |  |
-| `RefBusinessSolutionOrder` |  | |  |  |  |  |
-| `SoldToParty` |  | |  |  |  |  |
-| `ServiceTeam` |  | |  |  |  |  |
-| `ResponsibleEmployee` |  | |  |  |  |  |
-| `ServiceEmployee` |  | |  |  |  |  |
-| `ContactPerson` |  | |  |  |  |  |
-| `ServiceDocumentPriority` |  | |  |  |  |  |
-| `PostingDate` |  | |  |  |  |  |
-| `PaymentTerms` |  | |  |  |  |  |
-| `TransactionCurrency` |  | |  |  |  |  |
-| `ServiceDocNetAmount` |  | |  |  |  |  |
-| `ServiceDocGrossAmount` |  | |  |  |  |  |
-| `SoldToPartyCountry` |  | |  |  |  |  |
-| `SoldToPartyRegion` |  | |  |  |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |  |  |
-| `ServiceDocumentStatus` |  | |  |  |  |  |
-| `ServiceDocumentHasError` |  | |  |  |  |  |
-| `ServiceDocBillingStatus` |  | |  |  |  |  |
-| `ServiceDocIsReleasedForBilling` |  | |  |  |  |  |
-| `ServiceDocumentIsOpen` |  | |  |  |  |  |
-| `ServiceOrganization` |  | |  |  |  |  |
-| `ResponsibleServiceOrganization` |  | |  |  |  |  |
-| `ServiceDocCreationDateTime` |  | |  |  |  |  |
-| `ServiceDocChangedDateTime` |  | |  |  |  |  |
-| `ServiceDocumentCreationDate` |  | |  | `cast( cast(substring( cast(ServiceDocCreationDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_created_on )` |  |  |
-| `ServiceDocumentChangedDate` |  | |  | `cast( cast(substring( cast(ServiceDocChangedDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_changed_on )` |  |  |
-| `ServiceDocumentCreatedByUser` |  | |  |  |  |  |
-| `ServiceDocumentChangedByUser` |  | |  |  |  |  |
-| `ServiceContractStartDateTime` |  | |  |  |  |  |
-| `ServiceContractEndDateTime` |  | |  |  |  |  |
-| `ServiceContractStartDate` |  | |  | `cast( cast(substring( cast(ServiceContractStartDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_created_on )` |  |  |
-| `ServiceContractEndDate` |  | |  | `cast( cast(substring( cast(ServiceContractEndDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_created_on )` |  |  |
-| `RequestedServiceStartDateTime` |  | |  |  |  |  |
-| `RequestedServiceEndDateTime` |  | |  |  |  |  |
-| `RequestedServiceStartDate` |  | |  | `cast( cast(substring( cast(RequestedServiceStartDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_created_on )` |  |  |
-| `RequestedServiceEndDate` |  | |  | `cast( cast(substring( cast(RequestedServiceEndDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_changed_on )` |  |  |
-| `BillingBlockReason` |  | |  |  |  |  |
-| `BusinessActivityCategory` |  | |  |  |  |  |
-| `SalesOrganization` |  | |  |  |  |  |
-| `SalesOffice` |  | |  |  |  |  |
-| `SalesGroup` |  | |  |  |  |  |
-| `SalesOrganizationOrgUnitID` |  | |  |  |  |  |
-| `SalesOfficeOrgUnitID` |  | |  |  |  |  |
-| `SalesGroupOrgUnitID` |  | |  |  |  |  |
-| `Language` |  | |  |  |  |  |
-| `ServiceDocumentRejectionReason` |  | |  |  |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
-| `DistributionChannel` |  | |  |  |  |  |
-| `Division` |  | |  |  |  |  |
-| `ServiceDocumentIsReleased` |  | |  |  |  |  |
-| `ServiceDocumentIsRejected` |  | |  |  |  |  |
-| `ShipToParty` |  | |  |  |  |  |
-| `BillToParty` |  | |  |  |  |  |
-| `PayerParty` |  | |  |  |  |  |
-| `ServiceDocTaxAmount` |  | |  |  |  |  |
-| `ServiceDefectSchema` |  | |  |  |  |  |
-| `ServiceDefectCategory` |  | |  |  |  |  |
-| `ServiceFirstResponseByDateTime` |  | |  |  |  |  |
-| `ServiceDueByDateTime` |  | |  |  |  |  |
-| `RecommendedServicePriority` |  | |  |  |  |  |
-| `ServiceDocumentUrgency` |  | |  |  |  |  |
-| `ServiceDocumentImpact` |  | |  |  |  |  |
-| `ServiceDocumentProblemCategory` |  | |  |  |  |  |
-| `ServiceReasonSchema` |  | |  |  |  |  |
-| `ServiceReasonCategory` |  | |  |  |  |  |
-| `ServiceConfirmationIsFinal` |  | |  |  |  |  |
-| `Region` |  | |  |  |  |  |
-| `ServiceRisk` |  | |  |  |  |  |
+| `ServiceDocumentType` | ✓ | |  |  | `CHAR(4)` | Business Transaction Type |
+| `ServiceDocument` | ✓ | |  |  | `CHAR(10)` | Transaction ID |
+| `ServiceObjectType` |  | |  |  | `CHAR(10)` | Business Trans. Cat. |
+| `ServiceDocumentUUID` |  | |  |  | `RAW(16)` | GUID of a CRM Order Object |
+| `ServiceDocumentDescription` |  | |  |  | `CHAR(40)` | Transaction Description |
+| `PricingDocument` |  | |  |  | `CHAR(10)` | Number of the Document Condition |
+| `PricingProcedure` |  | |  |  | `CHAR(6)` | Procedure (Pricing, Output Control, Acct. Det., Costing,...) |
+| `RefBusinessSolutionOrder` |  | |  |  | `CHAR(10)` | Reference Solution Order ID |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-To Party |
+| `ServiceTeam` |  | |  |  | `CHAR(10)` | Service Team |
+| `ResponsibleEmployee` |  | |  |  | `CHAR(10)` | Employee Responsible |
+| `ServiceEmployee` |  | |  |  | `CHAR(10)` | Executing Service Employee |
+| `ContactPerson` |  | |  |  | `CHAR(10)` | Customer Contact Person |
+| `ServiceDocumentPriority` |  | |  |  | `NUMC(1)` | Activity Priority |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date for a Business Transaction |
+| `PaymentTerms` |  | |  |  | `CHAR(4)` | Terms of Payment |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `ServiceDocNetAmount` |  | |  |  | `CURR(15)` | Total Net Value of Document in Document Currency |
+| `ServiceDocGrossAmount` |  | |  |  | `CURR(15)` | Total Gross Value of Document in Document Currency |
+| `SoldToPartyCountry` |  | |  |  | `CHAR(3)` | Country/Region |
+| `SoldToPartyRegion` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `PurchaseOrderByCustomer` |  | |  |  | `CHAR(35)` | Sold-To Party's External Reference Number |
+| `ServiceDocumentStatus` |  | |  |  | `CHAR(4)` | Life Cycle Status |
+| `ServiceDocumentHasError` |  | |  |  | `CHAR(1)` | Error Status |
+| `ServiceDocBillingStatus` |  | |  |  | `CHAR(1)` | Billing Status |
+| `ServiceDocIsReleasedForBilling` |  | |  |  | `CHAR(1)` | Release Status for Cumulated Billing |
+| `ServiceDocumentIsOpen` |  | |  |  | `CHAR(1)` | Status "Open" |
+| `ServiceOrganization` |  | |  |  | `CHAR(14)` | Service Organization |
+| `ResponsibleServiceOrganization` |  | |  |  | `CHAR(14)` | Organizational Unit (Service) |
+| `ServiceDocCreationDateTime` |  | |  |  | `DEC(15)` | Created At |
+| `ServiceDocChangedDateTime` |  | |  |  | `DEC(15)` | Changed At |
+| `ServiceDocumentCreationDate` |  | |  | `cast( cast(substring( cast(ServiceDocCreationDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_created_on )` | `DATS(8)` | Created On |
+| `ServiceDocumentChangedDate` |  | |  | `cast( cast(substring( cast(ServiceDocChangedDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_changed_on )` | `DATS(8)` | Changed On |
+| `ServiceDocumentCreatedByUser` |  | |  |  | `CHAR(12)` | User that Created the Transaction |
+| `ServiceDocumentChangedByUser` |  | |  |  | `CHAR(12)` | Transaction Last Changed By |
+| `ServiceContractStartDateTime` |  | |  |  | `DEC(15)` | Contract Start date |
+| `ServiceContractEndDateTime` |  | |  |  | `DEC(15)` | Contract End Date |
+| `ServiceContractStartDate` |  | |  | `cast( cast(substring( cast(ServiceContractStartDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_created_on )` | `DATS(8)` | Created On |
+| `ServiceContractEndDate` |  | |  | `cast( cast(substring( cast(ServiceContractEndDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_created_on )` | `DATS(8)` | Created On |
+| `RequestedServiceStartDateTime` |  | |  |  | `DEC(15)` | Service Request Start Date |
+| `RequestedServiceEndDateTime` |  | |  |  | `DEC(15)` | Service Request Due Date |
+| `RequestedServiceStartDate` |  | |  | `cast( cast(substring( cast(RequestedServiceStartDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_created_on )` | `DATS(8)` | Created On |
+| `RequestedServiceEndDate` |  | |  | `cast( cast(substring( cast(RequestedServiceEndDateTime as abap.char(30)) , 1 , 8) as abap.dats(8)) as crms4_changed_on )` | `DATS(8)` | Changed On |
+| `BillingBlockReason` |  | |  |  | `CHAR(2)` | Business Partner: Billing Block Reason |
+| `BusinessActivityCategory` |  | |  |  | `CHAR(3)` | Activity Category (Communication Type) |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `SalesOffice` |  | |  |  | `CHAR(4)` | Sales Office |
+| `SalesGroup` |  | |  |  | `CHAR(3)` | Sales Group |
+| `SalesOrganizationOrgUnitID` |  | |  |  | `CHAR(14)` | Sales Organization ID |
+| `SalesOfficeOrgUnitID` |  | |  |  | `CHAR(14)` | Sales Office |
+| `SalesGroupOrgUnitID` |  | |  |  | `CHAR(14)` | Sales Group |
+| `Language` |  | |  |  | `LANG(1)` | Language Key of Description |
+| `ServiceDocumentRejectionReason` |  | |  |  | `CHAR(2)` | Cancellation Reason Code |
+| `CustomerPurchaseOrderDate` |  | |  |  | `DATS(8)` | Reference Document Date |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `ServiceDocumentIsReleased` |  | |  |  | `CHAR(1)` | Release Status |
+| `ServiceDocumentIsRejected` |  | |  |  | `CHAR(1)` | Cancellation Status |
+| `ShipToParty` |  | |  |  | `CHAR(10)` | Ship-To Party |
+| `BillToParty` |  | |  |  | `CHAR(10)` | Bill-To Party |
+| `PayerParty` |  | |  |  | `CHAR(10)` | Payer |
+| `ServiceDocTaxAmount` |  | |  |  | `CURR(15)` | Total Tax Amount in Document Currency |
+| `ServiceDefectSchema` |  | |  |  | `CHAR(40)` | Coherent Cat. - Aspect ID |
+| `ServiceDefectCategory` |  | |  |  | `CHAR(40)` | Coherent Cat. - Category ID |
+| `ServiceFirstResponseByDateTime` |  | |  |  | `DEC(15)` | First Response By |
+| `ServiceDueByDateTime` |  | |  |  | `DEC(15)` | Date Transaction is Due |
+| `RecommendedServicePriority` |  | |  |  | `NUMC(1)` | Recommended Priority |
+| `ServiceDocumentUrgency` |  | |  |  | `NUMC(2)` | Urgency |
+| `ServiceDocumentImpact` |  | |  |  | `NUMC(2)` | Impact |
+| `ServiceDocumentProblemCategory` |  | |  |  | `CHAR(3)` | Problem Category |
+| `ServiceReasonSchema` |  | |  |  | `CHAR(40)` | Coherent Cat. - Aspect ID |
+| `ServiceReasonCategory` |  | |  |  | `CHAR(40)` | Coherent Cat. - Category ID |
+| `ServiceConfirmationIsFinal` |  | |  |  | `CHAR(1)` | Final service confirmation for the related service order |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `ServiceRisk` |  | |  |  | `NUMC(3)` | Risk |
 | `_ActivityCategory` | | ✓ | | | | |
 | `_BillingBlockReason` | | ✓ | | | | |
 | `_ContactPerson` | | ✓ | | | | |

@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceProfile` | ✓ | |  | `srv_serwi` |  |  |
+| `ServiceProfile` | ✓ | |  | `srv_serwi` | `CHAR(10)` | Service Profile |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ValuationArea` | ✓ | |  | `bwkey` |  |  |
-| `CostingOverheadGroup` | ✓ | |  | `kosgr` |  |  |
-| `OverheadCode` |  | |  | `zschl` |  |  |
+| `ValuationArea` | ✓ | |  | `bwkey` | `CHAR(4)` | Valuation Area |
+| `CostingOverheadGroup` | ✓ | |  | `kosgr` | `CHAR(10)` | Costing Overhead Group |
+| `OverheadCode` |  | |  | `zschl` | `CHAR(6)` | Overhead key |
 | `_ValuationArea` | | ✓ | | | | |
 | `_CostingOverheadGroupText` | | ✓ | | | | |
 

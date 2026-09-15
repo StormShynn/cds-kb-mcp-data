@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `StatisticalKeyFigure` | ✓ | |  |  |  |  |
-| `ControllingArea` | ✓ | |  |  |  |  |
-| `StstcKeyFigCategory` |  | |  | `cast(StstcKeyFigCategory as fis_ui_grtyp preserving type)` |  |  |
+| `StatisticalKeyFigure` | ✓ | |  |  | `CHAR(6)` | Statistical Key Figure |
+| `ControllingArea` | ✓ | |  |  | `CHAR(4)` | Controlling Area |
+| `StstcKeyFigCategory` |  | |  | `cast(StstcKeyFigCategory as fis_ui_grtyp preserving type)` | `CHAR(1)` | Statistical Key Figure Category |
 | `_Text` | | ✓ | | | | |
 | `_ControllingArea` | | ✓ | | | | |
 

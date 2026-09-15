@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentPriority` | ✓ | |  | `priority` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `ServiceDocumentPriorityName` |  | |  | `txt_long` |  |  |
+| `ServiceDocumentPriority` | ✓ | |  | `priority` | `NUMC(1)` | Appointment priority |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `ServiceDocumentPriorityName` |  | |  | `txt_long` | `CHAR(40)` | Description |
 | `_ServiceDocumentPriority` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

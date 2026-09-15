@@ -38,83 +38,83 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `InternalOrder` | ✓ | |  | `cast( aufnr as fins_int_aufnr preserving type )` |  |  |
-| `InternalOrderDescription` |  | |  | `cast(ktext as fis_internalorder_text)` |  |  |
-| `OrderCategory` |  | |  | `autyp` |  |  |
-| `BusinessArea` |  | |  | `cast(gsber as fis_rbusa)` |  |  |
-| `ControllingArea` |  | |  | `cast(kokrs as fis_kokrs preserving type )` |  |  |
-| `Plant` |  | |  | `werks` |  |  |
-| `Currency` |  | |  | `waers` |  |  |
-| `IsStatisticalOrder` |  | |  | `cast (astkz as fins_co_xaufnr_stat preserving type )` |  |  |
-| `ReferenceOrder` |  | |  | `cast(refnr as fis_aufrefnr preserving type )` |  |  |
-| `SalesOrder` |  | |  | `kdauf` |  |  |
-| `SalesOrderItem` |  | |  | `kdpos` |  |  |
-| `WBSElement` |  | |  | `pspel` |  |  |
-| `WBSElementInternalID` |  | |  | `cast ( pspel as ps_s4_pspnr preserving type )` |  |  |
-| `RequestingCostCenter` |  | |  | `akstl` |  |  |
-| `RequestingCompanyCode` |  | |  | `abukr` |  |  |
-| `RequestingOrder` |  | |  | `anfaufnr` |  |  |
-| `InternalOrderLocation` |  | |  | `cast( stort as fco_io_aufstort preserving type )` |  |  |
-| `LocationPlant` |  | |  | `sowrk` |  |  |
-| `ExternalOrder` |  | |  | `aufex` |  |  |
-| `ActualPostedCostCenter` |  | |  | `cast( cycle as fins_st_kostl preserving type )` |  |  |
-| `PlanningWithLineItemsIsActive` |  | |  | `plgkz` |  |  |
-| `CostCenter` |  | |  | `cast(kostl as fis_kostl preserving type )` |  |  |
-| `LogicalSystem` |  | |  | `logsystem` |  |  |
-| `OrdIsUsedInIntegratedPlanning` |  | |  | `cast(plint as fco_plint preserving type )` |  |  |
-| `TaxJurisdiction` |  | |  | `cast ( txjcd as fis_txjcd preserving type )` |  |  |
-| `ResultAnalysisInternalID` |  | |  | `cast(abgsl as fco_abgr_schl preserving type )` |  |  |
-| `ConditionUsage` |  | |  | `kvewe` |  |  |
-| `ConditionApplication` |  | |  | `kappl` |  |  |
-| `CostingSheet` |  | |  | `kalsm` |  |  |
-| `OverheadCode` |  | |  | `cast(zschl as fco_aufzschl preserving type )` |  |  |
-| `OrderInterestCalcProfile` |  | |  | `cast(zschm as fco_io_ps_zschm preserving type )` |  |  |
-| `IntOrderSettlementCostElement` |  | |  | `cast(kstar as fco_aufkstar preserving type )` |  |  |
-| `BasicSettlementGLAccount` |  | |  | `saknr` |  |  |
-| `IntOrderIndividualField1Value` |  | |  | `user0` |  |  |
-| `IntOrderIndividualField2Value` |  | |  | `user1` |  |  |
-| `IntOrderIndividualField3Value` |  | |  | `user2` |  |  |
-| `IntOrderIndividualField4Value` |  | |  | `user3` |  |  |
-| `IntOrderIndividualField5Amount` |  | |  | `user4` |  |  |
-| `IntOrderIndividualField6Date` |  | |  | `user5` |  |  |
-| `IntOrderIndividualField7Value` |  | |  | `user6` |  |  |
-| `IntOrderIndividualField8Date` |  | |  | `user7` |  |  |
-| `IntOrderIndividualField9Date` |  | |  | `user8` |  |  |
-| `IntOrderIndividualField10Value` |  | |  | `user9` |  |  |
-| `OrderProcessingGroup` |  | |  | `cast(abkrs as fco_aufabkrs preserving type )` |  |  |
-| `InvestmentProfile` |  | |  | `cast(ivpro as fco_im_profil preserving type )` |  |  |
-| `InvestmentScale` |  | |  | `cast(sizecl as fco_im_sizecl preserving type )` |  |  |
-| `InvestmentReason` |  | |  | `izwek` |  |  |
-| `EnvironmentalInvestmentReason` |  | |  | `umwkz` |  |  |
-| `JointVenture` |  | |  | `vname` |  |  |
-| `JointVentureRecoveryCode` |  | |  | `recid` |  |  |
-| `JointVentureEquityType` |  | |  | `etype` |  |  |
-| `JointVentureOriginalCostObject` |  | |  | `jv_oco` |  |  |
-| `JointVentureObjectType` |  | |  | `otype` |  |  |
-| `JointVentureClass` |  | |  | `jv_jibcl` |  |  |
-| `JointVentureSubClass` |  | |  | `jv_jibsa` |  |  |
-| `IsDeleted` |  | |  | `loekz` |  |  |
-| `CreationDate` |  | |  | `erdat` |  |  |
-| `CreationTime` |  | |  | `erfzeit` |  |  |
-| `CreatedByUser` |  | |  | `cast(ernam as fin_usnam preserving type )` |  |  |
-| `LastChangedByUser` |  | |  | `aenam` |  |  |
-| `LastChangeDate` |  | |  | `aedat` |  |  |
-| `LastChangeTime` |  | |  | `aezeit` |  |  |
-| `ControllingObject` |  | |  | `objnr` |  |  |
-| `CompanyCode` |  | |  | `cast(bukrs as fis_bukrs preserving type )` |  |  |
-| `ProfitCenter` |  | |  | `cast(prctr as fis_prctr)` |  |  |
-| `FunctionalArea` |  | |  | `cast(func_area as fm_farea)` |  |  |
-| `ControllingObjectClass` |  | |  | `cast(scope as fis_scope_cv_conv)` |  |  |
-| `OrderType` |  | |  | `auart` |  |  |
-| `ResponsibleCostCenter` |  | |  | `cast( kostv as fin_io_aufkostv preserving type )` |  |  |
-| `InternalOrderResponsibleUser` |  | |  | `cast( veraa_user as fco_veraa_user preserving type )` |  |  |
-| `IntOrderPlannedReleaseDate` |  | |  | `pdat1` |  |  |
-| `IntOrderPlannedCompletionDate` |  | |  | `pdat2` |  |  |
-| `IntOrderPlannedClosingDate` |  | |  | `pdat3` |  |  |
-| `InternalOrderReleaseDate` |  | |  | `idat1` |  |  |
-| `InternalOrderCompletionDate` |  | |  | `idat2` |  |  |
-| `InternalOrderClosingDate` |  | |  | `idat3` |  |  |
-| `CostCollector` |  | |  | `cckey` |  |  |
+| `InternalOrder` | ✓ | |  | `cast( aufnr as fins_int_aufnr preserving type )` | `CHAR(12)` | Internal Order |
+| `InternalOrderDescription` |  | |  | `cast(ktext as fis_internalorder_text)` | `CHAR(40)` | Internal Order Description |
+| `OrderCategory` |  | |  | `autyp` | `NUMC(2)` | Order Category |
+| `BusinessArea` |  | |  | `cast(gsber as fis_rbusa)` | `CHAR(4)` | Business Area |
+| `ControllingArea` |  | |  | `cast(kokrs as fis_kokrs preserving type )` | `CHAR(4)` | Controlling Area |
+| `Plant` |  | |  | `werks` | `CHAR(4)` | Plant |
+| `Currency` |  | |  | `waers` | `CUKY(5)` | Order Currency |
+| `IsStatisticalOrder` |  | |  | `cast (astkz as fins_co_xaufnr_stat preserving type )` | `CHAR(1)` | Indicates If the Int. Order Has a Stats. Account Assignment |
+| `ReferenceOrder` |  | |  | `cast(refnr as fis_aufrefnr preserving type )` | `CHAR(12)` | Reference Order Number |
+| `SalesOrder` |  | |  | `kdauf` | `CHAR(10)` | Sales Order Number |
+| `SalesOrderItem` |  | |  | `kdpos` | `NUMC(6)` | Item Number in Sales Order |
+| `WBSElement` |  | |  | `pspel` | `NUMC(8)` | Work Breakdown Structure Element (WBS Element) |
+| `WBSElementInternalID` |  | |  | `cast ( pspel as ps_s4_pspnr preserving type )` | `NUMC(8)` | WBS Element |
+| `RequestingCostCenter` |  | |  | `akstl` | `CHAR(10)` | Requesting cost center |
+| `RequestingCompanyCode` |  | |  | `abukr` | `CHAR(4)` | Requesting company code |
+| `RequestingOrder` |  | |  | `anfaufnr` | `CHAR(12)` | Requesting order |
+| `InternalOrderLocation` |  | |  | `cast( stort as fco_io_aufstort preserving type )` | `CHAR(10)` | Plant location for internal order |
+| `LocationPlant` |  | |  | `sowrk` | `CHAR(4)` | Location Plant |
+| `ExternalOrder` |  | |  | `aufex` | `CHAR(20)` | External order number |
+| `ActualPostedCostCenter` |  | |  | `cast( cycle as fins_st_kostl preserving type )` | `CHAR(10)` | Cost Center for Actual Costs Posting |
+| `PlanningWithLineItemsIsActive` |  | |  | `plgkz` | `CHAR(1)` | Identifier for Planning with Line Items |
+| `CostCenter` |  | |  | `cast(kostl as fis_kostl preserving type )` | `CHAR(10)` | Cost Center |
+| `LogicalSystem` |  | |  | `logsystem` | `CHAR(10)` | Logical System |
+| `OrdIsUsedInIntegratedPlanning` |  | |  | `cast(plint as fco_plint preserving type )` | `CHAR(1)` | Indicates If the Internal Order Is Plan Integrated |
+| `TaxJurisdiction` |  | |  | `cast ( txjcd as fis_txjcd preserving type )` | `CHAR(15)` | Tax Jurisdiction |
+| `ResultAnalysisInternalID` |  | |  | `cast(abgsl as fco_abgr_schl preserving type )` | `CHAR(6)` | Results Analysis Key |
+| `ConditionUsage` |  | |  | `kvewe` | `CHAR(1)` | Usage of the condition table |
+| `ConditionApplication` |  | |  | `kappl` | `CHAR(2)` | Application |
+| `CostingSheet` |  | |  | `kalsm` | `CHAR(6)` | Costing Sheet |
+| `OverheadCode` |  | |  | `cast(zschl as fco_aufzschl preserving type )` | `CHAR(6)` | Overhead Key |
+| `OrderInterestCalcProfile` |  | |  | `cast(zschm as fco_io_ps_zschm preserving type )` | `CHAR(7)` | Interest Profile for Order Interest Calculation |
+| `IntOrderSettlementCostElement` |  | |  | `cast(kstar as fco_aufkstar preserving type )` | `CHAR(10)` | Settlement Cost Element |
+| `BasicSettlementGLAccount` |  | |  | `saknr` | `CHAR(10)` | G/L Account for Basic Settlement |
+| `IntOrderIndividualField1Value` |  | |  | `user0` | `CHAR(20)` | Applicant |
+| `IntOrderIndividualField2Value` |  | |  | `user1` | `CHAR(20)` | Applicant's telephone number |
+| `IntOrderIndividualField3Value` |  | |  | `user2` | `CHAR(20)` | Person Responsible |
+| `IntOrderIndividualField4Value` |  | |  | `user3` | `CHAR(20)` | Telephone number of person in charge |
+| `IntOrderIndividualField5Amount` |  | |  | `user4` | `CURR(11)` | Estimated total costs of order |
+| `IntOrderIndividualField6Date` |  | |  | `user5` | `DATS(8)` | Application date |
+| `IntOrderIndividualField7Value` |  | |  | `user6` | `CHAR(15)` | Department |
+| `IntOrderIndividualField8Date` |  | |  | `user7` | `DATS(8)` | Work Start |
+| `IntOrderIndividualField9Date` |  | |  | `user8` | `DATS(8)` | End of Work |
+| `IntOrderIndividualField10Value` |  | |  | `user9` | `CHAR(1)` | Identifier for work permit issued |
+| `OrderProcessingGroup` |  | |  | `cast(abkrs as fco_aufabkrs preserving type )` | `NUMC(2)` | Processing Group |
+| `InvestmentProfile` |  | |  | `cast(ivpro as fco_im_profil preserving type )` | `CHAR(6)` | Investment Measure Profile |
+| `InvestmentScale` |  | |  | `cast(sizecl as fco_im_sizecl preserving type )` | `CHAR(2)` | Scale of investment objects |
+| `InvestmentReason` |  | |  | `izwek` | `CHAR(2)` | Reason for Investment |
+| `EnvironmentalInvestmentReason` |  | |  | `umwkz` | `CHAR(5)` | Reason for Environmental Investment |
+| `JointVenture` |  | |  | `vname` | `CHAR(6)` | Joint Venture |
+| `JointVentureRecoveryCode` |  | |  | `recid` | `CHAR(2)` | Recovery Indicator |
+| `JointVentureEquityType` |  | |  | `etype` | `CHAR(3)` | Equity Type |
+| `JointVentureOriginalCostObject` |  | |  | `jv_oco` | `CHAR(1)` | JV original cost object |
+| `JointVentureObjectType` |  | |  | `otype` | `CHAR(4)` | Joint Venture Object Type |
+| `JointVentureClass` |  | |  | `jv_jibcl` | `CHAR(3)` | JIB/JIBE Class |
+| `JointVentureSubClass` |  | |  | `jv_jibsa` | `CHAR(5)` | JIB/JIBE Subclass A |
+| `IsDeleted` |  | |  | `loekz` | `CHAR(1)` | Deletion Flag |
+| `CreationDate` |  | |  | `erdat` | `DATS(8)` | Created On |
+| `CreationTime` |  | |  | `erfzeit` | `TIMS(6)` | Time created |
+| `CreatedByUser` |  | |  | `cast(ernam as fin_usnam preserving type )` | `CHAR(12)` | Created By |
+| `LastChangedByUser` |  | |  | `aenam` | `CHAR(12)` | Last Changed By |
+| `LastChangeDate` |  | |  | `aedat` | `DATS(8)` | Change Date for Order Master |
+| `LastChangeTime` |  | |  | `aezeit` | `TIMS(6)` | Changed At |
+| `ControllingObject` |  | |  | `objnr` | `CHAR(22)` | Object Number |
+| `CompanyCode` |  | |  | `cast(bukrs as fis_bukrs preserving type )` | `CHAR(4)` | Company Code |
+| `ProfitCenter` |  | |  | `cast(prctr as fis_prctr)` | `CHAR(10)` | Profit Center |
+| `FunctionalArea` |  | |  | `cast(func_area as fm_farea)` | `CHAR(16)` | Functional Area |
+| `ControllingObjectClass` |  | |  | `cast(scope as fis_scope_cv_conv)` | `CHAR(2)` | Object Class |
+| `OrderType` |  | |  | `auart` | `CHAR(4)` | Order Type |
+| `ResponsibleCostCenter` |  | |  | `cast( kostv as fin_io_aufkostv preserving type )` | `CHAR(10)` | Responsible cost center in internal order |
+| `InternalOrderResponsibleUser` |  | |  | `cast( veraa_user as fco_veraa_user preserving type )` | `CHAR(12)` | Responsible user for Internal Order |
+| `IntOrderPlannedReleaseDate` |  | |  | `pdat1` | `DATS(8)` | Planned release date |
+| `IntOrderPlannedCompletionDate` |  | |  | `pdat2` | `DATS(8)` | Planned completion date |
+| `IntOrderPlannedClosingDate` |  | |  | `pdat3` | `DATS(8)` | Planned closing date |
+| `InternalOrderReleaseDate` |  | |  | `idat1` | `DATS(8)` | Release Date |
+| `InternalOrderCompletionDate` |  | |  | `idat2` | `DATS(8)` | Technical Completion Date |
+| `InternalOrderClosingDate` |  | |  | `idat3` | `DATS(8)` | Close Date |
+| `CostCollector` |  | |  | `cckey` | `CHAR(23)` | Cost Collector Key |
 | `_ControllingAreaText` | | ✓ | | | | |
 | `_InternalOrderTypeText` | | ✓ | | | | |
 | `_ControllingArea` | | ✓ | | | | |

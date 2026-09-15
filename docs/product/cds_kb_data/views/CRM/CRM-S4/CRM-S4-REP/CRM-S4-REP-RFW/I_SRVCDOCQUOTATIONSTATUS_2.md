@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentIsQuotation` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as crms4_stat_quotation preserving type )` |  |  |
+| `ServiceDocumentIsQuotation` | ✓ | |  | `cast ( substring( domvalue_l, 1, 1 ) as crms4_stat_quotation preserving type )` | `CHAR(1)` | Quotation Status |
 | `_SrvcDocQuotationStatusText` | | ✓ | | | | |
 
 ## Associations

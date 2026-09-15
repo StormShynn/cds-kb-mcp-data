@@ -53,35 +53,35 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostEstimate` | ✓ | |  |  |  |  |
-| `CurrencyRole` | ✓ | |  |  |  |  |
-| `Ledger` | ✓ | |  |  |  |  |
-| `MaterialLedgerCategory` | ✓ | |  |  |  |  |
-| `ProcessCategory` | ✓ | |  |  |  |  |
-| `MatlLdgrDocIsCostingRelevant` | ✓ | |  |  |  |  |
-| `ProductionProcess` | ✓ | |  |  |  |  |
-| `Material` | ✓ | |  |  |  |  |
-| `SalesOrder` | ✓ | |  |  |  |  |
-| `SalesOrderItem` | ✓ | |  |  |  |  |
-| `WBSElementExternalID` | ✓ | |  |  |  |  |
-| `OrderID` | ✓ | |  |  |  |  |
-| `GLAccount` | ✓ | |  |  |  |  |
-| `FiscalPeriod` |  | |  | `$parameters.P_FiscalPeriod` |  |  |
-| `FiscalYear` |  | |  | `$parameters.P_FiscalYear` |  |  |
-| `ValuationArea` |  | |  |  |  |  |
-| `CostCenter` |  | |  |  |  |  |
-| `ActivityType` |  | |  |  |  |  |
-| `TotalVltdStockQuantity` |  | |  |  |  |  |
-| `ValuationQuantityUnit` |  | |  |  |  |  |
-| `InventoryAmtInDspCrcy` |  | |  |  |  |  |
-| `InvtryTransacAmtInDisplayCrcy` |  | |  |  |  |  |
-| `PriceDiffAmtInDisplayCrcy` |  | |  |  |  |  |
-| `Currency` |  | |  |  |  |  |
-| `MaterialLedgerCategoryText` |  | |  |  |  |  |
-| `ProcessCategoryName` |  | |  |  |  |  |
-| `CompanyCode` |  | |  |  |  |  |
-| `ControllingArea` |  | |  |  |  |  |
-| `ControllingValuationType` |  | |  |  |  |  |
+| `CostEstimate` | ✓ | |  |  | `NUMC(12)` | Cost Estimate Number for Cost Est. w/o Qty Structure |
+| `CurrencyRole` | ✓ | |  |  | `CHAR(2)` | External Currency Type and Valuation View |
+| `Ledger` | ✓ | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `MaterialLedgerCategory` | ✓ | |  |  | `CHAR(2)` | Material Ledger Category |
+| `ProcessCategory` | ✓ | |  |  | `CHAR(4)` | Process Category |
+| `MatlLdgrDocIsCostingRelevant` | ✓ | |  |  | `CHAR(1)` | Costing Document |
+| `ProductionProcess` | ✓ | |  |  | `NUMC(12)` | Production Process |
+| `Material` | ✓ | |  |  | `CHAR(40)` | Material Number |
+| `SalesOrder` | ✓ | |  |  | `CHAR(10)` | Sales Order |
+| `SalesOrderItem` | ✓ | |  |  | `NUMC(6)` | Sales Order Item |
+| `WBSElementExternalID` | ✓ | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `OrderID` | ✓ | |  |  | `CHAR(12)` | Order Number |
+| `GLAccount` | ✓ | |  |  | `CHAR(10)` | G/L Account |
+| `FiscalPeriod` |  | |  | `$parameters.P_FiscalPeriod` | `NUMC(3)` | Fiscal Period |
+| `FiscalYear` |  | |  | `$parameters.P_FiscalYear` | `NUMC(4)` | Fiscal Year |
+| `ValuationArea` |  | |  |  | `CHAR(4)` | Valuation Area |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `ActivityType` |  | |  |  | `CHAR(6)` | Activity Type |
+| `TotalVltdStockQuantity` |  | |  |  | `QUAN(23)` | Transaction Quantity in Valuation Quantity Unit of Mesure |
+| `ValuationQuantityUnit` |  | |  |  | `UNIT(3)` | Quantity Unit for Valuation |
+| `InventoryAmtInDspCrcy` |  | |  |  | `CURR(15)` | Actual Value |
+| `InvtryTransacAmtInDisplayCrcy` |  | |  |  | `CURR(23)` | Preliminary Value |
+| `PriceDiffAmtInDisplayCrcy` |  | |  |  | `CURR(23)` | Price Difference |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `MaterialLedgerCategoryText` |  | |  |  | `CHAR(60)` | Material Ledger Category Text |
+| `ProcessCategoryName` |  | |  |  | `CHAR(40)` | Process Category Text |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `ControllingValuationType` |  | |  |  | `NUMC(1)` | Valuation View (for Transfer Prices) |
 | `_Product` | | ✓ | | | | |
 | `_Ledger` | | ✓ | | | | |
 | `_Currency` | | ✓ | | | | |

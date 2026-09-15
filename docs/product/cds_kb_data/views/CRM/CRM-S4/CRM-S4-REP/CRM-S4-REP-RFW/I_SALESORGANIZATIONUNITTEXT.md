@@ -41,13 +41,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `OrganizationalUnit` | ✓ | |  | `objid` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `StartDate` |  | |  | `begda` |  |  |
-| `EndDate` |  | |  | `endda` |  |  |
-| `OrganizationalUnitShortName` |  | |  | `short` |  |  |
-| `OrganizationalUnitName` |  | |  | `stext` |  |  |
-| `OrgUnitTypeIDConcatenated` |  | |  | `otjid` |  |  |
+| `OrganizationalUnit` | ✓ | |  | `objid` | `NUMC(8)` | Object ID |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `StartDate` |  | |  | `begda` | `DATS(8)` | Start Date |
+| `EndDate` |  | |  | `endda` | `DATS(8)` | End Date |
+| `OrganizationalUnitShortName` |  | |  | `short` | `CHAR(12)` | Object Abbreviation |
+| `OrganizationalUnitName` |  | |  | `stext` | `CHAR(40)` | Object Name |
+| `OrgUnitTypeIDConcatenated` |  | |  | `otjid` | `CHAR(10)` | Concatenation of Object Type and Object ID |
 | `_SalesOrganizationUnit` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

@@ -37,7 +37,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ResponseProfile` | ✓ | |  | `srv_escal` |  |  |
+| `ResponseProfile` | ✓ | |  | `srv_escal` | `CHAR(10)` | Response Profile |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

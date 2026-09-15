@@ -42,11 +42,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `InventoryValuationType` | ✓ | |  | `BWTAR` |  |  |
-| `Plant` | ✓ | |  | `BWKEY` |  |  |
-| `InventoryValuationCategory` |  | |  | `BWTTY` |  |  |
-| `InventoryValuationCategoryName` |  | | `_InventoryValCategoryText` | `InventoryValuationCategoryName` |  |  |
-| `ValuationArea` |  | |  | `BWKEY` |  |  |
+| `InventoryValuationType` | ✓ | |  | `BWTAR` | `CHAR(10)` | Valuation Type |
+| `Plant` | ✓ | |  | `BWKEY` | `CHAR(4)` | Valuation Area |
+| `InventoryValuationCategory` |  | |  | `BWTTY` | `CHAR(1)` | Valuation Category |
+| `InventoryValuationCategoryName` |  | | `_InventoryValCategoryText` | `InventoryValuationCategoryName` | `CHAR(15)` | Inventory Valuation Category Name |
+| `ValuationArea` |  | |  | `BWKEY` | `CHAR(4)` | Valuation Area |
 | `_Plant` | | ✓ | | | | |
 
 ## Associations

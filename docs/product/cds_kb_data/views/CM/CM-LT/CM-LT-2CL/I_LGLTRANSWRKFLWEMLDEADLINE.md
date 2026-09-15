@@ -39,28 +39,28 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkflowTaskInternalID` | ✓ | | `_WorkflowTask` | `WorkflowTaskInternalID` |  |  |
-| `LegalTransactionUUID` |  | |  |  |  |  |
-| `LegalTransactionWrkflwSqnc` |  | |  |  |  |  |
-| `LglTransWrkFlwModInstce` |  | |  |  |  |  |
-| `LegalTransaction` |  | | `_LegalTransactionBase` | `LegalTransaction` |  |  |
-| `LegalTransactionTitle` |  | | `_LegalTransactionBase` | `LegalTransactionTitle` |  |  |
-| `LegalTransactionHealth` |  | | `_LegalTransactionBase` | `LegalTransactionHealth` |  |  |
-| `LegalTransactionTaskName` |  | |  | `cast( _WorkflowTask._TaskTitle[1:Language=$session.system_language].WorkflowTaskName as sww_witext )` |  |  |
-| `LegalTransactionTaskType` |  | | `_WorkflowTask` | `WorkflowTaskType` |  |  |
-| `WorkflowTaskType` |  | | `_WorkflowTask` | `WorkflowTaskType` |  |  |
-| `LegalTransactionTaskTypeName` |  | |  | `_WorkflowTask._TaskType._Text[1:Language=$session.system_language].WorkflowTaskTypeDesc` |  |  |
-| `WorkflowTaskTypeDesc` |  | |  | `_WorkflowTask._TaskType._Text[1:Language=$session.system_language].WorkflowTaskTypeDesc` |  |  |
-| `WorkflowTaskStepType` |  | | `_WorkflowTask` | `WorkflowTaskStepType` |  |  |
-| `WorkflowStepTypeSubject` |  | |  | `_WorkflowTask._WorkflowStepType._WorkflowTaskStepTypeText[1:Language=$session.system_language].WorkflowStepTypeSubject` |  |  |
-| `LegalTransactionTaskStatus` |  | | `_WorkflowTask` | `WorkflowTaskStatus` |  |  |
-| `LegalTransactionTaskStatusName` |  | |  | `_WorkflowTask._TaskStatus._Text[1:Language=$session.system_language].WorkflowTaskStatusDesc` |  |  |
-| `LegalTransactionTaskCrtedByUsr` |  | | `_WorkflowTask` | `WorkflowTaskCreatedByUser` |  |  |
-| `LglTransTskCrtnUTCDteTme` |  | | `_WorkflowTask` | `WrkflwTskCreationUTCDateTime` |  |  |
-| `LegalTransactionTaskCurUsr` |  | | `_WorkflowTask` | `WorkflowTaskCurrentUser` |  |  |
-| `FullName` |  | | `_User` | `UserDescription` |  |  |
-| `WorkflowTaskDefinition` |  | | `_WorkflowTask` | `WorkflowTaskDefinition` |  |  |
-| `WorkflowTaskDueUTCDateTime` |  | | `_TaskDueDate` | `WorkflowTaskDueUTCDateTime` |  |  |
+| `WorkflowTaskInternalID` | ✓ | | `_WorkflowTask` | `WorkflowTaskInternalID` | `NUMC(12)` | Work item ID |
+| `LegalTransactionUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransactionWrkflwSqnc` |  | |  |  | `INT2(5)` | Task Group |
+| `LglTransWrkFlwModInstce` |  | |  |  | `CHAR(70)` | Instance Ident. in BOR Compat. Persistent Object References |
+| `LegalTransaction` |  | | `_LegalTransactionBase` | `LegalTransaction` | `CHAR(10)` | Legal Transaction ID |
+| `LegalTransactionTitle` |  | | `_LegalTransactionBase` | `LegalTransactionTitle` | `CHAR(128)` | Legal Transaction Name |
+| `LegalTransactionHealth` |  | | `_LegalTransactionBase` | `LegalTransactionHealth` | `CHAR(4)` | Legal Transaction Status |
+| `LegalTransactionTaskName` |  | |  | `cast( _WorkflowTask._TaskTitle[1:Language=$session.system_language].WorkflowTaskName as sww_witext )` | `CHAR(120)` | Work item text |
+| `LegalTransactionTaskType` |  | | `_WorkflowTask` | `WorkflowTaskType` | `CHAR(1)` | Work Item Type |
+| `WorkflowTaskType` |  | | `_WorkflowTask` | `WorkflowTaskType` | `CHAR(1)` | Work Item Type |
+| `LegalTransactionTaskTypeName` |  | |  | `_WorkflowTask._TaskType._Text[1:Language=$session.system_language].WorkflowTaskTypeDesc` | `CHAR(20)` | Work Item Type |
+| `WorkflowTaskTypeDesc` |  | |  | `_WorkflowTask._TaskType._Text[1:Language=$session.system_language].WorkflowTaskTypeDesc` | `CHAR(20)` | Work Item Type |
+| `WorkflowTaskStepType` |  | | `_WorkflowTask` | `WorkflowTaskStepType` | `CHAR(40)` | Workflow: Step Id |
+| `WorkflowStepTypeSubject` |  | |  | `_WorkflowTask._WorkflowStepType._WorkflowTaskStepTypeText[1:Language=$session.system_language].WorkflowStepTypeSubject` | `CHAR(255)` | Text, 255 Characters |
+| `LegalTransactionTaskStatus` |  | | `_WorkflowTask` | `WorkflowTaskStatus` | `CHAR(12)` | Processing Status of a Work Item |
+| `LegalTransactionTaskStatusName` |  | |  | `_WorkflowTask._TaskStatus._Text[1:Language=$session.system_language].WorkflowTaskStatusDesc` | `CHAR(20)` | Workflow: Work Item Status |
+| `LegalTransactionTaskCrtedByUsr` |  | | `_WorkflowTask` | `WorkflowTaskCreatedByUser` | `CHAR(12)` | User Who Created the Work Item |
+| `LglTransTskCrtnUTCDteTme` |  | | `_WorkflowTask` | `WrkflwTskCreationUTCDateTime` | `DEC(21)` | Workflow: Creation Time Stamp |
+| `LegalTransactionTaskCurUsr` |  | | `_WorkflowTask` | `WorkflowTaskCurrentUser` | `CHAR(12)` | Actual Agent of Work Item |
+| `FullName` |  | | `_User` | `UserDescription` | `CHAR(80)` | User Description |
+| `WorkflowTaskDefinition` |  | | `_WorkflowTask` | `WorkflowTaskDefinition` | `CHAR(14)` | Task ID |
+| `WorkflowTaskDueUTCDateTime` |  | | `_TaskDueDate` | `WorkflowTaskDueUTCDateTime` | `DEC(21)` | Latest End Time for Work Item |
 | `_LegalTransactionBase` | | ✓ | | | | |
 
 ## Associations

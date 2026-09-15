@@ -53,12 +53,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostingRunType` | ✓ | |  |  |  |  |
-| `FiscalYear` | ✓ | |  | `cast( FiscalYear as fis_gjahr_no_conv preserving type )` |  |  |
-| `FiscalPeriod` | ✓ | |  | `cast( FiscalPeriod as fins_fiscalperiod preserving type )` |  |  |
-| `CostingRunTypeName` |  | |  |  |  |  |
-| `CostingRunReferenceType` |  | |  |  |  |  |
-| `CostingRunReferenceTypeName` |  | |  |  |  |  |
+| `CostingRunType` | ✓ | |  |  | `CHAR(8)` | Costing Run in Actual Costing |
+| `FiscalYear` | ✓ | |  | `cast( FiscalYear as fis_gjahr_no_conv preserving type )` | `NUMC(4)` | Fiscal Year |
+| `FiscalPeriod` | ✓ | |  | `cast( FiscalPeriod as fins_fiscalperiod preserving type )` | `NUMC(3)` | Fiscal Period |
+| `CostingRunTypeName` |  | |  |  | `CHAR(80)` | Long Name of a Costing Run |
+| `CostingRunReferenceType` |  | |  |  | `CHAR(1)` | Run Reference Type for Alternative Valuation Run |
+| `CostingRunReferenceTypeName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
 
 ## Source Code
 

@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocItemCategory` | ✓ | |  | `itm_type` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `ServiceDocItemCategoryName` |  | |  | `i_description` |  |  |
-| `SrvcDocItmCategoryShortName` |  | |  | `i_description_20` |  |  |
+| `ServiceDocItemCategory` | ✓ | |  | `itm_type` | `CHAR(4)` | Item Category |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key of Description |
+| `ServiceDocItemCategoryName` |  | |  | `i_description` | `CHAR(40)` | Item Category Text |
+| `SrvcDocItmCategoryShortName` |  | |  | `i_description_20` | `CHAR(20)` | Item Category Text(20 character) |
 | `_ServiceDocItemCategory` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

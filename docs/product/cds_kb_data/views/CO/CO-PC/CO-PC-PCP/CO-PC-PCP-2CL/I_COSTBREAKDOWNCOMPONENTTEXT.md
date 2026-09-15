@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |  |  |
-| `CostBreakdownStructure` | ✓ | |  | `cost_comp_struc` |  |  |
-| `CostBreakdownComponent` | ✓ | |  | `cost_component` |  |  |
-| `CostBreakdownComponentName` |  | |  | `name` |  |  |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `CostBreakdownStructure` | ✓ | |  | `cost_comp_struc` | `CHAR(2)` | Cost Breakdown Structure |
+| `CostBreakdownComponent` | ✓ | |  | `cost_component` | `CHAR(10)` | Cost Breakdown Component |
+| `CostBreakdownComponentName` |  | |  | `name` | `CHAR(30)` | Cost Breakdown Component Name |
 | `_Structure` | | ✓ | | | | |
 | `_Component` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |

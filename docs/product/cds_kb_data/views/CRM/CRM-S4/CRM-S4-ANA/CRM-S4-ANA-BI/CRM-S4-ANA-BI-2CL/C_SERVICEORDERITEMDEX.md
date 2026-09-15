@@ -55,148 +55,148 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceObjectType` | ✓ | |  |  |  |  |
-| `ServiceDocument` | ✓ | |  |  |  |  |
-| `ServiceDocumentItem` | ✓ | |  |  |  |  |
-| `ServiceDocumentUUID` |  | |  |  |  |  |
-| `ServiceDocumentCharUUID` |  | |  |  |  |  |
-| `ServiceDocumentDescription` |  | |  |  |  |  |
-| `ServiceDocNetAmount` |  | |  |  |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |  |  |
-| `ServiceDocumentStatus` |  | |  |  |  |  |
-| `ServiceDocumentIsReleased` |  | |  |  |  |  |
-| `ServiceDocumentIsQuotation` |  | |  |  |  |  |
-| `ServiceDocumentHasError` |  | |  |  |  |  |
-| `ServiceDocIsReleasedForBilling` |  | |  |  |  |  |
-| `ServiceDocumentIsRejected` |  | |  |  |  |  |
-| `ServiceDocBillingStatus` |  | |  |  |  |  |
-| `ServiceDocumentIsOpen` |  | |  |  |  |  |
-| `BusinessActivityCategory` |  | |  |  |  |  |
-| `ServiceDocChangedDateTime` |  | |  |  |  |  |
-| `ServiceDocCreationDateTime` |  | |  |  |  |  |
-| `ServiceDocumentUrgency` |  | |  |  |  |  |
-| `ServiceDocumentImpact` |  | |  |  |  |  |
-| `ServiceDocumentProblemCategory` |  | |  |  |  |  |
-| `RecommendedServicePriority` |  | |  |  |  |  |
-| `ServiceEscalationLevel` |  | |  |  |  |  |
-| `ServiceRisk` |  | |  |  |  |  |
-| `RequestedServiceStartDate` |  | |  |  |  |  |
-| `RequestedServiceEndDate` |  | |  |  |  |  |
-| `ServiceDocumentItemPriority` |  | |  |  |  |  |
-| `ServiceDocumentType` |  | |  |  |  |  |
-| `ServiceDocumentItemUUID` |  | |  |  |  |  |
-| `ServiceDocumentItemCharUUID` |  | |  |  |  |  |
-| `ServiceDocumentItemObjectType` |  | |  |  |  |  |
-| `ParentServiceDocumentItemUUID` |  | |  |  |  |  |
-| `PostingDate` |  | |  |  |  |  |
-| `ProfitCenter` |  | |  |  |  |  |
-| `ControllingArea` |  | |  |  |  |  |
-| `ProfitCenterDeterminationDate` |  | |  |  |  |  |
-| `ServiceDocItemCategory` |  | |  |  |  |  |
-| `OriginallyRequestedProduct` |  | |  |  |  |  |
-| `Product` |  | |  |  |  |  |
-| `PlannedServiceStartDateTime` |  | |  |  |  |  |
-| `PlannedServiceEndDateTime` |  | |  |  |  |  |
-| `SrvcOrderConfirmationRelevance` |  | |  |  |  |  |
-| `InvoiceAmountInInvoiceDocCrcy` |  | |  |  |  |  |
-| `SrvcDocItmRequestedQuantity` |  | |  |  |  |  |
-| `InvoiceQuantity` |  | |  |  |  |  |
-| `SrvcDocItmDeliveredQuantity` |  | |  |  |  |  |
-| `SrvcDocItmReleasedQuantity` |  | |  |  |  |  |
-| `CumulativeConfirmedQuantity` |  | |  |  |  |  |
-| `SrvcDocItmReldAmtInTransCrcy` |  | |  |  |  |  |
-| `ServiceDocumentItemQuantity` |  | |  |  |  |  |
-| `SrvcDocItmOrdToBaseQtyNmrtr` |  | |  |  |  |  |
-| `SrvcDocItmOrdToBaseQtyDnmntr` |  | |  |  |  |  |
-| `OrderToBaseQuantityExponent` |  | |  |  |  |  |
-| `ServiceDocItemQuantityUnit` |  | |  |  |  |  |
-| `SrvcDocItemBaseQuantityUnit` |  | |  |  |  |  |
-| `ServiceTeam` |  | |  |  |  |  |
-| `SoldToParty` |  | |  |  |  |  |
-| `SoldToPartyCountry` |  | |  |  |  |  |
-| `SoldToPartyRegion` |  | |  |  |  |  |
-| `ResponsibleEmployee` |  | |  |  |  |  |
-| `ContactPerson` |  | |  |  |  |  |
-| `TransactionCurrency` |  | |  |  |  |  |
-| `StatisticsCurrency` |  | |  |  |  |  |
-| `ExchangeRateType` |  | |  |  |  |  |
-| `ExchangeRateDate` |  | |  |  |  |  |
-| `AccountingExchangeRate` |  | |  |  |  |  |
-| `CustomerGroup` |  | |  |  |  |  |
-| `BillableControl` |  | |  |  |  |  |
-| `SrvcSEPAMandateRelevance` |  | |  |  |  |  |
-| `SEPAMandate` |  | |  |  |  |  |
-| `PaymentTerms` |  | |  |  |  |  |
-| `PaymentMethod` |  | |  |  |  |  |
-| `WBSElementInternalID` |  | |  |  |  |  |
-| `BillingBlockReason` |  | |  |  |  |  |
-| `AdditionalCustomerGroup1` |  | |  |  |  |  |
-| `AdditionalCustomerGroup2` |  | |  |  |  |  |
-| `AdditionalCustomerGroup3` |  | |  |  |  |  |
-| `AdditionalCustomerGroup4` |  | |  |  |  |  |
-| `AdditionalCustomerGroup5` |  | |  |  |  |  |
-| `SalesOrganizationOrgUnitID` |  | |  |  |  |  |
-| `SalesOfficeOrgUnitID` |  | |  |  |  |  |
-| `SalesGroupOrgUnitID` |  | |  |  |  |  |
-| `DistributionChannel` |  | |  |  |  |  |
-| `Division` |  | |  |  |  |  |
-| `ServiceOrganization` |  | |  |  |  |  |
-| `ResponsibleSalesOrganization` |  | |  |  |  |  |
-| `ResponsibleServiceOrganization` |  | |  |  |  |  |
-| `SalesOrganization` |  | |  |  |  |  |
-| `SalesOffice` |  | |  |  |  |  |
-| `SalesGroup` |  | |  |  |  |  |
-| `SrvcDocItemSLADueByDateTime` |  | |  |  |  |  |
-| `ServiceDurationUnit` |  | |  |  |  |  |
-| `ServiceDuration` |  | |  |  |  |  |
-| `ServiceDocumentItemStatus` |  | |  |  |  |  |
-| `ServiceDocumentItemIsReleased` |  | |  |  |  |  |
-| `ServiceDocumentItemIsQuotation` |  | |  |  |  |  |
-| `ServiceDocumentItemHasError` |  | |  |  |  |  |
-| `SrvcDocItmDeliveryStatus` |  | |  |  |  |  |
-| `SrvcDocItmGoodsIssueStatus` |  | |  |  |  |  |
-| `ServiceDocItemBillingStatus` |  | |  |  |  |  |
-| `SrvcDocItmIsReleasedForBilling` |  | |  |  |  |  |
-| `ServiceDocumentItemIsRejected` |  | |  |  |  |  |
-| `ServiceDocumentItemIsOpen` |  | |  |  |  |  |
-| `QuotationIsAccepted` |  | |  |  |  |  |
-| `SrvcDocItemIsUnplanned` |  | |  |  |  |  |
-| `SrvcDocItemExecutionStatus` |  | |  |  |  |  |
-| `SrvcDocItemCreditStatus` |  | |  |  |  |  |
-| `ServiceDocumentItemNetAmount` |  | |  |  |  |  |
-| `ServiceDocItemGrossAmount` |  | |  |  |  |  |
-| `ProductGroup` |  | |  |  |  |  |
-| `SrvcMaterialPricingGroup` |  | |  | `ProductGroup` |  |  |
-| `ProductGroup1` |  | |  |  |  |  |
-| `ProductGroup2` |  | |  |  |  |  |
-| `ProductGroup3` |  | |  |  |  |  |
-| `ProductGroup4` |  | |  |  |  |  |
-| `ProductGroup5` |  | |  |  |  |  |
-| `ProductHierarchy` |  | |  |  |  |  |
-| `ServiceDocItemRejectionReason` |  | |  |  |  |  |
-| `ServiceRefObjectSequenceNumber` |  | |  |  |  |  |
-| `ServiceReferenceObjectType` |  | |  |  |  |  |
-| `ServiceReferenceObjectUUID` |  | |  |  |  |  |
-| `ProductID` |  | |  |  |  |  |
-| `SrvcRefObjIsMainObject` |  | |  |  |  |  |
-| `ProductUUID` |  | |  |  |  |  |
-| `SerialNumber` |  | |  |  |  |  |
-| `Equipment` |  | |  |  |  |  |
-| `FunctionalLocation` |  | |  |  |  |  |
-| `ServiceDocumentRelationUUID` |  | |  |  |  |  |
-| `ServiceDocRltnSequenceNumber` |  | |  |  |  |  |
-| `ServiceDocumentPredecessorUUID` |  | |  |  |  |  |
-| `ServiceDocPrdcssrBusObjType` |  | |  |  |  |  |
-| `SrvcContrPredecessorUUID` |  | |  | `ServiceDocumentPredecessorUUID` |  |  |
-| `SrvcContrPrdcssrBusObjType` |  | |  | `ServiceDocPrdcssrBusObjType` |  |  |
-| `ServiceDocumentItmRelationUUID` |  | |  |  |  |  |
-| `ServiceDocItmRltnSqncNumber` |  | |  |  |  |  |
-| `ServiceDocItmPrdcssrCharUUID` |  | |  |  |  |  |
-| `ServiceDocItmPrdcssrBusObjType` |  | |  |  |  |  |
-| `SrvcContrItmPrdcssrCharUUID` |  | |  | `ServiceDocItmPrdcssrCharUUID` |  |  |
-| `SrvcContrItmPrdcssrBusObjType` |  | |  | `ServiceDocItmPrdcssrBusObjType` |  |  |
-| `RefBusinessSolutionOrder` |  | |  |  |  |  |
-| `RefBusinessSolutionOrderItem` |  | |  |  |  |  |
+| `ServiceObjectType` | ✓ | |  |  | `CHAR(10)` | Business Trans. Cat. |
+| `ServiceDocument` | ✓ | |  |  | `CHAR(10)` | Transaction ID |
+| `ServiceDocumentItem` | ✓ | |  |  | `NUMC(6)` | Shortened Item Number in Document |
+| `ServiceDocumentUUID` |  | |  |  | `RAW(16)` | GUID of a CRM Order Object |
+| `ServiceDocumentCharUUID` |  | |  |  | `CHAR(32)` | 32 Character CRM Object GUID (Converted) |
+| `ServiceDocumentDescription` |  | |  |  | `CHAR(40)` | Transaction Description |
+| `ServiceDocNetAmount` |  | |  |  | `CURR(15)` | Total Net Value of Document in Document Currency |
+| `PurchaseOrderByCustomer` |  | |  |  | `CHAR(35)` | Sold-To Party's External Reference Number |
+| `ServiceDocumentStatus` |  | |  |  | `CHAR(4)` | Life Cycle Status |
+| `ServiceDocumentIsReleased` |  | |  |  | `CHAR(1)` | Release Status |
+| `ServiceDocumentIsQuotation` |  | |  |  | `CHAR(1)` | Quotation Status |
+| `ServiceDocumentHasError` |  | |  |  | `CHAR(1)` | Error Status |
+| `ServiceDocIsReleasedForBilling` |  | |  |  | `CHAR(1)` | Release Status for Cumulated Billing |
+| `ServiceDocumentIsRejected` |  | |  |  | `CHAR(1)` | Cancellation Status |
+| `ServiceDocBillingStatus` |  | |  |  | `CHAR(1)` | Billing Status |
+| `ServiceDocumentIsOpen` |  | |  |  | `CHAR(1)` | Status "Open" |
+| `BusinessActivityCategory` |  | |  |  | `CHAR(3)` | Activity Category (Communication Type) |
+| `ServiceDocChangedDateTime` |  | |  |  | `DEC(15)` | Changed At |
+| `ServiceDocCreationDateTime` |  | |  |  | `DEC(15)` | Created At |
+| `ServiceDocumentUrgency` |  | |  |  | `NUMC(2)` | Urgency |
+| `ServiceDocumentImpact` |  | |  |  | `NUMC(2)` | Impact |
+| `ServiceDocumentProblemCategory` |  | |  |  | `CHAR(3)` | Problem Category |
+| `RecommendedServicePriority` |  | |  |  | `NUMC(1)` | Recommended Priority |
+| `ServiceEscalationLevel` |  | |  |  | `NUMC(1)` | Escalation |
+| `ServiceRisk` |  | |  |  | `NUMC(3)` | Risk |
+| `RequestedServiceStartDate` |  | |  |  | `DATS(8)` | Created On |
+| `RequestedServiceEndDate` |  | |  |  | `DATS(8)` | Changed On |
+| `ServiceDocumentItemPriority` |  | |  |  | `NUMC(1)` | Activity Priority |
+| `ServiceDocumentType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `ServiceDocumentItemUUID` |  | |  |  | `RAW(16)` | GUID of a CRM Order Object |
+| `ServiceDocumentItemCharUUID` |  | |  |  | `CHAR(32)` | 32 Character CRM Object GUID (Converted) |
+| `ServiceDocumentItemObjectType` |  | |  |  | `CHAR(10)` | CRM Item Object Type |
+| `ParentServiceDocumentItemUUID` |  | |  |  | `RAW(16)` | GUID of a CRM Order Object |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date for a Business Transaction |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `ProfitCenterDeterminationDate` |  | |  |  | `DATS(8)` | Date |
+| `ServiceDocItemCategory` |  | |  |  | `CHAR(4)` | Item Category |
+| `OriginallyRequestedProduct` |  | |  |  | `CHAR(54)` | Product Name Entered |
+| `Product` |  | |  |  | `CHAR(40)` | Product |
+| `PlannedServiceStartDateTime` |  | |  |  | `DEC(15)` | Service Planned From Date |
+| `PlannedServiceEndDateTime` |  | |  |  | `DEC(15)` | Service Planned To Date |
+| `SrvcOrderConfirmationRelevance` |  | |  |  | `CHAR(1)` | Relevant for Confirmation |
+| `InvoiceAmountInInvoiceDocCrcy` |  | |  |  | `CURR(19)` | Invoice Value |
+| `SrvcDocItmRequestedQuantity` |  | |  |  | `QUAN(15)` | Ordered Quantity |
+| `InvoiceQuantity` |  | |  |  | `QUAN(15)` | Invoiced Quantity |
+| `SrvcDocItmDeliveredQuantity` |  | |  |  | `QUAN(15)` | Delivered Quantity |
+| `SrvcDocItmReleasedQuantity` |  | |  |  | `QUAN(15)` | Released Quantity |
+| `CumulativeConfirmedQuantity` |  | |  |  | `QUAN(13)` | CRM: Confirmed Quantity |
+| `SrvcDocItmReldAmtInTransCrcy` |  | |  |  | `CURR(19)` | Released Value |
+| `ServiceDocumentItemQuantity` |  | |  |  | `QUAN(13)` | CRM: Order Quantity |
+| `SrvcDocItmOrdToBaseQtyNmrtr` |  | |  |  | `INT4(10)` | Numerator (factor) for conversion trans. quantity in BME |
+| `SrvcDocItmOrdToBaseQtyDnmntr` |  | |  |  | `INT4(10)` | Denominator (factor) for conversion trans. quantity in BME |
+| `OrderToBaseQuantityExponent` |  | |  |  | `INT2(5)` | 10 Exponent for Quantity Conversion |
+| `ServiceDocItemQuantityUnit` |  | |  |  | `UNIT(3)` | Unit of Measure in Which the Product Is Sold |
+| `SrvcDocItemBaseQuantityUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure of Product |
+| `ServiceTeam` |  | |  |  | `CHAR(10)` | Service Team |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-To Party |
+| `SoldToPartyCountry` |  | |  |  | `CHAR(3)` | Country/Region |
+| `SoldToPartyRegion` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `ResponsibleEmployee` |  | |  |  | `CHAR(10)` | Employee Responsible |
+| `ContactPerson` |  | |  |  | `CHAR(10)` | Customer Contact Person |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `StatisticsCurrency` |  | |  |  | `CUKY(5)` | Reference Currency |
+| `ExchangeRateType` |  | |  |  | `CHAR(4)` | Exchange Rate Type |
+| `ExchangeRateDate` |  | |  |  | `DATS(8)` | Exchange Rate Date |
+| `AccountingExchangeRate` |  | |  |  | `DEC(9)` | Exchange Rate |
+| `CustomerGroup` |  | |  |  | `CHAR(2)` | Customer Group |
+| `BillableControl` |  | |  |  | `CHAR(2)` | Accounting Indicator |
+| `SrvcSEPAMandateRelevance` |  | |  |  | `CHAR(1)` | Indicator for SEPA-Relevant Transactions |
+| `SEPAMandate` |  | |  |  | `CHAR(35)` | Unique Reference to Mandate per Payment Recipient |
+| `PaymentTerms` |  | |  |  | `CHAR(4)` | Terms of Payment |
+| `PaymentMethod` |  | |  |  | `CHAR(1)` | Payment Method |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element |
+| `BillingBlockReason` |  | |  |  | `CHAR(2)` | Business Partner: Billing Block Reason |
+| `AdditionalCustomerGroup1` |  | |  |  | `CHAR(3)` | Customer Group 1 |
+| `AdditionalCustomerGroup2` |  | |  |  | `CHAR(3)` | Customer Group 2 |
+| `AdditionalCustomerGroup3` |  | |  |  | `CHAR(3)` | Customer Group 3 |
+| `AdditionalCustomerGroup4` |  | |  |  | `CHAR(3)` | Customer Group 4 |
+| `AdditionalCustomerGroup5` |  | |  |  | `CHAR(3)` | Customer Group 5 |
+| `SalesOrganizationOrgUnitID` |  | |  |  | `CHAR(14)` | Sales Organization ID |
+| `SalesOfficeOrgUnitID` |  | |  |  | `CHAR(14)` | Sales Office |
+| `SalesGroupOrgUnitID` |  | |  |  | `CHAR(14)` | Sales Group |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `ServiceOrganization` |  | |  |  | `CHAR(14)` | Service Organization |
+| `ResponsibleSalesOrganization` |  | |  |  | `CHAR(14)` | Organizational Unit (Sales) |
+| `ResponsibleServiceOrganization` |  | |  |  | `CHAR(14)` | Organizational Unit (Service) |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `SalesOffice` |  | |  |  | `CHAR(4)` | Sales Office |
+| `SalesGroup` |  | |  |  | `CHAR(3)` | Sales Group |
+| `SrvcDocItemSLADueByDateTime` |  | |  |  | `DEC(15)` | Due By |
+| `ServiceDurationUnit` |  | |  |  | `UNIT(3)` | Unit for Duration of Work |
+| `ServiceDuration` |  | |  |  | `QUAN(13)` | Duration |
+| `ServiceDocumentItemStatus` |  | |  |  | `CHAR(4)` | Life Cycle Status |
+| `ServiceDocumentItemIsReleased` |  | |  |  | `CHAR(1)` | Release Status |
+| `ServiceDocumentItemIsQuotation` |  | |  |  | `CHAR(1)` | Quotation Status |
+| `ServiceDocumentItemHasError` |  | |  |  | `CHAR(1)` | Error Status |
+| `SrvcDocItmDeliveryStatus` |  | |  |  | `CHAR(1)` | Delivery Status |
+| `SrvcDocItmGoodsIssueStatus` |  | |  |  | `CHAR(1)` | Goods Issue Status |
+| `ServiceDocItemBillingStatus` |  | |  |  | `CHAR(1)` | Billing Status |
+| `SrvcDocItmIsReleasedForBilling` |  | |  |  | `CHAR(1)` | Billing Release Status |
+| `ServiceDocumentItemIsRejected` |  | |  |  | `CHAR(1)` | Cancellation Status |
+| `ServiceDocumentItemIsOpen` |  | |  |  | `CHAR(1)` | Status "Open" |
+| `QuotationIsAccepted` |  | |  |  | `CHAR(1)` | Acceptance Status |
+| `SrvcDocItemIsUnplanned` |  | |  |  | `CHAR(1)` | Unplanned Item |
+| `SrvcDocItemExecutionStatus` |  | |  |  | `CHAR(2)` | Execution Status |
+| `SrvcDocItemCreditStatus` |  | |  |  | `CHAR(1)` | Credit Status of Item |
+| `ServiceDocumentItemNetAmount` |  | |  |  | `CURR(15)` | Net Value |
+| `ServiceDocItemGrossAmount` |  | |  |  | `CURR(15)` | Gross Order Value in PO Currency |
+| `ProductGroup` |  | |  |  | `CHAR(2)` | Material Price Group |
+| `SrvcMaterialPricingGroup` |  | |  | `ProductGroup` | `CHAR(2)` | Material Price Group |
+| `ProductGroup1` |  | |  |  | `CHAR(3)` | Material Group 1 |
+| `ProductGroup2` |  | |  |  | `CHAR(3)` | Material Group 2 |
+| `ProductGroup3` |  | |  |  | `CHAR(3)` | Material Group 3 |
+| `ProductGroup4` |  | |  |  | `CHAR(3)` | Material Group 4 |
+| `ProductGroup5` |  | |  |  | `CHAR(3)` | Material Group 5 |
+| `ProductHierarchy` |  | |  |  | `CHAR(20)` | Product Category |
+| `ServiceDocItemRejectionReason` |  | |  |  | `CHAR(2)` | Cancellation Reason Code |
+| `ServiceRefObjectSequenceNumber` |  | |  |  | `NUMC(8)` | Reference Object Counter |
+| `ServiceReferenceObjectType` |  | |  |  | `CHAR(1)` | Object Type for Reference Object in Subject Set |
+| `ServiceReferenceObjectUUID` |  | |  |  | `RAW(16)` | GUID of a CRM Order Object |
+| `ProductID` |  | |  |  | `CHAR(40)` | Material Number |
+| `SrvcRefObjIsMainObject` |  | |  |  | `CHAR(1)` | Main Reference Object |
+| `ProductUUID` |  | |  |  | `RAW(16)` | Internal Key for Product |
+| `SerialNumber` |  | |  |  | `CHAR(18)` | Serial Number |
+| `Equipment` |  | |  |  | `CHAR(18)` | Equipment Number |
+| `FunctionalLocation` |  | |  |  | `CHAR(30)` | Functional Location |
+| `ServiceDocumentRelationUUID` |  | |  |  | `CHAR(22)` | Object Relationship Service : GUID binary link |
+| `ServiceDocRltnSequenceNumber` |  | |  |  | `NUMC(4)` | Sequential Number of Segment in IDoc Type |
+| `ServiceDocumentPredecessorUUID` |  | |  |  | `RAW(16)` | GUID of a CRM Order Object |
+| `ServiceDocPrdcssrBusObjType` |  | |  |  | `CHAR(10)` | Object Type |
+| `SrvcContrPredecessorUUID` |  | |  | `ServiceDocumentPredecessorUUID` | `RAW(16)` | GUID of a CRM Order Object |
+| `SrvcContrPrdcssrBusObjType` |  | |  | `ServiceDocPrdcssrBusObjType` | `CHAR(10)` | Object Type |
+| `ServiceDocumentItmRelationUUID` |  | |  |  | `CHAR(22)` | Object Relationship Service : GUID binary link |
+| `ServiceDocItmRltnSqncNumber` |  | |  |  | `NUMC(4)` | Sequential Number of Segment in IDoc Type |
+| `ServiceDocItmPrdcssrCharUUID` |  | |  |  | `CHAR(32)` | 32 Character CRM Object GUID |
+| `ServiceDocItmPrdcssrBusObjType` |  | |  |  | `CHAR(10)` | Object Type |
+| `SrvcContrItmPrdcssrCharUUID` |  | |  | `ServiceDocItmPrdcssrCharUUID` | `CHAR(32)` | 32 Character CRM Object GUID |
+| `SrvcContrItmPrdcssrBusObjType` |  | |  | `ServiceDocItmPrdcssrBusObjType` | `CHAR(10)` | Object Type |
+| `RefBusinessSolutionOrder` |  | |  |  | `CHAR(10)` | Reference Solution Order ID |
+| `RefBusinessSolutionOrderItem` |  | |  |  | `NUMC(6)` | Item Number in Referenced Solution Order |
 
 ## Associations
 

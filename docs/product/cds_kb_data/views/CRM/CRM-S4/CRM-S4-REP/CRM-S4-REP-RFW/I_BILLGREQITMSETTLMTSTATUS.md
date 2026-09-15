@@ -51,8 +51,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BillgReqItemBillingStatus` | ✓ | |  | `domvalue_l` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `BillgReqItemBillingStatus` | ✓ | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_BillgReqItmSettlmtStatusText` | | ✓ | | | | |
 
 ## Associations

@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LglCntntMLinkdObjType` | ✓ | |  |  |  |  |
+| `LglCntntMLinkdObjType` | ✓ | |  |  | `CHAR(4)` | Linked Object Type |
 | `_LglCntntMLinkdObjTypeText` | | ✓ | | | | |
 
 ## Associations

@@ -38,31 +38,31 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceObjectType` | ✓ | |  |  |  |  |
-| `BusinessSolutionOrder` | ✓ | |  |  |  |  |
-| `BusSolnOrdType` |  | |  |  |  |  |
-| `BusSolnOrdDescription` |  | |  |  |  |  |
-| `DistributionChannel` |  | |  |  |  |  |
-| `Division` |  | |  |  |  |  |
-| `SalesOrganization` |  | |  |  |  |  |
-| `SalesOffice` |  | |  |  |  |  |
-| `SalesGroup` |  | |  |  |  |  |
-| `SoldToParty` |  | |  |  |  |  |
-| `SoldToPartyCountry` |  | |  |  |  |  |
-| `SoldToPartyRegion` |  | |  |  |  |  |
-| `TransactionCurrency` |  | |  |  |  |  |
-| `BusSolnOrdStatus` |  | |  |  |  |  |
-| `NrOfOpenBusSolnOrders` |  | |  |  |  |  |
-| `NrOfReldBusSolnOrders` |  | |  |  |  |  |
-| `NrOfCmpltdBusSolnOrders` |  | |  |  |  |  |
-| `NrOfCrtedBusSolnOrders` |  | |  |  |  |  |
-| `ServiceDocumentCreationDate` |  | |  |  |  |  |
-| `BusSolnOrdCreationQuarter` |  | |  |  |  |  |
-| `BusSolnOrdCreationMonth` |  | |  |  |  |  |
-| `BusSolnOrdCreationYear` |  | |  |  |  |  |
-| `DisplayCurrency` |  | |  | `$parameters.P_DisplayCurrency` |  |  |
-| `ServiceDocNetAmount` |  | |  |  |  |  |
-| `PostingDate` |  | |  |  |  |  |
+| `ServiceObjectType` | ✓ | |  |  | `CHAR(10)` | Business Trans. Cat. |
+| `BusinessSolutionOrder` | ✓ | |  |  | `CHAR(10)` | Transaction ID |
+| `BusSolnOrdType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `BusSolnOrdDescription` |  | |  |  | `CHAR(40)` | Transaction Description |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `SalesOffice` |  | |  |  | `CHAR(4)` | Sales Office |
+| `SalesGroup` |  | |  |  | `CHAR(3)` | Sales Group |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-To Party |
+| `SoldToPartyCountry` |  | |  |  | `CHAR(3)` | Country/Region |
+| `SoldToPartyRegion` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `BusSolnOrdStatus` |  | |  |  | `CHAR(4)` | Life Cycle Status |
+| `NrOfOpenBusSolnOrders` |  | |  |  | `INT4(10)` |  |
+| `NrOfReldBusSolnOrders` |  | |  |  | `INT4(10)` |  |
+| `NrOfCmpltdBusSolnOrders` |  | |  |  | `INT4(10)` |  |
+| `NrOfCrtedBusSolnOrders` |  | |  |  | `INT4(10)` |  |
+| `ServiceDocumentCreationDate` |  | |  |  | `DATS(8)` | Created On |
+| `BusSolnOrdCreationQuarter` |  | |  |  | `NUMC(1)` | Calendar Quarter |
+| `BusSolnOrdCreationMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `BusSolnOrdCreationYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `DisplayCurrency` |  | |  | `$parameters.P_DisplayCurrency` | `CUKY(5)` |  |
+| `ServiceDocNetAmount` |  | |  |  | `CURR(15)` | Total Net Value of Document in Document Currency |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date for a Business Transaction |
 | `_DistributionChannel` | | ✓ | | | | |
 | `_Division` | | ✓ | | | | |
 | `_Period` | | ✓ | | | | |

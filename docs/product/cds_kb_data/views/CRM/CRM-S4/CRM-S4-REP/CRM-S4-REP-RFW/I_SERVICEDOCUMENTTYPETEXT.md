@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentType` | ✓ | |  | `process_type` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `ServiceDocumentTypeName` |  | |  | `p_description` |  |  |
-| `ServiceDocumentTypeShortName` |  | |  | `p_description_20` |  |  |
+| `ServiceDocumentType` | ✓ | |  | `process_type` | `CHAR(4)` | Business Transaction Type |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key of Description |
+| `ServiceDocumentTypeName` |  | |  | `p_description` | `CHAR(40)` | Description |
+| `ServiceDocumentTypeShortName` |  | |  | `p_description_20` | `CHAR(20)` | Description (20 Characters) |
 | `_ServiceDocumentType` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

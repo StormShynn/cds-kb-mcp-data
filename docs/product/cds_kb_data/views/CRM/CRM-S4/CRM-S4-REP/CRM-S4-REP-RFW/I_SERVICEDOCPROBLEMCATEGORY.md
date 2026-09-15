@@ -38,10 +38,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `'ISRVCDOCPROBCAT'` |  | |  | `sqlViewName: 'ISRVCDOCPROBCAT'` |  |  |
-| `preserveKey` |  | |  | `true` |  |  |
-| `true` |  | |  | `compiler.compareFilter: true` |  |  |
-| `}` |  | |  | `buffering: { status: #ACTIVE, type: #FULL }` |  |  |
+| `ServiceDocumentProblemCategory` | ✓ | |  | `problem_category` | `CHAR(3)` | Problem Category |
+| `_Text` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_SrvcDocProblemCategoryText` | [0..*] |
 
 ## Source Code
 

@@ -37,7 +37,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CurrencyField` | ✓ | |  |  |  |  |
+| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role Field |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

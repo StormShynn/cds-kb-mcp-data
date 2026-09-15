@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LegalTransactionDocLinkUUID` | ✓ | |  |  |  |  |
-| `LegalTransactionUUID` |  | |  |  |  |  |
-| `LglCntntMDocument` |  | |  |  |  |  |
+| `LegalTransactionDocLinkUUID` | ✓ | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransactionUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglCntntMDocument` |  | |  |  | `CHAR(10)` | Document ID |
 | `_LegalTransaction` | | ✓ | | | | |
 | `_LegalDocument` | | ✓ | | | | |
 

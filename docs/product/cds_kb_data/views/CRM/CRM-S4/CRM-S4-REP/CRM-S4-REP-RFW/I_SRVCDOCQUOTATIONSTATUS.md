@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentIsQuotation` | ✓ | |  | `domvalue_l` |  |  |
+| `ServiceDocumentIsQuotation` | ✓ | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_SrvcDocQuotationStatusText` | | ✓ | | | | |
 
 ## Associations

@@ -51,26 +51,26 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceObjectType` | ✓ | |  | `objtype_h` |  |  |
-| `ServiceDocument` | ✓ | |  | `object_id` |  |  |
-| `ServiceDocumentItem` | ✓ | |  | `number_int` |  |  |
-| `BillingRequestItem` | ✓ | |  | `record_no` |  |  |
-| `BillgReqItemBillingDateTime` |  | |  | `bill_date` |  |  |
-| `BillgReqItemBillingStatus` |  | |  | `bill_settl_stat` |  |  |
-| `SettlementStartDateTime` |  | |  | `settl_from` |  |  |
-| `SettlementEndDateTime` |  | |  | `settl_to` |  |  |
-| `BillingPlanTimeZone` |  | | `_ServiceDocItem` | `BillingPlanTimeZone` |  |  |
-| `TransactionCurrency` |  | | `_ServiceDocItem` | `TransactionCurrency` |  |  |
-| `BillgReqItemNetAmount` |  | |  | `net_value` |  |  |
-| `BillingBlockReason` |  | |  | `billing_block` |  |  |
-| `BillgReqItemDescription` |  | |  | `description` |  |  |
-| `ServicesRenderedDateTime` |  | |  | `servicesrendereddatetime` |  |  |
-| `BillgReqItemPricingDate` |  | |  | `price_date` |  |  |
-| `BillgReqItemTaxAmount` |  | |  | `tax_amount` |  |  |
-| `BillgReqItemGrossAmount` |  | |  | `gross_value` |  |  |
-| `BillgReqItemIsCreditItem` |  | |  | `credit_indicator` |  |  |
-| `BillgReqItemUsageType` |  | |  | `billreq_i_usage_type` |  |  |
-| `BillgReqItemDeletionStatus` |  | |  | `bill_del_stat` |  |  |
+| `ServiceObjectType` | ✓ | |  | `objtype_h` | `CHAR(10)` | Business Trans. Cat. |
+| `ServiceDocument` | ✓ | |  | `object_id` | `CHAR(10)` | Transaction ID |
+| `ServiceDocumentItem` | ✓ | |  | `number_int` | `NUMC(6)` | Shortened Item Number in Document |
+| `BillingRequestItem` | ✓ | |  | `record_no` | `NUMC(6)` | Billing Request Item No |
+| `BillgReqItemBillingDateTime` |  | |  | `bill_date` | `DEC(15)` | Billing Date for Billing Index and Printout |
+| `BillgReqItemBillingStatus` |  | |  | `bill_settl_stat` | `CHAR(1)` | Settlement Status of Billing Request Line |
+| `SettlementStartDateTime` |  | |  | `settl_from` | `DEC(15)` | Start of Settlement for Period |
+| `SettlementEndDateTime` |  | |  | `settl_to` | `DEC(15)` | End of Settlement for Period |
+| `BillingPlanTimeZone` |  | | `_ServiceDocItem` | `BillingPlanTimeZone` | `CHAR(6)` | Time Zone of Billing Plan Set |
+| `TransactionCurrency` |  | | `_ServiceDocItem` | `TransactionCurrency` | `CUKY(5)` | Currency |
+| `BillgReqItemNetAmount` |  | |  | `net_value` | `CURR(15)` | Net Value |
+| `BillingBlockReason` |  | |  | `billing_block` | `CHAR(2)` | Business Partner: Billing Block Reason |
+| `BillgReqItemDescription` |  | |  | `description` | `CHAR(40)` | Description |
+| `ServicesRenderedDateTime` |  | |  | `servicesrendereddatetime` | `DEC(15)` | Services Rendered Date as Timestamp |
+| `BillgReqItemPricingDate` |  | |  | `price_date` | `DATS(8)` | Pricing Date |
+| `BillgReqItemTaxAmount` |  | |  | `tax_amount` | `CURR(15)` | Tax amount in document currency |
+| `BillgReqItemGrossAmount` |  | |  | `gross_value` | `CURR(15)` | Gross Order Value in PO Currency |
+| `BillgReqItemIsCreditItem` |  | |  | `credit_indicator` | `CHAR(1)` | Credit Debit Indicator |
+| `BillgReqItemUsageType` |  | |  | `billreq_i_usage_type` | `CHAR(4)` | Usage Type of Billing Request Lines |
+| `BillgReqItemDeletionStatus` |  | |  | `bill_del_stat` | `CHAR(1)` | Deletion Status of Billing Request Line |
 | `_ServiceDocItem` | | ✓ | | | | |
 | `_BillgReqItmSettlmtStatus` | | ✓ | | | | |
 | `_TransactionCurrency` | | ✓ | | | | |

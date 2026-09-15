@@ -40,35 +40,35 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ControllingDocument` | ✓ | |  |  |  |  |
-| `Plant` | ✓ | |  |  |  |  |
-| `CostEstimate` | ✓ | |  |  |  |  |
-| `FiscalYear` | ✓ | |  |  |  |  |
-| `FiscalPeriod` | ✓ | |  |  |  |  |
-| `FiscalYearPeriod` |  | |  |  |  |  |
-| `ObjectInternalID` |  | |  |  |  |  |
-| `OrderID` |  | |  |  |  |  |
-| `OrderItem` |  | |  |  |  |  |
-| `ControllingArea` |  | |  |  |  |  |
-| `ProductionProcess` |  | |  |  |  |  |
-| `PostingPeriod` |  | |  |  |  |  |
-| `PostingDate` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `ActualCostingObjectType` |  | |  |  |  |  |
-| `ActualCostingObjectTypeName` |  | |  |  |  |  |
-| `Material` |  | |  |  |  |  |
-| `InventoryValuationType` |  | |  |  |  |  |
-| `InventorySpecialStockType` |  | |  |  |  |  |
-| `InventorySpecialStockTypeName` |  | |  |  |  |  |
-| `InventorySpecialStockValnType` |  | |  |  |  |  |
-| `SalesOrder` |  | |  |  |  |  |
-| `SalesOrderItem` |  | |  |  |  |  |
-| `WBSElementExternalID` |  | |  |  |  |  |
-| `CostCenter` |  | |  |  |  |  |
-| `CostCtrActivityType` |  | |  |  |  |  |
-| `QuantityUnit` |  | |  |  |  |  |
-| `WIPQuantity` |  | |  |  |  |  |
-| `DeltaQuantity` |  | |  |  |  |  |
+| `ControllingDocument` | ✓ | |  |  | `CHAR(10)` | Document Number |
+| `Plant` | ✓ | |  |  | `CHAR(4)` | Plant |
+| `CostEstimate` | ✓ | |  |  | `NUMC(12)` | Cost Estimate Number for Cost Est. w/o Qty Structure |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalPeriod` | ✓ | |  |  | `NUMC(3)` | Posting Period |
+| `FiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year + Fiscal Period |
+| `ObjectInternalID` |  | |  |  | `CHAR(22)` | Object Number |
+| `OrderID` |  | |  |  | `CHAR(12)` | Order Number |
+| `OrderItem` |  | |  |  | `NUMC(4)` | Order Item |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `ProductionProcess` |  | |  |  | `NUMC(12)` | Production Process |
+| `PostingPeriod` |  | |  |  | `NUMC(3)` | Period |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date in the Document |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `ActualCostingObjectType` |  | |  |  | `CHAR(2)` | Object Type |
+| `ActualCostingObjectTypeName` |  | |  |  | `CHAR(60)` | Short Text for Fixed Values |
+| `Material` |  | |  |  | `CHAR(40)` | Material Number |
+| `InventoryValuationType` |  | |  |  | `CHAR(10)` | Valuation Type |
+| `InventorySpecialStockType` |  | |  |  | `CHAR(1)` | Special Stock Indicator |
+| `InventorySpecialStockTypeName` |  | |  |  | `CHAR(20)` | Special Stock Type Name |
+| `InventorySpecialStockValnType` |  | |  |  | `CHAR(1)` | Valuation of Special Stock |
+| `SalesOrder` |  | |  |  | `CHAR(10)` | Sales and Distribution Document Number |
+| `SalesOrderItem` |  | |  |  | `NUMC(6)` | Item number of the SD document |
+| `WBSElementExternalID` |  | |  |  | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `CostCtrActivityType` |  | |  |  | `CHAR(6)` | Activity Type |
+| `QuantityUnit` |  | |  |  | `UNIT(3)` | Unit of Measure for Display |
+| `WIPQuantity` |  | |  |  | `QUAN(15)` | WIP Quantity for Period Layer |
+| `DeltaQuantity` |  | |  |  | `QUAN(15)` | WIP Quantity Changes |
 | `_Product` | | ✓ | | | | |
 | `_Plant` | | ✓ | | | | |
 | `_QuantityUnit` | | ✓ | | | | |
