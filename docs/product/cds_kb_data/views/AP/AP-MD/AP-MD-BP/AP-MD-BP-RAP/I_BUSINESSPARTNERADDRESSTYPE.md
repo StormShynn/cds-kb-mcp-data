@@ -1,6 +1,19 @@
 ---
 name: I_BUSINESSPARTNERADDRESSTYPE
 description: "Business PartnerADDRESSTYPE"
+semantic_vi: "View Business Partner Address Type cung cấp thông tin về các loại địa chỉ liên quan đến đối tác kinh doanh, chẳng hạn như địa chỉ hóa đơn hoặc địa chỉ giao hàng."
+keywords:
+  - "business partner"
+  - "address type"
+  - "address"
+  - "partner"
+  - "sap"
+  - "ap-md-bp-rap"
+  - "address type view"
+  - "đối tác kinh doanh"
+  - "địa chỉ"
+  - "loại địa chỉ"
+semantic_en: "The Business Partner Address Type view provides information about the types of addresses associated with business partners, such as billing or shipping addresses."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

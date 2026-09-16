@@ -1,6 +1,18 @@
 ---
 name: I_BUSINESSPARTNERLEGALFORMTEXT
 description: "Business PartnerLEGALFORMTEXT"
+semantic_vi: "View I_BUSINESSPARTNERLEGALFORMTEXT cung cấp dữ liệu văn bản về hình thức pháp lý của đối tác kinh doanh, có thể được sử dụng để hiển thị hoặc xử lý thông tin đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "legal form"
+  - "text view"
+  - "partner"
+  - "business partner legal form"
+  - "sap cds view"
+  - "ap-md-bp-rap"
+  - "lob other"
+  - "bo businesspartner"
+semantic_en: "The I_BUSINESSPARTNERLEGALFORMTEXT view provides legal form text data for business partners, which can be used to display or process business partner information."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

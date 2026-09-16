@@ -1,6 +1,18 @@
 ---
 name: I_BUSSOLNORDFUPSALESORDERTP
 description: "BUSSOLNORDFUPSales OrderTP"
+semantic_vi: "Chứa dữ liệu đơn hàng bán hàng cho giải pháp kinh doanh trong CRM, được sử dụng cho xử lý giao dịch và quản lý đơn hàng bán hàng."
+keywords:
+  - "sales order"
+  - "đơn hàng bán hàng"
+  - "crm"
+  - "transactional processing"
+  - "business solution"
+  - "s4hana"
+  - "sap crm"
+  - "sales order management"
+  - "đơn hàng bán hàng quản lý"
+semantic_en: "Exposes sales order data for business solutions in CRM, used for transactional processing and sales order management."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

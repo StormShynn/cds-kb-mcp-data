@@ -1,6 +1,17 @@
 ---
 name: I_BUSINESSSOLUTIONORDERTP
 description: "Businesssolutionordertp"
+semantic_vi: "Chứa dữ liệu đơn hàng giải pháp kinh doanh, bao gồm chi tiết và thời gian, cho xử lý giao dịch trong thành phần CRM-S4-SOL-SLO."
+keywords:
+  - "business solution order"
+  - "đơn hàng giải pháp kinh doanh"
+  - "crm"
+  - "transactional processing"
+  - "crm-s4-sol-slo"
+  - "service document"
+  - "sđd"
+  - "ekko"
+semantic_en: "Exposes business solution order data, including order details and timestamps, for transactional processing in CRM-S4-SOL-SLO component."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

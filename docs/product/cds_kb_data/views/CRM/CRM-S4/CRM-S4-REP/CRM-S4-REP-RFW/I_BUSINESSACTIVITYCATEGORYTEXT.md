@@ -1,6 +1,21 @@
 ---
 name: I_BUSINESSACTIVITYCATEGORYTEXT
 description: "Businessactivitycategorytext"
+semantic_vi: "Chỉ ra các loại hoạt động kinh doanh với tên gọi trong các ngôn ngữ khác nhau, hữu ích cho việc hiển thị thông tin loại hoạt động trong các ứng dụng đa ngôn ngữ."
+keywords:
+  - "business activity category"
+  - "loại hoạt động kinh doanh"
+  - "category name"
+  - "tên loại hoạt động"
+  - "language"
+  - "ngôn ngữ"
+  - "crm"
+  - "interface view"
+  - "text view"
+  - "sap crm"
+  - "business activity"
+  - "hoạt động kinh doanh"
+semantic_en: "Exposes business activity categories with their names in different languages, useful for displaying category information in multi-language applications."
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

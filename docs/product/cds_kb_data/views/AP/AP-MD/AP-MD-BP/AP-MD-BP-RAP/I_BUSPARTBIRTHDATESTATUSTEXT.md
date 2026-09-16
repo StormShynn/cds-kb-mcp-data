@@ -1,6 +1,19 @@
 ---
 name: I_BUSPARTBIRTHDATESTATUSTEXT
 description: "Business PartnerBIRTHDATESTATUSTEXT"
+semantic_vi: "View Business Partner Birth Date Status Text cung cấp bản thể hiện văn bản của trạng thái ngày sinh đối tác kinh doanh, có thể được sử dụng để hiển thị hoặc xác minh trạng thái trong các ứng dụng kinh doanh khác nhau."
+keywords:
+  - "business partner"
+  - "birth date status"
+  - "text view"
+  - "sap cds"
+  - "ap-md-bp-rap"
+  - "business partner birth date status text"
+  - "lob other"
+  - "language"
+  - "business partner birth date status"
+  - "buspart birth date status text"
+semantic_en: "The Business Partner Birth Date Status Text view provides the text representation of the birth date status of a business partner, which can be used to display or validate the status in various business applications."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_BUSINESSPARTNERINDUSTRYTP_3
 description: "Business PartnerINDUSTRYTP 3"
+semantic_vi: "View Business Partner INDUSTRYTP 3 cung cấp truy cập thông tin ngành công nghiệp cụ thể cho đối tác kinh doanh, bao gồm ngành công nghiệp và phân loại ngành công nghiệp tiêu chuẩn. Nó được sử dụng để hỗ trợ xử lý giao dịch và quản lý dữ liệu cho đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "industrysystemtype"
+  - "industrysector"
+  - "isstandardindustry"
+  - "transactional processing"
+  - "quy trình giao dịch"
+  - "data management"
+  - "quản lý dữ liệu"
+  - "sap"
+  - "ap-md-bp-rap"
+semantic_en: "The Business Partner INDUSTRYTP 3 view provides access to industry-specific information for business partners, including their industry sector and standard industry classification. It is used to support transactional processing and data management for business partners."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

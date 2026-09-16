@@ -1,6 +1,20 @@
 ---
 name: I_BUSSOLNORDITMFUPENTPROJECTTP
 description: "Bussolnorditmfupentprojecttp"
+semantic_vi: "View này hiển thị dữ liệu dự án liên quan đến giải pháp kinh doanh, cụ thể cho các đơn hàng và mục đơn hàng. Nó được sử dụng trong xử lý giao dịch trong thành phần CRM-S4-SOL-SLO."
+keywords:
+  - "project"
+  - "business solution"
+  - "order"
+  - "order item"
+  - "crm"
+  - "transactional processing"
+  - "crm-s4-sol-slo"
+  - "dự án"
+  - "giải pháp kinh doanh"
+  - "đơn hàng"
+  - "mục đơn hàng"
+semantic_en: "This view exposes project data related to business solutions, specifically for orders and order items. It is used in transactional processing within the CRM-S4-SOL-SLO component."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

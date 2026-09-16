@@ -1,6 +1,18 @@
 ---
 name: I_BRANDTEXT
 description: "Brandtext"
+semantic_vi: "View I_BRANDTEXT cung cấp tên thương hiệu trong các ngôn ngữ khác nhau, cho phép các nhà phát triển truy cập và sử dụng thông tin này trong các ứng dụng của họ. Nó hữu ích khi làm việc với dữ liệu thương hiệu trong các ứng dụng logistics tổng thể."
+keywords:
+  - "brand"
+  - "brand name"
+  - "language"
+  - "logistics general"
+  - "sap cds view"
+  - "i_brandtext"
+  - "lo-md-mm-2cl"
+  - "text view"
+  - "interface view"
+semantic_en: "The I_BRANDTEXT view provides brand names in different languages, enabling developers to access and utilize this information in their applications. It is useful when working with brand-related data in logistics general applications."
 app_component: LO-MD-MM-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: I_BUSSOLNORDITMFUPSRVCCONTRTP
 description: "Bussolnorditmfupsrvccontrtp"
+semantic_vi: "View này hiển thị thông tin hợp đồng dịch vụ cho giải pháp kinh doanh, cho phép các nhà phát triển truy cập và thao tác dữ liệu hợp đồng dịch vụ trong CRM-S4-SOL-SLO."
+keywords:
+  - "service contract"
+  - "hợp đồng dịch vụ"
+  - "business solution"
+  - "giải pháp kinh doanh"
+  - "crm"
+  - "s4-sol-slo"
+  - "transactional processing"
+  - "interface view"
+  - "sap cds view"
+semantic_en: "This view exposes service contract information for business solutions, allowing developers to access and manipulate service contract data in CRM-S4-SOL-SLO."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

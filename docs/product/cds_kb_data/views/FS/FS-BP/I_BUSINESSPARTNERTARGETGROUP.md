@@ -1,6 +1,19 @@
 ---
 name: I_BUSINESSPARTNERTARGETGROUP
 description: "Business PartnerTARGETGROUP"
+semantic_vi: "View Business Partner TARGETGROUP hiển thị các nhóm đối tác kinh doanh TARGETGROUP, được sử dụng để phân loại đối tác kinh doanh cho các mục đích kinh doanh cụ thể. View này có thể được sử dụng để truy xuất và quản lý các nhóm đối tác kinh doanh trong thành phần Financial Services - Business Partner."
+keywords:
+  - "business partner"
+  - "target group"
+  - "financial services"
+  - "business partner component"
+  - "lob other"
+  - "bo business partner"
+  - "fs bp"
+  - "interface view"
+  - "categorization"
+  - "grouping"
+semantic_en: "The Business Partner TARGETGROUP view exposes business partner target groups, which are used to categorize business partners for specific business purposes. This view can be used to retrieve and manage target groups for business partners in the Financial Services - Business Partner component."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

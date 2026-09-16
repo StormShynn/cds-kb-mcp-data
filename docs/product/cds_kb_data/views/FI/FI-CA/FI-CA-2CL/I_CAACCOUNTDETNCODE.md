@@ -1,6 +1,17 @@
 ---
 name: I_CAACCOUNTDETNCODE
 description: "Caaccountdetncode"
+semantic_vi: "View I_CAACCOUNTDETNCODE hiển thị mã xác định tài khoản được sử dụng trong thành phần FI-CA-2CL, cung cấp thông tin về cách xác định tài khoản cho các giao dịch tài chính."
+keywords:
+  - "account determination"
+  - "fi-ca-2cl"
+  - "financial transactions"
+  - "tài khoản xác định"
+  - "giao dịch tài chính"
+  - "fi"
+  - "fi-ca"
+  - "tài chính"
+semantic_en: "The I_CAACCOUNTDETNCODE view exposes account determination codes used in the FI-CA-2CL component, providing information on how accounts are determined for financial transactions."
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

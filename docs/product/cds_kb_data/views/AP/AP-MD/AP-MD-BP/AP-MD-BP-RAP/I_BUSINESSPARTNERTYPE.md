@@ -1,6 +1,18 @@
 ---
 name: I_BUSINESSPARTNERTYPE
 description: "Business PartnerTYPE"
+semantic_vi: "View Business Partner TYPE cung cấp truy cập dữ liệu loại đối tác kinh doanh, được sử dụng để phân loại đối tác kinh doanh trong một công ty. Nó thường được sử dụng trong quản lý đối tác kinh doanh và các quy trình liên quan."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "partner type"
+  - "loại đối tác kinh doanh"
+  - "business partner management"
+  - "quản lý đối tác kinh doanh"
+  - "sap"
+  - "ap-md-bp-rap"
+  - "business partner type"
+semantic_en: "The Business Partner TYPE view provides access to business partner type data, which is used to categorize business partners in a company. It is typically used in business partner management and related processes."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

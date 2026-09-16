@@ -1,6 +1,20 @@
 ---
 name: I_BR_VEHICLEUSAGE_2
 description: "BR Vehicleusage 2"
+semantic_vi: "View BR Vehicleusage 2 cung cấp truy cập dữ liệu sử dụng xe, có ích khi phân tích các mẫu phân bổ và sử dụng xe trong tổ chức."
+keywords:
+  - "vehicle usage"
+  - "dữ liệu sử dụng xe"
+  - "vehicle allocation"
+  - "phân bổ xe"
+  - "fi-loc-lo-br"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo"
+  - "interface-view"
+  - "component:fi-loc-lo-br"
+  - "lob:finance"
+semantic_en: "The BR Vehicleusage 2 view provides access to vehicle usage data, which is useful when analyzing vehicle allocation and usage patterns within an organization."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

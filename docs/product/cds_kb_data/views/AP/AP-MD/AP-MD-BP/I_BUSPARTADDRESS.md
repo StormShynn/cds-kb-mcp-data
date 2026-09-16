@@ -1,6 +1,19 @@
 ---
 name: I_BUSPARTADDRESS
 description: "Business PartnerADDRESS"
+semantic_vi: "Chứa thông tin địa chỉ đối tác kinh doanh, bao gồm các ngày hiệu lực và ID hệ thống bên ngoài. View này được sử dụng để lấy và quản lý địa chỉ đối tác kinh doanh trong thành phần AP-MD-BP."
+keywords:
+  - "business partner"
+  - "address"
+  - "ap-md-bp"
+  - "component"
+  - "sap"
+  - "lob other"
+  - "business partner address"
+  - "address id"
+  - "validity date"
+  - "external system id"
+semantic_en: "Exposes business partner addresses, including their validity dates and external system IDs. This view is used to retrieve and manage business partner addresses in the AP-MD-BP component."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

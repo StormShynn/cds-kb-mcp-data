@@ -1,6 +1,19 @@
 ---
 name: I_BUSPARTSCRIPTEDORGADDRTP_2
 description: "Business PartnerSCRIPTEDORGADDRTP 2"
+semantic_vi: "Chứa dữ liệu địa chỉ tổ chức được lập trình cho đối tác kinh doanh, hữu ích cho các giao dịch liên quan đến địa chỉ đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "address"
+  - "địa chỉ"
+  - "scripted organization"
+  - "tổ chức được lập trình"
+  - "transactional processing"
+  - "xử lý giao dịch"
+  - "sap"
+  - "ap-md-bp-rap"
+semantic_en: "Exposes business partner scripted organization address data, useful for transactions involving business partner addresses."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

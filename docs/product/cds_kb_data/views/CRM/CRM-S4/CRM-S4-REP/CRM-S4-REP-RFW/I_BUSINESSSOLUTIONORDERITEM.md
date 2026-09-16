@@ -1,6 +1,19 @@
 ---
 name: I_BUSINESSSOLUTIONORDERITEM
 description: "Businesssolutionorderitem"
+semantic_vi: "View Businesssolutionorderitem hiển thị dữ liệu về mặt hàng giải pháp kinh doanh, có liên quan khi làm việc với giải pháp kinh doanh CRM và các mặt hàng liên quan."
+keywords:
+  - "business solution"
+  - "crm"
+  - "business solution order"
+  - "order item"
+  - "service object"
+  - "service document"
+  - "business solution order item"
+  - "sap crm"
+  - "ekko"
+  - "đơn giải pháp kinh doanh"
+semantic_en: "The Businesssolutionorderitem view exposes business solution order item data, which is relevant when working with CRM business solutions and their associated items."
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

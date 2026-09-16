@@ -1,6 +1,18 @@
 ---
 name: I_BUSSOLNORDFUPENTPROJECTTP
 description: "Bussolnordfupentprojecttp"
+semantic_vi: "Chứa dữ liệu dự án giải pháp kinh doanh, hữu ích cho quản lý dự án CRM và xử lý giao dịch."
+keywords:
+  - "crm"
+  - "project"
+  - "business solution order"
+  - "dự án giải pháp kinh doanh"
+  - "transactional processing"
+  - "xử lý giao dịch"
+  - "sap crm"
+  - "dự án"
+  - "project management"
+semantic_en: "Exposes business solution order project data, useful for CRM-related project management and transactional processing."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

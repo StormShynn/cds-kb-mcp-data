@@ -1,6 +1,17 @@
 ---
 name: I_BUSSOLNORDITMCONFIGURATIONTP
 description: "Bussolnorditmconfigurationtp"
+semantic_vi: "View này hiển thị dữ liệu cấu hình đơn hàng giải pháp kinh doanh cho các mặt hàng Bussolnord, được sử dụng trong thành phần CRM-S4-SOL-SLO."
+keywords:
+  - "business solution order"
+  - "đơn hàng giải pháp kinh doanh"
+  - "bussolnord"
+  - "crm-s4-sol-slo"
+  - "variant configuration"
+  - "cấu hình biến thể"
+  - "business object key"
+  - "chiave đối tượng kinh doanh"
+semantic_en: "This view exposes business solution order item configuration data for Bussolnord items, used in CRM-S4-SOL-SLO component."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

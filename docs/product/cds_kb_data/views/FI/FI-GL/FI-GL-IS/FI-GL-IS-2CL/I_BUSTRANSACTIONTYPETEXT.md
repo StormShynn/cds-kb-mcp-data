@@ -1,6 +1,17 @@
 ---
 name: I_BUSTRANSACTIONTYPETEXT
 description: "Bustransactiontypetext"
+semantic_vi: "View I_BUSTRANSACTIONTYPETEXT cung cấp mô tả văn bản cho các loại giao dịch kinh doanh, có thể được sử dụng để hiển thị thông tin chi tiết về giao dịch tài chính trong SAP FI-GL-IS-2CL."
+keywords:
+  - "business transaction type"
+  - "transaction type text"
+  - "fi-gl-is-2cl"
+  - "financial transaction"
+  - "giao dịch kinh doanh"
+  - "loại giao dịch"
+  - "mô tả văn bản"
+  - "sap fi-gl-is-2cl"
+semantic_en: "The I_BUSTRANSACTIONTYPETEXT view provides text descriptions for business transaction types, which can be used to display detailed information about financial transactions in SAP FI-GL-IS-2CL."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

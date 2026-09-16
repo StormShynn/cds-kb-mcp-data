@@ -1,6 +1,19 @@
 ---
 name: I_BUSINESSPARTNEREMPLOYEEGROUP
 description: "Business PartnerEMPLOYEEGROUP"
+semantic_vi: "View Business Partner EMPLOYEEGROUP cung cấp truy cập thông tin nhóm nhân viên liên quan đến đối tác kinh doanh, cho phép các nhà phát triển truy cập và quản lý dữ liệu này trong các ứng dụng SAP."
+keywords:
+  - "business partner"
+  - "employee group"
+  - "sap"
+  - "fs-bp"
+  - "business partner employee group"
+  - "partner"
+  - "employee"
+  - "group"
+  - "lob other"
+  - "bo businesspartner"
+semantic_en: "The Business Partner EMPLOYEEGROUP view provides access to employee group information associated with business partners, enabling developers to retrieve and manage this data in SAP applications."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

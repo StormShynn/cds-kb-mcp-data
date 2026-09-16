@@ -1,6 +1,19 @@
 ---
 name: I_BUSEVTLOGBUSEVENTPAYLOAD
 description: "Busevtlogbuseventpayload"
+semantic_vi: "Chứa dữ liệu nhật ký sự kiện kinh doanh, bao gồm thay đổi trường và giá trị của chúng, cho mục đích kiểm toán và phân tích."
+keywords:
+  - "business event"
+  - "log data"
+  - "audit"
+  - "analysis"
+  - "sap object"
+  - "field change"
+  - "event log"
+  - "busevtlog"
+  - "ca-gtf-bel"
+  - "cross-application components"
+semantic_en: "Exposes business event log data, including field changes and their values, for auditing and analysis purposes."
 app_component: CA-GTF-BEL
 software_component: SAP_BASIS
 release_state: released

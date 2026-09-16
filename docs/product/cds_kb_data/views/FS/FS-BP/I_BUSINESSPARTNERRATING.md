@@ -1,6 +1,20 @@
 ---
 name: I_BUSINESSPARTNERRATING
 description: "Business PartnerRATING"
+semantic_vi: "View Business Partner Rating cung cấp thông tin đánh giá đối tác kinh doanh, bao gồm các mức độ và xu hướng đánh giá, có thể được sử dụng để đánh giá hiệu suất đối tác kinh doanh và đưa ra quyết định thông minh."
+keywords:
+  - "business partner"
+  - "rating"
+  - "partner"
+  - "evaluation"
+  - "performance"
+  - "fs-bp"
+  - "lob:other"
+  - "bo:businesspartner"
+  - "sap"
+  - "cds"
+  - "view"
+semantic_en: "The Business Partner Rating view provides business partner rating information, including rating grades and trends, which can be used to evaluate business partner performance and make informed decisions."
 app_component: FS-BP
 software_component: SAP_BASIS
 release_state: released

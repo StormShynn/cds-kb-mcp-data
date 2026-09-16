@@ -1,6 +1,19 @@
 ---
 name: I_BUSINESSPARTNERADDRESSTYPET
 description: "Business PartnerADDRESSTYPET"
+semantic_vi: "Chứa thông tin loại địa chỉ đối tác kinh doanh và ngôn ngữ, tên sử dụng liên quan. View này được sử dụng để lấy thông tin loại địa chỉ đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "address type"
+  - "address usage name"
+  - "language"
+  - "sap"
+  - "ap-md-bp-rap"
+  - "address"
+  - "partner"
+  - "lob other"
+  - "bo business partner"
+semantic_en: "Exposes business partner address types and their associated languages and usage names. This view is used to retrieve address type information for business partners."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

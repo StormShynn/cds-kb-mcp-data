@@ -1,6 +1,18 @@
 ---
 name: I_BR_SIMPLESCLASSCODETEXT
 description: "BR Simplesclasscodetext"
+semantic_vi: "View BR Simplesclasscodetext cung cấp mã lớp đơn giản và mô tả của Brazil, được sử dụng trong các giao dịch tài chính và kế toán."
+keywords:
+  - "simple class code"
+  - "mã lớp đơn giản"
+  - "brazil"
+  - "financial transactions"
+  - "giao dịch tài chính"
+  - "accounting"
+  - "kế toán"
+  - "fi"
+  - "fi-loc-lo-br"
+semantic_en: "The BR Simplesclasscodetext view provides simple class codes and their descriptions for Brazil, used in financial transactions and accounting."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

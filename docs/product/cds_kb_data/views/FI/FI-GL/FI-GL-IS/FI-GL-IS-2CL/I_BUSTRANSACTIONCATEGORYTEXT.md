@@ -1,6 +1,19 @@
 ---
 name: I_BUSTRANSACTIONCATEGORYTEXT
 description: "Bustransactioncategorytext"
+semantic_vi: "Chứa tên danh mục giao dịch kinh doanh trong nhiều ngôn ngữ, được sử dụng để hiển thị tên danh mục trong môi trường đa ngôn ngữ."
+keywords:
+  - "business transaction category"
+  - "danh mục giao dịch kinh doanh"
+  - "language"
+  - "ngôn ngữ"
+  - "sap fi-gl-is"
+  - "fi-gl-is-2cl"
+  - "finance"
+  - "finance interface"
+  - "interface view"
+  - "text view"
+semantic_en: "Exposes business transaction category names in different languages, used to display category names in multi-language environments."
 app_component: FI-GL-IS-2CL
 software_component: SAPSCORE
 release_state: released

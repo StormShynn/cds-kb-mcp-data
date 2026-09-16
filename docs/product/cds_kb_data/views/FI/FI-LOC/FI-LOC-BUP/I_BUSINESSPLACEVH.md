@@ -1,6 +1,20 @@
 ---
 name: I_BUSINESSPLACEVH
 description: "Businessplacevh"
+semantic_vi: "View Businessplacevh CDS cung cấp dữ liệu mã công ty, địa điểm kinh doanh và mô tả địa điểm kinh doanh, có ích cho các truy vấn liên quan đến địa điểm tài chính và địa điểm kinh doanh."
+keywords:
+  - "business place"
+  - "địa điểm kinh doanh"
+  - "company code"
+  - "mã công ty"
+  - "financial location"
+  - "địa điểm tài chính"
+  - "sap fi"
+  - "fi loc"
+  - "fi loc bup"
+  - "interface view"
+  - "value help"
+semantic_en: "The Businessplacevh CDS view provides company code, business place, and business place description data, which is useful for financial location and business place-related queries."
 app_component: FI-LOC-BUP
 software_component: SAPSCORE
 release_state: released

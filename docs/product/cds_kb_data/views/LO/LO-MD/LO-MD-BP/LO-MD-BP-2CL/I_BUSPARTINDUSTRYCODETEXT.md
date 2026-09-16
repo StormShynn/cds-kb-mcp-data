@@ -1,6 +1,19 @@
 ---
 name: I_BUSPARTINDUSTRYCODETEXT
 description: "Business PartnerINDUSTRYCODETEXT"
+semantic_vi: "Chứa mã phân loại ngành công nghiệp cho đối tác kinh doanh, được sử dụng để hiển thị phân loại ngành công nghiệp cho khách hàng hoặc nhà cung cấp."
+keywords:
+  - "business partner"
+  - "industry code"
+  - "customer industry code"
+  - "vendor industry code"
+  - "industry classification"
+  - "business partner industry code"
+  - "lob logistics general"
+  - "sap cds view"
+  - "interface view"
+  - "text view"
+semantic_en: "Exposes industry code text for business partners, used to display industry classification for customers or vendors."
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

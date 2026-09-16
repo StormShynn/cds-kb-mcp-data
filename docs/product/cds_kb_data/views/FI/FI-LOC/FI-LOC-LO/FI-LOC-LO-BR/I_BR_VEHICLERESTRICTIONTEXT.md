@@ -1,6 +1,21 @@
 ---
 name: I_BR_VEHICLERESTRICTIONTEXT
 description: "BR Vehiclerestrictiontext"
+semantic_vi: "View I_BR_VEHICLERESTRICTIONTEXT cung cấp các văn bản hạn chế phương tiện trong các ngôn ngữ khác nhau, có thể được sử dụng để hiển thị thông tin hạn chế phương tiện cho người dùng. Nó thường được sử dụng trong thành phần FI-LOC-LO-BR cho các ứng dụng liên quan đến tài chính."
+keywords:
+  - "vehicle restriction"
+  - "hạn chế phương tiện"
+  - "text view"
+  - "view"
+  - "fi-loc-lo-br"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo"
+  - "finance"
+  - "tài chính"
+  - "sap"
+  - "cds view"
+semantic_en: "The I_BR_VEHICLERESTRICTIONTEXT view provides vehicle restriction texts in different languages, which can be used to display vehicle restriction information to users. It is typically used in the FI-LOC-LO-BR component for finance-related applications."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

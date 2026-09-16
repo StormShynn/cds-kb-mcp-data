@@ -1,6 +1,18 @@
 ---
 name: I_BUSINESSPARTNERPRINTFORMATT
 description: "Business PartnerPRINTFORMATT"
+semantic_vi: "View Business Partner PRINT FORMATT hiển thị các thiết lập in ấn cho đối tác kinh doanh và các bản dịch của chúng. Nó có thể được sử dụng để lấy hoặc cập nhật các thiết lập in ấn cho đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "print format"
+  - "thiết lập in ấn"
+  - "đối tác kinh doanh"
+  - "cds view"
+  - "view"
+  - "sap"
+  - "ap-md-bp-rap"
+  - "ap-md-bp"
+semantic_en: "The Business Partner PRINT FORMATT view exposes business partner print format settings and their translations. It can be used to retrieve or update print format settings for business partners."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

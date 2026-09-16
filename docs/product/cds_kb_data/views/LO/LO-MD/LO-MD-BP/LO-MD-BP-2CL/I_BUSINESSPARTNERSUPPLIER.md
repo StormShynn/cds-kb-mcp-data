@@ -1,6 +1,21 @@
 ---
 name: I_BUSINESSPARTNERSUPPLIER
 description: "Business PartnerSUPPLIER"
+semantic_vi: "View I_BUSINESSPARTNERSUPPLIER CDS hiển thị dữ liệu đối tác kinh doanh nhà cung cấp, được sử dụng để quản lý thông tin nhà cung cấp trong quy trình logistics."
+keywords:
+  - "business partner"
+  - "supplier"
+  - "logistics"
+  - "lob"
+  - "bo"
+  - "supplier account group"
+  - "form of address"
+  - "international location number"
+  - "reference account group"
+  - "ekko"
+  - "đối tác kinh doanh"
+  - "nhà cung cấp"
+semantic_en: "The I_BUSINESSPARTNERSUPPLIER CDS view exposes business partner supplier data, which is used to manage supplier information in logistics processes."
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

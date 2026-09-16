@@ -1,6 +1,19 @@
 ---
 name: I_BUSPARTCATEGORYTEXT
 description: "Business PartnerCATEGORYTEXT"
+semantic_vi: "View I_BUSPARTCATEGORYTEXT cung cấp mô tả văn bản cho các loại đối tác kinh doanh trong các ngôn ngữ khác nhau. Nó được sử dụng để lấy và hiển thị văn bản loại đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "category text"
+  - "language"
+  - "sap"
+  - "abap"
+  - "cloud"
+  - "cds view"
+  - "ap-md-bp-rap"
+  - "lob other"
+  - "domain value"
+semantic_en: "The I_BUSPARTCATEGORYTEXT view provides text descriptions for business partner categories in various languages. It is used to retrieve and display category text for business partners."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_BUEVLGBUSEVTFULLPYLDJSON
 description: "Buevlgbusevtfullpyldjson"
+semantic_vi: "View này hiển thị dữ liệu nhật ký sự kiện kinh doanh, bao gồm thông tin payload và thời gian thay đổi, có thể được sử dụng để phân tích và theo dõi sự kiện kinh doanh theo thời gian thực."
+keywords:
+  - "business event"
+  - "event log"
+  - "payload"
+  - "timestamp"
+  - "sap object type"
+  - "business event uuid"
+  - "bus evt log payload json string"
+  - "bus evt log last changed datetime"
+  - "ca-gtf-bel"
+  - "cross-application components"
+  - "interface view"
+semantic_en: "This view exposes business event log data, including payload information and timestamps, which can be used to analyze and track business events in real-time."
 app_component: CA-GTF-BEL
 software_component: SAP_BASIS
 release_state: released

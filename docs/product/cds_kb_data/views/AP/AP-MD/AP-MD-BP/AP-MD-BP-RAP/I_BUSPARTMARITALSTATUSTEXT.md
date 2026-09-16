@@ -1,6 +1,19 @@
 ---
 name: I_BUSPARTMARITALSTATUSTEXT
 description: "Business PartnerMARITALSTATUSTEXT"
+semantic_vi: "View I_BUSPARTMARITALSTATUSTEXT cung cấp mô tả văn bản cho trạng thái hôn nhân đối tác kinh doanh, có thể được sử dụng khi hiển thị hoặc báo cáo thông tin đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "marital status"
+  - "text view"
+  - "status"
+  - "language"
+  - "description"
+  - "sap"
+  - "cds view"
+  - "ap-md-bp-rap"
+  - "lob other"
+semantic_en: "The I_BUSPARTMARITALSTATUSTEXT view provides text descriptions for business partner marital status, which can be used when displaying or reporting on business partner information."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

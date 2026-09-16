@@ -1,6 +1,17 @@
 ---
 name: I_BUSINESSPARTNERTOBPROLE
 description: "Business PartnerTOBPROLE"
+semantic_vi: "Chỉ ra các vai trò đối tác kinh doanh và quyền hạn của họ cho đối tác kinh doanh và khoảng thời gian cụ thể. Sử dụng để lấy và quản lý các vai trò đối tác kinh doanh và quyền hạn liên quan."
+keywords:
+  - "business partner"
+  - "vai trò đối tác kinh doanh"
+  - "quyền hạn"
+  - "sap"
+  - "ap-md-bp"
+  - "interface view"
+  - "business partner role"
+  - "authorization group"
+semantic_en: "Exposes business partner roles and their authorizations for a given business partner and time period. Used to retrieve and manage business partner roles and their associated authorizations."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

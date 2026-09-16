@@ -1,6 +1,19 @@
 ---
 name: I_BUSTRANSDOCITEMTYPECODE
 description: "Bustransdocitemtypecode"
+semantic_vi: "View Bustransdocitemtypecode cung cấp thông tin về loại tài liệu giao dịch kinh doanh của mục hàng hóa, được sử dụng để phân loại mục hàng hóa trong tài liệu giao dịch. Nó được sử dụng để truy cập và quản lý các loại mục hàng hóa này."
+keywords:
+  - "business transaction"
+  - "document item type"
+  - "bustransdocitemtypecode"
+  - "transaction document"
+  - "tài liệu giao dịch"
+  - "loại mục hàng hóa"
+  - "tm-2cl"
+  - "sap cds"
+  - "interface view"
+  - "item-level"
+semantic_en: "The Bustransdocitemtypecode view provides information about business transaction document item types, which are used to categorize items within a transaction document. It is used to access and manage these item types."
 app_component: TM-2CL
 software_component: SAPSCORE
 release_state: released

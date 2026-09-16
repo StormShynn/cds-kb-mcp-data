@@ -1,6 +1,19 @@
 ---
 name: I_BUSINESSAREATEXT
 description: "Businessareatext"
+semantic_vi: "View Businessareatext cung cấp mô tả văn bản cho các khu vực kinh doanh trong bối cảnh tài chính, hữu ích cho việc hiển thị tên khu vực kinh doanh trong một ngôn ngữ cụ thể."
+keywords:
+  - "business area"
+  - "khu vực kinh doanh"
+  - "financial context"
+  - "mô tả văn bản"
+  - "tên khu vực kinh doanh"
+  - "language"
+  - "ngôn ngữ"
+  - "fi-gl-gl"
+  - "finance"
+  - "tài chính"
+semantic_en: "The Businessareatext view provides text descriptions for business areas in a financial context, useful for displaying business area names in a specific language."
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released

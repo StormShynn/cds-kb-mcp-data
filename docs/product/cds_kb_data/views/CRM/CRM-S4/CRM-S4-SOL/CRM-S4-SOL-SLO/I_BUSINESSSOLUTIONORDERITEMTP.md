@@ -1,6 +1,19 @@
 ---
 name: I_BUSINESSSOLUTIONORDERITEMTP
 description: "Businesssolutionorderitemtp"
+semantic_vi: "Chứa dữ liệu về mặt hàng giải pháp kinh doanh, hữu ích cho các giao dịch liên quan đến tài liệu dịch vụ và giải pháp kinh doanh."
+keywords:
+  - "business solution"
+  - "service document"
+  - "order item"
+  - "đơn giải pháp kinh doanh"
+  - "tài liệu dịch vụ"
+  - "mặt hàng"
+  - "transactional processing"
+  - "crm"
+  - "sap"
+  - "ekko"
+semantic_en: "Exposes business solution order item data, useful for transactions involving service documents and business solutions."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

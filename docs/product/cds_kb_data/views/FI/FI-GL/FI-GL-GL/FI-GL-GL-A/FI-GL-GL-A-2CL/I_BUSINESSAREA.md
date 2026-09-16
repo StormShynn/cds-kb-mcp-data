@@ -1,6 +1,19 @@
 ---
 name: I_BUSINESSAREA
 description: "Businessarea"
+semantic_vi: "View I_BUSINESSAREA CDS hiển thị dữ liệu về lĩnh vực kinh doanh, được sử dụng để phân loại và theo dõi các giao dịch tài chính trong một công ty. Nó thường được sử dụng trong kế toán và báo cáo tài chính."
+keywords:
+  - "business area"
+  - "lĩnh vực kinh doanh"
+  - "general ledger"
+  - "kế toán tổng hợp"
+  - "financial reporting"
+  - "báo cáo tài chính"
+  - "sap fi-gl"
+  - "fi-gl"
+  - "finance"
+  - "tài chính"
+semantic_en: "The I_BUSINESSAREA CDS view exposes business area data, which is used to categorize and track financial transactions in a company. It is typically used in general ledger accounting and financial reporting."
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,18 @@
 ---
 name: I_BSORDGLACCTLINEITEMCUBE
 description: "Bsordglacctlineitemcube"
+semantic_vi: "Chứa dữ liệu kế toán chi tiết cho đơn hàng giải pháp kinh doanh tại mức chi tiết từng dòng, phù hợp cho mục đích phân tích trong ứng dụng CRM."
+keywords:
+  - "business solution order"
+  - "đơn hàng giải pháp kinh doanh"
+  - "accounting data"
+  - "data analytics"
+  - "crm application"
+  - "ekko"
+  - "fiscal year"
+  - "ledgers"
+  - "accounting document"
+semantic_en: "Exposes business solution order item accounting data at the line item level, suitable for analytical purposes in CRM applications."
 app_component: CRM-S4-ANA-CDS-2CL
 software_component: SAPSCORE
 release_state: released

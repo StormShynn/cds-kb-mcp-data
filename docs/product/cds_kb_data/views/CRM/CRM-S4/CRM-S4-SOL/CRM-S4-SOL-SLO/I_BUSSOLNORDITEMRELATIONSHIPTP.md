@@ -1,6 +1,19 @@
 ---
 name: I_BUSSOLNORDITEMRELATIONSHIPTP
 description: "Bussolnorditemrelationshiptp"
+semantic_vi: "Chứa thông tin mối quan hệ giữa các vật tư dịch vụ trong một đơn hàng giải pháp kinh doanh, được sử dụng cho xử lý giao dịch và quản lý vật tư tại cấp chi tiết."
+keywords:
+  - "business solution order"
+  - "đơn hàng giải pháp kinh doanh"
+  - "service item"
+  - "vật tư dịch vụ"
+  - "transactional processing"
+  - "xử lý giao dịch"
+  - "item-level management"
+  - "quản lý vật tư tại cấp chi tiết"
+  - "crm"
+  - "s4-sol-slo"
+semantic_en: "Exposes relationships between service items in a business solution order, used for transactional processing and item-level management."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

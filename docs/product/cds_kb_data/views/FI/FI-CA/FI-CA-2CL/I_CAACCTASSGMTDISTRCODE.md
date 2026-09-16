@@ -1,6 +1,19 @@
 ---
 name: I_CAACCTASSGMTDISTRCODE
 description: "Caacctassgmtdistrcode"
+semantic_vi: "CDS view I_CAACCTASSGMTDISTRCODE cung cấp truy cập vào mã phân bổ phân phối tài khoản, được sử dụng để phân bổ chi phí giữa các tài khoản khác nhau trong hệ thống tài chính. Nó được sử dụng bởi các nhà phát triển để truy xuất và thao tác các mã này cho các giao dịch tài chính khác nhau."
+keywords:
+  - "account assignment"
+  - "distribution code"
+  - "financial transaction"
+  - "fi-ca"
+  - "fi"
+  - "sap cds view"
+  - "mã phân bổ"
+  - "phân bổ tài khoản"
+  - "giao dịch tài chính"
+  - "tài khoản kế toán"
+semantic_en: "The I_CAACCTASSGMTDISTRCODE CDS view provides access to account assignment distribution codes, which are used to distribute costs among different accounts in a financial system. It is used by developers to retrieve and manipulate these codes for various financial transactions."
 app_component: FI-CA-2CL
 software_component: SAPSCORE
 release_state: released

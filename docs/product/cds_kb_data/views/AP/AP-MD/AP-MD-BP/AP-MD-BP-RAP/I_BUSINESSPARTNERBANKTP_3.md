@@ -1,6 +1,20 @@
 ---
 name: I_BUSINESSPARTNERBANKTP_3
 description: "Business PartnerBANKTP 3"
+semantic_vi: "Chỉ ra chi tiết ngân hàng đối tác kinh doanh, bao gồm thông tin nhận dạng, tên và thông tin tài khoản, cho việc quản lý đối tác kinh doanh và xử lý giao dịch."
+keywords:
+  - "business partner"
+  - "bank"
+  - "partner"
+  - "bank details"
+  - "bank account"
+  - "transactional processing"
+  - "business partner management"
+  - "đối tác kinh doanh"
+  - "ngân hàng"
+  - "thông tin ngân hàng"
+  - "thông tin tài khoản"
+semantic_en: "Exposes business partner bank details, including identification, name, and account information, for use in business partner management and transactional processing."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_BUSSOLNORDPRICEELEMENTTP
 description: "Bussolnordpriceelementtp"
+semantic_vi: "Chứa các yếu tố giá cho giải pháp kinh doanh, cụ thể cho thủ tục giá BUsSolNorth. View này được sử dụng để lấy thông tin giá cho giải pháp kinh doanh."
+keywords:
+  - "business solution"
+  - "giải pháp kinh doanh"
+  - "pricing element"
+  - "yếu tố giá"
+  - "bussolnord"
+  - "pricing procedure"
+  - "thủ tục giá"
+  - "crm"
+  - "sap"
+  - "c4c"
+semantic_en: "Exposes pricing elements for business solutions, specifically for the BUsSolNorth pricing procedure. This view is used to retrieve pricing information for business solutions."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

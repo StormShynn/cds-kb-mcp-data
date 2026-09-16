@@ -1,6 +1,17 @@
 ---
 name: I_BUPAIDENTIFICATION
 description: "Bupaidentification"
+semantic_vi: "View Bupaidentification hiển thị dữ liệu xác định đối tác kinh doanh, bao gồm các loại, số và cơ quan cấp giấy tờ, có thể được sử dụng để xác thực hoặc truy xuất thông tin đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "identification"
+  - "xác định"
+  - "bupa"
+  - "ap-md-bp"
+  - "sap"
+  - "cds view"
+semantic_en: "The Bupaidentification view exposes business partner identification data, including identification types, numbers, and issuing institutes, which can be used to validate or retrieve business partner information."
 app_component: AP-MD-BP
 software_component: SAP_BASIS
 release_state: released

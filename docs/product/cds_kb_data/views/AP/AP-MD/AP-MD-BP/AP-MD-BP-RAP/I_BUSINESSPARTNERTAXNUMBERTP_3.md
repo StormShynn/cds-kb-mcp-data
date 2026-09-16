@@ -1,6 +1,18 @@
 ---
 name: I_BUSINESSPARTNERTAXNUMBERTP_3
 description: "Business PartnerTAXNUMBERTP 3"
+semantic_vi: "View Business Partner TAX NUMBER TP 3 hiển thị dữ liệu số thuế đối tác kinh doanh để sử dụng trong xử lý giao dịch và chỉnh sửa dữ liệu."
+keywords:
+  - "business partner"
+  - "tax number"
+  - "transactional processing"
+  - "data editing"
+  - "ap-md-bp-rap"
+  - "lob other"
+  - "bo businesspartner"
+  - "partner tax"
+  - "sap cds view"
+semantic_en: "The Business Partner TAX NUMBER TP 3 view exposes business partner tax number data for use in transactional processing and data editing."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

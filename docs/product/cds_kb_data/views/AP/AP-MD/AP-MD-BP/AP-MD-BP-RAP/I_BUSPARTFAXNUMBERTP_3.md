@@ -1,6 +1,18 @@
 ---
 name: I_BUSPARTFAXNUMBERTP_3
 description: "Business PartnerFAXNUMBERTP 3"
+semantic_vi: "View Business Partner FAX NUMBER TP 3 hiển thị thông tin số fax cho đối tác kinh doanh, có thể sử dụng khi cập nhật hoặc xác thực dữ liệu đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "fax number"
+  - "đối tác kinh doanh"
+  - "số fax"
+  - "cập nhật dữ liệu"
+  - "xác thực dữ liệu"
+  - "sap"
+  - "ap-md-bp-rap"
+  - "lob:other"
+semantic_en: "The Business Partner FAX NUMBER TP 3 view exposes fax number information for business partners, which can be used when updating or validating business partner data."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

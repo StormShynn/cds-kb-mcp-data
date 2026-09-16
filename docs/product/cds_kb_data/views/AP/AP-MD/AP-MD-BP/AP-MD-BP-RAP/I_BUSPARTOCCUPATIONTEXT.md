@@ -1,6 +1,19 @@
 ---
 name: I_BUSPARTOCCUPATIONTEXT
 description: "Business PartnerOCCUPATIONTEXT"
+semantic_vi: "View Business Partner Occupation Text cung cấp mô tả công việc cho đối tác kinh doanh trong các ngôn ngữ khác nhau. Nó có thể được sử dụng để lấy và hiển thị thông tin công việc cho đối tác kinh doanh trong các ngôn ngữ khác nhau."
+keywords:
+  - "business partner"
+  - "occupation"
+  - "description"
+  - "language"
+  - "sap"
+  - "cds view"
+  - "abap"
+  - "cloud"
+  - "ap-md-bp-rap"
+  - "lob other"
+semantic_en: "The Business Partner Occupation Text view provides occupation descriptions for business partners in different languages. It can be used to retrieve and display occupation information for business partners in various languages."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

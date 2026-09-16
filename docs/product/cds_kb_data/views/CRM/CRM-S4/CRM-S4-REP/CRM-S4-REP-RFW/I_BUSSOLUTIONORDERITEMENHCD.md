@@ -1,6 +1,18 @@
 ---
 name: I_BUSSOLUTIONORDERITEMENHCD
 description: "Bussolutionorderitemenhcd"
+semantic_vi: "Chứa dữ liệu chi tiết đơn hàng giải pháp kinh doanh, bao gồm mô tả và thông tin ngôn ngữ, cho mục đích báo cáo và giao diện CRM."
+keywords:
+  - "business solution order"
+  - "đơn hàng giải pháp kinh doanh"
+  - "crm reporting"
+  - "interface view"
+  - "service document"
+  - "service document item"
+  - "bus soln ord item description"
+  - "language"
+  - "bus soln ord description"
+semantic_en: "Exposes business solution order item data, including descriptions and language information, for use in CRM reporting and interface views."
 app_component: CRM-S4-REP-RFW
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,21 @@
 ---
 name: I_BUSINESSPARTNERADDRUSAGETP_3
 description: "Business PartnerADDRUSAGETP 3"
+semantic_vi: "Chứa thông tin địa chỉ đối tác kinh doanh được sử dụng cho các mục đích cụ thể như giao hàng hoặc hóa đơn, cùng với các ngày hiệu lực và loại sử dụng."
+keywords:
+  - "business partner"
+  - "address"
+  - "usage"
+  - "validity date"
+  - "sap"
+  - "ap-md-bp"
+  - "rap"
+  - "transactional processing"
+  - "partner"
+  - "đối tác kinh doanh"
+  - "địa chỉ"
+  - "sử dụng"
+semantic_en: "Exposes business partner addresses used for specific purposes, such as shipping or billing, along with their validity dates and usage types."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

@@ -1,6 +1,19 @@
 ---
 name: I_BUSINESSSOLUTIONORDERCUBE
 description: "Businesssolutionordercube"
+semantic_vi: "View Businesssolutionordercube hiển thị dữ liệu đơn hàng giải pháp kinh doanh, cung cấp thông tin về các kênh phân phối và bán hàng. Nó được sử dụng để phân tích đơn hàng giải pháp kinh doanh trên các tổ chức bán hàng và bộ phận khác nhau."
+keywords:
+  - "business solution order"
+  - "đơn hàng giải pháp kinh doanh"
+  - "sales organization"
+  - "phân phối"
+  - "bán hàng"
+  - "cds view"
+  - "view businesssolutionordercube"
+  - "crm"
+  - "s4hana"
+  - "analytical view"
+semantic_en: "The Businesssolutionordercube view exposes business solution order data, providing insights into sales and distribution channels. It is used to analyze business solution orders across different sales organizations and divisions."
 app_component: CRM-S4-ANA-CDS-2CL
 software_component: SAPSCORE
 release_state: released

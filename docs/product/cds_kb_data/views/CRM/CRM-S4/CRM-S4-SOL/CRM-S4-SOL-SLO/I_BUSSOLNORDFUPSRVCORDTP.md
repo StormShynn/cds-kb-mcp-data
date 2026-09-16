@@ -1,6 +1,19 @@
 ---
 name: I_BUSSOLNORDFUPSRVCORDTP
 description: "Bussolnordfupsrvcordtp"
+semantic_vi: "Chứa dữ liệu về đơn hàng giải pháp kinh doanh và đơn hàng dịch vụ cho thành phần CRM-S4-SOL-SLO, được sử dụng trong xử lý giao dịch."
+keywords:
+  - "crm"
+  - "service order"
+  - "business solution order"
+  - "transactional processing"
+  - "crm-s4-sol-slo"
+  - "interface-view"
+  - "lob-other"
+  - "solution order"
+  - "dịch vụ"
+  - "đơn hàng giải pháp kinh doanh"
+semantic_en: "Exposes business solution order and service order data for CRM-S4-SOL-SLO component, used in transactional processing."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

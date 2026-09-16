@@ -1,6 +1,19 @@
 ---
 name: I_BUSINESSPARTNERBANK
 description: "Business PartnerBANK"
+semantic_vi: "Chứa thông tin ngân hàng đối tác kinh doanh, bao gồm thông tin nhận dạng ngân hàng, tên và chi tiết tài khoản, cho việc quản lý logistics và đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "bank"
+  - "logistics"
+  - "bank account"
+  - "bank identification"
+  - "sap"
+  - "cds view"
+  - "lob logistics general"
+  - "bo business partner"
+  - "bo bank"
+semantic_en: "Exposes business partner bank information, such as bank identification, name, and account details, for use in logistics and business partner management."
 app_component: LO-MD-BP-2CL
 software_component: SAPSCORE
 release_state: released

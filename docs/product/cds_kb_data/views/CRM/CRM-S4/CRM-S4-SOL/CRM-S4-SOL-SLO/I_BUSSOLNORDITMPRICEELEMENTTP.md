@@ -1,6 +1,19 @@
 ---
 name: I_BUSSOLNORDITMPRICEELEMENTTP
 description: "Bussolnorditmpriceelementtp"
+semantic_vi: "View Bussolnorditmpriceelementtp CDS hiển thị các yếu tố giá cho đơn hàng giải pháp kinh doanh trong CRM, được sử dụng cho xử lý giao dịch."
+keywords:
+  - "crm"
+  - "business solution order"
+  - "đơn hàng giải pháp kinh doanh"
+  - "giá"
+  - "xử lý giao dịch"
+  - "transactional processing"
+  - "pricing procedure"
+  - "thủ tục giá"
+  - "condition type"
+  - "loại điều kiện"
+semantic_en: "The Bussolnorditmpriceelementtp CDS view exposes pricing elements for business solution orders in CRM, used for transactional processing."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

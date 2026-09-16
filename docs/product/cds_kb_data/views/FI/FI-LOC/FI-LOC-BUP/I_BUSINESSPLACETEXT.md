@@ -1,6 +1,20 @@
 ---
 name: I_BUSINESSPLACETEXT
 description: "Businessplacetext"
+semantic_vi: "View Businessplacetext cung cấp mô tả văn bản cho các địa điểm kinh doanh trong một công ty, cho phép bạn truy xuất tên và mô tả của địa điểm kinh doanh trong các ngôn ngữ khác nhau. Nó được sử dụng khi bạn cần hiển thị hoặc xử lý thông tin địa điểm kinh doanh trong ứng dụng của mình."
+keywords:
+  - "business place"
+  - "địa điểm kinh doanh"
+  - "company code"
+  - "language"
+  - "text view"
+  - "view"
+  - "fi-loc-bup"
+  - "fi"
+  - "fi-loc"
+  - "finance"
+  - "text description"
+semantic_en: "The Businessplacetext view provides text descriptions for business places in a company, allowing you to retrieve the names and descriptions of business places in different languages. It is used when you need to display or process business place information in your application."
 app_component: FI-LOC-BUP
 software_component: SAPSCORE
 release_state: released

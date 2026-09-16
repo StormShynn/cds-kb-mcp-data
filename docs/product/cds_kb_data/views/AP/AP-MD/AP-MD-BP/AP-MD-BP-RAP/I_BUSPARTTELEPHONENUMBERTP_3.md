@@ -1,6 +1,21 @@
 ---
 name: I_BUSPARTTELEPHONENUMBERTP_3
 description: "Business PartnerTELEPHONENUMBERTP 3"
+semantic_vi: "Chứa thông tin số điện thoại đối tác kinh doanh cho một địa chỉ và người cụ thể, được sử dụng khi quản lý dữ liệu đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "telephone number"
+  - "số điện thoại"
+  - "address"
+  - "địa chỉ"
+  - "person"
+  - "người"
+  - "sap"
+  - "cds view"
+  - "view"
+  - "ap-md-bp-rap"
+semantic_en: "Exposes business partner telephone numbers for a specific address and person, used when managing business partner data."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

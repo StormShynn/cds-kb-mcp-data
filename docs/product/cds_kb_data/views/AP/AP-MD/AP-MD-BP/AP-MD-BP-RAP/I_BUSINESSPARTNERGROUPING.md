@@ -1,6 +1,17 @@
 ---
 name: I_BUSINESSPARTNERGROUPING
 description: "Business PartnerGROUPING"
+semantic_vi: "View I_BUSINESSPARTNERGROUPING hiển thị dữ liệu nhóm đối tác kinh doanh, được sử dụng để phân loại và quản lý đối tác kinh doanh trong một công ty."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "partner grouping"
+  - "categorization"
+  - "management"
+  - "sap"
+  - "ap-md-bp-rap"
+  - "business partner grouping"
+semantic_en: "The I_BUSINESSPARTNERGROUPING view exposes business partner grouping data, which is used to categorize and manage business partners in a company."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

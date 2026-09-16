@@ -1,6 +1,21 @@
 ---
 name: I_BR_SDEXTTXCALCMATLUSAGEVH
 description: "BR Sdexttxcalcmatlusagevh"
+semantic_vi: "View I_BR_SDEXTTXCALCMATLUSAGEVH cung cấp dữ liệu sử dụng vật liệu cho các tính toán thuế ngoài, thường được sử dụng trong các giao dịch tài chính và địa phương hóa."
+keywords:
+  - "material usage"
+  - "external tax calculation"
+  - "financial transaction"
+  - "localization"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-txs"
+  - "sap cds"
+  - "interface view"
+  - "value help"
+  - "finance"
+  - "tax calculation"
+semantic_en: "The I_BR_SDEXTTXCALCMATLUSAGEVH view provides material usage data for external tax calculations, typically used in financial transactions and localization."
 app_component: FI-LOC-TXS
 software_component: SAPSCORE
 release_state: released

@@ -1,6 +1,20 @@
 ---
 name: I_BR_SIMPLESSUPPLIERTAXRATE
 description: "BR Simplessuppliertaxrate"
+semantic_vi: "View I_BR_SIMPLESSUPPLIERTAXRATE CDS hiển thị thuế cho nhà cung cấp tại Brazil, được sử dụng cho các tính toán tài chính."
+keywords:
+  - "supplier"
+  - "tax"
+  - "brazil"
+  - "financial"
+  - "calculations"
+  - "cds view"
+  - "fi-loc-lo-br"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo"
+  - "interface-view"
+semantic_en: "The I_BR_SIMPLESSUPPLIERTAXRATE CDS view exposes tax rates for suppliers in Brazil, used for financial calculations."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

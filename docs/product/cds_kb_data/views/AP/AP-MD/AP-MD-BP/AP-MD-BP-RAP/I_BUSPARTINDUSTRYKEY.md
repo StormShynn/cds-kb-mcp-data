@@ -1,6 +1,17 @@
 ---
 name: I_BUSPARTINDUSTRYKEY
 description: "Business PartnerINDUSTRYKEY"
+semantic_vi: "View I_BUSPARTINDUSTRYKEY cung cấp thông tin phân loại ngành công nghiệp cho đối tác kinh doanh, có thể được sử dụng để phân loại và phân tích dữ liệu đối tác kinh doanh."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "industry classification"
+  - "phân loại ngành công nghiệp"
+  - "sap"
+  - "ap-md-bp-rap"
+  - "industry system type"
+  - "industry sector"
+semantic_en: "The I_BUSPARTINDUSTRYKEY view provides industry classification information for business partners, which can be used to categorize and analyze business partner data."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

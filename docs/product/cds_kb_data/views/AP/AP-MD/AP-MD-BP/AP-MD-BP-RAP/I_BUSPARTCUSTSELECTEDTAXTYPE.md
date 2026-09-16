@@ -1,6 +1,17 @@
 ---
 name: I_BUSPARTCUSTSELECTEDTAXTYPE
 description: "Business PartnerCUSTSELECTEDTAXTYPE"
+semantic_vi: "View Business Partner CUSTSELECTEDTAXTYPE hiển thị loại thuế được chọn cho đối tác kinh doanh, có liên quan khi xử lý các giao dịch liên quan đến đối tác kinh doanh cụ thể."
+keywords:
+  - "business partner"
+  - "tax type"
+  - "đối tác kinh doanh"
+  - "loại thuế"
+  - "custselectedtaxtype"
+  - "ap-md-bp-rap"
+  - "sap"
+  - "business partner tax type"
+semantic_en: "The Business Partner CUSTSELECTEDTAXTYPE view exposes the selected tax type for a business partner, which is relevant when processing transactions involving a specific business partner."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

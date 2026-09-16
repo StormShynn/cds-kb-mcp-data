@@ -1,6 +1,18 @@
 ---
 name: I_BUSPARTINDUSTRYSYSTEMTEXT
 description: "Business PartnerINDUSTRYSYSTEMTEXT"
+semantic_vi: "Chứa dữ liệu văn bản hệ thống ngành cho đối tác kinh doanh, cung cấp cách thức để lấy văn bản mô tả hệ thống ngành trong các ngôn ngữ khác nhau."
+keywords:
+  - "business partner"
+  - "industry system"
+  - "text view"
+  - "sap cds"
+  - "ap-md-bp-rap"
+  - "lob other"
+  - "language"
+  - "industry system type"
+  - "industry system name"
+semantic_en: "Exposes industry system text data for business partners, providing a way to retrieve text descriptions for industry systems in different languages."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

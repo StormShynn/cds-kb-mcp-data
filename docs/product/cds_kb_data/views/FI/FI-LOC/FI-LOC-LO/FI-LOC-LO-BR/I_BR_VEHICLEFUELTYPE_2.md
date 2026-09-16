@@ -1,6 +1,20 @@
 ---
 name: I_BR_VEHICLEFUELTYPE_2
 description: "BR Vehiclefueltype 2"
+semantic_vi: "View I_BR_VEHICLEFUELTYPE_2 hiển thị các loại nhiên liệu xe, có liên quan đến các yêu cầu kinh doanh liên quan đến tiêu thụ nhiên liệu và quản lý."
+keywords:
+  - "vehicle fuel type"
+  - "loại nhiên liệu xe"
+  - "fuel consumption"
+  - "tiêu thụ nhiên liệu"
+  - "fuel management"
+  - "quản lý nhiên liệu"
+  - "sap cds view"
+  - "view"
+  - "fi-loc-lo-br"
+  - "finance"
+  - "finance component"
+semantic_en: "The I_BR_VEHICLEFUELTYPE_2 CDS view exposes vehicle fuel types, which are relevant for business requirements related to fuel consumption and management."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

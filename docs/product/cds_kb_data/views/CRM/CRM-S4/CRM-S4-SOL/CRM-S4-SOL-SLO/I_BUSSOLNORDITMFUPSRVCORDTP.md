@@ -1,6 +1,17 @@
 ---
 name: I_BUSSOLNORDITMFUPSRVCORDTP
 description: "Bussolnorditmfupsrvcordtp"
+semantic_vi: "View Bussolnorditmfupsrvcordtp hiển thị dữ liệu đơn hàng giải pháp kinh doanh và đơn hàng dịch vụ, thường được sử dụng trong xử lý giao dịch trong thành phần CRM-S4-SOL-SLO."
+keywords:
+  - "business solution order"
+  - "service order"
+  - "crm"
+  - "transactional processing"
+  - "crm-s4-sol-slo"
+  - "lob other"
+  - "interface view"
+  - "sap cds view"
+semantic_en: "The Bussolnorditmfupsrvcordtp view exposes business solution order and service order data, typically used in transactional processing within the CRM-S4-SOL-SLO component."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released

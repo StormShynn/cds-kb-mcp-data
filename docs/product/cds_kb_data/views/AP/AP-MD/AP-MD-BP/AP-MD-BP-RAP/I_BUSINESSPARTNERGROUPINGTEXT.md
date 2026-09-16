@@ -1,6 +1,18 @@
 ---
 name: I_BUSINESSPARTNERGROUPINGTEXT
 description: "Business PartnerGROUPINGTEXT"
+semantic_vi: "View I_BUSINESSPARTNERGROUPINGTEXT hiển thị dữ liệu văn bản nhóm đối tác kinh doanh, được sử dụng để phân loại và mô tả đối tác kinh doanh trong một công ty. Nó có thể được sử dụng để lấy và hiển thị văn bản nhóm đối tác cho một đối tác kinh doanh cụ thể hoặc ngôn ngữ."
+keywords:
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "grouping text"
+  - "văn bản nhóm"
+  - "business partner grouping"
+  - "người dùng"
+  - "ap-md-bp-rap"
+  - "sap"
+  - "cds view"
+semantic_en: "The I_BUSINESSPARTNERGROUPINGTEXT view exposes business partner grouping text data, which is used to categorize and describe business partners in a company. It can be used to retrieve and display the grouping text for a specific business partner or language."
 app_component: AP-MD-BP-RAP
 software_component: SAP_BASIS
 release_state: released

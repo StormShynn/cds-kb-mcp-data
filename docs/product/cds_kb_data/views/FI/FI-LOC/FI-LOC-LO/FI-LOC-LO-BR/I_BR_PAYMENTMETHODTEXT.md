@@ -1,6 +1,19 @@
 ---
 name: I_BR_PAYMENTMETHODTEXT
 description: "BR Paymentmethodtext"
+semantic_vi: "View I_BR_PAYMENTMETHODTEXT cung cấp mô tả phương thức thanh toán trong các ngôn ngữ khác nhau, hữu ích cho việc hiển thị các tùy chọn thanh toán cho khách hàng hoặc nhà cung cấp theo ngôn ngữ yêu cầu của họ."
+keywords:
+  - "payment method"
+  - "mô tả phương thức thanh toán"
+  - "language"
+  - "ngôn ngữ"
+  - "sap fi"
+  - "fi loc"
+  - "fi loc lo br"
+  - "payment description"
+  - "thanh toán"
+  - "tài chính"
+semantic_en: "The I_BR_PAYMENTMETHODTEXT view provides payment method descriptions in different languages, useful for displaying payment options to customers or vendors in their preferred language."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

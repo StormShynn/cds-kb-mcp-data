@@ -1,6 +1,20 @@
 ---
 name: I_BUSINESSAREASTDVH
 description: "Businessareastdvh"
+semantic_vi: "View Businessareastdvh cung cấp danh sách các khu vực kinh doanh, được sử dụng để phân loại và tổ chức dữ liệu tài chính trong hệ thống kế toán và sổ cái chung. Nó được sử dụng để lấy danh sách các khu vực kinh doanh có sẵn cho mục đích chọn lọc hoặc lọc."
+keywords:
+  - "business area"
+  - "khu vực kinh doanh"
+  - "accounting"
+  - "sổ cái chung"
+  - "financial data"
+  - "dữ liệu tài chính"
+  - "fi"
+  - "fi-gl"
+  - "fi-gl-gl"
+  - "value help"
+  - "standard value help"
+semantic_en: "The Businessareastdvh view provides a list of business areas, which are used to categorize and organize financial data in accounting and general ledger systems. It is used to retrieve a list of available business areas for selection or filtering purposes."
 app_component: FI-GL-GL-A-2CL
 software_component: SAPSCORE
 release_state: released

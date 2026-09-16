@@ -1,6 +1,21 @@
 ---
 name: I_BR_VEHICLEOPERATIONTYPETEXT
 description: "BR Vehicleoperationtypetext"
+semantic_vi: "View I_BR_VEHICLEOPERATIONTYPETEXT cung cấp mô tả văn bản của các loại hoạt động xe, có thể được sử dụng khi hiển thị hoặc báo cáo hoạt động xe trong ngữ cảnh tài chính hoặc logistics."
+keywords:
+  - "vehicle operation"
+  - "loại hoạt động xe"
+  - "text view"
+  - "view"
+  - "finance"
+  - "logistics"
+  - "fi-loc-lo-br"
+  - "fi"
+  - "fi-loc"
+  - "fi-loc-lo"
+  - "interface-view"
+  - "text-view"
+semantic_en: "The I_BR_VEHICLEOPERATIONTYPETEXT view provides text descriptions of vehicle operation types, which can be used when displaying or reporting on vehicle operations in a finance or logistics context."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

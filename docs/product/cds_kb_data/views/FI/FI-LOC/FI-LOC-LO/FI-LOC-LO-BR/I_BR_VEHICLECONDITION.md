@@ -1,6 +1,16 @@
 ---
 name: I_BR_VEHICLECONDITION
 description: "BR Vehiclecondition"
+semantic_vi: "View I_BR_VEHICLECONDITION hiển thị dữ liệu tình trạng xe, có liên quan khi định giá hoặc đánh giá tình trạng xe trong bối cảnh kinh doanh."
+keywords:
+  - "vehicle condition"
+  - "tình trạng xe"
+  - "pricing condition"
+  - "cơ sở dữ liệu tài chính"
+  - "finance database"
+  - "fi-loc-lo-br"
+  - "sap cds view"
+semantic_en: "The I_BR_VEHICLECONDITION view exposes vehicle condition data, which is relevant when pricing or evaluating the condition of vehicles in a business context."
 app_component: FI-LOC-LO-BR
 software_component: SAPSCORE
 release_state: released

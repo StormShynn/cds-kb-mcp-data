@@ -1,6 +1,21 @@
 ---
 name: I_BUSSOLNORDITMFINANCIALCUBE
 description: "Bussolnorditmfinancialcube"
+semantic_vi: "View Bussolnorditmfinancialcube cung cấp dữ liệu tài chính cho các đơn hàng giải pháp kinh doanh và các mục của chúng, hữu ích cho việc phân tích hiệu suất bán hàng và chỉ số tài chính."
+keywords:
+  - "business solution order"
+  - "đơn hàng giải pháp kinh doanh"
+  - "financial data"
+  - "sự phân tích hiệu suất bán hàng"
+  - "cds view"
+  - "view dữ liệu tài chính"
+  - "s4hana"
+  - "crm"
+  - "sales performance"
+  - "đơn vị kinh doanh"
+  - "sales organization"
+  - "sales office"
+semantic_en: "The Bussolnorditmfinancialcube view provides financial data for business solution orders and their items, useful for analyzing sales performance and financial metrics."
 app_component: CRM-S4-ANA-CDS-2CL
 software_component: SAPSCORE
 release_state: released

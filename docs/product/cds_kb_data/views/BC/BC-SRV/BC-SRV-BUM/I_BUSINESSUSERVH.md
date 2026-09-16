@@ -1,6 +1,20 @@
 ---
 name: I_BUSINESSUSERVH
 description: "Businessuservh"
+semantic_vi: "View Businessuservh cung cấp danh sách người dùng kinh doanh với chi tiết liên quan, hữu ích cho việc xác định và quản lý người dùng trong bối cảnh kinh doanh."
+keywords:
+  - "business user"
+  - "người dùng kinh doanh"
+  - "business partner"
+  - "đối tác kinh doanh"
+  - "user details"
+  - "chi tiết người dùng"
+  - "business user management"
+  - "quản lý người dùng kinh doanh"
+  - "sap basis"
+  - "basis components"
+  - "component bc-srv-bum"
+semantic_en: "The Businessuservh view provides a list of business users with their associated details, useful for identifying and managing users in a business context."
 app_component: BC-SRV-BUM
 software_component: SAP_BASIS
 release_state: released

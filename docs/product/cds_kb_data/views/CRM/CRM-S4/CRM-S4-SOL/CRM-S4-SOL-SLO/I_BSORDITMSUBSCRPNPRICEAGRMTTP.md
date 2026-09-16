@@ -1,6 +1,18 @@
 ---
 name: I_BSORDITMSUBSCRPNPRICEAGRMTTP
 description: "Bsorditmsubscrpnpriceagrmttp"
+semantic_vi: "View I_BSORDITMSUBSCRPNPRICEAGRMTTP hiển thị dữ liệu thỏa thuận giá thuê bao cho đơn hàng giải pháp kinh doanh, cho phép bạn truy xuất và xử lý thông tin giá thuê bao."
+keywords:
+  - "subscription pricing"
+  - "thỏa thuận giá thuê bao"
+  - "business solution order"
+  - "đơn hàng giải pháp kinh doanh"
+  - "crm"
+  - "s4hana"
+  - "sap"
+  - "pricing agreement"
+  - "đơn giá thuê bao"
+semantic_en: "The I_BSORDITMSUBSCRPNPRICEAGRMTTP view exposes subscription pricing agreement data for business solution orders, allowing you to retrieve and process subscription pricing information."
 app_component: CRM-S4-SOL-SLO
 software_component: SAPSCORE
 release_state: released
