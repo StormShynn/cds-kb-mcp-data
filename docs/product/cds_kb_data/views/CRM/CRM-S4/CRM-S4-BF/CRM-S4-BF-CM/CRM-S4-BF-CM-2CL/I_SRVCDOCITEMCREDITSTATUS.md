@@ -40,8 +40,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SrvcDocItemCreditStatus` | ✓ | |  | `cast ( domvalue_l as crms4_stat_credit_i )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `SrvcDocItemCreditStatus` | ✓ | |  | `cast ( domvalue_l as crms4_stat_credit_i )` | `CHAR(1)` | Credit Status of Item |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_SrvcDocItemCreditStatusText` | | ✓ | | | | |
 
 ## Associations

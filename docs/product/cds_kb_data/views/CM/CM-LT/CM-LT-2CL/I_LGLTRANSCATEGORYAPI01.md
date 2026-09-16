@@ -38,11 +38,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LegalTransactionCategoryUUID` | ✓ | |  |  |  |  |
-| `LegalTransactionParCatUUID` |  | |  |  |  |  |
-| `LegalTransactionUUID` |  | |  |  |  |  |
-| `LglCntntMCategory` |  | |  |  |  |  |
-| `LglCntntMIsMandatory` |  | |  |  |  |  |
+| `LegalTransactionCategoryUUID` | ✓ | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransactionParCatUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransactionUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglCntntMCategory` |  | |  |  | `NUMC(6)` | Category ID |
+| `LglCntntMIsMandatory` |  | |  |  | `CHAR(1)` | Mandatory |
 | `_LegalTransaction` | | ✓ | | | | |
 | `_LglTransParentCategory` | | ✓ | | | | |
 | `_LegalCategory` | | ✓ | | | | |

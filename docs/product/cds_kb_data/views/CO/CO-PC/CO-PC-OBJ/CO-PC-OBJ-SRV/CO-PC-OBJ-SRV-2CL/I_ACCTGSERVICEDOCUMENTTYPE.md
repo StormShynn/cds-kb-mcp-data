@@ -55,8 +55,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentType` | ✓ | |  |  |  |  |
-| `ServiceDocumentTypeName` |  | |  |  |  |  |
+| `ServiceDocumentType` | ✓ | |  |  | `CHAR(4)` | Service Document Type |
+| `ServiceDocumentTypeName` |  | |  |  | `CHAR(40)` | Description |
 
 ## Source Code
 

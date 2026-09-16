@@ -38,14 +38,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LegalTransactionLinkdObjUUID` | ✓ | |  |  |  |  |
-| `LglCntntMLinkdObjType` |  | |  |  |  |  |
-| `LglCntntMLinkdObj` |  | |  |  |  |  |
-| `LegalTransactionUUID` |  | |  |  |  |  |
-| `LegalTransactionMandatoryFlag` |  | |  |  |  |  |
-| `LegalTransactionIsTriggerObj` |  | |  |  |  |  |
-| `LglCntntMIsIntegRelevant` |  | |  |  |  |  |
-| `LglCntntMIsAddedByIntegVarbl` |  | |  |  |  |  |
+| `LegalTransactionLinkdObjUUID` | ✓ | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglCntntMLinkdObjType` |  | |  |  | `CHAR(4)` | Linked Object Type |
+| `LglCntntMLinkdObj` |  | |  |  | `CHAR(255)` | Linked Object ID |
+| `LegalTransactionUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransactionMandatoryFlag` |  | |  |  | `CHAR(1)` | Control Parameter Legal Transaction Mandatory State |
+| `LegalTransactionIsTriggerObj` |  | |  |  | `CHAR(1)` | Denotes if linked object is trigger object |
+| `LglCntntMIsIntegRelevant` |  | |  |  | `CHAR(1)` | Integrated |
+| `LglCntntMIsAddedByIntegVarbl` |  | |  |  | `CHAR(1)` | Added By Integration Variable BAdI |
 | `_LegalTransaction` | | ✓ | | | | |
 
 ## Associations

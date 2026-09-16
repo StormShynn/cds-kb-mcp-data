@@ -40,11 +40,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostingVariant` | ✓ | |  |  |  |  |
-| `CostingVariantName` |  | |  |  |  |  |
-| `ValuationVariant` |  | |  |  |  |  |
-| `ValuationVariantName` |  | |  |  |  |  |
-| `CostingType` |  | |  |  |  |  |
+| `CostingVariant` | ✓ | |  |  | `CHAR(4)` | Costing Variant |
+| `CostingVariantName` |  | |  |  | `CHAR(25)` | Name for Costing Variant |
+| `ValuationVariant` |  | |  |  | `CHAR(3)` | Valuation Variant in Costing |
+| `ValuationVariantName` |  | |  |  | `CHAR(25)` | Valuation Variant Name |
+| `CostingType` |  | |  |  | `CHAR(2)` | Costing Type |
 
 ## Source Code
 

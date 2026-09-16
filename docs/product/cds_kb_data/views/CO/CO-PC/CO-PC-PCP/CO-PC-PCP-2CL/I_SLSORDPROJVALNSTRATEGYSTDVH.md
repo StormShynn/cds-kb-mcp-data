@@ -41,8 +41,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SlsOrdProjValnStrategy` | ✓ | |  |  |  |  |
-| `SlsOrdProjValnStrgyName` |  | | `_SlsOrdProjValnStrategyText` | `SlsOrdProjValnStrgyName` |  |  |
+| `SlsOrdProjValnStrategy` | ✓ | |  |  | `CHAR(1)` | Valuation Strategy for Material in Valuated Special Stock |
+| `SlsOrdProjValnStrgyName` |  | | `_SlsOrdProjValnStrategyText` | `SlsOrdProjValnStrgyName` | `CHAR(60)` | Name of Val. Strategy for Material in Valuated Spec. Stock |
 | `_SlsOrdProjValnStrategyText` | | ✓ | | | | |
 
 ## Associations

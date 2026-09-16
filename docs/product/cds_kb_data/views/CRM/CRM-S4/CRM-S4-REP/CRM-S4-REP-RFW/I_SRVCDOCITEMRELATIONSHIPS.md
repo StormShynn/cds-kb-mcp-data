@@ -38,11 +38,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocument` | ✓ | |  | `object_id` |  |  |
-| `ServiceObjectType` | ✓ | |  | `objtype_h` |  |  |
-| `SrvcItemRelshpFromItemNumber` | ✓ | |  | `item_number_a` |  |  |
-| `SrvcItemRelshpType` | ✓ | |  | `item_relationship_type` |  |  |
-| `SrvcItemRelshpToItemNumber` | ✓ | |  | `item_number_b` |  |  |
+| `ServiceDocument` | ✓ | |  | `object_id` | `CHAR(10)` | Transaction ID |
+| `ServiceObjectType` | ✓ | |  | `objtype_h` | `CHAR(10)` | Business Trans. Cat. |
+| `SrvcItemRelshpFromItemNumber` | ✓ | |  | `item_number_a` | `NUMC(6)` | Shortened Item Number in Document |
+| `SrvcItemRelshpType` | ✓ | |  | `item_relationship_type` | `CHAR(3)` | Item Relationship Type |
+| `SrvcItemRelshpToItemNumber` | ✓ | |  | `item_number_b` | `NUMC(6)` | Shortened Item Number in Document |
 | `_ServiceDocumentItemFrom` | | ✓ | | | | |
 | `_ServiceDocumentItemTo` | | ✓ | | | | |
 | `_ServiceItemRelationshipType` | | ✓ | | | | |

@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostComponentStructure` | ✓ | |  |  |  |  |
-| `CostComponent` | ✓ | |  |  |  |  |
-| `CostComponentName` |  | | `_CostComponentText` | `CostComponentName` |  |  |
+| `CostComponentStructure` | ✓ | |  |  | `CHAR(2)` | Cost Component Structure - CGM and Sales/Administr. Costs |
+| `CostComponent` | ✓ | |  |  | `NUMC(3)` | Cost Component Number |
+| `CostComponentName` |  | | `_CostComponentText` | `CostComponentName` | `CHAR(20)` | Cost Component Name |
 | `_CostComponentText` | | ✓ | | | | |
 
 ## Associations

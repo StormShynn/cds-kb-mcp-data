@@ -40,91 +40,91 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  | `kokrs` |  |  |
-| `CostCenter` | ✓ | |  | `kostl` |  |  |
-| `ValidityEndDate` | ✓ | |  | `datbi` |  |  |
-| `ValidityStartDate` |  | |  | `datab` |  |  |
-| `IsBlkdForPrimaryCostsPosting` |  | |  | `bkzkp` |  |  |
-| `IsBlockedForPlanPrimaryCosts` |  | |  | `pkzkp` |  |  |
-| `CompanyCode` |  | |  | `bukrs` |  |  |
-| `BusinessArea` |  | |  | `gsber` |  |  |
-| `CostCenterCategory` |  | |  | `kosar` |  |  |
-| `CostCtrResponsiblePersonName` |  | |  | `verak` |  |  |
-| `CostCtrResponsibleUser` |  | |  | `verak_user` |  |  |
-| `CostCenterCurrency` |  | |  | `waers` |  |  |
-| `CostingSheet` |  | |  | `kalsm` |  |  |
-| `TaxJurisdiction` |  | |  | `txjcd` |  |  |
-| `ProfitCenter` |  | |  | `prctr` |  |  |
-| `Plant` |  | |  | `werks` |  |  |
-| `LogicalSystem` |  | |  | `logsystem` |  |  |
-| `CostCenterCreationDate` |  | |  | `ersda` |  |  |
-| `CostCenterCreatedByUser` |  | |  | `usnam` |  |  |
-| `IsBlkdForSecondaryCostsPosting` |  | |  | `bkzks` |  |  |
-| `IsBlockedForRevenuePosting` |  | |  | `bkzer` |  |  |
-| `IsBlockedForCommitmentPosting` |  | |  | `bkzob` |  |  |
-| `IsBlockedForPlanSecondaryCosts` |  | |  | `cast(pkzks as fis_pkzks preserving type)` |  |  |
-| `IsBlockedForPlanRevenues` |  | |  | `cast(pkzer as fis_pkzer preserving type)` |  |  |
-| `CostCenterAllocationMethod` |  | |  | `vmeth` |  |  |
-| `ConsumptionQtyIsRecorded` |  | |  | `mgefl` |  |  |
-| `Department` |  | |  | `abtei` |  |  |
-| `SubsequentCostCenter` |  | |  | `nkost` |  |  |
-| `ConditionUsage` |  | |  | `kvewe` |  |  |
-| `ConditionApplication` |  | |  | `kappl` |  |  |
-| `CostCenterAccountingOverhead` |  | |  | `koszschl` |  |  |
-| `Country` |  | |  | `land1` |  |  |
-| `FormOfAddress` |  | |  | `anred` |  |  |
-| `AddressName` |  | |  | `name1` |  |  |
-| `AddressAdditionalName` |  | |  | `name2` |  |  |
-| `CostCenterAddrName3` |  | |  | `name3` |  |  |
-| `CostCenterAddrName4` |  | |  | `name4` |  |  |
-| `CityName` |  | |  | `ort01` |  |  |
-| `District` |  | |  | `ort02` |  |  |
-| `StreetAddressName` |  | |  | `stras` |  |  |
-| `POBox` |  | |  | `pfach` |  |  |
-| `PostalCode` |  | |  | `pstlz` |  |  |
-| `POBoxPostalCode` |  | |  | `pstl2` |  |  |
-| `Region` |  | |  | `regio` |  |  |
-| `Language` |  | |  | `spras` |  |  |
-| `TeleboxNumber` |  | |  | `telbx` |  |  |
-| `PhoneNumber1` |  | |  | `telf1` |  |  |
-| `PhoneNumber2` |  | |  | `telf2` |  |  |
-| `FaxNumber` |  | |  | `telfx` |  |  |
-| `TeletexNumber` |  | |  | `teltx` |  |  |
-| `TelexNumber` |  | |  | `telx1` |  |  |
-| `DataCommunicationPhoneNumber` |  | |  | `datlt` |  |  |
-| `CostCenterPrinterDestination` |  | |  | `drnam` |  |  |
-| `CostCenterStandardHierArea` |  | |  | `khinr` |  |  |
-| `CostCollector` |  | |  | `cckey` |  |  |
-| `CostCenterIsComplete` |  | |  | `kompl` |  |  |
-| `IsStatisticalCostCenter` |  | |  | `cast(stakz as fins_xkostl_stat preserving type)` |  |  |
-| `ObjectInternalID` |  | |  | `objnr` |  |  |
-| `CostCenterFunction` |  | |  | `funkt` |  |  |
-| `CostCenterAlternativeFunction` |  | |  | `afunk` |  |  |
-| `FunctionalArea` |  | |  | `func_area` |  |  |
-| `ActyIndepFormulaPlanningTmpl` |  | |  | `cpi_templ` |  |  |
-| `ActyDepdntFormulaPlanningTmpl` |  | |  | `cpd_templ` |  |  |
-| `ActyIndependentAllocationTmpl` |  | |  | `sci_templ` |  |  |
-| `ActyDependentAllocationTmpl` |  | |  | `scd_templ` |  |  |
-| `ActlIndepStatisticalKeyFigures` |  | |  | `ski_templ` |  |  |
-| `ActlDepStatisticalKeyFigures` |  | |  | `skd_templ` |  |  |
-| `JointVenture` |  | |  | `vname` |  |  |
-| `JointVentureRecoveryCode` |  | |  | `recid` |  |  |
-| `JointVentureEquityType` |  | |  | `etype` |  |  |
-| `JointVentureObjectType` |  | |  | `jv_otype` |  |  |
-| `JointVentureClass` |  | |  | `jv_jibcl` |  |  |
-| `JointVentureSubClass` |  | |  | `jv_jibsa` |  |  |
-| `BudgetCarryingCostCenter` |  | |  | `budget_carrying_cost_ctr` |  |  |
-| `AvailabilityControlProfile` |  | |  | `avc_profile` |  |  |
-| `AvailabilityControlIsActive` |  | |  | `avc_active` |  |  |
-| `Fund` |  | |  | `fund` |  |  |
-| `GrantID` |  | |  | `grant_id` |  |  |
-| `FundIsFixAssigned` |  | |  | `fund_fix_assigned` |  |  |
-| `GrantIDIsFixAssigned` |  | |  | `grant_fix_assigned` |  |  |
-| `FunctionalAreaIsFixAssigned` |  | |  | `func_area_fix_assigned` |  |  |
-| `CostCenterCreationTime` |  | |  | `created_at` |  |  |
-| `CostCenterLastChangedByUser` |  | |  | `last_changed_by` |  |  |
-| `CostCenterLastChangedOnDate` |  | |  | `last_changed_on` |  |  |
-| `CostCenterLastChangedAtTime` |  | |  | `last_changed_at` |  |  |
+| `ControllingArea` | ✓ | |  | `kokrs` | `CHAR(4)` | Controlling Area |
+| `CostCenter` | ✓ | |  | `kostl` | `CHAR(10)` | Cost Center |
+| `ValidityEndDate` | ✓ | |  | `datbi` | `DATS(8)` | Valid To Date |
+| `ValidityStartDate` |  | |  | `datab` | `DATS(8)` | Valid-From Date |
+| `IsBlkdForPrimaryCostsPosting` |  | |  | `bkzkp` | `CHAR(1)` | Lock Indicator for Actual Primary Postings |
+| `IsBlockedForPlanPrimaryCosts` |  | |  | `pkzkp` | `CHAR(1)` | Lock Indicator for Plan Primary Costs |
+| `CompanyCode` |  | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `BusinessArea` |  | |  | `gsber` | `CHAR(4)` | Business Area |
+| `CostCenterCategory` |  | |  | `kosar` | `CHAR(1)` | Cost Center Category |
+| `CostCtrResponsiblePersonName` |  | |  | `verak` | `CHAR(20)` | Person Responsible |
+| `CostCtrResponsibleUser` |  | |  | `verak_user` | `CHAR(12)` | User Responsible |
+| `CostCenterCurrency` |  | |  | `waers` | `CUKY(5)` | Currency Key |
+| `CostingSheet` |  | |  | `kalsm` | `CHAR(6)` | Costing Sheet |
+| `TaxJurisdiction` |  | |  | `txjcd` | `CHAR(15)` | Tax Jurisdiction |
+| `ProfitCenter` |  | |  | `prctr` | `CHAR(10)` | Profit Center |
+| `Plant` |  | |  | `werks` | `CHAR(4)` | Plant |
+| `LogicalSystem` |  | |  | `logsystem` | `CHAR(10)` | Logical System |
+| `CostCenterCreationDate` |  | |  | `ersda` | `DATS(8)` | Entered On |
+| `CostCenterCreatedByUser` |  | |  | `usnam` | `CHAR(12)` | Entered By |
+| `IsBlkdForSecondaryCostsPosting` |  | |  | `bkzks` | `CHAR(1)` | Lock Indicator for Actual Secondary Costs |
+| `IsBlockedForRevenuePosting` |  | |  | `bkzer` | `CHAR(1)` | Lock Indicator for Actual Revenue Postings |
+| `IsBlockedForCommitmentPosting` |  | |  | `bkzob` | `CHAR(1)` | Lock Indicator for Commitment Update |
+| `IsBlockedForPlanSecondaryCosts` |  | |  | `cast(pkzks as fis_pkzks preserving type)` | `CHAR(1)` | Lock Indicator for Plan Secondary Costs |
+| `IsBlockedForPlanRevenues` |  | |  | `cast(pkzer as fis_pkzer preserving type)` | `CHAR(1)` | Lock Indicator for Planning Revenues |
+| `CostCenterAllocationMethod` |  | |  | `vmeth` | `CHAR(2)` | Indicator for Allowed Allocation Methods |
+| `ConsumptionQtyIsRecorded` |  | |  | `mgefl` | `CHAR(1)` | Indicator for Recording Consumption Quantities |
+| `Department` |  | |  | `abtei` | `CHAR(12)` | Department |
+| `SubsequentCostCenter` |  | |  | `nkost` | `CHAR(10)` | Subsequent Cost Center |
+| `ConditionUsage` |  | |  | `kvewe` | `CHAR(1)` | Usage of the condition table |
+| `ConditionApplication` |  | |  | `kappl` | `CHAR(2)` | Application |
+| `CostCenterAccountingOverhead` |  | |  | `koszschl` | `CHAR(6)` | CO-CCA Overhead Key |
+| `Country` |  | |  | `land1` | `CHAR(3)` | Country/Region Key |
+| `FormOfAddress` |  | |  | `anred` | `CHAR(15)` | Title |
+| `AddressName` |  | |  | `name1` | `CHAR(35)` | Name |
+| `AddressAdditionalName` |  | |  | `name2` | `CHAR(35)` | Name 2 |
+| `CostCenterAddrName3` |  | |  | `name3` | `CHAR(35)` | Name 3 |
+| `CostCenterAddrName4` |  | |  | `name4` | `CHAR(35)` | Name 4 |
+| `CityName` |  | |  | `ort01` | `CHAR(35)` | City |
+| `District` |  | |  | `ort02` | `CHAR(35)` | District |
+| `StreetAddressName` |  | |  | `stras` | `CHAR(35)` | Street and House Number |
+| `POBox` |  | |  | `pfach` | `CHAR(10)` | PO Box |
+| `PostalCode` |  | |  | `pstlz` | `CHAR(10)` | Postal Code |
+| `POBoxPostalCode` |  | |  | `pstl2` | `CHAR(10)` | PO Box Postal Code |
+| `Region` |  | |  | `regio` | `CHAR(3)` | Region (State, Province, County) |
+| `Language` |  | |  | `spras` | `LANG(1)` | Language Key |
+| `TeleboxNumber` |  | |  | `telbx` | `CHAR(15)` | Telebox Number |
+| `PhoneNumber1` |  | |  | `telf1` | `CHAR(16)` | First telephone number |
+| `PhoneNumber2` |  | |  | `telf2` | `CHAR(16)` | Second telephone number |
+| `FaxNumber` |  | |  | `telfx` | `CHAR(31)` | Fax Number |
+| `TeletexNumber` |  | |  | `teltx` | `CHAR(30)` | Teletex Number |
+| `TelexNumber` |  | |  | `telx1` | `CHAR(30)` | Telex Number |
+| `DataCommunicationPhoneNumber` |  | |  | `datlt` | `CHAR(14)` | Data communication line no. |
+| `CostCenterPrinterDestination` |  | |  | `drnam` | `CHAR(4)` | Printer Destination for CCtr Report |
+| `CostCenterStandardHierArea` |  | |  | `khinr` | `CHAR(12)` | Standard Hierarchy Area |
+| `CostCollector` |  | |  | `cckey` | `CHAR(23)` | Cost Collector Key |
+| `CostCenterIsComplete` |  | |  | `kompl` | `CHAR(1)` | Completion Flag for the Cost Center Master Record |
+| `IsStatisticalCostCenter` |  | |  | `cast(stakz as fins_xkostl_stat preserving type)` | `CHAR(1)` | Indicator: Cost Center is Statistical Account Assignment |
+| `ObjectInternalID` |  | |  | `objnr` | `CHAR(22)` | Object Number |
+| `CostCenterFunction` |  | |  | `funkt` | `CHAR(3)` | Function of Cost Center |
+| `CostCenterAlternativeFunction` |  | |  | `afunk` | `CHAR(3)` | Alternative Function of Cost Center |
+| `FunctionalArea` |  | |  | `func_area` | `CHAR(16)` | Functional Area |
+| `ActyIndepFormulaPlanningTmpl` |  | |  | `cpi_templ` | `CHAR(10)` | Template for Activity-Independent Formula Planning |
+| `ActyDepdntFormulaPlanningTmpl` |  | |  | `cpd_templ` | `CHAR(10)` | Template for Activity-Dependent Formula Planning |
+| `ActyIndependentAllocationTmpl` |  | |  | `sci_templ` | `CHAR(10)` | Template: Activity-Independent Allocation to Cost Center |
+| `ActyDependentAllocationTmpl` |  | |  | `scd_templ` | `CHAR(10)` | Template: Activity-Dependent Allocation to Cost Center |
+| `ActlIndepStatisticalKeyFigures` |  | |  | `ski_templ` | `CHAR(10)` | CCA_TEMPL_SKI |
+| `ActlDepStatisticalKeyFigures` |  | |  | `skd_templ` | `CHAR(10)` | Template: Act. Stat. Key Figure - Cost Center/Activity Type |
+| `JointVenture` |  | |  | `vname` | `CHAR(6)` | Joint Venture |
+| `JointVentureRecoveryCode` |  | |  | `recid` | `CHAR(2)` | Recovery Indicator |
+| `JointVentureEquityType` |  | |  | `etype` | `CHAR(3)` | Equity Type |
+| `JointVentureObjectType` |  | |  | `jv_otype` | `CHAR(4)` | Joint Venture Object Type |
+| `JointVentureClass` |  | |  | `jv_jibcl` | `CHAR(3)` | JIB/JIBE Class |
+| `JointVentureSubClass` |  | |  | `jv_jibsa` | `CHAR(5)` | JIB/JIBE Subclass A |
+| `BudgetCarryingCostCenter` |  | |  | `budget_carrying_cost_ctr` | `CHAR(10)` | Budget-Carrying Cost Center |
+| `AvailabilityControlProfile` |  | |  | `avc_profile` | `CHAR(6)` | Budget Availability Control: Profile |
+| `AvailabilityControlIsActive` |  | |  | `avc_active` | `CHAR(1)` | Budget Availability Control for Cost Centers is Active |
+| `Fund` |  | |  | `fund` | `CHAR(10)` | Fund |
+| `GrantID` |  | |  | `grant_id` | `CHAR(20)` | Grant |
+| `FundIsFixAssigned` |  | |  | `fund_fix_assigned` | `CHAR(1)` | Indicator for Fund with Fixed Assignment |
+| `GrantIDIsFixAssigned` |  | |  | `grant_fix_assigned` | `CHAR(1)` | Indicator for Grant with Fixed Assignment |
+| `FunctionalAreaIsFixAssigned` |  | |  | `func_area_fix_assigned` | `CHAR(1)` | Indicator for Functional Area with Fixed Assignment |
+| `CostCenterCreationTime` |  | |  | `created_at` | `TIMS(6)` | Created At |
+| `CostCenterLastChangedByUser` |  | |  | `last_changed_by` | `CHAR(12)` | Last Changed By |
+| `CostCenterLastChangedOnDate` |  | |  | `last_changed_on` | `DATS(8)` | Last Changed On |
+| `CostCenterLastChangedAtTime` |  | |  | `last_changed_at` | `TIMS(6)` | Last Changed At |
 | `_ControllingArea` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |
 | `_CostCenterHierarchyNode` | | ✓ | | | | |

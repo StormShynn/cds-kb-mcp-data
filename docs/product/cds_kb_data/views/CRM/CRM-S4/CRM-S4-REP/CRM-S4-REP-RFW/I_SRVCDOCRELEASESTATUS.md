@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentIsReleased` | ✓ | |  | `domvalue_l` |  |  |
+| `ServiceDocumentIsReleased` | ✓ | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_SrvcDocReleaseStatusText` | | ✓ | | | | |
 
 ## Associations

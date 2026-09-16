@@ -38,14 +38,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LegalTransactionExtCntctUUID` | ✓ | |  |  |  |  |
-| `LglCntntMRank` |  | |  |  |  |  |
-| `LglCntntMExtCntctBP` |  | |  |  |  |  |
-| `LglCntntMExtCntctType` |  | |  |  |  |  |
-| `LegalTransactionUUID` |  | |  |  |  |  |
-| `LegalTransactionMandatoryFlag` |  | |  |  |  |  |
-| `LglCntntMIsIntegRelevant` |  | |  |  |  |  |
-| `LglCntntMIsAddedByIntegVarbl` |  | |  |  |  |  |
+| `LegalTransactionExtCntctUUID` | ✓ | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglCntntMRank` |  | |  |  | `INT2(5)` | Sequence Number |
+| `LglCntntMExtCntctBP` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `LglCntntMExtCntctType` |  | |  |  | `CHAR(4)` | External context type |
+| `LegalTransactionUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransactionMandatoryFlag` |  | |  |  | `CHAR(1)` | Control Parameter Legal Transaction Mandatory State |
+| `LglCntntMIsIntegRelevant` |  | |  |  | `CHAR(1)` | Integrated |
+| `LglCntntMIsAddedByIntegVarbl` |  | |  |  | `CHAR(1)` | Added By Integration Variable BAdI |
 | `_LegalTransaction` | | ✓ | | | | |
 
 ## Associations

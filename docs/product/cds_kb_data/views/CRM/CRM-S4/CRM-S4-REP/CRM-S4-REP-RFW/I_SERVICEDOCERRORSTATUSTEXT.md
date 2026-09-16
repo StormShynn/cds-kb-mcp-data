@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentHasError` | ✓ | |  | `domvalue_l` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `ServiceDocumentHasErrorName` |  | |  | `ddtext` |  |  |
+| `ServiceDocumentHasError` | ✓ | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `ServiceDocumentHasErrorName` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 | `_ServiceDocHasError` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

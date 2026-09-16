@@ -40,17 +40,17 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CostCenterCategory` | ✓ | |  | `kosar` |  |  |
-| `IsBlkdForPrimaryCostsPosting` |  | |  | `bkzkp` |  |  |
-| `IsBlkdForSecondaryCostsPosting` |  | |  | `bkzks` |  |  |
-| `IsBlockedForRevenuePosting` |  | |  | `bkzer` |  |  |
-| `IsBlockedForCommitmentPosting` |  | |  | `bkzob` |  |  |
-| `IsBlockedForPlanPrimaryCosts` |  | |  | `pkzkp` |  |  |
-| `IsBlockedForPlanSecondaryCosts` |  | |  | `cast(pkzks as fis_pkzks)` |  |  |
-| `IsBlockedForPlanRevenues` |  | |  | `cast(pkzer as fis_pkzer)` |  |  |
-| `CostCenterAllocationMethod` |  | |  | `cast(vmeth as fis_vmeth)` |  |  |
-| `ConsumptionQtyIsRecorded` |  | |  | `mgefl` |  |  |
-| `FunctionalArea` |  | |  | `func_area` |  |  |
+| `CostCenterCategory` | ✓ | |  | `kosar` | `CHAR(1)` | Cost Center Category |
+| `IsBlkdForPrimaryCostsPosting` |  | |  | `bkzkp` | `CHAR(1)` | Lock Indicator for Actual Primary Postings |
+| `IsBlkdForSecondaryCostsPosting` |  | |  | `bkzks` | `CHAR(1)` | Lock Indicator for Actual Secondary Costs |
+| `IsBlockedForRevenuePosting` |  | |  | `bkzer` | `CHAR(1)` | Lock Indicator for Actual Revenue Postings |
+| `IsBlockedForCommitmentPosting` |  | |  | `bkzob` | `CHAR(1)` | Lock Indicator for Commitment Update |
+| `IsBlockedForPlanPrimaryCosts` |  | |  | `pkzkp` | `CHAR(1)` | Lock Indicator for Plan Primary Costs |
+| `IsBlockedForPlanSecondaryCosts` |  | |  | `cast(pkzks as fis_pkzks)` | `CHAR(1)` | Lock Indicator for Plan Secondary Costs |
+| `IsBlockedForPlanRevenues` |  | |  | `cast(pkzer as fis_pkzer)` | `CHAR(1)` | Lock Indicator for Planning Revenues |
+| `CostCenterAllocationMethod` |  | |  | `cast(vmeth as fis_vmeth)` | `CHAR(2)` | Indicator for Allowed Allocation Methods |
+| `ConsumptionQtyIsRecorded` |  | |  | `mgefl` | `CHAR(1)` | Indicator for Recording Consumption Quantities |
+| `FunctionalArea` |  | |  | `func_area` | `CHAR(16)` | Functional Area |
 | `_Text` | | ✓ | | | | |
 | `_FunctionalArea` | | ✓ | | | | |
 

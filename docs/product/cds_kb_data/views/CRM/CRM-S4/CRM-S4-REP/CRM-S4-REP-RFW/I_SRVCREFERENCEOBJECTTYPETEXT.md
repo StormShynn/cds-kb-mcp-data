@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceReferenceObjectType` | ✓ | |  | `cast(domvalue_l as abap.char(1))` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `ServiceReferenceObjectTypeText` |  | |  | `ddtext` |  |  |
+| `ServiceReferenceObjectType` | ✓ | |  | `cast(domvalue_l as abap.char(1))` | `CHAR(1)` |  |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `ServiceReferenceObjectTypeText` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 | `_SrvcReferenceObjectType` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

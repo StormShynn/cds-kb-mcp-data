@@ -39,19 +39,19 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceObjectType` | ✓ | |  | `objtype_h` |  |  |
-| `ServiceDocument` | ✓ | |  | `object_id` |  |  |
-| `ServiceDocumentItem` | ✓ | |  | `number_int` |  |  |
-| `ServiceRefObjectSequenceNumber` | ✓ | |  | `counter` |  |  |
-| `ServiceReferenceObjectType` |  | |  | `type_object` |  |  |
-| `ServiceReferenceObjectUUID` |  | |  | `guid_object` |  |  |
-| `ProductID` |  | |  | `product_id` |  |  |
-| `SrvcRefObjIsMainObject` |  | |  | `main_object` |  |  |
-| `ProductUUID` |  | |  | `product_guid` |  |  |
-| `SerialNumber` |  | |  | `serial_number` |  |  |
-| `Equipment` |  | |  | `equipment_id` |  |  |
-| `FunctionalLocation` |  | |  | `functional_location_id` |  |  |
-| `ReferenceProduct` |  | |  | `ref_product_id` |  |  |
+| `ServiceObjectType` | ✓ | |  | `objtype_h` | `CHAR(10)` | Business Trans. Cat. |
+| `ServiceDocument` | ✓ | |  | `object_id` | `CHAR(10)` | Transaction ID |
+| `ServiceDocumentItem` | ✓ | |  | `number_int` | `NUMC(6)` | Shortened Item Number in Document |
+| `ServiceRefObjectSequenceNumber` | ✓ | |  | `counter` | `NUMC(8)` | Reference Object Counter |
+| `ServiceReferenceObjectType` |  | |  | `type_object` | `CHAR(1)` | Object Type for Reference Object in Subject Set |
+| `ServiceReferenceObjectUUID` |  | |  | `guid_object` | `RAW(16)` | GUID of a CRM Order Object |
+| `ProductID` |  | |  | `product_id` | `CHAR(40)` | Material Number |
+| `SrvcRefObjIsMainObject` |  | |  | `main_object` | `CHAR(1)` | Main Reference Object |
+| `ProductUUID` |  | |  | `product_guid` | `RAW(16)` | Internal Key for Product |
+| `SerialNumber` |  | |  | `serial_number` | `CHAR(18)` | Serial Number |
+| `Equipment` |  | |  | `equipment_id` | `CHAR(18)` | Equipment Number |
+| `FunctionalLocation` |  | |  | `functional_location_id` | `CHAR(30)` | Functional Location |
+| `ReferenceProduct` |  | |  | `ref_product_id` | `CHAR(40)` | Reference Product ID |
 | `_Equipment` | | ✓ | | | | |
 | `_Product` | | ✓ | | | | |
 | `_FunctionalLocation` | | ✓ | | | | |

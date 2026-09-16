@@ -38,14 +38,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `LegalTransactionRelshpUUID` | ✓ | |  |  |  |  |
-| `LegalTransactionUUID` |  | |  |  |  |  |
-| `RelshpLegalTransaction` |  | |  |  |  |  |
-| `RelshpLegalTransactionUUID` |  | |  |  |  |  |
-| `LglCntntMRelshpType` |  | |  |  |  |  |
-| `LegalTransactionMandatoryFlag` |  | |  |  |  |  |
-| `LglCntntMIsIntegRelevant` |  | |  |  |  |  |
-| `LglCntntMIsAddedByIntegVarbl` |  | |  |  |  |  |
+| `LegalTransactionRelshpUUID` | ✓ | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LegalTransactionUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `RelshpLegalTransaction` |  | |  |  | `CHAR(10)` | Legal Transaction ID |
+| `RelshpLegalTransactionUUID` |  | |  |  | `RAW(16)` | Universal Unique Identifier |
+| `LglCntntMRelshpType` |  | |  |  | `CHAR(4)` | Relationship Type |
+| `LegalTransactionMandatoryFlag` |  | |  |  | `CHAR(1)` | Control Parameter Legal Transaction Mandatory State |
+| `LglCntntMIsIntegRelevant` |  | |  |  | `CHAR(1)` | Integrated |
+| `LglCntntMIsAddedByIntegVarbl` |  | |  |  | `CHAR(1)` | Added By Integration Variable BAdI |
 | `_LegalTransaction` | | ✓ | | | | |
 
 ## Associations

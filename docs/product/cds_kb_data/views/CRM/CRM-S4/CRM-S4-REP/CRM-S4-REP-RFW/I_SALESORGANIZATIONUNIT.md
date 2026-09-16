@@ -39,10 +39,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `OrganizationalUnit` | ✓ | |  | `objid` |  |  |
-| `OrgUnitTypeIDConcatenated` |  | |  | `otjid` |  |  |
-| `StartDate` |  | |  | `begda` |  |  |
-| `EndDate` |  | |  | `endda` |  |  |
+| `OrganizationalUnit` | ✓ | |  | `objid` | `NUMC(8)` | Object ID |
+| `OrgUnitTypeIDConcatenated` |  | |  | `otjid` | `CHAR(10)` | Concatenation of Object Type and Object ID |
+| `StartDate` |  | |  | `begda` | `DATS(8)` | Start Date |
+| `EndDate` |  | |  | `endda` | `DATS(8)` | End Date |
 | `_Text` | | ✓ | | | | |
 | `_TextCurrent` | | ✓ | | | | |
 

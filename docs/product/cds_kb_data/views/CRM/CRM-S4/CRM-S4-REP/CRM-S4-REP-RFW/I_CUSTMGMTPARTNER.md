@@ -38,18 +38,18 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CustMgmtObjectType` | ✓ | |  | `objtype_h` |  |  |
-| `CustMgmtDocument` | ✓ | |  | `object_id` |  |  |
-| `CustMgmtDocumentItem` | ✓ | |  | `number_int` |  |  |
-| `CustMgmtPartnerFunction` | ✓ | |  | `partner_fct` |  |  |
-| `CustMgmtPartner` | ✓ | |  | `partner_no` |  |  |
-| `CustMgmtPartnerNumberType` | ✓ | |  | `no_type` |  |  |
-| `CustMgmtPartFunctionCategory` |  | |  | `partner_pft` |  |  |
-| `CustMgmtBusinessPartner` |  | |  | `partner_id` |  |  |
-| `CustMgmtPartnerIsMainPartner` |  | |  | `mainpartner` |  |  |
-| `AddressID` |  | |  | `addr_nr` |  |  |
-| `AddressPersonID` |  | |  | `addr_np` |  |  |
-| `AddressObjectType` |  | |  | `addr_type` |  |  |
+| `CustMgmtObjectType` | ✓ | |  | `objtype_h` | `CHAR(10)` | Business Trans. Cat. |
+| `CustMgmtDocument` | ✓ | |  | `object_id` | `CHAR(10)` | Transaction ID |
+| `CustMgmtDocumentItem` | ✓ | |  | `number_int` | `NUMC(6)` | Shortened Item Number in Document |
+| `CustMgmtPartnerFunction` | ✓ | |  | `partner_fct` | `CHAR(8)` | Partner func. |
+| `CustMgmtPartner` | ✓ | |  | `partner_no` | `CHAR(32)` | Partner Number |
+| `CustMgmtPartnerNumberType` | ✓ | |  | `no_type` | `CHAR(2)` | Partner Number Type (e.g. GUID, Pers. No., ...), Internal |
+| `CustMgmtPartFunctionCategory` |  | |  | `partner_pft` | `CHAR(4)` | Partner Function Category |
+| `CustMgmtBusinessPartner` |  | |  | `partner_id` | `CHAR(10)` | Business Partner Number |
+| `CustMgmtPartnerIsMainPartner` |  | |  | `mainpartner` | `CHAR(1)` | Main Partner (For Ambiguous Partner Functions) |
+| `AddressID` |  | |  | `addr_nr` | `CHAR(10)` | Address Number |
+| `AddressPersonID` |  | |  | `addr_np` | `CHAR(10)` | Person Number |
+| `AddressObjectType` |  | |  | `addr_type` | `CHAR(1)` | Address type (1=Organization, 2=Person, 3=Contact person) |
 | `_CustMgmtObjectType` | | ✓ | | | | |
 | `_PartnerFunction` | | ✓ | | | | |
 | `_BusinessPartner` | | ✓ | | | | |

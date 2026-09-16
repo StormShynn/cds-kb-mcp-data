@@ -39,50 +39,50 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceObjectType` | ✓ | |  |  |  |  |
-| `ServiceOrder` | ✓ | |  |  |  |  |
-| `ServiceOrderDescription` |  | |  |  |  |  |
-| `ServiceOrderStatus` |  | |  |  |  |  |
-| `ServiceOrderStatusName` |  | |  | `_SrvcDocLifecycleStatus._ServiceDocumentStatusText [1: Language=$session.system_language].ServiceDocumentStatusName` |  |  |
-| `ServiceDocumentType` |  | |  |  |  |  |
-| `RefBusinessSolutionOrder` |  | |  |  |  |  |
-| `SoldToParty` |  | |  |  |  |  |
-| `ResponsibleEmployee` |  | |  |  |  |  |
-| `ContactPersonBusinessPartnerId` |  | |  | `ContactPerson` |  |  |
-| `RequestedServiceEndDate` |  | |  |  |  |  |
-| `ServiceDocumentCreationDate` |  | |  |  |  |  |
-| `SrvcOrdCreationQuarter` |  | |  |  |  |  |
-| `SrvcOrdCreationMonth` |  | |  |  |  |  |
-| `SrvcOrdCreationYear` |  | |  |  |  |  |
-| `ServiceDocumentPriority` |  | |  |  |  |  |
-| `ServiceDocumentHasError` |  | |  |  |  |  |
-| `ServiceDocNetAmount` |  | |  |  |  |  |
-| `NumberOfIncomingServiceOrders` |  | |  |  |  |  |
-| `NumberOfOpenServiceOrders` |  | |  |  |  |  |
-| `TransactionCurrency` |  | |  |  |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |  |  |
-| `SalesOrganizationOrgUnitID` |  | |  |  |  |  |
-| `SalesOfficeOrgUnitID` |  | |  |  |  |  |
-| `SalesGroupOrgUnitID` |  | |  |  |  |  |
-| `ServiceOrganization` |  | |  |  |  |  |
-| `SalesOrganization` |  | |  |  |  |  |
-| `DistributionChannel` |  | |  |  |  |  |
-| `Division` |  | |  |  |  |  |
-| `SalesOffice` |  | |  |  |  |  |
-| `SalesGroup` |  | |  |  |  |  |
-| `NmbrOfIncompleteServiceOrders` |  | |  |  |  |  |
-| `NumberOfOverdueServiceOrders` |  | |  |  |  |  |
-| `SrvcOrdHasConfdItem` |  | |  |  |  |  |
-| `ServiceDocumentIsOpen` |  | |  |  |  |  |
-| `ServiceReferenceObjectType` |  | |  |  |  |  |
-| `SrvcRefObjIsMainObject` |  | |  |  |  |  |
-| `ProductID` |  | |  |  |  |  |
-| `SerialNumber` |  | |  |  |  |  |
-| `Equipment` |  | |  |  |  |  |
-| `FunctionalLocation` |  | |  |  |  |  |
-| `RespyMgmtServiceTeam` |  | |  |  |  |  |
-| `RespyMgmtServiceTeamDesc` |  | |  |  |  |  |
-| `TeamName` |  | |  |  |  |  |
+| `ServiceObjectType` | ✓ | |  |  | `CHAR(10)` | Business Trans. Cat. |
+| `ServiceOrder` | ✓ | |  |  | `CHAR(10)` | Transaction ID |
+| `ServiceOrderDescription` |  | |  |  | `CHAR(40)` | Transaction Description |
+| `ServiceOrderStatus` |  | |  |  | `CHAR(4)` | Life Cycle Status |
+| `ServiceOrderStatusName` |  | |  | `_SrvcDocLifecycleStatus._ServiceDocumentStatusText [1: Language=$session.system_language].ServiceDocumentStatusName` | `CHAR(60)` | Lifecycle Status Description |
+| `ServiceDocumentType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
+| `RefBusinessSolutionOrder` |  | |  |  | `CHAR(10)` | Reference Solution Order ID |
+| `SoldToParty` |  | |  |  | `CHAR(10)` | Sold-To Party |
+| `ResponsibleEmployee` |  | |  |  | `CHAR(10)` | Employee Responsible |
+| `ContactPersonBusinessPartnerId` |  | |  | `ContactPerson` | `CHAR(10)` | Customer Contact Person |
+| `RequestedServiceEndDate` |  | |  |  | `DATS(8)` | Changed On |
+| `ServiceDocumentCreationDate` |  | |  |  | `DATS(8)` | Created On |
+| `SrvcOrdCreationQuarter` |  | |  |  | `NUMC(1)` | Calendar Quarter |
+| `SrvcOrdCreationMonth` |  | |  |  | `NUMC(2)` | Calendar Month |
+| `SrvcOrdCreationYear` |  | |  |  | `NUMC(4)` | Calendar Year |
+| `ServiceDocumentPriority` |  | |  |  | `NUMC(1)` | Activity Priority |
+| `ServiceDocumentHasError` |  | |  |  | `CHAR(1)` | Error Status |
+| `ServiceDocNetAmount` |  | |  |  | `CURR(15)` | Total Net Value of Document in Document Currency |
+| `NumberOfIncomingServiceOrders` |  | |  |  | `INT4(10)` |  |
+| `NumberOfOpenServiceOrders` |  | |  |  | `INT4(10)` |  |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency |
+| `PurchaseOrderByCustomer` |  | |  |  | `CHAR(35)` | Sold-To Party's External Reference Number |
+| `SalesOrganizationOrgUnitID` |  | |  |  | `CHAR(14)` | Sales Organization ID |
+| `SalesOfficeOrgUnitID` |  | |  |  | `CHAR(14)` | Sales Office |
+| `SalesGroupOrgUnitID` |  | |  |  | `CHAR(14)` | Sales Group |
+| `ServiceOrganization` |  | |  |  | `CHAR(14)` | Service Organization |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `SalesOffice` |  | |  |  | `CHAR(4)` | Sales Office |
+| `SalesGroup` |  | |  |  | `CHAR(3)` | Sales Group |
+| `NmbrOfIncompleteServiceOrders` |  | |  |  | `INT4(10)` |  |
+| `NumberOfOverdueServiceOrders` |  | |  |  | `INT4(10)` |  |
+| `SrvcOrdHasConfdItem` |  | |  |  | `CHAR(1)` |  |
+| `ServiceDocumentIsOpen` |  | |  |  | `CHAR(1)` | Status "Open" |
+| `ServiceReferenceObjectType` |  | |  |  | `CHAR(1)` | Object Type for Reference Object in Subject Set |
+| `SrvcRefObjIsMainObject` |  | |  |  | `CHAR(1)` | Main Reference Object |
+| `ProductID` |  | |  |  | `CHAR(40)` | Material Number |
+| `SerialNumber` |  | |  |  | `CHAR(18)` | Serial Number |
+| `Equipment` |  | |  |  | `CHAR(18)` | Equipment Number |
+| `FunctionalLocation` |  | |  |  | `CHAR(30)` | Functional Location |
+| `RespyMgmtServiceTeam` |  | |  |  | `NUMC(8)` | Service Team (Responsibility Management) |
+| `RespyMgmtServiceTeamDesc` |  | |  |  | `CHAR(79)` | Line With Length 79 for Infotype 1002 |
+| `TeamName` |  | |  |  | `CHAR(40)` | Name |
 | `_ServiceDocumentIsOpen` | | ✓ | | | | |
 | `_ServiceObjType` | | ✓ | | | | |
 | `_ServiceDocumentStatus` | | ✓ | | | | |

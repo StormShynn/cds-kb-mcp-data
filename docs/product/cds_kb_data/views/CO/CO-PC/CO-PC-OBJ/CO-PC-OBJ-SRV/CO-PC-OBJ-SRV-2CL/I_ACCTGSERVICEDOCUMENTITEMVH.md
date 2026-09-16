@@ -58,20 +58,20 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentType` | ✓ | |  |  |  |  |
-| `ServiceDocument` | ✓ | |  |  |  |  |
-| `ServiceDocumentItem` | ✓ | |  |  |  |  |
-| `CompanyCode` |  | |  |  |  |  |
-| `ProfitCenter` |  | |  |  |  |  |
-| `ServiceDocumentTypeName` |  | |  |  |  |  |
-| `ServiceDocumentDescription` |  | |  |  |  |  |
-| `ServiceDocItemCategory` |  | |  |  |  |  |
-| `ServiceDocItemCategoryName` |  | |  | `cast( ServiceDocItemCategoryName as fco_srvdoc_item_type_desc preserving type )` |  |  |
-| `ServiceDocumentItemDescription` |  | |  |  |  |  |
-| `OriginallyRequestedProduct` |  | |  |  |  |  |
-| `ProductName` |  | |  | `_ProductText[1: Language = $session.system_language].ProductName` |  |  |
-| `PostingDate` |  | |  |  |  |  |
-| `SrvcOrderConfirmationRelevance` |  | |  |  |  |  |
+| `ServiceDocumentType` | ✓ | |  |  | `CHAR(4)` | Service Document Type |
+| `ServiceDocument` | ✓ | |  |  | `CHAR(10)` | Service Document ID |
+| `ServiceDocumentItem` | ✓ | |  |  | `NUMC(6)` | Service Document Item ID |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `ServiceDocumentTypeName` |  | |  |  | `CHAR(40)` | Description |
+| `ServiceDocumentDescription` |  | |  |  | `CHAR(40)` | Service Document Description |
+| `ServiceDocItemCategory` |  | |  |  | `CHAR(4)` | Item Category |
+| `ServiceDocItemCategoryName` |  | |  | `cast( ServiceDocItemCategoryName as fco_srvdoc_item_type_desc preserving type )` | `CHAR(40)` | Service Document Item Category Description |
+| `ServiceDocumentItemDescription` |  | |  |  | `CHAR(40)` | Service Document Item Description |
+| `OriginallyRequestedProduct` |  | |  |  | `CHAR(54)` | Product Name Entered |
+| `ProductName` |  | |  | `_ProductText[1: Language = $session.system_language].ProductName` | `CHAR(40)` | Product Description |
+| `PostingDate` |  | |  |  | `DATS(8)` | Service Document Date |
+| `SrvcOrderConfirmationRelevance` |  | |  |  | `CHAR(1)` | Relevant for Confirmation |
 | `_AcctgServiceDocumentTypeVH` | | ✓ | | | | |
 
 ## Associations

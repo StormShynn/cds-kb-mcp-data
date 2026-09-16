@@ -40,10 +40,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `ControllingArea` | ✓ | |  | `cast(kokrs as fis_kokrs preserving type )` |  |  |
-| `StatisticalKeyFigure` | ✓ | |  | `cast(stagr as fis_stagr preserving type )` |  |  |
-| `StatisticalKeyFigureName` |  | |  | `cast(bezei as fis_ui_stagr_text preserving type )` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `ControllingArea` | ✓ | |  | `cast(kokrs as fis_kokrs preserving type )` | `CHAR(4)` | Controlling Area |
+| `StatisticalKeyFigure` | ✓ | |  | `cast(stagr as fis_stagr preserving type )` | `CHAR(6)` | Statistical Key Figure |
+| `StatisticalKeyFigureName` |  | |  | `cast(bezei as fis_ui_stagr_text preserving type )` | `CHAR(40)` | Statistical Key Figure Name |
 | `_ControllingArea` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

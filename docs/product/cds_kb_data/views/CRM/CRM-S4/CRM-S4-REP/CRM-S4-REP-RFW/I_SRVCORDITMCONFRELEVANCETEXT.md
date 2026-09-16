@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SrvcOrderConfirmationRelevance` | ✓ | |  | `cast (domvalue_l as abap.char(1) )` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `SrvcOrdConfRelevanceText` |  | |  | `ddtext` |  |  |
+| `SrvcOrderConfirmationRelevance` | ✓ | |  | `cast (domvalue_l as abap.char(1) )` | `CHAR(1)` |  |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `SrvcOrdConfRelevanceText` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 | `_SrvcOrdItmConfRelevance` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

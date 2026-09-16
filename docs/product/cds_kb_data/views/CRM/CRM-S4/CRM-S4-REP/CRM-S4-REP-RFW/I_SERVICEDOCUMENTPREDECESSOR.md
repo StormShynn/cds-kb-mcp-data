@@ -39,15 +39,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceDocumentRelationUUID` | ✓ | |  | `relationid` |  |  |
-| `ServiceDocRltnSequenceNumber` | ✓ | |  | `posno` |  |  |
-| `ServiceDocumentRelationType` |  | |  | `breltyp` |  |  |
-| `ServiceDocumentRelationKind` |  | |  | `vona_kind` |  |  |
-| `ServiceDocumentPredecessorUUID` |  | |  | `objguid_a_sel` |  |  |
-| `ServiceDocPrdcssrBusObjType` |  | |  | `objtype_a_sel` |  |  |
-| `CustMgmtPrdcssrTransactionKey` |  | |  | `objkey_a_sel` |  |  |
-| `ServiceDocumentUUID` |  | |  | `objguid_b_sel` |  |  |
-| `ServiceObjectType` |  | |  | `objtype_b_sel` |  |  |
+| `ServiceDocumentRelationUUID` | ✓ | |  | `relationid` | `CHAR(22)` | Object Relationship Service : GUID binary link |
+| `ServiceDocRltnSequenceNumber` | ✓ | |  | `posno` | `NUMC(4)` | Sequential Number of Segment in IDoc Type |
+| `ServiceDocumentRelationType` |  | |  | `breltyp` | `CHAR(4)` | Relationship type |
+| `ServiceDocumentRelationKind` |  | |  | `vona_kind` | `CHAR(1)` | Type of binary relationship types VONA |
+| `ServiceDocumentPredecessorUUID` |  | |  | `objguid_a_sel` | `RAW(16)` | GUID of a CRM Order Object |
+| `ServiceDocPrdcssrBusObjType` |  | |  | `objtype_a_sel` | `CHAR(10)` | Object Type |
+| `CustMgmtPrdcssrTransactionKey` |  | |  | `objkey_a_sel` | `CHAR(70)` | Object key |
+| `ServiceDocumentUUID` |  | |  | `objguid_b_sel` | `RAW(16)` | GUID of a CRM Order Object |
+| `ServiceObjectType` |  | |  | `objtype_b_sel` | `CHAR(10)` | Object Type |
 | `_ServiceDoc` | | ✓ | | | | |
 
 ## Associations

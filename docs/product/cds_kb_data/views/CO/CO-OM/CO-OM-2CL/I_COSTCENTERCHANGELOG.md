@@ -40,33 +40,33 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ChangeDocumentControllingArea` | ✓ | |  |  |  |  |
-| `ChangeDocumentCostCenter` | ✓ | |  | `cast( ChangeDocumentItem.ChangeDocumentCostCenter as kostl )` |  |  |
-| `ChangeDocumentValidityEndDate` | ✓ | |  | `cast( ChangeDocumentItem.ChangeDocumentValidityEndDate as costcentervalidityenddate )` |  |  |
-| `ChangeDocValidityStartDate` | ✓ | |  | `cast( ChangeDocumentItem.ChangeDocValidityStartDate as costcentervaliditystartdate )` |  |  |
-| `ChangeDocObject` | ✓ | |  |  |  |  |
-| `ChangeDocument` | ✓ | |  |  |  |  |
-| `ChangeDocDatabaseTableField` | ✓ | |  |  |  |  |
-| `ChangeDocItemChangeType` | ✓ | |  |  |  |  |
-| `ChangeDocObjectClass` |  | |  |  |  |  |
-| `DatabaseTable` |  | |  |  |  |  |
-| `ChangeDocTableKey` |  | |  |  |  |  |
-| `ChangeDocPreviousUnit` |  | |  |  |  |  |
-| `ChangeDocNewUnit` |  | |  |  |  |  |
-| `ChangeDocPreviousCurrency` |  | |  |  |  |  |
-| `ChangeDocNewCurrency` |  | |  |  |  |  |
-| `ChangeDocNewFieldValue` |  | |  |  |  |  |
-| `ChangeDocPreviousFieldValue` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `CreationDate` |  | |  |  |  |  |
-| `CreationTime` |  | |  |  |  |  |
-| `ChangeDocLanguage` |  | |  |  |  |  |
-| `BusinessArea` |  | |  |  |  |  |
-| `CompanyCode` |  | |  |  |  |  |
-| `ControllingArea` |  | |  |  |  |  |
-| `CostCenter` |  | |  |  |  |  |
-| `ValidityEndDate` |  | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
+| `ChangeDocumentControllingArea` | ✓ | |  |  | `CHAR(4)` |  |
+| `ChangeDocumentCostCenter` | ✓ | |  | `cast( ChangeDocumentItem.ChangeDocumentCostCenter as kostl )` | `CHAR(10)` | Cost Center |
+| `ChangeDocumentValidityEndDate` | ✓ | |  | `cast( ChangeDocumentItem.ChangeDocumentValidityEndDate as costcentervalidityenddate )` | `DATS(8)` | Cost Center Validity End Date |
+| `ChangeDocValidityStartDate` | ✓ | |  | `cast( ChangeDocumentItem.ChangeDocValidityStartDate as costcentervaliditystartdate )` | `DATS(8)` | Cost Center Validity Start Date |
+| `ChangeDocObject` | ✓ | |  |  | `CHAR(90)` | Object value |
+| `ChangeDocument` | ✓ | |  |  | `CHAR(10)` | Change Number of Document |
+| `ChangeDocDatabaseTableField` | ✓ | |  |  | `CHAR(30)` | Field Name |
+| `ChangeDocItemChangeType` | ✓ | |  |  | `CHAR(1)` | Type of Change |
+| `ChangeDocObjectClass` |  | |  |  | `CHAR(15)` | Object Class |
+| `DatabaseTable` |  | |  |  | `CHAR(30)` | Table Name |
+| `ChangeDocTableKey` |  | |  |  | `CHAR(70)` | Key of Modified Table Row |
+| `ChangeDocPreviousUnit` |  | |  |  | `UNIT(3)` | Referenced Unit for Old Field Content |
+| `ChangeDocNewUnit` |  | |  |  | `UNIT(3)` | Referenced Unit for New Field Content |
+| `ChangeDocPreviousCurrency` |  | |  |  | `CUKY(5)` | Referenced Currency for Old Field Content |
+| `ChangeDocNewCurrency` |  | |  |  | `CUKY(5)` | Referenced Currency for New Field Content |
+| `ChangeDocNewFieldValue` |  | |  |  | `CHAR(254)` | New Content of Changed Field |
+| `ChangeDocPreviousFieldValue` |  | |  |  | `CHAR(254)` | Old Content of Changed Field |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | User Name of Person Making Change in Change Document |
+| `CreationDate` |  | |  |  | `DATS(8)` | Creation Date of Change Document |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time of Change |
+| `ChangeDocLanguage` |  | |  |  | `LANG(1)` | Language Key |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
+| `CostCenter` |  | |  |  | `CHAR(10)` | Cost Center |
+| `ValidityEndDate` |  | |  |  | `DATS(8)` | Valid To Date |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
 
 ## Associations
 

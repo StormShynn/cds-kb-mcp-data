@@ -42,10 +42,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SrvcDocItemCreditStatus` | ✓ | |  | `cast ( domvalue_l as crms4_stat_credit_i )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
-| `SrvcDocItemCreditStatusText` |  | |  | `ddtext` |  |  |
+| `SrvcDocItemCreditStatus` | ✓ | |  | `cast ( domvalue_l as crms4_stat_credit_i )` | `CHAR(1)` | Credit Status of Item |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SrvcDocItemCreditStatusText` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 | `_SrvcDocItemCreditStatus` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

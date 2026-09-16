@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ServiceContractCanclnSts` | ✓ | |  | `domvalue_l` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `ServiceContractCanclnStsName` |  | |  | `ddtext` |  |  |
+| `ServiceContractCanclnSts` | ✓ | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `ServiceContractCanclnStsName` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 | `_ServiceContractCanclnSts` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 
