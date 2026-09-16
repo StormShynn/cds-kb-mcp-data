@@ -38,9 +38,17 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `'ISRVCDOCEXECST'` |  | |  | `sqlViewName: 'ISRVCDOCEXECST'` |  |  |
-| `true` |  | |  | `compiler.compareFilter: true` |  |  |
-| `}` |  | |  | `buffering: { status: #ACTIVE, type: #FULL }` |  |  |
+| `ServiceDocumentIsQuotation` | ✓ | |  | `stat_quotation` | `CHAR(1)` | Quotation Status |
+| `SrvcDocExecutionStatus` | ✓ | |  | `stat_execution` | `CHAR(2)` | Execution Status |
+| `_Text` | | ✓ | | | | |
+| `_SrvcDocIsQuotation` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_SrvcDocExecutionStatusText` | [0..*] |
+| `_SrvcDocIsQuotation` | `I_SrvcDocQuotationStatus_2` | [1..1] |
 
 ## Source Code
 
