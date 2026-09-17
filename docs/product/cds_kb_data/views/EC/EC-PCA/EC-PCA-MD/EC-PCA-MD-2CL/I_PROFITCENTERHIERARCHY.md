@@ -41,14 +41,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  | `cast( hrrp_dir_n.kokrs as fis_kokrs preserving type )` |  |  |
-| `ProfitCenterHierarchy` | ✓ | |  | `cast(hrrp_dir_n.hryid as fis_hryid_prctr preserving type )` |  |  |
-| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dir_n.hryvalto as fis_datbi preserving type )` |  |  |
-| `ValidityStartDate` |  | |  | `cast(hrrp_dir_n.hryvalfrom as fis_datab preserving type )` |  |  |
-| `LastChangedByUser` |  | |  | `upduser` |  |  |
-| `LastChangeDateTime` |  | |  | `updtime` |  |  |
-| `LastChangeTime` |  | |  | `updtime` |  |  |
-| `HierarchyShortID` |  | |  | `hrysid` |  |  |
+| `ControllingArea` | ✓ | |  | `cast( hrrp_dir_n.kokrs as fis_kokrs preserving type )` | `CHAR(4)` | Controlling Area |
+| `ProfitCenterHierarchy` | ✓ | |  | `cast(hrrp_dir_n.hryid as fis_hryid_prctr preserving type )` | `CHAR(40)` | Profit Center Hierarchy |
+| `ValidityEndDate` | ✓ | |  | `cast(hrrp_dir_n.hryvalto as fis_datbi preserving type )` | `DATS(8)` | Validity End Date |
+| `ValidityStartDate` |  | |  | `cast(hrrp_dir_n.hryvalfrom as fis_datab preserving type )` | `DATS(8)` | Validity Start Date |
+| `LastChangedByUser` |  | |  | `upduser` | `CHAR(12)` | Last Changed By |
+| `LastChangeDateTime` |  | |  | `updtime` | `DEC(15)` | Last Updated At (Timestamp) |
+| `LastChangeTime` |  | |  | `updtime` | `DEC(15)` | Last Updated At (Timestamp) |
+| `HierarchyShortID` |  | |  | `hrysid` | `CHAR(20)` | Hierarchy ID |
 | `_ControllingAreaText` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |
 | `_ControllingArea` | | ✓ | | | | |

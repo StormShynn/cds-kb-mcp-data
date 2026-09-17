@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DngrsGdsRglnLanguageType` | ✓ | |  | `cast( left(dd07t.domvalue_l, 2) as ehdgm_regulation_language_type preserving type )` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `DngrsGdsRglnLanguageTypeName` |  | |  | `ddtext` |  |  |
+| `DngrsGdsRglnLanguageType` | ✓ | |  | `cast( left(dd07t.domvalue_l, 2) as ehdgm_regulation_language_type preserving type )` | `CHAR(2)` | Type of Regulatory Language |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `DngrsGdsRglnLanguageTypeName` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

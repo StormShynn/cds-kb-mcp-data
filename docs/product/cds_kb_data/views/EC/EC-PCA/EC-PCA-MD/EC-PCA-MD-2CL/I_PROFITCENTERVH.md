@@ -42,13 +42,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  |  |  |  |
-| `ProfitCenter` | ✓ | |  |  |  |  |
-| `ValidityEndDate` | ✓ | |  |  |  |  |
-| `ProfitCenterStandardHierarchy` |  | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `ProfitCtrResponsiblePersonName` |  | |  |  |  |  |
-| `Segment` |  | |  |  |  |  |
+| `ControllingArea` | ✓ | |  |  | `CHAR(4)` | Controlling Area |
+| `ProfitCenter` | ✓ | |  |  | `CHAR(10)` | Profit Center |
+| `ValidityEndDate` | ✓ | |  |  | `DATS(8)` | Valid To Date |
+| `ProfitCenterStandardHierarchy` |  | |  |  | `CHAR(12)` | Profit center area |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
+| `ProfitCtrResponsiblePersonName` |  | |  |  | `CHAR(20)` | Person Responsible for Profit Center |
+| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
 | `_ControllingAreaText` | | ✓ | | | | |
 | `_SegmentText` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |

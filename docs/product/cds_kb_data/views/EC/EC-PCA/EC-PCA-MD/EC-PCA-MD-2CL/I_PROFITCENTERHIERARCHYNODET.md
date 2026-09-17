@@ -41,14 +41,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  | `cast( hrrp_nodet_n.kokrs as fis_kokrs preserving type )` |  |  |
-| `ProfitCenterHierarchy` | ✓ | |  | `cast(hrrp_nodet_n.hryid as fis_hryid_prctr preserving type )` |  |  |
-| `HierarchyNode` | ✓ | |  | `hrynode` |  |  |
-| `ValidityEndDate` | ✓ | |  | `cast(hrrp_nodet_n.hryvalto as fis_datbi preserving type )` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `HierarchyNodeText` |  | |  | `nodetxt` |  |  |
-| `HierarchyNodeShortText` |  | |  | `substring(hrrp_nodet_n.nodetxt, 1, 20)` |  |  |
-| `ValidityStartDate` |  | |  | `cast(hrrp_nodet_n.hryvalfrom as fis_datab preserving type )` |  |  |
+| `ControllingArea` | ✓ | |  | `cast( hrrp_nodet_n.kokrs as fis_kokrs preserving type )` | `CHAR(4)` | Controlling Area |
+| `ProfitCenterHierarchy` | ✓ | |  | `cast(hrrp_nodet_n.hryid as fis_hryid_prctr preserving type )` | `CHAR(40)` | Profit Center Hierarchy |
+| `HierarchyNode` | ✓ | |  | `hrynode` | `CHAR(50)` | Hierarchy node |
+| `ValidityEndDate` | ✓ | |  | `cast(hrrp_nodet_n.hryvalto as fis_datbi preserving type )` | `DATS(8)` | Validity End Date |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `HierarchyNodeText` |  | |  | `nodetxt` | `CHAR(50)` | Hierarchy node description |
+| `HierarchyNodeShortText` |  | |  | `substring(hrrp_nodet_n.nodetxt, 1, 20)` | `CHAR(20)` |  |
+| `ValidityStartDate` |  | |  | `cast(hrrp_nodet_n.hryvalfrom as fis_datab preserving type )` | `DATS(8)` | Validity Start Date |
 | `_ControllingAreaText` | | ✓ | | | | |
 | `_ControllingArea` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |

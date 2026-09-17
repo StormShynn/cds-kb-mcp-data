@@ -41,8 +41,34 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `}` |  | |  | `recurse: { parent: 'ParentNode', child: 'HierarchyNode' }` |  |  |
-| `'_Hierarchy'` |  | |  | `directory: '_Hierarchy'` |  |  |
+| `ControllingArea` | ✓ | |  | `cast( hrrp_node_n.kokrs as fis_kokrs preserving type )` | `CHAR(4)` | Controlling Area |
+| `ProfitCenterHierarchy` | ✓ | |  | `cast(hrrp_node_n.hryid as fis_hryid_prctr preserving type )` | `CHAR(40)` | Profit Center Hierarchy |
+| `HierarchyNode` | ✓ | |  | `hrynode` | `CHAR(50)` | Hierarchy node |
+| `ValidityEndDate` | ✓ | |  | `cast(hrrp_node_n.hryvalto as fis_datbi preserving type )` | `DATS(8)` | Validity End Date |
+| `ParentNode` |  | |  | `parnode` | `CHAR(50)` | Hierarchy parent node |
+| `HierarchyVersion` |  | |  | `cast( '000000000000001' as hryversn )` | `NUMC(15)` | Hierarchy version |
+| `ValidityStartDate` |  | |  | `cast(hrrp_node_n.hryvalfrom as fis_datab preserving type )` | `DATS(8)` | Validity Start Date |
+| `ProfitCenter` |  | |  | `cast ( hrrp_node_n.prctr as fis_prctr preserving type )` | `CHAR(10)` | Profit Center |
+| `SequenceNumber` |  | |  | `concat(hrrp_node_n.hryseqnbr, hrrp_node_n.hrynode)` | `CHAR(56)` |  |
+| `HierarchyNodeSequence` |  | |  | `hryseqnbr` | `NUMC(6)` | Hierarchy Sequence Number |
+| `HierarchyNodeLevel` |  | |  | `hrylevel` | `NUMC(6)` | Hierarchy Level |
+| `NodeType` |  | |  | `nodetype` | `CHAR(1)` | Hierarchy node type |
+| `HierarchyNodeVal` |  | |  | `nodevalue` | `CHAR(40)` | Node value |
+| `_ControllingAreaText` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+| `_ProfitCenter` | | ✓ | | | | |
+| `_Hierarchy` | | ✓ | | | | |
+| `_ControllingArea` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_ControllingAreaText` | `I_ControllingArea` | [0..1] |
+| `_Text` | `I_ProfitCenterHierarchyNodeT` | [0..*] |
+| `_ProfitCenter` | `I_ProfitCenter` | [0..*] |
+| `_Hierarchy` | `I_ProfitCenterHierarchy` | [1..1] |
+| `_ControllingArea` | `I_ControllingArea` | [0..1] |
 
 ## Source Code
 
