@@ -40,10 +40,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SrvcDocTransferStatus` | ✓ | |  | `cast ( domvalue_l as crms4_stat_transfer )` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `SrvcDocTransferStatusText` |  | |  | `ddtext` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `SrvcDocTransferStatus` | ✓ | |  | `cast ( domvalue_l as crms4_stat_transfer )` | `CHAR(1)` | Transfer Status |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `SrvcDocTransferStatusText` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_ServiceDocTransferStatus` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

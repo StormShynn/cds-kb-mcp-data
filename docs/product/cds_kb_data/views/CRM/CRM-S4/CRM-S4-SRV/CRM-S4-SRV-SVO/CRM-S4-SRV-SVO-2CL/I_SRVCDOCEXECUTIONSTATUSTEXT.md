@@ -40,7 +40,22 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `searchable` |  | |  | `true` |  |  |
+| `ServiceDocumentIsQuotation` | ✓ | |  | `stat_quotation` | `CHAR(1)` | Quotation Status |
+| `SrvcDocExecutionStatus` | ✓ | |  | `stat_execution` | `CHAR(2)` | Execution Status |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `SrvcDocExecutionStatusText` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
+| `_SrvcDocExecutionStatus` | | ✓ | | | | |
+| `_SrvcDocIsQuotation` | | ✓ | | | | |
+| `_Language` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_SrvcDocExecutionStatus` | `I_SrvcDocExecutionStatus` | [1..1] |
+| `_SrvcDocIsQuotation` | `I_Indicator` | [1..1] |
+| `_Language` | `I_Language` | [1..1] |
 
 ## Source Code
 
