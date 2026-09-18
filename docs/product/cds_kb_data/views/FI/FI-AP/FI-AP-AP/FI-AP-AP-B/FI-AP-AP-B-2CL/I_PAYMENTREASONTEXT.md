@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PaymentReason` | ✓ | |  | `payt_rsn` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `PaymentReasonText` |  | |  | `descript` |  |  |
+| `PaymentReason` | ✓ | |  | `payt_rsn` | `CHAR(4)` | Payment Reason |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `PaymentReasonText` |  | |  | `descript` | `CHAR(130)` | Payment Reason Description |
 
 ## Source Code
 

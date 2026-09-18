@@ -40,23 +40,23 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PaymentRunDate` | ✓ | |  |  |  |  |
-| `PaymentRunID` | ✓ | |  |  |  |  |
-| `ProposalRunIsCarriedOut` |  | |  |  |  |  |
-| `PaymentProposalIsRevised` |  | |  |  |  |  |
-| `PaymentRunIsCarriedOut` |  | |  |  |  |  |
-| `PaytRunDocCreationIsStarted` |  | |  |  |  |  |
-| `PaymentRunIsDeleted` |  | |  |  |  |  |
-| `NumberOfCreatedPayments` |  | |  |  |  |  |
-| `NumberOfPostedPayments` |  | |  |  |  |  |
-| `ToNetDueDate` |  | |  |  |  |  |
-| `ExchangeRateType` |  | |  |  |  |  |
-| `BranchCompanyCodeAssignment` |  | |  |  |  |  |
-| `BusinessPlace` |  | |  |  |  |  |
-| `PaytRunIsForDrctDebitPreNotif` |  | |  |  |  |  |
-| `ReferencePaymentRunDate` |  | |  |  |  |  |
-| `ReferencePaymentRunID` |  | |  |  |  |  |
-| `WrkflwScenIsActv` |  | |  |  |  |  |
+| `PaymentRunDate` | ✓ | |  |  | `DATS(8)` | Date on Which the Program Is to Be Run |
+| `PaymentRunID` | ✓ | |  |  | `CHAR(6)` | Auto Payment Run ID |
+| `ProposalRunIsCarriedOut` |  | |  |  | `CHAR(1)` | Indicator: Payment Proposal Run Carried Out |
+| `PaymentProposalIsRevised` |  | |  |  | `CHAR(1)` | Indicator: Payment Proposal is Revised |
+| `PaymentRunIsCarriedOut` |  | |  |  | `CHAR(1)` | Indicator: Payment Run is Carried Out |
+| `PaytRunDocCreationIsStarted` |  | |  |  | `CHAR(1)` | Indicator: Document Creation Started |
+| `PaymentRunIsDeleted` |  | |  |  | `CHAR(1)` | Indicator: Payment Run Data is Deleted |
+| `NumberOfCreatedPayments` |  | |  |  | `DEC(7)` | Number of Created Payments |
+| `NumberOfPostedPayments` |  | |  |  | `DEC(7)` | Number of Posted Payments |
+| `ToNetDueDate` |  | |  |  | `DATS(8)` | "To" Due Date for Customer Items |
+| `ExchangeRateType` |  | |  |  | `CHAR(4)` | Alternative Ex.Rate Type for Payments in Foreign Currency |
+| `BranchCompanyCodeAssignment` |  | |  |  | `CHAR(4)` | Allocation Key: Branch - Company Code |
+| `BusinessPlace` |  | |  |  | `CHAR(4)` | Business Place |
+| `PaytRunIsForDrctDebitPreNotif` |  | |  |  | `CHAR(1)` | Payment Run for Direct Debit Pre-Notifications |
+| `ReferencePaymentRunDate` |  | |  |  | `DATS(8)` | Run Date of Reference Payment Program |
+| `ReferencePaymentRunID` |  | |  |  | `CHAR(6)` | Run ID of Reference Payment Program |
+| `WrkflwScenIsActv` |  | |  |  | `CHAR(1)` | Workflow of Maintenance of Proposal Run Is Active |
 | `_PaymentProposalPayment` | | ✓ | | | | |
 
 ## Associations

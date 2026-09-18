@@ -39,12 +39,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `FinancialAccountType` | ✓ | |  | `cast(koart as farp_koart preserving type )` |  |  |
-| `CompanyCode` | ✓ | |  | `cast(bukrs as fis_bukrs preserving type )` |  |  |
-| `BlockedFinancialAccount` | ✓ | |  | `cast(konko as farp_blocked_acc preserving type )` |  |  |
-| `PaymentRunDate` | ✓ | |  | `laufd` |  |  |
-| `PaymentRunID` | ✓ | |  | `cast(laufi as farp_laufi preserving type )` |  |  |
-| `ConsideredSpecialGLCodes` |  | |  | `umskl` |  |  |
+| `FinancialAccountType` | ✓ | |  | `cast(koart as farp_koart preserving type )` | `CHAR(1)` | Account Type |
+| `CompanyCode` | ✓ | |  | `cast(bukrs as fis_bukrs preserving type )` | `CHAR(4)` | Company Code |
+| `BlockedFinancialAccount` | ✓ | |  | `cast(konko as farp_blocked_acc preserving type )` | `CHAR(10)` | Blocked Account |
+| `PaymentRunDate` | ✓ | |  | `laufd` | `DATS(8)` | Date on Which the Program Is to Be Run |
+| `PaymentRunID` | ✓ | |  | `cast(laufi as farp_laufi preserving type )` | `CHAR(6)` | Auto Payment Run ID |
+| `ConsideredSpecialGLCodes` |  | |  | `umskl` | `CHAR(100)` | Special G/L Indicators to Be Paid |
 | `_CompanyCode` | | ✓ | | | | |
 | `_FinancialAccountType` | | ✓ | | | | |
 | `_Supplier` | | ✓ | | | | |

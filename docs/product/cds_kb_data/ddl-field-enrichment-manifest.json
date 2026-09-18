@@ -21798,5 +21798,240 @@
     "attemptedAt": "2026-09-17T13:05:49.120Z",
     "found": true,
     "matched": 3
+  },
+  "D_PCLGSDCGETDAGDSDOCINFOGROUPR": {
+    "attemptedAt": "2026-09-18T12:45:27.141Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETDAGDSDOCINFOGROUPR\" (404)"
+  },
+  "D_PCLGSDCGETDAGDSDOCINFOITEMP": {
+    "attemptedAt": "2026-09-18T12:45:27.605Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETDAGDSDOCINFOITEMP\" (404)"
+  },
+  "D_PCLGSDCGETDAGDSDOCINFOITEMR": {
+    "attemptedAt": "2026-09-18T12:45:28.062Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETDAGDSDOCINFOITEMR\" (404)"
+  },
+  "D_PCLGSDCGETDAGDSDOCINFOPOINTR": {
+    "attemptedAt": "2026-09-18T12:45:28.510Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETDAGDSDOCINFOPOINTR\" (404)"
+  },
+  "D_PCLGSDCGETDAGDSEDIINFOITEMP": {
+    "attemptedAt": "2026-09-18T12:45:28.960Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETDAGDSEDIINFOITEMP\" (404)"
+  },
+  "D_PCLGSDCGETDAGDSEDIINFOITEMR": {
+    "attemptedAt": "2026-09-18T12:45:29.394Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETDAGDSEDIINFOITEMR\" (404)"
+  },
+  "D_PCLGSDCGETDNGRSGDSDOCINFOP": {
+    "attemptedAt": "2026-09-18T12:45:29.886Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETDNGRSGDSDOCINFOP\" (404)"
+  },
+  "D_PCLGSDCGETDNGRSGDSDOCINFOR": {
+    "attemptedAt": "2026-09-18T12:45:30.350Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETDNGRSGDSDOCINFOR\" (404)"
+  },
+  "D_PCLGSDCGETDNGRSGOODSEDIINFOP": {
+    "attemptedAt": "2026-09-18T12:45:30.810Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETDNGRSGOODSEDIINFOP\" (404)"
+  },
+  "D_PCLGSDCGETDNGRSGOODSEDIINFOR": {
+    "attemptedAt": "2026-09-18T12:45:31.251Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETDNGRSGOODSEDIINFOR\" (404)"
+  },
+  "D_PCLGSDCGETMXDLDGICMTSCNTRYP": {
+    "attemptedAt": "2026-09-18T12:45:31.713Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETMXDLDGICMTSCNTRYP\" (404)"
+  },
+  "D_PCLGSDCGETMXDLDGICMTSP": {
+    "attemptedAt": "2026-09-18T12:45:32.168Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETMXDLDGICMTSP\" (404)"
+  },
+  "D_PCLGSDCGETMXDLDGICMTSPRODP": {
+    "attemptedAt": "2026-09-18T12:45:32.617Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETMXDLDGICMTSPRODP\" (404)"
+  },
+  "D_PCLGSDCGETMXDLDGICMTSR": {
+    "attemptedAt": "2026-09-18T12:45:33.069Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETMXDLDGICMTSR\" (404)"
+  },
+  "D_PCLGSDCITEMUPDTMKTBLTYSTSP": {
+    "attemptedAt": "2026-09-18T12:45:33.529Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCITEMUPDTMKTBLTYSTSP\" (404)"
+  },
+  "D_PCLGSDCITMGETDNGRSGDSDESCSP": {
+    "attemptedAt": "2026-09-18T12:45:33.972Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCITMGETDNGRSGDSDESCSP\" (404)"
+  },
+  "I_CHMLCMPLNCIDFR": {
+    "attemptedAt": "2026-09-18T12:45:34.830Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_PCLGSDCITMPACKGINSTRUCTIONTP": {
+    "attemptedAt": "2026-09-18T12:45:35.020Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PCLGSDCITMPACKGINSTRUCTIONTP\" (404)"
+  },
+  "I_PCLGSDCMNLLYOVRWRTNADDRTP": {
+    "attemptedAt": "2026-09-18T12:45:35.467Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PCLGSDCMNLLYOVRWRTNADDRTP\" (404)"
+  },
+  "I_PRODCMPLNCLOGSDOCSTAGEITEMTP": {
+    "attemptedAt": "2026-09-18T12:45:35.910Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLOGSDOCSTAGEITEMTP\" (404)"
+  },
+  "I_PRODCMPLNCLOGSDOCSTAGETP": {
+    "attemptedAt": "2026-09-18T12:45:36.360Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLOGSDOCSTAGETP\" (404)"
+  },
+  "I_PRODCMPLNCLOGSDOCSTATUSMSGTP": {
+    "attemptedAt": "2026-09-18T12:45:36.846Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLOGSDOCSTATUSMSGTP\" (404)"
+  },
+  "I_PRODCMPLNCLOGSDOCTRNSTCTRYTP": {
+    "attemptedAt": "2026-09-18T12:45:37.305Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLOGSDOCTRNSTCTRYTP\" (404)"
+  },
+  "I_PRODCMPLNCLOGSDOCUMENTITEMTP": {
+    "attemptedAt": "2026-09-18T12:45:37.756Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLOGSDOCUMENTITEMTP\" (404)"
+  },
+  "I_PRODCMPLNCLOGSDOCUMENTTP": {
+    "attemptedAt": "2026-09-18T12:45:38.195Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLOGSDOCUMENTTP\" (404)"
+  },
+  "I_PRODCMPLNCRECMDDUSETP": {
+    "attemptedAt": "2026-09-18T12:45:38.643Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCRECMDDUSETP\" (404)"
+  },
+  "I_PRODCMPLNCRSTRCDUSETP": {
+    "attemptedAt": "2026-09-18T12:45:39.080Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCRSTRCDUSETP\" (404)"
+  },
+  "I_PRODCMPLNCUSETP": {
+    "attemptedAt": "2026-09-18T12:45:39.527Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCUSETP\" (404)"
+  },
+  "I_PRODCMPLNCWAYOFAPPLTP": {
+    "attemptedAt": "2026-09-18T12:45:39.966Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCWAYOFAPPLTP\" (404)"
+  },
+  "D_PCLBLFLDVERSREGLBLFLDCALCTRP": {
+    "attemptedAt": "2026-09-18T12:45:40.414Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLBLFLDVERSREGLBLFLDCALCTRP\" (404)"
+  },
+  "I_PRODCMPLNCLABELFLDGROUPTP_2": {
+    "attemptedAt": "2026-09-18T12:45:40.855Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLABELFLDGROUPTP_2\" (404)"
+  },
+  "I_PRODCMPLNCLBLFLDGROUPTXTTP_2": {
+    "attemptedAt": "2026-09-18T12:45:41.296Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLBLFLDGROUPTXTTP_2\" (404)"
+  },
+  "I_PRODCMPLNCLBLFLDVERSIONTP_2": {
+    "attemptedAt": "2026-09-18T12:45:41.751Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLBLFLDVERSIONTP_2\" (404)"
+  },
+  "I_PRODCMPLNCLBLFLDVERSTXTTP_2": {
+    "attemptedAt": "2026-09-18T12:45:42.192Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLBLFLDVERSTXTTP_2\" (404)"
+  },
+  "I_FIXEDASSETUSAGEOBJECT": {
+    "attemptedAt": "2026-09-18T12:45:42.951Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_FIXEDASSETUSAGEOBJECTPERIOD": {
+    "attemptedAt": "2026-09-18T12:45:43.498Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_FIXEDASSETUSAGEOBJECTTOTAL": {
+    "attemptedAt": "2026-09-18T12:45:44.092Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_ASSETREVALUATIONINDEX": {
+    "attemptedAt": "2026-09-18T12:45:44.718Z",
+    "found": true,
+    "matched": 14
+  },
+  "I_ASSETREVALUATIONINDEXITEM": {
+    "attemptedAt": "2026-09-18T12:45:45.268Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PAYMENTBLOCKLEVEL": {
+    "attemptedAt": "2026-09-18T12:45:45.839Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_PAYMENTBLOCKLEVELTEXT": {
+    "attemptedAt": "2026-09-18T12:45:46.349Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PAYMENTPROGRAMCONTROL": {
+    "attemptedAt": "2026-09-18T12:45:46.870Z",
+    "found": true,
+    "matched": 17
+  },
+  "I_PAYMENTPROPOSALITEM": {
+    "attemptedAt": "2026-09-18T12:45:47.479Z",
+    "found": true,
+    "matched": 71
+  },
+  "I_PAYMENTPROPOSALPAYMENT": {
+    "attemptedAt": "2026-09-18T12:45:48.109Z",
+    "found": true,
+    "matched": 129
+  },
+  "I_PAYMENTREASON": {
+    "attemptedAt": "2026-09-18T12:45:48.642Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PAYMENTREASONTEXT": {
+    "attemptedAt": "2026-09-18T12:45:49.211Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PAYTPRPSLBLKDFINACCOUNT": {
+    "attemptedAt": "2026-09-18T12:45:49.727Z",
+    "found": true,
+    "matched": 6
   }
 }

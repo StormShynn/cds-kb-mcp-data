@@ -40,7 +40,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PaymentReason` | ✓ | |  | `payt_rsn` |  |  |
+| `PaymentReason` | ✓ | |  | `payt_rsn` | `CHAR(4)` | Payment Reason |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

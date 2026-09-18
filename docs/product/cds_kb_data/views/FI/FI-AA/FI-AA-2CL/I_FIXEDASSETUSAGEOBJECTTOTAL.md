@@ -40,13 +40,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `comp_code` |  |  |
-| `FixedAssetUsageObject` | ✓ | |  | `usage_object` |  |  |
-| `FixedAssetUsageObjectDeprArea` | ✓ | |  | `depr_area` |  |  |
-| `ValidityEndDate` | ✓ | |  | `valid_to_date` |  |  |
-| `ValidityStartDate` |  | |  | `valid_from_date` |  |  |
-| `CapacityInProductionUnit` |  | |  | `total_units` |  |  |
-| `BaseUnit` |  | | `_UsageObject` | `BaseUnit` |  |  |
+| `CompanyCode` | ✓ | |  | `comp_code` | `CHAR(4)` | Company Code |
+| `FixedAssetUsageObject` | ✓ | |  | `usage_object` | `NUMC(12)` | Usage Object |
+| `FixedAssetUsageObjectDeprArea` | ✓ | |  | `depr_area` | `CHAR(2)` | Depreciation Area (incl. Generic Entry) |
+| `ValidityEndDate` | ✓ | |  | `valid_to_date` | `DATS(8)` | Date Validity Ends |
+| `ValidityStartDate` |  | |  | `valid_from_date` | `DATS(8)` | Date for Beginning of Validity |
+| `CapacityInProductionUnit` |  | |  | `total_units` | `QUAN(18)` | Total Number of Units |
+| `BaseUnit` |  | | `_UsageObject` | `BaseUnit` | `UNIT(3)` | Base Unit of Measure |
 | `_UsageObject` | | ✓ | | | | |
 | `_CompanyCode` | | ✓ | | | | |
 
