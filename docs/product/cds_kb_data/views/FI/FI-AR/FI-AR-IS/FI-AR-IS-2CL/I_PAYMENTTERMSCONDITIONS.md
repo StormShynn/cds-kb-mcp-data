@@ -41,33 +41,33 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PaymentTerms` | ✓ | |  | `cast( zterm as farp_dzterm preserving type )` |  |  |
-| `PaymentTermsValidityMonthDay` | ✓ | |  | `cast( ztagg as dztagg_052 preserving type )` |  |  |
-| `PaymentTermsFinAccountType` |  | |  | `cast( koart as koart_z preserving type )` |  |  |
-| `BslnDteCalcDayOfMnth` |  | |  | `cast( zfael as dzfael preserving type )` |  |  |
-| `BslnDteCalcAddlMnths` |  | |  | `cast( zmona as dzmona preserving type )` |  |  |
-| `PaymentBlockingReason` |  | |  | `cast( zschf as farp_dzlspr preserving type )` |  |  |
-| `PaymentBlockIsTransferred` |  | |  | `xchpb` |  |  |
-| `PaymentMethod` |  | |  | `cast( zlsch as farp_schzw_bseg preserving type )` |  |  |
-| `PaymentMethodIsTransferred` |  | |  | `xchpm` |  |  |
-| `PaymentIsInstallment` |  | |  | `xsplt` |  |  |
-| `RecrrgEntPaytTrmsIsFrmAcctMstr` |  | |  | `xscrc` |  |  |
-| `BslnDteHasNoDfltProposal` |  | |  | `case when zdart = '' then 'X' else '' end` |  |  |
-| `DocDteIsBslnDteProposal` |  | |  | `case when zdart = 'B' then 'X' else '' end` |  |  |
-| `PostgDteIsBslnDteProposal` |  | |  | `case when zdart = 'D' then 'X' else '' end` |  |  |
-| `EntrDteIsBslnDteProposal` |  | |  | `case when zdart = 'C' then 'X' else '' end` |  |  |
-| `PaymentTermsIsHidden` |  | |  | `f_obsolete` |  |  |
-| `CashDiscount1Days` |  | |  | `cast( cast( ztag1 as abap.dec(3,0) ) as farp_dzbd1t preserving type )` |  |  |
-| `CashDiscount2Days` |  | |  | `cast( cast( ztag2 as abap.dec(3,0) ) as farp_dzbd2t preserving type )` |  |  |
-| `NetPaymentDays` |  | |  | `cast( cast( ztag3 as abap.dec(3,0) ) as farp_dzbd3t preserving type )` |  |  |
-| `CashDiscount1Percent` |  | |  | `cast( zprz1 as dzbd1p_farp preserving type )` |  |  |
-| `CashDiscount2Percent` |  | |  | `cast( zprz2 as dzbd2p_farp preserving type )` |  |  |
-| `CashDiscount1DayOfMonth` |  | |  | `cast( zstg1 as abap.dec(2,0) )` |  |  |
-| `CashDiscount2DayOfMonth` |  | |  | `cast( zstg2 as abap.dec(2,0) )` |  |  |
-| `CashDiscount3DayOfMonth` |  | |  | `cast( zstg3 as abap.dec(2,0) )` |  |  |
-| `CashDiscount1AdditionalMonths` |  | |  | `cast( zsmn1 as abap.dec(2,0) )` |  |  |
-| `CashDiscount2AdditionalMonths` |  | |  | `cast( zsmn2 as abap.dec(2,0) )` |  |  |
-| `CashDiscount3AdditionalMonths` |  | |  | `cast( zsmn3 as abap.dec(2,0) )` |  |  |
+| `PaymentTerms` | ✓ | |  | `cast( zterm as farp_dzterm preserving type )` | `CHAR(4)` | Terms of Payment Key |
+| `PaymentTermsValidityMonthDay` | ✓ | |  | `cast( ztagg as dztagg_052 preserving type )` | `NUMC(2)` | Day Limit |
+| `PaymentTermsFinAccountType` |  | |  | `cast( koart as koart_z preserving type )` | `CHAR(1)` | Account Type of the Customer/Vendor |
+| `BslnDteCalcDayOfMnth` |  | |  | `cast( zfael as dzfael preserving type )` | `NUMC(2)` | Calendar Day for the Baseline Date for Payment |
+| `BslnDteCalcAddlMnths` |  | |  | `cast( zmona as dzmona preserving type )` | `NUMC(2)` | Additional Months |
+| `PaymentBlockingReason` |  | |  | `cast( zschf as farp_dzlspr preserving type )` | `CHAR(1)` | Payment Block on Item |
+| `PaymentBlockIsTransferred` |  | |  | `xchpb` | `CHAR(1)` | Transfer Payment Block When Changing Terms of Payment? |
+| `PaymentMethod` |  | |  | `cast( zlsch as farp_schzw_bseg preserving type )` | `CHAR(1)` | Payment Method |
+| `PaymentMethodIsTransferred` |  | |  | `xchpm` | `CHAR(1)` | Transfer Payment Method When Changing Terms of Payment? |
+| `PaymentIsInstallment` |  | |  | `xsplt` | `CHAR(1)` | Indicator: Term for Installment Payment |
+| `RecrrgEntPaytTrmsIsFrmAcctMstr` |  | |  | `xscrc` | `CHAR(1)` | Recurring Entries: Add Terms of Payment from Master Record |
+| `BslnDteHasNoDfltProposal` |  | |  | `case when zdart = '' then 'X' else '' end` | `CHAR(1)` |  |
+| `DocDteIsBslnDteProposal` |  | |  | `case when zdart = 'B' then 'X' else '' end` | `CHAR(1)` |  |
+| `PostgDteIsBslnDteProposal` |  | |  | `case when zdart = 'D' then 'X' else '' end` | `CHAR(1)` |  |
+| `EntrDteIsBslnDteProposal` |  | |  | `case when zdart = 'C' then 'X' else '' end` | `CHAR(1)` |  |
+| `PaymentTermsIsHidden` |  | |  | `f_obsolete` | `CHAR(1)` | Hide Entry in Value Help |
+| `CashDiscount1Days` |  | |  | `cast( cast( ztag1 as abap.dec(3,0) ) as farp_dzbd1t preserving type )` | `DEC(3)` | Cash Discount Days 1 |
+| `CashDiscount2Days` |  | |  | `cast( cast( ztag2 as abap.dec(3,0) ) as farp_dzbd2t preserving type )` | `DEC(3)` | Cash Discount Days 2 |
+| `NetPaymentDays` |  | |  | `cast( cast( ztag3 as abap.dec(3,0) ) as farp_dzbd3t preserving type )` | `DEC(3)` | Net Payment Terms Period |
+| `CashDiscount1Percent` |  | |  | `cast( zprz1 as dzbd1p_farp preserving type )` | `DEC(5)` | Cash Discount Percentage 1 |
+| `CashDiscount2Percent` |  | |  | `cast( zprz2 as dzbd2p_farp preserving type )` | `DEC(5)` | Cash Discount Percentage 2 |
+| `CashDiscount1DayOfMonth` |  | |  | `cast( zstg1 as abap.dec(2,0) )` | `DEC(2)` |  |
+| `CashDiscount2DayOfMonth` |  | |  | `cast( zstg2 as abap.dec(2,0) )` | `DEC(2)` |  |
+| `CashDiscount3DayOfMonth` |  | |  | `cast( zstg3 as abap.dec(2,0) )` | `DEC(2)` |  |
+| `CashDiscount1AdditionalMonths` |  | |  | `cast( zsmn1 as abap.dec(2,0) )` | `DEC(2)` |  |
+| `CashDiscount2AdditionalMonths` |  | |  | `cast( zsmn2 as abap.dec(2,0) )` | `DEC(2)` |  |
+| `CashDiscount3AdditionalMonths` |  | |  | `cast( zsmn3 as abap.dec(2,0) )` | `DEC(2)` |  |
 | `_Text` | | ✓ | | | | |
 | `_PaymentTerms` | | ✓ | | | | |
 

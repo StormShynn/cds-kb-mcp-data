@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DunningKey` | ✓ | |  | `cast( mschl as farp_mschl )` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `MaximumDunningLevelDescription` |  | |  | `cast( text1 as farp_text1_040a )` |  |  |
+| `DunningKey` | ✓ | |  | `cast( mschl as farp_mschl )` | `CHAR(1)` | Dunning Key |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `MaximumDunningLevelDescription` |  | |  | `cast( text1 as farp_text1_040a )` | `CHAR(50)` | Dunning Key Description |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

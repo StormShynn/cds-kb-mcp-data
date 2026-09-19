@@ -41,8 +41,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `DunningArea` | ✓ | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `DunningArea` | ✓ | |  |  | `CHAR(2)` | Dunning Area |
 | `_Text` | | ✓ | | | | |
 | `_CompanyCode` | | ✓ | | | | |
 

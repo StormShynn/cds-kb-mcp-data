@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CATransactionKeyAccountDetn` | ✓ | |  | `cast( left( dd07t.domvalue_l,3 ) as ktosl_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CATransactionKeyAcctDetnText` |  | |  | `cast( ddtext as ktosl_text_kk preserving type )` |  |  |
+| `CATransactionKeyAccountDetn` | ✓ | |  | `cast( left( dd07t.domvalue_l,3 ) as ktosl_kk preserving type )` | `CHAR(3)` | Transaction Key for Account Determination |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CATransactionKeyAcctDetnText` |  | |  | `cast( ddtext as ktosl_text_kk preserving type )` | `CHAR(60)` | Description for Transaction Key for Account Determination |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

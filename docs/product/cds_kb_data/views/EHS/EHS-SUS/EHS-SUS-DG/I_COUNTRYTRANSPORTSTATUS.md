@@ -42,7 +42,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CountryTransportStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 2) as ehdgm_country_transport_status preserving type )` |  |  |
+| `CountryTransportStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 2) as ehdgm_country_transport_status preserving type )` | `CHAR(2)` | Transport Status for Countries |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -41,54 +41,54 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `AccountingDocument` | ✓ | |  | `belnr` |  |  |
-| `FiscalYear` | ✓ | |  | `gjahr` |  |  |
-| `AccountingDocumentItem` | ✓ | |  | `buzei` |  |  |
-| `WithholdingTaxType` | ✓ | |  | `witht` |  |  |
-| `WithholdingTaxCode` |  | |  | `wt_withcd` |  |  |
-| `WhldgTaxBaseAmtInCoCodeCrcy` |  | |  | `wt_qsshh` |  |  |
-| `WhldgTaxBaseAmtInTransacCrcy` |  | |  | `wt_qsshb` |  |  |
-| `WhldgTaxBaseAmtInAddlCrcy2` |  | |  | `wt_qssh2` |  |  |
-| `WhldgTaxBaseAmtInAddlCrcy3` |  | |  | `wt_qssh3` |  |  |
-| `WhldgTaxBaseIsEnteredManually` |  | |  | `wt_basman` |  |  |
-| `WhldgTaxAmtInCoCodeCrcy` |  | |  | `wt_qbshh` |  |  |
-| `WhldgTaxAmtInTransacCrcy` |  | |  | `wt_qbshb` |  |  |
-| `WhldgTaxAmtInAddlCrcy2` |  | |  | `wt_qbsh2` |  |  |
-| `WhldgTaxAmtInAddlCrcy3` |  | |  | `wt_qbsh3` |  |  |
-| `WhldgTaxIsEnteredManually` |  | |  | `wt_amnman` |  |  |
-| `WhldgTaxItemStatus` |  | |  | `wt_stat` |  |  |
-| `WhldgTaxExmptAmtInCoCodeCrcy` |  | |  | `wt_qsfhh` |  |  |
-| `WhldgTaxExmptAmtInTransacCrcy` |  | |  | `wt_qsfhb` |  |  |
-| `WhldgTaxExmptAmtInAddlCrcy2` |  | |  | `wt_qsfh2` |  |  |
-| `WhldgTaxExmptAmtInAddlCrcy3` |  | |  | `wt_qsfh3` |  |  |
-| `MnllyEnteredWHTAmtInTransCrcy` |  | |  | `wt_qbuihb` |  |  |
-| `MnllyEnteredWHTAmtInCoCodeCrcy` |  | |  | `wt_qbuihh` |  |  |
-| `WhldgTaxExmptCertificate` |  | |  | `wt_wtexmn` |  |  |
-| `FinancialAccountType` |  | |  | `koart` |  |  |
-| `CustomerSupplierAccount` |  | |  | `wt_acco` |  |  |
-| `GLAccount` |  | |  | `hkont` |  |  |
-| `SupplierRecipientType` |  | |  | `qsrec` |  |  |
-| `ClearingAccountingDocument` |  | |  | `augbl` |  |  |
-| `ClearingDate` |  | |  | `augdt` |  |  |
-| `WithholdingTaxExmptPercent` |  | |  | `wt_qszrt` |  |  |
-| `WithholdingTaxPercent` |  | |  | `qsatz` |  |  |
-| `IsSelfWhldgTax` |  | |  | `wt_slfwtpd` |  |  |
-| `IsGrossingUp` |  | |  | `wt_gruwtpd` |  |  |
-| `WithholdingTaxCertificate` |  | |  | `ctnumber` |  |  |
-| `WhldgTaxCertDate` |  | |  | `ctissuedate` |  |  |
-| `IN_ClrgWithholdingTaxDocument` |  | |  | `j_1iintchln` |  |  |
-| `IN_ClrgWithholdingTaxDate` |  | |  | `j_1iintchdt` |  |  |
-| `IN_ReferenceDocumentNumber` |  | |  | `j_1irebzg` |  |  |
-| `DownPaymentIsCleared` |  | |  | `wt_downc` |  |  |
-| `DocumentIsPartialExempted` |  | |  | `fiwtin_par_exem` |  |  |
-| `IN_WhldgTaxRecordTypeTrans` |  | |  | `j_1iewtrec` |  |  |
-| `Country` |  | | `_CompanyCode` | `Country` |  |  |
-| `CompanyCodeCurrency` |  | | `_CompanyCode` | `Currency` |  |  |
-| `DocumentCurrency` |  | | `_AccountingDocument` | `Currency` |  |  |
-| `AdditionalCurrency1` |  | | `_AccountingDocument` | `AdditionalCurrency1` |  |  |
-| `AdditionalCurrency2` |  | | `_AccountingDocument` | `AdditionalCurrency2` |  |  |
-| `RptgWhldgTxBaseAmtInCoCodeCrcy` |  | |  | `j_1af_wt_repbs` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `AccountingDocument` | ✓ | |  | `belnr` | `CHAR(10)` | Document Number of an Accounting Document |
+| `FiscalYear` | ✓ | |  | `gjahr` | `NUMC(4)` | Fiscal Year |
+| `AccountingDocumentItem` | ✓ | |  | `buzei` | `NUMC(3)` | Number of Line Item Within Accounting Document |
+| `WithholdingTaxType` | ✓ | |  | `witht` | `CHAR(2)` | Indicator for Withholding Tax Type |
+| `WithholdingTaxCode` |  | |  | `wt_withcd` | `CHAR(2)` | Withholding Tax Code |
+| `WhldgTaxBaseAmtInCoCodeCrcy` |  | |  | `wt_qsshh` | `CURR(23)` | Withholding Tax Base Amount (Local Currency) |
+| `WhldgTaxBaseAmtInTransacCrcy` |  | |  | `wt_qsshb` | `CURR(23)` | Withholding Tax Base Amount in Document Currency |
+| `WhldgTaxBaseAmtInAddlCrcy2` |  | |  | `wt_qssh2` | `CURR(23)` | Withholding Tax Base Amount in Second Local Currency |
+| `WhldgTaxBaseAmtInAddlCrcy3` |  | |  | `wt_qssh3` | `CURR(23)` | Withholding Tax Base Amount in Third Local Currency |
+| `WhldgTaxBaseIsEnteredManually` |  | |  | `wt_basman` | `CHAR(1)` | Indicator: Withholding Tax Base Amount Entered Manually |
+| `WhldgTaxAmtInCoCodeCrcy` |  | |  | `wt_qbshh` | `CURR(23)` | Withholding Tax Amount in Local Currency |
+| `WhldgTaxAmtInTransacCrcy` |  | |  | `wt_qbshb` | `CURR(23)` | Withholding Tax Amount in Document Currency |
+| `WhldgTaxAmtInAddlCrcy2` |  | |  | `wt_qbsh2` | `CURR(23)` | Withholding Tax Amount in Second Local Currency |
+| `WhldgTaxAmtInAddlCrcy3` |  | |  | `wt_qbsh3` | `CURR(23)` | Withholding Tax Amount in Third Local Currency |
+| `WhldgTaxIsEnteredManually` |  | |  | `wt_amnman` | `CHAR(1)` | Indicator: Withholding Tax Amount Entered Manually |
+| `WhldgTaxItemStatus` |  | |  | `wt_stat` | `CHAR(1)` | Line Item Status |
+| `WhldgTaxExmptAmtInCoCodeCrcy` |  | |  | `wt_qsfhh` | `CURR(23)` | Amount Exempt from Withholding Tax in Local Currency |
+| `WhldgTaxExmptAmtInTransacCrcy` |  | |  | `wt_qsfhb` | `CURR(23)` | Amount Exempt from Withholding Tax in Document Currency |
+| `WhldgTaxExmptAmtInAddlCrcy2` |  | |  | `wt_qsfh2` | `CURR(23)` | Amount Exempt from Withholding Tax in 2nd Local Currency |
+| `WhldgTaxExmptAmtInAddlCrcy3` |  | |  | `wt_qsfh3` | `CURR(23)` | Amount Exempt from Withholding Tax in 3rd Local Currency |
+| `MnllyEnteredWHTAmtInTransCrcy` |  | |  | `wt_qbuihb` | `CURR(23)` | Withholding Tax Amount Entered Manually in Document Currency |
+| `MnllyEnteredWHTAmtInCoCodeCrcy` |  | |  | `wt_qbuihh` | `CURR(23)` | Withholding Tax Amount Entered Manually in Local Currency |
+| `WhldgTaxExmptCertificate` |  | |  | `wt_wtexmn` | `CHAR(25)` | Exemption Certificate Number |
+| `FinancialAccountType` |  | |  | `koart` | `CHAR(1)` | Account Type |
+| `CustomerSupplierAccount` |  | |  | `wt_acco` | `CHAR(10)` | Vendor/Customer Account Number |
+| `GLAccount` |  | |  | `hkont` | `CHAR(10)` | General Ledger Account |
+| `SupplierRecipientType` |  | |  | `qsrec` | `CHAR(2)` | Recipient Type |
+| `ClearingAccountingDocument` |  | |  | `augbl` | `CHAR(10)` | Document Number of the Clearing Document |
+| `ClearingDate` |  | |  | `augdt` | `DATS(8)` | Clearing Date |
+| `WithholdingTaxExmptPercent` |  | |  | `wt_qszrt` | `DEC(5)` | Exemption Rate |
+| `WithholdingTaxPercent` |  | |  | `qsatz` | `DEC(7)` | Withholding Tax Rate |
+| `IsSelfWhldgTax` |  | |  | `wt_slfwtpd` | `CHAR(1)` | Indicator: Entry Posted as Self-Withholding Tax |
+| `IsGrossingUp` |  | |  | `wt_gruwtpd` | `CHAR(1)` | Indicator: Entry Posted as "Grossing Up" |
+| `WithholdingTaxCertificate` |  | |  | `ctnumber` | `CHAR(10)` | Withholding Tax Certificate Number |
+| `WhldgTaxCertDate` |  | |  | `ctissuedate` | `DATS(8)` | Issue or Print Date of Withholding Tax Certificate |
+| `IN_ClrgWithholdingTaxDocument` |  | |  | `j_1iintchln` | `CHAR(12)` | Challan Number |
+| `IN_ClrgWithholdingTaxDate` |  | |  | `j_1iintchdt` | `DATS(8)` | Challan Date |
+| `IN_ReferenceDocumentNumber` |  | |  | `j_1irebzg` | `CHAR(10)` | Document No. of the Invoice to Which the Transaction Belongs |
+| `DownPaymentIsCleared` |  | |  | `wt_downc` | `CHAR(1)` | Indicator: Entry Belongs to a Down Payment Clearing Item |
+| `DocumentIsPartialExempted` |  | |  | `fiwtin_par_exem` | `CHAR(1)` | Partial Exemption |
+| `IN_WhldgTaxRecordTypeTrans` |  | |  | `j_1iewtrec` | `CHAR(1)` | Record type for EWT transactions-India |
+| `Country` |  | | `_CompanyCode` | `Country` | `CHAR(3)` | Country/Region Key |
+| `CompanyCodeCurrency` |  | | `_CompanyCode` | `Currency` | `CUKY(5)` | Currency Key |
+| `DocumentCurrency` |  | | `_AccountingDocument` | `Currency` | `CUKY(5)` | Currency Key |
+| `AdditionalCurrency1` |  | | `_AccountingDocument` | `AdditionalCurrency1` | `CUKY(5)` | Additional Currency 1 |
+| `AdditionalCurrency2` |  | | `_AccountingDocument` | `AdditionalCurrency2` | `CUKY(5)` | Additional Currency 2 |
+| `RptgWhldgTxBaseAmtInCoCodeCrcy` |  | |  | `j_1af_wt_repbs` | `CURR(23)` | Withholding tax base amount in local currency for  reporting |
 | `_CompanyCode` | | ✓ | | | | |
 | `_AccountingDocument` | | ✓ | | | | |
 | `_GLAccount` | | ✓ | | | | |

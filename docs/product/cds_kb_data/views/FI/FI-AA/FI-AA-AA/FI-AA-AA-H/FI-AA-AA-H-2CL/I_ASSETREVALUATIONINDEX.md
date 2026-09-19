@@ -56,20 +56,20 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AssetRevaluationIndex` | ✓ | |  | `index_id` |  |  |
-| `AssetRevaluationIndexName` |  | |  | `description` |  |  |
-| `AssetRevalIndexLifecycleStatus` |  | |  | `lifecycle_status` |  |  |
-| `AssetRevalIdxIsUsingHistCalc` |  | |  | `use_hist_calc` |  |  |
-| `AssetRevaluationIndexType` |  | |  | `index_type` |  |  |
-| `Country` |  | |  | `country` |  |  |
-| `Currency` |  | |  | `currency` |  |  |
-| `AstRevalIdxValueUnitOfMeasure` |  | |  | `index_value_uom` |  |  |
-| `AssetRevalIdxDeactivationDate` |  | |  | `deactivation_date` |  |  |
-| `CreatedByUser` |  | |  | `creation_user` |  |  |
-| `CreationDateTime` |  | |  | `creation_datetime` |  |  |
-| `LastChangedByUser` |  | |  | `lastchange_user` |  |  |
-| `LastChangeDateTime` |  | |  | `lastchange_datetime` |  |  |
-| `LocalLastChangeDateTime` |  | |  | `draft_lastchange_datetime` |  |  |
+| `AssetRevaluationIndex` | ✓ | |  | `index_id` | `CHAR(10)` | Asset Revaluation: Index ID |
+| `AssetRevaluationIndexName` |  | |  | `description` | `CHAR(50)` | Asset Revaluation: Index Description |
+| `AssetRevalIndexLifecycleStatus` |  | |  | `lifecycle_status` | `CHAR(1)` | Asset Revaluation: Index Lifecycle Status |
+| `AssetRevalIdxIsUsingHistCalc` |  | |  | `use_hist_calc` | `CHAR(1)` | Index Is Using Historical Calculation Method |
+| `AssetRevaluationIndexType` |  | |  | `index_type` | `CHAR(2)` | Asset Revaluation: Index Type |
+| `Country` |  | |  | `country` | `CHAR(3)` | Country/Region Key |
+| `Currency` |  | |  | `currency` | `CUKY(5)` | Currency Key |
+| `AstRevalIdxValueUnitOfMeasure` |  | |  | `index_value_uom` | `CHAR(1)` | Unit of Measure for Asset Revaluation Index Value |
+| `AssetRevalIdxDeactivationDate` |  | |  | `deactivation_date` | `DATS(8)` | Asset Revaluation: Index Deactivation Date |
+| `CreatedByUser` |  | |  | `creation_user` | `CHAR(12)` | Created By User |
+| `CreationDateTime` |  | |  | `creation_datetime` | `DEC(21)` | Creation Date Time |
+| `LastChangedByUser` |  | |  | `lastchange_user` | `CHAR(12)` | Last Changed By User |
+| `LastChangeDateTime` |  | |  | `lastchange_datetime` | `DEC(21)` | Last Change Date Time |
+| `LocalLastChangeDateTime` |  | |  | `draft_lastchange_datetime` | `DEC(21)` | Local Instance Last Change Date Time |
 | `_AssetRevaluationIndexItem` | | ✓ | | | | |
 | `_AssetRevaluationIndexLfcycSts` | | ✓ | | | | |
 | `_AssetRevaluationIndexType` | | ✓ | | | | |

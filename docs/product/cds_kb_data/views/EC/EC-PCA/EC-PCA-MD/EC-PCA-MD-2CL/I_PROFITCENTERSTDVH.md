@@ -43,10 +43,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  |  |  |  |
-| `ProfitCenter` | ✓ | |  |  |  |  |
-| `ValidityEndDate` | ✓ | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
+| `ControllingArea` | ✓ | |  |  | `CHAR(4)` | Controlling Area |
+| `ProfitCenter` | ✓ | |  |  | `CHAR(10)` | Profit Center |
+| `ValidityEndDate` | ✓ | |  |  | `DATS(8)` | Valid To Date |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Valid-From Date |
 | `_Text` | | ✓ | | | | |
 | `_ControllingArea` | | ✓ | | | | |
 

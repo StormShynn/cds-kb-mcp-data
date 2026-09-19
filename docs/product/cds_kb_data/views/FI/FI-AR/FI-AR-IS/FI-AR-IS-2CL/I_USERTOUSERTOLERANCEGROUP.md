@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `UserID` | ✓ | |  | `usnam` |  |  |
-| `UserToleranceGroup` |  | |  | `cast( rfpro as fins_rfpro )` |  |  |
+| `UserID` | ✓ | |  | `usnam` | `CHAR(12)` | User Name |
+| `UserToleranceGroup` |  | |  | `cast( rfpro as fins_rfpro )` | `CHAR(4)` | User Tolerance Group For Financial Accounting |
 | `_UserToleranceGroup` | | ✓ | | | | |
 
 ## Associations

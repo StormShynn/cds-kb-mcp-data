@@ -40,12 +40,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `comp_code` |  |  |
-| `FixedAssetUsageObject` | ✓ | |  | `usage_object` |  |  |
-| `ValidityEndDate` | ✓ | |  | `valid_to_date` |  |  |
-| `ValidityStartDate` |  | |  | `valid_from_date` |  |  |
-| `PeriodPlannedQtyInProdnUnit` |  | |  | `period_units` |  |  |
-| `BaseUnit` |  | | `_UsageObject` | `BaseUnit` |  |  |
+| `CompanyCode` | ✓ | |  | `comp_code` | `CHAR(4)` | Company Code |
+| `FixedAssetUsageObject` | ✓ | |  | `usage_object` | `NUMC(12)` | Usage Object |
+| `ValidityEndDate` | ✓ | |  | `valid_to_date` | `DATS(8)` | Date Validity Ends |
+| `ValidityStartDate` |  | |  | `valid_from_date` | `DATS(8)` | Date for Beginning of Validity |
+| `PeriodPlannedQtyInProdnUnit` |  | |  | `period_units` | `QUAN(18)` | Planned Number of Units in the Period |
+| `BaseUnit` |  | | `_UsageObject` | `BaseUnit` | `UNIT(3)` | Base Unit of Measure |
 | `_UsageObject` | | ✓ | | | | |
 | `_CompanyCode` | | ✓ | | | | |
 

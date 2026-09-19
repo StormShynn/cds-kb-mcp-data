@@ -41,33 +41,33 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `AccountingDocument` | ✓ | |  | `belnr` |  |  |
-| `FiscalYear` | ✓ | |  | `gjahr` |  |  |
-| `AccountingDocumentItem` | ✓ | |  | `buzei` |  |  |
-| `BusinessPartnerName1` |  | |  | `cast(bsec.name1 as ad_name1)` |  |  |
-| `BusinessPartnerName2` |  | |  | `cast(bsec.name2 as ad_name2)` |  |  |
-| `BusinessPartnerName3` |  | |  | `cast(bsec.name3 as ad_name3)` |  |  |
-| `BusinessPartnerName4` |  | |  | `cast(bsec.name4 as ad_name4)` |  |  |
-| `Country` |  | |  | `land1` |  |  |
-| `CityName` |  | |  | `cast(bsec.ort01 as ad_city1)` |  |  |
-| `POBox` |  | |  | `pfach` |  |  |
-| `POBoxPostalCode` |  | |  | `pstl2` |  |  |
-| `PostalCode` |  | |  | `pstlz` |  |  |
-| `Region` |  | |  | `regio` |  |  |
-| `TaxID1` |  | |  | `stcd1` |  |  |
-| `TaxID2` |  | |  | `stcd2` |  |  |
-| `TaxID3` |  | |  | `stcd3` |  |  |
-| `TaxID4` |  | |  | `stcd4` |  |  |
-| `TaxID5` |  | |  | `stcd5` |  |  |
-| `StreetAddressName` |  | |  | `stras` |  |  |
-| `TaxNumberType` |  | |  | `stcdt` |  |  |
-| `AddressID` |  | |  | `adrnr` |  |  |
-| `AccountingClerkInternetAddress` |  | |  | `intad` |  |  |
-| `IsNaturalPerson` |  | |  | `cast(bsec.stkzn as bu_natural_person)` |  |  |
-| `AuthorizationGroup` |  | |  | `begru` |  |  |
-| `PayeeIsAlternativePayee` |  | |  | `case bsec.xcpdk when 'X' then cast('' as farp_isalternativepayee) else cast ('X' as farp_isalternativepayee) end` |  |  |
-| `Supplier` |  | | `_OperationalAcctgDocItem` | `Supplier` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `AccountingDocument` | ✓ | |  | `belnr` | `CHAR(10)` | Document Number of an Accounting Document |
+| `FiscalYear` | ✓ | |  | `gjahr` | `NUMC(4)` | Fiscal Year |
+| `AccountingDocumentItem` | ✓ | |  | `buzei` | `NUMC(3)` | Number of Line Item Within Accounting Document |
+| `BusinessPartnerName1` |  | |  | `cast(bsec.name1 as ad_name1)` | `CHAR(40)` | Name 1 |
+| `BusinessPartnerName2` |  | |  | `cast(bsec.name2 as ad_name2)` | `CHAR(40)` | Name 2 |
+| `BusinessPartnerName3` |  | |  | `cast(bsec.name3 as ad_name3)` | `CHAR(40)` | Name 3 |
+| `BusinessPartnerName4` |  | |  | `cast(bsec.name4 as ad_name4)` | `CHAR(40)` | Name 4 |
+| `Country` |  | |  | `land1` | `CHAR(3)` | Country/Region Key |
+| `CityName` |  | |  | `cast(bsec.ort01 as ad_city1)` | `CHAR(40)` | City |
+| `POBox` |  | |  | `pfach` | `CHAR(10)` | PO Box |
+| `POBoxPostalCode` |  | |  | `pstl2` | `CHAR(10)` | PO Box Postal Code |
+| `PostalCode` |  | |  | `pstlz` | `CHAR(10)` | Postal Code |
+| `Region` |  | |  | `regio` | `CHAR(3)` | Region (State, Province, County) |
+| `TaxID1` |  | |  | `stcd1` | `CHAR(16)` | Tax Number 1 |
+| `TaxID2` |  | |  | `stcd2` | `CHAR(11)` | Tax Number 2 |
+| `TaxID3` |  | |  | `stcd3` | `CHAR(18)` | Tax Number 3 |
+| `TaxID4` |  | |  | `stcd4` | `CHAR(18)` | Tax Number 4 |
+| `TaxID5` |  | |  | `stcd5` | `CHAR(60)` | Tax Number 5 |
+| `StreetAddressName` |  | |  | `stras` | `CHAR(35)` | Street and House Number |
+| `TaxNumberType` |  | |  | `stcdt` | `CHAR(2)` | Tax Number Type |
+| `AddressID` |  | |  | `adrnr` | `CHAR(10)` | Address |
+| `AccountingClerkInternetAddress` |  | |  | `intad` | `CHAR(130)` | Internet address of partner company clerk |
+| `IsNaturalPerson` |  | |  | `cast(bsec.stkzn as bu_natural_person)` | `CHAR(1)` | Business Partner Is a Natural Person Under the Tax Laws |
+| `AuthorizationGroup` |  | |  | `begru` | `CHAR(4)` | Authorization Group |
+| `PayeeIsAlternativePayee` |  | |  | `case bsec.xcpdk when 'X' then cast('' as farp_isalternativepayee) else cast ('X' as farp_isalternativepayee) end` | `CHAR(1)` | Is Alternative Payee |
+| `Supplier` |  | | `_OperationalAcctgDocItem` | `Supplier` | `CHAR(10)` | Supplier |
 | `_CompanyCode` | | ✓ | | | | |
 | `_JournalEntry` | | ✓ | | | | |
 | `_FiscalYear` | | ✓ | | | | |

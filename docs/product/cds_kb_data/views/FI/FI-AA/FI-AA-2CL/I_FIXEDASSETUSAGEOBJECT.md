@@ -40,16 +40,16 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `comp_code` |  |  |
-| `FixedAssetUsageObject` | ✓ | |  | `usage_object` |  |  |
-| `FixedAssetUsageObjectDesc` |  | |  | `description` |  |  |
-| `BaseUnit` |  | |  | `base_uom` |  |  |
-| `FixedAssetUsageObjLfcycSts` |  | |  | `lifecycle_status` |  |  |
-| `CreationDateTime` |  | |  | `creation_datetime` |  |  |
-| `CreatedByUser` |  | |  | `creation_user` |  |  |
-| `LastChangeDateTime` |  | |  | `lastchange_datetime` |  |  |
-| `LastChangedByUser` |  | |  | `lastchange_user` |  |  |
-| `DraftLastChangedDateTime` |  | |  | `draft_lastchange_datetime` |  |  |
+| `CompanyCode` | ✓ | |  | `comp_code` | `CHAR(4)` | Company Code |
+| `FixedAssetUsageObject` | ✓ | |  | `usage_object` | `NUMC(12)` | Usage Object |
+| `FixedAssetUsageObjectDesc` |  | |  | `description` | `CHAR(50)` | Usage Object Description |
+| `BaseUnit` |  | |  | `base_uom` | `UNIT(3)` | Base Unit of Measure |
+| `FixedAssetUsageObjLfcycSts` |  | |  | `lifecycle_status` | `CHAR(1)` | Usage Object Lifecycle Status |
+| `CreationDateTime` |  | |  | `creation_datetime` | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
+| `CreatedByUser` |  | |  | `creation_user` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `LastChangeDateTime` |  | |  | `lastchange_datetime` | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
+| `LastChangedByUser` |  | |  | `lastchange_user` | `CHAR(12)` | Name of Person Who Changed Object |
+| `DraftLastChangedDateTime` |  | |  | `draft_lastchange_datetime` | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
 | `_UsageObjectPeriod` | | ✓ | | | | |
 | `_UsageObjectTotal` | | ✓ | | | | |
 | `_UsageObjectWhereUsd` | | ✓ | | | | |

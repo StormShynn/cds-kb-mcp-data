@@ -54,14 +54,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CmplRqVersUUID` | ✓ | |  |  |  |  |
-| `CmplRqVers` |  | |  |  |  |  |
-| `ComplianceRequirement` |  | |  |  |  |  |
-| `CmplRqVersName` |  | |  |  |  |  |
-| `CmplRqVersBuildDateTime` |  | |  | `CmplRqVersBuildDate` |  |  |
-| `EffectiveDate` |  | |  |  |  |  |
-| `CmplRqApplicationComponent` |  | |  |  |  |  |
-| `CmplRqDomain` |  | |  |  |  |  |
+| `CmplRqVersUUID` | ✓ | |  |  | `RAW(16)` | Compliance Requirement UUID |
+| `CmplRqVers` |  | |  |  | `CHAR(40)` | Compliance Requirement Version ID |
+| `ComplianceRequirement` |  | |  |  | `CHAR(30)` | Compliance Requirement |
+| `CmplRqVersName` |  | |  |  | `CHAR(255)` | Name of the Compliance Requirement Version |
+| `CmplRqVersBuildDateTime` |  | |  | `CmplRqVersBuildDate` | `DEC(15)` | Compliance Requirement Build Date |
+| `EffectiveDate` |  | |  |  | `DATS(8)` | Effective Date |
+| `CmplRqApplicationComponent` |  | |  |  | `CHAR(5)` | Request Initiator |
+| `CmplRqDomain` |  | |  |  | `CHAR(21)` |  |
 
 ## Associations
 

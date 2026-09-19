@@ -42,10 +42,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  |  |  |  |
-| `PaymentTerms` | ✓ | |  |  |  |  |
-| `PaymentTermsName` |  | | `_CustomerPaymentTermsText` | `CustomerPaymentTermsName` |  |  |
-| `PaymentTermsDescription` |  | |  | `cast( PaymentTermsDescription as farp_paytterms_desc preserving type )` |  |  |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `PaymentTerms` | ✓ | |  |  | `CHAR(4)` | Terms of Payment Key |
+| `PaymentTermsName` |  | | `_CustomerPaymentTermsText` | `CustomerPaymentTermsName` | `CHAR(30)` | Description of terms of payment |
+| `PaymentTermsDescription` |  | |  | `cast( PaymentTermsDescription as farp_paytterms_desc preserving type )` | `CHAR(1024)` | Payment Terms Description |
 | `_Language` | | ✓ | | | | |
 | `_PaymentTerms` | | ✓ | | | | |
 | `_CustomerPaymentTermsText` | | ✓ | | | | |

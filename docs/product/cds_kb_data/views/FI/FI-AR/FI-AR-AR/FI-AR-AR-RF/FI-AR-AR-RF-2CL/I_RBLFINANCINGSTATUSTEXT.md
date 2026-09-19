@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ReceivableFinancingStatus` | ✓ | |  | `cast( left(dd07t.domvalue_l, 1) as frp_rcvbl_financing_status )` |  |  |
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
-| `ReceivableFinancingStatusText` |  | |  | `cast( ddtext as frp_rcvbl_financing_status_txt preserving type )` |  |  |
+| `ReceivableFinancingStatus` | ✓ | |  | `cast( left(dd07t.domvalue_l, 1) as frp_rcvbl_financing_status )` | `CHAR(1)` | Current Status of Receivable |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `ReceivableFinancingStatusText` |  | |  | `cast( ddtext as frp_rcvbl_financing_status_txt preserving type )` | `CHAR(60)` | Receivable Item Financing Status Text |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

@@ -39,19 +39,19 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ChmlCmplncIdfrUUID` | ✓ | |  | `chmlcmplncidfruuid` |  |  |
-| `CreationUTCDateTime` |  | |  | `creationutcdatetime` |  |  |
-| `CreatedByUser` |  | |  | `createdbyuser` |  |  |
-| `LastChangeUTCDateTime` |  | |  | `lastchangeutcdatetime` |  |  |
-| `LastChangedByUser` |  | |  | `lastchangedbyuser` |  |  |
-| `ChmlCmplncIdfrParentID` |  | |  | `cast( chmlcmplncidfrparentid as ehfnd_internal_nr_nc preserving type )` |  |  |
-| `ChmlCmplncIdfrParentUUID` |  | |  | `chmlcmplncidfrparentuuid` |  |  |
-| `ChmlCmplncIdfrParentType` |  | |  | `chmlcmplncidfrparenttype` |  |  |
-| `ChmlCmplncIdfrProcgStatus` |  | |  | `chmlcmplncidfrprocgstatus` |  |  |
-| `ChmlCmplncIdfrProcessor` |  | |  | `chmlcmplncidfrprocessor` |  |  |
-| `ChmlCmplncIdfrReldByUser` |  | |  | `chmlcmplncidfrreldbyuser` |  |  |
-| `ValidityStartDateTime` |  | |  | `validitystartdatetime` |  |  |
-| `ValidityEndDateTime` |  | |  | `validityenddatetime` |  |  |
+| `ChmlCmplncIdfrUUID` | ✓ | |  | `chmlcmplncidfruuid` | `RAW(16)` | Primary Key of an Identifier |
+| `CreationUTCDateTime` |  | |  | `creationutcdatetime` | `DEC(21)` | Creation Date Time |
+| `CreatedByUser` |  | |  | `createdbyuser` | `CHAR(12)` | Created By User |
+| `LastChangeUTCDateTime` |  | |  | `lastchangeutcdatetime` | `DEC(21)` | Last Change Date Time |
+| `LastChangedByUser` |  | |  | `lastchangedbyuser` | `CHAR(12)` | Last Changed By User |
+| `ChmlCmplncIdfrParentID` |  | |  | `cast( chmlcmplncidfrparentid as ehfnd_internal_nr_nc preserving type )` | `CHAR(12)` | Internal Number |
+| `ChmlCmplncIdfrParentUUID` |  | |  | `chmlcmplncidfrparentuuid` | `RAW(16)` | UUID of the Parent Object |
+| `ChmlCmplncIdfrParentType` |  | |  | `chmlcmplncidfrparenttype` | `CHAR(3)` | Identifier Parent Type |
+| `ChmlCmplncIdfrProcgStatus` |  | |  | `chmlcmplncidfrprocgstatus` | `CHAR(2)` | Identifier Processing Status |
+| `ChmlCmplncIdfrProcessor` |  | |  | `chmlcmplncidfrprocessor` | `CHAR(10)` | Identifier Processor |
+| `ChmlCmplncIdfrReldByUser` |  | |  | `chmlcmplncidfrreldbyuser` | `CHAR(10)` | Identifier Released By |
+| `ValidityStartDateTime` |  | |  | `validitystartdatetime` | `DEC(15)` | Valid-From Date Time Stamp |
+| `ValidityEndDateTime` |  | |  | `validityenddatetime` | `DEC(15)` | Valid-To Date Time Stamp |
 | `_CreatedByUser` | | ✓ | | | | |
 | `_LastChangedByUser` | | ✓ | | | | |
 | `_ChmlCmplncInfo` | | ✓ | | | | |

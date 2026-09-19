@@ -42,10 +42,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `Country` | ✓ | |  | `land1` |  |  |
-| `WithholdingTaxIncomeType` | ✓ | |  | `qekar` |  |  |
-| `WithholdingTaxIncomeTypeName` |  | |  | `eatxt` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `Country` | ✓ | |  | `land1` | `CHAR(3)` | Country/Region Key |
+| `WithholdingTaxIncomeType` | ✓ | |  | `qekar` | `CHAR(4)` | Income Type |
+| `WithholdingTaxIncomeTypeName` |  | |  | `eatxt` | `CHAR(40)` | Text, Length 40 |
 | `_Language` | | ✓ | | | | |
 | `_Country` | | ✓ | | | | |
 | `_IncomeType` | | ✓ | | | | |
