@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CATransactionKeyAccountDetn` | ✓ | |  | `cast( left( dd07l.domvalue_l,3 ) as ktosl_kk preserving type )` |  |  |
+| `CATransactionKeyAccountDetn` | ✓ | |  | `cast( left( dd07l.domvalue_l,3 ) as ktosl_kk preserving type )` | `CHAR(3)` | Transaction Key for Account Determination |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

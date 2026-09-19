@@ -51,7 +51,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAAccountAssignmentCategory` | ✓ | |  | `kontt` |  |  |
+| `CAAccountAssignmentCategory` | ✓ | |  | `kontt` | `CHAR(2)` | Account Assignment Category |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

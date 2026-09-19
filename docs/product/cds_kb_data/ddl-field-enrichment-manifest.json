@@ -22033,5 +22033,240 @@
     "attemptedAt": "2026-09-18T12:45:49.727Z",
     "found": true,
     "matched": 6
+  },
+  "I_WITHHOLDINGTAXCODEVH": {
+    "attemptedAt": "2026-09-19T12:18:32.161Z",
+    "found": true,
+    "matched": 12
+  },
+  "I_WITHHOLDINGTAXINCOMETYPE": {
+    "attemptedAt": "2026-09-19T12:18:32.819Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_WITHHOLDINGTAXINCOMETYPETEXT": {
+    "attemptedAt": "2026-09-19T12:18:33.441Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_WITHHOLDINGTAXITEM": {
+    "attemptedAt": "2026-09-19T12:18:34.014Z",
+    "found": true,
+    "matched": 48
+  },
+  "I_PAYMENTMETHOD": {
+    "attemptedAt": "2026-09-19T12:18:34.601Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_PAYMENTMETHODTEXT": {
+    "attemptedAt": "2026-09-19T12:18:35.167Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_DUNNINGAREA": {
+    "attemptedAt": "2026-09-19T12:18:35.697Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_DUNNINGAREASTDVH": {
+    "attemptedAt": "2026-09-19T12:18:36.278Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_DUNNINGAREATEXT": {
+    "attemptedAt": "2026-09-19T12:18:36.816Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_DUNNINGBLOCKINGREASONCODE": {
+    "attemptedAt": "2026-09-19T12:18:37.343Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_DUNNINGBLOCKINGREASONTEXT": {
+    "attemptedAt": "2026-09-19T12:18:37.877Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DUNNINGKEY": {
+    "attemptedAt": "2026-09-19T12:18:38.480Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_DUNNINGKEYTEXT": {
+    "attemptedAt": "2026-09-19T12:18:39.084Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_RBLFINANCINGSTATUSTEXT": {
+    "attemptedAt": "2026-09-19T12:18:39.672Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_RECEIVABLEFINANCINGSTATUS": {
+    "attemptedAt": "2026-09-19T12:18:40.203Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_RECEIVABLEFINANCINGSTATUSVH": {
+    "attemptedAt": "2026-09-19T12:18:40.766Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_APARTOLERANCEGROUP": {
+    "attemptedAt": "2026-09-19T12:18:41.336Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_APARTOLERANCEGROUPTEXT": {
+    "attemptedAt": "2026-09-19T12:18:41.920Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_JOURNALENTRYITEMONETIMEDATA": {
+    "attemptedAt": "2026-09-19T12:18:42.483Z",
+    "found": true,
+    "matched": 41
+  },
+  "I_ONETIMEACCOUNTCUSTOMER": {
+    "attemptedAt": "2026-09-19T12:18:43.043Z",
+    "found": true,
+    "matched": 27
+  },
+  "I_ONETIMEACCOUNTSUPPLIER": {
+    "attemptedAt": "2026-09-19T12:18:43.575Z",
+    "found": true,
+    "matched": 27
+  },
+  "I_PAYMENTBLOCKINGREASON": {
+    "attemptedAt": "2026-09-19T12:18:44.123Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PAYMENTBLOCKINGREASONTEXT": {
+    "attemptedAt": "2026-09-19T12:18:44.682Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PAYMENTDIFFERENCEREASON": {
+    "attemptedAt": "2026-09-19T12:18:45.280Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PAYMENTDIFFERENCEREASONT": {
+    "attemptedAt": "2026-09-19T12:18:45.848Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_PAYMENTTERMS": {
+    "attemptedAt": "2026-09-19T12:18:46.419Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_PAYMENTTERMSCONDITIONS": {
+    "attemptedAt": "2026-09-19T12:18:46.980Z",
+    "found": true,
+    "matched": 27
+  },
+  "I_PAYMENTTERMSCONDITIONSTEXT": {
+    "attemptedAt": "2026-09-19T12:18:47.559Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PAYMENTTERMSINSTALLMENTITEM": {
+    "attemptedAt": "2026-09-19T12:18:48.131Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PAYMENTTERMSTEXT": {
+    "attemptedAt": "2026-09-19T12:18:48.695Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_STATECENTRALBANKPAYTRSN": {
+    "attemptedAt": "2026-09-19T12:18:49.254Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_USERTOLERANCEGROUP": {
+    "attemptedAt": "2026-09-19T12:18:49.784Z",
+    "found": true,
+    "matched": 12
+  },
+  "I_USERTOUSERTOLERANCEGROUP": {
+    "attemptedAt": "2026-09-19T12:18:50.346Z",
+    "found": true,
+    "matched": 2
+  },
+  "D_CONTRACCTGDOCUMENTCANCELED": {
+    "attemptedAt": "2026-09-19T12:18:50.550Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACCTGDOCUMENTCANCELED\" (404)"
+  },
+  "D_CONTRACCTGDOCUMENTCHANGED": {
+    "attemptedAt": "2026-09-19T12:18:50.997Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACCTGDOCUMENTCHANGED\" (404)"
+  },
+  "D_CONTRACCTGDOCUMENTCREATED": {
+    "attemptedAt": "2026-09-19T12:18:51.449Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACCTGDOCUMENTCREATED\" (404)"
+  },
+  "D_CONTRACTACCOUNTCHANGED": {
+    "attemptedAt": "2026-09-19T12:18:51.904Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACTACCOUNTCHANGED\" (404)"
+  },
+  "D_CONTRACTACCOUNTCREATED": {
+    "attemptedAt": "2026-09-19T12:18:52.359Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACTACCOUNTCREATED\" (404)"
+  },
+  "I_CAACCOUNTASSIGNMENTCATEGORY": {
+    "attemptedAt": "2026-09-19T12:18:53.166Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAACCOUNTASSIGNMENTCATEGORYT": {
+    "attemptedAt": "2026-09-19T12:18:53.761Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAACCOUNTDETNCODE": {
+    "attemptedAt": "2026-09-19T12:18:54.335Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAACCOUNTDETNCODETEXT": {
+    "attemptedAt": "2026-09-19T12:18:54.869Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAACCTASSGMTDISTRCODE": {
+    "attemptedAt": "2026-09-19T12:18:55.433Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAACCTASSGMTDISTRCODETEXT": {
+    "attemptedAt": "2026-09-19T12:18:56.025Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAACCTDETNTRANSKEY": {
+    "attemptedAt": "2026-09-19T12:18:56.651Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAACCTDETNTRANSKEYTEXT": {
+    "attemptedAt": "2026-09-19T12:18:57.211Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAADJUSTMENTREQUESTREASON": {
+    "attemptedAt": "2026-09-19T12:18:57.766Z",
+    "found": true,
+    "matched": 1
   }
 }

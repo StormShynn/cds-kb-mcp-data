@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACtrlFieldForAcctAssgmtDistr` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as aasta_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CACtrlFldForAcctAssgmtDistrTxt` |  | |  | `cast( ddtext as aasta_text_kk preserving type )` |  |  |
+| `CACtrlFieldForAcctAssgmtDistr` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as aasta_kk preserving type )` | `CHAR(1)` | Control Field for Account Assignment Distributions |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CACtrlFldForAcctAssgmtDistrTxt` |  | |  | `cast( ddtext as aasta_text_kk preserving type )` | `CHAR(60)` | Description f. Control Field f. Acct Assignment Distribution |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

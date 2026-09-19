@@ -41,7 +41,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ReceivableFinancingStatus` | ✓ | |  |  |  |  |
+| `ReceivableFinancingStatus` | ✓ | |  |  | `CHAR(1)` | Current Status of Receivable |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

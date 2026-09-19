@@ -40,11 +40,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `cast (bukrs as fis_bukrs)` |  |  |
-| `PaymentDifferenceReason` | ✓ | |  | `cast (rstgr as farp_rstgr)` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `PaymentDifferenceReasonName` |  | |  | `txt20` |  |  |
-| `PaymentDifferenceReasonDesc` |  | |  | `txt40` |  |  |
+| `CompanyCode` | ✓ | |  | `cast (bukrs as fis_bukrs)` | `CHAR(4)` | Company Code |
+| `PaymentDifferenceReason` | ✓ | |  | `cast (rstgr as farp_rstgr)` | `CHAR(3)` | Reason Code for Payment Differences |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `PaymentDifferenceReasonName` |  | |  | `txt20` | `CHAR(20)` | Reason Code Short Text |
+| `PaymentDifferenceReasonDesc` |  | |  | `txt40` | `CHAR(40)` | Reason Code Long Text |
 | `_Language` | | ✓ | | | | |
 | `_CompanyCode` | | ✓ | | | | |
 

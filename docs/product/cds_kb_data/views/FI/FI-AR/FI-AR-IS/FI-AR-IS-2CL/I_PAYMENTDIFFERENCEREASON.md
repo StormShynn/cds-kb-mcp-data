@@ -40,10 +40,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `cast (bukrs as fis_bukrs)` |  |  |
-| `PaymentDifferenceReason` | ✓ | |  | `cast (rstgr as farp_rstgr)` |  |  |
-| `IsDisputed` |  | |  | `xstrp` |  |  |
-| `PaytDiffIsChargedToSprtGLAcct` |  | |  | `xausb` |  |  |
+| `CompanyCode` | ✓ | |  | `cast (bukrs as fis_bukrs)` | `CHAR(4)` | Company Code |
+| `PaymentDifferenceReason` | ✓ | |  | `cast (rstgr as farp_rstgr)` | `CHAR(3)` | Reason Code for Payment Differences |
+| `IsDisputed` |  | |  | `xstrp` | `CHAR(1)` | Indicator: Disputed Item? |
+| `PaytDiffIsChargedToSprtGLAcct` |  | |  | `xausb` | `CHAR(1)` | Indicator: Write Off Difference via Separate Account |
 | `_Text` | | ✓ | | | | |
 | `_CompanyCode` | | ✓ | | | | |
 

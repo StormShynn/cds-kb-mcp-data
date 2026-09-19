@@ -53,10 +53,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `cast( bukrs as fis_bukrs )` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `APARToleranceGroup` | ✓ | |  | `cast( togru as farp_togru )` |  |  |
-| `APARToleranceGroupName` |  | |  | `txt30` |  |  |
+| `CompanyCode` | ✓ | |  | `cast( bukrs as fis_bukrs )` | `CHAR(4)` | Company Code |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `APARToleranceGroup` | ✓ | |  | `cast( togru as farp_togru )` | `CHAR(4)` | Tolerance Group for the Business Partner/G/L Account |
+| `APARToleranceGroupName` |  | |  | `txt30` | `CHAR(30)` | Name of Tolerance Group |
 | `_CompanyCode` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

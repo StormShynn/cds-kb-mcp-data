@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAAdjustmentRequestReason` | ✓ | |  | `argrd` |  |  |
+| `CAAdjustmentRequestReason` | ✓ | |  | `argrd` | `CHAR(2)` | Adjustment Request Reason |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

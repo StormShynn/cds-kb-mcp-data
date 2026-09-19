@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `cast(bukrs as fis_bukrs preserving type)` |  |  |
-| `DunningArea` | ✓ | |  | `cast(maber as farp_maber preserving type)` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `DunningAreaName` |  | |  | `cast(text1 as farp_text1_047n preserving type)` |  |  |
+| `CompanyCode` | ✓ | |  | `cast(bukrs as fis_bukrs preserving type)` | `CHAR(4)` | Company Code |
+| `DunningArea` | ✓ | |  | `cast(maber as farp_maber preserving type)` | `CHAR(2)` | Dunning Area |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `DunningAreaName` |  | |  | `cast(text1 as farp_text1_047n preserving type)` | `CHAR(50)` | Dunning Area Description |
 | `_CompanyCode` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

@@ -40,7 +40,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ReceivableFinancingStatus` | ✓ | |  | `cast( left(dd07l.domvalue_l, 1) as frp_rcvbl_financing_status preserving type)` |  |  |
+| `ReceivableFinancingStatus` | ✓ | |  | `cast( left(dd07l.domvalue_l, 1) as frp_rcvbl_financing_status preserving type)` | `CHAR(1)` | Current Status of Receivable |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

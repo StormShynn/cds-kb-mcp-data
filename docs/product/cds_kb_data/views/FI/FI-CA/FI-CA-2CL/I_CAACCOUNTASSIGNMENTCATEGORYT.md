@@ -51,9 +51,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAAccountAssignmentCategory` | ✓ | |  | `kontt` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAAccountAssignmentCatName` |  | |  | `txt30` |  |  |
+| `CAAccountAssignmentCategory` | ✓ | |  | `kontt` | `CHAR(2)` | Account Assignment Category |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAAccountAssignmentCatName` |  | |  | `txt30` | `CHAR(30)` | Text |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

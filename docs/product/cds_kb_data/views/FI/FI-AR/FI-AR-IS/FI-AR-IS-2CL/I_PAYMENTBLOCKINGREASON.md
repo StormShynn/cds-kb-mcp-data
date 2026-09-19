@@ -40,7 +40,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PaymentBlockingReason` | ✓ | |  | `cast (zahls as farp_dzlspr)` |  |  |
+| `PaymentBlockingReason` | ✓ | |  | `cast (zahls as farp_dzlspr)` | `CHAR(1)` | Payment Block on Item |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

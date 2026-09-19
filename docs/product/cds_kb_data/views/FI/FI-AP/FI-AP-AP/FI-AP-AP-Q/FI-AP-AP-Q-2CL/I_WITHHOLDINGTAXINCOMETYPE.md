@@ -40,8 +40,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Country` | ✓ | |  | `land1` |  |  |
-| `WithholdingTaxIncomeType` | ✓ | |  | `qekar` |  |  |
+| `Country` | ✓ | |  | `land1` | `CHAR(3)` | Country/Region Key |
+| `WithholdingTaxIncomeType` | ✓ | |  | `qekar` | `CHAR(4)` | Income Type |
 | `_Country` | | ✓ | | | | |
 | `_IncomeTypeText` | | ✓ | | | | |
 

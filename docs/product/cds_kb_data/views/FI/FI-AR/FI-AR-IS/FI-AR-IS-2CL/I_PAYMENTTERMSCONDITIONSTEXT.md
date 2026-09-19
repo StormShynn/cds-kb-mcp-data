@@ -43,10 +43,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PaymentTerms` | ✓ | |  | `cast( zterm as farp_dzterm preserving type )` |  |  |
-| `PaymentTermsValidityMonthDay` | ✓ | |  | `ztagg` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `PaymentTermsConditionDesc` |  | |  | `cast( text1 as fis_payment_terms_cndns_desc preserving type )` |  |  |
+| `PaymentTerms` | ✓ | |  | `cast( zterm as farp_dzterm preserving type )` | `CHAR(4)` | Terms of Payment Key |
+| `PaymentTermsValidityMonthDay` | ✓ | |  | `ztagg` | `NUMC(2)` | Day Limit |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `PaymentTermsConditionDesc` |  | |  | `cast( text1 as fis_payment_terms_cndns_desc preserving type )` | `CHAR(50)` | Own Explanation of Payment Terms Condition |
 | `_Language` | | ✓ | | | | |
 | `_PaymentTerms` | | ✓ | | | | |
 | `_PaymentTermsConditions` | | ✓ | | | | |

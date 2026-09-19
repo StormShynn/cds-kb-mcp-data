@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DunningKey` | ✓ | |  | `cast( mschl as farp_mschl )` |  |  |
-| `MaximumDunningLevel` |  | |  | `cast(maxst as maxst)` |  |  |
+| `DunningKey` | ✓ | |  | `cast( mschl as farp_mschl )` | `CHAR(1)` | Dunning Key |
+| `MaximumDunningLevel` |  | |  | `cast(maxst as maxst)` | `NUMC(1)` | Highest Dunning Level of a Dunning Type |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

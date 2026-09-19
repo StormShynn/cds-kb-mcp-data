@@ -41,18 +41,18 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Country` | ✓ | |  |  |  |  |
-| `WithholdingTaxType` | ✓ | |  |  |  |  |
-| `WithholdingTaxCode` | ✓ | |  |  |  |  |
-| `OfficialWhldgTaxCode` |  | |  |  |  |  |
-| `WhldgTaxRelevantPercent` |  | |  |  |  |  |
-| `WithholdingTaxPercent` |  | |  |  |  |  |
-| `WhldgTaxCalcFormulaIsUsed` |  | |  |  |  |  |
-| `Region` |  | |  |  |  |  |
-| `ProvincialTaxCode` |  | |  |  |  |  |
-| `WithholdingTaxIncomeType` |  | |  |  |  |  |
-| `WithholdingTaxPostingRule` |  | |  |  |  |  |
-| `WhldgTaxReferenceText` |  | |  |  |  |  |
+| `Country` | ✓ | |  |  | `CHAR(3)` | Country/Region Key |
+| `WithholdingTaxType` | ✓ | |  |  | `CHAR(2)` | Indicator for Withholding Tax Type |
+| `WithholdingTaxCode` | ✓ | |  |  | `CHAR(2)` | Withholding Tax Code |
+| `OfficialWhldgTaxCode` |  | |  |  | `CHAR(4)` | Official Withholding Tax Key |
+| `WhldgTaxRelevantPercent` |  | |  |  | `DEC(5)` | Percentage Subject to Withholding Tax |
+| `WithholdingTaxPercent` |  | |  |  | `DEC(7)` | Withholding Tax Rate |
+| `WhldgTaxCalcFormulaIsUsed` |  | |  |  | `CHAR(1)` | Indicator: Calculate Withholding Tax According to Formula? |
+| `Region` |  | |  |  | `CHAR(3)` | Region (State, Province, County) |
+| `ProvincialTaxCode` |  | |  |  | `CHAR(3)` | Provincial Tax Code |
+| `WithholdingTaxIncomeType` |  | |  |  | `CHAR(4)` | Income Type |
+| `WithholdingTaxPostingRule` |  | |  |  | `CHAR(1)` | Posting Indicator |
+| `WhldgTaxReferenceText` |  | |  |  | `CHAR(16)` | Withholding Tax Key |
 | `_Country` | | ✓ | | | | |
 | `_TaxCodeText` | | ✓ | | | | |
 | `_RegionText` | | ✓ | | | | |

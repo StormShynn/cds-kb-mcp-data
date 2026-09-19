@@ -42,10 +42,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Country` | ✓ | |  |  |  |  |
-| `PaymentMethod` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `PaymentMethodDescription` |  | |  |  |  |  |
+| `Country` | ✓ | |  |  | `CHAR(3)` | Country/Region Key |
+| `PaymentMethod` | ✓ | |  |  | `CHAR(1)` | Payment Method |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `PaymentMethodDescription` |  | |  |  | `CHAR(30)` | Description of Payment Method in Logon Language |
 | `_Country` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `cast(bukrs as fis_bukrs preserving type)` |  |  |
-| `DunningArea` | ✓ | |  | `cast(maber as farp_maber preserving type)` |  |  |
+| `CompanyCode` | ✓ | |  | `cast(bukrs as fis_bukrs preserving type)` | `CHAR(4)` | Company Code |
+| `DunningArea` | ✓ | |  | `cast(maber as farp_maber preserving type)` | `CHAR(2)` | Dunning Area |
 | `_CompanyCode` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |
 

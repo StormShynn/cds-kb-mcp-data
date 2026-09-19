@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `DunningBlockingReason` | ✓ | |  | `cast( mansp as farp_mansp preserving type )` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `DunningBlockingReasonDesc` |  | |  | `cast( text1 as farp_text1_040t preserving type )` |  |  |
+| `DunningBlockingReason` | ✓ | |  | `cast( mansp as farp_mansp preserving type )` | `CHAR(1)` | Dunning Block |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `DunningBlockingReasonDesc` |  | |  | `cast( text1 as farp_text1_040t preserving type )` | `CHAR(50)` | Reason for dunning block |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

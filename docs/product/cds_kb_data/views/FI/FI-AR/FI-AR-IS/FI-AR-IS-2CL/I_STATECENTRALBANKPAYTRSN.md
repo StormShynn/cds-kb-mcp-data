@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `StateCentralBankPaymentReason` | ✓ | |  | `cast( lzbkz as fac_lzbkz )` |  |  |
-| `StateCentralBankDocumentType` |  | |  | `blart` |  |  |
-| `StateCentralBankServiceSpec` |  | |  | `lvawv` |  |  |
-| `StateCentralBankPaytRsnDesc` |  | |  | `cast( concat( zwck1, zwck2 ) as farp_scbpaytrsndesc )` |  |  |
+| `StateCentralBankPaymentReason` | ✓ | |  | `cast( lzbkz as fac_lzbkz )` | `CHAR(3)` | State Central Bank Payment Reason |
+| `StateCentralBankDocumentType` |  | |  | `blart` | `NUMC(1)` | Document type for the report record |
+| `StateCentralBankServiceSpec` |  | |  | `lvawv` | `NUMC(3)` | Indicator According to Service Specifications |
+| `StateCentralBankPaytRsnDesc` |  | |  | `cast( concat( zwck1, zwck2 ) as farp_scbpaytrsndesc )` | `CHAR(150)` | State Central Bank Payment Reason Description |
 
 ## Source Code
 
