@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `TransportCheckRule` | ✓ | |  | `cast( left( dd07t.domvalue_l, 2) as ehdgm_transport_check_rule preserving type )` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `TransportCheckRuleName` |  | |  | `ddtext` |  |  |
+| `TransportCheckRule` | ✓ | |  | `cast( left( dd07t.domvalue_l, 2) as ehdgm_transport_check_rule preserving type )` | `CHAR(2)` | Transport Check Rule |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `TransportCheckRuleName` |  | |  | `ddtext` | `CHAR(60)` | Short Text for Fixed Values |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

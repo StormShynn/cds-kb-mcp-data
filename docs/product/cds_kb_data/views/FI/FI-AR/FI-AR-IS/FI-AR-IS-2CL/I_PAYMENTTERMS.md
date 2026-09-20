@@ -40,8 +40,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PaymentTerms` | ✓ | |  | `cast( _PaymentTerms.zterm as farp_dzterm preserving type )` |  |  |
-| `PaymentIsInstallment` |  | | `_PaymentTermsInstallCondition` | `PaymentIsInstallment` |  |  |
+| `PaymentTerms` | ✓ | |  | `cast( _PaymentTerms.zterm as farp_dzterm preserving type )` | `CHAR(4)` | Terms of Payment Key |
+| `PaymentIsInstallment` |  | | `_PaymentTermsInstallCondition` | `PaymentIsInstallment` | `CHAR(1)` | Indicator: Term for Installment Payment |
 | `_PaymentTermsConditions` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |
 | `_InstallmentPaymentTermsItem` | | ✓ | | | | |

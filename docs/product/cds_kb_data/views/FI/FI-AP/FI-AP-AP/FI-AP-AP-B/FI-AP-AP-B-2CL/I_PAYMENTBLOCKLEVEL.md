@@ -40,8 +40,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PaymentBlockLevel` | ✓ | |  | `cast( dd07l.domvalue_l as farp_splev )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `PaymentBlockLevel` | ✓ | |  | `cast( dd07l.domvalue_l as farp_splev )` | `CHAR(1)` | Level on Which a Payment Block has Taken Place |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

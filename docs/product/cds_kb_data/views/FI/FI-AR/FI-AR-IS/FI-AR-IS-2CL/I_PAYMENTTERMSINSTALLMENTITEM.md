@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PaymentTerms` | ✓ | |  | `zterm` |  |  |
-| `PaymentTermsInstallmentItem` | ✓ | |  | `cast ( ratnr as farp_ratnr preserving type )` |  |  |
-| `InstallmentItemPercent` |  | |  | `ratpz` |  |  |
-| `InstallmentItemPaymentTerms` |  | |  | `cast ( ratzt as farp_ratzt preserving type )` |  |  |
+| `PaymentTerms` | ✓ | |  | `zterm` | `CHAR(4)` | Key for Terms of Payment |
+| `PaymentTermsInstallmentItem` | ✓ | |  | `cast ( ratnr as farp_ratnr preserving type )` | `NUMC(2)` | Sequential Number of Installment to Be Paid |
+| `InstallmentItemPercent` |  | |  | `ratpz` | `DEC(5)` | Percentage Rate of the Holdback/Retainage |
+| `InstallmentItemPaymentTerms` |  | |  | `cast ( ratzt as farp_ratzt preserving type )` | `CHAR(4)` | Terms of Payment for the Holdback/Retainage |
 | `_PaymentTerms` | | ✓ | | | | |
 | `_InstallmentItemPaymentTerms` | | ✓ | | | | |
 

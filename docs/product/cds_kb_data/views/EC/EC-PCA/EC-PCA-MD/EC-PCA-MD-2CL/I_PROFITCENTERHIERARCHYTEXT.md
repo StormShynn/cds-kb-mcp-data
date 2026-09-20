@@ -43,12 +43,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  | `hrycls` |  |  |
-| `ProfitCenterHierarchy` | ✓ | |  | `cast(hrrp_dirt_n.hryid as fis_hryid_prctr preserving type )` |  |  |
-| `ValidityEndDate` | ✓ | |  | `hryvalto` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `ValidityStartDate` |  | |  | `hryvalfrom` |  |  |
-| `ProfitCenterHierarchyName` |  | |  | `hrytxt` |  |  |
+| `ControllingArea` | ✓ | |  | `hrycls` | `CHAR(12)` | Hierarchy Class |
+| `ProfitCenterHierarchy` | ✓ | |  | `cast(hrrp_dirt_n.hryid as fis_hryid_prctr preserving type )` | `CHAR(40)` | Profit Center Hierarchy |
+| `ValidityEndDate` | ✓ | |  | `hryvalto` | `DATS(8)` | Valid To Date |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `ValidityStartDate` |  | |  | `hryvalfrom` | `DATS(8)` | Valid-From Date |
+| `ProfitCenterHierarchyName` |  | |  | `hrytxt` | `CHAR(50)` | Hierarchy description |
 | `_ControllingAreaText` | | ✓ | | | | |
 | `_ControllingArea` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |

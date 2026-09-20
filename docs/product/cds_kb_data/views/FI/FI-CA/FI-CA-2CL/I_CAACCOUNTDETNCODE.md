@@ -49,7 +49,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAAccountDeterminationCode` | ✓ | |  | `cast( kofiz as kofiz_kk preserving type )` |  |  |
+| `CAAccountDeterminationCode` | ✓ | |  | `cast( kofiz as kofiz_kk preserving type )` | `CHAR(2)` | Account Determination ID |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -40,16 +40,16 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Country` | ✓ | |  | `land1` |  |  |
-| `PaymentMethod` | ✓ | |  | `cast( t042z.zlsch as farp_schzw_bseg )` |  |  |
-| `PaymentMethodName` |  | |  | `cast( case when t042zt.text2 is null or t042zt.text2 = '' then t042z.text1 else t042zt.text2 end as farp_schzw_text)` |  |  |
-| `PaymentMethodIsUsedForCheck` |  | |  | `xschk` |  |  |
-| `PaytMethIsUsdForBillOfExchange` |  | |  | `xwech` |  |  |
-| `PaytMethIsUsdForChkBillOfExch` |  | |  | `xswec` |  |  |
-| `IsPaytMethForIncomingPayments` |  | |  | `xeinz` |  |  |
-| `PaytMethIsUsdForBOEPaytReq` |  | |  | `xwanf` |  |  |
-| `PaytMethIsUsdForPaymentRequest` |  | |  | `xzanf` |  |  |
-| `BankCollectionAuthznIsRequired` |  | |  | `xezer` |  |  |
+| `Country` | ✓ | |  | `land1` | `CHAR(3)` | Country/Region Key |
+| `PaymentMethod` | ✓ | |  | `cast( t042z.zlsch as farp_schzw_bseg )` | `CHAR(1)` | Payment Method |
+| `PaymentMethodName` |  | |  | `cast( case when t042zt.text2 is null or t042zt.text2 = '' then t042z.text1 else t042zt.text2 end as farp_schzw_text)` | `CHAR(30)` | Payment Method Name |
+| `PaymentMethodIsUsedForCheck` |  | |  | `xschk` | `CHAR(1)` | Indicator: Is a Check Created Using This Payment Method? |
+| `PaytMethIsUsdForBillOfExchange` |  | |  | `xwech` | `CHAR(1)` | Indicator: Create a bill of Exchange Posting? |
+| `PaytMethIsUsdForChkBillOfExch` |  | |  | `xswec` | `CHAR(1)` | Indicator: Payment Method for Check/Bill of Exchange? |
+| `IsPaytMethForIncomingPayments` |  | |  | `xeinz` | `CHAR(1)` | Indicator: Payment Method Used for Incoming Payments |
+| `PaytMethIsUsdForBOEPaytReq` |  | |  | `xwanf` | `CHAR(1)` | Indicator: Create a Bill of Exchange Pmnt Request? |
+| `PaytMethIsUsdForPaymentRequest` |  | |  | `xzanf` | `CHAR(1)` | Indicator: Payment Request |
+| `BankCollectionAuthznIsRequired` |  | |  | `xezer` | `CHAR(1)` | Indicator: Must Collection Authorization Be Provided? |
 | `_Country` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |
 

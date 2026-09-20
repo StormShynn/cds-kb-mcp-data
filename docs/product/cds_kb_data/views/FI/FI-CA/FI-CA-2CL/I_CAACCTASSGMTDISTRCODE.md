@@ -51,7 +51,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACtrlFieldForAcctAssgmtDistr` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as aasta_kk preserving type )` |  |  |
+| `CACtrlFieldForAcctAssgmtDistr` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as aasta_kk preserving type )` | `CHAR(1)` | Control Field for Account Assignment Distributions |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -50,16 +50,16 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `APARToleranceGroup` | ✓ | |  | `cast( tg.togru as farp_togru )` |  |  |
-| `GraceDays` |  | |  | `toler` |  |  |
-| `FixedCashDiscount` |  | |  | `cast( tg.sktre as farp_dzbfix )` |  |  |
-| `ArrearsDaysBaseDateDetn` |  | |  | `vrzde` |  |  |
-| `MaxPaytDiffExpnAmountInCCCrcy` |  | |  | `cast( tg.betrh as farp_betrh_043t )` |  |  |
-| `MaxPaytDiffRevnAmountInCCCrcy` |  | |  | `cast( tg.betrs as farp_betrs_043t )` |  |  |
-| `MaxPaymentDiffExpensePercent` |  | |  | `cast( tg.prozh as farp_prozh_043t )` |  |  |
-| `MaxPaymentDiffRevenuePercent` |  | |  | `cast( tg.prozs as farp_prozs_043t )` |  |  |
-| `CompanyCodeCurrency` |  | | `_t001` | `waers` |  |  |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `APARToleranceGroup` | ✓ | |  | `cast( tg.togru as farp_togru )` | `CHAR(4)` | Tolerance Group for the Business Partner/G/L Account |
+| `GraceDays` |  | |  | `toler` | `NUMC(2)` | Grace Days |
+| `FixedCashDiscount` |  | |  | `cast( tg.sktre as farp_dzbfix )` | `CHAR(1)` | Fixed Payment Terms |
+| `ArrearsDaysBaseDateDetn` |  | |  | `vrzde` | `CHAR(1)` | Base Date for Determining Arrears Days for OI Processing |
+| `MaxPaytDiffExpnAmountInCCCrcy` |  | |  | `cast( tg.betrh as farp_betrh_043t )` | `CURR(7)` | Maximum Expense Amount from Payment Differences |
+| `MaxPaytDiffRevnAmountInCCCrcy` |  | |  | `cast( tg.betrs as farp_betrs_043t )` | `CURR(7)` | Maximum Revenue Amount from Payment Differences |
+| `MaxPaymentDiffExpensePercent` |  | |  | `cast( tg.prozh as farp_prozh_043t )` | `DEC(3)` | Max Permitted Expense Percentage from Payment Differences |
+| `MaxPaymentDiffRevenuePercent` |  | |  | `cast( tg.prozs as farp_prozs_043t )` | `DEC(3)` | Max Permitted Revenue Percentage from Payment Differences |
+| `CompanyCodeCurrency` |  | | `_t001` | `waers` | `CUKY(5)` | Currency Key |
 | `_CompanyCode` | | ✓ | | | | |
 | `_APARToleranceGroupText` | | ✓ | | | | |
 | `_CompanyCodeCurrency` | | ✓ | | | | |

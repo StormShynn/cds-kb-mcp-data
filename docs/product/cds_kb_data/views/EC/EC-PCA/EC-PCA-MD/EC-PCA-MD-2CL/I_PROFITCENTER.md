@@ -41,44 +41,44 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  | `kokrs` |  |  |
-| `ProfitCenter` | ✓ | |  | `prctr` |  |  |
-| `ValidityEndDate` | ✓ | |  | `datbi` |  |  |
-| `ProfitCtrResponsiblePersonName` |  | |  | `verak` |  |  |
-| `CompanyCode` |  | |  | `bukrs` |  |  |
-| `ProfitCtrResponsibleUser` |  | |  | `verak_user` |  |  |
-| `ValidityStartDate` |  | |  | `datab` |  |  |
-| `Department` |  | |  | `abtei` |  |  |
-| `ProfitCenterStandardHierarchy` |  | |  | `khinr` |  |  |
-| `Segment` |  | |  | `segment` |  |  |
-| `ProfitCenterIsBlocked` |  | |  | `lock_ind` |  |  |
-| `FormulaPlanningTemplate` |  | |  | `pca_template` |  |  |
-| `FormOfAddress` |  | |  | `anred` |  |  |
-| `AddressName` |  | |  | `name1` |  |  |
-| `AdditionalName` |  | |  | `name2` |  |  |
-| `ProfitCenterAddrName3` |  | |  | `name3` |  |  |
-| `ProfitCenterAddrName4` |  | |  | `name4` |  |  |
-| `StreetAddressName` |  | |  | `stras` |  |  |
-| `POBox` |  | |  | `pfach` |  |  |
-| `CityName` |  | |  | `ort01` |  |  |
-| `PostalCode` |  | |  | `pstlz` |  |  |
-| `POBoxPostalCode` |  | |  | `pstl2` |  |  |
-| `District` |  | |  | `ort02` |  |  |
-| `Country` |  | |  | `land1` |  |  |
-| `Region` |  | |  | `regio` |  |  |
-| `TaxJurisdiction` |  | |  | `txjcd` |  |  |
-| `Language` |  | |  | `spras` |  |  |
-| `PhoneNumber1` |  | |  | `telf1` |  |  |
-| `PhoneNumber2` |  | |  | `telf2` |  |  |
-| `TeleboxNumber` |  | |  | `telbx` |  |  |
-| `TelexNumber` |  | |  | `telx1` |  |  |
-| `FaxNumber` |  | |  | `telfx` |  |  |
-| `TeletexNumber` |  | |  | `teltx` |  |  |
-| `DataCommunicationPhoneNumber` |  | |  | `datlt` |  |  |
-| `ProfitCenterPrinterName` |  | |  | `drnam` |  |  |
-| `ProfitCenterCreatedByUser` |  | |  | `usnam` |  |  |
-| `ProfitCenterCreationDate` |  | |  | `ersda` |  |  |
-| `LogicalSystem` |  | |  | `logsystem` |  |  |
+| `ControllingArea` | ✓ | |  | `kokrs` | `CHAR(4)` | Controlling Area |
+| `ProfitCenter` | ✓ | |  | `prctr` | `CHAR(10)` | Profit Center |
+| `ValidityEndDate` | ✓ | |  | `datbi` | `DATS(8)` | Valid To Date |
+| `ProfitCtrResponsiblePersonName` |  | |  | `verak` | `CHAR(20)` | Person Responsible for Profit Center |
+| `CompanyCode` |  | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `ProfitCtrResponsibleUser` |  | |  | `verak_user` | `CHAR(12)` | User Responsible for the Profit Center |
+| `ValidityStartDate` |  | |  | `datab` | `DATS(8)` | Valid-From Date |
+| `Department` |  | |  | `abtei` | `CHAR(12)` | Department |
+| `ProfitCenterStandardHierarchy` |  | |  | `khinr` | `CHAR(12)` | Profit center area |
+| `Segment` |  | |  | `segment` | `CHAR(10)` | Segment for Segmental Reporting |
+| `ProfitCenterIsBlocked` |  | |  | `lock_ind` | `CHAR(1)` | Lock indicator |
+| `FormulaPlanningTemplate` |  | |  | `pca_template` | `CHAR(10)` | Template for Formula Planning in Profit Centers |
+| `FormOfAddress` |  | |  | `anred` | `CHAR(15)` | Title |
+| `AddressName` |  | |  | `name1` | `CHAR(35)` | Name |
+| `AdditionalName` |  | |  | `name2` | `CHAR(35)` | Name 2 |
+| `ProfitCenterAddrName3` |  | |  | `name3` | `CHAR(35)` | Name 3 |
+| `ProfitCenterAddrName4` |  | |  | `name4` | `CHAR(35)` | Name 4 |
+| `StreetAddressName` |  | |  | `stras` | `CHAR(35)` | Street and House Number |
+| `POBox` |  | |  | `pfach` | `CHAR(10)` | PO Box |
+| `CityName` |  | |  | `ort01` | `CHAR(35)` | City |
+| `PostalCode` |  | |  | `pstlz` | `CHAR(10)` | Postal Code |
+| `POBoxPostalCode` |  | |  | `pstl2` | `CHAR(10)` | PO Box Postal Code |
+| `District` |  | |  | `ort02` | `CHAR(35)` | District |
+| `Country` |  | |  | `land1` | `CHAR(3)` | Country/Region Key |
+| `Region` |  | |  | `regio` | `CHAR(3)` | Region (State, Province, County) |
+| `TaxJurisdiction` |  | |  | `txjcd` | `CHAR(15)` | Tax Jurisdiction |
+| `Language` |  | |  | `spras` | `LANG(1)` | Language Key |
+| `PhoneNumber1` |  | |  | `telf1` | `CHAR(16)` | First telephone number |
+| `PhoneNumber2` |  | |  | `telf2` | `CHAR(16)` | Second telephone number |
+| `TeleboxNumber` |  | |  | `telbx` | `CHAR(15)` | Telebox Number |
+| `TelexNumber` |  | |  | `telx1` | `CHAR(30)` | Telex Number |
+| `FaxNumber` |  | |  | `telfx` | `CHAR(31)` | Fax Number |
+| `TeletexNumber` |  | |  | `teltx` | `CHAR(30)` | Teletex Number |
+| `DataCommunicationPhoneNumber` |  | |  | `datlt` | `CHAR(14)` | Data communication line no. |
+| `ProfitCenterPrinterName` |  | |  | `drnam` | `CHAR(4)` | Printer name for profit center |
+| `ProfitCenterCreatedByUser` |  | |  | `usnam` | `CHAR(12)` | Entered By |
+| `ProfitCenterCreationDate` |  | |  | `ersda` | `DATS(8)` | Entered On |
+| `LogicalSystem` |  | |  | `logsystem` | `CHAR(10)` | Logical System |
 | `_ControllingAreaText` | | ✓ | | | | |
 | `_SegmentText` | | ✓ | | | | |
 | `_ControllingArea` | | ✓ | | | | |

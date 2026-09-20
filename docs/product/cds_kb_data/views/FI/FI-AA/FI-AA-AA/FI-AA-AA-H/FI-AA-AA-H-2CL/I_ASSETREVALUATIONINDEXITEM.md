@@ -54,10 +54,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AssetRevaluationIndex` | ✓ | |  | `index_id` |  |  |
-| `ValidityEndDate` | ✓ | |  | `valid_to_date` |  |  |
-| `ValidityStartDate` |  | |  | `valid_from_date` |  |  |
-| `AssetRevaluationIndexValue` |  | |  | `index_point` |  |  |
+| `AssetRevaluationIndex` | ✓ | |  | `index_id` | `CHAR(10)` | Asset Revaluation: Index ID |
+| `ValidityEndDate` | ✓ | |  | `valid_to_date` | `DATS(8)` | Date Validity Ends |
+| `ValidityStartDate` |  | |  | `valid_from_date` | `DATS(8)` | Date for Beginning of Validity |
+| `AssetRevaluationIndexValue` |  | |  | `index_point` | `DEC(16)` | Asset Revaluation: Index Value |
 | `_AssetRevaluationIndex` | | ✓ | | | | |
 
 ## Associations

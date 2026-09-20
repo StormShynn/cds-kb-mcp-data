@@ -39,18 +39,18 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `UserToleranceGroup` | ✓ | |  | `cast( rfpro as fins_rfpro )` |  |  |
-| `CompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `MaxPaymentDiffRevenueAmount` |  | |  | `betrs` |  |  |
-| `MaxPaymentDiffExpenseAmount` |  | |  | `betrh` |  |  |
-| `MaxPaymentDiffRevenuePercent` |  | |  | `prozs` |  |  |
-| `MaxPaymentDiffExpensePercent` |  | |  | `prozh` |  |  |
-| `MaxPaytDiffDiscAdjmtGainAmount` |  | |  | `sknts` |  |  |
-| `MaxPaytDiffDiscAdjmtLossAmount` |  | |  | `sknth` |  |  |
-| `MaxJrnlEntrPostgAmtInCCCrcy` |  | |  | `maxbt` |  |  |
-| `MaxJrnlEntrItmPostgAmtInCCCrcy` |  | |  | `maxeb` |  |  |
-| `MaximumCashDiscountPercent` |  | |  | `maxsk` |  |  |
-| `CompanyCodeCurrency` |  | | `_CompanyCode` | `Currency` |  |  |
+| `UserToleranceGroup` | ✓ | |  | `cast( rfpro as fins_rfpro )` | `CHAR(4)` | User Tolerance Group For Financial Accounting |
+| `CompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `MaxPaymentDiffRevenueAmount` |  | |  | `betrs` | `CURR(7)` | Maximum Payment Difference for Revenue |
+| `MaxPaymentDiffExpenseAmount` |  | |  | `betrh` | `CURR(7)` | Maximum Payment Difference for Expense |
+| `MaxPaymentDiffRevenuePercent` |  | |  | `prozs` | `DEC(3)` | Maximum Allowable Revenues from Payment Differences |
+| `MaxPaymentDiffExpensePercent` |  | |  | `prozh` | `DEC(3)` | Maximum Expense Permitted from Payment Differences |
+| `MaxPaytDiffDiscAdjmtGainAmount` |  | |  | `sknts` | `CURR(7)` | Maximum Discount Adjust. for Gain from Payment Differences |
+| `MaxPaytDiffDiscAdjmtLossAmount` |  | |  | `sknth` | `CURR(7)` | Maximum Discount Adjust. for Loss from Payment Differences |
+| `MaxJrnlEntrPostgAmtInCCCrcy` |  | |  | `maxbt` | `CURR(23)` | Maximum Amount Posted per Document |
+| `MaxJrnlEntrItmPostgAmtInCCCrcy` |  | |  | `maxeb` | `CURR(23)` | Maximum Posting Amount per Line Item |
+| `MaximumCashDiscountPercent` |  | |  | `maxsk` | `DEC(5)` | Maximum Cash Discount Percentage Rate |
+| `CompanyCodeCurrency` |  | | `_CompanyCode` | `Currency` | `CUKY(5)` | Currency Key |
 | `_CompanyCode` | | ✓ | | | | |
 
 ## Associations

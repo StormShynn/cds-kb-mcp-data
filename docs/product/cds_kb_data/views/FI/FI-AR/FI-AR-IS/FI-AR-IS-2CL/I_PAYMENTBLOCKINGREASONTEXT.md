@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `PaymentBlockingReason` | ✓ | |  | `cast (zahls as farp_dzlspr)` |  |  |
-| `PaymentBlockingReasonName` |  | |  | `cast (textl as farp_payment_block_reason_name )` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `PaymentBlockingReason` | ✓ | |  | `cast (zahls as farp_dzlspr)` | `CHAR(1)` | Payment Block on Item |
+| `PaymentBlockingReasonName` |  | |  | `cast (textl as farp_payment_block_reason_name )` | `CHAR(20)` | Payment Blocking Reason Name |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

@@ -52,9 +52,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAAccountDeterminationCode` | ✓ | |  | `cast( kofiz as kofiz_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAAccountDeterminationCodeName` |  | |  | `text50` |  |  |
+| `CAAccountDeterminationCode` | ✓ | |  | `cast( kofiz as kofiz_kk preserving type )` | `CHAR(2)` | Account Determination ID |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAAccountDeterminationCodeName` |  | |  | `text50` | `CHAR(50)` | Text Field |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

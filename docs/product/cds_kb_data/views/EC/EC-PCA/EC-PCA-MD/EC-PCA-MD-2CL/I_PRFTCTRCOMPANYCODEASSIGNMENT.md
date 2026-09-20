@@ -41,15 +41,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ControllingArea` | ✓ | |  |  |  |  |
-| `ProfitCenter` | ✓ | |  |  |  |  |
-| `CompanyCode` | ✓ | |  | `coalesce( _PrftCtrSpcfcCoCodeAssgmt.CompanyCode, _CompanyCode.CompanyCode )` |  |  |
-| `JointVentureObjectType` |  | | `_PrftCtrSpcfcCoCodeAssgmt` | `JointVentureObjectType` |  |  |
-| `JointVentureClass` |  | | `_PrftCtrSpcfcCoCodeAssgmt` | `JointVentureClass` |  |  |
-| `JointVentureSubClass` |  | | `_PrftCtrSpcfcCoCodeAssgmt` | `JointVentureSubClass` |  |  |
-| `JointVenture` |  | | `_PrftCtrSpcfcCoCodeAssgmt` | `JointVenture` |  |  |
-| `JointVentureRecoveryCode` |  | | `_PrftCtrSpcfcCoCodeAssgmt` | `JointVentureRecoveryCode` |  |  |
-| `JointVentureEquityType` |  | | `_PrftCtrSpcfcCoCodeAssgmt` | `JointVentureEquityType` |  |  |
+| `ControllingArea` | ✓ | |  |  | `CHAR(4)` | Controlling Area |
+| `ProfitCenter` | ✓ | |  |  | `CHAR(10)` | Profit Center |
+| `CompanyCode` | ✓ | |  | `coalesce( _PrftCtrSpcfcCoCodeAssgmt.CompanyCode, _CompanyCode.CompanyCode )` | `CHAR(4)` |  |
+| `JointVentureObjectType` |  | | `_PrftCtrSpcfcCoCodeAssgmt` | `JointVentureObjectType` | `CHAR(4)` | Joint Venture Object Type |
+| `JointVentureClass` |  | | `_PrftCtrSpcfcCoCodeAssgmt` | `JointVentureClass` | `CHAR(3)` | JIB/JIBE Class |
+| `JointVentureSubClass` |  | | `_PrftCtrSpcfcCoCodeAssgmt` | `JointVentureSubClass` | `CHAR(5)` | JIB/JIBE Subclass A |
+| `JointVenture` |  | | `_PrftCtrSpcfcCoCodeAssgmt` | `JointVenture` | `CHAR(6)` | Joint Venture |
+| `JointVentureRecoveryCode` |  | | `_PrftCtrSpcfcCoCodeAssgmt` | `JointVentureRecoveryCode` | `CHAR(2)` | Recovery Indicator |
+| `JointVentureEquityType` |  | | `_PrftCtrSpcfcCoCodeAssgmt` | `JointVentureEquityType` | `CHAR(3)` | Equity Type |
 | `_CompanyCode` | | ✓ | | | | |
 | `_ControllingArea` | | ✓ | | | | |
 

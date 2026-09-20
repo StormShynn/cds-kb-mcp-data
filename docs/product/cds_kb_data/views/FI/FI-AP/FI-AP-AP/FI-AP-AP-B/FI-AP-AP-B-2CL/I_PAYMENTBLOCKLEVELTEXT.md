@@ -42,10 +42,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
-| `PaymentBlockLevel` | ✓ | |  | `cast( dd07t.domvalue_l as farp_splev )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
-| `PaymentBlockLevelName` |  | |  | `cast( dd07t.ddtext as farp_splev_name preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `PaymentBlockLevel` | ✓ | |  | `cast( dd07t.domvalue_l as farp_splev )` | `CHAR(1)` | Level on Which a Payment Block has Taken Place |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `PaymentBlockLevelName` |  | |  | `cast( dd07t.ddtext as farp_splev_name preserving type )` | `CHAR(60)` | Payment Block Level Text |
 | `_Language` | | ✓ | | | | |
 | `_PaymentBlockLevel` | | ✓ | | | | |
 
