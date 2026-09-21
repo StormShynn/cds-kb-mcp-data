@@ -1,0 +1,73 @@
+# .github/workflows/deploy-wake-worker.yml
+# Deploy the cds-kb-wake Cloudflare Worker (docs/product/cds_kb_mcp/wake-worker).
+# Manual trigger only. Strictly opt-in: skips entirely (exit 0) when no
+# CLOUDFLARE_API_TOKEN secret is set, so this workflow is safe to merge before
+# anyone is ready to deploy.
+#
+# This worker is the CI/CD replacement for daily-wake.ps1 + the Windows
+# Scheduled Task in ../wake-worker's sibling folder (../) — it runs on
+# Cloudflare Cron Triggers instead of a machine that has to be logged in and
+# online. See wake-worker/README.md for the full design + troubleshooting.
+#
+# Required secrets (see wake-worker/README.md):
+#   CLOUDFLARE_API_TOKEN   — a token scoped to "Workers Scripts: Edit" for the account
+#   CLOUDFLARE_ACCOUNT_ID  — the Cloudflare account id
+#   BTP_USERNAME           — BTP trial user (same one daily-wake.ps1 uses)
+#   BTP_PASSWORD           — its password
+#   CDS_KB_WAKE_TOKEN      — shared secret gating the worker's manual GET /wake
+#                            and used to test it right after deploy
+#
+# Every run re-pushes CF_USERNAME/CF_PASSWORD/WAKE_TOKEN as Worker secrets, so
+# rotating a repo secret and re-running this workflow is enough — no local
+# `wrangler secret put` needed after the very first deploy.
+
+name: Deploy Wake Worker
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      HAS_CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+    defaults:
+      run:
+        working-directory: docs/product/cds_kb_mcp/wake-worker
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Skip when not configured
+        if: ${{ env.HAS_CLOUDFLARE_TOKEN == 'false' }}
+        run: echo "CLOUDFLARE_API_TOKEN not set — skipping worker deploy (exit 0)."
+
+      - name: Deploy worker
+        if: ${{ env.HAS_CLOUDFLARE_TOKEN == 'true' }}
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: docs/product/cds_kb_mcp/wake-worker
+          command: deploy
+          secrets: |
+            CF_USERNAME
+            CF_PASSWORD
+            WAKE_TOKEN
+        env:
+          CF_USERNAME: ${{ secrets.BTP_USERNAME }}
+          CF_PASSWORD: ${{ secrets.BTP_PASSWORD }}
+          WAKE_TOKEN: ${{ secrets.CDS_KB_WAKE_TOKEN }}
+
+      # No automated smoke test here: the worker's public URL depends on the
+      # account's workers.dev subdomain (or a custom route), which isn't
+      # knowable from repo secrets alone. Test manually right after deploy —
+      # see wake-worker/README.md "Test now" — with:
+      #   curl "https://cds-kb-wake.<your-subdomain>.workers.dev/wake?token=<CDS_KB_WAKE_TOKEN>"
+      - name: Remember to smoke-test manually
+        if: ${{ env.HAS_CLOUDFLARE_TOKEN == 'true' }}
+        run: echo "Deployed. Now hit GET /wake?token=... manually once — see wake-worker/README.md 'Test now'."

@@ -1,0 +1,26 @@
+name = "cds-kb-wake"
+main = "src/index.mjs"
+compatibility_date = "2026-01-01"
+
+# Non-secret config. Override per env if the trial org/space/app ever changes.
+[vars]
+CF_API_ENDPOINT = "https://api.cf.us10-001.hana.ondemand.com"
+CF_ORG = "0f096230trial"
+CF_SPACE = "dev"
+CF_APP = "cds-kb-mcp"
+HEALTH_URL = "https://mcp.tringhia.io.vn/health"
+
+# Secrets (set with `wrangler secret put <NAME>`, or via
+# .github/workflows/deploy-wake-worker.yml once CLOUDFLARE_API_TOKEN +
+# BTP_USERNAME/BTP_PASSWORD/CDS_KB_WAKE_TOKEN repo secrets are configured):
+#   CF_USERNAME  — BTP trial user (same one wake.ps1 / daily-wake.ps1 use)
+#   CF_PASSWORD  — its password
+#   WAKE_TOKEN   — shared secret gating the manual GET /wake and GET /status
+#                  endpoints (this worker is on the public internet)
+# See ./README.md for the full setup + rationale.
+
+# Runs every 2 hours, at :17 past, to avoid the top-of-hour thundering herd
+# that scheduled GitHub Actions runs are subject to (Cron Triggers on
+# Cloudflare don't share that problem, but there's no reason to pile on).
+[triggers]
+crons = ["17 */2 * * *"]

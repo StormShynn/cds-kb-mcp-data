@@ -12,3 +12,11 @@ Get-Credential -Message "BTP trial (nghiabht@fpt.com)" |
 # 3. Test ngay không cần chờ tới giờ:
 schtasks /Run /TN "cds-kb-mcp daily wake"
 Get-Content "$env:USERPROFILE\.cds-kb-mcp\wake.log" -Tail 10
+
+# 4. Không có máy nào bật/đăng nhập liên tục? Dùng CI/CD thay Task Scheduler:
+#    docs/product/cds_kb_mcp/wake-worker/ — Cloudflare Worker chạy bằng Cron
+#    Trigger, không phụ thuộc máy nào phải mở. Deploy qua
+#    .github/workflows/deploy-wake-worker.yml (workflow_dispatch, cần
+#    CLOUDFLARE_API_TOKEN/CLOUDFLARE_ACCOUNT_ID/BTP_USERNAME/BTP_PASSWORD/
+#    CDS_KB_WAKE_TOKEN trong repo secrets). Xem wake-worker/README.md để biết
+#    chi tiết + troubleshooting.
