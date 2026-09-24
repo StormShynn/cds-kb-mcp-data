@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAClearingCategory` | ✓ | |  | `vertyp` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAClearingCategoryName` |  | |  | `text` |  |  |
+| `CAClearingCategory` | ✓ | |  | `vertyp` | `CHAR(4)` | Clearing Category For Clearing Postings |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAClearingCategoryName` |  | |  | `text` | `CHAR(40)` | Text, 40 Characters Long |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

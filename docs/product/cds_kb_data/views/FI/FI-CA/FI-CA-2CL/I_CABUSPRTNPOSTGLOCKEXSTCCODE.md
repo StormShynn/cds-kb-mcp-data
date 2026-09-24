@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABusPartnerPostgLockExstcCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as bpl_xpocl_kk preserving type )` |  |  |
+| `CABusPartnerPostgLockExstcCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as bpl_xpocl_kk preserving type )` | `CHAR(1)` | Business Partner Lock for Postings/Clearing |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

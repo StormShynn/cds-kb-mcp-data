@@ -49,7 +49,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABusinessTransactionObject` | ✓ | |  | `cast( left( dd07l.domvalue_l, 8 ) as evl_objid_kk preserving type )` |  |  |
+| `CABusinessTransactionObject` | ✓ | |  | `cast( left( dd07l.domvalue_l, 8 ) as evl_objid_kk preserving type )` | `CHAR(8)` | Business Transaction: Object Identification |
 | `_CABusTransObjText` | | ✓ | | | | |
 
 ## Associations
