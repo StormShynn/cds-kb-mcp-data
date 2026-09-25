@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocContainerDocItemRefType` | ✓ | |  | `cast( left( dd07l.domvalue_l, 2 ) as oprty_dc_kk preserving type )` |  |  |
+| `CADocContainerDocItemRefType` | ✓ | |  | `cast( left( dd07l.domvalue_l, 2 ) as oprty_dc_kk preserving type )` | `CHAR(2)` | Document Item Reference Category |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

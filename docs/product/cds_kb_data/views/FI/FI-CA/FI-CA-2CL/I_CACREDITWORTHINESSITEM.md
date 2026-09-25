@@ -40,27 +40,27 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  |  |  |  |
-| `CalendarYear` | ✓ | |  |  |  |  |
-| `CACreditWorthinessSequenceNmbr` | ✓ | |  |  |  |  |
-| `CACreditWorthinessOrigin` |  | |  |  |  |  |
-| `CACreditWorthinessDate` |  | |  |  |  |  |
-| `CAItemCreditWorthinessValue` |  | |  |  |  |  |
-| `CAItemCrdtWorthinessIsNegative` |  | |  |  |  |  |
-| `CAItmCrdtWrthnssWthSignVal` |  | |  | `cast( case when CAItemCrdtWorthinessIsNegative = 'X' then cast( CAItemCreditWorthinessValue as cbetr_kk ) * -1 else cast( CAItemCreditWorthinessValue as cbetr_kk ) end as cbetr_kk )` |  |  |
-| `CACrdtWorthinessItemIsReversed` |  | |  |  |  |  |
-| `CACrdtWorthinessItemStatus` |  | |  | `cast( case when CACrdtWorthinessItemIsReversed = 'X' then '2' else '1' end as bonis_kk )` |  |  |
-| `CACreditWorthinessItemExtKey` |  | |  |  |  |  |
-| `CACreditWorthinessItemText` |  | |  |  |  |  |
-| `CAApplicationArea` |  | |  |  |  |  |
-| `ContractAccount` |  | |  |  |  |  |
-| `CAMassRunDate` |  | |  |  |  |  |
-| `CAMassRunID` |  | |  |  |  |  |
-| `CADunningCounter` |  | |  |  |  |  |
-| `CAReturnDocumentNumber` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `CreationDate` |  | |  |  |  |  |
-| `CreationTime` |  | |  |  |  |  |
+| `BusinessPartner` | ✓ | |  |  | `CHAR(10)` | Business Partner Number |
+| `CalendarYear` | ✓ | |  |  | `NUMC(4)` | Calendar year |
+| `CACreditWorthinessSequenceNmbr` | ✓ | |  |  | `NUMC(6)` | Sequential Number Of a Creditworthiness Entry |
+| `CACreditWorthinessOrigin` |  | |  |  | `CHAR(2)` | Origin of entry related to creditworthiness |
+| `CACreditWorthinessDate` |  | |  |  | `DATS(8)` | Creditworthiness Date |
+| `CAItemCreditWorthinessValue` |  | |  |  | `NUMC(4)` | Creditworthiness |
+| `CAItemCrdtWorthinessIsNegative` |  | |  |  | `CHAR(1)` | Creditworthiness Value is Negative |
+| `CAItmCrdtWrthnssWthSignVal` |  | |  | `cast( case when CAItemCrdtWorthinessIsNegative = 'X' then cast( CAItemCreditWorthinessValue as cbetr_kk ) * -1 else cast( CAItemCreditWorthinessValue as cbetr_kk ) end as cbetr_kk )` | `DEC(5)` | Creditworthiness Value with +/- Sign |
+| `CACrdtWorthinessItemIsReversed` |  | |  |  | `CHAR(1)` | Creditworthiness Entry Was Reversed |
+| `CACrdtWorthinessItemStatus` |  | |  | `cast( case when CACrdtWorthinessItemIsReversed = 'X' then '2' else '1' end as bonis_kk )` | `CHAR(1)` | Creditworthiness Item Status |
+| `CACreditWorthinessItemExtKey` |  | |  |  | `CHAR(30)` | Key field of application |
+| `CACreditWorthinessItemText` |  | |  |  | `CHAR(32)` | Reference for Manual Creditworthiness Entry |
+| `CAApplicationArea` |  | |  |  | `CHAR(1)` | Application Area |
+| `ContractAccount` |  | |  |  | `CHAR(12)` | Contract Account Number |
+| `CAMassRunDate` |  | |  |  | `DATS(8)` | Date ID |
+| `CAMassRunID` |  | |  |  | `CHAR(6)` | Run ID |
+| `CADunningCounter` |  | |  |  | `NUMC(6)` | Counter for Several Dunning Notices to a Business Partner |
+| `CAReturnDocumentNumber` |  | |  |  | `CHAR(12)` | Document Number of Returns Document |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `CreationDate` |  | |  |  | `DATS(8)` | Day On Which Accounting Document Was Entered |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time of Entry |
 | `_CACreditWorthinessItemStatus` | | ✓ | | | | |
 | `_BusinessPartner` | | ✓ | | | | |
 | `_CAApplicationArea` | | ✓ | | | | |

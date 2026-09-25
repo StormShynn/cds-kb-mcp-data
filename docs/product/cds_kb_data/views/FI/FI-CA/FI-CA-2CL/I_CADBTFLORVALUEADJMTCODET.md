@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADoubtfulOrValueAdjmtCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 3 ) as infoz_kk )` |  |  |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
-| `CADoubtfulOrValueAdjmtCodeName` |  | |  | `cast ( ddtext as infoz_text_kk preserving type )` |  |  |
+| `CADoubtfulOrValueAdjmtCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 3 ) as infoz_kk )` | `NUMC(3)` | Doubtful Entry / Individual Value Adjustment |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CADoubtfulOrValueAdjmtCodeName` |  | |  | `cast ( ddtext as infoz_text_kk preserving type )` | `CHAR(60)` | Description for Doubtful Entry / Ind. Value Adjustment |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

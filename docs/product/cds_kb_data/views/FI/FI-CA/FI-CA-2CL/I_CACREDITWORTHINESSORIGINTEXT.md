@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CACreditWorthinessOrigin` | ✓ | |  | `herkf` |  |  |
-| `CACreditWorthinessOriginText` |  | |  | `htext` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CACreditWorthinessOrigin` | ✓ | |  | `herkf` | `CHAR(2)` | Origin of entry related to creditworthiness |
+| `CACreditWorthinessOriginText` |  | |  | `htext` | `CHAR(20)` | Text (20 Characters) |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

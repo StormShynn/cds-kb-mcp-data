@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADisputeExternalCallerCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 3 ) as calld_kk preserving type )` |  |  |
+| `CADisputeExternalCallerCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 3 ) as calld_kk preserving type )` | `CHAR(3)` | Identification of External Caller for Dispute Case |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

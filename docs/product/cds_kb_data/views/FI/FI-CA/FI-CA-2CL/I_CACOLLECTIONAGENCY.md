@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACollectionAgency` | ✓ | |  | `inkgp` |  |  |
-| `ContractAccount` |  | |  | `vkont` |  |  |
-| `CAPostChrgAndIntrstAsOpenItems` |  | |  | `xcollnoclearing` |  |  |
+| `CACollectionAgency` | ✓ | |  | `inkgp` | `CHAR(10)` | Collection Agency |
+| `ContractAccount` |  | |  | `vkont` | `CHAR(12)` | Contract Account Number |
+| `CAPostChrgAndIntrstAsOpenItems` |  | |  | `xcollnoclearing` | `CHAR(1)` | Open Charges and Interest Requests from Collection Agency |
 | `_BusinessPartner` | | ✓ | | | | |
 | `_CAHeader` | | ✓ | | | | |
 

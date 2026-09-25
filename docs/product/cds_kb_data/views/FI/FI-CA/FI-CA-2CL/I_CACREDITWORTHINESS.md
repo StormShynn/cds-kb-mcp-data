@@ -39,21 +39,21 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartner` | ✓ | |  |  |  |  |
-| `CAManualCreditWorthinessValue` |  | |  |  |  |  |
-| `CACreditWorthinessFactorInPct` |  | |  |  |  |  |
-| `CAManualCreditWorthinessDate` |  | |  |  |  |  |
-| `CAFrozenCreditWorthinessValue` |  | |  | `case CACreditWorthinessIsFrozen when 'X' then CAFrozenCreditWorthinessValue else '0000' end` |  |  |
-| `CAFrozenCreditWorthinessDate` |  | |  |  |  |  |
-| `CAUnfrozenCreditWorthinessDate` |  | |  |  |  |  |
-| `CAExternalCreditWorthinessVal` |  | |  |  |  |  |
-| `CAExternalCreditWorthinessDate` |  | |  |  |  |  |
-| `CALastReplicatedCrdtWrthnssVal` |  | |  |  |  |  |
-| `CreationDate` |  | |  |  |  |  |
-| `CreationTime` |  | |  |  |  |  |
-| `LastChangeDate` |  | |  |  |  |  |
-| `LastChangeTime` |  | |  |  |  |  |
-| `CACreditWorthinessIsFrozen` |  | |  |  |  |  |
+| `BusinessPartner` | ✓ | |  |  | `CHAR(10)` | Business Partner Number |
+| `CAManualCreditWorthinessValue` |  | |  |  | `NUMC(4)` | Manual Creditworthiness |
+| `CACreditWorthinessFactorInPct` |  | |  |  | `NUMC(3)` | Creditworthiness factor as a percentage |
+| `CAManualCreditWorthinessDate` |  | |  |  | `DATS(8)` | Date On Which Creditworthiness Was Manually Set |
+| `CAFrozenCreditWorthinessValue` |  | |  | `case CACreditWorthinessIsFrozen when 'X' then CAFrozenCreditWorthinessValue else '0000' end` | `NUMC(4)` | Fixed Creditworthiness |
+| `CAFrozenCreditWorthinessDate` |  | |  |  | `DATS(8)` | Date When Creditworthiness Is Fixed |
+| `CAUnfrozenCreditWorthinessDate` |  | |  |  | `DATS(8)` | Release Date of Fixed Creditworthiness |
+| `CAExternalCreditWorthinessVal` |  | |  |  | `NUMC(4)` | External Creditworthiness |
+| `CAExternalCreditWorthinessDate` |  | |  |  | `DATS(8)` | Date of Last Change to Rating |
+| `CALastReplicatedCrdtWrthnssVal` |  | |  |  | `CHAR(4)` | FI-CA Creditworthiness Last Replicated to Credit Management |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time at which the object was created |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
+| `LastChangeTime` |  | |  |  | `TIMS(6)` | Time at Which the Object Was Last Changed |
+| `CACreditWorthinessIsFrozen` |  | |  |  | `CHAR(1)` | Calculated Creditworthiness is Fixed |
 | `_BusinessPartner` | | ✓ | | | | |
 
 ## Source Code
