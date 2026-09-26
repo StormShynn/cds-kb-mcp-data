@@ -41,58 +41,58 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentNumber` | ✓ | |  | `opbel` |  |  |
-| `CAGLItemNumber` | ✓ | |  | `opupk` |  |  |
-| `PaymentCardType` |  | |  | `ccins` |  |  |
-| `PaytCardByDigitalPaymentSrvc` |  | |  | `ccnum` |  |  |
-| `PaymentCardSequenceNumber` |  | |  | `ccfol` |  |  |
-| `PaymentCardValidityStartDate` |  | |  | `datab` |  |  |
-| `PaymentCardValidityEndDate` |  | |  | `datbi` |  |  |
-| `PaymentCardHolderName` |  | |  | `ccname` |  |  |
-| `CAAuthznByDigitalPaytSrvc` |  | |  | `aunum` |  |  |
-| `CAAuthorizationByAcquirer` |  | |  | `autra` |  |  |
-| `AuthorizationDate` |  | |  | `audat` |  |  |
-| `AuthorizationTime` |  | |  | `autim` |  |  |
-| `CAAuthorizationType` |  | |  | `auart` |  |  |
-| `AuthorizedAmountInAuthznCrcy` |  | |  | `autwr` |  |  |
-| `AuthorizationCurrency` |  | |  | `ccwae` |  |  |
-| `CAPaytServiceProviderMerchant` |  | |  | `merch` |  |  |
-| `AuthorizationExpirationDate` |  | |  | `expdt` |  |  |
-| `AuthorizationExpirationTime` |  | |  | `exptm` |  |  |
-| `CAPaymentIDAuthznWithBilling` |  | |  | `aucid` |  |  |
-| `CASettlementPaymentAdviceRef` |  | |  | `avref` |  |  |
-| `PaymentCardAuthznRelationID` |  | |  | `dp_auth_rel_id` |  |  |
-| `DigitalPaymentFraudRisk` |  | |  | `dp_fraud_risk` |  |  |
-| `CAPostingDate` |  | |  | `budat` |  |  |
-| `CAAmountInTransactionCurrency` |  | |  | `betrw` |  |  |
-| `TransactionCurrency` |  | |  | `waers` |  |  |
-| `CompanyCode` |  | |  | `bukrs` |  |  |
-| `ValueDate` |  | |  | `valut` |  |  |
-| `CAPaymentBillingStatus` |  | |  | `xsett` |  |  |
-| `CASettlementMassRunID` |  | |  | `laufi` |  |  |
-| `CASettlementDocument` |  | |  | `stdoc` |  |  |
-| `CAPaytCardSupplementIsResent` |  | |  | `resend` |  |  |
-| `CAReturnLot` | ✓ | |  | `keyr1` |  |  |
-| `CAReturnReason` |  | |  | `rlgrd` |  |  |
-| `CASettlmtChrgAmtInSettlmtCrcy` |  | |  | `ccfam` |  |  |
-| `CAPaymentCardSettlementID` |  | |  | `srqid` |  |  |
-| `CASettlmtAmountInSettlmtCrcy` |  | |  | `setam` |  |  |
-| `SettlementCurrency` |  | |  | `setcu` |  |  |
-| `DgtlPaytDisbursementReference` |  | |  | `dsbid` |  |  |
-| `CreationDate` |  | |  | `crdat` |  |  |
-| `CreationTime` |  | |  | `crtms` |  |  |
-| `CreatedByUser` |  | |  | `crnam` |  |  |
-| `PaymentCardUUID` |  | |  | `cguid` |  |  |
-| `EncryptionType` |  | |  | `enctp` |  |  |
-| `CAKeyForPaymentCardSupplement` |  | |  | `xguid` |  |  |
-| `PaymentServiceProvider` |  | |  | `pays_prov` |  |  |
-| `PaymentRefByPaytSrvcProvider` |  | |  | `pays_tran` |  |  |
-| `OriglPaytRefByPaytSrvcProvider` |  | |  | `orig_pays_tran` |  |  |
-| `OriginalSourceOfCredit` |  | |  | `orig_credit` |  |  |
-| `PaymentCardMaskedNumber` |  | |  | `masked_id` |  |  |
-| `DigitalPaymentType` |  | |  | `dp_payment_type` |  |  |
-| `PaymentByDigitalPaymentService` |  | |  | `dp_trans_id` |  |  |
-| `MerchantByClearingHouse` |  | |  | `merch` |  |  |
+| `CADocumentNumber` | ✓ | |  | `opbel` | `CHAR(12)` | Number of a FI-CA Document |
+| `CAGLItemNumber` | ✓ | |  | `opupk` | `NUMC(4)` | Item Number in FI-CA Document |
+| `PaymentCardType` |  | |  | `ccins` | `CHAR(4)` | Payment Card Type |
+| `PaytCardByDigitalPaymentSrvc` |  | |  | `ccnum` | `CHAR(25)` | Payment cards: Card number |
+| `PaymentCardSequenceNumber` |  | |  | `ccfol` | `CHAR(10)` | Payment cards: Payment card suffix |
+| `PaymentCardValidityStartDate` |  | |  | `datab` | `DATS(8)` | Payment cards: Valid from |
+| `PaymentCardValidityEndDate` |  | |  | `datbi` | `DATS(8)` | Payment Cards: Valid To |
+| `PaymentCardHolderName` |  | |  | `ccname` | `CHAR(40)` | Payment Cards: Name of Cardholder |
+| `CAAuthznByDigitalPaytSrvc` |  | |  | `aunum` | `CHAR(25)` | Payment cards: Authorization number |
+| `CAAuthorizationByAcquirer` |  | |  | `autra` | `CHAR(25)` | Payment Cards: Authorization Reference Number |
+| `AuthorizationDate` |  | |  | `audat` | `DATS(8)` | Payment cards: Authorization date |
+| `AuthorizationTime` |  | |  | `autim` | `TIMS(6)` | Payment cards: Authorization time |
+| `CAAuthorizationType` |  | |  | `auart` | `CHAR(1)` | Payment cards: Authorization type |
+| `AuthorizedAmountInAuthznCrcy` |  | |  | `autwr` | `CURR(15)` | Payment cards: Authorized amount |
+| `AuthorizationCurrency` |  | |  | `ccwae` | `CUKY(5)` | Currency Key |
+| `CAPaytServiceProviderMerchant` |  | |  | `merch` | `CHAR(15)` | Agent ID in Payment Card Processing |
+| `AuthorizationExpirationDate` |  | |  | `expdt` | `DATS(8)` | Payment Cards: Authorization Expiry Date |
+| `AuthorizationExpirationTime` |  | |  | `exptm` | `TIMS(6)` | Payment Cards: Authorization Expiration Time |
+| `CAPaymentIDAuthznWithBilling` |  | |  | `aucid` | `CHAR(40)` | Payment Cards: Payment ID (Authorization with Settlement) |
+| `CASettlementPaymentAdviceRef` |  | |  | `avref` | `CHAR(40)` | Payment Card: Payment Advice Note Reference with Settlement |
+| `PaymentCardAuthznRelationID` |  | |  | `dp_auth_rel_id` | `CHAR(44)` | Unique identifier of a previous successful authorization |
+| `DigitalPaymentFraudRisk` |  | |  | `dp_fraud_risk` | `CHAR(15)` | Code of Fraud Risk |
+| `CAPostingDate` |  | |  | `budat` | `DATS(8)` | Posting Date in the Document |
+| `CAAmountInTransactionCurrency` |  | |  | `betrw` | `CURR(13)` | Amount in Transaction Currency with +/- Sign |
+| `TransactionCurrency` |  | |  | `waers` | `CUKY(5)` | Currency Key |
+| `CompanyCode` |  | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `ValueDate` |  | |  | `valut` | `DATS(8)` | Value Date |
+| `CAPaymentBillingStatus` |  | |  | `xsett` | `CHAR(1)` | Settlement Status |
+| `CASettlementMassRunID` |  | |  | `laufi` | `CHAR(16)` | Payment Cards/PSP: Run ID of Settlement Run |
+| `CASettlementDocument` |  | |  | `stdoc` | `CHAR(12)` | Document Number of Billing Document |
+| `CAPaytCardSupplementIsResent` |  | |  | `resend` | `CHAR(1)` | Payment Card Supplement Was Resent |
+| `CAReturnLot` | ✓ | |  | `keyr1` | `CHAR(12)` | Returns Lot for a Non-Billable Payment |
+| `CAReturnReason` |  | |  | `rlgrd` | `CHAR(3)` | Returns Reason for Non-Billable Payments |
+| `CASettlmtChrgAmtInSettlmtCrcy` |  | |  | `ccfam` | `CURR(13)` | Charge for Billed Payments in Billing Currency |
+| `CAPaymentCardSettlementID` |  | |  | `srqid` | `CHAR(32)` | Payment Card Billing ID |
+| `CASettlmtAmountInSettlmtCrcy` |  | |  | `setam` | `CURR(13)` | Payment Cards: Settled Amount |
+| `SettlementCurrency` |  | |  | `setcu` | `CUKY(5)` | Payment Cards: Settlement Currency |
+| `DgtlPaytDisbursementReference` |  | |  | `dsbid` | `CHAR(18)` | Payment Reference when Billing Payment Cards |
+| `CreationDate` |  | |  | `crdat` | `DATS(8)` | Created On |
+| `CreationTime` |  | |  | `crtms` | `TIMS(6)` | Time of Data Entry |
+| `CreatedByUser` |  | |  | `crnam` | `CHAR(12)` | Name of Person Who Created Object |
+| `PaymentCardUUID` |  | |  | `cguid` | `RAW(16)` | GUID of a Payment Card |
+| `EncryptionType` |  | |  | `enctp` | `CHAR(1)` | Type of Encryption |
+| `CAKeyForPaymentCardSupplement` |  | |  | `xguid` | `RAW(16)` | Key for Payment Card Supplement |
+| `PaymentServiceProvider` |  | |  | `pays_prov` | `CHAR(4)` | Payment Service Providers |
+| `PaymentRefByPaytSrvcProvider` |  | |  | `pays_tran` | `CHAR(35)` | Payment Reference of Payment Service Provider |
+| `OriglPaytRefByPaytSrvcProvider` |  | |  | `orig_pays_tran` | `CHAR(35)` | Payment Reference of Payment Service Provider |
+| `OriginalSourceOfCredit` |  | |  | `orig_credit` | `CHAR(1)` | Origin of Credit Memo Posting |
+| `PaymentCardMaskedNumber` |  | |  | `masked_id` | `CHAR(25)` | Masked Payment Card Number ( Digital Payment ) |
+| `DigitalPaymentType` |  | |  | `dp_payment_type` | `CHAR(2)` | Digital Payments Payment Type |
+| `PaymentByDigitalPaymentService` |  | |  | `dp_trans_id` | `CHAR(44)` | Transaction/Payment ID of SAP Digital Payments |
+| `MerchantByClearingHouse` |  | |  | `merch` | `CHAR(15)` | Agent ID in Payment Card Processing |
 | `_CAAuthorizationType` | | ✓ | | | | |
 | `_CACreditPostingOrigin` | | ✓ | | | | |
 | `_CADocument` | | ✓ | | | | |

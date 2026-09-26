@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentOriginCode` | ✓ | |  | `herkf` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CADocumentOriginCodeName` |  | |  | `cast( htext as herkf_text_kk preserving type )` |  |  |
+| `CADocumentOriginCode` | ✓ | |  | `herkf` | `CHAR(2)` | Document Origin Key |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CADocumentOriginCodeName` |  | |  | `cast( htext as herkf_text_kk preserving type )` | `CHAR(40)` | Text of Document Origin |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAStatusOfEuroConversion` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as eurou_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAStatusOfEuroConversionText` |  | |  | `cast( ddtext as eurou_text_kk preserving type )` |  |  |
+| `CAStatusOfEuroConversion` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as eurou_kk preserving type )` | `CHAR(1)` | Status of Euro Conversion |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAStatusOfEuroConversionText` |  | |  | `cast( ddtext as eurou_text_kk preserving type )` | `CHAR(60)` | Description for Euro Changeover Status |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACurrentFactoringStatusOfRbl` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as fasta_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CACurrentFactoringStsOfRblText` |  | |  | `cast ( ddtext as fasta_text_kk preserving type )` |  |  |
+| `CACurrentFactoringStatusOfRbl` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as fasta_kk preserving type )` | `CHAR(1)` | Factoring: Current Status of Receivable |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CACurrentFactoringStsOfRblText` |  | |  | `cast ( ddtext as fasta_text_kk preserving type )` | `CHAR(60)` | Description for Current Status of Receivable in Factoring |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

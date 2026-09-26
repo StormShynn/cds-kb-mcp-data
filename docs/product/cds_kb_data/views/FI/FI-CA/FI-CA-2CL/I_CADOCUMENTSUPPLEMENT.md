@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentSupplements` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as appdx_kk preserving type )` |  |  |
+| `CADocumentSupplements` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as appdx_kk preserving type )` | `CHAR(1)` | Existing document supplements |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

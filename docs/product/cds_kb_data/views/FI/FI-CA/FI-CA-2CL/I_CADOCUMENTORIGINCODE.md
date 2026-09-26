@@ -39,12 +39,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentOriginCode` | ✓ | |  | `herkf` |  |  |
-| `CADocumentIsFromPaymentLot` |  | |  | `xplot` |  |  |
-| `ReturnsArePermitted` |  | |  | `xrefp` |  |  |
-| `PostingInDialogIsPermitted` |  | |  | `xdial` |  |  |
-| `IsUsableForReversal` |  | |  | `xreve` |  |  |
-| `DirectGLTransferIsPermitted` |  | |  | `xhdir` |  |  |
+| `CADocumentOriginCode` | ✓ | |  | `herkf` | `CHAR(2)` | Document Origin Key |
+| `CADocumentIsFromPaymentLot` |  | |  | `xplot` | `CHAR(1)` | Document From Payment Lot |
+| `ReturnsArePermitted` |  | |  | `xrefp` | `CHAR(1)` | Origin Permits Returns |
+| `PostingInDialogIsPermitted` |  | |  | `xdial` | `CHAR(1)` | Documents of this Origin can be Posted in Dialog |
+| `IsUsableForReversal` |  | |  | `xreve` | `CHAR(1)` | Use for Reversal Document Possible |
+| `DirectGLTransferIsPermitted` |  | |  | `xhdir` | `CHAR(1)` | Document Permits Direct G/L Transfer |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

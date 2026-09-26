@@ -55,95 +55,95 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentNumber` | ✓ | |  | `opbel` |  |  |
-| `CAGLItemNumber` | ✓ | |  | `opupk` |  |  |
-| `CompanyCode` |  | |  | `bukrs` |  |  |
-| `BusinessArea` |  | |  | `gsber` |  |  |
-| `BusinessPlace` |  | |  | `bupla` |  |  |
-| `Segment` |  | |  | `segment` |  |  |
-| `ProfitCenter` |  | |  | `prctr` |  |  |
-| `PartnerCompany` |  | |  | `vbund` |  |  |
-| `GLAccount` |  | |  | `hkont` |  |  |
-| `WBSElementInternalID` |  | |  | `cast(ps_psp_pnr as ps_s4_pspnr preserving type )` |  |  |
-| `ValueDate` |  | |  | `valut` |  |  |
-| `CAExchangeRate` |  | |  | `cast( abs( kursf ) as fis_absolute_exchangerate preserving type )` |  |  |
-| `ExchRateIsIndirectQuotation` |  | |  | `cast( case when kursf < 0 then 'X' when kursf >= 0 then ' ' end as fis_indirect_quotation preserving type )` |  |  |
-| `TransactionCurrency` |  | | `_CADocument` | `TransactionCurrency` |  |  |
-| `Currency` |  | | `_CompanyCode` | `Currency` |  |  |
-| `CAAmountInLocalCurrency` |  | |  | `betrh` |  |  |
-| `CAAmountInTransactionCurrency` |  | |  | `betrw` |  |  |
-| `CAAmountInSecondCurrency` |  | |  | `betr2` |  |  |
-| `CAAmountInThirdCurrency` |  | |  | `betr3` |  |  |
-| `CAAccountAssignmentCategory` |  | |  | `kontt` |  |  |
-| `CAAccountAssignment` |  | |  | `kontl` |  |  |
-| `CostCenter` |  | |  | `kostl` |  |  |
-| `SalesOrder` |  | |  | `kdauf` |  |  |
-| `SalesOrderItem` |  | |  | `kdpos` |  |  |
-| `CAReconciliationKey` |  | |  | `fikey` |  |  |
-| `CAInternalPostingReasonCode` |  | |  | `intbu` |  |  |
-| `CANegativePostingControlCode` |  | |  | `negbu` |  |  |
-| `CAGLPostingCurrency` |  | |  | `pswsl` |  |  |
-| `LedgerGroup` |  | |  | `ldgrp` |  |  |
-| `ProfitabilitySegment_2` |  | |  | `paobjnr` |  |  |
-| `ProfitabilitySegmentChanges` |  | |  | `pasubnr` |  |  |
-| `PlanningLevel` |  | |  | `fdlev` |  |  |
-| `CARepetitionGroup` |  | |  | `whgrp` |  |  |
-| `CATransactionKeyAccountDetn` |  | |  | `ktosl` |  |  |
-| `ConditionType` |  | |  | `kschl` |  |  |
-| `CAIsSeparateLineItemInGL` |  | |  | `xeiph` |  |  |
-| `QuantityInBaseUnit` |  | |  | `menge` |  |  |
-| `BaseUnit` |  | |  | `meins` |  |  |
-| `CAGroupingKeyDocumentItems` |  | |  | `psgrp` |  |  |
-| `TaxCode` |  | |  | `mwskz` |  |  |
-| `CASupplementaryTaxCode` |  | |  | `mwszkz` |  |  |
-| `CAWithholdingTaxSupplement` |  | |  | `qssew` |  |  |
-| `CAOtherTaxCode` |  | |  | `strkz` |  |  |
-| `CAGroupingCodeForTaxItems` |  | |  | `txgrp` |  |  |
-| `TaxJurisdiction` |  | |  | `txjcd` |  |  |
-| `CAEnteredTaxJurisdictionCode` |  | |  | `txjco` |  |  |
-| `CATaxJurisdictionLevelCounter` |  | |  | `txcnt` |  |  |
-| `CATaxExceptionID` |  | |  | `txexk` |  |  |
-| `CATaxDate` |  | |  | `txdat` |  |  |
-| `CATaxBaseAmountInLocalCurrency` |  | |  | `sbash` |  |  |
-| `CATaxBaseAmount` |  | |  | `sbasw` |  |  |
-| `CANonDeductibleTxAmtInDocCrcy` |  | |  | `ndtax` |  |  |
-| `CANonDeductibleTxAmtInLoclCrcy` |  | |  | `ndtxh` |  |  |
-| `CAContainsNonDeductibleInptTax` |  | |  | `xndtx` |  |  |
-| `CATaxRate` |  | |  | `stprz` |  |  |
-| `GrossIncomeTaxActivityCode` |  | |  | `gricd` |  |  |
-| `EmploymentTaxDistributionType` |  | |  | `gityp` |  |  |
-| `CATaxPortionInLocalCurrency` |  | |  | `sctax` |  |  |
-| `CATaxPortionInTransCurrency` |  | |  | `sttax` |  |  |
-| `CATaxIsCalculatedExternally` |  | |  | `xustpd` |  |  |
-| `CAAltvExchangeRateSetCode` |  | |  | `xdexr` |  |  |
-| `TaxCountry` |  | |  | `tax_country` |  |  |
-| `TransToTaxCntryCrcyCnvrsnFctr` |  | |  | `taxc_factor` |  |  |
-| `CAIsCashFlowItem` |  | |  | `xcsha` |  |  |
-| `CACashFlowAccount` |  | |  | `reacc` |  |  |
-| `CACashFlowCompanyCode` |  | |  | `rebuk` |  |  |
-| `HouseBank` |  | |  | `hbkid` |  |  |
-| `HouseBankAccount` |  | |  | `hktid` |  |  |
-| `QuantitySignCode` |  | |  | `squan` |  |  |
-| `BankStatementShortID` |  | |  | `kukey` |  |  |
-| `BankStatementItem` |  | |  | `esnum` |  |  |
-| `CashManagementLinkType` |  | |  | `ltype` |  |  |
-| `CashManagementLink` |  | |  | `lnkid` |  |  |
-| `CAItmIsCreatedByPostgInterface` |  | |  | `xintb` |  |  |
-| `CAStatusOfEuroConversion` |  | |  | `eurou` |  |  |
-| `CAProfitAnalysisUpdtIsDirect` |  | |  | `xcopa` |  |  |
-| `CAInvcgGroupingKey` |  | |  | `invgr` |  |  |
-| `CACtrlFieldForAcctAssgmtDistr` |  | |  | `aasta` |  |  |
-| `CAUpdateMethodForFundsMgmt` |  | |  | `fmtyp` |  |  |
-| `OriginalFinancialMgmtArea` |  | |  | `origfikrs` |  |  |
-| `OriglYearForFinMgmtAcctAssgmt` |  | |  | `budgetyear` |  |  |
-| `EarmarkedFundsDocument` |  | |  | `kblnr` |  |  |
-| `ChartOfAccounts` |  | | `_CompanyCode` | `ChartOfAccounts` |  |  |
-| `Country` |  | | `_CompanyCode` | `Country` |  |  |
-| `TaxCalculationProcedure` |  | | `_CompanyCode._Country` | `TaxCalculationProcedure` |  |  |
-| `ProfitabilitySegment` |  | |  | `cast( case when paobjnr > '9999999999' then '9999999999' else lpad( paobjnr, 10, '0' ) end as rkeobjnr_numc )` |  |  |
-| `CAAltvExchangeRateForTaxItem` |  | |  | `xdexr` |  |  |
-| `CATaxItemHasAltvExchangeRate` |  | |  | `xdexr` |  |  |
-| `EarmarkedFunds` |  | |  | `kblnr` |  |  |
+| `CADocumentNumber` | ✓ | |  | `opbel` | `CHAR(12)` | Number of a FI-CA Document |
+| `CAGLItemNumber` | ✓ | |  | `opupk` | `NUMC(4)` | Item Number in FI-CA Document |
+| `CompanyCode` |  | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `BusinessArea` |  | |  | `gsber` | `CHAR(4)` | Business Area |
+| `BusinessPlace` |  | |  | `bupla` | `CHAR(4)` | Business Place |
+| `Segment` |  | |  | `segment` | `CHAR(10)` | Segment for Segmental Reporting |
+| `ProfitCenter` |  | |  | `prctr` | `CHAR(10)` | Profit Center |
+| `PartnerCompany` |  | |  | `vbund` | `CHAR(6)` | Company ID of Trading Partner |
+| `GLAccount` |  | |  | `hkont` | `CHAR(10)` | General ledger account |
+| `WBSElementInternalID` |  | |  | `cast(ps_psp_pnr as ps_s4_pspnr preserving type )` | `NUMC(8)` | WBS Element |
+| `ValueDate` |  | |  | `valut` | `DATS(8)` | Value Date |
+| `CAExchangeRate` |  | |  | `cast( abs( kursf ) as fis_absolute_exchangerate preserving type )` | `DEC(9)` | Absolute Exchange Rate |
+| `ExchRateIsIndirectQuotation` |  | |  | `cast( case when kursf < 0 then 'X' when kursf >= 0 then ' ' end as fis_indirect_quotation preserving type )` | `CHAR(1)` | Exchange Rate Is Indirect Quotation |
+| `TransactionCurrency` |  | | `_CADocument` | `TransactionCurrency` | `CUKY(5)` | Transaction Currency |
+| `Currency` |  | | `_CompanyCode` | `Currency` | `CUKY(5)` | Currency Key |
+| `CAAmountInLocalCurrency` |  | |  | `betrh` | `CURR(13)` | Amount In Local Currency With +/- Signs |
+| `CAAmountInTransactionCurrency` |  | |  | `betrw` | `CURR(13)` | Amount in Transaction Currency with +/- Sign |
+| `CAAmountInSecondCurrency` |  | |  | `betr2` | `CURR(13)` | Amount in second parallel currency with +/- sign |
+| `CAAmountInThirdCurrency` |  | |  | `betr3` | `CURR(13)` | Amount in third parallel currency with +/- sign |
+| `CAAccountAssignmentCategory` |  | |  | `kontt` | `CHAR(2)` | Account Assignment Category |
+| `CAAccountAssignment` |  | |  | `kontl` | `CHAR(50)` | Account Assgt String for Application-Specific Account Assgts |
+| `CostCenter` |  | |  | `kostl` | `CHAR(10)` | Cost Center |
+| `SalesOrder` |  | |  | `kdauf` | `CHAR(10)` | Sales Order Number |
+| `SalesOrderItem` |  | |  | `kdpos` | `NUMC(6)` | Item Number in Sales Order |
+| `CAReconciliationKey` |  | |  | `fikey` | `CHAR(12)` | Reconciliation Key for General Ledger |
+| `CAInternalPostingReasonCode` |  | |  | `intbu` | `CHAR(1)` | Reason for Automatic Creation of Posting |
+| `CANegativePostingControlCode` |  | |  | `negbu` | `NUMC(1)` | Control Field for Negative Posting |
+| `CAGLPostingCurrency` |  | |  | `pswsl` | `CUKY(5)` | Update Currency for General Ledger Transaction Figures |
+| `LedgerGroup` |  | |  | `ldgrp` | `CHAR(4)` | Ledger Group |
+| `ProfitabilitySegment_2` |  | |  | `paobjnr` | `CHAR(10)` | Profitability Segment Number (CO-PA) |
+| `ProfitabilitySegmentChanges` |  | |  | `pasubnr` | `NUMC(4)` | Profitability Segment Changes (CO-PA) |
+| `PlanningLevel` |  | |  | `fdlev` | `CHAR(2)` | Planning Level |
+| `CARepetitionGroup` |  | |  | `whgrp` | `NUMC(3)` | Repetition group |
+| `CATransactionKeyAccountDetn` |  | |  | `ktosl` | `CHAR(3)` | Transaction Key for Account Determination |
+| `ConditionType` |  | |  | `kschl` | `CHAR(4)` | Condition Type |
+| `CAIsSeparateLineItemInGL` |  | |  | `xeiph` | `CHAR(1)` | Create Line Item in General Ledger |
+| `QuantityInBaseUnit` |  | |  | `menge` | `QUAN(13)` | Quantity |
+| `BaseUnit` |  | |  | `meins` | `UNIT(3)` | Base Unit of Measure |
+| `CAGroupingKeyDocumentItems` |  | |  | `psgrp` | `CHAR(4)` | Grouping Key for Document Items |
+| `TaxCode` |  | |  | `mwskz` | `CHAR(2)` | Tax on Sales/Purchases Code |
+| `CASupplementaryTaxCode` |  | |  | `mwszkz` | `CHAR(2)` | Supplementary Tax |
+| `CAWithholdingTaxSupplement` |  | |  | `qssew` | `CHAR(2)` | Withholding Tax Supplement |
+| `CAOtherTaxCode` |  | |  | `strkz` | `CHAR(2)` | Tax Code for Other Taxes |
+| `CAGroupingCodeForTaxItems` |  | |  | `txgrp` | `CHAR(6)` | Grouping Key for Tax Items |
+| `TaxJurisdiction` |  | |  | `txjcd` | `CHAR(15)` | Tax Jurisdiction |
+| `CAEnteredTaxJurisdictionCode` |  | |  | `txjco` | `CHAR(15)` | Tax Jurisdiction Code (Entered value) |
+| `CATaxJurisdictionLevelCounter` |  | |  | `txcnt` | `NUMC(1)` | Level Counter for Multi-Level Taxes in Tax Jurisdiction |
+| `CATaxExceptionID` |  | |  | `txexk` | `CHAR(16)` | Key for Tax Exception |
+| `CATaxDate` |  | |  | `txdat` | `DATS(8)` | Decisive Date for Calculating Taxes |
+| `CATaxBaseAmountInLocalCurrency` |  | |  | `sbash` | `CURR(13)` | Amount Subject to Tax in Local Currency (Tax Base Amount) |
+| `CATaxBaseAmount` |  | |  | `sbasw` | `CURR(13)` | Amount Subject to Tax in Transaction Currency (Tax Base Amt) |
+| `CANonDeductibleTxAmtInDocCrcy` |  | |  | `ndtax` | `CURR(13)` | Non-Deductible Tax Amount in Document Currency |
+| `CANonDeductibleTxAmtInLoclCrcy` |  | |  | `ndtxh` | `CURR(13)` | Non-Deductible Tax Amount in Local Currency |
+| `CAContainsNonDeductibleInptTax` |  | |  | `xndtx` | `CHAR(1)` | Contains Non-Deductible Input Tax |
+| `CATaxRate` |  | |  | `stprz` | `NUMC(6)` | Tax Rate |
+| `GrossIncomeTaxActivityCode` |  | |  | `gricd` | `CHAR(2)` | Activity Code for Gross Income Tax |
+| `EmploymentTaxDistributionType` |  | |  | `gityp` | `CHAR(2)` | Distribution Type for Employment Tax |
+| `CATaxPortionInLocalCurrency` |  | |  | `sctax` | `CURR(13)` | Tax Portion in FI-CA Local Currency |
+| `CATaxPortionInTransCurrency` |  | |  | `sttax` | `CURR(13)` | Tax Portion in Document Currency |
+| `CATaxIsCalculatedExternally` |  | |  | `xustpd` | `CHAR(1)` | Tax on Sales/Purchases Was Calculated by Document |
+| `CAAltvExchangeRateSetCode` |  | |  | `xdexr` | `CHAR(1)` | Alternative Exchange Rate for Tax Items |
+| `TaxCountry` |  | |  | `tax_country` | `CHAR(3)` | Tax Reporting Country/Region |
+| `TransToTaxCntryCrcyCnvrsnFctr` |  | |  | `taxc_factor` | `DEC(31)` | Factor for Conversion into Tax Country/Region Currency |
+| `CAIsCashFlowItem` |  | |  | `xcsha` | `CHAR(1)` | Document Contains Assignments from Cash Flows |
+| `CACashFlowAccount` |  | |  | `reacc` | `CHAR(10)` | Originating Account in Cash Flow Anlaysis |
+| `CACashFlowCompanyCode` |  | |  | `rebuk` | `CHAR(4)` | Partner Company Code for Cash Flow Analysis |
+| `HouseBank` |  | |  | `hbkid` | `CHAR(5)` | Short Key for a House Bank |
+| `HouseBankAccount` |  | |  | `hktid` | `CHAR(5)` | ID for Account Details |
+| `QuantitySignCode` |  | |  | `squan` | `CHAR(1)` | Quantity +/- Sign |
+| `BankStatementShortID` |  | |  | `kukey` | `NUMC(8)` | Short Key of Account Statement |
+| `BankStatementItem` |  | |  | `esnum` | `NUMC(5)` | Memo Record Number (Line Item Number in Bank Statement) |
+| `CashManagementLinkType` |  | |  | `ltype` | `CHAR(2)` | Link Type |
+| `CashManagementLink` |  | |  | `lnkid` | `CHAR(32)` | Link ID |
+| `CAItmIsCreatedByPostgInterface` |  | |  | `xintb` | `CHAR(1)` | Item Created by Posting Interface |
+| `CAStatusOfEuroConversion` |  | |  | `eurou` | `CHAR(1)` | Status of Euro Conversion |
+| `CAProfitAnalysisUpdtIsDirect` |  | |  | `xcopa` | `CHAR(1)` | CO-PA update done directly |
+| `CAInvcgGroupingKey` |  | |  | `invgr` | `CHAR(4)` | Grouping Key for Invoicing |
+| `CACtrlFieldForAcctAssgmtDistr` |  | |  | `aasta` | `CHAR(1)` | Control Field for Account Assignment Distributions |
+| `CAUpdateMethodForFundsMgmt` |  | |  | `fmtyp` | `CHAR(2)` | Update Method for FM - FI-CA Integration |
+| `OriginalFinancialMgmtArea` |  | |  | `origfikrs` | `CHAR(4)` | Original FM Area for FM Account Assignment |
+| `OriglYearForFinMgmtAcctAssgmt` |  | |  | `budgetyear` | `NUMC(4)` | Original Year for FM Account Assignment |
+| `EarmarkedFundsDocument` |  | |  | `kblnr` | `CHAR(10)` | Document Number for Earmarked Funds |
+| `ChartOfAccounts` |  | | `_CompanyCode` | `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
+| `Country` |  | | `_CompanyCode` | `Country` | `CHAR(3)` | Country/Region Key |
+| `TaxCalculationProcedure` |  | | `_CompanyCode._Country` | `TaxCalculationProcedure` | `CHAR(6)` | Procedure (Pricing, Output Control, Acct. Det., Costing,...) |
+| `ProfitabilitySegment` |  | |  | `cast( case when paobjnr > '9999999999' then '9999999999' else lpad( paobjnr, 10, '0' ) end as rkeobjnr_numc )` | `NUMC(10)` | Deprecated: Profitability Segment |
+| `CAAltvExchangeRateForTaxItem` |  | |  | `xdexr` | `CHAR(1)` | Alternative Exchange Rate for Tax Items |
+| `CATaxItemHasAltvExchangeRate` |  | |  | `xdexr` | `CHAR(1)` | Alternative Exchange Rate for Tax Items |
+| `EarmarkedFunds` |  | |  | `kblnr` | `CHAR(10)` | Document Number for Earmarked Funds |
 | `_AcctAssgmtCat` |  | |  | `_CAAccountAssignmentCategory` |  |  |
 | `_CompCode` |  | |  | `_CompanyCode` |  |  |
 | `_CompCodeCashFlow` |  | |  | `_CashFlowCompanyCode` |  |  |
