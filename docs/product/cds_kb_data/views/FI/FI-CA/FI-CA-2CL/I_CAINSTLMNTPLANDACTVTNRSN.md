@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInstlmntPlanDactvtnRsn` | ✓ | |  | `deagd` |  |  |
+| `CAInstlmntPlanDactvtnRsn` | ✓ | |  | `deagd` | `CHAR(2)` | Deactivation Reason |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentTransactionClass` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as tatyp_kk preserving type )` |  |  |
+| `CADocumentTransactionClass` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as tatyp_kk preserving type )` | `CHAR(1)` | Transaction Class of Document |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

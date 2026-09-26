@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentContainerRefType` | ✓ | |  | `refty` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `CADocumentContainerRefTypeText` |  | |  | `text` |  |  |
+| `CADocumentContainerRefType` | ✓ | |  | `refty` | `CHAR(3)` | Document Container - Reference Type |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `CADocumentContainerRefTypeText` |  | |  | `text` | `CHAR(50)` | Document Container Reference Type Text |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

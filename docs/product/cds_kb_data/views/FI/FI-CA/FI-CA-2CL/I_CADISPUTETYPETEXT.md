@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADisputeType` | ✓ | |  | `cast( left( dd07t.domvalue_l, 4 ) as fkkdm_int_reason preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CADisputeTypeName` |  | |  | `cast( ddtext as fkkdm_int_text_reason preserving type )` |  |  |
+| `CADisputeType` | ✓ | |  | `cast( left( dd07t.domvalue_l, 4 ) as fkkdm_int_reason preserving type )` | `CHAR(4)` | FICA-DM: Internal Dispute Type |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CADisputeTypeName` |  | |  | `cast( ddtext as fkkdm_int_text_reason preserving type )` | `CHAR(60)` | Description for Internal Reporting Reason |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

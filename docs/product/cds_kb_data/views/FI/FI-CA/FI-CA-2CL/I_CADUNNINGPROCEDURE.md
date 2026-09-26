@@ -38,15 +38,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADunningProcedure` | ✓ | |  | `mahnv` |  |  |
-| `CADunningProcedureCategory` |  | |  | `cast(mvtyp as mvtyp_gfn_kk preserving type)` |  |  |
-| `CAAltvDunProcedForInstallments` |  | |  | `cast(altmv as altmv_gfn_kk preserving type)` |  |  |
-| `CAAltvDunProcedForReturns` |  | |  | `cast(altmv2 as altmv2_gfn_kk preserving type)` |  |  |
-| `CAProcessControlAtLastDunLevel` |  | |  | `vlmst` |  |  |
-| `CAFactoryCalendarIsUsedForDun` |  | |  | `xmfac` |  |  |
-| `FactoryCalendar` |  | |  | `cast(mfcid as fabkl preserving type)` |  |  |
-| `CADunningLevelMustNotBeReduced` |  | |  | `not_lower_dl` |  |  |
-| `CAProcessControlForCredits` |  | |  | `vbgut` |  |  |
+| `CADunningProcedure` | ✓ | |  | `mahnv` | `CHAR(2)` | Dunning Procedure |
+| `CADunningProcedureCategory` |  | |  | `cast(mvtyp as mvtyp_gfn_kk preserving type)` | `CHAR(2)` | Dunning Procedure Category |
+| `CAAltvDunProcedForInstallments` |  | |  | `cast(altmv as altmv_gfn_kk preserving type)` | `CHAR(2)` | Alternative Dunning Procedure For Installments |
+| `CAAltvDunProcedForReturns` |  | |  | `cast(altmv2 as altmv2_gfn_kk preserving type)` | `CHAR(2)` | Alternative Dunning Procedure For Returns |
+| `CAProcessControlAtLastDunLevel` |  | |  | `vlmst` | `NUMC(1)` | Behaviour at Last Dunning Level |
+| `CAFactoryCalendarIsUsedForDun` |  | |  | `xmfac` | `CHAR(1)` | Days in arrears+dunning freq. by factory calendar |
+| `FactoryCalendar` |  | |  | `cast(mfcid as fabkl preserving type)` | `CHAR(2)` | Factory calendar key |
+| `CADunningLevelMustNotBeReduced` |  | |  | `not_lower_dl` | `CHAR(1)` | Do Not Reduce Dunning Levels |
+| `CAProcessControlForCredits` |  | |  | `vbgut` | `NUMC(1)` | Behavior if Credit Exists |
 | `_Text` | | ✓ | | | | |
 | `_DunProcedInstallments` | | ✓ | | | | |
 | `_DunProcedReturns` | | ✓ | | | | |

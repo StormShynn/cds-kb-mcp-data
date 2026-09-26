@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADunningProcedureCategory` | ✓ | |  | `mvtyp` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CADunningProcedureCategoryName` |  | |  | `mvtxt` |  |  |
+| `CADunningProcedureCategory` | ✓ | |  | `mvtyp` | `CHAR(2)` | Dunning Procedure Category |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CADunningProcedureCategoryName` |  | |  | `mvtxt` | `CHAR(50)` | Dunning Procedure Category |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

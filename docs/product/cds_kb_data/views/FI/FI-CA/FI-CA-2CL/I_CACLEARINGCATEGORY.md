@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAClearingCategory` | ✓ | |  | `vertyp` |  |  |
+| `CAClearingCategory` | ✓ | |  | `vertyp` | `CHAR(4)` | Clearing Category For Clearing Postings |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

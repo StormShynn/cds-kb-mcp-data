@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAOriginOfDunningMasterData` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as dunn_par_orig_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAOriginOfDunningMstrDataText` |  | |  | `cast( ddtext as dunn_par_orig_text_kk preserving type )` |  |  |
+| `CAOriginOfDunningMasterData` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as dunn_par_orig_kk preserving type )` | `CHAR(1)` | Dunning Control |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAOriginOfDunningMstrDataText` |  | |  | `cast( ddtext as dunn_par_orig_text_kk preserving type )` | `CHAR(60)` | Description for Dunning Control |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

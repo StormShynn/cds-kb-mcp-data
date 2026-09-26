@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADunningProcedureCategory` | ✓ | |  | `mvtyp` |  |  |
+| `CADunningProcedureCategory` | ✓ | |  | `mvtyp` | `CHAR(2)` | Dunning Procedure Category |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

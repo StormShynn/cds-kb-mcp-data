@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADunningExceptionReason` | ✓ | |  | `poken` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CADunningExceptionReasonName` |  | |  | `poket` |  |  |
+| `CADunningExceptionReason` | ✓ | |  | `poken` | `NUMC(3)` | Item Indicator in Dunning Run |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CADunningExceptionReasonName` |  | |  | `poket` | `CHAR(70)` | Long Text for Item Indicator in Dunning Run |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

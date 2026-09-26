@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACashSecurityDepositStatus` | ✓ | |  | `cast( left( domvalue_l,2 ) as c_status_kk )` |  |  |
+| `CACashSecurityDepositStatus` | ✓ | |  | `cast( left( domvalue_l,2 ) as c_status_kk )` | `NUMC(2)` | Cash security deposit status |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

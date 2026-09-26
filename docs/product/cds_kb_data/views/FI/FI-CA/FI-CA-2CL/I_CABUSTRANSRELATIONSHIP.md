@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABusTransRelationship` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 2 ) as evl_objrl_kk preserving type )` |  |  |
+| `CABusTransRelationship` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 2 ) as evl_objrl_kk preserving type )` | `CHAR(2)` | Relation between Objects |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

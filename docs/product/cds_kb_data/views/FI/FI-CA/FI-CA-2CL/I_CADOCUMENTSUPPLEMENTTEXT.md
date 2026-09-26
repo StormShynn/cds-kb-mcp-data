@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentSupplements` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as appdx_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CADocumentSupplementText` |  | |  | `cast( ddtext as appdx_text_kk preserving type )` |  |  |
+| `CADocumentSupplements` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as appdx_kk preserving type )` | `CHAR(1)` | Existing document supplements |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CADocumentSupplementText` |  | |  | `cast( ddtext as appdx_text_kk preserving type )` | `CHAR(60)` | Description for Document Appendices |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

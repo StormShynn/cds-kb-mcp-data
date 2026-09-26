@@ -40,12 +40,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPaymentCompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `CAHouseBankReference` | ✓ | |  | `eigbv` |  |  |
-| `HouseBank` |  | |  | `cast(hbkid as farp_hbkid preserving type)` |  |  |
-| `HouseBankAccount` |  | |  | `cast(hktid as fac_hktid preserving type)` |  |  |
-| `UserCodeAtBank` |  | |  | `bnkid` |  |  |
-| `CARegisteredNameOfPayerAtBank` |  | |  | `aufbz` |  |  |
+| `CAPaymentCompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code for Automatic Payment Transactions |
+| `CAHouseBankReference` | ✓ | |  | `eigbv` | `CHAR(25)` | Own Bank Details |
+| `HouseBank` |  | |  | `cast(hbkid as farp_hbkid preserving type)` | `CHAR(5)` | House Bank Key |
+| `HouseBankAccount` |  | |  | `cast(hktid as fac_hktid preserving type)` | `CHAR(5)` | House Bank Account |
+| `UserCodeAtBank` |  | |  | `bnkid` | `CHAR(14)` | User Number at the Bank |
+| `CARegisteredNameOfPayerAtBank` |  | |  | `aufbz` | `CHAR(50)` | Name of Payer Registered at Bank |
 | `_Text` | | ✓ | | | | |
 | `_CompCode` | | ✓ | | | | |
 

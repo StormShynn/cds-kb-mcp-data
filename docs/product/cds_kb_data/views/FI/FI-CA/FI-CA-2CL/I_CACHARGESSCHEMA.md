@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAChargesSchema` | ✓ | |  | `chgid` |  |  |
+| `CAChargesSchema` | ✓ | |  | `chgid` | `CHAR(2)` | Charges Schedule |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

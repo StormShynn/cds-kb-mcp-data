@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInternalPostingReasonCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as intbu_kk preserving type )` |  |  |
+| `CAInternalPostingReasonCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as intbu_kk preserving type )` | `CHAR(1)` | Reason for Automatic Creation of Posting |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

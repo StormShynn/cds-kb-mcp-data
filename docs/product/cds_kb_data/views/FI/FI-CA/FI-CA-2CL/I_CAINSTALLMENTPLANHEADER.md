@@ -39,35 +39,35 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInstallmentPlan` | ✓ | |  | `rpnum` |  |  |
-| `CAInstallmentPlanCategory` |  | |  | `rpcat` |  |  |
-| `CAInstlmntPlanDeactivationDate` |  | |  | `deadt` |  |  |
-| `CAInstlmntPlanDeactivationType` |  | |  | `deman` |  |  |
-| `CADeactivationOpenAmountInTC` |  | |  | `deoff` |  |  |
-| `TransactionCurrency` |  | |  | `waers` |  |  |
-| `CAInstlmntPlanDactvtnRsn` |  | |  | `deagd` |  |  |
-| `CAInstallmentPlanStartDate` |  | |  | `sttdt` |  |  |
-| `CAInstallmentPlanEndDate` |  | |  | `enddt` |  |  |
-| `CANumberOfInstallments` |  | |  | `ninst` |  |  |
-| `ContractAccount` |  | |  | `vkont` |  |  |
-| `BusinessPartner` |  | |  | `gpart` |  |  |
-| `CAContract` |  | |  | `vtref` |  |  |
-| `CompanyCode` |  | |  | `bukrs` |  |  |
-| `CAInstlmntPlanIntrstCalcType` |  | |  | `dzins` |  |  |
-| `CAIntrstAndChargesAreDistrd` |  | |  | `gzver` |  |  |
-| `CAInterestDueCategory` |  | |  | `faein` |  |  |
-| `CAInstlmntPlanDactvtnEntryDate` |  | |  | `dpudt` |  |  |
-| `CAInstlmntPlanDactvtnEntryTime` |  | |  | `dputm` |  |  |
-| `CAWorkflowCheckReason` |  | |  | `c4eye` |  |  |
-| `CAWorkflowCheckProcess` |  | |  | `c4eyp` |  |  |
-| `CASubApplication` |  | |  | `subap` |  |  |
-| `CANumberOfAddlIntrstInstlmnts` |  | |  | `anzintrt` |  |  |
-| `CAInterestCalculationStartDate` |  | |  | `sttin` |  |  |
-| `CAInstlmntPlnIsChgdByInvoicing` |  | |  | `invip` |  |  |
-| `CAPredecessorInstallmentPlan` |  | |  | `orig_rpnum` |  |  |
-| `CAInstlmntPlanGoodwillValue` |  | |  | `gwval` |  |  |
-| `CAInstallmentPlanIssueDate` |  | |  | `cpudt` |  |  |
-| `CAInstallmentPlanIssueTime` |  | |  | `cputm` |  |  |
+| `CAInstallmentPlan` | ✓ | |  | `rpnum` | `CHAR(12)` | Installment Plan Number in Contract A/R & A/P |
+| `CAInstallmentPlanCategory` |  | |  | `rpcat` | `CHAR(2)` | Installment Plan Category |
+| `CAInstlmntPlanDeactivationDate` |  | |  | `deadt` | `DATS(8)` | Deactivation Date of Installment Plan |
+| `CAInstlmntPlanDeactivationType` |  | |  | `deman` | `CHAR(1)` | Instalment Plan Was Deactivated Manually |
+| `CADeactivationOpenAmountInTC` |  | |  | `deoff` | `CURR(13)` | Open Amount at Time of Deactivation |
+| `TransactionCurrency` |  | |  | `waers` | `CUKY(5)` | Currency Key |
+| `CAInstlmntPlanDactvtnRsn` |  | |  | `deagd` | `CHAR(2)` | Deactivation Reason |
+| `CAInstallmentPlanStartDate` |  | |  | `sttdt` | `DATS(8)` | Installment Plan Start Date |
+| `CAInstallmentPlanEndDate` |  | |  | `enddt` | `DATS(8)` | Installment Plan End Date |
+| `CANumberOfInstallments` |  | |  | `ninst` | `NUMC(3)` | Number of Installments |
+| `ContractAccount` |  | |  | `vkont` | `CHAR(12)` | Contract Account Number |
+| `BusinessPartner` |  | |  | `gpart` | `CHAR(10)` | Business Partner Number |
+| `CAContract` |  | |  | `vtref` | `CHAR(20)` | Reference Specifications from Contract |
+| `CompanyCode` |  | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `CAInstlmntPlanIntrstCalcType` |  | |  | `dzins` | `CHAR(1)` | Calculate Interest from Original Items |
+| `CAIntrstAndChargesAreDistrd` |  | |  | `gzver` | `CHAR(1)` | Distribute Interest/Charges to All Installments |
+| `CAInterestDueCategory` |  | |  | `faein` | `CHAR(1)` | Interest Document Due |
+| `CAInstlmntPlanDactvtnEntryDate` |  | |  | `dpudt` | `DATS(8)` | Entry Day Of Installment Plan Deactivation |
+| `CAInstlmntPlanDactvtnEntryTime` |  | |  | `dputm` | `TIMS(6)` | Entry Time Of Installment Plan Deactivation |
+| `CAWorkflowCheckReason` |  | |  | `c4eye` | `CHAR(2)` | Check Reason for Workflows Acc. to Dual Control Principle |
+| `CAWorkflowCheckProcess` |  | |  | `c4eyp` | `CHAR(1)` | Editing Process to Be Confirmed |
+| `CASubApplication` |  | |  | `subap` | `CHAR(1)` | Subapplication in Contract Accounts Receivable and Payable |
+| `CANumberOfAddlIntrstInstlmnts` |  | |  | `anzintrt` | `NUMC(2)` | Number of Additional Interest Installments |
+| `CAInterestCalculationStartDate` |  | |  | `sttin` | `DATS(8)` | Start Date of Interest Calculation on Installment Plan |
+| `CAInstlmntPlnIsChgdByInvoicing` |  | |  | `invip` | `CHAR(1)` | Installment Plan Status: Installment Plan from Invoicing |
+| `CAPredecessorInstallmentPlan` |  | |  | `orig_rpnum` | `CHAR(12)` | Previous Installment Plan |
+| `CAInstlmntPlanGoodwillValue` |  | |  | `gwval` | `DEC(5)` | Goodwill Value Determined for the Installment Plan |
+| `CAInstallmentPlanIssueDate` |  | |  | `cpudt` | `DATS(8)` | Document Entered On (CPU Date) |
+| `CAInstallmentPlanIssueTime` |  | |  | `cputm` | `TIMS(6)` | Time of Entry |
 | `_BusinessPartner` | | ✓ | | | | |
 | `_CAInstallmentPlanCategory` | | ✓ | | | | |
 | `_CAPredecessorInstallmentPlan` | | ✓ | | | | |

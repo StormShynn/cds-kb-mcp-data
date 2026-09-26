@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACollectionStrategy` | ✓ | |  | `strat` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CACollectionStrategyName` |  | |  | `strattext` |  |  |
+| `CACollectionStrategy` | ✓ | |  | `strat` | `CHAR(2)` | Collection Strategy |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CACollectionStrategyName` |  | |  | `strattext` | `CHAR(50)` | Name of Collection Strategy |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

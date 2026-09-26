@@ -38,10 +38,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACorrespondenceType` | ✓ | |  | `cotyp` |  |  |
-| `CAApplicationArea` |  | |  | `cast( left( applk, 1 ) as applk_kk preserving type )` |  |  |
-| `CAPeriodicCorrespondence` |  | |  | `cotrg` |  |  |
-| `IsInboundCorrespondence` |  | |  | `incorr` |  |  |
+| `CACorrespondenceType` | ✓ | |  | `cotyp` | `CHAR(4)` | Correspondence Type |
+| `CAApplicationArea` |  | |  | `cast( left( applk, 1 ) as applk_kk preserving type )` | `CHAR(1)` | Application Area |
+| `CAPeriodicCorrespondence` |  | |  | `cotrg` | `CHAR(1)` | Periodic Correspondence |
+| `IsInboundCorrespondence` |  | |  | `incorr` | `CHAR(1)` | FI-CA Correspondence: Inbound Correspondence Indicator |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

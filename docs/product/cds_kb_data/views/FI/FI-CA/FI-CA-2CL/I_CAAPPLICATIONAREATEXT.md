@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAApplicationArea` | ✓ | |  |  |  |  |
-| `Language` | ✓ | |  | `cast( DomainText.ddlanguage as spras preserving type )` |  |  |
-| `CAApplicationAreaText` |  | |  | `cast( DomainText.ddtext as applk_text_kk preserving type )` |  |  |
+| `CAApplicationArea` | ✓ | |  |  | `CHAR(1)` | Application Area |
+| `Language` | ✓ | |  | `cast( DomainText.ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAApplicationAreaText` |  | |  | `cast( DomainText.ddtext as applk_text_kk preserving type )` | `CHAR(60)` | Description for Application Area |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

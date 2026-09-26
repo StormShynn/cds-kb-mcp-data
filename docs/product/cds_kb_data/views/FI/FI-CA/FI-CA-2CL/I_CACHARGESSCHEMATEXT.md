@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAChargesSchema` | ✓ | |  | `chgid` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAChargesSchemaName` |  | |  | `chgtx` |  |  |
+| `CAChargesSchema` | ✓ | |  | `chgid` | `CHAR(2)` | Charges Schedule |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAChargesSchemaName` |  | |  | `chgtx` | `CHAR(50)` | Name of Charges Schedule |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

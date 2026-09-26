@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACollectionsMasterDataGroup` | ✓ | |  | `cmgrp` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CACollMasterDataGroupName` |  | |  | `descr` |  |  |
+| `CACollectionsMasterDataGroup` | ✓ | |  | `cmgrp` | `CHAR(2)` | Collection Management: Master Data Group |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CACollMasterDataGroupName` |  | |  | `descr` | `CHAR(20)` | Master Data Group: Description |
 | `_CACollMasterDataGroup` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

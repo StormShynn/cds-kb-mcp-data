@@ -40,10 +40,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABusinessProcess` | ✓ | |  |  |  |  |
-| `CABusinessLockReason` | ✓ | |  | `CADunningLockReason` |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `CABusinessLockReasonName` |  | |  | `CADunningLockReasonName` |  |  |
+| `CABusinessProcess` | ✓ | |  |  | `CHAR(2)` | Process Code (Example: Dunning, Payment) |
+| `CABusinessLockReason` | ✓ | |  | `CADunningLockReason` | `CHAR(1)` | Dunning Lock Reason |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `CABusinessLockReasonName` |  | |  | `CADunningLockReasonName` | `CHAR(50)` | Name of Dunning Lock Reason |
 | `_BusProcess` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

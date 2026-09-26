@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABusinessProcess` | ✓ | |  | `proid` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CABusinessProcessName` |  | |  | `ptext` |  |  |
+| `CABusinessProcess` | ✓ | |  | `proid` | `CHAR(2)` | Process Code (Example: Dunning, Payment) |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CABusinessProcessName` |  | |  | `ptext` | `CHAR(40)` | Language-Dependent Text in System Settings |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

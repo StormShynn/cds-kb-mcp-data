@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInstallmentPlanCategory` | ✓ | |  | `rpcat` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAInstallmentPlanCategoryName` |  | |  | `rpctxt` |  |  |
+| `CAInstallmentPlanCategory` | ✓ | |  | `rpcat` | `CHAR(2)` | Installment Plan Category |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAInstallmentPlanCategoryName` |  | |  | `rpctxt` | `CHAR(40)` | Name of Installment Plan Category |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

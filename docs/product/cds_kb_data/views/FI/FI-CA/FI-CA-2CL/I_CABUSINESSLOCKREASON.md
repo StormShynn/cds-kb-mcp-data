@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABusinessProcess` | ✓ | |  |  |  |  |
-| `CABusinessLockReason` | ✓ | |  | `CADunningLockReason` |  |  |
-| `CAAuthorizationGroup` |  | |  |  |  |  |
+| `CABusinessProcess` | ✓ | |  |  | `CHAR(2)` | Process Code (Example: Dunning, Payment) |
+| `CABusinessLockReason` | ✓ | |  | `CADunningLockReason` | `CHAR(1)` | Dunning Lock Reason |
+| `CAAuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
 | `_BusProcess` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |
 

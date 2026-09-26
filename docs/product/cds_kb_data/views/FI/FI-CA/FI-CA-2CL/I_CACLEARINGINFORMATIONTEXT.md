@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAClearingInformation` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as aginf_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAClearingInformationText` |  | |  | `cast( ddtext as aginf_text_kk preserving type )` |  |  |
+| `CAClearingInformation` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as aginf_kk preserving type )` | `CHAR(1)` | Clearing Information |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAClearingInformationText` |  | |  | `cast( ddtext as aginf_text_kk preserving type )` | `CHAR(60)` | Description for Clearing Information |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

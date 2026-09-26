@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAAuthorizationGroupObject` | ✓ | |  | `bgobj` |  |  |
+| `CAAuthorizationGroupObject` | ✓ | |  | `bgobj` | `CHAR(10)` | Authorization Group Object |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInterestCode` | ✓ | |  | `ikey` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAInterestCodeName` |  | |  | `text` |  |  |
+| `CAInterestCode` | ✓ | |  | `ikey` | `CHAR(2)` | Interest Key |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAInterestCodeName` |  | |  | `text` | `CHAR(30)` | Interest Key Description |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

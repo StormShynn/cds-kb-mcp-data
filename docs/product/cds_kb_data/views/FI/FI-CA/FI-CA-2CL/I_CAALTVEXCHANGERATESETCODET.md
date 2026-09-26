@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAAltvExchangeRateSetCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as xdexr_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAAltvExchangeRateSetCodeText` |  | |  | `cast( ddtext as xdexr_text_kk preserving type )` |  |  |
+| `CAAltvExchangeRateSetCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as xdexr_kk preserving type )` | `CHAR(1)` | Alternative Exchange Rate for Tax Items |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAAltvExchangeRateSetCodeText` |  | |  | `cast( ddtext as xdexr_text_kk preserving type )` | `CHAR(60)` | Description for Alternative Exchange Rate for Tax Items |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

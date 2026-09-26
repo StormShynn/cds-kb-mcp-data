@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACrdtWorthinessItemStatus` | ✓ | |  | `cast( left( domvalue_l, 1 ) as bonis_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `ddlanguage` |  |  |
-| `CACrdtWorthinessItemStatusText` |  | |  | `cast( ddtext as bonis_text_kk preserving type )` |  |  |
+| `CACrdtWorthinessItemStatus` | ✓ | |  | `cast( left( domvalue_l, 1 ) as bonis_kk preserving type )` | `CHAR(1)` | Creditworthiness Item Status |
+| `Language` | ✓ | |  | `ddlanguage` | `LANG(1)` | Language Key |
+| `CACrdtWorthinessItemStatusText` |  | |  | `cast( ddtext as bonis_text_kk preserving type )` | `CHAR(60)` | Creditworthiness Item Status Description |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

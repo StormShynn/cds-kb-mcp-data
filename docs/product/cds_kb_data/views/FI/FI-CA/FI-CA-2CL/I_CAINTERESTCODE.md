@@ -38,18 +38,18 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInterestCode` | ✓ | |  | `ikey` |  |  |
-| `CAToleranceForIntrstCalc` |  | |  | `todays` |  |  |
-| `CAToleranceUnitForIntrstCalc` |  | |  | `irunito` |  |  |
-| `CATransferForIntrstCalc` |  | |  | `trdays` |  |  |
-| `CATransferUnitForIntrstCalc` |  | |  | `irunitr` |  |  |
-| `CAFrequencyForIntrstCalc` |  | |  | `irhyth` |  |  |
-| `CAFrequencyUnitForIntrstCalc` |  | |  | `irunit` |  |  |
-| `CAInterestCalculationRule` |  | |  | `irule` |  |  |
-| `CAInterestCalcIsInAdvance` |  | |  | `verzzp` |  |  |
-| `CAInterestConditionIsFixed` |  | |  | `verzwe` |  |  |
-| `CASubitemsAreGroupedBeforeCalc` |  | |  | `icond` |  |  |
-| `CAAllSubitemsAreEvaldForCalc` |  | |  | `iallz` |  |  |
+| `CAInterestCode` | ✓ | |  | `ikey` | `CHAR(2)` | Interest Key |
+| `CAToleranceForIntrstCalc` |  | |  | `todays` | `NUMC(3)` | Tolerance Days for Interest Calculation |
+| `CAToleranceUnitForIntrstCalc` |  | |  | `irunito` | `CHAR(1)` | Unit for Tolerances for Int. Calc.: Days, Months, Years |
+| `CATransferForIntrstCalc` |  | |  | `trdays` | `NUMC(3)` | Transfer Days for Calculation of Interest on Arrears |
+| `CATransferUnitForIntrstCalc` |  | |  | `irunitr` | `CHAR(1)` | Unit for Transfer Days for Int. Calc.: Days, Months, Years |
+| `CAFrequencyForIntrstCalc` |  | |  | `irhyth` | `NUMC(3)` | Interest Frequency |
+| `CAFrequencyUnitForIntrstCalc` |  | |  | `irunit` | `CHAR(1)` | Unit for Interest Frequency: Days, months, years |
+| `CAInterestCalculationRule` |  | |  | `irule` | `CHAR(10)` | Interest Calculation Rule |
+| `CAInterestCalcIsInAdvance` |  | |  | `verzzp` | `CHAR(1)` | Indicator: Calculate Interest in Advance or in Arrears? |
+| `CAInterestConditionIsFixed` |  | |  | `verzwe` | `CHAR(1)` | Indicator: Use Fixed Interest Condition? |
+| `CASubitemsAreGroupedBeforeCalc` |  | |  | `icond` | `CHAR(1)` | Summarize Subitems before Interest Calcualtion |
+| `CAAllSubitemsAreEvaldForCalc` |  | |  | `iallz` | `CHAR(1)` | Consider All Subitems for Interest Calculation |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACorrespondenceVariant` | ✓ | |  | `coprc` |  |  |
+| `CACorrespondenceVariant` | ✓ | |  | `coprc` | `CHAR(4)` | Correspondence Variant |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

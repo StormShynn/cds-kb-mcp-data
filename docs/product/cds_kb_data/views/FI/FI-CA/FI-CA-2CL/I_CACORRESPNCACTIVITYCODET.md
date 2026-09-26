@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACorrespondenceActivityCode` | ✓ | |  | `corr_ackey` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CACorrespncActivityCodeText` |  | |  | `corr_atext` |  |  |
+| `CACorrespondenceActivityCode` | ✓ | |  | `corr_ackey` | `CHAR(4)` | Correspondence - Activity Key |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CACorrespncActivityCodeText` |  | |  | `corr_atext` | `CHAR(60)` | Name of Correspondence Activity |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

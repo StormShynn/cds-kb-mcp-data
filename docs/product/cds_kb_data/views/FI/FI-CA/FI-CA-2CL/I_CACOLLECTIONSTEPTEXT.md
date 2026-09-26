@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACollectionStep` | ✓ | |  | `step` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CACollectionStepName` |  | |  | `stept` |  |  |
+| `CACollectionStep` | ✓ | |  | `step` | `CHAR(4)` | Collection Step |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CACollectionStepName` |  | |  | `stept` | `CHAR(50)` | Name of Collection Step |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

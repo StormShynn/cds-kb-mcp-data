@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInstlmntPlanDactvtnRsn` | ✓ | |  | `deagd` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAInstlmntPlanDactvtnRsnName` |  | |  | `rpctxt` |  |  |
+| `CAInstlmntPlanDactvtnRsn` | ✓ | |  | `deagd` | `CHAR(2)` | Deactivation Reason |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAInstlmntPlanDactvtnRsnName` |  | |  | `rpctxt` | `CHAR(30)` | Deactivation Reason |
 | `_Language` | | ✓ | | | | |
 
 ## Associations
