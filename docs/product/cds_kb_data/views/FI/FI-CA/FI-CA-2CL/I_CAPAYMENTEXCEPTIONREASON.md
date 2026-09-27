@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPaymentExceptionReason` | ✓ | |  | `poken` |  |  |
-| `CAErrorLevelInPaymentRun` |  | |  | `errorlevel` |  |  |
+| `CAPaymentExceptionReason` | ✓ | |  | `poken` | `NUMC(3)` | Item Indicator in Payment Program |
+| `CAErrorLevelInPaymentRun` |  | |  | `errorlevel` | `CHAR(1)` | Level at Which Error Occurred in Payment Run |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

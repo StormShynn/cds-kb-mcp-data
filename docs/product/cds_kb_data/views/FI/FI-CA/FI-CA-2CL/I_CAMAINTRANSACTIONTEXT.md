@@ -40,10 +40,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAApplicationArea` | ✓ | |  | `applk` |  |  |
-| `CAMainTransaction` | ✓ | |  | `hvorg` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAMainTransactionName` |  | |  | `cast( txt30 as hvorg_text_kk preserving type )` |  |  |
+| `CAApplicationArea` | ✓ | |  | `applk` | `CHAR(1)` | Application Area |
+| `CAMainTransaction` | ✓ | |  | `hvorg` | `CHAR(4)` | Main Transaction for Line Item |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAMainTransactionName` |  | |  | `cast( txt30 as hvorg_text_kk preserving type )` | `CHAR(30)` | Text of Main Transaction |
 | `_Language` | | ✓ | | | | |
 | `_ApplArea` | | ✓ | | | | |
 

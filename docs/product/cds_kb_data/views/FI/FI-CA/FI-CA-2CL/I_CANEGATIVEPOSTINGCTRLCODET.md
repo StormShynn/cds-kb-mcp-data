@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CANegativePostingControlCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as negbu_kk )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CANegativePostingCtrlCodeText` |  | |  | `cast( ddtext as negbu_text_kk preserving type )` |  |  |
+| `CANegativePostingControlCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as negbu_kk )` | `NUMC(1)` | Control Field for Negative Posting |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CANegativePostingCtrlCodeText` |  | |  | `cast( ddtext as negbu_text_kk preserving type )` | `CHAR(60)` | Description for Control Field for Negative Posting |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

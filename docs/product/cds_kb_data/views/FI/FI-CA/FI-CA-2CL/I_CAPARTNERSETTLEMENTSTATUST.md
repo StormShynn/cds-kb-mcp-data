@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPartnerSettlementStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as ptitm_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAPartnerSettlementStatusName` |  | |  | `cast( ddtext as ptitm_text_kk preserving type )` |  |  |
+| `CAPartnerSettlementStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as ptitm_kk preserving type )` | `CHAR(1)` | Status of Partner Settlement Using Billable Items |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAPartnerSettlementStatusName` |  | |  | `cast( ddtext as ptitm_text_kk preserving type )` | `CHAR(60)` | Description for Status of Partner Settlement |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

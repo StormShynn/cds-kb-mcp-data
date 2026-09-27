@@ -39,15 +39,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAOpenItemListUUID` | ✓ | |  | `guid` |  |  |
-| `OpenItemKeyDate` | ✓ | |  | `keydate` |  |  |
-| `CAOpenItemListName` |  | |  | `txt50` |  |  |
-| `CAMassActivityType` |  | |  | `aktyp` |  |  |
-| `CAMassRunDate` |  | |  | `laufd` |  |  |
-| `CAMassRunID` |  | |  | `laufi` |  |  |
-| `CreatedByUser` |  | |  | `ernam` |  |  |
-| `CreationDateTime` |  | |  | `cast(timestamp as timestampl)` |  |  |
-| `TransactionCode` |  | |  | `tcode` |  |  |
+| `CAOpenItemListUUID` | ✓ | |  | `guid` | `RAW(16)` | Key for Business Partner Item (in OI Lists) |
+| `OpenItemKeyDate` | ✓ | |  | `keydate` | `DATS(8)` | Key Date for Analysis of Open Items |
+| `CAOpenItemListName` |  | |  | `txt50` | `CHAR(50)` | Text 50 Characters |
+| `CAMassActivityType` |  | |  | `aktyp` | `CHAR(4)` | Mass activity type |
+| `CAMassRunDate` |  | |  | `laufd` | `DATS(8)` | Date ID |
+| `CAMassRunID` |  | |  | `laufi` | `CHAR(6)` | Run ID |
+| `CreatedByUser` |  | |  | `ernam` | `CHAR(12)` | Created By |
+| `CreationDateTime` |  | |  | `cast(timestamp as timestampl)` | `DEC(21)` | UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun) |
+| `TransactionCode` |  | |  | `tcode` | `CHAR(20)` | Transaction Code |
 
 ## Source Code
 

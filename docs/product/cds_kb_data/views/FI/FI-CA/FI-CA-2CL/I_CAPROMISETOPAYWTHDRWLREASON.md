@@ -39,11 +39,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPromiseToPayWthdrwlReason` | ✓ | |  | `pprsw` |  |  |
-| `CAIntrstHndlgForWthdrwlPrms2P` |  | |  | `ppinw` |  |  |
-| `CAChrgHndlgForWthdrwlPrmsToPay` |  | |  | `ppchw` |  |  |
-| `CACreditWorthinessIsUpdated` |  | |  | `xupcw` |  |  |
-| `CARsetRsnCanBeUsedInBillerDrct` |  | |  | `xebpp` |  |  |
+| `CAPromiseToPayWthdrwlReason` | ✓ | |  | `pprsw` | `CHAR(2)` | Reason for Withdrawal of Promise to Pay |
+| `CAIntrstHndlgForWthdrwlPrms2P` |  | |  | `ppinw` | `CHAR(1)` | Handling of Interest for Withdrawal of Promise to Pay |
+| `CAChrgHndlgForWthdrwlPrmsToPay` |  | |  | `ppchw` | `CHAR(1)` | Handling of Charge for Withdrawal of Promise to Pay |
+| `CACreditWorthinessIsUpdated` |  | |  | `xupcw` | `CHAR(1)` | Update Creditworthiness |
+| `CARsetRsnCanBeUsedInBillerDrct` |  | |  | `xebpp` | `CHAR(1)` | Reset Reason Can Be Used in Biller Direct |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

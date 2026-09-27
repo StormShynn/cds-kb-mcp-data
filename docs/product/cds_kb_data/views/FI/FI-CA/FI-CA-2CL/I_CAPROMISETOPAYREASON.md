@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPromiseToPayReason` | ✓ | |  | `pprsc` |  |  |
+| `CAPromiseToPayReason` | ✓ | |  | `pprsc` | `CHAR(2)` | Reason for Promise to Pay |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

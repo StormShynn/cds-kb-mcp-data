@@ -39,19 +39,19 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAProviderContract` | ✓ | |  | `ProviderContract` |  |  |
-| `CATechnicalResourceGroup` | ✓ | |  |  |  |  |
-| `CATechnicalResourceIDType` | ✓ | |  |  |  |  |
-| `CATechnicalResourceID` | ✓ | |  |  |  |  |
-| `CATechRsceValidFromDateTime` | ✓ | |  |  |  |  |
-| `CATechRsceValidToDateTime` |  | |  |  |  |  |
-| `CANormalizedTechnicalResource` |  | |  |  |  |  |
-| `CreationDate` |  | |  |  |  |  |
-| `CreationTime` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `LastChangeDate` |  | |  |  |  |  |
-| `LastChangeTime` |  | |  |  |  |  |
-| `LastChangedByUser` |  | |  |  |  |  |
+| `CAProviderContract` | ✓ | |  | `ProviderContract` | `CHAR(20)` | Identification of a Provider Contract |
+| `CATechnicalResourceGroup` | ✓ | |  |  | `NUMC(6)` | Group of IDs |
+| `CATechnicalResourceIDType` | ✓ | |  |  | `CHAR(2)` | Type of Identification |
+| `CATechnicalResourceID` | ✓ | |  |  | `CHAR(50)` | ID That Can Be Used to Determine a Provider Contract |
+| `CATechRsceValidFromDateTime` | ✓ | |  |  | `DEC(15)` | Valid From (Time Stamp) |
+| `CATechRsceValidToDateTime` |  | |  |  | `DEC(15)` | Valid To (Time Stamp) |
+| `CANormalizedTechnicalResource` |  | |  |  | `CHAR(50)` | Normalized ID |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Creation Time |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
+| `LastChangeTime` |  | |  |  | `TIMS(6)` | Last Changed At |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |
 | `_PrvdrContr` | | ✓ | | | | |
 | `_TechRsceIDType` | | ✓ | | | | |
 

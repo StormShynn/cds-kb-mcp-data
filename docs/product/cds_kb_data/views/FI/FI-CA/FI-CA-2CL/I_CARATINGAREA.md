@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CARatingArea` | ✓ | |  | `rating_area` |  |  |
+| `CARatingArea` | ✓ | |  | `rating_area` | `CHAR(4)` | Rating Area |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

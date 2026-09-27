@@ -40,10 +40,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentOriginCode` | ✓ | |  |  |  |  |
-| `CAPostingReason` | ✓ | |  | `cast( WriteOffReasonText.CAWriteOffReason as bugrd_kk preserving type )` |  |  |
-| `Language` | ✓ | |  |  |  |  |
-| `CAPostingReasonName` |  | |  | `cast( WriteOffReasonText.CAWriteOffReasonName as potxt_kk preserving type )` |  |  |
+| `CADocumentOriginCode` | ✓ | |  |  | `CHAR(2)` | Document Origin Key |
+| `CAPostingReason` | ✓ | |  | `cast( WriteOffReasonText.CAWriteOffReason as bugrd_kk preserving type )` | `CHAR(2)` | Posting Reason (For Write-Offs And Transfer Postings) |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `CAPostingReasonName` |  | |  | `cast( WriteOffReasonText.CAWriteOffReasonName as potxt_kk preserving type )` | `CHAR(50)` | Description of Posting Reason |
 | `_DocOriginCode` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

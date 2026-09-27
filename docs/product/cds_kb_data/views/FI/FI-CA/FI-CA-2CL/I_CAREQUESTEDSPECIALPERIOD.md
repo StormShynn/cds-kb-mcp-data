@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CARequestedPeriodForGLTransfer` | ✓ | |  | `cast( left( dd07l.domvalue_l, 2 ) as wnper_kk )` |  |  |
+| `CARequestedPeriodForGLTransfer` | ✓ | |  | `cast( left( dd07l.domvalue_l, 2 ) as wnper_kk )` | `NUMC(2)` | Requested Special Period for Transfer to General Ledger |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

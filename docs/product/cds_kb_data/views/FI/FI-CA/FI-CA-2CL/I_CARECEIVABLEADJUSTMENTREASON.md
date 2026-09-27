@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAReceivableAdjustmentReason` | ✓ | |  | `cast( grund as grund_kk preserving type )` |  |  |
+| `CAReceivableAdjustmentReason` | ✓ | |  | `cast( grund as grund_kk preserving type )` | `CHAR(2)` | Adjustment Reason |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

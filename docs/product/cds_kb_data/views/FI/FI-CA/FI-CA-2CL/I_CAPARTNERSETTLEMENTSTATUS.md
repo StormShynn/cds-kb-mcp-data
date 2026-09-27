@@ -40,7 +40,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPartnerSettlementStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as ptitm_kk preserving type )` |  |  |
+| `CAPartnerSettlementStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as ptitm_kk preserving type )` | `CHAR(1)` | Status of Partner Settlement Using Billable Items |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

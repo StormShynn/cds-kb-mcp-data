@@ -40,32 +40,32 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAProviderContract` | ✓ | |  | `ProviderContract` |  |  |
-| `BusinessPartner` |  | |  |  |  |  |
-| `CreationDate` |  | |  |  |  |  |
-| `CreationTime` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `IsMarkedForDeletion` |  | |  |  |  |  |
-| `LastChangeDate` |  | |  |  |  |  |
-| `LastChangeTime` |  | |  |  |  |  |
-| `LastChangedByUser` |  | |  |  |  |  |
-| `CAProviderContractName` |  | |  |  |  |  |
-| `CAProviderContractExtReference` |  | |  |  |  |  |
-| `CAPrvdrContrStartDateTime` |  | |  |  |  |  |
-| `CAPrvdrContrEndDateTime` |  | |  |  |  |  |
-| `CAAuthorizationGroup` |  | |  |  |  |  |
-| `CompanyCode` |  | |  |  |  |  |
-| `TimeZoneID` |  | |  |  |  |  |
-| `CAProviderContractCategory` |  | |  |  |  |  |
-| `CAProviderContractMigrtnStatus` |  | |  |  |  |  |
-| `CAProviderContractType` |  | |  |  |  |  |
-| `CAProviderContractStatus` |  | |  |  |  |  |
-| `CAProviderContractSender` |  | |  |  |  |  |
-| `PrvdrContrEarliestEndDateTime` |  | |  |  |  |  |
-| `MinNrOfMonthsForContractPeriod` |  | |  |  |  |  |
-| `NrOfMonthsForContractRenewal` |  | |  |  |  |  |
-| `NrOfDaysForContrNoticePeriod` |  | |  |  |  |  |
-| `BudgetBillingPlanType` |  | |  |  |  |  |
+| `CAProviderContract` | ✓ | |  | `ProviderContract` | `CHAR(20)` | Identification of a Provider Contract |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Creation Time |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `IsMarkedForDeletion` |  | |  |  | `CHAR(1)` | Deletion Indicator |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
+| `LastChangeTime` |  | |  |  | `TIMS(6)` | Last Changed At |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |
+| `CAProviderContractName` |  | |  |  | `CHAR(35)` | Name of Contract |
+| `CAProviderContractExtReference` |  | |  |  | `CHAR(20)` | Technical Key of Provider Contract in External System |
+| `CAPrvdrContrStartDateTime` |  | |  |  | `DEC(15)` | Contract Start |
+| `CAPrvdrContrEndDateTime` |  | |  |  | `DEC(15)` | Contract End Date |
+| `CAAuthorizationGroup` |  | |  |  | `CHAR(4)` | Authorization Group |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code for Authorization Check |
+| `TimeZoneID` |  | |  |  | `CHAR(6)` | Time Zone |
+| `CAProviderContractCategory` |  | |  |  | `CHAR(1)` | Contract Category |
+| `CAProviderContractMigrtnStatus` |  | |  |  | `CHAR(1)` | Migration Status |
+| `CAProviderContractType` |  | |  |  | `CHAR(1)` | Contract Specification |
+| `CAProviderContractStatus` |  | |  |  | `CHAR(1)` | Status of Provider Contract |
+| `CAProviderContractSender` |  | |  |  | `CHAR(3)` | Provider Contract Sender |
+| `PrvdrContrEarliestEndDateTime` |  | |  |  | `DEC(15)` | End of Minimum Term |
+| `MinNrOfMonthsForContractPeriod` |  | |  |  | `NUMC(3)` | Min Length of Contract (Months) |
+| `NrOfMonthsForContractRenewal` |  | |  |  | `NUMC(3)` | Contract Extension in Months |
+| `NrOfDaysForContrNoticePeriod` |  | |  |  | `NUMC(3)` | Notice Period in Days |
+| `BudgetBillingPlanType` |  | |  |  | `CHAR(4)` | Utilities Budget Billing Plan Type |
 | `_BusinessPartner` | | ✓ | | | | |
 | `_CreatedByUser` | | ✓ | | | | |
 | `_LastChangedByUser` | | ✓ | | | | |

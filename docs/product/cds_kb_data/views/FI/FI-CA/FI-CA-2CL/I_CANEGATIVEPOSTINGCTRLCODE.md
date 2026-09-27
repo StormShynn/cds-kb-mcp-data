@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CANegativePostingControlCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as negbu_kk )` |  |  |
+| `CANegativePostingControlCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as negbu_kk )` | `NUMC(1)` | Control Field for Negative Posting |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

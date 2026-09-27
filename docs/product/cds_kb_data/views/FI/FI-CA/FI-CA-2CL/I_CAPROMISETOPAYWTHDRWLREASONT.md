@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPromiseToPayWthdrwlReason` | ✓ | |  | `pprsw` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAPrmsToPayWthdrwlReasonName` |  | |  | `txt50` |  |  |
+| `CAPromiseToPayWthdrwlReason` | ✓ | |  | `pprsw` | `CHAR(2)` | Reason for Withdrawal of Promise to Pay |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAPrmsToPayWthdrwlReasonName` |  | |  | `txt50` | `CHAR(50)` | Name |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

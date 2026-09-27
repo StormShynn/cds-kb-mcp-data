@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Country` | ✓ | |  | `land` |  |  |
-| `CAOtherTaxCode` | ✓ | |  | `strkz` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAOtherTaxCodeName` |  | |  | `strkz_txt` |  |  |
+| `Country` | ✓ | |  | `land` | `CHAR(3)` | Company Country/Region |
+| `CAOtherTaxCode` | ✓ | |  | `strkz` | `CHAR(2)` | Tax Code for Other Taxes |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAOtherTaxCodeName` |  | |  | `strkz_txt` | `CHAR(50)` | Free Tax Code (Text) |
 | `_Country` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

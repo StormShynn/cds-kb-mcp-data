@@ -39,20 +39,20 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentNumber` | ✓ | |  |  |  |  |
-| `CARepetitionItemNumber` | ✓ | |  |  |  |  |
-| `CABPItemNumber` | ✓ | |  |  |  |  |
-| `CASubItemNumber` | ✓ | |  |  |  |  |
-| `CAPromiseToPay` | ✓ | |  |  |  |  |
-| `CANetDueDate` | ✓ | |  |  |  |  |
-| `CAOverdueItemOrigin` |  | |  |  |  |  |
-| `CompanyCode` |  | |  |  |  |  |
-| `BusinessPartner` |  | |  |  |  |  |
-| `ContractAccount` |  | |  |  |  |  |
-| `TransactionCurrency` |  | |  |  |  |  |
-| `CAAmountInTransactionCurrency` |  | |  |  |  |  |
-| `CompanyCodeCurrency` |  | |  |  |  |  |
-| `CAAmountInLocalCurrency` |  | |  |  |  |  |
+| `CADocumentNumber` | ✓ | |  |  | `CHAR(12)` | Number of a FI-CA Document |
+| `CARepetitionItemNumber` | ✓ | |  |  | `NUMC(3)` | Repetition Item in FI-CA Document |
+| `CABPItemNumber` | ✓ | |  |  | `NUMC(4)` | Item Number in FI-CA Document |
+| `CASubItemNumber` | ✓ | |  |  | `NUMC(3)` | Subitem for a Partial Clearing in Document |
+| `CAPromiseToPay` | ✓ | |  |  | `CHAR(12)` | Identification of Promise to Pay |
+| `CANetDueDate` | ✓ | |  |  | `DATS(8)` | Due date for net payment |
+| `CAOverdueItemOrigin` |  | |  |  | `CHAR(1)` | Origin of Overdue Item |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `ContractAccount` |  | |  |  | `CHAR(12)` | Contract Account Number |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
+| `CAAmountInTransactionCurrency` |  | |  |  | `CURR(13)` | Amount in Transaction Currency with +/- Sign |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `CAAmountInLocalCurrency` |  | |  |  | `CURR(13)` | Amount In Local Currency With +/- Signs |
 | `_BusinessPartner` | | ✓ | | | | |
 | `_CADocument_2` | | ✓ | | | | |
 | `_CADocumentBPItem_2` | | ✓ | | | | |

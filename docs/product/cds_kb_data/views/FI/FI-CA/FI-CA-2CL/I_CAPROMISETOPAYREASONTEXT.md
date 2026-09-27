@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPromiseToPayReason` | ✓ | |  | `pprsc` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAPromiseToPayReasonName` |  | |  | `txt50` |  |  |
+| `CAPromiseToPayReason` | ✓ | |  | `pprsc` | `CHAR(2)` | Reason for Promise to Pay |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAPromiseToPayReasonName` |  | |  | `txt50` | `CHAR(50)` | Name |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

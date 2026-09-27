@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAContainsNonDeductibleInptTax` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as xndtx_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAContainsNonDeductInptTaxText` |  | |  | `cast( ddtext as xndtx_text_kk preserving type )` |  |  |
+| `CAContainsNonDeductibleInptTax` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as xndtx_kk preserving type )` | `CHAR(1)` | Contains Non-Deductible Input Tax |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAContainsNonDeductInptTaxText` |  | |  | `cast( ddtext as xndtx_text_kk preserving type )` | `CHAR(60)` | Description for Non-Deductible Input Tax |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

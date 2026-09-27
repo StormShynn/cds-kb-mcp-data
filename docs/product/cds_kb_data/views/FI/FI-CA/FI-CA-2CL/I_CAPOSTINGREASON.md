@@ -38,8 +38,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentOriginCode` | ✓ | |  |  |  |  |
-| `CAPostingReason` | ✓ | |  | `cast( WriteOffReason.CAWriteOffReason as bugrd_kk preserving type )` |  |  |
+| `CADocumentOriginCode` | ✓ | |  |  | `CHAR(2)` | Document Origin Key |
+| `CAPostingReason` | ✓ | |  | `cast( WriteOffReason.CAWriteOffReason as bugrd_kk preserving type )` | `CHAR(2)` | Posting Reason (For Write-Offs And Transfer Postings) |
 | `_DocOriginCode` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |
 

@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAStatisticalCodeOfOriginItem` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as astkz_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAStatisticalCodeOfOrignItmTxt` |  | |  | `cast( ddtext as astkz_text_kk preserving type )` |  |  |
+| `CAStatisticalCodeOfOriginItem` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as astkz_kk preserving type )` | `CHAR(1)` | Statistical Key of the Triggering Item |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAStatisticalCodeOfOrignItmTxt` |  | |  | `cast( ddtext as astkz_text_kk preserving type )` | `CHAR(60)` | Description for Statistics Key of Triggering Item |
 | `_Language` | | ✓ | | | | |
 
 ## Associations
