@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CASEPAPreNotificationRqmtCode` | ✓ | |  | `cast( left( domvalue_l, 1 ) as pnctr_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CASEPAPreNotifRqmtCodeText` |  | |  | `cast( ddtext as pnctr_text_kk preserving type )` |  |  |
+| `CASEPAPreNotificationRqmtCode` | ✓ | |  | `cast( left( domvalue_l, 1 ) as pnctr_kk preserving type )` | `CHAR(1)` | Necessity of a Notification |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CASEPAPreNotifRqmtCodeText` |  | |  | `cast( ddtext as pnctr_text_kk preserving type )` | `CHAR(60)` | Description of Necessity of a Notification |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

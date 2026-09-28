@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CARevenueAccountingRefType` | ✓ | |  | `reference_type` |  |  |
+| `CARevenueAccountingRefType` | ✓ | |  | `reference_type` | `CHAR(3)` | Reference Type for Revenue Accounting |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

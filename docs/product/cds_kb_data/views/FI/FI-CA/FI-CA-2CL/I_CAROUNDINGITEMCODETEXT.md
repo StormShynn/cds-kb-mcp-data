@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CARoundingItemCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as rndps_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CARoundingItemCodeText` |  | |  | `cast( ddtext as rndps_text_kk preserving type )` |  |  |
+| `CARoundingItemCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as rndps_kk preserving type )` | `CHAR(1)` | Type of Rounding Item |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CARoundingItemCodeText` |  | |  | `cast( ddtext as rndps_text_kk preserving type )` | `CHAR(60)` | Description for Type of Rounding Item |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

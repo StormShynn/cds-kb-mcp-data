@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CASubledgerApplication` | ✓ | |  | `cast( left( dd07l.domvalue_l, 5 ) as trsla_kk preserving type )` |  |  |
+| `CASubledgerApplication` | ✓ | |  | `cast( left( dd07l.domvalue_l, 5 ) as trsla_kk preserving type )` | `CHAR(5)` | Subledger Transfer: Application ID |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

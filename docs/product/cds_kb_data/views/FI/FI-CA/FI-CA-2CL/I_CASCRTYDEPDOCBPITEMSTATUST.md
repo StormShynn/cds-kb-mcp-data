@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAScrtyDepDocBPItemStatus` | ✓ | |  | `cast( left( domvalue_l,1) as secdep_doci_status_kk )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAScrtyDepDocBPItemStatusText` |  | |  | `cast( ddtext as secdep_doci_status_text_kk preserving type )` |  |  |
+| `CAScrtyDepDocBPItemStatus` | ✓ | |  | `cast( left( domvalue_l,1) as secdep_doci_status_kk )` | `NUMC(1)` | Payment Status of a Contract Accounting Document |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAScrtyDepDocBPItemStatusText` |  | |  | `cast( ddtext as secdep_doci_status_text_kk preserving type )` | `CHAR(60)` | Description of a Payment Status of a Document |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CASrvcDisconncnReqStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as disreq_status_kk preserving type )` |  |  |
+| `CASrvcDisconncnReqStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as disreq_status_kk preserving type )` | `CHAR(1)` | Disconnection Request Status |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

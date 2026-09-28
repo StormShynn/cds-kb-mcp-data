@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CASecurityDepositRequestReason` | ✓ | |  | `reason` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CASecurityDepositReqReasonText` |  | |  | `cast ( text as req_reason_txt_kk )` |  |  |
+| `CASecurityDepositRequestReason` | ✓ | |  | `reason` | `CHAR(4)` | Reason for Requesting a Security Deposit |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CASecurityDepositReqReasonText` |  | |  | `cast ( text as req_reason_txt_kk )` | `CHAR(40)` | Request Reason Description |
 | `_CASecurityDepositRequestRsn` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

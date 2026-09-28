@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CARoundingItemCode` | ✓ | |  | `cast( left( domvalue_l, 1 ) as rndps_kk preserving type )` |  |  |
+| `CARoundingItemCode` | ✓ | |  | `cast( left( domvalue_l, 1 ) as rndps_kk preserving type )` | `CHAR(1)` | Type of Rounding Item |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CASrvcReconncnReqStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as recreq_stat_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CASrvcReconncnReqStatusText` |  | |  | `cast( ddtext as recreq_stat_text_kk preserving type )` |  |  |
+| `CASrvcReconncnReqStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as recreq_stat_kk preserving type )` | `CHAR(1)` | Reconnection Request Status |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CASrvcReconncnReqStatusText` |  | |  | `cast( ddtext as recreq_stat_text_kk preserving type )` | `CHAR(60)` | Description of a Reconnection Request Status |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

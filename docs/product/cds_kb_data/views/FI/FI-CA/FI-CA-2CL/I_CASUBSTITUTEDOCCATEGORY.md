@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CASubstituteDocumentCategory` | ✓ | |  | `cast( left( dd07l.domvalue_l,1 ) as abwtp_kk preserving type )` |  |  |
+| `CASubstituteDocumentCategory` | ✓ | |  | `cast( left( dd07l.domvalue_l,1 ) as abwtp_kk preserving type )` | `CHAR(1)` | Category of substitute document in FI-CA |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CASrvcDisconncnReqStatus` | ✓ | |  | `cast( left( domvalue_l, 1 ) as disreq_status_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CASrvcDisconncnReqStatusText` |  | |  | `cast( ddtext as disreq_status_text_kk preserving type )` |  |  |
+| `CASrvcDisconncnReqStatus` | ✓ | |  | `cast( left( domvalue_l, 1 ) as disreq_status_kk preserving type )` | `CHAR(1)` | Disconnection Request Status |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CASrvcDisconncnReqStatusText` |  | |  | `cast( ddtext as disreq_status_text_kk preserving type )` | `CHAR(60)` | Description of Disconnection Request Status |
 | `_Language` | | ✓ | | | | |
 
 ## Associations
