@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADunningNoticeGroup` | ✓ | |  | `mgrup` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CADunningNoticeGroupName` |  | |  | `mtext` |  |  |
+| `CADunningNoticeGroup` | ✓ | |  | `mgrup` | `CHAR(2)` | Grouping for Dunning Notices |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CADunningNoticeGroupName` |  | |  | `mtext` | `CHAR(50)` | Name of Dunning Grouping |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

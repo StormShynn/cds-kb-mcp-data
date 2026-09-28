@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAStatisticalCodeOfOriginItem` | ✓ | |  | `cast( left( dd07l.domvalue_l,1 ) as astkz_kk preserving type )` |  |  |
+| `CAStatisticalCodeOfOriginItem` | ✓ | |  | `cast( left( dd07l.domvalue_l,1 ) as astkz_kk preserving type )` | `CHAR(1)` | Statistical Key of the Triggering Item |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

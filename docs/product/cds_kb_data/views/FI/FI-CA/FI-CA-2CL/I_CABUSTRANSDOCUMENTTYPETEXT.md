@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABusTransDocumentType` | ✓ | |  | `cast( left( dd07t.domvalue_l, 4 ) as evl_doctyp_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CABusTransDocumentTypeText` |  | |  | `cast( ddtext as evl_doctyp_text_kk preserving type )` |  |  |
+| `CABusTransDocumentType` | ✓ | |  | `cast( left( dd07t.domvalue_l, 4 ) as evl_doctyp_kk preserving type )` | `CHAR(4)` | Business Transaction: Document Category |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CABusTransDocumentTypeText` |  | |  | `cast( ddtext as evl_doctyp_text_kk preserving type )` | `CHAR(60)` | Description for Document Type of Business Transaction |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

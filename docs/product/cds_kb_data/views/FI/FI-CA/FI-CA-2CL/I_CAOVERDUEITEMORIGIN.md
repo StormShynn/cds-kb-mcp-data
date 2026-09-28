@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAOverdueItemOrigin` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as overdue_item_origin_kk preserving type )` |  |  |
+| `CAOverdueItemOrigin` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as overdue_item_origin_kk preserving type )` | `CHAR(1)` | Origin of Overdue Item |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

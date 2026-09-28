@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABusinessTransactionObject` | ✓ | |  | `cast ( left( dd07t.domvalue_l,8 ) as evl_objid_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
-| `CABusTransObjectName` |  | |  | `cast ( ddtext as evl_objid_text_kk preserving type )` |  |  |
+| `CABusinessTransactionObject` | ✓ | |  | `cast ( left( dd07t.domvalue_l,8 ) as evl_objid_kk preserving type )` | `CHAR(8)` | Business Transaction: Object Identification |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CABusTransObjectName` |  | |  | `cast ( ddtext as evl_objid_text_kk preserving type )` | `CHAR(60)` | Description for Object Identification for Bus. Transaction |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

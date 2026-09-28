@@ -38,12 +38,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInstallmentPlanCategory` | ✓ | |  | `rpcat` |  |  |
-| `CACreditWorthinessRatingValue` |  | |  | `bonit` |  |  |
-| `CAInstlmntPlnItmIntrstCalcType` |  | |  | `rpint` |  |  |
-| `CAInstlmntPlnItmSettlementType` |  | |  | `verart` |  |  |
-| `CAInstlmntPlanChargeType` |  | |  | `chgty` |  |  |
-| `CASurchargesAreCalcdAutomly` |  | |  | `autgeb` |  |  |
+| `CAInstallmentPlanCategory` | ✓ | |  | `rpcat` | `CHAR(2)` | Installment Plan Category |
+| `CACreditWorthinessRatingValue` |  | |  | `bonit` | `NUMC(2)` | Creditworthiness Number |
+| `CAInstlmntPlnItmIntrstCalcType` |  | |  | `rpint` | `CHAR(1)` | Item Interest Calculation to Start Date |
+| `CAInstlmntPlnItmSettlementType` |  | |  | `verart` | `CHAR(3)` | Clearing Type for Clearing of Installment Plan Original Item |
+| `CAInstlmntPlanChargeType` |  | |  | `chgty` | `CHAR(2)` | Charge Category for Installment Plan Surcharge |
+| `CASurchargesAreCalcdAutomly` |  | |  | `autgeb` | `CHAR(1)` | Calculate Surcharges Automatically |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADunningLevelCategory` | ✓ | |  | `mstyp` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CADunningLevelCategoryName` |  | |  | `mstxt` |  |  |
+| `CADunningLevelCategory` | ✓ | |  | `mstyp` | `CHAR(2)` | Dunning Level Category |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CADunningLevelCategoryName` |  | |  | `mstxt` | `CHAR(50)` | Text for Dunning Level Type |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

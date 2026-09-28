@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPaymentPreNotificationCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as xpyor_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAPaymentPreNotifCodeName` |  | |  | `cast( ddtext as xpyor_text_kk preserving type )` |  |  |
+| `CAPaymentPreNotificationCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as xpyor_kk preserving type )` | `CHAR(1)` | Item Included in a Payment Order |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAPaymentPreNotifCodeName` |  | |  | `cast( ddtext as xpyor_text_kk preserving type )` | `CHAR(60)` | Item in Payment Request/Direct Debit Pre-Notification |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

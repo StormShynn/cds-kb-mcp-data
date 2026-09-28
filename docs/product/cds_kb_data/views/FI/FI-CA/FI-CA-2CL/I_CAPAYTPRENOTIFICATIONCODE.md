@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPaymentPreNotificationCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as xpyor_kk preserving type )` |  |  |
+| `CAPaymentPreNotificationCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as xpyor_kk preserving type )` | `CHAR(1)` | Item Included in a Payment Order |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

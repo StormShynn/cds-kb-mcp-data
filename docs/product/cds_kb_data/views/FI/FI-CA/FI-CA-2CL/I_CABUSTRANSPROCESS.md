@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABusinessTransactionProcess` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 8 ) as evl_proid_kk preserving type )` |  |  |
+| `CABusinessTransactionProcess` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 8 ) as evl_proid_kk preserving type )` | `CHAR(8)` | Business Transaction: Process Identification |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

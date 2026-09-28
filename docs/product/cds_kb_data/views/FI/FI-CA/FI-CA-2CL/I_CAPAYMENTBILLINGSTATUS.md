@@ -41,7 +41,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPaymentBillingStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as xsett_kk preserving type )` |  |  |
+| `CAPaymentBillingStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as xsett_kk preserving type )` | `CHAR(1)` | Settlement Status |
 | `_CAPaymentBillingStatusText` | | ✓ | | | | |
 
 ## Associations

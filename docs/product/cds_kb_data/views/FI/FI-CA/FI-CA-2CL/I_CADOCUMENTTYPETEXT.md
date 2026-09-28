@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentType` | ✓ | |  | `blart` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAApplicationArea` | ✓ | |  | `applk` |  |  |
-| `CADocumentTypeName` |  | |  | `cast( ltext as blart_text_kk preserving type )` |  |  |
+| `CADocumentType` | ✓ | |  | `blart` | `CHAR(2)` | Document Type |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAApplicationArea` | ✓ | |  | `applk` | `CHAR(1)` | Application Area |
+| `CADocumentTypeName` |  | |  | `cast( ltext as blart_text_kk preserving type )` | `CHAR(20)` | Text of Document Type |
 | `_ApplArea` |  | |  | `_CAApplicationArea` |  |  |
 | `_Language` | | ✓ | | | | |
 | `_CAApplicationArea` | | ✓ | | | | |

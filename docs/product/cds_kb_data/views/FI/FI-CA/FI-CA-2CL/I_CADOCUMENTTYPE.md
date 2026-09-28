@@ -39,11 +39,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentType` | ✓ | |  | `blart` |  |  |
-| `CAApplicationArea` | ✓ | |  | `applk` |  |  |
-| `CACrossCompCodePostgIsAllowed` |  | |  | `xgsub` |  |  |
-| `CAManualPostingIsForbidden` |  | |  | `xintf` |  |  |
-| `CANegativePostingCode` |  | |  | `negbl` |  |  |
+| `CADocumentType` | ✓ | |  | `blart` | `CHAR(2)` | Document Type |
+| `CAApplicationArea` | ✓ | |  | `applk` | `CHAR(1)` | Application Area |
+| `CACrossCompCodePostgIsAllowed` |  | |  | `xgsub` | `CHAR(1)` | Cross-Company Posting Permitted |
+| `CAManualPostingIsForbidden` |  | |  | `xintf` | `CHAR(1)` | No Manual Postings Permitted |
+| `CANegativePostingCode` |  | |  | `negbl` | `CHAR(1)` | Rule for Negative Postings |
 | `_ApplArea` |  | |  | `_CAApplicationArea` |  |  |
 | `_CAApplicationArea` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |

@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAAuthorizationType` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 1 ) as auart_kk preserving type )` |  |  |
+| `CAAuthorizationType` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 1 ) as auart_kk preserving type )` | `CHAR(1)` | Payment cards: Authorization type |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

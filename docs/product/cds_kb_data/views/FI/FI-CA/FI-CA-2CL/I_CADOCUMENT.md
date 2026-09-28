@@ -39,51 +39,51 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentNumber` | ✓ | |  | `opbel` |  |  |
-| `CAReconciliationKey` |  | |  | `fikey` |  |  |
-| `CAApplicationArea` |  | |  | `applk` |  |  |
-| `CADocumentType` |  | |  | `blart` |  |  |
-| `CADocumentOriginCode` |  | |  | `herkf` |  |  |
-| `CreatedByUser` |  | |  | `ernam` |  |  |
-| `CreationDate` |  | |  | `cpudt` |  |  |
-| `CreationTime` |  | |  | `cputm` |  |  |
-| `TransactionCurrency` |  | |  | `waers` |  |  |
-| `DocumentDate` |  | |  | `bldat` |  |  |
-| `CAPostingDate` |  | |  | `budat` |  |  |
-| `ExchangeRateDate` |  | |  | `wwert` |  |  |
-| `CAReferenceDocument` |  | |  | `xblnr` |  |  |
-| `CAReturnReason` |  | |  | `rlgrd` |  |  |
-| `CAPostingReason` |  | |  | `abgrd` |  |  |
-| `CASeparateDocIsCreatedInGL` |  | |  | `xeibh` |  |  |
-| `ReferenceDocumentType` |  | |  | `awtyp` |  |  |
-| `OriginalReferenceDocument` |  | |  | `awkey` |  |  |
-| `CAReversedDocumentNumber` |  | |  | `stbel` |  |  |
-| `CADocumentClass` |  | |  | `bltyp` |  |  |
-| `CAClearingInformation` |  | |  | `aginf` |  |  |
-| `CATaxCompanyCode` |  | |  | `stbuk` |  |  |
-| `CAReversalDocumentNumber` |  | |  | `storb` |  |  |
-| `CADocumentSupplements` |  | |  | `appdx` |  |  |
-| `LogicalSystem` |  | |  | `awsys` |  |  |
-| `CADocumentVersion` |  | |  | `versn` |  |  |
-| `CAWorkflowCheckReason` |  | |  | `c4eye` |  |  |
-| `CAWorkflowCheckProcess` |  | |  | `c4eyp` |  |  |
-| `CADocumentTransactionClass` |  | |  | `tatyp` |  |  |
-| `CADocumentTypeForGLTransfer` |  | |  | `hbbla` |  |  |
-| `CADocContainsCashFlowItems` |  | |  | `xcsha` |  |  |
-| `CAStorageLocationOfTaxSuplmnt` |  | |  | `utloc` |  |  |
-| `CATaxCodeWasExchanged` |  | |  | `xtxch` |  |  |
-| `TaxReportingDate` |  | |  | `vatdate` |  |  |
-| `TaxFulfillmentDate` |  | |  | `fulfilldate` |  |  |
-| `CARequestedPeriodForGLTransfer` |  | |  | `wnper` |  |  |
-| `IsIndividualPosting` |  | |  | `xsing` |  |  |
-| `CADocumentIsAged` |  | |  | `xdaag` |  |  |
-| `LastChangeDate` |  | |  | `chdate` |  |  |
-| `LastChangeTime` |  | |  | `chtime` |  |  |
-| `CAInvcgRefPostingDocType` |  | |  | `cadoctype` |  |  |
-| `CAInvoicingDocument` |  | |  | `invdocno` |  |  |
-| `CA1stCountrySpecificReference` |  | |  | `glo_ref1_hd` |  |  |
-| `CAFirstCountrySpecificDate` |  | |  | `glo_dat1_hd` |  |  |
-| `CAClassificationKey` |  | |  | `opord` |  |  |
+| `CADocumentNumber` | ✓ | |  | `opbel` | `CHAR(12)` | Number of a FI-CA Document |
+| `CAReconciliationKey` |  | |  | `fikey` | `CHAR(12)` | Reconciliation Key for General Ledger |
+| `CAApplicationArea` |  | |  | `applk` | `CHAR(1)` | Application Area |
+| `CADocumentType` |  | |  | `blart` | `CHAR(2)` | Document Type |
+| `CADocumentOriginCode` |  | |  | `herkf` | `CHAR(2)` | Document Origin Key |
+| `CreatedByUser` |  | |  | `ernam` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `CreationDate` |  | |  | `cpudt` | `DATS(8)` | Day On Which Accounting Document Was Entered |
+| `CreationTime` |  | |  | `cputm` | `TIMS(6)` | Time of Entry |
+| `TransactionCurrency` |  | |  | `waers` | `CUKY(5)` | Transaction Currency |
+| `DocumentDate` |  | |  | `bldat` | `DATS(8)` | Document Date in Document |
+| `CAPostingDate` |  | |  | `budat` | `DATS(8)` | Posting Date in the Document |
+| `ExchangeRateDate` |  | |  | `wwert` | `DATS(8)` | Translation Date |
+| `CAReferenceDocument` |  | |  | `xblnr` | `CHAR(16)` | Reference Document Number |
+| `CAReturnReason` |  | |  | `rlgrd` | `CHAR(3)` | Return Reason |
+| `CAPostingReason` |  | |  | `abgrd` | `CHAR(2)` | Posting Reason (For Write-Offs And Transfer Postings) |
+| `CASeparateDocIsCreatedInGL` |  | |  | `xeibh` | `CHAR(1)` | Create Separate Document in General Ledger |
+| `ReferenceDocumentType` |  | |  | `awtyp` | `CHAR(5)` | Reference Transaction |
+| `OriginalReferenceDocument` |  | |  | `awkey` | `CHAR(20)` | Object Key |
+| `CAReversedDocumentNumber` |  | |  | `stbel` | `CHAR(12)` | Number of Reversed Document |
+| `CADocumentClass` |  | |  | `bltyp` | `CHAR(1)` | Document Class |
+| `CAClearingInformation` |  | |  | `aginf` | `CHAR(1)` | Clearing Information |
+| `CATaxCompanyCode` |  | |  | `stbuk` | `CHAR(4)` | Tax Company Code |
+| `CAReversalDocumentNumber` |  | |  | `storb` | `CHAR(12)` | Number of Reversal Document |
+| `CADocumentSupplements` |  | |  | `appdx` | `CHAR(1)` | Existing document supplements |
+| `LogicalSystem` |  | |  | `awsys` | `CHAR(10)` | Logical System of Source Document |
+| `CADocumentVersion` |  | |  | `versn` | `CHAR(3)` | Version Number |
+| `CAWorkflowCheckReason` |  | |  | `c4eye` | `CHAR(2)` | Check Reason for Workflows Acc. to Dual Control Principle |
+| `CAWorkflowCheckProcess` |  | |  | `c4eyp` | `CHAR(1)` | Editing Process to Be Confirmed |
+| `CADocumentTransactionClass` |  | |  | `tatyp` | `CHAR(1)` | Transaction Class of Document |
+| `CADocumentTypeForGLTransfer` |  | |  | `hbbla` | `CHAR(2)` | Document Type for Transfer to General Ledger |
+| `CADocContainsCashFlowItems` |  | |  | `xcsha` | `CHAR(1)` | Document Contains Assignments from Cash Flows |
+| `CAStorageLocationOfTaxSuplmnt` |  | |  | `utloc` | `CHAR(2)` | Storage Location of Tax Supplement for Telco Tax (U.S.A) |
+| `CATaxCodeWasExchanged` |  | |  | `xtxch` | `CHAR(1)` | Tax Codes Were Exchanged |
+| `TaxReportingDate` |  | |  | `vatdate` | `DATS(8)` | Tax Reporting Date |
+| `TaxFulfillmentDate` |  | |  | `fulfilldate` | `DATS(8)` | Tax Settlement Date |
+| `CARequestedPeriodForGLTransfer` |  | |  | `wnper` | `NUMC(2)` | Requested Special Period for Transfer to General Ledger |
+| `IsIndividualPosting` |  | |  | `xsing` | `CHAR(1)` | Individual Posting |
+| `CADocumentIsAged` |  | |  | `xdaag` | `CHAR(1)` | Data Aging: Document was already in historical area |
+| `LastChangeDate` |  | |  | `chdate` | `DATS(8)` | Last Changed On |
+| `LastChangeTime` |  | |  | `chtime` | `TIMS(6)` | Time at Which the Object Was Last Changed |
+| `CAInvcgRefPostingDocType` |  | |  | `cadoctype` | `CHAR(4)` | Reference Document Type of Posting Document for Invoicing |
+| `CAInvoicingDocument` |  | |  | `invdocno` | `CHAR(12)` | Number of Invoicing Document |
+| `CA1stCountrySpecificReference` |  | |  | `glo_ref1_hd` | `CHAR(80)` | Country/Region-Specific Reference 1 in Document |
+| `CAFirstCountrySpecificDate` |  | |  | `glo_dat1_hd` | `DATS(8)` | Country-/Region-Specific Date 1 in Document |
+| `CAClassificationKey` |  | |  | `opord` | `CHAR(35)` | Classification Key |
 | `_AccountingDocType` | | ✓ | | | | |
 | `_CAApplicationArea` | | ✓ | | | | |
 | `_CAClearingInformation` | | ✓ | | | | |

@@ -38,8 +38,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABusinessProcess` | ✓ | |  | `proid` |  |  |
-| `CAApplicationArea` |  | |  | `cast( applkc as applk_kk preserving type )` |  |  |
+| `CABusinessProcess` | ✓ | |  | `proid` | `CHAR(2)` | Process Code (Example: Dunning, Payment) |
+| `CAApplicationArea` |  | |  | `cast( applkc as applk_kk preserving type )` | `CHAR(1)` | Application Area |
 | `_Text` | | ✓ | | | | |
 | `_ApplArea` | | ✓ | | | | |
 

@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACompanyCodeGroup` | ✓ | |  | `opbuk` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CACompanyCodeGroupName` |  | |  | `txt30` |  |  |
+| `CACompanyCodeGroup` | ✓ | |  | `opbuk` | `CHAR(4)` | Company Code Group |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CACompanyCodeGroupName` |  | |  | `txt30` | `CHAR(30)` | Group Name |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

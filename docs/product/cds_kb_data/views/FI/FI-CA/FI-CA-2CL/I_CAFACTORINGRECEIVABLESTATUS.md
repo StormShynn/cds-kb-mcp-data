@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACurrentFactoringStatusOfRbl` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as fasta_kk preserving type )` |  |  |
+| `CACurrentFactoringStatusOfRbl` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as fasta_kk preserving type )` | `CHAR(1)` | Factoring: Current Status of Receivable |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

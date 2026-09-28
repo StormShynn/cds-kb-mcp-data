@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABusinessTransactionActivity` | ✓ | |  | `cast( left( dd07l.domvalue_l, 4 ) as evl_actid_kk preserving type )` |  |  |
+| `CABusinessTransactionActivity` | ✓ | |  | `cast( left( dd07l.domvalue_l, 4 ) as evl_actid_kk preserving type )` | `CHAR(4)` | Business Transaction: Activity |
 | `_CABusTransActivityText` | | ✓ | | | | |
 
 ## Associations

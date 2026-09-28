@@ -38,10 +38,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACollectionsMasterDataGroup` | ✓ | |  | `cmgrp` |  |  |
-| `CACollMasterDataGroupLevel` |  | |  | `grplvl` |  |  |
-| `CAAuthorizationGroup` |  | |  | `begru` |  |  |
-| `CAIsUsedForSpcfcMasterDataCat` |  | |  | `xassignmd` |  |  |
+| `CACollectionsMasterDataGroup` | ✓ | |  | `cmgrp` | `CHAR(2)` | Collection Management: Master Data Group |
+| `CACollMasterDataGroupLevel` |  | |  | `grplvl` | `CHAR(1)` | Master Data Grouping Level |
+| `CAAuthorizationGroup` |  | |  | `begru` | `CHAR(4)` | Authorization Group |
+| `CAIsUsedForSpcfcMasterDataCat` |  | |  | `xassignmd` | `CHAR(1)` | Restriction to Specific Master Data Categories Required |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

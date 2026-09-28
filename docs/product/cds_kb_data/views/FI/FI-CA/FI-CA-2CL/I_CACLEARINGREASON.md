@@ -38,8 +38,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAClearingReason` | ✓ | |  | `augrd` |  |  |
-| `IsUsableForReversal` |  | |  | `xreve` |  |  |
+| `CAClearingReason` | ✓ | |  | `augrd` | `CHAR(2)` | Clearing Reason |
+| `IsUsableForReversal` |  | |  | `xreve` | `CHAR(1)` | Use for Reversal Document Possible |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

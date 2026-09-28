@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPeriodCode` | ✓ | |  | `persl` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAPeriodCodeName` |  | |  | `txt50` |  |  |
+| `CAPeriodCode` | ✓ | |  | `persl` | `CHAR(4)` | Key for Period Assignment |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAPeriodCodeName` |  | |  | `txt50` | `CHAR(50)` | Text for Period Key |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

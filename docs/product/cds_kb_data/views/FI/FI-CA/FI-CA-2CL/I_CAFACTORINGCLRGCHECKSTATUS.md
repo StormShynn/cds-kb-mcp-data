@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAFactoringCheckStsForClrgInfo` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 1 ) as pasta_kk preserving type )` |  |  |
+| `CAFactoringCheckStsForClrgInfo` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 1 ) as pasta_kk preserving type )` | `CHAR(1)` | Factoring: Check Status for Clearing Information |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

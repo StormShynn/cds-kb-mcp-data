@@ -38,31 +38,31 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADunningProcedure` | ✓ | |  | `mahnv` |  |  |
-| `CADunningLevel` | ✓ | |  | `mahns` |  |  |
-| `CANumberOfDaysInArrears` |  | |  | `vertg` |  |  |
-| `CADunningFrequencyInDays` |  | |  | `rhyth` |  |  |
-| `CADaysToPaymentDeadline` |  | |  | `frist` |  |  |
-| `CAAllItemsArePrinted` |  | |  | `xpost` |  |  |
-| `CADunningNoticeIsAlwaysCreated` |  | |  | `xaend` |  |  |
-| `CACreditWorthinessRatingValue` |  | |  | `bonig` |  |  |
-| `CADunningLevelIsOptional` |  | |  | `xmfak` |  |  |
-| `CADunningLevelIsOnlyForIntRsn` |  | |  | `xmsus` |  |  |
-| `CAInterestCode` |  | |  | `ikey` |  |  |
-| `CAPostingCodeForDunInterest` |  | |  | `ipost` |  |  |
-| `CAInterestIsCalculated` |  | |  | `icalc` |  |  |
-| `CADunningChargesSchema` |  | |  | `chgid` |  |  |
-| `CADunningLevelCategory` |  | |  | `mstyp` |  |  |
-| `CADunningLevelSettingCode` |  | |  | `xextm` |  |  |
-| `CANumberOfDaysInArrearsExt` |  | |  | `avert` |  |  |
-| `CADunningFrequencyInDaysExt` |  | |  | `arhyt` |  |  |
-| `CAOnlyItmsOfLastDunLvlAreAllwd` |  | |  | `xnbgm` |  |  |
-| `CADunningRecipientDetnCode` |  | |  | `mempf` |  |  |
-| `CAIntrstIsCalculatedBfrCharges` |  | |  | `intfirst` |  |  |
-| `CADaysBeforeDueDateForReminder` |  | |  | `eritg` |  |  |
-| `CAMinimalPctOfAmountStillOpen` |  | |  | `minpz` |  |  |
-| `CAIntrstAndChargeIsAddedToHist` |  | |  | `newdc` |  |  |
-| `CADunningSuccessCanBeEvaluated` |  | |  | `xdsuc` |  |  |
+| `CADunningProcedure` | ✓ | |  | `mahnv` | `CHAR(2)` | Dunning Procedure |
+| `CADunningLevel` | ✓ | |  | `mahns` | `NUMC(2)` | Dunning Level |
+| `CANumberOfDaysInArrears` |  | |  | `vertg` | `NUMC(4)` | Number Of Days in Arrears |
+| `CADunningFrequencyInDays` |  | |  | `rhyth` | `NUMC(3)` | Dunning frequency in days |
+| `CADaysToPaymentDeadline` |  | |  | `frist` | `NUMC(3)` | Payment Deadline in Days |
+| `CAAllItemsArePrinted` |  | |  | `xpost` | `CHAR(1)` | Print All Items |
+| `CADunningNoticeIsAlwaysCreated` |  | |  | `xaend` | `CHAR(1)` | Always Dun Dunning Level |
+| `CACreditWorthinessRatingValue` |  | |  | `bonig` | `NUMC(2)` | Creditworthiness Number |
+| `CADunningLevelIsOptional` |  | |  | `xmfak` | `CHAR(1)` | Dunning Level is Optional |
+| `CADunningLevelIsOnlyForIntRsn` |  | |  | `xmsus` | `CHAR(1)` | Entry in Dunning History only Technically Conditional |
+| `CAInterestCode` |  | |  | `ikey` | `CHAR(2)` | Interest Key |
+| `CAPostingCodeForDunInterest` |  | |  | `ipost` | `CHAR(1)` | Posting Key for Dunning Interest |
+| `CAInterestIsCalculated` |  | |  | `icalc` | `CHAR(1)` | Determine Interest |
+| `CADunningChargesSchema` |  | |  | `chgid` | `CHAR(2)` | Charges Schedule |
+| `CADunningLevelCategory` |  | |  | `mstyp` | `CHAR(2)` | Dunning Level Category |
+| `CADunningLevelSettingCode` |  | |  | `xextm` | `CHAR(1)` | Set Dunning Level |
+| `CANumberOfDaysInArrearsExt` |  | |  | `avert` | `NUMC(4)` | Number of days in arrears for external program |
+| `CADunningFrequencyInDaysExt` |  | |  | `arhyt` | `NUMC(3)` | Dunning frequency in days for external program |
+| `CAOnlyItmsOfLastDunLvlAreAllwd` |  | |  | `xnbgm` | `CHAR(1)` | Only Items from Previous Dunning Level |
+| `CADunningRecipientDetnCode` |  | |  | `mempf` | `CHAR(1)` | Control for Dunning Recipient |
+| `CAIntrstIsCalculatedBfrCharges` |  | |  | `intfirst` | `CHAR(1)` | Calculation of Interest before Charges in Dunning Program |
+| `CADaysBeforeDueDateForReminder` |  | |  | `eritg` | `NUMC(3)` | Number of Days for Reminder before Due Date |
+| `CAMinimalPctOfAmountStillOpen` |  | |  | `minpz` | `DEC(3)` | Dunning Proposal: Limit Percentage Rate |
+| `CAIntrstAndChargeIsAddedToHist` |  | |  | `newdc` | `CHAR(1)` | Dun New Documents Immediately |
+| `CADunningSuccessCanBeEvaluated` |  | |  | `xdsuc` | `CHAR(1)` | Subsequent Success Valuation of Dunning |
 | `_Text` | | ✓ | | | | |
 | `_DunningProcedure` | | ✓ | | | | |
 | `_DunningLevelCat` | | ✓ | | | | |

@@ -51,7 +51,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAClearingStatus` | ✓ | |  | `cast( left( domvalue_l, 1 ) as augst_kk preserving type )` |  |  |
+| `CAClearingStatus` | ✓ | |  | `cast( left( domvalue_l, 1 ) as augst_kk preserving type )` | `CHAR(1)` | Clearing Status |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

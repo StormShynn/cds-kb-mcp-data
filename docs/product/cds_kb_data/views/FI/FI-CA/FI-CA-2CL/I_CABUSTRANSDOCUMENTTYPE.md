@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABusTransDocumentType` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 4 ) as evl_doctyp_kk preserving type )` |  |  |
+| `CABusTransDocumentType` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 4 ) as evl_doctyp_kk preserving type )` | `CHAR(4)` | Business Transaction: Document Category |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

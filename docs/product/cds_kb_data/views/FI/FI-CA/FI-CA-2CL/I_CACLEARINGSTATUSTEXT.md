@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAClearingStatus` | ✓ | |  | `cast( left( domvalue_l, 1 ) as augst_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAClearingStatusName` |  | |  | `cast( ddtext as augst_text_kk preserving type )` |  |  |
+| `CAClearingStatus` | ✓ | |  | `cast( left( domvalue_l, 1 ) as augst_kk preserving type )` | `CHAR(1)` | Clearing Status |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAClearingStatusName` |  | |  | `cast( ddtext as augst_text_kk preserving type )` | `CHAR(60)` | Description for Clearing Status |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

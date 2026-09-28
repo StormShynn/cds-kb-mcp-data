@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Country` | ✓ | |  | `land1` |  |  |
-| `CAPaymentMethod` | ✓ | |  | `zlsch` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAPaymentMethodName` |  | |  | `cast( text1 as pymet_text_kk preserving type )` |  |  |
+| `Country` | ✓ | |  | `land1` | `CHAR(3)` | Country/Region Key |
+| `CAPaymentMethod` | ✓ | |  | `zlsch` | `CHAR(1)` | Payment Method |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAPaymentMethodName` |  | |  | `cast( text1 as pymet_text_kk preserving type )` | `CHAR(30)` | Text of Payment Method |
 | `_Language` | | ✓ | | | | |
 | `_Country` | | ✓ | | | | |
 

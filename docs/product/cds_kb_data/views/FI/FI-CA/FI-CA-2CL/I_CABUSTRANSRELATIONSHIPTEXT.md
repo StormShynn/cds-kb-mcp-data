@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABusTransRelationship` | ✓ | |  | `cast( left( dd07t.domvalue_l, 2 ) as evl_objrl_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CABusTransRelationshipText` |  | |  | `cast( ddtext as evl_objrl_text_kk preserving type )` |  |  |
+| `CABusTransRelationship` | ✓ | |  | `cast( left( dd07t.domvalue_l, 2 ) as evl_objrl_kk preserving type )` | `CHAR(2)` | Relation between Objects |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CABusTransRelationshipText` |  | |  | `cast( ddtext as evl_objrl_text_kk preserving type )` | `CHAR(60)` | Description for Relationship Between Objects |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

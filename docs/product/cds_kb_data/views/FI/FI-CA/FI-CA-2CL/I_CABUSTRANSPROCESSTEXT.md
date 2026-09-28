@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABusinessTransactionProcess` | ✓ | |  | `cast( left( dd07t.domvalue_l, 8 ) as evl_proid_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CABusTransProcessName` |  | |  | `cast( ddtext as evl_proid_text_kk preserving type )` |  |  |
+| `CABusinessTransactionProcess` | ✓ | |  | `cast( left( dd07t.domvalue_l, 8 ) as evl_proid_kk preserving type )` | `CHAR(8)` | Business Transaction: Process Identification |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CABusTransProcessName` |  | |  | `cast( ddtext as evl_proid_text_kk preserving type )` | `CHAR(60)` | Description for Process Identification of BT |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAClearingInformation` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as aginf_kk preserving type )` |  |  |
+| `CAClearingInformation` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as aginf_kk preserving type )` | `CHAR(1)` | Clearing Information |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

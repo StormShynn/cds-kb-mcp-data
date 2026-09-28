@@ -52,7 +52,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABusPartnerInvoiceStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l,2 ) as inv_status_dc_kk preserving type )` |  |  |
+| `CABusPartnerInvoiceStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l,2 ) as inv_status_dc_kk preserving type )` | `CHAR(2)` | Invoice Status |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

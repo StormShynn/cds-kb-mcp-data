@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADunChrgAndIntrstPostgCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as cpost_kk preserving type )` |  |  |
+| `CADunChrgAndIntrstPostgCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as cpost_kk preserving type )` | `CHAR(1)` | Posting Key for Charges |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

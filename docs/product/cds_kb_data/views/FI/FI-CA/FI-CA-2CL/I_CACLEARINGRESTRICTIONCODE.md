@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAClearingRestrictionCode` | ✓ | |  | `cast( left( dd07l.domvalue_l,1 ) as augrs_kk preserving type )` |  |  |
+| `CAClearingRestrictionCode` | ✓ | |  | `cast( left( dd07l.domvalue_l,1 ) as augrs_kk preserving type )` | `CHAR(1)` | Clearing restriction |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

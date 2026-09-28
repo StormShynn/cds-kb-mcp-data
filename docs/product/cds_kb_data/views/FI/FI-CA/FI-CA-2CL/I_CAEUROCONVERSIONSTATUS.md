@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAStatusOfEuroConversion` | ✓ | |  | `cast( left( dd07l.domvalue_l,1 ) as eurou_kk preserving type )` |  |  |
+| `CAStatusOfEuroConversion` | ✓ | |  | `cast( left( dd07l.domvalue_l,1 ) as eurou_kk preserving type )` | `CHAR(1)` | Status of Euro Conversion |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

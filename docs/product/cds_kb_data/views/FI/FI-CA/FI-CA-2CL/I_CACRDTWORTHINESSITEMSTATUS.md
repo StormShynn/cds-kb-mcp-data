@@ -40,7 +40,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACrdtWorthinessItemStatus` | ✓ | |  | `cast( left( domvalue_l, 1 ) as bonis_kk preserving type )` |  |  |
+| `CACrdtWorthinessItemStatus` | ✓ | |  | `cast( left( domvalue_l, 1 ) as bonis_kk preserving type )` | `CHAR(1)` | Creditworthiness Item Status |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

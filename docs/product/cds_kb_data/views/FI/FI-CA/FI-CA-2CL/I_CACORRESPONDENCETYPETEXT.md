@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CACorrespondenceType` | ✓ | |  | `cotyp` |  |  |
-| `CACorrespondenceTypeName` |  | |  | `cotxt` |  |  |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CACorrespondenceType` | ✓ | |  | `cotyp` | `CHAR(4)` | Correspondence Type |
+| `CACorrespondenceTypeName` |  | |  | `cotxt` | `CHAR(40)` | Name of Correspondence Type |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

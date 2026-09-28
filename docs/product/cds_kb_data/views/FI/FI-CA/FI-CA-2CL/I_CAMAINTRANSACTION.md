@@ -38,8 +38,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAApplicationArea` | ✓ | |  | `applk` |  |  |
-| `CAMainTransaction` | ✓ | |  | `hvorg` |  |  |
+| `CAApplicationArea` | ✓ | |  | `applk` | `CHAR(1)` | Application Area |
+| `CAMainTransaction` | ✓ | |  | `hvorg` | `CHAR(4)` | Main Transaction for Line Item |
 | `_ApplArea` |  | |  | `_CAApplicationArea` |  |  |
 | `_CAApplicationArea` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |

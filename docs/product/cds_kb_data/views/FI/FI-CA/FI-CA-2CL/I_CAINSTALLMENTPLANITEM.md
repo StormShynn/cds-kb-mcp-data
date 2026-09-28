@@ -39,15 +39,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInstallmentPlan` | ✓ | |  | `rpnum` |  |  |
-| `CADocumentNumber` | ✓ | |  | `opbel` |  |  |
-| `CARepetitionItemNumber` | ✓ | |  | `opupw` |  |  |
-| `CABPItemNumber` | ✓ | |  | `opupk` |  |  |
-| `CASubItemNumber` | ✓ | |  | `opupz` |  |  |
-| `TransactionCurrency` |  | |  | `waers` |  |  |
-| `CACreationOpenAmountInTC` |  | |  | `betro` |  |  |
-| `CAInstlmntPlnItmDocOriginType` |  | |  | `histyp` |  |  |
-| `CAOriglDocItmClrgPriorityValue` |  | |  | `augnr` |  |  |
+| `CAInstallmentPlan` | ✓ | |  | `rpnum` | `CHAR(12)` | Installment Plan Number in Contract A/R & A/P |
+| `CADocumentNumber` | ✓ | |  | `opbel` | `CHAR(12)` | Number of a FI-CA Document |
+| `CARepetitionItemNumber` | ✓ | |  | `opupw` | `NUMC(3)` | Repetition Item in FI-CA Document |
+| `CABPItemNumber` | ✓ | |  | `opupk` | `NUMC(4)` | Item Number in FI-CA Document |
+| `CASubItemNumber` | ✓ | |  | `opupz` | `NUMC(3)` | Subitem for a Partial Clearing in Document |
+| `TransactionCurrency` |  | |  | `waers` | `CUKY(5)` | Currency Key |
+| `CACreationOpenAmountInTC` |  | |  | `betro` | `CURR(13)` | Open Amount on Creation of Installment Plan |
+| `CAInstlmntPlnItmDocOriginType` |  | |  | `histyp` | `CHAR(1)` | Document Type Included in Installment Plan History |
+| `CAOriglDocItmClrgPriorityValue` |  | |  | `augnr` | `NUMC(3)` | Clearing Priority of Original Items of Installment Plan |
 | `_CADocumentBPItem` | | ✓ | | | | |
 | `_CAInstallmentPlan` | | ✓ | | | | |
 | `_TransactionCurrency` | | ✓ | | | | |

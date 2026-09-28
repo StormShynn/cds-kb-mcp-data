@@ -39,29 +39,29 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Country` | ✓ | |  | `land1` |  |  |
-| `CAPaymentMethod` | ✓ | |  | `zlsch` |  |  |
-| `BankDetailsOfBPAreRequired` |  | |  | `xbkkt` |  |  |
-| `AddressDetailsAreRequired` |  | |  | `xstra` |  |  |
-| `IsPaytMethForIncomingPayments` |  | |  | `xeinz` |  |  |
-| `CAIsPaytMethForPostOffcBkAcct` |  | |  | `xpgir` |  |  |
-| `ChequeIsCreatedWithPaytMeth` |  | |  | `xschk` |  |  |
-| `IsPaytMethForEUInternalTransf` |  | |  | `xeuro` |  |  |
-| `CAPaymentMethodProcessingType` |  | |  | `xverr` |  |  |
-| `CAPaymentMediumFormat` |  | |  | `formi` |  |  |
-| `CAPaytMediumFormatSupplement` |  | |  | `formz` |  |  |
-| `CAPaymentOrderIsCreated` |  | |  | `xnopo` |  |  |
-| `CAPaytMethForBillerDirect` |  | |  | `xebpp` |  |  |
-| `CAIsPaytSlipWithRefNmbrProced` |  | |  | `xesrd` |  |  |
-| `CAPaytMethAddressIsNotRequired` |  | |  | `xaddr` |  |  |
-| `BR_CABoletoAssignmentType` |  | |  | `bolty` |  |  |
-| `CAPaymentMethodNotificationCat` |  | |  | `ddaty` |  |  |
-| `ContrAcctgIBANOrSWIFTRqmtCode` |  | |  | `xiban` |  |  |
-| `CASEPAMandateIsRequired` |  | |  | `xsepa` |  |  |
-| `CASEPAPrenotificationIsCreated` |  | |  | `pnopt` |  |  |
-| `CARealTimePaymentCategory` |  | |  | `rtpty` |  |  |
-| `CASuplmntForPaytMediumFormat` |  | |  | `formz` |  |  |
-| `CAIBANAndOrSwiftCodeIsRequired` |  | |  | `xiban` |  |  |
+| `Country` | ✓ | |  | `land1` | `CHAR(3)` | Country/Region Key |
+| `CAPaymentMethod` | ✓ | |  | `zlsch` | `CHAR(1)` | Payment Method |
+| `BankDetailsOfBPAreRequired` |  | |  | `xbkkt` | `CHAR(1)` | Bank Details of Business Partner Required |
+| `AddressDetailsAreRequired` |  | |  | `xstra` | `CHAR(1)` | Indicator: Street, P.O.box or P.O.box postal code required |
+| `IsPaytMethForIncomingPayments` |  | |  | `xeinz` | `CHAR(1)` | Indicator: Payment Method Used for Incoming Payments |
+| `CAIsPaytMethForPostOffcBkAcct` |  | |  | `xpgir` | `CHAR(1)` | Payment method for post office bank account |
+| `ChequeIsCreatedWithPaytMeth` |  | |  | `xschk` | `CHAR(1)` | Indicator: Is a Check Created Using This Payment Method? |
+| `IsPaytMethForEUInternalTransf` |  | |  | `xeuro` | `CHAR(1)` | Indicator: EU Internal Transfer w/o Reporting Section |
+| `CAPaymentMethodProcessingType` |  | |  | `xverr` | `CHAR(1)` | Processing type of payment method |
+| `CAPaymentMediumFormat` |  | |  | `formi` | `CHAR(30)` | Payment Medium Format |
+| `CAPaytMediumFormatSupplement` |  | |  | `formz` | `CHAR(6)` | Supplement for Payment Medium Format |
+| `CAPaymentOrderIsCreated` |  | |  | `xnopo` | `CHAR(1)` | Payment Order Instead of Payment Posting |
+| `CAPaytMethForBillerDirect` |  | |  | `xebpp` | `CHAR(1)` | Payment Method for FSCM Biller Direct |
+| `CAIsPaytSlipWithRefNmbrProced` |  | |  | `xesrd` | `CHAR(1)` | ISR Procedure |
+| `CAPaytMethAddressIsNotRequired` |  | |  | `xaddr` | `CHAR(1)` | Address not Required |
+| `BR_CABoletoAssignmentType` |  | |  | `bolty` | `CHAR(1)` | Boleto: Assignment type |
+| `CAPaymentMethodNotificationCat` |  | |  | `ddaty` | `CHAR(1)` | Debit Memo Notification: Category of Payment Method |
+| `ContrAcctgIBANOrSWIFTRqmtCode` |  | |  | `xiban` | `CHAR(1)` | IBAN and/or SWIFT Code Required |
+| `CASEPAMandateIsRequired` |  | |  | `xsepa` | `CHAR(1)` | SEPA Mandate Required |
+| `CASEPAPrenotificationIsCreated` |  | |  | `pnopt` | `CHAR(1)` | Direct Debit Pre-Notification Intended |
+| `CARealTimePaymentCategory` |  | |  | `rtpty` | `CHAR(1)` | Real-Time Payment: Payment Category |
+| `CASuplmntForPaytMediumFormat` |  | |  | `formz` | `CHAR(6)` | Supplement for Payment Medium Format |
+| `CAIBANAndOrSwiftCodeIsRequired` |  | |  | `xiban` | `CHAR(1)` | IBAN and/or SWIFT Code Required |
 | `_Text` | | ✓ | | | | |
 | `_Country` | | ✓ | | | | |
 

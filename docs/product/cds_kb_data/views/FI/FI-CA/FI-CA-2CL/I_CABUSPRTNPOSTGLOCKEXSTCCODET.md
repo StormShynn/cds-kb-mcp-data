@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABusPartnerPostgLockExstcCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as bpl_xpocl_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CABusPrtnPostgLockExstcCodText` |  | |  | `cast( ddtext as bpl_xpocl_text_kk preserving type )` |  |  |
+| `CABusPartnerPostgLockExstcCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as bpl_xpocl_kk preserving type )` | `CHAR(1)` | Business Partner Lock for Postings/Clearing |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CABusPrtnPostgLockExstcCodText` |  | |  | `cast( ddtext as bpl_xpocl_text_kk preserving type )` | `CHAR(60)` | Description Business Partner Lock for Postings/Clearing |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

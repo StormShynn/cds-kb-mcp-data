@@ -53,8 +53,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentContainerRefType` | ✓ | |  | `refty` |  |  |
-| `CADocumentContainerRefCategory` |  | |  | `refcat` |  |  |
+| `CADocumentContainerRefType` | ✓ | |  | `refty` | `CHAR(3)` | Document Container - Reference Type |
+| `CADocumentContainerRefCategory` |  | |  | `refcat` | `CHAR(2)` | Reference Category |
 | `_DocCtnRefTypeText` | | ✓ | | | | |
 | `_DocCtnRefCat` | | ✓ | | | | |
 

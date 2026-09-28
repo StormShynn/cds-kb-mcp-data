@@ -50,7 +50,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAAltvExchangeRateSetCode` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 1 ) as xdexr_kk preserving type )` |  |  |
+| `CAAltvExchangeRateSetCode` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 1 ) as xdexr_kk preserving type )` | `CHAR(1)` | Alternative Exchange Rate for Tax Items |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

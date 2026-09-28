@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAOriginOfPaymentMasterData` | ✓ | |  | `cast( left( domvalue_l, 1 ) as pay_par_orig_kk preserving type )` |  |  |
+| `CAOriginOfPaymentMasterData` | ✓ | |  | `cast( left( domvalue_l, 1 ) as pay_par_orig_kk preserving type )` | `CHAR(1)` | Determination of Payment Data |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

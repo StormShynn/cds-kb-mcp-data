@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACorrespondenceVariant` | ✓ | |  | `coprc` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CACorrespondenceVariantName` |  | |  | `cotxt` |  |  |
+| `CACorrespondenceVariant` | ✓ | |  | `coprc` | `CHAR(4)` | Correspondence Variant |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CACorrespondenceVariantName` |  | |  | `cotxt` | `CHAR(40)` | Name of Correspondence Variant |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPaymentSpecificationCategory` | ✓ | |  | `cast( left( domvalue_l, 1 ) as pdtyp_kk preserving type )` |  |  |
+| `CAPaymentSpecificationCategory` | ✓ | |  | `cast( left( domvalue_l, 1 ) as pdtyp_kk preserving type )` | `CHAR(1)` | Category of Payment Specification |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

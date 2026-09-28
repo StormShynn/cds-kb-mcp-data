@@ -50,9 +50,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADunChrgAndIntrstPostgCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as cpost_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CADunChrgAndIntrstPostgCodeTxt` |  | |  | `cast( ddtext as cpost_text_kk preserving type )` |  |  |
+| `CADunChrgAndIntrstPostgCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as cpost_kk preserving type )` | `CHAR(1)` | Posting Key for Charges |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CADunChrgAndIntrstPostgCodeTxt` |  | |  | `cast( ddtext as cpost_text_kk preserving type )` | `CHAR(60)` | Description for Posting Key for Charge/Interest |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

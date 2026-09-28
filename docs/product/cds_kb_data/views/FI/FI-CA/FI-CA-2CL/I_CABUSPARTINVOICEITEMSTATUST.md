@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABusPartnerInvoiceItemStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l,2 ) as inv_item_status_dc_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CABusPartnerInvoiceItemStsText` |  | |  | `cast( ddtext as inv_item_status_dc_text_kk preserving type )` |  |  |
+| `CABusPartnerInvoiceItemStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l,2 ) as inv_item_status_dc_kk preserving type )` | `CHAR(2)` | Status of Item of an Invoice |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CABusPartnerInvoiceItemStsText` |  | |  | `cast( ddtext as inv_item_status_dc_text_kk preserving type )` | `CHAR(60)` | Description for Status of Item in Invoice |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

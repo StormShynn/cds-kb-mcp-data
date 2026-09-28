@@ -40,10 +40,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAAuthorizationGroupObject` | ✓ | |  | `bgobj` |  |  |
-| `CAAuthorizationGroup` | ✓ | |  | `begru` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `CAAuthorizationGroupText` |  | |  | `text` |  |  |
+| `CAAuthorizationGroupObject` | ✓ | |  | `bgobj` | `CHAR(10)` | Authorization Group Object |
+| `CAAuthorizationGroup` | ✓ | |  | `begru` | `CHAR(4)` | Authorization Group |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `CAAuthorizationGroupText` |  | |  | `text` | `CHAR(50)` | Description of Authorization Group |
 | `_AuthznGroupObject` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

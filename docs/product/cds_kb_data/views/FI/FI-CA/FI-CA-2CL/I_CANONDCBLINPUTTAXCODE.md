@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAContainsNonDeductibleInptTax` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 1 ) as xndtx_kk preserving type )` |  |  |
+| `CAContainsNonDeductibleInptTax` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 1 ) as xndtx_kk preserving type )` | `CHAR(1)` | Contains Non-Deductible Input Tax |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -38,8 +38,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAAuthorizationGroupObject` | ✓ | |  | `bgobj` |  |  |
-| `CAAuthorizationGroup` | ✓ | |  | `begru` |  |  |
+| `CAAuthorizationGroupObject` | ✓ | |  | `bgobj` | `CHAR(10)` | Authorization Group Object |
+| `CAAuthorizationGroup` | ✓ | |  | `begru` | `CHAR(4)` | Authorization Group |
 | `_AuthznGroupObject` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |
 

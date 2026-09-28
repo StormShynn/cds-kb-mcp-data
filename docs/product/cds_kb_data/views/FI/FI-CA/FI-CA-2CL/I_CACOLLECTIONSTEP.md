@@ -39,23 +39,23 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACollectionStep` | ✓ | |  | `step` |  |  |
-| `CACollectionStepLevel` |  | |  | `steplevel` |  |  |
-| `CACollectionStepType` |  | |  | `steptype` |  |  |
-| `CAAltvCollectionStep` |  | |  | `altst` |  |  |
-| `CADaysToNextDunning` |  | |  | `intrv` |  |  |
-| `CAFactoryCalendarIsUsedForDun` |  | |  | `xmfac` |  |  |
-| `FactoryCalendar` |  | |  | `cast( mfcid as fabkl preserving type )` |  |  |
-| `CAItemGroupIsClosed` |  | |  | `closegroup` |  |  |
-| `CADaysToPaymentDeadline` |  | |  | `frist` |  |  |
-| `CACreditWorthinessRatingValue` |  | |  | `bonig` |  |  |
-| `CAInterestCode` |  | |  | `ikey` |  |  |
-| `CAPostingCodeForDunInterest` |  | |  | `ipost` |  |  |
-| `CAInterestIsCalculated` |  | |  | `icalc` |  |  |
-| `CAIntrstIsCalculatedBfrCharges` |  | |  | `intfirst` |  |  |
-| `CADunningChargesSchema` |  | |  | `chgid` |  |  |
-| `CAIntrstAndChargeIsAddedToHist` |  | |  | `newdc` |  |  |
-| `CADunningSuccessCanBeEvaluated` |  | |  | `xdsuc` |  |  |
+| `CACollectionStep` | ✓ | |  | `step` | `CHAR(4)` | Collection Step |
+| `CACollectionStepLevel` |  | |  | `steplevel` | `NUMC(2)` | Collection Level |
+| `CACollectionStepType` |  | |  | `steptype` | `CHAR(2)` | Collection Step Category |
+| `CAAltvCollectionStep` |  | |  | `altst` | `CHAR(4)` | Alternative Collection Step |
+| `CADaysToNextDunning` |  | |  | `intrv` | `NUMC(3)` | Interval to Next Dunning |
+| `CAFactoryCalendarIsUsedForDun` |  | |  | `xmfac` | `CHAR(1)` | Days in arrears+dunning freq. by factory calendar |
+| `FactoryCalendar` |  | |  | `cast( mfcid as fabkl preserving type )` | `CHAR(2)` | Factory calendar key |
+| `CAItemGroupIsClosed` |  | |  | `closegroup` | `CHAR(1)` | Close Item Group |
+| `CADaysToPaymentDeadline` |  | |  | `frist` | `NUMC(3)` | Payment Deadline in Days |
+| `CACreditWorthinessRatingValue` |  | |  | `bonig` | `NUMC(2)` | Creditworthiness Number |
+| `CAInterestCode` |  | |  | `ikey` | `CHAR(2)` | Interest Key |
+| `CAPostingCodeForDunInterest` |  | |  | `ipost` | `CHAR(1)` | Posting Key for Dunning Interest |
+| `CAInterestIsCalculated` |  | |  | `icalc` | `CHAR(1)` | Determine Interest |
+| `CAIntrstIsCalculatedBfrCharges` |  | |  | `intfirst` | `CHAR(1)` | Calculation of Interest before Charges in Dunning Program |
+| `CADunningChargesSchema` |  | |  | `chgid` | `CHAR(2)` | Charges Schedule |
+| `CAIntrstAndChargeIsAddedToHist` |  | |  | `newdc` | `CHAR(1)` | Dun New Documents Immediately |
+| `CADunningSuccessCanBeEvaluated` |  | |  | `xdsuc` | `CHAR(1)` | Subsequent Success Valuation of Dunning |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

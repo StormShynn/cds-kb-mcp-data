@@ -47,7 +47,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAChargeType` | ✓ | |  | `chgty` |  |  |
+| `CAChargeType` | ✓ | |  | `chgty` | `CHAR(2)` | Charge Category |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABusinessTransactionActivity` | ✓ | |  | `cast( left( dd07t.domvalue_l, 4 ) as evl_actid_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CABusTransActivityName` |  | |  | `cast( ddtext as evl_actid_text_kk preserving type )` |  |  |
+| `CABusinessTransactionActivity` | ✓ | |  | `cast( left( dd07t.domvalue_l, 4 ) as evl_actid_kk preserving type )` | `CHAR(4)` | Business Transaction: Activity |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CABusTransActivityName` |  | |  | `cast( ddtext as evl_actid_text_kk preserving type )` | `CHAR(60)` | Description for Activity for Business Transaction |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

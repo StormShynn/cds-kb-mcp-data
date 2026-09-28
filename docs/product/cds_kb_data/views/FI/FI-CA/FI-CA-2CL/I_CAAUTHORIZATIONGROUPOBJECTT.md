@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAAuthorizationGroupObject` | ✓ | |  | `bgobj` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `CAAuthorizationGroupObjectText` |  | |  | `text` |  |  |
+| `CAAuthorizationGroupObject` | ✓ | |  | `bgobj` | `CHAR(10)` | Authorization Group Object |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `CAAuthorizationGroupObjectText` |  | |  | `text` | `CHAR(50)` | Description of Authorization Group Object |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

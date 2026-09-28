@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACashSecurityDepositStatus` | ✓ | |  | `cast( left(dd07t.domvalue_l,2 ) as c_status_kk )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CACashSecurityDepositStatusTxt` |  | |  | `cast( ddtext as c_status_text_kk )` |  |  |
+| `CACashSecurityDepositStatus` | ✓ | |  | `cast( left(dd07t.domvalue_l,2 ) as c_status_kk )` | `NUMC(2)` | Cash security deposit status |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CACashSecurityDepositStatusTxt` |  | |  | `cast( ddtext as c_status_text_kk )` | `CHAR(128)` | Status Text of Security Deposit |
 | `_CashSecurityDepositStatus` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

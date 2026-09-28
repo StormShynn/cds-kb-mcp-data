@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAAdjustmentRequestReason` | ✓ | |  | `argrd` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAAdjustmentRequestReasonName` |  | |  | `artxt` |  |  |
+| `CAAdjustmentRequestReason` | ✓ | |  | `argrd` | `CHAR(2)` | Adjustment Request Reason |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAAdjustmentRequestReasonName` |  | |  | `artxt` | `CHAR(50)` | Name of Adjustment Request Reason |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

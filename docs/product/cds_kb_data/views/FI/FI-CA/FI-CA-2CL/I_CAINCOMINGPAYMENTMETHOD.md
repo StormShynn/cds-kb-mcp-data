@@ -39,27 +39,27 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Country` | ✓ | |  |  |  |  |
-| `CAIncomingPaymentMethod` | ✓ | |  | `CAPaymentMethod` |  |  |
-| `BankDetailsOfBPAreRequired` |  | |  |  |  |  |
-| `AddressDetailsAreRequired` |  | |  |  |  |  |
-| `IsPaytMethForIncomingPayments` |  | |  |  |  |  |
-| `CAIsPaytMethForPostOffcBkAcct` |  | |  |  |  |  |
-| `ChequeIsCreatedWithPaytMeth` |  | |  |  |  |  |
-| `IsPaytMethForEUInternalTransf` |  | |  |  |  |  |
-| `CAPaymentMethodProcessingType` |  | |  |  |  |  |
-| `CAPaymentMediumFormat` |  | |  |  |  |  |
-| `CAPaytMediumFormatSupplement` |  | |  |  |  |  |
-| `CAPaymentOrderIsCreated` |  | |  |  |  |  |
-| `CAPaytMethForBillerDirect` |  | |  |  |  |  |
-| `CAIsPaytSlipWithRefNmbrProced` |  | |  |  |  |  |
-| `CAPaytMethAddressIsNotRequired` |  | |  |  |  |  |
-| `BR_CABoletoAssignmentType` |  | |  |  |  |  |
-| `CAPaymentMethodNotificationCat` |  | |  |  |  |  |
-| `ContrAcctgIBANOrSWIFTRqmtCode` |  | |  |  |  |  |
-| `CASEPAMandateIsRequired` |  | |  |  |  |  |
-| `CASEPAPrenotificationIsCreated` |  | |  |  |  |  |
-| `CARealTimePaymentCategory` |  | |  |  |  |  |
+| `Country` | ✓ | |  |  | `CHAR(3)` | Country/Region Key |
+| `CAIncomingPaymentMethod` | ✓ | |  | `CAPaymentMethod` | `CHAR(1)` | Payment Method |
+| `BankDetailsOfBPAreRequired` |  | |  |  | `CHAR(1)` | Bank Details of Business Partner Required |
+| `AddressDetailsAreRequired` |  | |  |  | `CHAR(1)` | Indicator: Street, P.O.box or P.O.box postal code required |
+| `IsPaytMethForIncomingPayments` |  | |  |  | `CHAR(1)` | Indicator: Payment Method Used for Incoming Payments |
+| `CAIsPaytMethForPostOffcBkAcct` |  | |  |  | `CHAR(1)` | Payment method for post office bank account |
+| `ChequeIsCreatedWithPaytMeth` |  | |  |  | `CHAR(1)` | Indicator: Is a Check Created Using This Payment Method? |
+| `IsPaytMethForEUInternalTransf` |  | |  |  | `CHAR(1)` | Indicator: EU Internal Transfer w/o Reporting Section |
+| `CAPaymentMethodProcessingType` |  | |  |  | `CHAR(1)` | Processing type of payment method |
+| `CAPaymentMediumFormat` |  | |  |  | `CHAR(30)` | Payment Medium Format |
+| `CAPaytMediumFormatSupplement` |  | |  |  | `CHAR(6)` | Supplement for Payment Medium Format |
+| `CAPaymentOrderIsCreated` |  | |  |  | `CHAR(1)` | Payment Order Instead of Payment Posting |
+| `CAPaytMethForBillerDirect` |  | |  |  | `CHAR(1)` | Payment Method for FSCM Biller Direct |
+| `CAIsPaytSlipWithRefNmbrProced` |  | |  |  | `CHAR(1)` | ISR Procedure |
+| `CAPaytMethAddressIsNotRequired` |  | |  |  | `CHAR(1)` | Address not Required |
+| `BR_CABoletoAssignmentType` |  | |  |  | `CHAR(1)` | Boleto: Assignment type |
+| `CAPaymentMethodNotificationCat` |  | |  |  | `CHAR(1)` | Debit Memo Notification: Category of Payment Method |
+| `ContrAcctgIBANOrSWIFTRqmtCode` |  | |  |  | `CHAR(1)` | IBAN and/or SWIFT Code Required |
+| `CASEPAMandateIsRequired` |  | |  |  | `CHAR(1)` | SEPA Mandate Required |
+| `CASEPAPrenotificationIsCreated` |  | |  |  | `CHAR(1)` | Direct Debit Pre-Notification Intended |
+| `CARealTimePaymentCategory` |  | |  |  | `CHAR(1)` | Real-Time Payment: Payment Category |
 | `_Country` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |
 

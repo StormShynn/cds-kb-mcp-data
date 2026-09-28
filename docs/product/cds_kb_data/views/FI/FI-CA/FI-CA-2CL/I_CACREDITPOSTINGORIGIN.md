@@ -52,7 +52,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `OriginalSourceOfCredit` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as orig_credit_kk preserving type )` |  |  |
+| `OriginalSourceOfCredit` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as orig_credit_kk preserving type )` | `CHAR(1)` | Origin of Credit Memo Posting |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

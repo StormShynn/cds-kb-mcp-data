@@ -43,9 +43,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPaymentBillingStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as xsett_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAPaymentBillingStatusText` |  | |  | `cast( ddtext as xsett_text_kk preserving type )` |  |  |
+| `CAPaymentBillingStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as xsett_kk preserving type )` | `CHAR(1)` | Settlement Status |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAPaymentBillingStatusText` |  | |  | `cast( ddtext as xsett_text_kk preserving type )` | `CHAR(60)` | Description for Settlement Status |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

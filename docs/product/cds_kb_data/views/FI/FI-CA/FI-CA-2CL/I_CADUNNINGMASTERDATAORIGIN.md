@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAOriginOfDunningMasterData` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as dunn_par_orig_kk preserving type )` |  |  |
+| `CAOriginOfDunningMasterData` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as dunn_par_orig_kk preserving type )` | `CHAR(1)` | Dunning Control |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

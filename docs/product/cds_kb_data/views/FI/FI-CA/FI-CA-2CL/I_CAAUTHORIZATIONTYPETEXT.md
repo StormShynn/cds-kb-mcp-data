@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAAuthorizationType` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as auart_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAAuthorizationTypeText` |  | |  | `cast( ddtext as auart_text_kk preserving type )` |  |  |
+| `CAAuthorizationType` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as auart_kk preserving type )` | `CHAR(1)` | Payment cards: Authorization type |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAAuthorizationTypeText` |  | |  | `cast( ddtext as auart_text_kk preserving type )` | `CHAR(60)` | Description for Authorization Type |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

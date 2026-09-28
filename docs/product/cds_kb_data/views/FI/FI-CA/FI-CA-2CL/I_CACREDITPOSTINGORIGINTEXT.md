@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `OriginalSourceOfCredit` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as orig_credit_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `OriginalSourceOfCreditText` |  | |  | `cast( ddtext as orig_credit_text_kk preserving type )` |  |  |
+| `OriginalSourceOfCredit` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as orig_credit_kk preserving type )` | `CHAR(1)` | Origin of Credit Memo Posting |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `OriginalSourceOfCreditText` |  | |  | `cast( ddtext as orig_credit_text_kk preserving type )` | `CHAR(60)` | Description for Origin of Credit Memo Posting |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

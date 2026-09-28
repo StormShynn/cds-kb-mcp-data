@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADunningLevelCategory` | ✓ | |  | `mstyp` |  |  |
+| `CADunningLevelCategory` | ✓ | |  | `mstyp` | `CHAR(2)` | Dunning Level Category |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

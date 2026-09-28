@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADunningNoticeGroup` | ✓ | |  | `mgrup` |  |  |
+| `CADunningNoticeGroup` | ✓ | |  | `mgrup` | `CHAR(2)` | Grouping for Dunning Notices |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

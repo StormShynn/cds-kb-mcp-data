@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACorrespondenceActivityCode` | ✓ | |  | `corr_ackey` |  |  |
+| `CACorrespondenceActivityCode` | ✓ | |  | `corr_ackey` | `CHAR(4)` | Correspondence - Activity Key |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

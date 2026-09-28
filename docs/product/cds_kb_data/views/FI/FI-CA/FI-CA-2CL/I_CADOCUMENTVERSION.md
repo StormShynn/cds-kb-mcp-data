@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentVersion` | ✓ | |  | `cast( left( dd07l.domvalue_l, 3 ) as versn_kk preserving type )` |  |  |
+| `CADocumentVersion` | ✓ | |  | `cast( left( dd07l.domvalue_l, 3 ) as versn_kk preserving type )` | `CHAR(3)` | Version Number |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

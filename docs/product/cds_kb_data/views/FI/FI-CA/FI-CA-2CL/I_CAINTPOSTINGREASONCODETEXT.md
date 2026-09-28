@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInternalPostingReasonCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as intbu_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAInternalPostingReasonCodeTxt` |  | |  | `cast( ddtext as intbu_text_kk preserving type )` |  |  |
+| `CAInternalPostingReasonCode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as intbu_kk preserving type )` | `CHAR(1)` | Reason for Automatic Creation of Posting |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAInternalPostingReasonCodeTxt` |  | |  | `cast( ddtext as intbu_text_kk preserving type )` | `CHAR(60)` | Description for Reason for Automatic Creation of Posting |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

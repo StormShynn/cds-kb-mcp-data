@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACreditWorthinessOrigin` | ✓ | |  | `herkf` |  |  |
+| `CACreditWorthinessOrigin` | ✓ | |  | `herkf` | `CHAR(2)` | Origin of entry related to creditworthiness |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

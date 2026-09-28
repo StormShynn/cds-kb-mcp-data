@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPeriodCode` | ✓ | |  | `persl` |  |  |
+| `CAPeriodCode` | ✓ | |  | `persl` | `CHAR(4)` | Key for Period Assignment |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

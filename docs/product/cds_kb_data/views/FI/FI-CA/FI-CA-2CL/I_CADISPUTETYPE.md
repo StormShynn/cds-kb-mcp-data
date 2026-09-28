@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADisputeType` | ✓ | |  | `cast( left( dd07l.domvalue_l, 4 ) as fkkdm_int_reason preserving type )` |  |  |
+| `CADisputeType` | ✓ | |  | `cast( left( dd07l.domvalue_l, 4 ) as fkkdm_int_reason preserving type )` | `CHAR(4)` | FICA-DM: Internal Dispute Type |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

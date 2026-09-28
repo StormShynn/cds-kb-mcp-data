@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocContainerDocItemRefType` | ✓ | |  | `cast( left( dd07t.domvalue_l,2 ) as oprty_dc_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
-| `CADocContainerDocItmRefTypeTxt` |  | |  | `cast( dd07t.ddtext as oprty_dc_text_kk preserving type )` |  |  |
+| `CADocContainerDocItemRefType` | ✓ | |  | `cast( left( dd07t.domvalue_l,2 ) as oprty_dc_kk preserving type )` | `CHAR(2)` | Document Item Reference Category |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CADocContainerDocItmRefTypeTxt` |  | |  | `cast( dd07t.ddtext as oprty_dc_text_kk preserving type )` | `CHAR(60)` | Description for Reference Type for Line Item |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

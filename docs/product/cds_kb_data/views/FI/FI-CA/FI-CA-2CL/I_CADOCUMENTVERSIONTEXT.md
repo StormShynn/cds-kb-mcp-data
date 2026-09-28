@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentVersion` | ✓ | |  | `cast( left( dd07t.domvalue_l, 3 ) as versn_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CADocumentVersionText` |  | |  | `cast( ddtext as versn_text_kk preserving type )` |  |  |
+| `CADocumentVersion` | ✓ | |  | `cast( left( dd07t.domvalue_l, 3 ) as versn_kk preserving type )` | `CHAR(3)` | Version Number |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CADocumentVersionText` |  | |  | `cast( ddtext as versn_text_kk preserving type )` | `CHAR(60)` | Description for Document Version Number |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

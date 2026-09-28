@@ -39,11 +39,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Country` | ✓ | |  | `land` |  |  |
-| `CAOtherTaxCode` | ✓ | |  | `strkz` |  |  |
-| `CAOtherTaxPercentage` |  | |  | `pertax` |  |  |
-| `CACategoriesAreUsedForOtherTax` |  | |  | `xkschl` |  |  |
-| `CAIsValidForUSTelcomTaxCode` |  | |  | `xustc` |  |  |
+| `Country` | ✓ | |  | `land` | `CHAR(3)` | Company Country/Region |
+| `CAOtherTaxCode` | ✓ | |  | `strkz` | `CHAR(2)` | Tax Code for Other Taxes |
+| `CAOtherTaxPercentage` |  | |  | `pertax` | `DEC(8)` | Tax Percentage |
+| `CACategoriesAreUsedForOtherTax` |  | |  | `xkschl` | `CHAR(1)` | Categories Used for Tax Items |
+| `CAIsValidForUSTelcomTaxCode` |  | |  | `xustc` | `CHAR(1)` | Tax Code for Telecommunications Tax (U.S.A.) |
 | `_Country` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |
 

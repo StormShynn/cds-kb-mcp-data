@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADoubtfulOrValueAdjmtCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 3 ) as infoz_kk )` |  |  |
+| `CADoubtfulOrValueAdjmtCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 3 ) as infoz_kk )` | `NUMC(3)` | Doubtful Entry / Individual Value Adjustment |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

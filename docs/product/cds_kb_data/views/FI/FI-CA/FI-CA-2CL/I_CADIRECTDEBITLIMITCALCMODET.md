@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADirectDebitLimitCalcMode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as ddlxg_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CADirectDebitLimitCalcModeText` |  | |  | `cast( ddtext as ddlxg_text_kk preserving type )` |  |  |
+| `CADirectDebitLimitCalcMode` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as ddlxg_kk preserving type )` | `CHAR(1)` | Rolling Calculation of Direct Debit Limit |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CADirectDebitLimitCalcModeText` |  | |  | `cast( ddtext as ddlxg_text_kk preserving type )` | `CHAR(60)` | Description for Rolling Calculation of Direct Debit Limit |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

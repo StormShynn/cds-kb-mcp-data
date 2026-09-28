@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPaymentExceptionReason` | ✓ | |  | `poken` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAPaymentExceptionReasonName` |  | |  | `poket` |  |  |
+| `CAPaymentExceptionReason` | ✓ | |  | `poken` | `NUMC(3)` | Item Indicator in Payment Program |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAPaymentExceptionReasonName` |  | |  | `poket` | `CHAR(70)` | Long Text for Item Indicator |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

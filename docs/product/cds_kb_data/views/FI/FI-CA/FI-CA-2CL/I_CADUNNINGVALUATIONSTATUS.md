@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADunningValuationStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as scdst_kk preserving type )` |  |  |
+| `CADunningValuationStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as scdst_kk preserving type )` | `CHAR(1)` | Status of Success Valuation |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

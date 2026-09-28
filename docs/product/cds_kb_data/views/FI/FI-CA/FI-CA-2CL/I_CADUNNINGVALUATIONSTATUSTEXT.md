@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADunningValuationStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l ,1 ) as scdst_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CADunningValuationStatusName` |  | |  | `cast( ddtext as scdst_text_kk preserving type )` |  |  |
+| `CADunningValuationStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l ,1 ) as scdst_kk preserving type )` | `CHAR(1)` | Status of Success Valuation |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CADunningValuationStatusName` |  | |  | `cast( ddtext as scdst_text_kk preserving type )` | `CHAR(60)` | Description for Status of Assessment of Success |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

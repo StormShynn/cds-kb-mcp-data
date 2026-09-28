@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABusPartnerAddlLockExstcCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as bpl_xaddl_kk preserving type )` |  |  |
+| `CABusPartnerAddlLockExstcCode` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as bpl_xaddl_kk preserving type )` | `CHAR(1)` | Business Partner Lock for Dunning / Payment |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

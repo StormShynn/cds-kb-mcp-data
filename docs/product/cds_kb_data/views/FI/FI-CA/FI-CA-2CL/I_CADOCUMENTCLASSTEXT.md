@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentClass` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as bltyp_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CADocumentClassText` |  | |  | `cast( ddtext as bltyp_text_kk preserving type )` |  |  |
+| `CADocumentClass` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as bltyp_kk preserving type )` | `CHAR(1)` | Document Class |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CADocumentClassText` |  | |  | `cast( ddtext as bltyp_text_kk preserving type )` | `CHAR(60)` | Description for Document Class |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

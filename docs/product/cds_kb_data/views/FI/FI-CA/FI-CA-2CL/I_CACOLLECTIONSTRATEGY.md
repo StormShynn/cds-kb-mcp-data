@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACollectionStrategy` | ✓ | |  | `strat` |  |  |
+| `CACollectionStrategy` | ✓ | |  | `strat` | `CHAR(2)` | Collection Strategy |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

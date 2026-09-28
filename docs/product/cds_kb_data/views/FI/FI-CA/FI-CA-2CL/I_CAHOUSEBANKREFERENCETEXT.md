@@ -42,10 +42,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPaymentCompanyCode` | ✓ | |  | `bukrs` |  |  |
-| `CAHouseBankReference` | ✓ | |  | `eigbv` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAHouseBankReferenceName` |  | |  | `txt50` |  |  |
+| `CAPaymentCompanyCode` | ✓ | |  | `bukrs` | `CHAR(4)` | Company Code for Automatic Payment Transactions |
+| `CAHouseBankReference` | ✓ | |  | `eigbv` | `CHAR(25)` | Own Bank Details |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAHouseBankReferenceName` |  | |  | `txt50` | `CHAR(50)` | Name |
 | `_Language` | | ✓ | | | | |
 | `_CompCode` | | ✓ | | | | |
 

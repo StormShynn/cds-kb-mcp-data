@@ -40,160 +40,160 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentNumber` | ✓ | |  | `opbel` |  |  |
-| `CARepetitionItemNumber` | ✓ | |  | `opupw` |  |  |
-| `CABPItemNumber` | ✓ | |  | `opupk` |  |  |
-| `CASubItemNumber` | ✓ | |  | `opupz` |  |  |
-| `CreationDate` |  | |  | `cpudt_op` |  |  |
-| `CreationTime` |  | |  | `cputm_op` |  |  |
-| `LastChangeDate` |  | |  | `chdate` |  |  |
-| `LastChangeTime` |  | |  | `chtime` |  |  |
-| `CompanyCode` |  | |  | `bukrs` |  |  |
-| `BusinessArea` |  | |  | `gsber` |  |  |
-| `BusinessPlace` |  | |  | `bupla` |  |  |
-| `Segment` |  | |  | `segment` |  |  |
-| `ProfitCenter` |  | |  | `prctr` |  |  |
-| `Division` |  | |  | `spart` |  |  |
-| `PersonnelNumber` |  | |  | `pernr` |  |  |
-| `PartnerCompany` |  | |  | `vbund` |  |  |
-| `BusinessPartner` |  | |  | `gpart` |  |  |
-| `CAContract` |  | |  | `vtref` |  |  |
-| `CAProviderContractItemNumber` |  | |  | `vtpos` |  |  |
-| `CAAdditionalContract` |  | |  | `vtre2` |  |  |
-| `ContractAccount` |  | |  | `vkont` |  |  |
-| `CASubApplication` |  | |  | `subap` |  |  |
-| `AltvContractAcctForCollvBills` |  | |  | `abwkt` |  |  |
-| `CAReconciliationAccount` |  | |  | `hkont` |  |  |
-| `CAApplicationArea` |  | |  | `applk` |  |  |
-| `CAMainTransaction` |  | |  | `hvorg` |  |  |
-| `CASubTransaction` |  | |  | `tvorg` |  |  |
-| `CAAccountDeterminationCode` |  | |  | `kofiz` |  |  |
-| `CADoubtfulOrValueAdjmtCode` |  | |  | `infoz` |  |  |
-| `CAAccountAssignmentCategory` |  | |  | `kontt` |  |  |
-| `CAAccountAssignment` |  | |  | `kontl` |  |  |
-| `CADocumentType` |  | |  | `blart` |  |  |
-| `CAIsDownPaymentRequest` |  | |  | `xanza` |  |  |
-| `CAItemIsOnlyForSettlement` |  | |  | `verkz` |  |  |
-| `CAStatisticalItemCode` |  | |  | `stakz` |  |  |
-| `CABPItemText` |  | |  | `optxt` |  |  |
-| `CANumberOfRepetitionItems` |  | |  | `whang` |  |  |
-| `CARepetitionGroup` |  | |  | `whgrp` |  |  |
-| `CAStartDateOfBillingPeriod` |  | |  | `abrzu` |  |  |
-| `CAEndDateOfBillingPeriod` |  | |  | `abrzo` |  |  |
-| `CAGroupingCodeForBPItems` |  | |  | `grkey` |  |  |
-| `CAPeriodCode` |  | |  | `persl` |  |  |
-| `CAChangeIsForbidden` |  | |  | `xaesp` |  |  |
-| `CAInterestCode` |  | |  | `ikey` |  |  |
-| `CARoundingItemCode` |  | |  | `rndps` |  |  |
-| `CAReceivingCountry` |  | |  | `landl` |  |  |
-| `CAInternalPostingReasonCode` |  | |  | `intbu` |  |  |
-| `CAWorkflowCheckReason` |  | |  | `c4eye` |  |  |
-| `CAWorkflowCheckProcess` |  | |  | `c4eyp` |  |  |
-| `CANegativePostingControlCode` |  | |  | `negbu` |  |  |
-| `CAPartnerSettlementStatus` |  | |  | `ptitm` |  |  |
-| `CAIsPartOfJointLiability` |  | |  | `palix` |  |  |
-| `CADocumentOriginCode` |  | |  | `herkf_kk` |  |  |
-| `CAGroupingKeyDocumentItems` |  | |  | `psgrp` |  |  |
-| `CASubstituteDocumentNumber` |  | |  | `abwbl` |  |  |
-| `CASubstituteDocumentCategory` |  | |  | `abwtp` |  |  |
-| `CAStatisticalCodeOfOriginItem` |  | |  | `astkz` |  |  |
-| `CADocumentNumberOfOriginItem` |  | |  | `asblg` |  |  |
-| `CAReferenceDocument` |  | |  | `xblnr` |  |  |
-| `CAClassificationKey` |  | |  | `opord` |  |  |
-| `DocumentDate` |  | |  | `bldat` |  |  |
-| `CAPostingDate` |  | |  | `budat` |  |  |
-| `CANetDueDate` |  | |  | `faedn` |  |  |
-| `CADeferralDate` |  | |  | `studt` |  |  |
-| `TransactionCurrency` |  | |  | `waers` |  |  |
-| `CompanyCodeCurrency` |  | | `_CompanyCode` | `Currency` |  |  |
-| `CAExchangeRate` |  | |  | `cast( abs(kursf) as fis_absolute_exchangerate preserving type )` |  |  |
-| `ExchRateIsIndirectQuotation` |  | |  | `cast( case when kursf < 0 then 'X' when kursf >= 0 then ' ' end as fis_indirect_quotation preserving type )` |  |  |
-| `CAAmountInLocalCurrency` |  | |  | `betrh` |  |  |
-| `CAAmountInTransactionCurrency` |  | |  | `betrw` |  |  |
-| `CAAmountInSecondCurrency` |  | |  | `betr2` |  |  |
-| `CAAmountInThirdCurrency` |  | |  | `betr3` |  |  |
-| `CADocBPItemTotalAmountInTC` |  | |  | `oriop` |  |  |
-| `CADocBPItemOriglOpenAmountInTC` |  | |  | `augia` |  |  |
-| `CAClearingDeductionAmountInTC` |  | |  | `augda` |  |  |
-| `CACashDiscountDueDate` |  | |  | `faeds` |  |  |
-| `CACashDiscountRate` |  | |  | `sktpz` |  |  |
-| `CAEligibleAmountForCshDiscount` |  | |  | `skfbt` |  |  |
-| `TaxCode` |  | |  | `mwskz` |  |  |
-| `CASupplementaryTaxCode` |  | |  | `mwszkz` |  |  |
-| `CATaxAmountInLocalCurrency` |  | |  | `sbeth` |  |  |
-| `CATaxAmountInTransCurrency` |  | |  | `sbetw` |  |  |
-| `CATaxAmountInSecondCurrency` |  | |  | `sbet2` |  |  |
-| `CATaxAmountInThirdCurrency` |  | |  | `sbet3` |  |  |
-| `CADownPaymentTaxAccount` |  | |  | `mwsko` |  |  |
-| `CADownPaymentOffsetTaxAccount` |  | |  | `mwvko` |  |  |
-| `TaxJurisdiction` |  | |  | `txjcd` |  |  |
-| `CATaxDate` |  | |  | `txdat` |  |  |
-| `WithholdingTaxCode` |  | |  | `qsskz` |  |  |
-| `CAWithholdingTaxSupplement` |  | |  | `qssew` |  |  |
-| `CAWithholdingTaxCategory` |  | |  | `qsptp` |  |  |
-| `CABaseAmountForWithholdingTax` |  | |  | `qsshb` |  |  |
-| `CAWithholdingTaxAmount` |  | |  | `qbshb` |  |  |
-| `CAWithholdingTaxPercentage` |  | |  | `qsprz` |  |  |
-| `WithholdingTaxCertificate` |  | |  | `qsznr` |  |  |
-| `CAOtherTaxCode` |  | |  | `strkz` |  |  |
-| `CAGroupingCodeForTaxItems` |  | |  | `txgrp` |  |  |
-| `CATaxPortionInLocalCurrency` |  | |  | `sctax` |  |  |
-| `CATaxPortionInTransCurrency` |  | |  | `sttax` |  |  |
-| `CATaxIsCalculatedExternally` |  | |  | `xustpd` |  |  |
-| `CATaxAmountIsSetFromExternal` |  | |  | `inttx` |  |  |
-| `TaxCountry` |  | |  | `tax_country` |  |  |
-| `TransToTaxCntryCrcyCnvrsnFctr` |  | |  | `taxc_factor` |  |  |
-| `CAPaymentMethod` |  | |  | `pymet` |  |  |
-| `CAPaymentCompanyCode` |  | |  | `pybuk` |  |  |
-| `CAGroupingForPayment` |  | |  | `pygrp` |  |  |
-| `CAPaymentSpecificationCategory` |  | |  | `pdtyp` |  |  |
-| `CAClearingStatus` |  | |  | `augst` |  |  |
-| `CAClearingDate` |  | |  | `augdt` |  |  |
-| `CAClearingDocumentNumber` |  | |  | `augbl` |  |  |
-| `CAPostingDateOfClearingDoc` |  | |  | `augbd` |  |  |
-| `CAClearingReason` |  | |  | `augrd` |  |  |
-| `CAClearingCurrency` |  | |  | `augwa` |  |  |
-| `CAClearingAmountInClearingCrcy` |  | |  | `augbt` |  |  |
-| `CATaxAmountInClearingCrcy` |  | |  | `augbs` |  |  |
-| `CACashDiscAmountInClearingCrcy` |  | |  | `augsk` |  |  |
-| `CAValueDateForClearing` |  | |  | `augvd` |  |  |
-| `CAClearingRestrictionCode` |  | |  | `augrs` |  |  |
-| `CAClearingPostingIsReset` |  | |  | `xragl` |  |  |
-| `CAItemIsWithdrawn` |  | |  | `augob` |  |  |
-| `CAItemIsExcludedFromDunning` |  | |  | `xmanl` |  |  |
-| `CADunningProcedure` |  | |  | `mahnv` |  |  |
-| `CAGrpgCodeForTransfToCollAgcy` |  | |  | `inkps` |  |  |
-| `CAIsIncludedInCollectionCase` |  | |  | `xcolc` |  |  |
-| `CashPlanningGroup` |  | |  | `fdgrp` |  |  |
-| `PlanningLevel` |  | |  | `fdlev` |  |  |
-| `CAAdditionalDaysForCashMgmt` |  | |  | `fdztg` |  |  |
-| `PlannedAmtInTransactionCrcy` |  | |  | `cast( fdwbt as fis_fdwbt )` |  |  |
-| `CAAltvBPForPayment` |  | |  | `emgpa` |  |  |
-| `CABankOfAltvBPForPayment` |  | |  | `embvt` |  |  |
-| `CAAddressOfAltvBPForPayment` |  | |  | `emadr` |  |  |
-| `CACardOfAltvBPForPayment` |  | |  | `emcrd` |  |  |
-| `SEPAMandateCAInternalID` |  | |  | `emmnd` |  |  |
-| `CAGLPostingCurrency` |  | |  | `pswsl` |  |  |
-| `CAGLPostingAmount` |  | |  | `pswbt` |  |  |
-| `CAGLPostingTaxAmount` |  | |  | `pswtx` |  |  |
-| `CAIsSeparateLineItemInGL` |  | |  | `xeiph` |  |  |
-| `CAIsCashFlowItem` |  | |  | `xcsha` |  |  |
-| `CACashFlowAccount` |  | |  | `reacc` |  |  |
-| `CACashFlowCompanyCode` |  | |  | `rebuk` |  |  |
-| `CAPaymentPreNotificationCode` |  | |  | `xpyor` |  |  |
-| `CASEPAPreNotificationNumber` |  | |  | `pnnum` |  |  |
-| `CASEPAPreNotifOriginCode` |  | |  | `pnhkf` |  |  |
-| `CASEPAPreNotifExecutionDate` |  | |  | `pnexd` |  |  |
-| `CASEPAPreNotificationRqmtCode` |  | |  | `pnctr` |  |  |
-| `CARevenueDistrFinalRecipient` |  | |  | `finre` |  |  |
-| `CARevenueDistrCurrentStatus` |  | |  | `rdsta` |  |  |
-| `CARevenueDistrLastStatus` |  | |  | `rdstb` |  |  |
-| `CACurrentFactoringStatusOfRbl` |  | |  | `fasta` |  |  |
-| `CAFactoringCheckStsForClrgInfo` |  | |  | `pasta` |  |  |
-| `CAFactoringItem` |  | |  | `opupf` |  |  |
-| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` |  |  |
-| `ChartOfAccounts` |  | | `_CompanyCode` | `ChartOfAccounts` |  |  |
-| `Country` |  | | `_CompanyCode` | `Country` |  |  |
+| `CADocumentNumber` | ✓ | |  | `opbel` | `CHAR(12)` | Number of a FI-CA Document |
+| `CARepetitionItemNumber` | ✓ | |  | `opupw` | `NUMC(3)` | Repetition Item in FI-CA Document |
+| `CABPItemNumber` | ✓ | |  | `opupk` | `NUMC(4)` | Item Number in FI-CA Document |
+| `CASubItemNumber` | ✓ | |  | `opupz` | `NUMC(3)` | Subitem for a Partial Clearing in Document |
+| `CreationDate` |  | |  | `cpudt_op` | `DATS(8)` | Document Item Creation Date |
+| `CreationTime` |  | |  | `cputm_op` | `TIMS(6)` | Time of Document Item Creation |
+| `LastChangeDate` |  | |  | `chdate` | `DATS(8)` | Last Changed On |
+| `LastChangeTime` |  | |  | `chtime` | `TIMS(6)` | Time at Which the Object Was Last Changed |
+| `CompanyCode` |  | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `BusinessArea` |  | |  | `gsber` | `CHAR(4)` | Business Area |
+| `BusinessPlace` |  | |  | `bupla` | `CHAR(4)` | Business Place |
+| `Segment` |  | |  | `segment` | `CHAR(10)` | Segment for Segmental Reporting |
+| `ProfitCenter` |  | |  | `prctr` | `CHAR(10)` | Profit Center |
+| `Division` |  | |  | `spart` | `CHAR(2)` | Division |
+| `PersonnelNumber` |  | |  | `pernr` | `NUMC(8)` | Personnel Number |
+| `PartnerCompany` |  | |  | `vbund` | `CHAR(6)` | Company ID of Trading Partner |
+| `BusinessPartner` |  | |  | `gpart` | `CHAR(10)` | Business Partner Number |
+| `CAContract` |  | |  | `vtref` | `CHAR(20)` | Reference Specifications from Contract |
+| `CAProviderContractItemNumber` |  | |  | `vtpos` | `NUMC(6)` | Contract: Item Number |
+| `CAAdditionalContract` |  | |  | `vtre2` | `CHAR(20)` | Additional Reference Information |
+| `ContractAccount` |  | |  | `vkont` | `CHAR(12)` | Contract Account Number |
+| `CASubApplication` |  | |  | `subap` | `CHAR(1)` | Subapplication in Contract Accounts Receivable and Payable |
+| `AltvContractAcctForCollvBills` |  | |  | `abwkt` | `CHAR(12)` | Alternative Contract Account for Collective Bills |
+| `CAReconciliationAccount` |  | |  | `hkont` | `CHAR(10)` | General ledger account |
+| `CAApplicationArea` |  | |  | `applk` | `CHAR(1)` | Application Area |
+| `CAMainTransaction` |  | |  | `hvorg` | `CHAR(4)` | Main Transaction for Line Item |
+| `CASubTransaction` |  | |  | `tvorg` | `CHAR(4)` | Subtransaction for Document Item |
+| `CAAccountDeterminationCode` |  | |  | `kofiz` | `CHAR(2)` | Account Determination ID |
+| `CADoubtfulOrValueAdjmtCode` |  | |  | `infoz` | `NUMC(3)` | Doubtful Entry / Individual Value Adjustment |
+| `CAAccountAssignmentCategory` |  | |  | `kontt` | `CHAR(2)` | Account Assignment Category |
+| `CAAccountAssignment` |  | |  | `kontl` | `CHAR(50)` | Account Assgt String for Application-Specific Account Assgts |
+| `CADocumentType` |  | |  | `blart` | `CHAR(2)` | Document Type |
+| `CAIsDownPaymentRequest` |  | |  | `xanza` | `CHAR(1)` | Item is a Down Payment/Down Payment Request |
+| `CAItemIsOnlyForSettlement` |  | |  | `verkz` | `CHAR(1)` | Item Can Only Be Cleared |
+| `CAStatisticalItemCode` |  | |  | `stakz` | `CHAR(1)` | Type of Statistical Line Item |
+| `CABPItemText` |  | |  | `optxt` | `CHAR(50)` | Item text |
+| `CANumberOfRepetitionItems` |  | |  | `whang` | `NUMC(3)` | Number of repetition items |
+| `CARepetitionGroup` |  | |  | `whgrp` | `NUMC(3)` | Repetition group |
+| `CAStartDateOfBillingPeriod` |  | |  | `abrzu` | `DATS(8)` | Lower Limit of Billing Period |
+| `CAEndDateOfBillingPeriod` |  | |  | `abrzo` | `DATS(8)` | Upper Limit of the Billing Period |
+| `CAGroupingCodeForBPItems` |  | |  | `grkey` | `CHAR(3)` | Grouping Key for Displaying Open Items |
+| `CAPeriodCode` |  | |  | `persl` | `CHAR(4)` | Key for Period Assignment |
+| `CAChangeIsForbidden` |  | |  | `xaesp` | `CHAR(1)` | Printing - No Changes Possible |
+| `CAInterestCode` |  | |  | `ikey` | `CHAR(2)` | Interest Key |
+| `CARoundingItemCode` |  | |  | `rndps` | `CHAR(1)` | Type of Rounding Item |
+| `CAReceivingCountry` |  | |  | `landl` | `CHAR(3)` | Destination Country/Region (for Tax Reports) |
+| `CAInternalPostingReasonCode` |  | |  | `intbu` | `CHAR(1)` | Reason for Automatic Creation of Posting |
+| `CAWorkflowCheckReason` |  | |  | `c4eye` | `CHAR(2)` | Check Reason for Workflows Acc. to Dual Control Principle |
+| `CAWorkflowCheckProcess` |  | |  | `c4eyp` | `CHAR(1)` | Editing Process to Be Confirmed |
+| `CANegativePostingControlCode` |  | |  | `negbu` | `NUMC(1)` | Control Field for Negative Posting |
+| `CAPartnerSettlementStatus` |  | |  | `ptitm` | `CHAR(1)` | Status of Partner Settlement Using Billable Items |
+| `CAIsPartOfJointLiability` |  | |  | `palix` | `CHAR(1)` | Item Is Part of a Collaborative Liability |
+| `CADocumentOriginCode` |  | |  | `herkf_kk` | `CHAR(2)` | Document Origin Key |
+| `CAGroupingKeyDocumentItems` |  | |  | `psgrp` | `CHAR(4)` | Grouping Key for Document Items |
+| `CASubstituteDocumentNumber` |  | |  | `abwbl` | `CHAR(12)` | Number of the Substitute FI-CA Document |
+| `CASubstituteDocumentCategory` |  | |  | `abwtp` | `CHAR(1)` | Category of substitute document in FI-CA |
+| `CAStatisticalCodeOfOriginItem` |  | |  | `astkz` | `CHAR(1)` | Statistical Key of the Triggering Item |
+| `CADocumentNumberOfOriginItem` |  | |  | `asblg` | `CHAR(12)` | Number of Triggering Document |
+| `CAReferenceDocument` |  | |  | `xblnr` | `CHAR(16)` | Reference Document Number |
+| `CAClassificationKey` |  | |  | `opord` | `CHAR(35)` | Classification Key |
+| `DocumentDate` |  | |  | `bldat` | `DATS(8)` | Document Date in Document |
+| `CAPostingDate` |  | |  | `budat` | `DATS(8)` | Posting Date in the Document |
+| `CANetDueDate` |  | |  | `faedn` | `DATS(8)` | Due date for net payment |
+| `CADeferralDate` |  | |  | `studt` | `DATS(8)` | Deferral To |
+| `TransactionCurrency` |  | |  | `waers` | `CUKY(5)` | Transaction Currency |
+| `CompanyCodeCurrency` |  | | `_CompanyCode` | `Currency` | `CUKY(5)` | Currency Key |
+| `CAExchangeRate` |  | |  | `cast( abs(kursf) as fis_absolute_exchangerate preserving type )` | `DEC(9)` | Absolute Exchange Rate |
+| `ExchRateIsIndirectQuotation` |  | |  | `cast( case when kursf < 0 then 'X' when kursf >= 0 then ' ' end as fis_indirect_quotation preserving type )` | `CHAR(1)` | Exchange Rate Is Indirect Quotation |
+| `CAAmountInLocalCurrency` |  | |  | `betrh` | `CURR(13)` | Amount In Local Currency With +/- Signs |
+| `CAAmountInTransactionCurrency` |  | |  | `betrw` | `CURR(13)` | Amount in Transaction Currency with +/- Sign |
+| `CAAmountInSecondCurrency` |  | |  | `betr2` | `CURR(13)` | Amount in second parallel currency with +/- sign |
+| `CAAmountInThirdCurrency` |  | |  | `betr3` | `CURR(13)` | Amount in third parallel currency with +/- sign |
+| `CADocBPItemTotalAmountInTC` |  | |  | `oriop` | `CURR(13)` | Total Amount of Business Partner Item |
+| `CADocBPItemOriglOpenAmountInTC` |  | |  | `augia` | `CURR(13)` | Business Partner Item Amount in Partial Clearing |
+| `CAClearingDeductionAmountInTC` |  | |  | `augda` | `CURR(13)` | Assigned Payment Difference for Clearing |
+| `CACashDiscountDueDate` |  | |  | `faeds` | `DATS(8)` | Due Date for Cash Discount |
+| `CACashDiscountRate` |  | |  | `sktpz` | `DEC(5)` | Cash Discount Percentage Rate |
+| `CAEligibleAmountForCshDiscount` |  | |  | `skfbt` | `CURR(13)` | Amount Eligible for Cash Discount in Document Currency |
+| `TaxCode` |  | |  | `mwskz` | `CHAR(2)` | Tax on Sales/Purchases Code |
+| `CASupplementaryTaxCode` |  | |  | `mwszkz` | `CHAR(2)` | Supplementary Tax |
+| `CATaxAmountInLocalCurrency` |  | |  | `sbeth` | `CURR(13)` | Tax Amount in Local Currency With +/- Sign |
+| `CATaxAmountInTransCurrency` |  | |  | `sbetw` | `CURR(13)` | Tax Amount in Transaction Currency with +/- Sign |
+| `CATaxAmountInSecondCurrency` |  | |  | `sbet2` | `CURR(13)` | Tax Amount in Second Parallel Currency |
+| `CATaxAmountInThirdCurrency` |  | |  | `sbet3` | `CURR(13)` | Tax amount in third parallel currency |
+| `CADownPaymentTaxAccount` |  | |  | `mwsko` | `CHAR(10)` | Account for Posting Sales / Purchase Tax for Down Payments |
+| `CADownPaymentOffsetTaxAccount` |  | |  | `mwvko` | `CHAR(10)` | Account for Offsetting Tax Posting in Down Payments |
+| `TaxJurisdiction` |  | |  | `txjcd` | `CHAR(15)` | Tax Jurisdiction |
+| `CATaxDate` |  | |  | `txdat` | `DATS(8)` | Decisive Date for Calculating Taxes |
+| `WithholdingTaxCode` |  | |  | `qsskz` | `CHAR(2)` | Withholding Tax Code |
+| `CAWithholdingTaxSupplement` |  | |  | `qssew` | `CHAR(2)` | Withholding Tax Supplement |
+| `CAWithholdingTaxCategory` |  | |  | `qsptp` | `CHAR(1)` | Line Item Category From Withholding Tax View |
+| `CABaseAmountForWithholdingTax` |  | |  | `qsshb` | `CURR(13)` | Tax Base Amount |
+| `CAWithholdingTaxAmount` |  | |  | `qbshb` | `CURR(13)` | Withholding Tax Amount (in Document Currency) |
+| `CAWithholdingTaxPercentage` |  | |  | `qsprz` | `NUMC(6)` | Withholding Tax Percentage |
+| `WithholdingTaxCertificate` |  | |  | `qsznr` | `CHAR(10)` | Certificate Number of the Withholding Tax Exemption |
+| `CAOtherTaxCode` |  | |  | `strkz` | `CHAR(2)` | Tax Code for Other Taxes |
+| `CAGroupingCodeForTaxItems` |  | |  | `txgrp` | `CHAR(6)` | Grouping Key for Tax Items |
+| `CATaxPortionInLocalCurrency` |  | |  | `sctax` | `CURR(13)` | Tax Portion in FI-CA Local Currency |
+| `CATaxPortionInTransCurrency` |  | |  | `sttax` | `CURR(13)` | Tax Portion in Document Currency |
+| `CATaxIsCalculatedExternally` |  | |  | `xustpd` | `CHAR(1)` | Tax on Sales/Purchases Was Calculated by Document |
+| `CATaxAmountIsSetFromExternal` |  | |  | `inttx` | `CHAR(1)` | Internal Tax Characteristic for Tax Handling |
+| `TaxCountry` |  | |  | `tax_country` | `CHAR(3)` | Tax Reporting Country/Region |
+| `TransToTaxCntryCrcyCnvrsnFctr` |  | |  | `taxc_factor` | `DEC(31)` | Factor for Conversion into Tax Country/Region Currency |
+| `CAPaymentMethod` |  | |  | `pymet` | `CHAR(1)` | Payment Method |
+| `CAPaymentCompanyCode` |  | |  | `pybuk` | `CHAR(4)` | Company Code for Automatic Payment Transactions |
+| `CAGroupingForPayment` |  | |  | `pygrp` | `CHAR(10)` | Grouping field for automatic payments |
+| `CAPaymentSpecificationCategory` |  | |  | `pdtyp` | `CHAR(1)` | Category of Payment Specification |
+| `CAClearingStatus` |  | |  | `augst` | `CHAR(1)` | Clearing Status |
+| `CAClearingDate` |  | |  | `augdt` | `DATS(8)` | Clearing Date |
+| `CAClearingDocumentNumber` |  | |  | `augbl` | `CHAR(12)` | Clearing Document or Printed Document |
+| `CAPostingDateOfClearingDoc` |  | |  | `augbd` | `DATS(8)` | Clearing Document Posting Date |
+| `CAClearingReason` |  | |  | `augrd` | `CHAR(2)` | Clearing Reason |
+| `CAClearingCurrency` |  | |  | `augwa` | `CUKY(5)` | Clearing Currency |
+| `CAClearingAmountInClearingCrcy` |  | |  | `augbt` | `CURR(13)` | Clearing Amount in Clearing Currency |
+| `CATaxAmountInClearingCrcy` |  | |  | `augbs` | `CURR(13)` | Tax Amount in Clearing Currency |
+| `CACashDiscAmountInClearingCrcy` |  | |  | `augsk` | `CURR(13)` | Cash Discount Granted/Surcharge Levied in Clearing Currency |
+| `CAValueDateForClearing` |  | |  | `augvd` | `DATS(8)` | Clearing Value Date |
+| `CAClearingRestrictionCode` |  | |  | `augrs` | `CHAR(1)` | Clearing restriction |
+| `CAClearingPostingIsReset` |  | |  | `xragl` | `CHAR(1)` | Clearing posting reversed |
+| `CAItemIsWithdrawn` |  | |  | `augob` | `CHAR(1)` | Item Canceled |
+| `CAItemIsExcludedFromDunning` |  | |  | `xmanl` | `CHAR(1)` | Exclude Item from Dunning Run |
+| `CADunningProcedure` |  | |  | `mahnv` | `CHAR(2)` | Dunning Procedure |
+| `CAGrpgCodeForTransfToCollAgcy` |  | |  | `inkps` | `NUMC(3)` | Collection Item |
+| `CAIsIncludedInCollectionCase` |  | |  | `xcolc` | `CHAR(1)` | Item Is Included in Collection Case |
+| `CashPlanningGroup` |  | |  | `fdgrp` | `CHAR(10)` | Planning Group |
+| `PlanningLevel` |  | |  | `fdlev` | `CHAR(2)` | Planning Level |
+| `CAAdditionalDaysForCashMgmt` |  | |  | `fdztg` | `NUMC(2)` | Cash Management Extra Days |
+| `PlannedAmtInTransactionCrcy` |  | |  | `cast( fdwbt as fis_fdwbt )` | `CURR(23)` | Planned Amount in Transaction Currency |
+| `CAAltvBPForPayment` |  | |  | `emgpa` | `CHAR(10)` | Alternative Business Partner for Payments |
+| `CABankOfAltvBPForPayment` |  | |  | `embvt` | `CHAR(4)` | Bank Details ID of Payee |
+| `CAAddressOfAltvBPForPayment` |  | |  | `emadr` | `CHAR(10)` | Address Number |
+| `CACardOfAltvBPForPayment` |  | |  | `emcrd` | `CHAR(6)` | Alternative Payment Card ID in Document |
+| `SEPAMandateCAInternalID` |  | |  | `emmnd` | `NUMC(6)` | Mandate Identifier |
+| `CAGLPostingCurrency` |  | |  | `pswsl` | `CUKY(5)` | Update Currency for General Ledger Transaction Figures |
+| `CAGLPostingAmount` |  | |  | `pswbt` | `CURR(13)` | Amount for Updating in General Ledger |
+| `CAGLPostingTaxAmount` |  | |  | `pswtx` | `CURR(13)` | Tax Amount for Update in General Ledger |
+| `CAIsSeparateLineItemInGL` |  | |  | `xeiph` | `CHAR(1)` | Create Line Item in General Ledger |
+| `CAIsCashFlowItem` |  | |  | `xcsha` | `CHAR(1)` | Document Contains Assignments from Cash Flows |
+| `CACashFlowAccount` |  | |  | `reacc` | `CHAR(10)` | Originating Account in Cash Flow Anlaysis |
+| `CACashFlowCompanyCode` |  | |  | `rebuk` | `CHAR(4)` | Partner Company Code for Cash Flow Analysis |
+| `CAPaymentPreNotificationCode` |  | |  | `xpyor` | `CHAR(1)` | Item Included in a Payment Order |
+| `CASEPAPreNotificationNumber` |  | |  | `pnnum` | `CHAR(16)` | Number of Debit Memo Notification |
+| `CASEPAPreNotifOriginCode` |  | |  | `pnhkf` | `CHAR(2)` | Origin of Direct Debit Pre-Notification |
+| `CASEPAPreNotifExecutionDate` |  | |  | `pnexd` | `DATS(8)` | Date of Execution of Direct Debit Pre-Notifcation |
+| `CASEPAPreNotificationRqmtCode` |  | |  | `pnctr` | `CHAR(1)` | Necessity of a Notification |
+| `CARevenueDistrFinalRecipient` |  | |  | `finre` | `CHAR(12)` | Contract Account of Final Recipient |
+| `CARevenueDistrCurrentStatus` |  | |  | `rdsta` | `CHAR(1)` | Current Distribution Status |
+| `CARevenueDistrLastStatus` |  | |  | `rdstb` | `CHAR(1)` | Last Distribution Status Reported |
+| `CACurrentFactoringStatusOfRbl` |  | |  | `fasta` | `CHAR(1)` | Factoring: Current Status of Receivable |
+| `CAFactoringCheckStsForClrgInfo` |  | |  | `pasta` | `CHAR(1)` | Factoring: Check Status for Clearing Information |
+| `CAFactoringItem` |  | |  | `opupf` | `NUMC(3)` | Subitems in Factoring |
+| `ControllingArea` |  | | `_CompanyCode` | `ControllingArea` | `CHAR(4)` | Controlling Area |
+| `ChartOfAccounts` |  | | `_CompanyCode` | `ChartOfAccounts` | `CHAR(4)` | Chart of Accounts |
+| `Country` |  | | `_CompanyCode` | `Country` | `CHAR(3)` | Country/Region Key |
 | `_BusinessArea` | | ✓ | | | | |
 | `_BusinessPartner` | | ✓ | | | | |
 | `_PaytAltvBusinessPartner` | | ✓ | | | | |

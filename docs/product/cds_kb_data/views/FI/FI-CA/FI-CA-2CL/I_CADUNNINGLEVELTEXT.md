@@ -40,10 +40,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADunningProcedure` | ✓ | |  | `mahnv` |  |  |
-| `CADunningLevel` | ✓ | |  | `mahns` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CADunningLevelName` |  | |  | `mtext` |  |  |
+| `CADunningProcedure` | ✓ | |  | `mahnv` | `CHAR(2)` | Dunning Procedure |
+| `CADunningLevel` | ✓ | |  | `mahns` | `NUMC(2)` | Dunning Level |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CADunningLevelName` |  | |  | `mtext` | `CHAR(50)` | Name of Dunning Level |
 | `_DunningProcedure` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

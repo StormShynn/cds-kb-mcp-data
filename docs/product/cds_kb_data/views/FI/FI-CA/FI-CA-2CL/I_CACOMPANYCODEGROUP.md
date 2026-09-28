@@ -54,8 +54,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACompanyCodeGroup` | ✓ | |  | `opbuk` |  |  |
-| `CAPaymentCompanyCode` |  | |  | `pybuk` |  |  |
+| `CACompanyCodeGroup` | ✓ | |  | `opbuk` | `CHAR(4)` | Company Code Group |
+| `CAPaymentCompanyCode` |  | |  | `pybuk` | `CHAR(4)` | Company Code for Automatic Payment Transactions |
 | `_Text` | | ✓ | | | | |
 | `_CompanyCode` | | ✓ | | | | |
 

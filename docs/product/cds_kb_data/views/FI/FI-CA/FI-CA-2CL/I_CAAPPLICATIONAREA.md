@@ -38,8 +38,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAApplicationArea` | ✓ | |  | `applk` |  |  |
-| `CAApplicationAreaIsActive` |  | |  | `aktiv` |  |  |
+| `CAApplicationArea` | ✓ | |  | `applk` | `CHAR(1)` | Application Area |
+| `CAApplicationAreaIsActive` |  | |  | `aktiv` | `CHAR(1)` | Application Area Is Active |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

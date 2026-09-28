@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADocumentTransactionClass` | ✓ | |  | `cast( left( domvalue_l, 1 ) as tatyp_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CADocumentTransactionClassText` |  | |  | `cast( ddtext as tatyp_text_kk preserving type )` |  |  |
+| `CADocumentTransactionClass` | ✓ | |  | `cast( left( domvalue_l, 1 ) as tatyp_kk preserving type )` | `CHAR(1)` | Transaction Class of Document |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CADocumentTransactionClassText` |  | |  | `cast( ddtext as tatyp_text_kk preserving type )` | `CHAR(60)` | Description for Document Transaction Class |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

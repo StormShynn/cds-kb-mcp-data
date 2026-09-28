@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPaymentSpecificationCategory` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as pdtyp_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAPaymentSpecificationCatName` |  | |  | `cast( ddtext as pdtyp_text_kk preserving type )` |  |  |
+| `CAPaymentSpecificationCategory` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as pdtyp_kk preserving type )` | `CHAR(1)` | Category of Payment Specification |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAPaymentSpecificationCatName` |  | |  | `cast( ddtext as pdtyp_text_kk preserving type )` | `CHAR(60)` | Description for Payment Specification Category |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

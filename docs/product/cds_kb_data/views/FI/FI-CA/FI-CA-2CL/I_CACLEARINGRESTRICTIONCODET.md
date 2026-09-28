@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAClearingRestrictionCode` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as augrs_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAClearingRestrictionCodeName` |  | |  | `cast( ddtext as augrs_text_kk preserving type )` |  |  |
+| `CAClearingRestrictionCode` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as augrs_kk preserving type )` | `CHAR(1)` | Clearing restriction |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAClearingRestrictionCodeName` |  | |  | `cast( ddtext as augrs_text_kk preserving type )` | `CHAR(60)` | Description for Clearing Restriction |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

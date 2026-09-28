@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CARatingArea` | ✓ | |  | `rating_area` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `CARatingAreaDescription` |  | |  | `ra_txt` |  |  |
+| `CARatingArea` | ✓ | |  | `rating_area` | `CHAR(4)` | Rating Area |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `CARatingAreaDescription` |  | |  | `ra_txt` | `CHAR(50)` | Rating Area Description |
 | `_Language` | | ✓ | | | | |
 
 ## Associations
