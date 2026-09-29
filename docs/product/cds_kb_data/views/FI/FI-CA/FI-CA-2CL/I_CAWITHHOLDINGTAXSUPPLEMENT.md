@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Country` | ✓ | |  | `land1` |  |  |
-| `CAWithholdingTaxSupplement` | ✓ | |  | `qssew` |  |  |
+| `Country` | ✓ | |  | `land1` | `CHAR(3)` | Country/Region Key |
+| `CAWithholdingTaxSupplement` | ✓ | |  | `qssew` | `CHAR(2)` | Withholding Tax Supplement |
 | `_Country` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |
 

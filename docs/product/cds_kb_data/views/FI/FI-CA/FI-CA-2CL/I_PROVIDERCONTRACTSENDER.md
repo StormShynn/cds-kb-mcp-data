@@ -39,10 +39,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAProviderContractSender` | ✓ | |  | `sender` |  |  |
-| `CAProviderContractSenderCat` |  | |  | `sendercat` |  |  |
-| `ExternalNumberRangeInterval` |  | |  | `cast(nrext as nrext_vt_kk preserving type )` |  |  |
-| `InternalNumberRangeInterval` |  | |  | `cast(nrint as nrint_vt_kk preserving type )` |  |  |
+| `CAProviderContractSender` | ✓ | |  | `sender` | `CHAR(3)` | Provider Contract Sender |
+| `CAProviderContractSenderCat` |  | |  | `sendercat` | `CHAR(1)` | Provider Contract Sender Category |
+| `ExternalNumberRangeInterval` |  | |  | `cast(nrext as nrext_vt_kk preserving type )` | `CHAR(2)` | Number Range Interval for External Contract Numbers |
+| `InternalNumberRangeInterval` |  | |  | `cast(nrint as nrint_vt_kk preserving type )` | `CHAR(2)` | Number Range Interval for Internal Contract Numbers |
 | `_Text` | | ✓ | | | | |
 | `_SenderCategory` | | ✓ | | | | |
 

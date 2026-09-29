@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAStorageLocationOfTaxSuplmnt` | ✓ | |  | `cast( left( domvalue_l,2 ) as utloc_ut_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAStorLocOfTaxSuplmntText` |  | |  | `cast( ddtext as utloc_ut_text_kk preserving type )` |  |  |
+| `CAStorageLocationOfTaxSuplmnt` | ✓ | |  | `cast( left( domvalue_l,2 ) as utloc_ut_kk preserving type )` | `CHAR(2)` | Storage Location of Tax Supplement for Telco Tax (U.S.A) |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAStorLocOfTaxSuplmntText` |  | |  | `cast( ddtext as utloc_ut_text_kk preserving type )` | `CHAR(60)` | Description f. Tax Suppl. Storage Location f. Mun. Tax (USA) |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAWorkflowCheckProcess` | ✓ | |  | `cast( left( domvalue_l, 1 ) as c4eyp_kk preserving type )` |  |  |
+| `CAWorkflowCheckProcess` | ✓ | |  | `cast( left( domvalue_l, 1 ) as c4eyp_kk preserving type )` | `CHAR(1)` | Editing Process to Be Confirmed |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

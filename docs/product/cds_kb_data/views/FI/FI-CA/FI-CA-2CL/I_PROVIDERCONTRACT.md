@@ -39,33 +39,33 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ProviderContract` | ✓ | |  | `vtkey` |  |  |
-| `BusinessPartner` |  | |  | `cast(gpart as bu_partner preserving type )` |  |  |
-| `CreationDate` |  | |  | `erdat` |  |  |
-| `CreationTime` |  | |  | `cast(ertim as ttet_dt_cr_time preserving type )` |  |  |
-| `CreatedByUser` |  | |  | `ernam` |  |  |
-| `IsMarkedForDeletion` |  | |  | `cast(loevm as loevm preserving type )` |  |  |
-| `LastChangeDate` |  | |  | `aedat` |  |  |
-| `LastChangeTime` |  | |  | `aetim` |  |  |
-| `LastChangedByUser` |  | |  | `aenam` |  |  |
-| `CAProviderContractName` |  | |  | `vtbez` |  |  |
-| `CAProviderContractExtReference` |  | |  | `vtalt` |  |  |
-| `CAPrvdrContrStartDateTime` |  | |  | `vtbeg` |  |  |
-| `CAPrvdrContrEndDateTime` |  | |  | `vtend` |  |  |
-| `AuthorizationGroup` |  | |  | `begru` |  |  |
-| `CAAuthorizationGroup` |  | |  | `begru` |  |  |
-| `CompanyCode` |  | |  | `bukrs` |  |  |
-| `TimeZoneID` |  | |  | `cast(tzone as tznzone preserving type )` |  |  |
-| `CAProviderContractCategory` |  | |  | `vtcat` |  |  |
-| `CAProviderContractMigrtnStatus` |  | |  | `migst` |  |  |
-| `CAProviderContractType` |  | |  | `vtchr` |  |  |
-| `CAProviderContractStatus` |  | |  | `statu` |  |  |
-| `CAProviderContractSender` |  | |  | `sender` |  |  |
-| `PrvdrContrEarliestEndDateTime` |  | |  | `vtend_min` |  |  |
-| `MinNrOfMonthsForContractPeriod` |  | |  | `vtper_min` |  |  |
-| `NrOfMonthsForContractRenewal` |  | |  | `vtper_rnwl` |  |  |
-| `NrOfDaysForContrNoticePeriod` |  | |  | `vtper_canc` |  |  |
-| `BudgetBillingPlanType` |  | |  | `uti_bbptype` |  |  |
+| `ProviderContract` | ✓ | |  | `vtkey` | `CHAR(20)` | Identification of a Provider Contract |
+| `BusinessPartner` |  | |  | `cast(gpart as bu_partner preserving type )` | `CHAR(10)` | Business Partner Number |
+| `CreationDate` |  | |  | `erdat` | `DATS(8)` | Record Creation Date |
+| `CreationTime` |  | |  | `cast(ertim as ttet_dt_cr_time preserving type )` | `TIMS(6)` | Creation Time |
+| `CreatedByUser` |  | |  | `ernam` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `IsMarkedForDeletion` |  | |  | `cast(loevm as loevm preserving type )` | `CHAR(1)` | Deletion Indicator |
+| `LastChangeDate` |  | |  | `aedat` | `DATS(8)` | Last Changed On |
+| `LastChangeTime` |  | |  | `aetim` | `TIMS(6)` | Last Changed At |
+| `LastChangedByUser` |  | |  | `aenam` | `CHAR(12)` | Name of Person Who Changed Object |
+| `CAProviderContractName` |  | |  | `vtbez` | `CHAR(35)` | Name of Contract |
+| `CAProviderContractExtReference` |  | |  | `vtalt` | `CHAR(20)` | Technical Key of Provider Contract in External System |
+| `CAPrvdrContrStartDateTime` |  | |  | `vtbeg` | `DEC(15)` | Contract Start |
+| `CAPrvdrContrEndDateTime` |  | |  | `vtend` | `DEC(15)` | Contract End Date |
+| `AuthorizationGroup` |  | |  | `begru` | `CHAR(4)` | Authorization Group |
+| `CAAuthorizationGroup` |  | |  | `begru` | `CHAR(4)` | Authorization Group |
+| `CompanyCode` |  | |  | `bukrs` | `CHAR(4)` | Company Code for Authorization Check |
+| `TimeZoneID` |  | |  | `cast(tzone as tznzone preserving type )` | `CHAR(6)` | Time Zone |
+| `CAProviderContractCategory` |  | |  | `vtcat` | `CHAR(1)` | Contract Category |
+| `CAProviderContractMigrtnStatus` |  | |  | `migst` | `CHAR(1)` | Migration Status |
+| `CAProviderContractType` |  | |  | `vtchr` | `CHAR(1)` | Contract Specification |
+| `CAProviderContractStatus` |  | |  | `statu` | `CHAR(1)` | Status of Provider Contract |
+| `CAProviderContractSender` |  | |  | `sender` | `CHAR(3)` | Provider Contract Sender |
+| `PrvdrContrEarliestEndDateTime` |  | |  | `vtend_min` | `DEC(15)` | End of Minimum Term |
+| `MinNrOfMonthsForContractPeriod` |  | |  | `vtper_min` | `NUMC(3)` | Min Length of Contract (Months) |
+| `NrOfMonthsForContractRenewal` |  | |  | `vtper_rnwl` | `NUMC(3)` | Contract Extension in Months |
+| `NrOfDaysForContrNoticePeriod` |  | |  | `vtper_canc` | `NUMC(3)` | Notice Period in Days |
+| `BudgetBillingPlanType` |  | |  | `uti_bbptype` | `CHAR(4)` | Utilities Budget Billing Plan Type |
 | `_BusinessPartner` | | ✓ | | | | |
 | `_CAAuthorizationGroup` | | ✓ | | | | |
 | `_CompCode` | | ✓ | | | | |

@@ -38,10 +38,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAWriteOffReason` | ✓ | |  | `abgrd` |  |  |
-| `CACreditWorthinessRatingValue` |  | |  | `bonit` |  |  |
-| `CAPartialWriteOffIsAllowed` |  | |  | `xtabg` |  |  |
-| `CARvslOfDfrrdRevnIsForbidden` |  | |  | `notrg` |  |  |
+| `CAWriteOffReason` | ✓ | |  | `abgrd` | `CHAR(2)` | Write-Off Reason |
+| `CACreditWorthinessRatingValue` |  | |  | `bonit` | `NUMC(2)` | Creditworthiness Number |
+| `CAPartialWriteOffIsAllowed` |  | |  | `xtabg` | `CHAR(1)` | Permit Partial Write-Off |
+| `CARvslOfDfrrdRevnIsForbidden` |  | |  | `notrg` | `CHAR(1)` | Do Not Reverse Deferred Revenue Triggers |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

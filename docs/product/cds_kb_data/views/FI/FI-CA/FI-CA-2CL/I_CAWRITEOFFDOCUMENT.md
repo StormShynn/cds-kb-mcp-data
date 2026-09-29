@@ -39,43 +39,43 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAWriteOffDocumentNumber` | ✓ | |  | `CADocumentNumber` |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `CreationDate` |  | |  |  |  |  |
-| `CreationTime` |  | |  |  |  |  |
-| `LastChangeDate` |  | |  |  |  |  |
-| `LastChangeTime` |  | |  |  |  |  |
-| `CATaxCompanyCode` |  | |  |  |  |  |
-| `CAStorageLocationOfTaxSuplmnt` |  | |  |  |  |  |
-| `CATaxCodeWasExchanged` |  | |  |  |  |  |
-| `TaxReportingDate` |  | |  |  |  |  |
-| `CAReconciliationKey` |  | |  |  |  |  |
-| `CASeparateDocIsCreatedInGL` |  | |  |  |  |  |
-| `CARequestedPeriodForGLTransfer` |  | |  |  |  |  |
-| `CAApplicationArea` |  | |  |  |  |  |
-| `CADocumentType` |  | |  |  |  |  |
-| `CADocumentOriginCode` |  | |  |  |  |  |
-| `TransactionCurrency` |  | |  |  |  |  |
-| `DocumentDate` |  | |  |  |  |  |
-| `CAWriteOffDate` |  | |  | `CAPostingDate` |  |  |
-| `ExchangeRateDate` |  | |  |  |  |  |
-| `CAReferenceDocument` |  | |  |  |  |  |
-| `CAReturnReason` |  | |  |  |  |  |
-| `CAWriteOffReason` |  | |  | `CAPostingReason` |  |  |
-| `ReferenceDocumentType` |  | |  |  |  |  |
-| `OriginalReferenceDocument` |  | |  |  |  |  |
-| `CAReversedDocumentNumber` |  | |  |  |  |  |
-| `CAClearingInformation` |  | |  |  |  |  |
-| `CAReversalDocumentNumber` |  | |  |  |  |  |
-| `CADocumentSupplements` |  | |  |  |  |  |
-| `LogicalSystem` |  | |  |  |  |  |
-| `CAWorkflowCheckReason` |  | |  |  |  |  |
-| `CAWorkflowCheckProcess` |  | |  |  |  |  |
-| `CADocumentTransactionClass` |  | |  |  |  |  |
-| `CADocContainsCashFlowItems` |  | |  |  |  |  |
-| `CADocumentClass` |  | |  |  |  |  |
-| `CADocumentVersion` |  | |  |  |  |  |
-| `IsIndividualPosting` |  | |  |  |  |  |
+| `CAWriteOffDocumentNumber` | ✓ | |  | `CADocumentNumber` | `CHAR(12)` | Number of a FI-CA Document |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `CreationDate` |  | |  |  | `DATS(8)` | Day On Which Accounting Document Was Entered |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time of Entry |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
+| `LastChangeTime` |  | |  |  | `TIMS(6)` | Time at Which the Object Was Last Changed |
+| `CATaxCompanyCode` |  | |  |  | `CHAR(4)` | Tax Company Code |
+| `CAStorageLocationOfTaxSuplmnt` |  | |  |  | `CHAR(2)` | Storage Location of Tax Supplement for Telco Tax (U.S.A) |
+| `CATaxCodeWasExchanged` |  | |  |  | `CHAR(1)` | Tax Codes Were Exchanged |
+| `TaxReportingDate` |  | |  |  | `DATS(8)` | Tax Reporting Date |
+| `CAReconciliationKey` |  | |  |  | `CHAR(12)` | Reconciliation Key for General Ledger |
+| `CASeparateDocIsCreatedInGL` |  | |  |  | `CHAR(1)` | Create Separate Document in General Ledger |
+| `CARequestedPeriodForGLTransfer` |  | |  |  | `NUMC(2)` | Requested Special Period for Transfer to General Ledger |
+| `CAApplicationArea` |  | |  |  | `CHAR(1)` | Application Area |
+| `CADocumentType` |  | |  |  | `CHAR(2)` | Document Type |
+| `CADocumentOriginCode` |  | |  |  | `CHAR(2)` | Document Origin Key |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Transaction Currency |
+| `DocumentDate` |  | |  |  | `DATS(8)` | Document Date in Document |
+| `CAWriteOffDate` |  | |  | `CAPostingDate` | `DATS(8)` | Posting Date in the Document |
+| `ExchangeRateDate` |  | |  |  | `DATS(8)` | Translation Date |
+| `CAReferenceDocument` |  | |  |  | `CHAR(16)` | Reference Document Number |
+| `CAReturnReason` |  | |  |  | `CHAR(3)` | Return Reason |
+| `CAWriteOffReason` |  | |  | `CAPostingReason` | `CHAR(2)` | Posting Reason (For Write-Offs And Transfer Postings) |
+| `ReferenceDocumentType` |  | |  |  | `CHAR(5)` | Reference Transaction |
+| `OriginalReferenceDocument` |  | |  |  | `CHAR(20)` | Object Key |
+| `CAReversedDocumentNumber` |  | |  |  | `CHAR(12)` | Number of Reversed Document |
+| `CAClearingInformation` |  | |  |  | `CHAR(1)` | Clearing Information |
+| `CAReversalDocumentNumber` |  | |  |  | `CHAR(12)` | Number of Reversal Document |
+| `CADocumentSupplements` |  | |  |  | `CHAR(1)` | Existing document supplements |
+| `LogicalSystem` |  | |  |  | `CHAR(10)` | Logical System of Source Document |
+| `CAWorkflowCheckReason` |  | |  |  | `CHAR(2)` | Check Reason for Workflows Acc. to Dual Control Principle |
+| `CAWorkflowCheckProcess` |  | |  |  | `CHAR(1)` | Editing Process to Be Confirmed |
+| `CADocumentTransactionClass` |  | |  |  | `CHAR(1)` | Transaction Class of Document |
+| `CADocContainsCashFlowItems` |  | |  |  | `CHAR(1)` | Document Contains Assignments from Cash Flows |
+| `CADocumentClass` |  | |  |  | `CHAR(1)` | Document Class |
+| `CADocumentVersion` |  | |  |  | `CHAR(3)` | Version Number |
+| `IsIndividualPosting` |  | |  |  | `CHAR(1)` | Individual Posting |
 | `_CAApplicationArea` | | ✓ | | | | |
 | `_CAClearingInformation` | | ✓ | | | | |
 | `_CADocTransactionClass` | | ✓ | | | | |

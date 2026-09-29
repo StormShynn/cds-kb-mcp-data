@@ -40,7 +40,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAProviderContractStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l,1 ) as status_vt_kk preserving type )` |  |  |
+| `CAProviderContractStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l,1 ) as status_vt_kk preserving type )` | `CHAR(1)` | Status of Provider Contract |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

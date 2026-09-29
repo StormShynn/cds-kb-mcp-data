@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PaymentCondition` | ✓ | |  | `zahlkond` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `PaymentConditionName` |  | |  | `text` |  |  |
+| `PaymentCondition` | ✓ | |  | `zahlkond` | `CHAR(4)` | Payment Condition |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `PaymentConditionName` |  | |  | `text` | `CHAR(40)` | Text, 40 Characters Long |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

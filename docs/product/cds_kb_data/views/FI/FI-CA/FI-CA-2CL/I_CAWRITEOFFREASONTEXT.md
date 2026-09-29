@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAWriteOffReason` | ✓ | |  | `abgrd` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAWriteOffReasonName` |  | |  | `cast( abtxt as abgrd_text_kk preserving type )` |  |  |
+| `CAWriteOffReason` | ✓ | |  | `abgrd` | `CHAR(2)` | Write-Off Reason |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAWriteOffReasonName` |  | |  | `cast( abtxt as abgrd_text_kk preserving type )` | `CHAR(50)` | Write-Off Reason Text |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

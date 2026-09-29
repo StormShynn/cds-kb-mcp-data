@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ContractAccountCategory` | ✓ | |  | `vktyp` |  |  |
-| `CAApplicationArea` | ✓ | |  | `applk` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `ContractAccountCategoryName` |  | |  | `text` |  |  |
+| `ContractAccountCategory` | ✓ | |  | `vktyp` | `CHAR(2)` | Contract Account Category |
+| `CAApplicationArea` | ✓ | |  | `applk` | `CHAR(1)` | Application Area |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `ContractAccountCategoryName` |  | |  | `text` | `CHAR(50)` | Description of Contract Account Category |
 | `_ApplArea` |  | |  | `_CAApplicationArea` |  |  |
 | `_Language` | | ✓ | | | | |
 | `_CAApplicationArea` | | ✓ | | | | |

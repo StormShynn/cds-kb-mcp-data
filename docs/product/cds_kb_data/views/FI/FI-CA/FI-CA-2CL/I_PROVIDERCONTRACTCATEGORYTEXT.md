@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAProviderContractCategory` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as vtcat_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAProviderContractCategoryText` |  | |  | `cast( ddtext as vtcat_text_kk preserving type )` |  |  |
+| `CAProviderContractCategory` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as vtcat_kk preserving type )` | `CHAR(1)` | Contract Category |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAProviderContractCategoryText` |  | |  | `cast( ddtext as vtcat_text_kk preserving type )` | `CHAR(60)` | Description for Contract Category |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

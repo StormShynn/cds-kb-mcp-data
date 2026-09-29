@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ContractAccount` | ✓ | |  |  |  |  |
-| `ContractAccountName` |  | |  |  |  |  |
-| `ContractAccountCategory` |  | |  |  |  |  |
+| `ContractAccount` | ✓ | |  |  | `CHAR(12)` | Contract Account Number |
+| `ContractAccountName` |  | |  |  | `CHAR(35)` | Contract Account Name |
+| `ContractAccountCategory` |  | |  |  | `CHAR(2)` | Contract Account Category |
 
 ## Source Code
 

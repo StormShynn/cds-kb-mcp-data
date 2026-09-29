@@ -38,8 +38,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CARelationshipOfBPToContrAcct` | ✓ | |  | `vkpbz` |  |  |
-| `CABPIsAccountHolder` |  | |  | `xktin` |  |  |
+| `CARelationshipOfBPToContrAcct` | ✓ | |  | `vkpbz` | `CHAR(2)` | Relationship of Business Partner to Contract Account |
+| `CABPIsAccountHolder` |  | |  | `xktin` | `CHAR(1)` | Account Holder |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

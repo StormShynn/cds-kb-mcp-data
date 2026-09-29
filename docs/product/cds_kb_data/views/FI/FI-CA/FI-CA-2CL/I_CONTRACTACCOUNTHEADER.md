@@ -40,19 +40,19 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ContractAccount` | ✓ | |  | `vkont` |  |  |
-| `CreationDate` |  | |  | `erdat` |  |  |
-| `CreationTime` |  | |  | `ertim` |  |  |
-| `CreatedByUser` |  | |  | `ernam` |  |  |
-| `IsMarkedForDeletion` |  | |  | `cast(loevm as loevm preserving type)` |  |  |
-| `LastChangeDate` |  | |  | `aedat` |  |  |
-| `LastChangeTime` |  | |  | `aetim` |  |  |
-| `LastChangedByUser` |  | |  | `aenam` |  |  |
-| `CAApplicationArea` |  | |  | `applk` |  |  |
-| `ContractAccountCategory` |  | |  | `vktyp` |  |  |
-| `ContractAccountExtReference` |  | |  | `vkona` |  |  |
-| `ContractAccountName` |  | |  | `vkbez` |  |  |
-| `ContractAccountUUID` |  | |  | `vkuuid` |  |  |
+| `ContractAccount` | ✓ | |  | `vkont` | `CHAR(12)` | Contract Account Number |
+| `CreationDate` |  | |  | `erdat` | `DATS(8)` | Record Creation Date |
+| `CreationTime` |  | |  | `ertim` | `TIMS(6)` | Time at which the object was created |
+| `CreatedByUser` |  | |  | `ernam` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `IsMarkedForDeletion` |  | |  | `cast(loevm as loevm preserving type)` | `CHAR(1)` | Deletion Indicator |
+| `LastChangeDate` |  | |  | `aedat` | `DATS(8)` | Last Changed On |
+| `LastChangeTime` |  | |  | `aetim` | `TIMS(6)` | Last Changed At |
+| `LastChangedByUser` |  | |  | `aenam` | `CHAR(12)` | Name of Person Who Changed Object |
+| `CAApplicationArea` |  | |  | `applk` | `CHAR(1)` | Application Area |
+| `ContractAccountCategory` |  | |  | `vktyp` | `CHAR(2)` | Contract Account Category |
+| `ContractAccountExtReference` |  | |  | `vkona` | `CHAR(20)` | Contract Account Number in Legacy System |
+| `ContractAccountName` |  | |  | `vkbez` | `CHAR(35)` | Contract Account Name |
+| `ContractAccountUUID` |  | |  | `vkuuid` | `RAW(16)` | Contract Account UUID |
 | `_ApplArea` | | ✓ | | | | |
 | `_Category` | | ✓ | | | | |
 

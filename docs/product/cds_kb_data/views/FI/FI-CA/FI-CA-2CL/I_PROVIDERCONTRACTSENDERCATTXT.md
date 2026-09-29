@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAProviderContractSenderCat` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as sendercat_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAProviderContractSenderCatTxt` |  | |  | `cast( ddtext as sendercat_text_kk preserving type )` |  |  |
+| `CAProviderContractSenderCat` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as sendercat_kk preserving type )` | `CHAR(1)` | Provider Contract Sender Category |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAProviderContractSenderCatTxt` |  | |  | `cast( ddtext as sendercat_text_kk preserving type )` | `CHAR(60)` | Description for Sender Category of Provider Contract |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

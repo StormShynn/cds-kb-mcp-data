@@ -40,105 +40,105 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ContractAccount` | ✓ | |  | `vkont` |  |  |
-| `BusinessPartner` | ✓ | |  | `gpart` |  |  |
-| `ContractAccountName` |  | |  | `vkbez` |  |  |
-| `CreationDate` |  | |  | `erdat` |  |  |
-| `CreationTime` |  | |  | `ertim` |  |  |
-| `CreatedByUser` |  | |  | `ernam` |  |  |
-| `IsMarkedForDeletion` |  | |  | `cast( loevm as loevm preserving type )` |  |  |
-| `LastChangeDate` |  | |  | `aedatp` |  |  |
-| `LastChangeTime` |  | |  | `aetimp` |  |  |
-| `LastChangedByUser` |  | |  | `aenamp` |  |  |
-| `CABankIDForIncomingPayments` |  | |  | `ebvty` |  |  |
-| `CABankIDForOutgoingPayments` |  | |  | `abvty` |  |  |
-| `CAIncomingPaymentMethod` |  | |  | `ezawe` |  |  |
-| `CACnctntdOutgPaymentMethods` |  | |  | `azawe` |  |  |
-| `CAFirstOutgoingPaymentMethod` |  | |  | `cast (substring(azawe, 1, 1) as azawe1_conacct_kk preserving type)` |  |  |
-| `CASecondOutgoingPaymentMethod` |  | |  | `cast (substring(azawe, 2, 1) as azawe2_conacct_kk preserving type)` |  |  |
-| `CAThirdOutgoingPaymentMethod` |  | |  | `cast (substring(azawe, 3, 1) as azawe3_conacct_kk preserving type)` |  |  |
-| `CAFourthOutgoingPaymentMethod` |  | |  | `cast (substring(azawe, 4, 1) as azawe4_conacct_kk preserving type)` |  |  |
-| `CAFifthOutgoingPaymentMethod` |  | |  | `cast (substring(azawe, 5, 1) as azawe5_conacct_kk preserving type)` |  |  |
-| `CAHouseBankReference` |  | |  | `eigbv` |  |  |
-| `CAPaymentCardIDForIncomingPayt` |  | |  | `ccard_id` |  |  |
-| `CAPaymentCardIDForOutgoingPayt` |  | |  | `ccard_out` |  |  |
-| `SEPAMandate` |  | |  | `mndid` |  |  |
-| `CADunningProcedure` |  | |  | `mahnv` |  |  |
-| `CADunningNoticeGroup` |  | |  | `mgrup` |  |  |
-| `CACorrespondenceDunningProced` |  | |  | `corr_mahnv` |  |  |
-| `CACollectionsClerk` |  | |  | `persr` |  |  |
-| `CACollectionsMasterDataGroup` |  | |  | `cmgrp` |  |  |
-| `CACollectionStrategy` |  | |  | `strat` |  |  |
-| `CACollectionsContactPerson` |  | |  | `cpers` |  |  |
-| `ContractAccountForPayment` |  | |  | `vkonv` |  |  |
-| `CABusinessPartnerForPayment` |  | |  | `gparv` |  |  |
-| `CAAlternativePayer` |  | |  | `abwre` |  |  |
-| `CAAlternativePayee` |  | |  | `abwra` |  |  |
-| `CAAlternativeDunningRecipient` |  | |  | `abwma` |  |  |
-| `CAAlternativeInvoiceRecipient` |  | |  | `abwrh` |  |  |
-| `CAAlternativeCorrespncRcpnt` |  | |  | `def_rec` |  |  |
-| `CAAddressIDOfAlternativePayer` |  | |  | `adrre` |  |  |
-| `CAAddressIDOfAlternativePayee` |  | |  | `adrra` |  |  |
-| `CAAddressIDOfAltvDunRecipient` |  | |  | `adrma` |  |  |
-| `CAAddressIDOfAltvInvoiceRcpnt` |  | |  | `adrrh` |  |  |
-| `CACurrencyForDirectDebitLimit` |  | |  | `ddlcu` |  |  |
-| `CADirectDebitLimit` |  | |  | `ddlam` |  |  |
-| `CANmbrMnthsForDirectDebitLimit` |  | |  | `ddlnm` |  |  |
-| `CADirectDebitLimitCalcMode` |  | |  | `ddlxg` |  |  |
-| `CAStartDateForBillingPeriod` |  | |  | `inv_cycle_start` |  |  |
-| `ContrAcctPrtnHasInvcgChrgDsc` |  | |  | `inv_chgdisc_x` |  |  |
-| `CATargetCurrencyForInvoicing` |  | |  | `inv_curr` |  |  |
-| `CAInvcgCategory` |  | |  | `inv_category` |  |  |
-| `CAInvcgSchedule` |  | |  | `inv_schedule` |  |  |
-| `CABillgCycle` |  | |  | `inv_cycle` |  |  |
-| `CALastDayOfBillingPeriod` |  | |  | `inv_cycle_day` |  |  |
-| `CADetnCodeForAltvInvoiceForm` |  | |  | `inv_form_det_key` |  |  |
-| `CABusinessPartnerForPosting` |  | |  | `gpart_inv` |  |  |
-| `ContractAccountForPosting` |  | |  | `vkont_inv` |  |  |
-| `CABusinessPartnerForInvcgList` |  | |  | `gpart_invlist` |  |  |
-| `ContractAccountForInvcgList` |  | |  | `vkont_invlist` |  |  |
-| `CAMasterAgreement` |  | |  | `makey` |  |  |
-| `CAPartnerSettlementRule` |  | |  | `ptsrl` |  |  |
-| `ValdtyDateForWhldgTaxExmpCert` |  | |  | `qszdt` |  |  |
-| `TaxJurisdiction` |  | |  | `txjcd` |  |  |
-| `OutgPaytWithholdingTaxCode` |  | |  | `qsskz_a` |  |  |
-| `IncgPaytWithholdingTaxCode` |  | |  | `qsskz_e` |  |  |
-| `WithholdingTaxCertificate` |  | |  | `qsznr` |  |  |
-| `CAAdditionalDaysForCashMgmt` |  | |  | `fdztg` |  |  |
-| `CABusPartnerPostgLockExstcCode` |  | |  | `bpl_xpocl` |  |  |
-| `CABusPartnerAddlLockExstcCode` |  | |  | `bpl_xaddl` |  |  |
-| `CABusinessPartnerLockStartDate` |  | |  | `bpl_fdate` |  |  |
-| `CABusinessPartnerLockEndDate` |  | |  | `bpl_tdate` |  |  |
-| `CABPReferenceNumber` |  | |  | `exvko` |  |  |
-| `CACompanyCodeGroup` |  | |  | `opbuk` |  |  |
-| `CAStandardCompanyCode` |  | |  | `stdbk` |  |  |
-| `AltvContractAcctForCollvBills` |  | |  | `abwvk` |  |  |
-| `CAInterestCode` |  | |  | `ikey` |  |  |
-| `CashPlanningGroup` |  | |  | `fdgrp` |  |  |
-| `CARelationshipOfBPToContrAcct` |  | |  | `vkpbz` |  |  |
-| `AddressID` |  | |  | `adrnb` |  |  |
-| `CAAddressIDOfJurisdictionCode` |  | |  | `adrjdc` |  |  |
-| `CAAuthorizationGroup` |  | |  | `begru` |  |  |
-| `CAToleranceGroup` |  | |  | `togru` |  |  |
-| `CACorrespondenceVariant` |  | |  | `coprc` |  |  |
-| `PartnerCompany` |  | |  | `vbund` |  |  |
-| `CACorrespondenceActivityCode` |  | |  | `def_rec_ind` |  |  |
-| `CAClearingCategory` |  | |  | `vertyp` |  |  |
-| `CADefaultClearingRstrcnCode` |  | |  | `augrs_def` |  |  |
-| `SupplyingCountry` |  | |  | `landl` |  |  |
-| `BusinessPlace` |  | |  | `bupla` |  |  |
-| `CASubledgerApplication` |  | |  | `trsla` |  |  |
-| `PaymentCondition` |  | |  | `zahlkond` |  |  |
-| `CAAccountDeterminationCode` |  | |  | `kofiz_sd` |  |  |
-| `BusinessArea` |  | |  | `gsber` |  |  |
-| `CAPaymentCompanyCode` |  | | `_CompCodeGroup` | `CAPaymentCompanyCode` |  |  |
-| `Country` |  | | `_CompCodeGroup._CompanyCode` | `Country` |  |  |
-| `CABusinessPartnerLock` |  | |  | `bpl_xpocl` |  |  |
-| `CAClearingRestriction` |  | |  | `augrs_def` |  |  |
-| `CAPaymentMethodForIncgPayment` |  | |  | `ezawe` |  |  |
-| `CAPaymentMethodForOutgPayment` |  | |  | `azawe` |  |  |
-| `CAWhldgTaxCodeOutgoingPayt` |  | |  | `qsskz_a` |  |  |
-| `CAWhldgTaxCodeIncomingPayt` |  | |  | `qsskz_e` |  |  |
+| `ContractAccount` | ✓ | |  | `vkont` | `CHAR(12)` | Contract Account Number |
+| `BusinessPartner` | ✓ | |  | `gpart` | `CHAR(10)` | Business Partner Number |
+| `ContractAccountName` |  | |  | `vkbez` | `CHAR(35)` | Contract Account Name |
+| `CreationDate` |  | |  | `erdat` | `DATS(8)` | Record Creation Date |
+| `CreationTime` |  | |  | `ertim` | `TIMS(6)` | Time at which the object was created |
+| `CreatedByUser` |  | |  | `ernam` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `IsMarkedForDeletion` |  | |  | `cast( loevm as loevm preserving type )` | `CHAR(1)` | Deletion Indicator |
+| `LastChangeDate` |  | |  | `aedatp` | `DATS(8)` | Last Changed On |
+| `LastChangeTime` |  | |  | `aetimp` | `TIMS(6)` | Last Changed At |
+| `LastChangedByUser` |  | |  | `aenamp` | `CHAR(12)` | Name of Person Who Changed Object |
+| `CABankIDForIncomingPayments` |  | |  | `ebvty` | `CHAR(4)` | Bank Details ID for Incoming Payments |
+| `CABankIDForOutgoingPayments` |  | |  | `abvty` | `CHAR(4)` | Bank Details ID for Outgoing Payments |
+| `CAIncomingPaymentMethod` |  | |  | `ezawe` | `CHAR(1)` | Incoming Payment Method |
+| `CACnctntdOutgPaymentMethods` |  | |  | `azawe` | `CHAR(5)` | Outgoing Payment Methods |
+| `CAFirstOutgoingPaymentMethod` |  | |  | `cast (substring(azawe, 1, 1) as azawe1_conacct_kk preserving type)` | `CHAR(1)` | First Outgoing Payment Method |
+| `CASecondOutgoingPaymentMethod` |  | |  | `cast (substring(azawe, 2, 1) as azawe2_conacct_kk preserving type)` | `CHAR(1)` | Second Outgoing Payment Method |
+| `CAThirdOutgoingPaymentMethod` |  | |  | `cast (substring(azawe, 3, 1) as azawe3_conacct_kk preserving type)` | `CHAR(1)` | Third Outgoing Payment Method |
+| `CAFourthOutgoingPaymentMethod` |  | |  | `cast (substring(azawe, 4, 1) as azawe4_conacct_kk preserving type)` | `CHAR(1)` | Fourth Outgoing Payment Method |
+| `CAFifthOutgoingPaymentMethod` |  | |  | `cast (substring(azawe, 5, 1) as azawe5_conacct_kk preserving type)` | `CHAR(1)` | Fifth Outgoing Payment Method |
+| `CAHouseBankReference` |  | |  | `eigbv` | `CHAR(25)` | Own Bank Details |
+| `CAPaymentCardIDForIncomingPayt` |  | |  | `ccard_id` | `CHAR(6)` | Payment Card ID for Incoming Payments |
+| `CAPaymentCardIDForOutgoingPayt` |  | |  | `ccard_out` | `CHAR(6)` | Payment Card ID for Outgoing Payments |
+| `SEPAMandate` |  | |  | `mndid` | `CHAR(35)` | Unique Reference to Mandate for each Payee |
+| `CADunningProcedure` |  | |  | `mahnv` | `CHAR(2)` | Dunning Procedure |
+| `CADunningNoticeGroup` |  | |  | `mgrup` | `CHAR(2)` | Grouping for Dunning Notices |
+| `CACorrespondenceDunningProced` |  | |  | `corr_mahnv` | `CHAR(2)` | Correspondence Dunning Procedure |
+| `CACollectionsClerk` |  | |  | `persr` | `CHAR(10)` | Clerk Responsible |
+| `CACollectionsMasterDataGroup` |  | |  | `cmgrp` | `CHAR(2)` | Collection Management: Master Data Group |
+| `CACollectionStrategy` |  | |  | `strat` | `CHAR(2)` | Collection Strategy |
+| `CACollectionsContactPerson` |  | |  | `cpers` | `CHAR(10)` | Collections Contact Person |
+| `ContractAccountForPayment` |  | |  | `vkonv` | `CHAR(12)` | Contract account used for payment transactions |
+| `CABusinessPartnerForPayment` |  | |  | `gparv` | `CHAR(10)` | BP Acting as Payer/Payee in Payment Transactions |
+| `CAAlternativePayer` |  | |  | `abwre` | `CHAR(10)` | Alternative Payer |
+| `CAAlternativePayee` |  | |  | `abwra` | `CHAR(10)` | Alternative Payee |
+| `CAAlternativeDunningRecipient` |  | |  | `abwma` | `CHAR(10)` | Alternative Dunning Recipient |
+| `CAAlternativeInvoiceRecipient` |  | |  | `abwrh` | `CHAR(10)` | Alternative Invoice Recipient |
+| `CAAlternativeCorrespncRcpnt` |  | |  | `def_rec` | `CHAR(10)` | Alternative Correspondence Recipient for Standard Case |
+| `CAAddressIDOfAlternativePayer` |  | |  | `adrre` | `CHAR(10)` | Address Number for Alternative Payer |
+| `CAAddressIDOfAlternativePayee` |  | |  | `adrra` | `CHAR(10)` | Address Number for Alternative Payee |
+| `CAAddressIDOfAltvDunRecipient` |  | |  | `adrma` | `CHAR(10)` | Address number for alternative dunning notice recipient |
+| `CAAddressIDOfAltvInvoiceRcpnt` |  | |  | `adrrh` | `CHAR(10)` | Address number for alternative bill recipient |
+| `CACurrencyForDirectDebitLimit` |  | |  | `ddlcu` | `CUKY(5)` | Currency of Direct Debit Limit |
+| `CADirectDebitLimit` |  | |  | `ddlam` | `CURR(13)` | Direct Debit Limit |
+| `CANmbrMnthsForDirectDebitLimit` |  | |  | `ddlnm` | `NUMC(2)` | Number of Months for Calculation of Direct Debit Limit |
+| `CADirectDebitLimitCalcMode` |  | |  | `ddlxg` | `CHAR(1)` | Rolling Calculation of Direct Debit Limit |
+| `CAStartDateForBillingPeriod` |  | |  | `inv_cycle_start` | `DATS(8)` | Start Date of First Billing Period |
+| `ContrAcctPrtnHasInvcgChrgDsc` |  | |  | `inv_chgdisc_x` | `CHAR(1)` | Int: Charges and Discounts Exist for BP-CrtAcct Relations |
+| `CATargetCurrencyForInvoicing` |  | |  | `inv_curr` | `CUKY(5)` | Target Currency of Invoicing |
+| `CAInvcgCategory` |  | |  | `inv_category` | `CHAR(4)` | Invoicing Category |
+| `CAInvcgSchedule` |  | |  | `inv_schedule` | `CHAR(4)` | Selection Characteristic for Scheduling |
+| `CABillgCycle` |  | |  | `inv_cycle` | `CHAR(4)` | Billing Cycle |
+| `CALastDayOfBillingPeriod` |  | |  | `inv_cycle_day` | `CHAR(2)` | Day of Period End |
+| `CADetnCodeForAltvInvoiceForm` |  | |  | `inv_form_det_key` | `CHAR(4)` | Determination Characteristic for Alternative Invoice Form |
+| `CABusinessPartnerForPosting` |  | |  | `gpart_inv` | `CHAR(10)` | Business Partner for Posting of the Invoice |
+| `ContractAccountForPosting` |  | |  | `vkont_inv` | `CHAR(12)` | Contract Account of Invoice Recipient |
+| `CABusinessPartnerForInvcgList` |  | |  | `gpart_invlist` | `CHAR(10)` | Recipient of Invoicing List |
+| `ContractAccountForInvcgList` |  | |  | `vkont_invlist` | `CHAR(12)` | Contract Account of Recipient of Invoicing List |
+| `CAMasterAgreement` |  | |  | `makey` | `CHAR(10)` | Identification of Master Agreement |
+| `CAPartnerSettlementRule` |  | |  | `ptsrl` | `CHAR(4)` | Partner Settlement Rule |
+| `ValdtyDateForWhldgTaxExmpCert` |  | |  | `qszdt` | `DATS(8)` | Validity Date for Withholding Tax Exemption Certificate |
+| `TaxJurisdiction` |  | |  | `txjcd` | `CHAR(15)` | Jurisdiction for Tax Calculation - Tax Jurisdiction Code |
+| `OutgPaytWithholdingTaxCode` |  | |  | `qsskz_a` | `CHAR(2)` | Witholding Tax Code For Outgoing Payments |
+| `IncgPaytWithholdingTaxCode` |  | |  | `qsskz_e` | `CHAR(2)` | Withholding Tax Code For Incoming Payments |
+| `WithholdingTaxCertificate` |  | |  | `qsznr` | `CHAR(10)` | Certificate Number of the Withholding Tax Exemption |
+| `CAAdditionalDaysForCashMgmt` |  | |  | `fdztg` | `NUMC(2)` | Cash Management Extra Days |
+| `CABusPartnerPostgLockExstcCode` |  | |  | `bpl_xpocl` | `CHAR(1)` | Business Partner Lock for Postings/Clearing |
+| `CABusPartnerAddlLockExstcCode` |  | |  | `bpl_xaddl` | `CHAR(1)` | Business Partner Lock for Dunning / Payment |
+| `CABusinessPartnerLockStartDate` |  | |  | `bpl_fdate` | `DATS(8)` | Lock valid from |
+| `CABusinessPartnerLockEndDate` |  | |  | `bpl_tdate` | `DATS(8)` | Lock valid to |
+| `CABPReferenceNumber` |  | |  | `exvko` | `CHAR(25)` | Reference Number for Business Partner |
+| `CACompanyCodeGroup` |  | |  | `opbuk` | `CHAR(4)` | Company Code Group |
+| `CAStandardCompanyCode` |  | |  | `stdbk` | `CHAR(4)` | Standard Company Code |
+| `AltvContractAcctForCollvBills` |  | |  | `abwvk` | `CHAR(12)` | Alternative Contract Account for Collective Bills |
+| `CAInterestCode` |  | |  | `ikey` | `CHAR(2)` | Interest Key |
+| `CashPlanningGroup` |  | |  | `fdgrp` | `CHAR(10)` | Planning Group |
+| `CARelationshipOfBPToContrAcct` |  | |  | `vkpbz` | `CHAR(2)` | Relationship of Business Partner to Contract Account |
+| `AddressID` |  | |  | `adrnb` | `CHAR(10)` | Address Number |
+| `CAAddressIDOfJurisdictionCode` |  | |  | `adrjdc` | `CHAR(10)` | Address Number for Jurisdiction Code Address |
+| `CAAuthorizationGroup` |  | |  | `begru` | `CHAR(4)` | Authorization Group |
+| `CAToleranceGroup` |  | |  | `togru` | `CHAR(4)` | Tolerance Group for Contract Account |
+| `CACorrespondenceVariant` |  | |  | `coprc` | `CHAR(4)` | Correspondence Variant |
+| `PartnerCompany` |  | |  | `vbund` | `CHAR(6)` | Company ID of Trading Partner |
+| `CACorrespondenceActivityCode` |  | |  | `def_rec_ind` | `CHAR(4)` | FI-CA correspondence - activity key |
+| `CAClearingCategory` |  | |  | `vertyp` | `CHAR(4)` | Clearing Category For Clearing Postings |
+| `CADefaultClearingRstrcnCode` |  | |  | `augrs_def` | `CHAR(1)` | Clearing Restriction |
+| `SupplyingCountry` |  | |  | `landl` | `CHAR(3)` | Destination Country/Region (for Tax Reports) |
+| `BusinessPlace` |  | |  | `bupla` | `CHAR(4)` | Business Place |
+| `CASubledgerApplication` |  | |  | `trsla` | `CHAR(5)` | Subledger Transfer: Application ID |
+| `PaymentCondition` |  | |  | `zahlkond` | `CHAR(4)` | Payment Condition |
+| `CAAccountDeterminationCode` |  | |  | `kofiz_sd` | `CHAR(2)` | Account Determination ID for Contract Accounts |
+| `BusinessArea` |  | |  | `gsber` | `CHAR(4)` | Business Area |
+| `CAPaymentCompanyCode` |  | | `_CompCodeGroup` | `CAPaymentCompanyCode` | `CHAR(4)` | Company Code for Automatic Payment Transactions |
+| `Country` |  | | `_CompCodeGroup._CompanyCode` | `Country` | `CHAR(3)` | Country/Region Key |
+| `CABusinessPartnerLock` |  | |  | `bpl_xpocl` | `CHAR(1)` | Business Partner Lock for Postings/Clearing |
+| `CAClearingRestriction` |  | |  | `augrs_def` | `CHAR(1)` | Clearing Restriction |
+| `CAPaymentMethodForIncgPayment` |  | |  | `ezawe` | `CHAR(1)` | Incoming Payment Method |
+| `CAPaymentMethodForOutgPayment` |  | |  | `azawe` | `CHAR(5)` | Outgoing Payment Methods |
+| `CAWhldgTaxCodeOutgoingPayt` |  | |  | `qsskz_a` | `CHAR(2)` | Witholding Tax Code For Outgoing Payments |
+| `CAWhldgTaxCodeIncomingPayt` |  | |  | `qsskz_e` | `CHAR(2)` | Withholding Tax Code For Incoming Payments |
 | `_CorrVariant` |  | |  | `_CorrespncVar` |  |  |
 | `_BusinessArea` | | ✓ | | | | |
 | `_BusinessPartner` | | ✓ | | | | |
