@@ -1,0 +1,96 @@
+# .github/workflows/sync-view-metadata.yml
+# Merged from resync-folders.yml + update-dashboard.yml (2026-09-30) — both
+# triggered on the exact same `push: views/**` event, both pushed straight to
+# main independently, and could legitimately race each other (the retry-with-
+# rebase logic in ../actions/commit-and-push/action.yml exists partly because
+# of that). One workflow, one sequential job, one commit — no more race, one
+# fewer checkout+npm-ci pair per views/** push.
+#
+# Step order matters: resync folders (which may move view files between
+# module directories and rebuilds index/*) runs BEFORE the dashboard/
+# field-search regen, so the dashboard reflects any moves from the same run
+# instead of needing a second push to catch up.
+#
+# Keep views/ in sync whenever a view's app_component or release_state
+# changes — e.g. someone hand-edits app_component to fix a wrong value, or a
+# merged PR added a view somewhere migrate-to-module-folders.mjs wouldn't
+# have picked. migrate-to-module-folders.mjs is a no-op when nothing's
+# misplaced, so this is cheap to run on every views/** push.
+#
+# Dashboard/field-search regen only re-renders from whatever's ALREADY on
+# main (it never adds or fetches new views), so — unlike daily-fetch.yml —
+# this pushes straight to main instead of opening a PR. The commit is tagged
+# [skip ci] since it touches views/** itself — without that, it would
+# retrigger this same workflow forever.
+#
+# NOTE: deploy-pages.yml listens for this workflow by NAME via
+# `workflow_run: workflows: [...]` — if you rename the `name:` below, update
+# deploy-pages.yml's list too, or Pages silently stops redeploying on this
+# trigger.
+
+name: Sync View Metadata
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/product/cds_kb_data/views/**'
+      - 'docs/product/cds_kb_data/changelog.json'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-view-metadata
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        # The CDS KB project lives under this subpath now — see
+        # check-coverage.yml's comment for the full rationale.
+        working-directory: docs/product/cds_kb_data
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          # See check-coverage.yml's header comment: main's branch protection
+          # (data-test + mcp-test required) blocks a direct push authenticated
+          # with the default GITHUB_TOKEN. Falls back to GITHUB_TOKEN (same
+          # failure as before) if HUB_COVERAGE_PAT isn't configured yet.
+          token: ${{ secrets.HUB_COVERAGE_PAT || github.token }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: 'npm'
+          cache-dependency-path: docs/product/cds_kb_data/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Resync folders + rebuild index
+        run: npm run resync-folders
+
+      - name: Regenerate dashboard
+        run: node scripts/generate-dashboard.mjs
+
+      - name: Regenerate field/table search page
+        run: node scripts/generate-field-search.mjs
+
+      - name: Commit and push if changed
+        uses: ./.github/actions/commit-and-push
+        with:
+          paths: >-
+            docs/product/cds_kb_data/views/
+            docs/product/cds_kb_data/index/
+            docs/product/cds_kb_data/dashboard.html
+            docs/product/cds_kb_data/field-search.html
+          commit-message: "Sync view folders + dashboard [skip ci]"
+          empty-message: Nothing to sync
+          success-message: View folders + dashboard synced

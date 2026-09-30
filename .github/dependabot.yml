@@ -1,12 +1,29 @@
 # .github/dependabot.yml
-# Keep the two npm dependencies (minisearch, @abaplint/core) and the GitHub
-# Actions in this repo up to date. Weekly cadence — this data repo doesn't
-# need daily dependency churn.
+# Keep npm dependencies in both Node projects in this repo (cds_kb_data and
+# cds_kb_mcp — each has its own package.json/package-lock.json) and the
+# GitHub Actions in this repo up to date. Weekly cadence — this data repo
+# doesn't need daily dependency churn.
+#
+# cds_kb_mcp's entry was missing here for a while (found during a 2026-09-30
+# Actions review, while merging PR #108 — a dependabot PR for that exact
+# directory that still somehow existed despite no config entry for it here;
+# whatever produced it, this entry is what keeps future bumps flowing).
+# domain-proxy/, worker/, and wake-worker/ under cds_kb_mcp have no
+# package.json of their own (single-file Workers, no npm deps) — nothing to
+# add for those.
 
 version: 2
 updates:
   - package-ecosystem: npm
     directory: /docs/product/cds_kb_data
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "chore(deps)"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: npm
+    directory: /docs/product/cds_kb_mcp
     schedule:
       interval: weekly
     commit-message:

@@ -1,6 +1,8 @@
 # .github/workflows/deploy-pages.yml
 # Publish overview.html (and everything it embeds) to GitHub Pages at
-# https://stormshynn.github.io/cds-kb-mcp-data-kit/
+# https://stormshynn.github.io/cds-kb-mcp-data/ (repo was renamed from
+# cds-kb-mcp-data-kit to cds-kb-mcp-data — GitHub Pages follows the current
+# repo name automatically, this comment just needs to stay in sync).
 #
 # Pages content lives at docs/product/cds_kb_data/, two folders deeper than
 # this repo's root — the branch-based Pages source setting can only point at
@@ -37,11 +39,17 @@
 # pattern.
 #
 # Triggered via workflow_run (not a plain `on: push` to the generated files)
-# because check-coverage.yml/update-dashboard.yml/resync-folders.yml push
-# straight to main using the default GITHUB_TOKEN — and pushes made with
-# GITHUB_TOKEN deliberately don't fire other `on: push` workflows (GitHub's
-# own loop-prevention), so a push-based trigger here would just never run.
-# workflow_run isn't subject to that restriction.
+# because check-coverage.yml/sync-view-metadata.yml push straight to main
+# using an admin PAT / the default GITHUB_TOKEN — and pushes made with an
+# Actions-issued token deliberately don't fire other `on: push` workflows
+# (GitHub's own loop-prevention), so a push-based trigger here would just
+# never run. workflow_run isn't subject to that restriction.
+#
+# The workflow_run list below matches by NAME (the `name:` field of the
+# source workflow, not its filename) — update-dashboard.yml and
+# resync-folders.yml were merged into sync-view-metadata.yml on 2026-09-30;
+# if that workflow's `name:` ever changes again, update this list too, or
+# Pages silently stops redeploying on that trigger.
 
 name: Deploy GitHub Pages
 
@@ -49,8 +57,7 @@ on:
   workflow_run:
     workflows:
       - Check Hub Coverage
-      - Update Dashboard
-      - Resync View Folders
+      - Sync View Metadata
     types: [completed]
   push:
     branches: [main]

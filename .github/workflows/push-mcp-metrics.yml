@@ -10,6 +10,15 @@
 # periodic push instead of a continuously running agent. Metrics will lag by
 # up to ~10-15 minutes (GitHub's cron schedule isn't guaranteed to the
 # minute), which is fine for a dashboard, not for tight alerting.
+#
+# Scrapes the stable mcp.tringhia.io.vn domain (the domain-proxy Worker — see
+# docs/product/cds_kb_mcp/domain-proxy/), NOT the raw
+# cds-kb-mcp.cfapps.us10-001.hana.ondemand.com route directly — that route
+# rotates every ~90 days when the BTP trial is reclaimed (mcp_btp_deployment_
+# guide.md A.8), same as every other client of this server. Scraping the raw
+# route here would just silently start 404ing on the next reset. /metrics is
+# edge-cached for 10s by the proxy, which is negligible against a 10-minute
+# scrape interval.
 
 name: Push MCP Metrics to Grafana Cloud
 
@@ -29,7 +38,7 @@ jobs:
         run: |
           cat > config.alloy <<'EOF'
           prometheus.scrape "cds_kb_mcp" {
-            targets = [{"__address__" = "cds-kb-mcp.cfapps.us10-001.hana.ondemand.com"}]
+            targets = [{"__address__" = "mcp.tringhia.io.vn"}]
             job_name        = "cds_kb_mcp"
             scheme          = "https"
             metrics_path    = "/metrics"
