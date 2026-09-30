@@ -35,7 +35,7 @@
     "@modelcontextprotocol/core": "^2.0.0",
     "@modelcontextprotocol/express": "^2.0.0",
     "@modelcontextprotocol/node": "^2.0.0",
-    "@modelcontextprotocol/server": "^2.0.0",
+    "@modelcontextprotocol/server": "^2.1.0",
     "express": "^5.2.1",
     "jose": "^6.0.10",
     "minisearch": "^7.2.0",
