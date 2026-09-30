@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgPlnItmExcptnReason` | ✓ | |  | `item_excreason` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `CABillgPlnItmExcptnRsnText` |  | |  | `cast(text as bip_item_excreason_txt_gfn_kk preserving type )` |  |  |
+| `CABillgPlnItmExcptnReason` | ✓ | |  | `item_excreason` | `CHAR(2)` | Reason for Adjusting a Billing Plan Item |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `CABillgPlnItmExcptnRsnText` |  | |  | `cast(text as bip_item_excreason_txt_gfn_kk preserving type )` | `CHAR(50)` | Text for Adjustment Reason for Billing Plan Item |
 | `_CABillgPlnItmExcptnReason` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

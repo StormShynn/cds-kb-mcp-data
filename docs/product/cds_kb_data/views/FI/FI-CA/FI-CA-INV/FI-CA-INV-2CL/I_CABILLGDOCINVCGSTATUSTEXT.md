@@ -42,10 +42,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
-| `CABillgDocumentInvcgStatus` | ✓ | |  | `cast( dd07t.domvalue_l as invstatus_kk )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
-| `CABillgDocumentInvcgStatusText` |  | |  | `cast( dd07t.ddtext as invstatus_txt_gfn_kk preserving type )` |  |  |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CABillgDocumentInvcgStatus` | ✓ | |  | `cast( dd07t.domvalue_l as invstatus_kk )` | `CHAR(1)` | Invoicing Status of Billing Document |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `CABillgDocumentInvcgStatusText` |  | |  | `cast( dd07t.ddtext as invstatus_txt_gfn_kk preserving type )` | `CHAR(60)` | Text for Invoicing Status of Billing Document |
 | `_Language` | | ✓ | | | | |
 | `_CABillgDocInvcgStatus` | | ✓ | | | | |
 

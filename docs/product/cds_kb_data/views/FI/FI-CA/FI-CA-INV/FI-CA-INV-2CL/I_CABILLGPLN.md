@@ -39,37 +39,37 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgPlnNumber` | ✓ | |  | `billplanno` |  |  |
-| `CABillgPlnCategory` |  | |  | `cast(bipcat as bipcat_gfn_kk preserving type )` |  |  |
-| `CABillgPlnType` |  | |  | `biptype` |  |  |
-| `CABillgPlnStatus` |  | |  | `status` |  |  |
-| `CABillgPlnStartDate` |  | |  | `valid_from` |  |  |
-| `CABillgPlnEndDate` |  | |  | `valid_to` |  |  |
-| `CABillgPlnLastRequestDate` |  | |  | `requestdate_last` |  |  |
-| `CABillgPlnNextRequestDate` |  | |  | `requestdate_next` |  |  |
-| `CABillgPlnDescription` |  | |  | `biptext` |  |  |
-| `CABillgPlnExternalReference` |  | |  | `bipref` |  |  |
-| `LogicalSystem` |  | |  | `logsys` |  |  |
-| `CAApplicationArea` |  | |  | `applk` |  |  |
-| `BusinessPartner` |  | |  | `cast(gpart as bu_partner preserving type )` |  |  |
-| `ContractAccount` |  | |  | `vkont` |  |  |
-| `CAInvcgMasterDataType` |  | |  | `mdcat` |  |  |
-| `CAContract` |  | |  | `vtref` |  |  |
-| `CAProviderContractItemUUID` |  | |  | `vtpid` |  |  |
-| `CASubApplication` |  | |  | `subap` |  |  |
-| `CAMasterAgreement` |  | |  | `makey` |  |  |
-| `CAInvcgOffsettingReferenceKey` |  | |  | `offset_refid` |  |  |
-| `CABillgPlnCreatedByUser` |  | |  | `crname` |  |  |
-| `CABillgPlnCreationDate` |  | |  | `crdate` |  |  |
-| `CABillgPlnCreationTime` |  | |  | `crtime` |  |  |
-| `CABillgPlnChangedByUser` |  | |  | `chname` |  |  |
-| `CABillgPlnChangeDate` |  | |  | `chdate` |  |  |
-| `CABillgPlnChangeTime` |  | |  | `chtime` |  |  |
-| `CABillgPlnCreationMode` |  | |  | `crmode` |  |  |
-| `CABillgPlnNumberBllbleItm` |  | |  | `bit_number` |  |  |
-| `CABillgPlnCompletionDate` |  | |  | `completion_date` |  |  |
-| `CABillgPlnIsTemplate` |  | |  | `xtemp` |  |  |
-| `CABillgPlnVersion` |  | |  | `version` |  |  |
+| `CABillgPlnNumber` | ✓ | |  | `billplanno` | `NUMC(12)` | Billing Plan Number |
+| `CABillgPlnCategory` |  | |  | `cast(bipcat as bipcat_gfn_kk preserving type )` | `CHAR(5)` | Billing Plan Category |
+| `CABillgPlnType` |  | |  | `biptype` | `CHAR(5)` | Billing Plan Type |
+| `CABillgPlnStatus` |  | |  | `status` | `CHAR(1)` | Status of Billing Plan |
+| `CABillgPlnStartDate` |  | |  | `valid_from` | `DATS(8)` | Valid From |
+| `CABillgPlnEndDate` |  | |  | `valid_to` | `DATS(8)` | Valid To |
+| `CABillgPlnLastRequestDate` |  | |  | `requestdate_last` | `DATS(8)` | Last Reqest Date for Billing Plan Items |
+| `CABillgPlnNextRequestDate` |  | |  | `requestdate_next` | `DATS(8)` | Next Request Date of Billing Plan Items |
+| `CABillgPlnDescription` |  | |  | `biptext` | `CHAR(60)` | Description of Billing Plan |
+| `CABillgPlnExternalReference` |  | |  | `bipref` | `CHAR(32)` | External Reference of Billing Plan |
+| `LogicalSystem` |  | |  | `logsys` | `CHAR(10)` | Logical System |
+| `CAApplicationArea` |  | |  | `applk` | `CHAR(1)` | Application Area |
+| `BusinessPartner` |  | |  | `cast(gpart as bu_partner preserving type )` | `CHAR(10)` | Business Partner Number |
+| `ContractAccount` |  | |  | `vkont` | `CHAR(12)` | Contract Account Number |
+| `CAInvcgMasterDataType` |  | |  | `mdcat` | `CHAR(1)` | Type of Master Record for Convergent Invoicing |
+| `CAContract` |  | |  | `vtref` | `CHAR(20)` | Reference Specifications from Contract |
+| `CAProviderContractItemUUID` |  | |  | `vtpid` | `RAW(16)` | External GUID of Provider Contract Items |
+| `CASubApplication` |  | |  | `subap` | `CHAR(1)` | Subapplication in Contract Accounts Receivable and Payable |
+| `CAMasterAgreement` |  | |  | `makey` | `CHAR(10)` | Identification of Master Agreement |
+| `CAInvcgOffsettingReferenceKey` |  | |  | `offset_refid` | `CHAR(20)` | Offsetting Reference Key |
+| `CABillgPlnCreatedByUser` |  | |  | `crname` | `CHAR(12)` | User Who Created the Billing Plan |
+| `CABillgPlnCreationDate` |  | |  | `crdate` | `DATS(8)` | Creation Date of Billing Plan |
+| `CABillgPlnCreationTime` |  | |  | `crtime` | `TIMS(6)` | Time At Which the Billing Plan Was Created |
+| `CABillgPlnChangedByUser` |  | |  | `chname` | `CHAR(12)` | User Who Changed the Billing Plan |
+| `CABillgPlnChangeDate` |  | |  | `chdate` | `DATS(8)` | Change Date of Billing Plan |
+| `CABillgPlnChangeTime` |  | |  | `chtime` | `TIMS(6)` | Time at Which the Billing Plan Was Changed |
+| `CABillgPlnCreationMode` |  | |  | `crmode` | `CHAR(1)` | Creation Mode of Billing Plan |
+| `CABillgPlnNumberBllbleItm` |  | |  | `bit_number` | `NUMC(8)` | Number of Billable Items for the Billing Plan |
+| `CABillgPlnCompletionDate` |  | |  | `completion_date` | `DATS(8)` | Completion Date |
+| `CABillgPlnIsTemplate` |  | |  | `xtemp` | `CHAR(1)` | Billing Plan Template |
+| `CABillgPlnVersion` |  | |  | `version` | `NUMC(6)` | Version Number |
 | `_CABillgPlnCategory` | | ✓ | | | | |
 | `_CABillgPlnType` | | ✓ | | | | |
 | `_CABillgPlnStatus` | | ✓ | | | | |

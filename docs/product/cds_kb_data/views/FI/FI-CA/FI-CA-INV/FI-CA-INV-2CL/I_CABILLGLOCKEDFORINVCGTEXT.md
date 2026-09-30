@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgLockedForInvoicing` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as invlock_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
-| `CABillgLockedForInvcgText` |  | |  | `cast ( ddtext as invlock_txt_gfn_kk preserving type )` |  |  |
+| `CABillgLockedForInvoicing` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as invlock_kk preserving type )` | `CHAR(1)` | Billing Document Is Locked for Invoicing |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CABillgLockedForInvcgText` |  | |  | `cast ( ddtext as invlock_txt_gfn_kk preserving type )` | `CHAR(60)` | Text for Invoicing Lock of Billing Document |
 | `_CABillgLockedForInvcg` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

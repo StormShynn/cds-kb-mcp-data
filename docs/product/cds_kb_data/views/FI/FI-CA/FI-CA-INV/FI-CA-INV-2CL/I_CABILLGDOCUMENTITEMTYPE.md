@@ -41,7 +41,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgDocumentItemType` | ✓ | |  | `CAInvcgDocumentItemType` |  |  |
+| `CABillgDocumentItemType` | ✓ | |  | `CAInvcgDocumentItemType` | `CHAR(8)` | Type of Billing Item |
 | `_CABillgDocumentItemTypeText` | | ✓ | | | | |
 
 ## Associations

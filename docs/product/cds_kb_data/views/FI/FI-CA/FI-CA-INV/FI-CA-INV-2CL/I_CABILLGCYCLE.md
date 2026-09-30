@@ -51,10 +51,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgCycle` | ✓ | | `_tfk2607` | `cycle` |  |  |
-| `CALastDayOfBillingPeriod` |  | | `_tfk2607` | `cycle_day` |  |  |
-| `CABillgCyclePeriodCategory` |  | | `_tfk2607` | `cycle_periodcat` |  |  |
-| `CABillgCycleIsIndividual` |  | | `_tfk2607` | `individual` |  |  |
+| `CABillgCycle` | ✓ | | `_tfk2607` | `cycle` | `CHAR(4)` | Billing Cycle |
+| `CALastDayOfBillingPeriod` |  | | `_tfk2607` | `cycle_day` | `CHAR(2)` | Day of Period End |
+| `CABillgCyclePeriodCategory` |  | | `_tfk2607` | `cycle_periodcat` | `CHAR(4)` | Frequency of Billing Periods |
+| `CABillgCycleIsIndividual` |  | | `_tfk2607` | `individual` | `CHAR(1)` | Can Be Individually Overwritten at Contract Account Level |
 | `_CALastDayOfBillingPeriod` | | ✓ | | | | |
 | `_CABillgCycleText` | | ✓ | | | | |
 

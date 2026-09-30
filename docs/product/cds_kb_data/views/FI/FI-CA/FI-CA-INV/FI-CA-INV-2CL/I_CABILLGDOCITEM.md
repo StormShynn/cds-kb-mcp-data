@@ -40,105 +40,105 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgDocument` | ✓ | |  | `billdocno` |  |  |
-| `CABillgDocItem` | ✓ | |  | `billdocitem` |  |  |
-| `CAIsDocItemSimulated` |  | |  | `item_simulated` |  |  |
-| `CABillgDocumentItemType` |  | |  | `itemtype` |  |  |
-| `CAContract` |  | |  | `vtref` |  |  |
-| `CompanyCode` |  | |  | `bukrs` |  |  |
-| `CAMainTransaction` |  | |  | `hvorg` |  |  |
-| `CASubTransaction` |  | |  | `tvorg` |  |  |
-| `CAInvcgIsItemPostingRelevant` |  | |  | `postrel` |  |  |
-| `CAInvcgIsItemPrintingRelevant` |  | |  | `printrel` |  |  |
-| `CABillgDocItemAmount` |  | |  | `bill_amount` |  |  |
-| `CABillgCurrency` |  | |  | `bill_curr` |  |  |
-| `CATaxIsIncluded` |  | |  | `tax_included` |  |  |
-| `TaxCode` |  | |  | `mwskz` |  |  |
-| `UnitOfMeasure` |  | |  | `qty_unit` |  |  |
-| `CABillgDocItemExternalNumber` |  | |  | `refitem` |  |  |
-| `CABillgDocItemIsReversal` |  | |  | `reversalitem` |  |  |
-| `CAInvcgDocItemIsReversal` |  | |  | `reversalitem` |  |  |
-| `CAInvcgCorrectionCategory` |  | |  | `cast(corrcat as corrcat_gfn_kk preserving type )` |  |  |
-| `CAInvcgIsNotBPRelevant` |  | |  | `not_bprel` |  |  |
-| `CAInvcgSubstituteGroupPrinting` |  | |  | `print_substitute` |  |  |
-| `CAItemPeriodStartDate` |  | |  | `date_from` |  |  |
-| `CAItemPeriodEndDate` |  | |  | `date_to` |  |  |
-| `CANetDueDate` |  | |  | `faedn` |  |  |
-| `Division` |  | |  | `spart` |  |  |
-| `BusinessArea` |  | |  | `gsber` |  |  |
-| `BusinessPlace` |  | |  | `cast(bupla as farp_bupla preserving type)` |  |  |
-| `Segment` |  | |  | `segmt` |  |  |
-| `ProfitCenter` |  | |  | `prctr` |  |  |
-| `CAAccountDeterminationCode` |  | |  | `kofiz` |  |  |
-| `CATaxDetnType` |  | |  | `tax_det_type` |  |  |
-| `CATaxCountry` |  | |  | `tax_country` |  |  |
-| `CATaxDateType` |  | |  | `tax_date_type` |  |  |
-| `CABillgTaxGroup` |  | |  | `tax_group` |  |  |
-| `CAExternalTaxDate` |  | |  | `ext_tax_date` |  |  |
-| `CATaxDeterminationCode` |  | |  | `ermwskz` |  |  |
-| `CAAltvTaxDeterminationCode` |  | |  | `cast(ermwskz_b2b as ermwskz_b2b_gfn_kk preserving type )` |  |  |
-| `CAAltvTaxCode` |  | |  | `mwskz_b2b` |  |  |
-| `CAOtherTaxCode` |  | |  | `strkz` |  |  |
-| `TaxJurisdiction` |  | |  | `txjcd` |  |  |
-| `WithholdingTaxCode` |  | |  | `qsskz` |  |  |
-| `CAIsDownPaymentRequest` |  | |  | `xanza` |  |  |
-| `CAStatisticalItemCode` |  | |  | `stakz` |  |  |
-| `CABillgDeferredRevenueCategory` |  | |  | `cast(defrev_cat as defrev_cat_gfn_kk preserving type )` |  |  |
-| `CABillgDeferredRevenueDate` |  | |  | `defrev_pdate` |  |  |
-| `CAInvcgDfrrdRevenueStatus` |  | |  | `cast(defrev_stat as defrev_stat_gfn_kk preserving type )` |  |  |
-| `CAIsRevenueAccountingRelevant` |  | |  | `rarel` |  |  |
-| `CARevenueAccountingServiceType` |  | |  | `service_type` |  |  |
-| `CAInvcgAccrualPostingType` |  | |  | `cast(billac_type as billac_type_gfn_kk preserving type )` |  |  |
-| `CABillgDocItemIsBIRelevant` |  | |  | `qty_bw_rel` |  |  |
-| `CABillgDocItemIsFICORelevant` |  | |  | `qty_fi_co_rel` |  |  |
-| `CAProviderContractItemNumber` |  | |  | `vtpos` |  |  |
-| `CASubApplication` |  | |  | `subap` |  |  |
-| `CAIsPrepaid` |  | |  | `prepaid` |  |  |
-| `CABillgIsPrepaidBalanceChg` |  | |  | `pprefill` |  |  |
-| `CABillgPartnerSettlementCat` |  | |  | `cast(pscat as pscat_gfn_kk preserving type )` |  |  |
-| `CABillgDocItemCrtnMethod` |  | |  | `item_crmet` |  |  |
-| `CABillgFunction` |  | |  | `bill_function` |  |  |
-| `CABillgGrpgOfAdditionalItems` |  | |  | `cast(add_group as add_group_gfn_kk preserving type )` |  |  |
-| `CABillgGrpgOfPaymentData` |  | |  | `py_group` |  |  |
-| `CABillgGroupingSourceItems` |  | |  | `src_group` |  |  |
-| `CABllbleItmNumber` |  | |  | `cast(bit_number as bit_number_gfn_kk preserving type )` |  |  |
-| `CADiscBaseItmGroup` |  | |  | `disc_group` |  |  |
-| `CAReasonSecurityDeposit` |  | |  | `sec_reason` |  |  |
-| `CABillgReqReason` |  | |  | `cast(billreqrsn as billreqrsn_gfn_kk preserving type )` |  |  |
-| `CABllbleItmDiscountKey` |  | |  | `cast(disckey as disckey_gfn_kk preserving type )` |  |  |
-| `CABllbleItmDiscountVersion` |  | |  | `disckey_versno` |  |  |
-| `CABillingQuantity` |  | |  | `cast ( quantity_pdp + quantity_adp as quantity_kk )` |  |  |
-| `CABillgQuantityBeforeDecPoint` |  | |  | `quantity_pdp` |  |  |
-| `CABillgQuantityAfterDecPoint` |  | |  | `quantity_adp` |  |  |
-| `CADependentItemType` |  | |  | `cast(dittype as dittype_gfn_kk preserving type )` |  |  |
-| `ConditionType` |  | |  | `condition_type` |  |  |
-| `CAAltvMDOriginalIsEnbld` |  | |  | `altmd_orig` |  |  |
-| `CARevenueDistributionUUID` |  | |  | `diskey` |  |  |
-| `CAInvcgOffsettingReferenceKey` |  | |  | `offset_refid` |  |  |
-| `CAInvcgOffsettingCategory` |  | |  | `offset_cat` |  |  |
-| `CAInvcgOffsettingProcedure` |  | |  | `offset_proc` |  |  |
-| `CAInvcgOffsettingAction` |  | |  | `offset_action` |  |  |
-| `CAInvcgOffsettingGroup` |  | |  | `offset_group` |  |  |
-| `CAInvcgOffsettingRefKeyLong` |  | |  | `cast(invbill_i.offset_refid_l as inv_offset_refid_long_gfn_kk preserving type)` |  |  |
-| `CAAllowance` |  | |  | `allowance` |  |  |
-| `CAAllowanceID` |  | |  | `allowance_id` |  |  |
-| `RAOriginalDocItemType` |  | |  | `cast(invbill_i.ra_origdoc_type as rai_ority_gfn_kk preserving type)` |  |  |
-| `RAOriginalDocItemID` |  | |  | `cast(invbill_i.ra_origdoc_id as rai_oriid_gfn_kk preserving type)` |  |  |
-| `CAAmountPerUnitAmount` |  | |  | `amount_per_unit_amnt` |  |  |
-| `CAAmountPerUnitCurrency` |  | |  | `amount_per_unit_cuky` |  |  |
-| `CAAmountPerUnitQuantityUnit` |  | |  | `amount_per_unit_qtyu` |  |  |
-| `CAAmountPerUnitQuantity` |  | |  | `amount_per_unit_quan` |  |  |
-| `CAIntcoCompanyCodeRequesting` |  | |  | `ico_bukrs_req` |  |  |
-| `CAIntcoCompanyCodeSupplying` |  | |  | `ico_bukrs_sup` |  |  |
-| `CAIntcoType` |  | |  | `cast(invbill_i.ico_type as ico_type_gfn_kk preserving type)` |  |  |
-| `CAIntcoProcedure` |  | |  | `cast(invbill_i.ico_proc as ico_proc_gfn_kk preserving type)` |  |  |
-| `CABillToParty` |  | |  | `bill_to_party` |  |  |
-| `CABillToRegion` |  | |  | `bill_to_region` |  |  |
-| `CABillFromRegion` |  | |  | `bill_from_region` |  |  |
-| `CAControlCode` |  | |  | `steuc` |  |  |
-| `CASupplyRegion` |  | |  | `supply_region` |  |  |
-| `CABillToCountry` |  | |  | `bill_to_country` |  |  |
-| `WBSElementInternalID` |  | |  | `cast( ps_psp_pnr as fis_wbsint_no_conv preserving type )` |  |  |
+| `CABillgDocument` | ✓ | |  | `billdocno` | `CHAR(12)` | Number of Billing Document |
+| `CABillgDocItem` | ✓ | |  | `billdocitem` | `NUMC(8)` | Sequential Number of Document Item |
+| `CAIsDocItemSimulated` |  | |  | `item_simulated` | `CHAR(1)` | Line Item Is Simulated |
+| `CABillgDocumentItemType` |  | |  | `itemtype` | `CHAR(8)` | Type of Billing Item |
+| `CAContract` |  | |  | `vtref` | `CHAR(20)` | Reference Specifications from Contract |
+| `CompanyCode` |  | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `CAMainTransaction` |  | |  | `hvorg` | `CHAR(4)` | Main Transaction for Line Item |
+| `CASubTransaction` |  | |  | `tvorg` | `CHAR(4)` | Subtransaction for Document Item |
+| `CAInvcgIsItemPostingRelevant` |  | |  | `postrel` | `CHAR(1)` | Item Is Relevant for Posting |
+| `CAInvcgIsItemPrintingRelevant` |  | |  | `printrel` | `CHAR(1)` | Item Is Relevant for Printing |
+| `CABillgDocItemAmount` |  | |  | `bill_amount` | `CURR(13)` | Amount in Billing Document Item |
+| `CABillgCurrency` |  | |  | `bill_curr` | `CUKY(5)` | Currency of Billing Document |
+| `CATaxIsIncluded` |  | |  | `tax_included` | `CHAR(1)` | Tax Included in Amount |
+| `TaxCode` |  | |  | `mwskz` | `CHAR(2)` | Tax on Sales/Purchases Code |
+| `UnitOfMeasure` |  | |  | `qty_unit` | `UNIT(3)` | Base Unit of Measure |
+| `CABillgDocItemExternalNumber` |  | |  | `refitem` | `CHAR(10)` | Number of Line Item in External System |
+| `CABillgDocItemIsReversal` |  | |  | `reversalitem` | `CHAR(1)` | Reversal Item |
+| `CAInvcgDocItemIsReversal` |  | |  | `reversalitem` | `CHAR(1)` | Reversal Item |
+| `CAInvcgCorrectionCategory` |  | |  | `cast(corrcat as corrcat_gfn_kk preserving type )` | `CHAR(2)` | Category of Invoice Correction |
+| `CAInvcgIsNotBPRelevant` |  | |  | `not_bprel` | `CHAR(1)` | Not Relevant for Business Partner Items |
+| `CAInvcgSubstituteGroupPrinting` |  | |  | `print_substitute` | `CHAR(4)` | Substitute Group for Invoice Printing |
+| `CAItemPeriodStartDate` |  | |  | `date_from` | `DATS(8)` | Start of Period of Line Item |
+| `CAItemPeriodEndDate` |  | |  | `date_to` | `DATS(8)` | End of Period of Line Item |
+| `CANetDueDate` |  | |  | `faedn` | `DATS(8)` | Due date for net payment |
+| `Division` |  | |  | `spart` | `CHAR(2)` | Division |
+| `BusinessArea` |  | |  | `gsber` | `CHAR(4)` | Business Area |
+| `BusinessPlace` |  | |  | `cast(bupla as farp_bupla preserving type)` | `CHAR(4)` | Business Place |
+| `Segment` |  | |  | `segmt` | `CHAR(10)` | Segment for Segmental Reporting |
+| `ProfitCenter` |  | |  | `prctr` | `CHAR(10)` | Profit Center |
+| `CAAccountDeterminationCode` |  | |  | `kofiz` | `CHAR(2)` | Account Determination ID |
+| `CATaxDetnType` |  | |  | `tax_det_type` | `CHAR(2)` | Type of Tax Calculation |
+| `CATaxCountry` |  | |  | `tax_country` | `CHAR(3)` | Country/Region for Tax Report |
+| `CATaxDateType` |  | |  | `tax_date_type` | `CHAR(2)` | Type of Tax Date |
+| `CABillgTaxGroup` |  | |  | `tax_group` | `CHAR(8)` | Grouping of Tax Items |
+| `CAExternalTaxDate` |  | |  | `ext_tax_date` | `DATS(8)` | External Tax Date |
+| `CATaxDeterminationCode` |  | |  | `ermwskz` | `CHAR(2)` | Indicator: Tax Determination Code |
+| `CAAltvTaxDeterminationCode` |  | |  | `cast(ermwskz_b2b as ermwskz_b2b_gfn_kk preserving type )` | `CHAR(2)` | Alternative Tax Determination Code |
+| `CAAltvTaxCode` |  | |  | `mwskz_b2b` | `CHAR(2)` | Alternative Tax Code for Deliveries Abroad |
+| `CAOtherTaxCode` |  | |  | `strkz` | `CHAR(2)` | Tax Code for Other Taxes |
+| `TaxJurisdiction` |  | |  | `txjcd` | `CHAR(15)` | Tax Jurisdiction |
+| `WithholdingTaxCode` |  | |  | `qsskz` | `CHAR(2)` | Withholding Tax Code |
+| `CAIsDownPaymentRequest` |  | |  | `xanza` | `CHAR(1)` | Item is a Down Payment/Down Payment Request |
+| `CAStatisticalItemCode` |  | |  | `stakz` | `CHAR(1)` | Type of Statistical Line Item |
+| `CABillgDeferredRevenueCategory` |  | |  | `cast(defrev_cat as defrev_cat_gfn_kk preserving type )` | `CHAR(2)` | Deferred Revenue Category |
+| `CABillgDeferredRevenueDate` |  | |  | `defrev_pdate` | `DATS(8)` | Transfer Posting Date for Delayed Revenues |
+| `CAInvcgDfrrdRevenueStatus` |  | |  | `cast(defrev_stat as defrev_stat_gfn_kk preserving type )` | `CHAR(1)` | Status of Processing Deferred Revenues |
+| `CAIsRevenueAccountingRelevant` |  | |  | `rarel` | `CHAR(1)` | Relevant for Revenue Accounting |
+| `CARevenueAccountingServiceType` |  | |  | `service_type` | `CHAR(6)` | Service Type for Revenue Accounting |
+| `CAInvcgAccrualPostingType` |  | |  | `cast(billac_type as billac_type_gfn_kk preserving type )` | `CHAR(4)` | Type of Accrual/Deferral Posting |
+| `CABillgDocItemIsBIRelevant` |  | |  | `qty_bw_rel` | `CHAR(1)` | Quantity Is BI-Relevant |
+| `CABillgDocItemIsFICORelevant` |  | |  | `qty_fi_co_rel` | `CHAR(1)` | Quantity Is FI/CO-Relevant |
+| `CAProviderContractItemNumber` |  | |  | `vtpos` | `NUMC(6)` | Contract: Item Number |
+| `CASubApplication` |  | |  | `subap` | `CHAR(1)` | Subapplication in Contract Accounts Receivable and Payable |
+| `CAIsPrepaid` |  | |  | `prepaid` | `CHAR(1)` | Prepaid |
+| `CABillgIsPrepaidBalanceChg` |  | |  | `pprefill` | `CHAR(1)` | Prepaid Account Balance Change |
+| `CABillgPartnerSettlementCat` |  | |  | `cast(pscat as pscat_gfn_kk preserving type )` | `CHAR(4)` | Partner Settlement Category |
+| `CABillgDocItemCrtnMethod` |  | |  | `item_crmet` | `CHAR(2)` | Method Used to Create Billing Document Item |
+| `CABillgFunction` |  | |  | `bill_function` | `CHAR(12)` | Billing Function |
+| `CABillgGrpgOfAdditionalItems` |  | |  | `cast(add_group as add_group_gfn_kk preserving type )` | `CHAR(8)` | Grouping of Additional Items |
+| `CABillgGrpgOfPaymentData` |  | |  | `py_group` | `CHAR(8)` | Grouping of Payment Data |
+| `CABillgGroupingSourceItems` |  | |  | `src_group` | `CHAR(8)` | Grouping of Source Items |
+| `CABllbleItmNumber` |  | |  | `cast(bit_number as bit_number_gfn_kk preserving type )` | `INT4(10)` | Number of Billable Items |
+| `CADiscBaseItmGroup` |  | |  | `disc_group` | `NUMC(4)` | Grouping of Base Items in Billing Document |
+| `CAReasonSecurityDeposit` |  | |  | `sec_reason` | `CHAR(4)` | Reason for Requesting a Security Deposit |
+| `CABillgReqReason` |  | |  | `cast(billreqrsn as billreqrsn_gfn_kk preserving type )` | `CHAR(4)` | Billing Request Reason |
+| `CABllbleItmDiscountKey` |  | |  | `cast(disckey as disckey_gfn_kk preserving type )` | `CHAR(8)` | Discount/Charge Key |
+| `CABllbleItmDiscountVersion` |  | |  | `disckey_versno` | `NUMC(2)` | Version Number of Disccount on Billable Items |
+| `CABillingQuantity` |  | |  | `cast ( quantity_pdp + quantity_adp as quantity_kk )` | `QUAN(31)` | Billing Quantity |
+| `CABillgQuantityBeforeDecPoint` |  | |  | `quantity_pdp` | `DEC(17)` | Billing Quantity: Places before Decimal Point |
+| `CABillgQuantityAfterDecPoint` |  | |  | `quantity_adp` | `DEC(14)` | Billing Quantity: Places after Decimal Point |
+| `CADependentItemType` |  | |  | `cast(dittype as dittype_gfn_kk preserving type )` | `CHAR(8)` | Dependent Item Type |
+| `ConditionType` |  | |  | `condition_type` | `CHAR(4)` | Condition Type |
+| `CAAltvMDOriginalIsEnbld` |  | |  | `altmd_orig` | `CHAR(1)` | Alternative Original Master Data |
+| `CARevenueDistributionUUID` |  | |  | `diskey` | `CHAR(22)` | Key of Revenue Distribution (GUID) |
+| `CAInvcgOffsettingReferenceKey` |  | |  | `offset_refid` | `CHAR(20)` | Offsetting Reference Key |
+| `CAInvcgOffsettingCategory` |  | |  | `offset_cat` | `CHAR(3)` | Offsetting Category |
+| `CAInvcgOffsettingProcedure` |  | |  | `offset_proc` | `CHAR(2)` | Offsetting Procedure |
+| `CAInvcgOffsettingAction` |  | |  | `offset_action` | `CHAR(1)` | Action Code for Offsetting |
+| `CAInvcgOffsettingGroup` |  | |  | `offset_group` | `CHAR(6)` | Grouping of Offsetting Items |
+| `CAInvcgOffsettingRefKeyLong` |  | |  | `cast(invbill_i.offset_refid_l as inv_offset_refid_long_gfn_kk preserving type)` | `CHAR(32)` | Offsetting Reference Key (Long) |
+| `CAAllowance` |  | |  | `allowance` | `CHAR(1)` | Allowance |
+| `CAAllowanceID` |  | |  | `allowance_id` | `CHAR(35)` | Allowance ID |
+| `RAOriginalDocItemType` |  | |  | `cast(invbill_i.ra_origdoc_type as rai_ority_gfn_kk preserving type)` | `CHAR(4)` | Revenue Accounting Original Item Type |
+| `RAOriginalDocItemID` |  | |  | `cast(invbill_i.ra_origdoc_id as rai_oriid_gfn_kk preserving type)` | `CHAR(35)` | Revenue Accounting Original Item ID |
+| `CAAmountPerUnitAmount` |  | |  | `amount_per_unit_amnt` | `CURR(13)` | Amount per Quantity |
+| `CAAmountPerUnitCurrency` |  | |  | `amount_per_unit_cuky` | `CUKY(5)` | Currency of Amount per Quantity |
+| `CAAmountPerUnitQuantityUnit` |  | |  | `amount_per_unit_qtyu` | `UNIT(3)` | Unit of Measure for Amount per Quantity |
+| `CAAmountPerUnitQuantity` |  | |  | `amount_per_unit_quan` | `QUAN(31)` | Quantity of Amount per Quantity |
+| `CAIntcoCompanyCodeRequesting` |  | |  | `ico_bukrs_req` | `CHAR(4)` | Requesting Company Code |
+| `CAIntcoCompanyCodeSupplying` |  | |  | `ico_bukrs_sup` | `CHAR(4)` | Supplying Company Code |
+| `CAIntcoType` |  | |  | `cast(invbill_i.ico_type as ico_type_gfn_kk preserving type)` | `CHAR(4)` | Intercompany Settlement Type |
+| `CAIntcoProcedure` |  | |  | `cast(invbill_i.ico_proc as ico_proc_gfn_kk preserving type)` | `CHAR(2)` | Intercompany Settlement Procedure |
+| `CABillToParty` |  | |  | `bill_to_party` | `CHAR(10)` | Bill-to Party |
+| `CABillToRegion` |  | |  | `bill_to_region` | `CHAR(3)` | Bill-To Region |
+| `CABillFromRegion` |  | |  | `bill_from_region` | `CHAR(3)` | Region Where the Delivery Plant is Located |
+| `CAControlCode` |  | |  | `steuc` | `CHAR(16)` | Control Code for Consumption Taxes in Foreign Trade |
+| `CASupplyRegion` |  | |  | `supply_region` | `CHAR(3)` | Supply Region |
+| `CABillToCountry` |  | |  | `bill_to_country` | `CHAR(3)` | Bill-to Country |
+| `WBSElementInternalID` |  | |  | `cast( ps_psp_pnr as fis_wbsint_no_conv preserving type )` | `NUMC(8)` | WBS Element Internal ID |
 | `_CABillgDocumentItemType` | | ✓ | | | | |
 | `_CARevnAcctgServiceType` | | ✓ | | | | |
 | `_CAInvcgAccrualPostingType` | | ✓ | | | | |

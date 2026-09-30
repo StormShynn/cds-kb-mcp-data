@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgPlnItemAmountDateType` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as bip_amount_date_type_kk preserving type )` |  |  |
+| `CABillgPlnItemAmountDateType` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as bip_amount_date_type_kk preserving type )` | `CHAR(1)` | Type of Amount Determination Date |
 | `_CABillgPlnItmAmtDateTypeText` | | ✓ | | | | |
 
 ## Associations

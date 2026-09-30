@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgPlnCategory` | ✓ | | `_tfk8210` | `bipcat` |  |  |
-| `CABillgPlnIsNotEditable` |  | | `_tfk8210` | `xnoedit` |  |  |
+| `CABillgPlnCategory` | ✓ | | `_tfk8210` | `bipcat` | `CHAR(5)` | Billing Plan Category |
+| `CABillgPlnIsNotEditable` |  | | `_tfk8210` | `xnoedit` | `CHAR(1)` | Changes to Billing Plan in Dialog Not Permitted |
 | `_CABillgPlnCategoryText` | | ✓ | | | | |
 
 ## Associations

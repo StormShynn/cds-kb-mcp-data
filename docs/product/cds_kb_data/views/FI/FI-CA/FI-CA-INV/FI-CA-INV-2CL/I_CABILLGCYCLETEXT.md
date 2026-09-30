@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgCycle` | ✓ | | `_tfk2607t` | `cycle` |  |  |
-| `Language` | ✓ | | `_tfk2607t` | `langu` |  |  |
-| `CABillgCycleText` |  | | `_tfk2607t` | `text` |  |  |
+| `CABillgCycle` | ✓ | | `_tfk2607t` | `cycle` | `CHAR(4)` | Billing Cycle |
+| `Language` | ✓ | | `_tfk2607t` | `langu` | `LANG(1)` | Language Key |
+| `CABillgCycleText` |  | | `_tfk2607t` | `text` | `CHAR(50)` | Name of Billing Cycle |
 | `_CABillgCycle` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

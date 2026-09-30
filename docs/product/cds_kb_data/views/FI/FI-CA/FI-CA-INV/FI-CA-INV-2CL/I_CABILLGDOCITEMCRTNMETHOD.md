@@ -40,7 +40,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgDocItemCrtnMethod` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,2 ) as billitem_crmet_kk preserving type )` |  |  |
+| `CABillgDocItemCrtnMethod` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,2 ) as billitem_crmet_kk preserving type )` | `CHAR(2)` | Method Used to Create Billing Document Item |
 | `_CABillgDocItemCrtnMethodText` | | ✓ | | | | |
 
 ## Associations

@@ -40,26 +40,26 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SalesBillingProviderContract` | ✓ | |  | `ProviderContract` |  |  |
-| `BusinessPartner` |  | |  |  |  |  |
-| `IsMarkedForDeletion` |  | |  |  |  |  |
-| `CAProviderContractName` |  | |  |  |  |  |
-| `CAPrvdrContrStartDateTime` |  | |  |  |  |  |
-| `CAPrvdrContrEndDateTime` |  | |  |  |  |  |
-| `CompanyCode` |  | |  |  |  |  |
-| `TimeZoneID` |  | |  |  |  |  |
-| `CAProviderContractStatus` |  | |  |  |  |  |
-| `CAProviderContractSender` |  | |  |  |  |  |
-| `PrvdrContrEarliestEndDateTime` |  | |  |  |  |  |
-| `MinNrOfMonthsForContractPeriod` |  | |  |  |  |  |
-| `NrOfMonthsForContractRenewal` |  | |  |  |  |  |
-| `NrOfDaysForContrNoticePeriod` |  | |  |  |  |  |
-| `CreationDate` |  | |  |  |  |  |
-| `CreationTime` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `LastChangeDate` |  | |  |  |  |  |
-| `LastChangeTime` |  | |  |  |  |  |
-| `LastChangedByUser` |  | |  |  |  |  |
+| `SalesBillingProviderContract` | ✓ | |  | `ProviderContract` | `CHAR(20)` | Identification of a Provider Contract |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
+| `IsMarkedForDeletion` |  | |  |  | `CHAR(1)` | Deletion Indicator |
+| `CAProviderContractName` |  | |  |  | `CHAR(35)` | Name of Contract |
+| `CAPrvdrContrStartDateTime` |  | |  |  | `DEC(15)` | Contract Start |
+| `CAPrvdrContrEndDateTime` |  | |  |  | `DEC(15)` | Contract End Date |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code for Authorization Check |
+| `TimeZoneID` |  | |  |  | `CHAR(6)` | Time Zone |
+| `CAProviderContractStatus` |  | |  |  | `CHAR(1)` | Status of Provider Contract |
+| `CAProviderContractSender` |  | |  |  | `CHAR(3)` | Provider Contract Sender |
+| `PrvdrContrEarliestEndDateTime` |  | |  |  | `DEC(15)` | End of Minimum Term |
+| `MinNrOfMonthsForContractPeriod` |  | |  |  | `NUMC(3)` | Min Length of Contract (Months) |
+| `NrOfMonthsForContractRenewal` |  | |  |  | `NUMC(3)` | Contract Extension in Months |
+| `NrOfDaysForContrNoticePeriod` |  | |  |  | `NUMC(3)` | Notice Period in Days |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Creation Time |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
+| `LastChangeTime` |  | |  |  | `TIMS(6)` | Last Changed At |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |
 | `_BusinessPartner` | | ✓ | | | | |
 | `_CompCode` | | ✓ | | | | |
 | `_CreatedByUser` | | ✓ | | | | |

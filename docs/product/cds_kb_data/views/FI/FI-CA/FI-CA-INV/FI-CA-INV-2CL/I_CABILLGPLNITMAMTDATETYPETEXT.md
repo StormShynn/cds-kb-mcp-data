@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgPlnItemAmountDateType` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as bip_amount_date_type_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
-| `CABillgPlnItmAmtDateTypeText` |  | |  | `cast ( ddtext as bip_amt_date_type_txt_gfn_kk preserving type )` |  |  |
+| `CABillgPlnItemAmountDateType` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as bip_amount_date_type_kk preserving type )` | `CHAR(1)` | Type of Amount Determination Date |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CABillgPlnItmAmtDateTypeText` |  | |  | `cast ( ddtext as bip_amt_date_type_txt_gfn_kk preserving type )` | `CHAR(60)` | Text for Type of Amount Determination Date |
 | `_CABillgPlnItmAmtDateType` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

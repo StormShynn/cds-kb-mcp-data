@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgDocItemCrtnMethod` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,2 ) as billitem_crmet_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
-| `CABillgDocItemCrtnMethodText` |  | |  | `cast ( ddtext as billitem_crmet_txt_gfn_kk preserving type )` |  |  |
+| `CABillgDocItemCrtnMethod` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,2 ) as billitem_crmet_kk preserving type )` | `CHAR(2)` | Method Used to Create Billing Document Item |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CABillgDocItemCrtnMethodText` |  | |  | `cast ( ddtext as billitem_crmet_txt_gfn_kk preserving type )` | `CHAR(60)` | Text for Method Used to Create Billing Document Item |
 | `_CABillgDocItemCrtnMethod` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

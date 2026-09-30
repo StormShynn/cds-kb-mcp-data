@@ -40,73 +40,73 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgPlnNumber` | ✓ | |  | `billplanno` |  |  |
-| `CABillgPlnItem` | ✓ | |  | `billplanitem` |  |  |
-| `CABillgPlnItmCat` |  | |  | `bipitemcat` |  |  |
-| `CABillgPlnItmType` |  | |  | `bipitemtype` |  |  |
-| `CABillgPlnItmTxt` |  | |  | `bipitemtext` |  |  |
-| `CABillgPlnItemExtRef` |  | |  | `bipitemref` |  |  |
-| `CABillgPlnItemAmount` |  | |  | `betrw` |  |  |
-| `TransactionCurrency` |  | |  | `waers` |  |  |
-| `CATaxIsIncluded` |  | |  | `tax_included` |  |  |
-| `CABillgPlnItemQuantity` |  | |  | `bip_quantity` |  |  |
-| `CABillgPlnItemQuantityUnit` |  | |  | `bip_qty_unit` |  |  |
-| `CATaxDeterminationCode` |  | |  | `ermwskz` |  |  |
-| `TaxCode` |  | |  | `mwskz` |  |  |
-| `CABillgPlnItemStartDate` |  | |  | `valid_from` |  |  |
-| `CABillgPlnItmEndDate` |  | |  | `valid_to` |  |  |
-| `CABillgPlnItemTermStartDate` |  | |  | `term_from` |  |  |
-| `CABillgPlnItemTermEndDate` |  | |  | `term_to` |  |  |
-| `CABillgPlnItemRecurring` |  | |  | `recurring` |  |  |
-| `CABillgCycle` |  | |  | `cycle` |  |  |
-| `CAStartDateForBillingPeriod` |  | |  | `cycle_startdate` |  |  |
-| `CAConditionType` |  | |  | `kschl` |  |  |
-| `CABillgPlnItemAmountDetnType` |  | |  | `cast(amount_det_type as bip_amount_det_type_gfn_kk preserving type )` |  |  |
-| `CABillgPlnItemAmountDateType` |  | |  | `cast(amount_date_type as bip_amount_date_type_gfn_kk preserving type )` |  |  |
-| `CABillgPlnItemPriceDateType` |  | |  | `price_date_type` |  |  |
-| `CAContract` |  | |  | `vtref` |  |  |
-| `CAProviderContractItemNumber` |  | |  | `vtpos` |  |  |
-| `CASubApplication` |  | |  | `subap` |  |  |
-| `CAProviderContractItemUUID` |  | |  | `vtpid` |  |  |
-| `Division` |  | |  | `spart` |  |  |
-| `CompanyCode` |  | |  | `bukrs` |  |  |
-| `BusinessArea` |  | |  | `gsber` |  |  |
-| `Segment` |  | |  | `segment` |  |  |
-| `CAMainTransaction` |  | |  | `hvorg` |  |  |
-| `CASubTransaction` |  | |  | `tvorg` |  |  |
-| `CABillgPlnItemServiceType` |  | |  | `service_type` |  |  |
-| `CADependentItemType` |  | |  | `cast(dittype as dittype_gfn_kk preserving type )` |  |  |
-| `Material` |  | |  | `matnr` |  |  |
-| `SalesOrganization` |  | |  | `vkorg` |  |  |
-| `DistributionChannel` |  | |  | `vtweg` |  |  |
-| `CAAccountDeterminationCode` |  | |  | `kofiz` |  |  |
-| `CAInvcgOffsettingAction` |  | |  | `offset_action` |  |  |
-| `CAInvcgOffsettingCategory` |  | |  | `offset_cat` |  |  |
-| `CAInvcgOffsettingProcedure` |  | |  | `offset_proc` |  |  |
-| `CAInvcgOffsettingReferenceKey` |  | |  | `offset_refid` |  |  |
-| `CABillgPlnItemReqDteLast` |  | |  | `requestdate_last` |  |  |
-| `CABillgPlnItemReqDteNext` |  | |  | `requestdate_next` |  |  |
-| `CABillgPlnDvtgNextRequestDate` |  | |  | `requestdate_next_dev` |  |  |
-| `CABillgPlnItemRequestedToDte` |  | |  | `requested_to` |  |  |
-| `CABillgPlnItemCanceled` |  | |  | `cancelled` |  |  |
-| `CABillgPlnSubItmExist` |  | |  | `subitem_exists` |  |  |
-| `CABillgPlnItemMain` |  | |  | `main_bipitem` |  |  |
-| `CABillgPlnItmExcptnReason` |  | |  | `item_excreason` |  |  |
-| `CABillgPlnItemChildExist` |  | |  | `child_exists` |  |  |
-| `CABillgPlnItemParent` |  | |  | `parent_bipitem` |  |  |
-| `CABillgPlnItemStatus` |  | |  | `status` |  |  |
-| `CABillgPlnItemNrOfBllbleItm` |  | |  | `bit_number` |  |  |
-| `CAIsRevnAcctgTransfRecordRlvt` |  | |  | `raoirel` |  |  |
-| `ConditionType` |  | |  | `condition_type` |  |  |
-| `ConditionIsForStatistics` |  | |  | `condition_statistic` |  |  |
-| `CANetDueDate` |  | |  | `faedn` |  |  |
-| `CABillgPlnItmIsNotToBeReqd` |  | |  | `cast(case when norequest is initial then '' else 'X' end as xfeld preserving type)` |  |  |
-| `CABllbleItmCostType` |  | |  | `cast(co_type as co_type_gfn_kk preserving type)` |  |  |
-| `CABllbleItmCostSubType` |  | |  | `cast(co_subtype as co_subtype_gfn_kk preserving type)` |  |  |
-| `CAIntcoCompanyCodeRequesting` |  | |  | `ico_bukrs_req` |  |  |
-| `CAIntcoCompanyCodeSupplying` |  | |  | `ico_bukrs_sup` |  |  |
-| `CAIntcoType` |  | |  | `cast(ico_type as ico_type_gfn_kk preserving type)` |  |  |
-| `CAIntcoSubtype` |  | |  | `cast(ico_subtype as ico_subtype_gfn_kk preserving type)` |  |  |
+| `CABillgPlnNumber` | ✓ | |  | `billplanno` | `NUMC(12)` | Billing Plan Number |
+| `CABillgPlnItem` | ✓ | |  | `billplanitem` | `NUMC(8)` | Sequence Number of Billing Plan Item |
+| `CABillgPlnItmCat` |  | |  | `bipitemcat` | `CHAR(5)` | Billing Plan Item Category |
+| `CABillgPlnItmType` |  | |  | `bipitemtype` | `CHAR(5)` | Billing Plan Item Type |
+| `CABillgPlnItmTxt` |  | |  | `bipitemtext` | `CHAR(60)` | Description of Billing Plan Item |
+| `CABillgPlnItemExtRef` |  | |  | `bipitemref` | `CHAR(32)` | External Reference of Billing Plan Item |
+| `CABillgPlnItemAmount` |  | |  | `betrw` | `CURR(13)` | Amount in Transaction Currency with +/- Sign |
+| `TransactionCurrency` |  | |  | `waers` | `CUKY(5)` | Currency Key |
+| `CATaxIsIncluded` |  | |  | `tax_included` | `CHAR(1)` | Tax Included in Amount |
+| `CABillgPlnItemQuantity` |  | |  | `bip_quantity` | `QUAN(31)` | Billing Quantity of Billing Plan Item |
+| `CABillgPlnItemQuantityUnit` |  | |  | `bip_qty_unit` | `UNIT(3)` | Billing Quantity Unit of Billing Plan Item |
+| `CATaxDeterminationCode` |  | |  | `ermwskz` | `CHAR(2)` | Indicator: Tax Determination Code |
+| `TaxCode` |  | |  | `mwskz` | `CHAR(2)` | Tax on Sales/Purchases Code |
+| `CABillgPlnItemStartDate` |  | |  | `valid_from` | `DATS(8)` | Valid From |
+| `CABillgPlnItmEndDate` |  | |  | `valid_to` | `DATS(8)` | Valid to |
+| `CABillgPlnItemTermStartDate` |  | |  | `term_from` | `DATS(8)` | Term From |
+| `CABillgPlnItemTermEndDate` |  | |  | `term_to` | `DATS(8)` | Term To |
+| `CABillgPlnItemRecurring` |  | |  | `recurring` | `CHAR(1)` | Recurring Billing Plan Item |
+| `CABillgCycle` |  | |  | `cycle` | `CHAR(4)` | Billing Cycle |
+| `CAStartDateForBillingPeriod` |  | |  | `cycle_startdate` | `DATS(8)` | Start Date of First Billing Period |
+| `CAConditionType` |  | |  | `kschl` | `CHAR(4)` | Condition Type |
+| `CABillgPlnItemAmountDetnType` |  | |  | `cast(amount_det_type as bip_amount_det_type_gfn_kk preserving type )` | `CHAR(1)` | Type of Amount Determination |
+| `CABillgPlnItemAmountDateType` |  | |  | `cast(amount_date_type as bip_amount_date_type_gfn_kk preserving type )` | `CHAR(1)` | Type of Amount Determination Date |
+| `CABillgPlnItemPriceDateType` |  | |  | `price_date_type` | `CHAR(1)` | Type of Pricing Date |
+| `CAContract` |  | |  | `vtref` | `CHAR(20)` | Reference Specifications from Contract |
+| `CAProviderContractItemNumber` |  | |  | `vtpos` | `NUMC(6)` | Contract: Item Number |
+| `CASubApplication` |  | |  | `subap` | `CHAR(1)` | Subapplication in Contract Accounts Receivable and Payable |
+| `CAProviderContractItemUUID` |  | |  | `vtpid` | `RAW(16)` | External GUID of Provider Contract Items |
+| `Division` |  | |  | `spart` | `CHAR(2)` | Division |
+| `CompanyCode` |  | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `BusinessArea` |  | |  | `gsber` | `CHAR(4)` | Business Area |
+| `Segment` |  | |  | `segment` | `CHAR(10)` | Segment for Segmental Reporting |
+| `CAMainTransaction` |  | |  | `hvorg` | `CHAR(4)` | Main Transaction for Line Item |
+| `CASubTransaction` |  | |  | `tvorg` | `CHAR(4)` | Subtransaction for Document Item |
+| `CABillgPlnItemServiceType` |  | |  | `service_type` | `CHAR(6)` | Service Type for Revenue Accounting |
+| `CADependentItemType` |  | |  | `cast(dittype as dittype_gfn_kk preserving type )` | `CHAR(8)` | Dependent Item Type |
+| `Material` |  | |  | `matnr` | `CHAR(40)` | Material Number |
+| `SalesOrganization` |  | |  | `vkorg` | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  | `vtweg` | `CHAR(2)` | Distribution Channel |
+| `CAAccountDeterminationCode` |  | |  | `kofiz` | `CHAR(2)` | Account Determination ID |
+| `CAInvcgOffsettingAction` |  | |  | `offset_action` | `CHAR(1)` | Action Code for Offsetting |
+| `CAInvcgOffsettingCategory` |  | |  | `offset_cat` | `CHAR(3)` | Offsetting Category |
+| `CAInvcgOffsettingProcedure` |  | |  | `offset_proc` | `CHAR(2)` | Offsetting Procedure |
+| `CAInvcgOffsettingReferenceKey` |  | |  | `offset_refid` | `CHAR(20)` | Offsetting Reference Key |
+| `CABillgPlnItemReqDteLast` |  | |  | `requestdate_last` | `DATS(8)` | Last Reqest Date for Billing Plan Items |
+| `CABillgPlnItemReqDteNext` |  | |  | `requestdate_next` | `DATS(8)` | Next Request Date of Billing Plan Items |
+| `CABillgPlnDvtgNextRequestDate` |  | |  | `requestdate_next_dev` | `DATS(8)` | Deviating Next Request Date |
+| `CABillgPlnItemRequestedToDte` |  | |  | `requested_to` | `DATS(8)` | Billing Plan Items Requested Until |
+| `CABillgPlnItemCanceled` |  | |  | `cancelled` | `CHAR(1)` | Billing Plan Item Discarded |
+| `CABillgPlnSubItmExist` |  | |  | `subitem_exists` | `CHAR(1)` | Subitem Exists |
+| `CABillgPlnItemMain` |  | |  | `main_bipitem` | `NUMC(8)` | Number of Main Item |
+| `CABillgPlnItmExcptnReason` |  | |  | `item_excreason` | `CHAR(2)` | Reason for Adjusting a Billing Plan Item |
+| `CABillgPlnItemChildExist` |  | |  | `child_exists` | `CHAR(1)` | Follow-On Item Exists |
+| `CABillgPlnItemParent` |  | |  | `parent_bipitem` | `NUMC(8)` | Number of Higher-Level Billing Plan Item |
+| `CABillgPlnItemStatus` |  | |  | `status` | `CHAR(1)` | Status of Billing Plan Item |
+| `CABillgPlnItemNrOfBllbleItm` |  | |  | `bit_number` | `NUMC(8)` | No. of Billing Plan Item Requests |
+| `CAIsRevnAcctgTransfRecordRlvt` |  | |  | `raoirel` | `CHAR(1)` | Order Item Created for Transfer to Revenue Accounting |
+| `ConditionType` |  | |  | `condition_type` | `CHAR(4)` | Condition Type |
+| `ConditionIsForStatistics` |  | |  | `condition_statistic` | `CHAR(1)` | Condition Is Statistical |
+| `CANetDueDate` |  | |  | `faedn` | `DATS(8)` | Due date for net payment |
+| `CABillgPlnItmIsNotToBeReqd` |  | |  | `cast(case when norequest is initial then '' else 'X' end as xfeld preserving type)` | `CHAR(1)` | Checkbox |
+| `CABllbleItmCostType` |  | |  | `cast(co_type as co_type_gfn_kk preserving type)` | `CHAR(8)` | Billable Item Cost Type |
+| `CABllbleItmCostSubType` |  | |  | `cast(co_subtype as co_subtype_gfn_kk preserving type)` | `CHAR(8)` | Billable Item Cost Subtype |
+| `CAIntcoCompanyCodeRequesting` |  | |  | `ico_bukrs_req` | `CHAR(4)` | Requesting Company Code |
+| `CAIntcoCompanyCodeSupplying` |  | |  | `ico_bukrs_sup` | `CHAR(4)` | Supplying Company Code |
+| `CAIntcoType` |  | |  | `cast(ico_type as ico_type_gfn_kk preserving type)` | `CHAR(4)` | Intercompany Settlement Type |
+| `CAIntcoSubtype` |  | |  | `cast(ico_subtype as ico_subtype_gfn_kk preserving type)` | `CHAR(4)` | Intercompany Settlement Subtype |
 | `_CAConditionType` |  | |  | `_ConditionType` |  |  |
 | `_CABillgPln` | | ✓ | | | | |
 | `_CABillgPlnItmType` | | ✓ | | | | |

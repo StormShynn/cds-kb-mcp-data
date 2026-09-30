@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgPlnItmCat` | ✓ | |  | `bipitemcat` |  |  |
+| `CABillgPlnItmCat` | ✓ | |  | `bipitemcat` | `CHAR(5)` | Billing Plan Item Category |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPrvdrContrItmChgReason` | ✓ | |  | `change_reason` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `CAPrvdrContrItmChgReasonName` |  | |  | `text` |  |  |
+| `CAPrvdrContrItmChgReason` | ✓ | |  | `change_reason` | `CHAR(2)` | Change Reason |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `CAPrvdrContrItmChgReasonName` |  | |  | `text` | `CHAR(50)` | Text Field |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

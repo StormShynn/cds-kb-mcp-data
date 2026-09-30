@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgDocumentReversalReason` | ✓ | | `_tfk2646t` | `bill_revreason` |  |  |
-| `Language` | ✓ | | `_tfk2646t` | `langu` |  |  |
-| `CABillgDocReversalReasonText` |  | |  | `cast( _tfk2646t.text as bill_revreason_txt_gfn_kk preserving type )` |  |  |
+| `CABillgDocumentReversalReason` | ✓ | | `_tfk2646t` | `bill_revreason` | `CHAR(2)` | Reversal Reason for Billing Document |
+| `Language` | ✓ | | `_tfk2646t` | `langu` | `LANG(1)` | Language Key |
+| `CABillgDocReversalReasonText` |  | |  | `cast( _tfk2646t.text as bill_revreason_txt_gfn_kk preserving type )` | `CHAR(50)` | Name of Reversal Reason for Billing Document |
 | `_CABillgDocReversalReason` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 
