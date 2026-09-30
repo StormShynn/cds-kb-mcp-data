@@ -38,12 +38,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ContractAccount` | ✓ | |  | `vkont` |  |  |
-| `BusinessPartner` | ✓ | |  | `gpart` |  |  |
-| `CAInvcgChargeAndDiscountKey` | ✓ | |  | `chgkey` |  |  |
-| `CAInvcgChrgAndDiscKeyStartDate` | ✓ | |  | `date_from` |  |  |
-| `CAInvcgChrgAndDiscKeyEndDate` |  | |  | `date_to` |  |  |
-| `CAApplicationArea` |  | |  | `cast( 'C' as applk_kk preserving type )` |  |  |
+| `ContractAccount` | ✓ | |  | `vkont` | `CHAR(12)` | Contract Account Number |
+| `BusinessPartner` | ✓ | |  | `gpart` | `CHAR(10)` | Business Partner Number |
+| `CAInvcgChargeAndDiscountKey` | ✓ | |  | `chgkey` | `CHAR(8)` | Charge and Discount Key |
+| `CAInvcgChrgAndDiscKeyStartDate` | ✓ | |  | `date_from` | `DATS(8)` | Valid-From Date for Charge and Discount Key |
+| `CAInvcgChrgAndDiscKeyEndDate` |  | |  | `date_to` | `DATS(8)` | Valid-To Date for Charge and Discount Key |
+| `CAApplicationArea` |  | |  | `cast( 'C' as applk_kk preserving type )` | `CHAR(1)` | Application Area |
 | `_BusinessPartner` | | ✓ | | | | |
 | `_CAApplicationArea` | | ✓ | | | | |
 | `_CAInvcgChrgAndDiscKey` | | ✓ | | | | |

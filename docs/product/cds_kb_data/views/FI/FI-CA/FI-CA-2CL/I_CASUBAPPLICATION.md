@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CASubApplication` | ✓ | |  |  |  |  |
+| `CASubApplication` | ✓ | |  |  | `CHAR(1)` | Subapplication in Contract Accounts Receivable and Payable |
 | `_CASubApplicationText` | | ✓ | | | | |
 
 ## Source Code

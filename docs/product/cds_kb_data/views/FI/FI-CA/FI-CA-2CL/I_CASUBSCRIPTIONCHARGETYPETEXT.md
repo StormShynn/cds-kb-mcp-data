@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CASubscriptionChargeType` | ✓ | |  | `cast( left( domvalue_l,2 ) as charge_type_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CASubscriptionChargeTypeText` |  | |  | `cast( ddtext as charge_type_text_kk preserving type )` |  |  |
+| `CASubscriptionChargeType` | ✓ | |  | `cast( left( domvalue_l,2 ) as charge_type_kk preserving type )` | `CHAR(2)` | Charge Type |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CASubscriptionChargeTypeText` |  | |  | `cast( ddtext as charge_type_text_kk preserving type )` | `CHAR(60)` | Description for Charge Type |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

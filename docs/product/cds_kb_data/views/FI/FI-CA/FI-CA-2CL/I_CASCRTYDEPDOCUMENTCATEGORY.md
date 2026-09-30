@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CASecurityDepositDocCategory` | ✓ | |  | `cast( left( dd07l.domvalue_l, 3 ) as secdep_doc_category_kk preserving type)` |  |  |
+| `CASecurityDepositDocCategory` | ✓ | |  | `cast( left( dd07l.domvalue_l, 3 ) as secdep_doc_category_kk preserving type)` | `CHAR(3)` | Document Category of Security Deposit |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

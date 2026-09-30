@@ -39,12 +39,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Country` | ✓ | |  | `land1` |  |  |
-| `CATaxDeterminationCode` | ✓ | |  | `ermwskz` |  |  |
-| `CATaxDetnCodeValidFromDate` | ✓ | |  | `ab` |  |  |
-| `CATaxDetnCodeValidToDate` |  | |  | `bis` |  |  |
-| `TaxCode` |  | |  | `mwskz` |  |  |
-| `TaxCalculationProcedure` |  | | `_Country` | `TaxCalculationProcedure` |  |  |
+| `Country` | ✓ | |  | `land1` | `CHAR(3)` | Country/Region Key |
+| `CATaxDeterminationCode` | ✓ | |  | `ermwskz` | `CHAR(2)` | Indicator: Tax Determination Code |
+| `CATaxDetnCodeValidFromDate` | ✓ | |  | `ab` | `DATS(8)` | Date from which time slice is valid |
+| `CATaxDetnCodeValidToDate` |  | |  | `bis` | `DATS(8)` | Date at Which a Time Slice Expires |
+| `TaxCode` |  | |  | `mwskz` | `CHAR(2)` | Tax on Sales/Purchases Code |
+| `TaxCalculationProcedure` |  | | `_Country` | `TaxCalculationProcedure` | `CHAR(6)` | Procedure (Pricing, Output Control, Acct. Det., Costing,...) |
 | `_Country` | | ✓ | | | | |
 | `_TaxCalculationProcedure` | | ✓ | | | | |
 | `_TaxCode` | | ✓ | | | | |

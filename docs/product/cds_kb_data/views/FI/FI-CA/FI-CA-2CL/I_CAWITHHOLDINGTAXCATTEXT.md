@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAWithholdingTaxCategory` | ✓ | |  | `cast( left( domvalue_l, 1 ) as qsptp_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAWithholdingTaxCategoryName` |  | |  | `cast( ddtext as qsptp_text_kk preserving type )` |  |  |
+| `CAWithholdingTaxCategory` | ✓ | |  | `cast( left( domvalue_l, 1 ) as qsptp_kk preserving type )` | `CHAR(1)` | Line Item Category From Withholding Tax View |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAWithholdingTaxCategoryName` |  | |  | `cast( ddtext as qsptp_text_kk preserving type )` | `CHAR(60)` | Description for Witholding Tax Line Item Type |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

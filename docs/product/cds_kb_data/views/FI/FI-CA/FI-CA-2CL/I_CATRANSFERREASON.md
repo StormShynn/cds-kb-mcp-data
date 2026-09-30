@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CATransferReason` | ✓ | |  | `umgrd` |  |  |
+| `CATransferReason` | ✓ | |  | `umgrd` | `CHAR(2)` | Transfer Reason |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

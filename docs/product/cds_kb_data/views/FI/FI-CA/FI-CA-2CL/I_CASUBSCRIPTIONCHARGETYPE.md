@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CASubscriptionChargeType` | ✓ | |  | `cast( left( dd07l.domvalue_l,2 ) as charge_type_kk preserving type )` |  |  |
+| `CASubscriptionChargeType` | ✓ | |  | `cast( left( dd07l.domvalue_l,2 ) as charge_type_kk preserving type )` | `CHAR(2)` | Charge Type |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

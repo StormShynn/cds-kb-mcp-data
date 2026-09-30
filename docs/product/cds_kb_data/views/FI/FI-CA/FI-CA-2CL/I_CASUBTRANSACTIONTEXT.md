@@ -40,11 +40,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAApplicationArea` | ✓ | |  | `applk` |  |  |
-| `CAMainTransaction` | ✓ | |  | `hvorg` |  |  |
-| `CASubTransaction` | ✓ | |  | `tvorg` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CASubTransactionName` |  | |  | `cast( txt30 as tvorg_text_kk preserving type )` |  |  |
+| `CAApplicationArea` | ✓ | |  | `applk` | `CHAR(1)` | Application Area |
+| `CAMainTransaction` | ✓ | |  | `hvorg` | `CHAR(4)` | Main Transaction for Line Item |
+| `CASubTransaction` | ✓ | |  | `tvorg` | `CHAR(4)` | Subtransaction for Document Item |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CASubTransactionName` |  | |  | `cast( txt30 as tvorg_text_kk preserving type )` | `CHAR(30)` | Text of Subtransaction |
 | `_ApplArea` |  | |  | `_CAApplicationArea` |  |  |
 | `_MainTransaction` |  | |  | `_CAMainTransaction` |  |  |
 | `_CAApplicationArea` | | ✓ | | | | |

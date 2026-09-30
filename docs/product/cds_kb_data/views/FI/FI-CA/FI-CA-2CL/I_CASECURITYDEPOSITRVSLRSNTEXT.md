@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CASecurityDepositReversalRsn` | ✓ | |  | `rev_reason` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CASecurityDepositRvslRsnText` |  | |  | `cast( text as rev_reason_txt_kk )` |  |  |
+| `CASecurityDepositReversalRsn` | ✓ | |  | `rev_reason` | `CHAR(4)` | Reversal reason for security deposit |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CASecurityDepositRvslRsnText` |  | |  | `cast( text as rev_reason_txt_kk )` | `CHAR(40)` | Reversal Reason Description |
 | `_CASecurityDepositReversalRsn` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

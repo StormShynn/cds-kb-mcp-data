@@ -39,12 +39,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ContractAccountCategory` | ✓ | |  | `vktyp` |  |  |
-| `CAApplicationArea` | ✓ | |  | `applk` |  |  |
-| `CAOnlyOneBPIsAllowed` |  | |  | `xgein` |  |  |
-| `CAOnlyOneContractIsAllowed` |  | |  | `xvein` |  |  |
-| `CAIsCollectiveBillAccount` |  | |  | `samrg` |  |  |
-| `CAIsOneTimeAccount` |  | |  | `cpd` |  |  |
+| `ContractAccountCategory` | ✓ | |  | `vktyp` | `CHAR(2)` | Contract Account Category |
+| `CAApplicationArea` | ✓ | |  | `applk` | `CHAR(1)` | Application Area |
+| `CAOnlyOneBPIsAllowed` |  | |  | `xgein` | `CHAR(1)` | Only One Business Partner Allowed |
+| `CAOnlyOneContractIsAllowed` |  | |  | `xvein` | `CHAR(1)` | Only One Contract Permitted |
+| `CAIsCollectiveBillAccount` |  | |  | `samrg` | `CHAR(1)` | Contract Account is Collective Bill Account |
+| `CAIsOneTimeAccount` |  | |  | `cpd` | `CHAR(1)` | Multiple contract account holders possible |
 | `_ApplArea` |  | |  | `_CAApplicationArea` |  |  |
 | `_CAApplicationArea` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |

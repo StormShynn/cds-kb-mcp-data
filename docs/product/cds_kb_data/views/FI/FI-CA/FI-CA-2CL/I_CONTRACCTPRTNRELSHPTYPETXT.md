@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CARelationshipOfBPToContrAcct` | ✓ | |  | `vkpbz` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CARelshpOfBPToContrAcctName` |  | |  | `text` |  |  |
+| `CARelationshipOfBPToContrAcct` | ✓ | |  | `vkpbz` | `CHAR(2)` | Relationship of Business Partner to Contract Account |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CARelshpOfBPToContrAcctName` |  | |  | `text` | `CHAR(20)` | Text (20 Characters) |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

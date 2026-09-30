@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `langu` |  |  |
-| `CAProviderContractSender` | ✓ | |  | `sender` |  |  |
-| `CAProviderContractSenderText` |  | |  | `text` |  |  |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language ID |
+| `CAProviderContractSender` | ✓ | |  | `sender` | `CHAR(3)` | Provider Contract Sender |
+| `CAProviderContractSenderText` |  | |  | `text` | `CHAR(50)` | Sender Name |
 | `_ProviderContractSender` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

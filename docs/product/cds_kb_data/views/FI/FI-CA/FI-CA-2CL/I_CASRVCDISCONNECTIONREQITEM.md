@@ -39,15 +39,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAServiceDisconnectionRequest` | ✓ | |  | `dscpnr` |  |  |
-| `CADocumentNumber` | ✓ | |  | `opbel` |  |  |
-| `CARepetitionItemNumber` | ✓ | |  | `opupw` |  |  |
-| `CABPItemNumber` | ✓ | |  | `opupk` |  |  |
-| `CASubItemNumber` | ✓ | |  | `opupz` |  |  |
-| `CADunningAmount` |  | |  | `mbetm` |  |  |
-| `TransactionCurrency` |  | |  | `waers` |  |  |
-| `CADunningAmountInLocalCurrency` |  | |  | `mbetc` |  |  |
-| `LocalCurrency` |  | |  | `wersc` |  |  |
+| `CAServiceDisconnectionRequest` | ✓ | |  | `dscpnr` | `CHAR(10)` | Number of Disconnection Request |
+| `CADocumentNumber` | ✓ | |  | `opbel` | `CHAR(12)` | Number of a FI-CA Document |
+| `CARepetitionItemNumber` | ✓ | |  | `opupw` | `NUMC(3)` | Repetition Item in FI-CA Document |
+| `CABPItemNumber` | ✓ | |  | `opupk` | `NUMC(4)` | Item Number in FI-CA Document |
+| `CASubItemNumber` | ✓ | |  | `opupz` | `NUMC(3)` | Subitem for a Partial Clearing in Document |
+| `CADunningAmount` |  | |  | `mbetm` | `CURR(13)` | Dunned Amount in Transaction Currency |
+| `TransactionCurrency` |  | |  | `waers` | `CUKY(5)` | Currency Key |
+| `CADunningAmountInLocalCurrency` |  | |  | `mbetc` | `CURR(13)` | Dunning notice amount in local currency |
+| `LocalCurrency` |  | |  | `wersc` | `CUKY(5)` | Currency Key |
 | `_TransactionCurrency` | | ✓ | | | | |
 | `_LocalCurrency` | | ✓ | | | | |
 | `_CADocumentBPItem_2` | | ✓ | | | | |

@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CASubstituteDocumentCategory` | ✓ | |  | `cast( left( domvalue_l,1 ) as abwtp_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CASubstituteDocCategoryName` |  | |  | `cast( ddtext as abwtp_text_kk preserving type )` |  |  |
+| `CASubstituteDocumentCategory` | ✓ | |  | `cast( left( domvalue_l,1 ) as abwtp_kk preserving type )` | `CHAR(1)` | Category of substitute document in FI-CA |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CASubstituteDocCategoryName` |  | |  | `cast( ddtext as abwtp_text_kk preserving type )` | `CHAR(60)` | Description for Substitute Document Type |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

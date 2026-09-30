@@ -38,14 +38,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAToleranceGroup` | ✓ | |  | `togru` |  |  |
-| `Currency` |  | |  | `waers` |  |  |
-| `CAMaxPaytDiffForExpense` |  | |  | `difbh` |  |  |
-| `CAMaxPaytDiffForRevenue` |  | |  | `difbs` |  |  |
-| `CAMaxPaytDiffForExpenseInPct` |  | |  | `difph` |  |  |
-| `CAMaxPaytDiffForRevenueInPct` |  | |  | `difps` |  |  |
-| `CAPaytNtcIsCreatedForUndrpayt` |  | |  | `xundp` |  |  |
-| `CAPaytNtcIsCreatedForOvrpayt` |  | |  | `xovrp` |  |  |
+| `CAToleranceGroup` | ✓ | |  | `togru` | `CHAR(4)` | Tolerance Group |
+| `Currency` |  | |  | `waers` | `CUKY(5)` | Currency Key |
+| `CAMaxPaytDiffForExpense` |  | |  | `difbh` | `CURR(7)` | Maximum payment difference for expense |
+| `CAMaxPaytDiffForRevenue` |  | |  | `difbs` | `CURR(7)` | Maximum payment difference for revenue |
+| `CAMaxPaytDiffForExpenseInPct` |  | |  | `difph` | `DEC(3)` | Maximum expense permitted from payment differences |
+| `CAMaxPaytDiffForRevenueInPct` |  | |  | `difps` | `DEC(3)` | Maximum allowable revenues from payment differences |
+| `CAPaytNtcIsCreatedForUndrpayt` |  | |  | `xundp` | `CHAR(1)` | Create payment notice for underpayment |
+| `CAPaytNtcIsCreatedForOvrpayt` |  | |  | `xovrp` | `CHAR(1)` | Generate payment notice in event of overpayment |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

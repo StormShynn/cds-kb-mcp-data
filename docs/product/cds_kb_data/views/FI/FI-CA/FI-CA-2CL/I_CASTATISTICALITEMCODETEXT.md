@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAStatisticalItemCode` | ✓ | |  | `cast( left( domvalue_l, 1 ) as stakz_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAStatisticalItemCodeText` |  | |  | `cast( ddtext as stakz_txt_kk preserving type )` |  |  |
+| `CAStatisticalItemCode` | ✓ | |  | `cast( left( domvalue_l, 1 ) as stakz_kk preserving type )` | `CHAR(1)` | Type of Statistical Line Item |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAStatisticalItemCodeText` |  | |  | `cast( ddtext as stakz_txt_kk preserving type )` | `CHAR(60)` | Statistical Key Description |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

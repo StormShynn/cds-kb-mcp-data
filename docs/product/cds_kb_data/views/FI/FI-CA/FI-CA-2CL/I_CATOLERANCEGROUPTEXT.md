@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAToleranceGroup` | ✓ | |  | `togru` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAToleranceGroupName` |  | |  | `txt40` |  |  |
+| `CAToleranceGroup` | ✓ | |  | `togru` | `CHAR(4)` | Tolerance Group for Contract Account |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAToleranceGroupName` |  | |  | `txt40` | `CHAR(40)` | Text, Length 40 |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

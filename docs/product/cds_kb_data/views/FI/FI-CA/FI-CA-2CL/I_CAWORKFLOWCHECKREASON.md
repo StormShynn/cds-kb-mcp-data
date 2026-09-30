@@ -39,12 +39,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAWorkflowCheckReason` | ✓ | |  | `c4eye` |  |  |
-| `CAPaymentIsForbiddenBfrConf` |  | |  | `xspza` |  |  |
-| `CAClearingIsForbiddenBfrConf` |  | |  | `xspag` |  |  |
-| `CADunningIsForbiddenBfrConf` |  | |  | `xspma` |  |  |
-| `CAIntrstIsForbiddenBfrConf` |  | |  | `xspzi` |  |  |
-| `CADocChangeIsForbiddenBfrConf` |  | |  | `xblae` |  |  |
+| `CAWorkflowCheckReason` | ✓ | |  | `c4eye` | `CHAR(2)` | Check Reason for Workflows Acc. to Dual Control Principle |
+| `CAPaymentIsForbiddenBfrConf` |  | |  | `xspza` | `CHAR(1)` | No Automatic Payments Before Confirmation |
+| `CAClearingIsForbiddenBfrConf` |  | |  | `xspag` | `CHAR(1)` | No Clearing before Confirmation |
+| `CADunningIsForbiddenBfrConf` |  | |  | `xspma` | `CHAR(1)` | No Dunning before Confirmation |
+| `CAIntrstIsForbiddenBfrConf` |  | |  | `xspzi` | `CHAR(1)` | No Interest on Arrears until Confirmed |
+| `CADocChangeIsForbiddenBfrConf` |  | |  | `xblae` | `CHAR(1)` | No Document Changes before Confirmation |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

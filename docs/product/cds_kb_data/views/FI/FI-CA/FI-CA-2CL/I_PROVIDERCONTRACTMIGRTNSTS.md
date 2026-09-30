@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAProviderContractMigrtnStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as migst_kk preserving type )` |  |  |
+| `CAProviderContractMigrtnStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as migst_kk preserving type )` | `CHAR(1)` | Migration Status |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CASrvcReconncnReqStatus` | ✓ | |  | `cast( left( domvalue_l, 1 ) as recreq_stat_kk preserving type )` |  |  |
+| `CASrvcReconncnReqStatus` | ✓ | |  | `cast( left( domvalue_l, 1 ) as recreq_stat_kk preserving type )` | `CHAR(1)` | Reconnection Request Status |
 | `_Text` | | ✓ | | | | |
 
 ## Associations
