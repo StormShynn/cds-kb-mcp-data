@@ -7,6 +7,17 @@
 #
 # This repo is private, so there is deliberately no GitHub Pages deploy step
 # here (see update-dashboard.yml for why).
+#
+# Direct-to-main push needs an admin PAT: branch protection on main requires
+# the data-test + mcp-test status checks, and the default GITHUB_TOKEN (the
+# github-actions[bot] identity) has no bypass rights for that — every run
+# failed with "protected branch update failed ... 2 of 2 required status
+# checks are expected" (confirmed failing on every run from ~2026-09-16
+# through 2026-09-30). main has `enforce_admins: false`, so a push
+# authenticated as a repo admin/owner bypasses the requirement instead.
+# HUB_COVERAGE_PAT is a classic PAT (repo scope) or fine-grained PAT
+# (Contents: write on this repo) from an admin/owner account, added once as
+# a repository secret (Settings -> Secrets and variables -> Actions).
 
 name: Check Hub Coverage
 
@@ -40,6 +51,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
+        with:
+          # Falls back to the default GITHUB_TOKEN (github-actions[bot]) if
+          # HUB_COVERAGE_PAT isn't configured yet — same behavior as before
+          # this fix (push still fails against branch protection until the
+          # secret is added; nothing regresses by leaving it unset).
+          token: ${{ secrets.HUB_COVERAGE_PAT || github.token }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v7
