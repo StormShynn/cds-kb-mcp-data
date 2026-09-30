@@ -9,9 +9,21 @@ key_user_ext_status: released
 extensible_key_user: no
 extensible_dev_ext: no
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNTRLSUPLRCONFITEMBASIC')/$value
 semantic_en: "This CDS view provides access to central supplier confirmation item data in a basic format. It represents individual line items within a supplier confirmation document, including pricing information, reference data, and item-level status indicators. This CDS view provides the data to answer the following business questions: What is the confirmed net price for a specific supplier confirmation item? Which supplier confirmation items have been rejected by the supplier? What are the external reference details for a given confirmation item? Which purchase order items are referenced by supplier confirmation items? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Item in Central Supplier Confirmation — CDS view giao diện dựa trên R_CntrlSupplierConfItem."
+keywords:
+  - "item"
+  - "central"
+  - "supplier"
+  - "confirmation"
+  - "cntrl"
+  - "suplr"
+  - "conf"
+  - "unique"
+  - "prmt"
+  - "rpld"
 tags:
   - MM
   - bo:companycode
@@ -27,7 +39,6 @@ tags:
   - pricing
   - purchase-order
   - supplier
-  - metadata-only
 ---
 # I_CNTRLSUPLRCONFITEMBASIC
 
@@ -43,14 +54,14 @@ tags:
 | Extensible (Key User Extensibility) | No — can custom fields be added directly to THIS entity itself via Key User Extensibility (a different question from "used as a data source" above) |
 | Extensible (Developer Extensibility) | No — can custom fields be added directly to THIS entity itself via ABAP Developer Extensibility |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNTRLSUPLRCONFITEMBASIC')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNTRLSUPLRCONFITEMBASIC')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CentralSupplierConfirmation` |  | |  |  | `CHAR(10)` | Central supplier Confirmation Number |
-| `CentralSupplierConfirmationItm` |  | |  |  | `NUMC(5)` | Central Supplier Confirmation Item |
+| `CentralSupplierConfirmation` | ✓ | |  |  | `CHAR(10)` | Central supplier Confirmation Number |
+| `CentralSupplierConfirmationItm` | ✓ | |  |  | `NUMC(5)` | Central Supplier Confirmation Item |
 | `CntrlSuplrConfItemUniqueID` |  | |  |  | `CHAR(15)` | Central Supplier Confirmation Item Unique ID |
 | `CntrlSuplrConfRefPrmtHbRpldPO` |  | |  |  | `CHAR(10)` | Reference Purchase Order |
 | `CntrlSuplrConfRefPrmtHbPOItm` |  | |  |  | `NUMC(5)` | Reference Purchase Order Item |
@@ -62,3 +73,49 @@ tags:
 | `ItemIsRejectedBySupplier` |  | |  |  | `CHAR(1)` | Rejection Indicator |
 | `CntrlSuplrConfAcknNumber` |  | |  |  | `CHAR(20)` | Order Acknowledgment Number |
 | `ProcurementHubSourceSystem` |  | |  |  | `CHAR(10)` | Connected System ID |
+| `_ConfirmationLine` | | ✓ | | | | |
+| `_SupplierConfirmation` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNTRLSUPLRCONFITEMBASIC')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNTRLSUPLRCONFITEMBASIC')/$value)*
+
+```abap
+@EndUserText.label: 'Item in Central Supplier Confirmation'
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.usageType:{
+  serviceQuality: #A,
+  sizeCategory: #L,
+  dataClass: #TRANSACTIONAL
+}
+@VDM.viewType : #BASIC
+@AccessControl.authorizationCheck:#MANDATORY
+@AccessControl.personalData.blocking: #REQUIRED
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@ObjectModel.supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET ]
+
+define view entity I_CntrlSuplrConfItemBasic
+  as select from R_CntrlSupplierConfItem
+  composition of exact one to many I_CntrlSuplrConfLineBasic as _ConfirmationLine
+  association              to parent I_CntrlSuplrConfBasic   as _SupplierConfirmation on $projection.CentralSupplierConfirmation = _SupplierConfirmation.CentralSupplierConfirmation
+
+{
+  key CentralSupplierConfirmation,
+  key CentralSupplierConfirmationItm,
+      CntrlSuplrConfItemUniqueID,
+      CntrlSuplrConfRefPrmtHbRpldPO,
+      CntrlSuplrConfRefPrmtHbPOItm,
+      @Semantics.amount.currencyCode : 'DocumentCurrency'
+      SupplierConfirmedNetPrice,
+      DocumentCurrency,
+      LastChangeDateTime,
+      SuplrConfItemExternalReference,
+      CSupConfExtRefLastChgdDteTme,
+      ItemIsRejectedBySupplier,
+      CntrlSuplrConfAcknNumber,
+      ProcurementHubSourceSystem,
+      /* Associations */
+      _ConfirmationLine,
+      _SupplierConfirmation
+}
+```

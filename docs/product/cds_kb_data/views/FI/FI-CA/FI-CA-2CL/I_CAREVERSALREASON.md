@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAReversalReason` | ✓ | |  | `rvrsn` |  |  |
+| `CAReversalReason` | ✓ | |  | `rvrsn` | `CHAR(2)` | Posting Document Reversal Reason |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

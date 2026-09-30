@@ -9,9 +9,14 @@ key_user_ext_status: released
 extensible_key_user: no
 extensible_dev_ext: no
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CAPAYMENTLOTSTATUS')/$value
 semantic_en: "Payment Lot Status"
+semantic_vi: "Payment Lot Status — CDS view giao diện dựa trên dd07l."
+keywords:
+  - "payment"
+  - "lot"
+  - "status"
 tags:
   - FI
   - component:FI-CA-2CL
@@ -21,7 +26,6 @@ tags:
   - lob:cross_application components
   - lob:finance
   - payment
-  - metadata-only
 ---
 # I_CAPAYMENTLOTSTATUS
 
@@ -37,10 +41,55 @@ tags:
 | Extensible (Key User Extensibility) | No — can custom fields be added directly to THIS entity itself via Key User Extensibility (a different question from "used as a data source" above) |
 | Extensible (Developer Extensibility) | No — can custom fields be added directly to THIS entity itself via ABAP Developer Extensibility |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CAPAYMENTLOTSTATUS')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CAPAYMENTLOTSTATUS')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPaymentLotStatus` |  | |  |  | `CHAR(1)` | Status of the payment lot |
+| `CAPaymentLotStatus` | ✓ | |  | `cast ( left( dd07l.domvalue_l, 1 ) as stazs_kk preserving type )` | `CHAR(1)` | Status of the payment lot |
+| `_Text` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_Text` | `I_CAPaymentLotStatusText` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CAPAYMENTLOTSTATUS')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CAPAYMENTLOTSTATUS')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+
+@EndUserText.label: 'Payment Lot Status'
+
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel: { modelingPattern: #NONE,
+                representativeKey: 'CAPaymentLotStatus',
+                supportedCapabilities: [ #CDS_MODELING_ASSOCIATION_TARGET,
+                                         #CDS_MODELING_DATA_SOURCE,
+                                         #SQL_DATA_SOURCE ],
+                usageType: { dataClass: #CUSTOMIZING,
+                             serviceQuality: #A,
+                             sizeCategory: #S } }
+
+@VDM.viewType: #BASIC
+
+define view entity I_CAPaymentLotStatus
+  as select from dd07l  
+
+  association [0..*] to I_CAPaymentLotStatusText as _Text on $projection.CAPaymentLotStatus = _Text.CAPaymentLotStatus
+
+{
+  @ObjectModel.text.association: '_Text'
+  key cast ( left( dd07l.domvalue_l, 1 ) as stazs_kk preserving type ) as CAPaymentLotStatus,
+      
+      _Text
+}
+where
+      domname  = 'STAZS_KK'
+  and as4local = 'A'
+```

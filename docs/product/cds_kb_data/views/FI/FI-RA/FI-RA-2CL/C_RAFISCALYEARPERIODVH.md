@@ -9,9 +9,18 @@ key_user_ext_status: released
 extensible_key_user: no
 extensible_dev_ext: no
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RAFISCALYEARPERIODVH')/$value
 semantic_en: "RA Fiscal Year Period"
+semantic_vi: "RA Fiscal Year Period — CDS view tiêu dùng dựa trên I_FiscalYearPeriodForLedger."
+keywords:
+  - "fiscal"
+  - "year"
+  - "period"
+  - "company"
+  - "code"
+  - "ledger"
+  - "variant"
 tags:
   - FI
   - bo:companycode
@@ -20,7 +29,6 @@ tags:
   - FI-RA
   - FI-RA-2CL
   - lob:finance
-  - metadata-only
 ---
 # C_RAFISCALYEARPERIODVH
 
@@ -36,16 +44,16 @@ tags:
 | Extensible (Key User Extensibility) | No — can custom fields be added directly to THIS entity itself via Key User Extensibility (a different question from "used as a data source" above) |
 | Extensible (Developer Extensibility) | No — can custom fields be added directly to THIS entity itself via ABAP Developer Extensibility |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RAFISCALYEARPERIODVH')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RAFISCALYEARPERIODVH')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `Ledger` |  | |  |  | `CHAR(2)` | Ledger |
-| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
-| `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `Ledger` | ✓ | |  |  | `CHAR(2)` | Ledger |
+| `FiscalYear` | ✓ | |  |  | `NUMC(4)` | Fiscal Year |
+| `FiscalPeriod` | ✓ | |  |  | `NUMC(3)` | Fiscal Period |
 | `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
 | `FiscalPeriodStartDate` |  | |  |  | `DATS(8)` | Start Date of Fiscal Period |
 | `FiscalPeriodEndDate` |  | |  |  | `DATS(8)` | End Date of Fiscal Period |
@@ -55,3 +63,86 @@ tags:
 | `NextFiscalPeriod` |  | |  |  | `NUMC(3)` | Next Fiscal Period |
 | `NextFiscalPeriodFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Next Fiscal Period |
 | `FiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year + Fiscal Period |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Ledger` | | ✓ | | | | |
+| `_FiscalPeriodStartDate` | | ✓ | | | | |
+| `_FiscalYearForLedger` | | ✓ | | | | |
+| `_Text` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RAFISCALYEARPERIODVH')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RAFISCALYEARPERIODVH')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@AccessControl.personalData.blocking: #NOT_REQUIRED
+
+@ObjectModel: { dataCategory: #VALUE_HELP,
+                representativeKey: 'FiscalPeriod',
+                usageType.dataClass: #CUSTOMIZING,
+                usageType.serviceQuality: #C,
+                usageType.sizeCategory: #L }
+
+@ObjectModel.supportedCapabilities: [ #VALUE_HELP_PROVIDER ]
+@ObjectModel.modelingPattern: #NONE
+
+@VDM.viewType: #CONSUMPTION
+
+@EndUserText.label: 'RA Fiscal Year Period'
+
+@Metadata.ignorePropagatedAnnotations: true
+
+@Search.searchable: true
+@Consumption.ranked: true
+
+define view entity C_RAFiscalYearPeriodVH
+  as select from I_FiscalYearPeriodForLedger
+{
+
+      @Consumption.valueHelpDefinition: [
+        { entity:  { name:    'I_CompanyCodeStdVH',
+                     element: 'CompanyCode' }
+        }]
+      @Search: { defaultSearchElement: true, ranking: #LOW, fuzzinessThreshold: 0.8 }
+      @ObjectModel.foreignKey.association: '_CompanyCode'
+  key CompanyCode,
+
+      @Consumption.valueHelpDefinition: [
+        { entity:  { name:    'I_LedgerStdVH',
+                     element: 'Ledger' }
+        }]
+      @Search: { defaultSearchElement: true, ranking: #LOW, fuzzinessThreshold: 0.8 }  
+      @ObjectModel.foreignKey.association: '_Ledger'
+  key Ledger,
+      
+      
+      @Search: { defaultSearchElement: true, ranking: #LOW, fuzzinessThreshold: 0.8 }
+      @ObjectModel.foreignKey.association: '_FiscalYearForLedger'
+  key FiscalYear,
+  
+      @Search: { defaultSearchElement: true, ranking: #MEDIUM, fuzzinessThreshold: 0.8 }
+  key FiscalPeriod,
+
+      FiscalYearVariant,
+
+      FiscalPeriodStartDate,
+      FiscalPeriodEndDate,
+
+      IsSpecialPeriod,
+
+      FiscalYearStartDate,
+      FiscalYearEndDate,
+
+      NextFiscalPeriod,
+      NextFiscalPeriodFiscalYear,
+      
+      FiscalYearPeriod,
+
+      _CompanyCode,
+      _Ledger,
+      _FiscalPeriodStartDate,
+      _FiscalYearForLedger,
+      _Text
+
+}
+```

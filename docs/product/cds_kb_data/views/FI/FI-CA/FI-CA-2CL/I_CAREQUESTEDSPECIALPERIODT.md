@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CARequestedPeriodForGLTransfer` | ✓ | |  | `cast( left( dd07t.domvalue_l, 2 ) as wnper_kk )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CARequestedPerdForGLTransfText` |  | |  | `cast( ddtext as wnper_text_kk preserving type )` |  |  |
+| `CARequestedPeriodForGLTransfer` | ✓ | |  | `cast( left( dd07t.domvalue_l, 2 ) as wnper_kk )` | `NUMC(2)` | Requested Special Period for Transfer to General Ledger |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CARequestedPerdForGLTransfText` |  | |  | `cast( ddtext as wnper_text_kk preserving type )` | `CHAR(60)` | Description for Wanted Special Period for Transfer to G/L |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

@@ -9,9 +9,23 @@ key_user_ext_status: released
 extensible_key_user: no
 extensible_dev_ext: no
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_INVMTPROJACTLLINEITM2Q')/$value
 semantic_en: "Invmt Proj for Actual Data - Query"
+semantic_vi: "Invmt Proj for Actual Data - Query — CDS view tiêu dùng dựa trên Invmt Proj for Actual Data - Query."
+keywords:
+  - "invmt"
+  - "proj"
+  - "for"
+  - "actual"
+  - "data"
+  - "query"
+  - "ledger"
+  - "company"
+  - "code"
+  - "fiscal"
+  - "year"
+  - "period"
 tags:
   - CO
   - bo:project
@@ -22,7 +36,6 @@ tags:
   - consumption-view
   - lob:controlling
   - lob:finance
-  - metadata-only
 ---
 # C_INVMTPROJACTLLINEITM2Q
 
@@ -38,7 +51,7 @@ tags:
 | Extensible (Key User Extensibility) | No — can custom fields be added directly to THIS entity itself via Key User Extensibility (a different question from "used as a data source" above) |
 | Extensible (Developer Extensibility) | No — can custom fields be added directly to THIS entity itself via ABAP Developer Extensibility |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_INVMTPROJACTLLINEITM2Q')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_INVMTPROJACTLLINEITM2Q')/$value) |
 
 ## Fields
 
@@ -72,9 +85,172 @@ tags:
 | `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
 | `AmountInDisplayCurrency` |  | |  |  | `CURR(23)` | Amount in Display Currency |
 | `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
-| `Quantity` |  | |  |  | `QUAN(23)` | Quantity |
+| `Quantity` |  | |  | `case when BaseUnit is not initial then Quantity else null end` | `QUAN(23)` | Quantity |
 | `ValuationQuantity` |  | |  |  | `QUAN(23)` | Valuation Quantity |
 | `CostSourceUnit` |  | |  |  | `UNIT(3)` | Cost Source Unit |
 | `SourceLedger` |  | |  |  | `CHAR(2)` | Source Ledger |
 | `AccountingDocument` |  | |  |  | `CHAR(10)` | Journal Entry |
 | `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_INVMTPROJACTLLINEITM2Q')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_INVMTPROJACTLLINEITM2Q')/$value)*
+
+```abap
+@VDM.viewType: #CONSUMPTION
+@ObjectModel.modelingPattern:#ANALYTICAL_QUERY
+@ObjectModel.supportedCapabilities:[#ANALYTICAL_QUERY]
+@AccessControl.authorizationCheck: #NOT_ALLOWED
+@AccessControl.personalData.blocking:#REQUIRED
+@ObjectModel.usageType.serviceQuality: #D
+@ObjectModel.usageType.sizeCategory: #XXL
+@ObjectModel.usageType.dataClass: #MIXED
+@Analytics.settings.maxProcessingEffort: #HIGH
+@Metadata.ignorePropagatedAnnotations: true
+@EndUserText.label: 'Invmt Proj for Actual Data - Query'
+
+define transient view entity C_InvmtProjActlLineItm2Q
+  provider contract analytical_query
+  as projection on I_InvmtProjActlLineItmCube as I_InvmtProjActlLineItmCube
+{
+
+  @Consumption.derivation: { lookupEntity: 'I_Ledger',
+    resultElement: 'Ledger', binding: [
+    { targetElement : 'IsLeadingLedger' , type : #CONSTANT, value : 'X' } ]
+   }
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: false, mandatory: true }
+  @UI.textArrangement: #TEXT_LAST
+  Ledger,
+
+  @UI.textArrangement: #TEXT_LAST
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: true, hidden: false}
+  CompanyCode,
+
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @Semantics.fiscal.year: true
+  @UI.textArrangement: #TEXT_LAST
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  FiscalYear,
+
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @UI.textArrangement: #TEXT_LAST
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  LedgerFiscalYear,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @Semantics.fiscal.period: true
+  @UI.textArrangement: #TEXT_LAST
+  FiscalPeriod,
+
+  @Semantics.fiscal.yearPeriod: true
+  @UI.textArrangement: #TEXT_LAST
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  FiscalYearPeriod,
+
+//  @Consumption.filter :{ hidden: true, selectionType: #SINGLE, multipleSelections: true, mandatory: false, defaultValue: 'PR' }
+  @UI.textArrangement: #TEXT_LAST
+  AccountAssignmentType,
+  
+  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: true, defaultValue: 'CCC ' }
+  @AnalyticsDetails.query: {axis: #COLUMNS}
+  @UI.textArrangement: #TEXT_ONLY
+  CurrencyField,
+
+  @Semantics.fiscal.yearVariant: true
+  FiscalYearVariant,
+
+  @UI.textArrangement: #TEXT_LAST
+  //  @Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  ProfitCenter,
+
+  @UI.textArrangement: #TEXT_LAST
+  FunctionalArea,
+
+  @UI.textArrangement: #TEXT_LAST
+  CostCenter,
+
+  @UI.textArrangement: #TEXT_LAST
+  ChartOfAccounts,
+
+  @UI.textArrangement: #TEXT_LAST
+  BusinessTransactionType,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query: {axis: #ROWS}
+  @EndUserText.label: 'Project ID (Simplified)'  
+  @UI.textArrangement: #TEXT_LAST
+  Project,
+
+  @Consumption.filter :{ selectionType: #INTERVAL, multipleSelections: true, mandatory: false }
+  @AnalyticsDetails.query: {axis: #ROWS}
+  @EndUserText.label: 'Project'
+  @UI.textArrangement: #TEXT_LAST
+  ProjectExternalID,
+
+  //@Consumption.filter :{ selectionType: #SINGLE, multipleSelections: true, mandatory: false }
+  @EndUserText.label: 'Project Manager'
+  @UI.textArrangement: #TEXT_LAST
+  ProjectManager,
+
+  @UI.textArrangement: #TEXT_LAST
+  ProcessingStatus,
+
+  @UI.textArrangement: #TEXT_LAST
+  @AnalyticsDetails.query: {axis: #ROWS}
+  WBSElementExternalID,
+
+  @UI.textArrangement: #TEXT_ONLY
+  WBSIsStatisticalWBSElement,
+
+  @UI.textArrangement: #TEXT_LAST
+  Segment,
+
+  @UI.textArrangement: #TEXT_LAST
+  Supplier,
+
+  @UI.textArrangement: #TEXT_LAST
+  Currency,
+
+  @UI.textArrangement: #TEXT_ONLY
+  DebitCreditCode,
+
+  @EndUserText.label: 'Controlling Debit Credit Code'
+  @UI.textArrangement: #TEXT_ONLY
+  ControllingDebitCreditCode,
+
+  @UI.textArrangement: #TEXT_LAST
+  @AnalyticsDetails.query.keyDisplay: #NOT_COMPOUND
+  GLAccount,
+
+  @Aggregation.default: #SUM
+  @Semantics.amount.currencyCode: 'Currency'
+  @EndUserText.label: 'Amount in Display Currency'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  AmountInDisplayCurrency,
+
+  BaseUnit,
+  @Aggregation.default: #SUM
+  @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  case
+    when BaseUnit is not initial
+      then Quantity
+    else null
+  end                                                                      as Quantity,
+
+  @Aggregation.default: #SUM
+  @Semantics.quantity.unitOfMeasure: 'CostSourceUnit'
+  @AnalyticsDetails.query.axis: #COLUMNS
+  ValuationQuantity,
+
+  CostSourceUnit,
+
+  @Consumption.hidden: true
+  SourceLedger,
+  @Consumption.hidden: true
+  AccountingDocument,
+  @Consumption.hidden: true
+  LedgerGLLineItem
+}
+```

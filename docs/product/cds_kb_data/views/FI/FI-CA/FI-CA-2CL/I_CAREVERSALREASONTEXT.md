@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAReversalReason` | ✓ | |  | `rvrsn` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAReversalReasonText` |  | |  | `ltext` |  |  |
+| `CAReversalReason` | ✓ | |  | `rvrsn` | `CHAR(2)` | Posting Document Reversal Reason |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAReversalReasonText` |  | |  | `ltext` | `CHAR(40)` | Long Text |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

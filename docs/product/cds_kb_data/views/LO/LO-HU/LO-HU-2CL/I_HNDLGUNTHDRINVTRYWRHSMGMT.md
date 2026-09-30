@@ -9,9 +9,25 @@ key_user_ext_status: released
 extensible_key_user: no
 extensible_dev_ext: no
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_HNDLGUNTHDRINVTRYWRHSMGMT')/$value
 semantic_en: "This CDS view retrieves general information of the handing unit header for handling units in storage locations managed in Inventory Management or in Warehouse Management. This CDS view provides the data to answer the following business questions: What are the physical characteristics (weight, volume, dimensions) of each handling unit? To which reference document (for example, outbound delivery) are handling unit related? What packaging materials are being used for handling units? Who created or last modified a handling unit and when? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Handling Unit Hdr Invtry and Wrhs Mgmt — CDS view tổng hợp dựa trên I_HandlingUnitHeaderCombined."
+keywords:
+  - "handling"
+  - "unit"
+  - "hdr"
+  - "invtry"
+  - "and"
+  - "wrhs"
+  - "mgmt"
+  - "external"
+  - "warehouse"
+  - "char"
+  - "type"
+  - "hndlg"
+  - "check"
+  - "disabled"
 tags:
   - LO
   - bo:companycode
@@ -24,7 +40,6 @@ tags:
   - LO-HU-2CL
   - lob:logistics general
   - material
-  - metadata-only
 ---
 # I_HNDLGUNTHDRINVTRYWRHSMGMT
 
@@ -40,17 +55,17 @@ tags:
 | Extensible (Key User Extensibility) | No — can custom fields be added directly to THIS entity itself via Key User Extensibility (a different question from "used as a data source" above) |
 | Extensible (Developer Extensibility) | No — can custom fields be added directly to THIS entity itself via ABAP Developer Extensibility |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_HNDLGUNTHDRINVTRYWRHSMGMT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_HNDLGUNTHDRINVTRYWRHSMGMT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `HandlingUnitExternalID` |  | |  |  | `CHAR(20)` | External Handling Unit Identification |
-| `Warehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `HandlingUnitCharUUID` |  | |  |  | `CHAR(32)` | Character field, length 32 |
+| `HandlingUnitExternalID` | ✓ | |  |  | `CHAR(20)` | External Handling Unit Identification |
+| `Warehouse` | ✓ | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `HandlingUnitCharUUID` |  | |  | `cast(HandlingUnitCharUUID as char32)` | `CHAR(32)` | Character field, length 32 |
 | `HandlingUnitExternalIdType` |  | |  |  | `CHAR(1)` | Type of External Handling Unit Identifier |
-| `HndlgUnitExtIDCheckIsDisabled` |  | |  |  | `CHAR(1)` | Indicator if Handling Unit External ID Check is disabled |
+| `HndlgUnitExtIDCheckIsDisabled` |  | |  | `cast( '' as lohum_hu_extid_check_disabled preserving type )` | `CHAR(1)` | Indicator if Handling Unit External ID Check is disabled |
 | `Plant` |  | |  |  | `CHAR(4)` | Plant |
 | `StorageLocation` |  | |  |  | `CHAR(4)` | Storage Location |
 | `ShippingPoint` |  | |  |  | `CHAR(4)` | Shipping Point / Receiving Point |
@@ -77,12 +92,12 @@ tags:
 | `HandlingUnitHeight` |  | |  |  | `QUAN(13)` | Height |
 | `UnitOfMeasureDimension` |  | |  |  | `UNIT(3)` | Unit of Dimension for Length/Width/Height |
 | `HandlingUnitPackingObjectType` |  | |  |  | `CHAR(2)` | Packing Object |
-| `HandlingUnitReferenceDocument` |  | |  |  | `CHAR(20)` |  |
+| `HandlingUnitReferenceDocument` |  | |  | `ltrim( HandlingUnitReferenceDocument, '0' )` | `CHAR(20)` |  |
 | `HandlingUnitHasCrossRefDoc` |  | |  |  | `CHAR(1)` | Truth Value: True/False |
 | `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
-| `CreationDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `CreationDateTime` |  | |  | `cast( CreationDateTime as tzntstmps)` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
 | `LastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |
-| `LastChangeDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `LastChangeDateTime` |  | |  | `cast( LastChangeDateTime as tzntstmps)` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
 | `HandlingUnitInternalStatus` |  | |  |  | `CHAR(4)` | Handling Unit Status |
 | `HandlingUnitProcessStatus` |  | |  |  | `CHAR(1)` | Handling Unit Process Status |
 | `SourceHandlingUnitUUID` |  | |  |  | `CHAR(22)` | Worldwide unique key for VEKP-VENUM |
@@ -108,8 +123,169 @@ tags:
 | `EWMHUPostingChangeIsBlocked` |  | |  |  | `CHAR(1)` | Handling Unit Is Blocked for Posting Change |
 | `EWMHUIsBlockedByCustoms` |  | |  |  | `CHAR(1)` | Handling Unit Is Blocked by Customs |
 | `EWMHUIsPackedForShipping` |  | |  |  | `CHAR(1)` | Handling Unit Is Packed for Shipping |
-| `EWMHandlingUnitType` |  | |  |  | `CHAR(4)` | Handling Unit Type |
+| `EWMHandlingUnitType` |  | |  | `HandlingUnitType` | `CHAR(4)` | Handling Unit Type |
 | `HandlingUnitMaxLength` |  | |  |  | `QUAN(15)` | Maximum Packing Length of a Packaging Material |
 | `HandlingUnitMaxWidth` |  | |  |  | `QUAN(15)` | Maximum Allowed Packing Width of a Packaging Material |
 | `HandlingUnitMaxHeight` |  | |  |  | `QUAN(15)` | Maximum Packing Height of a Packaging Material |
 | `HandlingUnitMaxDimensionUnit` |  | |  |  | `UNIT(3)` | Unit of Measure for Maximum Packing Length/Width/Height |
+| `_HandlingUnitItem` | | ✓ | | | | |
+| `_UnitOfMeasureDimension` | | ✓ | | | | |
+| `_VolumeUnit` | | ✓ | | | | |
+| `_VolumeUnitTare` | | ✓ | | | | |
+| `_WeightUnit` | | ✓ | | | | |
+| `_WeightUnitTare` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_HNDLGUNTHDRINVTRYWRHSMGMT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_HNDLGUNTHDRINVTRYWRHSMGMT')/$value)*
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@Search.searchable: true
+@Metadata.ignorePropagatedAnnotations: true
+
+@AccessControl: {
+  authorizationCheck: #MANDATORY,
+  personalData.blocking: #NOT_REQUIRED
+}
+
+@ObjectModel: {
+    usageType: {
+      dataClass:      #MIXED,
+      serviceQuality: #C,
+      sizeCategory:   #XL
+    },
+    supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE ]
+}
+
+@VDM: {
+  viewType: #COMPOSITE,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+
+@EndUserText.label: 'Handling Unit Hdr Invtry and Wrhs Mgmt'
+
+define root view entity I_HndlgUntHdrInvtryWrhsMgmt
+  as select from I_HandlingUnitHeaderCombined
+  composition [0..*] of I_HndlgUntItmInvtryWrhsMgmt as _HandlingUnitItem
+{
+      @Search.defaultSearchElement : true
+      @Search.fuzzinessThreshold : 0.8
+      @Search.ranking : #HIGH
+  key HandlingUnitExternalID,
+  key Warehouse,
+      @Semantics.uuid:true
+      cast(HandlingUnitCharUUID as char32)                        as HandlingUnitCharUUID,
+
+      HandlingUnitExternalIdType,
+      cast( '' as lohum_hu_extid_check_disabled preserving type ) as HndlgUnitExtIDCheckIsDisabled,
+
+      Plant,
+      StorageLocation,
+      ShippingPoint,
+
+      HandlingUnitInternalID,
+      HandlingUnitLowerLevelRefer,
+      ParentHandlingUnitNumber,
+      HighestLevelHandlingUnitNumber,
+
+      PackagingMaterial,
+      PackagingMaterialType,
+
+      @Semantics.quantity.unitOfMeasure: 'WeightUnit'
+      GrossWeight,
+      @Semantics.quantity.unitOfMeasure: 'WeightUnit'
+      NetWeight,
+      @Semantics.quantity.unitOfMeasure: 'WeightUnit'
+      HandlingUnitMaxWeight,
+      WeightUnit,
+
+      @Semantics.quantity.unitOfMeasure: 'HandlingUnitTareWeightUnit'
+      HandlingUnitTareWeight,
+      HandlingUnitTareWeightUnit,
+
+      @Semantics.quantity.unitOfMeasure: 'VolumeUnit'
+      GrossVolume,
+      @Semantics.quantity.unitOfMeasure: 'VolumeUnit'
+      HandlingUnitNetVolume,
+      @Semantics.quantity.unitOfMeasure: 'VolumeUnit'
+      HandlingUnitMaxVolume,
+      VolumeUnit,
+
+      @Semantics.quantity.unitOfMeasure: 'HandlingUnitTareVolumeUnit'
+      HandlingUnitTareVolume,
+      HandlingUnitTareVolumeUnit,
+
+      @Semantics.quantity.unitOfMeasure: 'UnitOfMeasureDimension'
+      HandlingUnitLength,
+      @Semantics.quantity.unitOfMeasure: 'UnitOfMeasureDimension'
+      HandlingUnitWidth,
+      @Semantics.quantity.unitOfMeasure: 'UnitOfMeasureDimension'
+      HandlingUnitHeight,
+      UnitOfMeasureDimension,
+
+      HandlingUnitPackingObjectType,
+      //remove leading zeros
+      ltrim( HandlingUnitReferenceDocument, '0'   )               as HandlingUnitReferenceDocument,
+      HandlingUnitHasCrossRefDoc,
+
+      CreatedByUser,
+      @Semantics.systemDateTime.createdAt: true
+      cast( CreationDateTime as tzntstmps)                        as CreationDateTime,
+      LastChangedByUser,
+      @Semantics.systemDateTime.lastChangedAt: true
+      cast( LastChangeDateTime as tzntstmps)                      as LastChangeDateTime,
+
+      HandlingUnitInternalStatus,
+
+      HandlingUnitProcessStatus,
+
+      SourceHandlingUnitUUID,
+      PackingInstruction,
+      HandlingUnitSecondExternalId,
+
+      // EWM fields
+      StorageType,
+      StorageSection,
+      StorageBin,
+      EWMResource,
+      EWMConsolidationGroup,
+      HandlingUnitIsClosed,
+      // EWM fields Process Oriented Storage Control (POSC)
+      // E.g., After packing create a warehouse task to move a HU from a work center to the staging/goods issue area
+      ExternalStorageProcessStep,
+      StorageProcess,
+      EWMHUProcessStepIsCompleted,
+      // EWM fields HU Process Status
+      EWMHandlingUnitIsPlanned,
+      EWMHandlingUnitIsInStock,
+      EWMHandlingUnitIsUnloaded,
+      EWMHandlingUnitIsLoaded,
+      EWMTranspUnitIsAssigned,
+      // EWM fields HU Blocked Status
+      EWMHUContentChangeIsBlocked,
+      EWMHUMovementChangeIsBlocked,
+      EWMHUAttributeChangeIsBlocked,
+      EWMHUPostingChangeIsBlocked,
+      EWMHUIsBlockedByCustoms,
+      EWMHUIsPackedForShipping,
+
+      HandlingUnitType                                            as EWMHandlingUnitType,
+
+      @Semantics.quantity.unitOfMeasure: 'HandlingUnitMaxDimensionUnit'
+      HandlingUnitMaxLength,
+      @Semantics.quantity.unitOfMeasure: 'HandlingUnitMaxDimensionUnit'
+      HandlingUnitMaxWidth,
+      @Semantics.quantity.unitOfMeasure: 'HandlingUnitMaxDimensionUnit'
+      HandlingUnitMaxHeight,
+      HandlingUnitMaxDimensionUnit,
+
+      /* Associations */
+      _HandlingUnitItem,
+      _UnitOfMeasureDimension,
+      _VolumeUnit,
+      _VolumeUnitTare,
+      _WeightUnit,
+      _WeightUnitTare
+}
+```

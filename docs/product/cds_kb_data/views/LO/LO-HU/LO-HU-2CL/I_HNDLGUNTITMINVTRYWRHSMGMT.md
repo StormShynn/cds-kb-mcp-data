@@ -9,9 +9,22 @@ key_user_ext_status: released
 extensible_key_user: no
 extensible_dev_ext: no
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_HNDLGUNTITMINVTRYWRHSMGMT')/$value
 semantic_en: "This CDS view provides the items contained within handling units in storage locations that are managed in Inventory Management or in Warehouse Management. It exposes detailed information, for example, about materials, quantities, and storage locations for the items packed in a handling unit. This CDS view provides the data to answer the following business questions: What materials and quantities are contained in a specific handling unit, and where are they stored (plant and storage location)? Which sales orders or delivery documents are associated with the items in a handling unit, enabling traceability between physical packaging and order fulfillment? How many serial numbers are associated with items in a handling unit, and what is the serial number profile used for tracking? What is the batch number, expiration date, and goods receipt date for materials contained in handling units, supporting quality management and shelf-life monitoring? Are there any nested handling units or supplementary items within a handling unit?"
+semantic_vi: "Handling Unit Item Invtry and Wrhs Mgmt — CDS view tổng hợp dựa trên I_HandlingUnitItemCombined."
+keywords:
+  - "handling"
+  - "unit"
+  - "item"
+  - "invtry"
+  - "and"
+  - "wrhs"
+  - "mgmt"
+  - "external"
+  - "warehouse"
+  - "stock"
+  - "material"
 tags:
   - LO
   - bo:companycode
@@ -28,7 +41,6 @@ tags:
   - order
   - plan
   - sales-order
-  - metadata-only
 ---
 # I_HNDLGUNTITMINVTRYWRHSMGMT
 
@@ -44,20 +56,20 @@ tags:
 | Extensible (Key User Extensibility) | No — can custom fields be added directly to THIS entity itself via Key User Extensibility (a different question from "used as a data source" above) |
 | Extensible (Developer Extensibility) | No — can custom fields be added directly to THIS entity itself via ABAP Developer Extensibility |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_HNDLGUNTITMINVTRYWRHSMGMT')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_HNDLGUNTITMINVTRYWRHSMGMT')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `HandlingUnitExternalID` |  | |  |  | `CHAR(20)` | External Handling Unit Identification |
-| `Warehouse` |  | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
-| `StockItemUUID` |  | |  |  | `RAW(16)` | GUID Stock Item |
+| `HandlingUnitExternalID` | ✓ | |  |  | `CHAR(20)` | External Handling Unit Identification |
+| `Warehouse` | ✓ | |  |  | `CHAR(4)` | Warehouse Number/Warehouse Complex |
+| `StockItemUUID` | ✓ | |  |  | `RAW(16)` | GUID Stock Item |
 | `HandlingUnitItem` |  | |  |  | `NUMC(6)` | Handling Unit Item |
 | `Material` |  | |  |  | `CHAR(40)` | Material Number |
 | `HandlingUnitInternalID` |  | |  |  | `CHAR(10)` | Internal Handling Unit Number |
 | `HandlingUnitTypeOfContent` |  | |  |  | `CHAR(1)` | Type of Handling-unit Item Content |
-| `HandlingUnitNestedExternalID` |  | |  |  | `CHAR(20)` | External Handling Unit Identification |
+| `HandlingUnitNestedExternalID` |  | |  | `cast( '00000000000000000000' as exidv)` | `CHAR(20)` | External Handling Unit Identification |
 | `HandlingUnitReferenceDocument` |  | |  |  | `CHAR(10)` | Delivery |
 | `HandlingUnitRefDocumentItem` |  | |  |  | `CHAR(10)` |  |
 | `HandlingUnitQuantity` |  | |  |  | `QUAN(15)` | Base Quantity Packed in the Handling Unit Item |
@@ -75,5 +87,99 @@ tags:
 | `SerialNumberProfile` |  | |  |  | `CHAR(4)` | Serial Number Profile |
 | `InventorySpecialStockType` |  | |  |  | `CHAR(1)` | Special Stock Indicator |
 | `SpecialStockNumber` |  | |  |  | `CHAR(16)` | Special Stock Number |
-| `SpecialStockIdfgSalesOrder` |  | |  |  | `CHAR(10)` | Sales order number of valuated sales order stock |
-| `SpecialStockIdfgSalesOrderItem` |  | |  |  | `NUMC(6)` | Sales Order Item of Valuated Sales Order Stock |
+| `SpecialStockIdfgSalesOrder` |  | |  | `cast( '0000000000' as mat_kdauf )` | `CHAR(10)` | Sales order number of valuated sales order stock |
+| `SpecialStockIdfgSalesOrderItem` |  | |  | `cast( '000000' as mat_kdpos )` | `NUMC(6)` | Sales Order Item of Valuated Sales Order Stock |
+| `_HandlingUnitHeader` | | ✓ | | | | |
+| `_HandlingUnitItemSrlNo` | | ✓ | | | | |
+| `_HandlingUnitAltUnitOfMeasure` | | ✓ | | | | |
+| `_HandlingUnitQuantityUnit` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_HNDLGUNTITMINVTRYWRHSMGMT')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_HNDLGUNTITMINVTRYWRHSMGMT')/$value)*
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@Search.searchable: true
+@Metadata.ignorePropagatedAnnotations: true
+
+@AccessControl: {
+  authorizationCheck: #MANDATORY,
+  personalData.blocking: #NOT_REQUIRED
+}
+
+@ObjectModel: {
+    usageType: {
+      dataClass:      #MIXED,
+      serviceQuality: #C,
+      sizeCategory:   #XL
+    },
+    supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE ]
+}
+
+@VDM: {
+  viewType: #COMPOSITE,
+  lifecycle.contract.type: #PUBLIC_LOCAL_API
+}
+
+@EndUserText.label: 'Handling Unit Item Invtry and Wrhs Mgmt'
+
+define view entity I_HndlgUntItmInvtryWrhsMgmt
+  as select from I_HandlingUnitItemCombined
+  association to parent I_HndlgUntHdrInvtryWrhsMgmt as _HandlingUnitHeader on  $projection.HandlingUnitExternalID = _HandlingUnitHeader.HandlingUnitExternalID
+                                                                           and $projection.Warehouse              = _HandlingUnitHeader.Warehouse
+  composition of exact one to many I_HUItmSrlNmbrInvtryWrhsMgmt as _HandlingUnitItemSrlNo
+{
+      /* start suppress warning shlporigin_not_inherited */
+
+      @Search.defaultSearchElement : true
+      @Search.fuzzinessThreshold : 0.8
+      @Search.ranking : #HIGH
+  key HandlingUnitExternalID,
+  key Warehouse,
+  key StockItemUUID,
+
+      HandlingUnitItem,
+      Material,
+      HandlingUnitInternalID,
+      HandlingUnitTypeOfContent,
+      cast( '00000000000000000000' as exidv) as HandlingUnitNestedExternalID,
+      HandlingUnitReferenceDocument,
+      HandlingUnitRefDocumentItem,
+
+      @Semantics.quantity.unitOfMeasure: 'HandlingUnitQuantityUnit'
+      HandlingUnitQuantity,
+      HandlingUnitQuantityUnit,
+      HandlingUnitAltUnitOfMeasure,
+
+
+      MaterialName,
+
+      Batch,
+
+      Plant,
+      StorageLocation,
+
+      ShelfLifeExpirationDate,
+      HandlingUnitGoodsReceiptDate,
+
+      CountryOfOrigin,
+
+      HandlingUnitNrOfAuxPackgMat,
+
+      HandlingUnitNumberOfSerialNumb,
+      SerialNumberProfile,
+
+      InventorySpecialStockType,
+      SpecialStockNumber,
+      cast( '0000000000' as mat_kdauf )      as SpecialStockIdfgSalesOrder,
+      cast( '000000' as mat_kdpos )          as SpecialStockIdfgSalesOrderItem,
+
+      /* Associations */
+      _HandlingUnitHeader,
+      _HandlingUnitItemSrlNo,
+      _HandlingUnitAltUnitOfMeasure,
+      _HandlingUnitQuantityUnit
+      /* end suppress warning shlporigin_not_inherited */
+}
+```

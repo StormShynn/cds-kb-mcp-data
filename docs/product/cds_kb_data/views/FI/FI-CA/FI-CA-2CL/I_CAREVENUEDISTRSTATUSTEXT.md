@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CARevenueDistributionStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as rdstat_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CARevenueDistributionStatusTxt` |  | |  | `cast( ddtext as rdstat_text_kk preserving type )` |  |  |
+| `CARevenueDistributionStatus` | ✓ | |  | `cast( left( dd07t.domvalue_l, 1 ) as rdstat_kk preserving type )` | `CHAR(1)` | Status Revenue Distribution |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CARevenueDistributionStatusTxt` |  | |  | `cast( ddtext as rdstat_text_kk preserving type )` | `CHAR(60)` | Description for Status Revenue Distribution |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

@@ -9,11 +9,20 @@ key_user_ext_status: released
 extensible_key_user: yes
 extensible_dev_ext: no
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_STOCKTRANSPORTORDERITEM_2')/$value
 semantic_en: "Item in Stock Transport Order"
+semantic_vi: "Item in Stock Transport Order — CDS view cơ bản (transactional data) dựa trên R_StockTransportOrderItem."
 keywords:
   - "Item in Stock Transport Order"
+  - "item"
+  - "stock"
+  - "transport"
+  - "order"
+  - "unique"
+  - "text"
+  - "document"
+  - "currency"
 tags:
   - MM
   - bo:inventory
@@ -25,7 +34,6 @@ tags:
   - MM-PUR-PO-2CL
   - order
   - stock
-  - metadata-only
 ---
 # I_STOCKTRANSPORTORDERITEM_2
 
@@ -36,19 +44,19 @@ tags:
 | App Component | `MM-PUR-PO-2CL` |
 | Software Component | `SAPSCORE` |
 | Release State | Released |
-| Release State (Developer Extensibility) | Released — separate from "Release State" above; see [dev-ext check procedure](https://github.com/StormShynn/cds-kb-data-kit/blob/main/docs/product/cds_kb_data/hook/quy-trinh-check-cds-released-developer-extensibility.md) before `association to`/`select from` this entity in custom ABAP Developer Extensibility CDS views |
+| Release State (Developer Extensibility) | Released — separate from "Release State" above; see [dev-ext check procedure](https://github.com/StormShynn/cds-kb-mcp-data-kit/blob/main/docs/product/cds_kb_data/hook/quy-trinh-check-cds-released-developer-extensibility.md) before `association to`/`select from` this entity in custom ABAP Developer Extensibility CDS views |
 | Release State (Key User Extensibility) | Released — can this entity be used as a data source when building a new custom CDS view via the no-code/low-code "Custom CDS Views" app; independent from the Developer Extensibility row above |
 | Extensible (Key User Extensibility) | Yes — can custom fields be added directly to THIS entity itself via Key User Extensibility (a different question from "used as a data source" above) |
 | Extensible (Developer Extensibility) | No — can custom fields be added directly to THIS entity itself via ABAP Developer Extensibility |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_STOCKTRANSPORTORDERITEM_2')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_STOCKTRANSPORTORDERITEM_2')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `StockTransportOrder` |  | |  |  | `CHAR(10)` | Stock Transport Order |
-| `StockTransportOrderItem` |  | |  |  | `NUMC(5)` | Stock Transport Order Item |
+| `StockTransportOrder` | ✓ | |  |  | `CHAR(10)` | Stock Transport Order |
+| `StockTransportOrderItem` | ✓ | |  |  | `NUMC(5)` | Stock Transport Order Item |
 | `STOItemUniqueID` |  | |  |  | `CHAR(15)` | Unique Item ID of Stock Transport Order |
 | `StockTransportOrderItemText` |  | |  |  | `CHAR(40)` | Item Text of Stock Transport Order |
 | `DocumentCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
@@ -95,7 +103,7 @@ tags:
 | `ItemVolume` |  | |  |  | `QUAN(13)` | Volume |
 | `ItemNetWeight` |  | |  |  | `QUAN(13)` | Net Weight |
 | `ItemGrossWeight` |  | |  |  | `QUAN(13)` | Gross Weight |
-| `OrderPriceUnitToOrderUnitNmrtr` |  | |  |  | `DEC(5)` | Quantity Conversion Numerator |
+| `OrderPriceUnitToOrderUnitNmrtr` |  | |  | `cast (OrderPriceUnitToOrderUnitNmrtr as vdm_ordprcunittoorderunitnmrtr preserving type )` | `DEC(5)` | Quantity Conversion Numerator |
 | `OrdPriceUnitToOrderUnitDnmntr` |  | |  |  | `DEC(5)` | Denominator for Conv. of Order Price Unit into Order Unit |
 | `TaxCode` |  | |  |  | `CHAR(2)` | Tax on Sales/Purchases Code |
 | `TaxJurisdiction` |  | |  |  | `CHAR(15)` | Tax Jurisdiction |
@@ -119,3 +127,267 @@ tags:
 | `SupplierConfirmationControlKey` |  | |  |  | `CHAR(4)` | Confirmation Control Key |
 | `Subcontractor` |  | |  |  | `CHAR(10)` | Supplier to be Supplied/Who is to Receive Delivery |
 | `Customer` |  | |  |  | `CHAR(10)` | Customer |
+| `_DocumentCurrency` | | ✓ | | | | |
+| `_StockTransportOrder` | | ✓ | | | | |
+| `_ProductGroup` | | ✓ | | | | |
+| `_Product` | | ✓ | | | | |
+| `_CompanyCode` | | ✓ | | | | |
+| `_Plant` | | ✓ | | | | |
+| `_StorageLocation` | | ✓ | | | | |
+| `_PurgDocumentItemCategory` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_OrderPriceUnit` | | ✓ | | | | |
+| `_OrderQuantityUnit` | | ✓ | | | | |
+| `_WeightUnit` | | ✓ | | | | |
+| `_VolumeUnit` | | ✓ | | | | |
+| `_IncotermsClassification` | | ✓ | | | | |
+| `_Customer` | | ✓ | | | | |
+| `_Subcontractor` | | ✓ | | | | |
+| `_ManufacturerMaterial` | | ✓ | | | | |
+| `_STOShipping` | | ✓ | | | | |
+| `_STOScheduleLine` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_DocumentCurrency` | `I_Currency` | [0..1] |
+| `_STOItemExtension` | `E_PurchasingDocumentItem` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_STOCKTRANSPORTORDERITEM_2')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_STOCKTRANSPORTORDERITEM_2')/$value)*
+
+```abap
+@VDM: {
+  lifecycle.contract.type: #PUBLIC_LOCAL_API,
+  viewType: #BASIC
+}
+
+@ObjectModel: {
+  sapObjectNodeType:{
+      name: 'StockTransportOrderItem'
+  },
+  usageType: {
+    dataClass:      #TRANSACTIONAL,
+    serviceQuality: #A,
+    sizeCategory:   #L
+  },
+  supportedCapabilities: [ #SEARCHABLE_ENTITY, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET ],
+  representativeKey: 'StockTransportOrderItem',
+  uniqueIdField: 'STOItemUniqueID'
+}
+
+@AccessControl: {
+  authorizationCheck: #MANDATORY,
+  personalData.blocking: #BLOCKED_DATA_EXCLUDED
+}
+
+@EndUserText.label: 'Item in Stock Transport Order'
+
+@Metadata.ignorePropagatedAnnotations:true
+
+@Search.searchable: true
+
+define view entity I_StockTransportOrderItem_2
+  as select from R_StockTransportOrderItem
+  association        to parent I_StockTransportOrder_2 as _StockTransportOrder on  $projection.StockTransportOrder = _StockTransportOrder.StockTransportOrder
+
+  composition [0..1] of I_STOShipping_2                as _STOShipping
+  composition [1..*] of I_STOScheduleLine_2            as _STOScheduleLine
+  association [0..1] to I_Currency                     as _DocumentCurrency    on  $projection.DocumentCurrency = _DocumentCurrency.Currency
+  association [1..1] to E_PurchasingDocumentItem       as _STOItemExtension    on  $projection.StockTransportOrder     = _STOItemExtension.PurchasingDocument
+                                                                               and $projection.StockTransportOrderItem = _STOItemExtension.PurchasingDocumentItem
+
+{
+      //Key
+      @ObjectModel.foreignKey.association: '_StockTransportOrder'
+  key StockTransportOrder,
+      @Search.defaultSearchElement: true
+  key StockTransportOrderItem,
+      STOItemUniqueID,
+      StockTransportOrderItemText,
+      @ObjectModel.foreignKey.association: '_DocumentCurrency'
+      DocumentCurrency,
+      PurchasingDocumentDeletionCode,
+
+      //Product
+      @ObjectModel.foreignKey.association: '_ProductGroup'
+      ProductGroup,
+      @ObjectModel.foreignKey.association: '_Product'
+      Product,
+      ProductTypeCode,
+      ProductType,
+
+      @ObjectModel.foreignKey.association: '_ManufacturerMaterial'
+      ManufacturerMaterial,
+
+      @ObjectModel.foreignKey.association: '_CompanyCode'
+      CompanyCode,
+
+      @ObjectModel.foreignKey.association: '_Plant'
+      Plant,
+
+      @ObjectModel.foreignKey.association: '_StorageLocation'
+      StorageLocation,
+
+
+      @ObjectModel.foreignKey.association: '_OrderQuantityUnit'
+      OrderQuantityUnit, 
+
+      @Semantics.quantity.unitOfMeasure: 'OrderQuantityUnit'
+      OrderQuantity,
+
+      @Semantics.quantity.unitOfMeasure: 'OrderPriceUnit'
+      NetPriceQuantity,
+
+      IsCompletelyDelivered,
+
+      IsFinallyInvoiced,
+
+      GoodsReceiptIsExpected,
+
+      OutwardDeliveryIsComplete,
+
+      InvoiceIsExpected,
+
+      InvoiceIsGoodsReceiptBased,
+      
+      EvaldRcptSettlmtIsAllowed,
+      
+      UnlimitedOverdeliveryIsAllowed,
+
+      OverdelivTolrtdLmtRatioInPct,
+
+      UnderdelivTolrtdLmtRatioInPct,
+
+      GoodsReceiptIsNonValuated,
+
+      RequisitionerName,
+      @ObjectModel.foreignKey.association: '_BaseUnit'
+      BaseUnit,
+
+      @ObjectModel.foreignKey.association: '_PurgDocumentItemCategory'
+      STOItemCategory,
+
+      @ObjectModel.foreignKey.association: '_OrderPriceUnit'
+      OrderPriceUnit,
+      @ObjectModel.foreignKey.association: '_VolumeUnit'
+      ItemVolumeUnit,
+      @ObjectModel.foreignKey.association: '_WeightUnit'
+      ItemWeightUnit,
+
+      PricingDateControl,
+
+      DeliveryDocumentType,
+
+      IssuingStorageLocation,
+
+      IsStatisticalItem,
+
+      PurchasingParentItem,
+
+      IsReturnsItem,
+
+      AccountAssignmentCategory,
+
+      PurchasingInfoRecord,
+
+      @Semantics.amount.currencyCode: 'DocumentCurrency'
+      NetAmount,
+
+      @Semantics.amount.currencyCode: 'DocumentCurrency'
+      EffectiveAmount,
+
+      @Semantics.amount.currencyCode: 'DocumentCurrency'
+      NetPriceAmount,
+
+      @Semantics.quantity.unitOfMeasure: 'ItemVolumeUnit'
+      ItemVolume,
+
+      @Semantics.quantity.unitOfMeasure: 'ItemWeightUnit'
+      ItemNetWeight,
+
+      @Semantics.quantity.unitOfMeasure: 'ItemWeightUnit'
+      ItemGrossWeight,
+
+      cast (OrderPriceUnitToOrderUnitNmrtr as vdm_ordprcunittoorderunitnmrtr preserving type ) as OrderPriceUnitToOrderUnitNmrtr,
+
+      OrdPriceUnitToOrderUnitDnmntr,
+
+      TaxCode,
+
+      TaxJurisdiction,
+
+      TaxCountry,
+
+      TaxDeterminationDate,
+
+      PartialDeliveryIsAllowed,
+      
+      PlannedDeliveryDurationInDays,
+
+      GoodsReceiptDurationInDays,
+
+      @ObjectModel.foreignKey.association: '_IncotermsClassification'
+      IncotermsClassification,
+
+      IncotermsTransferLocation,
+
+      IncotermsLocation1,
+
+      IncotermsLocation2,
+
+      PartialInvoiceDistribution,
+
+      ShippingInstruction,
+
+      InventoryUsabilityCode,
+
+      InventorySpecialStockType,
+
+      PurchasingOrderReason,
+
+      StockTransportOrderType,
+      PurchasingOrganization,
+      PurchasingGroup,
+
+      SupplierConfirmationControlKey,
+      Subcontractor,
+      Customer,
+
+      //Association
+      _StockTransportOrder,
+      _ProductGroup,
+      _Product,
+      _CompanyCode,
+      _Plant,
+      _StorageLocation,
+      _PurgDocumentItemCategory,
+      _BaseUnit,
+      _OrderPriceUnit,
+      _OrderQuantityUnit,
+      _WeightUnit,
+      _VolumeUnit,
+      _IncotermsClassification,
+      _Customer,
+      _Subcontractor,
+      _ManufacturerMaterial,
+      _STOShipping,
+      _STOScheduleLine,
+      _DocumentCurrency
+
+      // Text associations for CustomUI
+      //      _DocumentCurrencyText,
+      //      _ProductGroupText,
+      //      _ProductText,
+      //      _ProductTypeCodeText,
+      //      _OrderQuantityUnitText,
+      //      _BaseUnitText,
+      //      _PurgDocumentItemCategoryText as _STOItemCategoryText,
+      //      _ItemVolumeUnitText,
+      //      _ItemWeightUnitText,
+      //      _AcctAssignmentCategoryText,
+      //      _SupplierConfControlKeyText
+}
+```

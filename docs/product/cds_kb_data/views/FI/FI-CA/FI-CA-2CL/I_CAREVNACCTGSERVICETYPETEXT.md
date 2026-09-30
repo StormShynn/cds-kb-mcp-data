@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CARevenueAccountingServiceType` | ✓ | |  | `service_type` |  |  |
-| `Language` | ✓ | |  | `cast( langu as spras preserving type )` |  |  |
-| `CARevnAcctgServiceTypeText` |  | |  | `text` |  |  |
+| `CARevenueAccountingServiceType` | ✓ | |  | `service_type` | `CHAR(6)` | Service Type for Revenue Accounting |
+| `Language` | ✓ | |  | `cast( langu as spras preserving type )` | `LANG(1)` | Language Key |
+| `CARevnAcctgServiceTypeText` |  | |  | `text` | `CHAR(50)` | Name of Service Types for Revenue Accounting Item |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

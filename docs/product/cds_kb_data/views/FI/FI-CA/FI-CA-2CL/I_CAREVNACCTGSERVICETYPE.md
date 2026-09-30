@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CARevenueAccountingServiceType` | ✓ | |  | `service_type` |  |  |
+| `CARevenueAccountingServiceType` | ✓ | |  | `service_type` | `CHAR(6)` | Service Type for Revenue Accounting |
 | `_CARevnAcctgServiceTypeText` | | ✓ | | | | |
 
 ## Associations

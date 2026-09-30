@@ -18,6 +18,38 @@ variable.
 is set in the `BACKEND_URL` environment variable, and streams the response
 straight back — no transformation.
 
+**Two backends share this domain**, split by path prefix:
+
+- Everything **without** the `/sap-docs` prefix → `BACKEND_URL` (cds-kb-mcp,
+  the CDS view knowledge base — unchanged from before).
+- Everything **under** `/sap-docs/*` → `SAP_DOCS_BACKEND_URL`, with the
+  `/sap-docs` prefix stripped before forwarding (so `/sap-docs/mcp` hits
+  `${SAP_DOCS_BACKEND_URL}/mcp`, `/sap-docs/health` hits
+  `${SAP_DOCS_BACKEND_URL}/health`, etc.) — a second, unrelated MCP server
+  ([mcp-sap-docs](https://github.com/marianfoo/mcp-sap-docs): SAPUI5, CAP,
+  wdi5, ABAP keyword docs, SAP Community search).
+
+  **This repo does not host that server.** `SAP_DOCS_BACKEND_URL` points at
+  its author's own public instance, `https://mcp-sap-docs.marianzeis.de` —
+  third-party infrastructure, not something StormShynn owns or controls.
+  [Unverified] Its uptime, rate limits, and long-term availability cannot be
+  guaranteed from this repo; if it ever goes offline or changes its URL,
+  only this one Worker variable needs updating (same on-reset pattern as
+  `BACKEND_URL` below). A fork of that project
+  (`StormShynn/mcp-sap-docs`, with two extra sources — SAP Accelerator Hub
+  and the Fiori App Reference Library — layered on top) also exists but its
+  own previously-documented hosted endpoint
+  (`sap-docs-extend-mcp.cfapps.ap21.hana.ondemand.com`) was found **dead**
+  (BTP trial reclaimed — same ~90-day rotation issue `cds-kb-mcp` has) when
+  checked on 2026-09-28; deploying that extended fork's own copy would need
+  its own BTP trial (or Render/Fly.io) account, since the `cds-kb-mcp` BTP
+  org already uses its full 4G memory quota (see `../manifest.yml`) with no
+  room for a second app.
+
+  `SAP_DOCS_BACKEND_URL` is optional — if unset, `/sap-docs/*` responds
+  `500 SAP_DOCS_BACKEND_URL is not configured on this Worker.` and the
+  `BACKEND_URL` route is completely unaffected.
+
 Caching is selective:
 
 - **Cached at the edge (Cache API):** `GET/HEAD /health` (10s), `/metrics`
@@ -47,6 +79,10 @@ client -> https://mcp.tringhia.io.vn/mcp -> Worker -> BACKEND_URL/mcp (the live 
 4. Settings -> Domains & Routes -> Add -> Custom Domain ->
    `mcp.tringhia.io.vn`. Cloudflare creates the DNS record automatically
    (requires the domain's nameservers to already point at Cloudflare).
+5. Optional — SAP Docs lookup under `/sap-docs/*`: add `SAP_DOCS_BACKEND_URL`
+   = `https://mcp-sap-docs.marianzeis.de` (Text, not Secret) next to
+   `BACKEND_URL`. Skip this step and `/sap-docs/*` just 500s — the
+   `BACKEND_URL` route keeps working either way.
 
 ## On every BTP trial reset
 
@@ -69,4 +105,20 @@ curl -s -X POST https://mcp.tringhia.io.vn/mcp \
 
 curl -sI https://mcp.tringhia.io.vn/mcp | grep -i cache
 # -> Cache-Control: no-store, CF-Cache-Status: BYPASS or DYNAMIC (never HIT)
+
+# /sap-docs/* — only if SAP_DOCS_BACKEND_URL is configured (step 5 above):
+curl -s https://mcp.tringhia.io.vn/sap-docs/health
+# -> 200 {"status":"healthy","service":"mcp-sap-streamable",...}
+
+curl -s -X POST https://mcp.tringhia.io.vn/sap-docs/mcp \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json, text/event-stream" \
+  -d '{"jsonrpc":"2.0","method":"initialize","params":{"protocolVersion":"2026-06-18","capabilities":{},"clientInfo":{"name":"test","version":"1.0"}},"id":1}'
+# -> 200, an `initialize` result with serverInfo "SAP Docs Streamable HTTP"
 ```
+
+Verified end-to-end locally with `wrangler dev` against the live
+`mcp-sap-docs.marianzeis.de` backend on 2026-09-28: `/sap-docs/health`
+returns 200 and is edge-cacheable, `/sap-docs/mcp` correctly proxies the
+`initialize` JSON-RPC/SSE exchange with `Cache-Control: no-store`, and the
+unprefixed route stays untouched.

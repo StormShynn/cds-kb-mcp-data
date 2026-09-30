@@ -1780,38 +1780,38 @@
     "action": "updated"
   },
   "I_ASSETDEPRECIATIONPHASE": {
-    "appliedAt": "2026-08-10T15:22:28.644Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:32.816Z",
+    "fields": 1,
     "action": "updated"
   },
   "I_ASSETDEPRECIATIONPHASETEXT": {
-    "appliedAt": "2026-08-10T15:22:28.875Z",
+    "appliedAt": "2026-09-30T11:54:33.024Z",
     "fields": 3,
     "action": "updated"
   },
   "I_ASSETDEPRECIATIONTYPE": {
-    "appliedAt": "2026-08-10T15:22:29.099Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:33.264Z",
+    "fields": 1,
     "action": "updated"
   },
   "I_ASSETDEPRECIATIONTYPETEXT": {
-    "appliedAt": "2026-08-10T15:22:29.304Z",
+    "appliedAt": "2026-09-30T11:54:33.489Z",
     "fields": 3,
     "action": "updated"
   },
   "I_BUDGETCOSTCENTER": {
-    "appliedAt": "2026-08-10T15:22:29.533Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:33.760Z",
+    "fields": 4,
     "action": "updated"
   },
   "I_BUDGETCOSTCENTERRPTGCUBE": {
-    "appliedAt": "2026-08-10T15:22:29.724Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:34.015Z",
+    "fields": 104,
     "action": "updated"
   },
   "I_BUDGETGLACCTHIERGROUPT": {
-    "appliedAt": "2026-08-10T15:22:29.937Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:34.220Z",
+    "fields": 5,
     "action": "updated"
   },
   "I_BUSINESSPARTNERCUSTOMERDEX": {
@@ -1905,8 +1905,8 @@
     "action": "updated"
   },
   "I_CAADDLBANKCLEARINGACCOUNT": {
-    "appliedAt": "2026-08-10T15:22:34.059Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:34.437Z",
+    "fields": 4,
     "action": "updated"
   },
   "I_CABANKCLEARINGACCOUNT": {
@@ -2025,23 +2025,23 @@
     "action": "updated"
   },
   "I_CEPUCOHDRDISTRBASIC": {
-    "appliedAt": "2026-08-10T15:22:39.212Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:35.389Z",
+    "fields": 39,
     "action": "updated"
   },
   "I_CEPUCOHDRDISTRPARTNERBASIC": {
-    "appliedAt": "2026-08-10T15:22:39.404Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:35.597Z",
+    "fields": 9,
     "action": "updated"
   },
   "I_CEPUCOITEMDISTRBASIC": {
-    "appliedAt": "2026-08-10T15:22:39.613Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:35.860Z",
+    "fields": 78,
     "action": "updated"
   },
   "I_CEPUCOITMDISTRPARTNERBASIC": {
-    "appliedAt": "2026-08-10T15:22:39.819Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:36.104Z",
+    "fields": 9,
     "action": "updated"
   },
   "I_CITCLASSFCTNCONFIGURATION": {
@@ -2060,8 +2060,8 @@
     "action": "updated"
   },
   "I_CITITEMCLASSIFICATION_2": {
-    "appliedAt": "2026-08-10T15:22:40.578Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:36.343Z",
+    "fields": 18,
     "action": "updated"
   },
   "I_CITREPORTINGITEM": {
@@ -2770,8 +2770,8 @@
     "action": "updated"
   },
   "I_CUSTUNIVHIERARCHYTEXT_2": {
-    "appliedAt": "2026-08-10T15:23:09.318Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:37.293Z",
+    "fields": 6,
     "action": "updated"
   },
   "I_DAYSBEYONDTERMS": {
@@ -2815,38 +2815,38 @@
     "action": "updated"
   },
   "I_DEPRECIATIONPROFILE": {
-    "appliedAt": "2026-08-10T15:23:11.119Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:37.530Z",
+    "fields": 11,
     "action": "updated"
   },
   "I_DEPRECIATIONPROFILESTDVH": {
-    "appliedAt": "2026-08-10T15:23:11.319Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:37.742Z",
+    "fields": 1,
     "action": "updated"
   },
   "I_DEPRECIATIONPROFILETEXT": {
-    "appliedAt": "2026-08-10T15:23:11.534Z",
+    "appliedAt": "2026-09-30T11:54:37.964Z",
     "fields": 3,
     "action": "updated"
   },
   "I_DEPRPRFLACCTGPRNCPSTDVH": {
-    "appliedAt": "2026-08-10T15:23:11.760Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:38.177Z",
+    "fields": 4,
     "action": "updated"
   },
   "I_DEPRPROFILEACCTGPRNCPASSGMT": {
-    "appliedAt": "2026-08-10T15:23:11.955Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:38.383Z",
+    "fields": 4,
     "action": "updated"
   },
   "I_DEPRPROFILEPHASE": {
-    "appliedAt": "2026-08-10T15:23:12.155Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:38.590Z",
+    "fields": 30,
     "action": "updated"
   },
   "I_DEPRPROFILEPHASELEVEL": {
-    "appliedAt": "2026-08-10T15:23:12.352Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:43.024Z",
+    "fields": 11,
     "action": "updated"
   },
   "I_DERIVATIVECONTRSPEC": {
@@ -3625,8 +3625,8 @@
     "action": "updated"
   },
   "I_JP_SUPLRINVCSMMRYDOCOUTPUT": {
-    "appliedAt": "2026-08-10T15:23:43.870Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:45.112Z",
+    "fields": 15,
     "action": "updated"
   },
   "I_KNBNCTRLCYCPRODMSTRDTA": {
@@ -4020,8 +4020,8 @@
     "action": "updated"
   },
   "I_PAYMENTMETHODINCOMPANYCODE": {
-    "appliedAt": "2026-08-10T15:23:59.865Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:45.842Z",
+    "fields": 14,
     "action": "updated"
   },
   "I_PERFEFFICIENCYRATIOTEXT": {
@@ -4335,13 +4335,13 @@
     "action": "updated"
   },
   "I_PURCHASINGGROUPSTDVH": {
-    "appliedAt": "2026-08-10T15:24:12.613Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:46.089Z",
+    "fields": 7,
     "action": "updated"
   },
   "I_PURCHASINGORGSTDVH": {
-    "appliedAt": "2026-08-10T15:24:12.807Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:46.356Z",
+    "fields": 5,
     "action": "updated"
   },
   "I_RACONTRACTPOSTINGMODE": {
@@ -5255,13 +5255,13 @@
     "action": "updated"
   },
   "I_STOCKTRANSPORTORDERITEM_2": {
-    "appliedAt": "2026-08-10T15:24:49.688Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:47.913Z",
+    "fields": 72,
     "action": "updated"
   },
   "I_STOCKTRANSPORTORDER_2": {
-    "appliedAt": "2026-08-10T15:24:49.885Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:48.156Z",
+    "fields": 27,
     "action": "updated"
   },
   "I_STOREPICKINGREQUEST": {
@@ -5300,13 +5300,13 @@
     "action": "updated"
   },
   "I_STOSCHEDULELINE_2": {
-    "appliedAt": "2026-08-10T15:24:51.512Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:48.392Z",
+    "fields": 32,
     "action": "updated"
   },
   "I_STOSHIPPING_2": {
-    "appliedAt": "2026-08-10T15:24:51.708Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:48.660Z",
+    "fields": 17,
     "action": "updated"
   },
   "I_STRUCTUREDARTICLEEXPLOSION": {
@@ -5535,13 +5535,13 @@
     "action": "updated"
   },
   "I_TH_CUSTOMERBRANCHCODETEXT_2": {
-    "appliedAt": "2026-08-10T15:25:01.164Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:48.900Z",
+    "fields": 8,
     "action": "updated"
   },
   "I_TH_CUSTOMERBRANCHCODE_2": {
-    "appliedAt": "2026-08-10T15:25:01.367Z",
-    "fields": 3,
+    "appliedAt": "2026-09-30T11:54:49.143Z",
+    "fields": 8,
     "action": "updated"
   },
   "I_TIMEDEPENDENTSTOCKLEVEL": {
@@ -15077,6 +15077,196 @@
   "I_WSTSTMRGTYCODEVALDIMN": {
     "appliedAt": "2026-08-11T16:04:14.019Z",
     "fields": 1,
+    "action": "updated"
+  },
+  "C_COSTCTRWTHACTVAVAILYCTRLPRFL": {
+    "appliedAt": "2026-09-30T11:54:28.914Z",
+    "fields": 10,
+    "action": "updated"
+  },
+  "C_ENTPROJCOSTBRKDWNQUERY": {
+    "appliedAt": "2026-09-30T11:54:29.193Z",
+    "fields": 39,
+    "action": "updated"
+  },
+  "C_ENTPROJOVHDBDGTCMTMTQRY": {
+    "appliedAt": "2026-09-30T11:54:29.469Z",
+    "fields": 53,
+    "action": "updated"
+  },
+  "C_ENTPROJOVHDDEBITCRDTQRY": {
+    "appliedAt": "2026-09-30T11:54:29.712Z",
+    "fields": 40,
+    "action": "updated"
+  },
+  "C_ENTPROJOVHDPLNACTLCMTMTQRY": {
+    "appliedAt": "2026-09-30T11:54:29.958Z",
+    "fields": 37,
+    "action": "updated"
+  },
+  "C_INVMTPRJPLNACTLCMTMTQ": {
+    "appliedAt": "2026-09-30T11:54:30.196Z",
+    "fields": 38,
+    "action": "updated"
+  },
+  "C_INVMTPROJACTLLINEITM2Q": {
+    "appliedAt": "2026-09-30T11:54:30.441Z",
+    "fields": 34,
+    "action": "updated"
+  },
+  "C_INVMTPROJACTLLINEITMQ": {
+    "appliedAt": "2026-09-30T11:54:30.666Z",
+    "fields": 33,
+    "action": "updated"
+  },
+  "C_INVMTPROJBDGTCMTMT2QUERY": {
+    "appliedAt": "2026-09-30T11:54:30.925Z",
+    "fields": 47,
+    "action": "updated"
+  },
+  "C_INVMTPROJBDGTCMTMTQUERY": {
+    "appliedAt": "2026-09-30T11:54:31.186Z",
+    "fields": 47,
+    "action": "updated"
+  },
+  "C_INVMTPROJPLNACTLCMTMT2Q": {
+    "appliedAt": "2026-09-30T11:54:31.431Z",
+    "fields": 38,
+    "action": "updated"
+  },
+  "C_MARKETSEGMENTPLANACTQ": {
+    "appliedAt": "2026-09-30T11:54:31.687Z",
+    "fields": 73,
+    "action": "updated"
+  },
+  "C_RAFISCALYEARPERIODVH": {
+    "appliedAt": "2026-09-30T11:54:31.918Z",
+    "fields": 13,
+    "action": "updated"
+  },
+  "C_RAOPENREVENUEPERPERIODQRY_4": {
+    "appliedAt": "2026-09-30T11:54:32.144Z",
+    "fields": 28,
+    "action": "updated"
+  },
+  "I_ACTLPLNSRVCMARGITEMDST": {
+    "appliedAt": "2026-09-30T11:54:32.376Z",
+    "fields": 275,
+    "action": "updated"
+  },
+  "I_ACTPLNJRNLENTRITEMCUBE_2": {
+    "appliedAt": "2026-09-30T11:54:32.611Z",
+    "fields": 176,
+    "action": "updated"
+  },
+  "I_CAPAYMENTLOT": {
+    "appliedAt": "2026-09-30T11:54:34.663Z",
+    "fields": 36,
+    "action": "updated"
+  },
+  "I_CAPAYMENTLOTSTATUS": {
+    "appliedAt": "2026-09-30T11:54:34.906Z",
+    "fields": 1,
+    "action": "updated"
+  },
+  "I_CAPAYMENTLOTSTATUSTEXT": {
+    "appliedAt": "2026-09-30T11:54:35.164Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_CNTRLSUPLRCONFBASIC": {
+    "appliedAt": "2026-09-30T11:54:36.581Z",
+    "fields": 16,
+    "action": "updated"
+  },
+  "I_CNTRLSUPLRCONFITEMBASIC": {
+    "appliedAt": "2026-09-30T11:54:36.824Z",
+    "fields": 13,
+    "action": "updated"
+  },
+  "I_CNTRLSUPLRCONFLINEBASIC": {
+    "appliedAt": "2026-09-30T11:54:37.071Z",
+    "fields": 24,
+    "action": "updated"
+  },
+  "I_ENTPROJCOSTBRKDWNCUBE": {
+    "appliedAt": "2026-09-30T11:54:43.264Z",
+    "fields": 55,
+    "action": "updated"
+  },
+  "I_HNDLGUNTHDRINVTRYWRHSMGMT": {
+    "appliedAt": "2026-09-30T11:54:43.510Z",
+    "fields": 67,
+    "action": "updated"
+  },
+  "I_HNDLGUNTITMINVTRYWRHSMGMT": {
+    "appliedAt": "2026-09-30T11:54:43.737Z",
+    "fields": 27,
+    "action": "updated"
+  },
+  "I_HUITMSRLNMBRINVTRYWRHSMGMT": {
+    "appliedAt": "2026-09-30T11:54:43.962Z",
+    "fields": 8,
+    "action": "updated"
+  },
+  "I_INVMTPRJPLNACTLCMTMTCUBE": {
+    "appliedAt": "2026-09-30T11:54:44.193Z",
+    "fields": 62,
+    "action": "updated"
+  },
+  "I_INVMTPROJACTLLINEITMCUBE": {
+    "appliedAt": "2026-09-30T11:54:44.407Z",
+    "fields": 54,
+    "action": "updated"
+  },
+  "I_INVMTPROJBDGTCMTMTCUBE": {
+    "appliedAt": "2026-09-30T11:54:44.630Z",
+    "fields": 68,
+    "action": "updated"
+  },
+  "I_IN_SUBCONTRGDOCDET_2": {
+    "appliedAt": "2026-09-30T11:54:44.857Z",
+    "fields": 23,
+    "action": "updated"
+  },
+  "I_MDI_COSTCENTEROID": {
+    "appliedAt": "2026-09-30T11:54:45.339Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_MKTSGMTREPCRCYFLD": {
+    "appliedAt": "2026-09-30T11:54:45.597Z",
+    "fields": 1,
+    "action": "updated"
+  },
+  "I_PURREQNSUBCONTRACTINGCOMP": {
+    "appliedAt": "2026-09-30T11:54:46.620Z",
+    "fields": 57,
+    "action": "updated"
+  },
+  "I_RAOPENREVENUEPERPERIODCUBE_4": {
+    "appliedAt": "2026-09-30T11:54:46.883Z",
+    "fields": 29,
+    "action": "updated"
+  },
+  "I_SCHEDULELINECATEGORYDETN": {
+    "appliedAt": "2026-09-30T11:54:47.126Z",
+    "fields": 14,
+    "action": "updated"
+  },
+  "I_SERVICEMARGINDST": {
+    "appliedAt": "2026-09-30T11:54:47.389Z",
+    "fields": 253,
+    "action": "updated"
+  },
+  "I_SLSDOCITEMITEMCATEGORYDETN": {
+    "appliedAt": "2026-09-30T11:54:47.661Z",
+    "fields": 17,
+    "action": "updated"
+  },
+  "I_WRNTYVERIFICATIONRESULT": {
+    "appliedAt": "2026-09-30T11:54:49.366Z",
+    "fields": 21,
     "action": "updated"
   }
 }

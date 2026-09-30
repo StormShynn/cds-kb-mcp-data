@@ -9,9 +9,26 @@ key_user_ext_status: released
 extensible_key_user: no
 extensible_dev_ext: no
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNTRLSUPLRCONFBASIC')/$value
 semantic_en: "This CDS view provides access to central supplier confirmation header data in SAP S/4HANA Public Cloud. It serves as the root view for managing supplier confirmations related to procurement processes, including confirmation status, supplier information, and external system references. This CDS view provides the data to answer the following business questions: What is the current processing status of supplier confirmations? Which supplier confirmations are blocked for end of purpose? How many supplier confirmations were created by a specific user or purchasing organization? What are the external references associated with supplier confirmations? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Central Supplier Confirmation — CDS view giao diện dựa trên R_CentralSupplierConfirmation."
+keywords:
+  - "central"
+  - "supplier"
+  - "confirmation"
+  - "cntrl"
+  - "suplr"
+  - "conf"
+  - "prmt"
+  - "rpld"
+  - "procurement"
+  - "source"
+  - "system"
+  - "last"
+  - "change"
+  - "date"
+  - "time"
 tags:
   - MM
   - bo:companycode
@@ -23,7 +40,6 @@ tags:
   - MM-PUR-HUB-CSC
   - MM-PUR-HUB-CSC-2CL
   - supplier
-  - metadata-only
 ---
 # I_CNTRLSUPLRCONFBASIC
 
@@ -39,13 +55,13 @@ tags:
 | Extensible (Key User Extensibility) | No — can custom fields be added directly to THIS entity itself via Key User Extensibility (a different question from "used as a data source" above) |
 | Extensible (Developer Extensibility) | No — can custom fields be added directly to THIS entity itself via ABAP Developer Extensibility |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNTRLSUPLRCONFBASIC')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNTRLSUPLRCONFBASIC')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CentralSupplierConfirmation` |  | |  |  | `CHAR(10)` | Central supplier Confirmation Number |
+| `CentralSupplierConfirmation` | ✓ | |  |  | `CHAR(10)` | Central supplier Confirmation Number |
 | `CntrlSuplrConfRefPrmtHbRpldPO` |  | |  |  | `CHAR(10)` | Purchasing Document Number |
 | `ProcurementHubSourceSystem` |  | |  |  | `CHAR(10)` | Connected System ID |
 | `LastChangeDateTime` |  | |  |  | `DEC(21)` | Change Time Stamp |
@@ -61,3 +77,48 @@ tags:
 | `CntrlSuplrConfCreationType` |  | |  |  | `CHAR(1)` | Creation Type |
 | `CSupConfExtRefLastChgdDteTme` |  | |  |  | `DEC(21)` | External Change Time Stamp |
 | `CntrlSuplrConfExternalSystemID` |  | |  |  | `CHAR(60)` | ID of External Reference System |
+| `_ConfirmationItem` | | ✓ | | | | |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNTRLSUPLRCONFBASIC')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_CNTRLSUPLRCONFBASIC')/$value)*
+
+```abap
+@EndUserText.label: 'Central Supplier Confirmation'
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.usageType:{
+  serviceQuality: #A,
+  sizeCategory: #L,
+  dataClass: #TRANSACTIONAL
+}
+@VDM.viewType : #BASIC
+@AccessControl.authorizationCheck:#MANDATORY
+@AccessControl.personalData.blocking: #REQUIRED
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@ObjectModel.supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET ]
+
+define root view entity I_CntrlSuplrConfBasic
+  as select from R_CentralSupplierConfirmation
+  composition of exact one to many I_CntrlSuplrConfItemBasic as _ConfirmationItem
+{
+  key CentralSupplierConfirmation,
+      CntrlSuplrConfRefPrmtHbRpldPO,
+      ProcurementHubSourceSystem,
+      LastChangeDateTime,
+      CreatedByUser,
+      CreationDate,
+      PurchasingDocumentType,
+      PurchasingOrganization,
+      PurchasingGroup,
+      @Semantics.booleanIndicator:true
+      IsEndOfPurposeBlocked,
+      CntrlSuplrConfProcessingStatus,
+      Supplier,
+      SuplrConfExternalReference,
+      CntrlSuplrConfCreationType,
+      CSupConfExtRefLastChgdDteTme,
+      CntrlSuplrConfExternalSystemID,
+      /* Associations */
+      _ConfirmationItem
+}
+```

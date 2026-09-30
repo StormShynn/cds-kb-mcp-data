@@ -9,9 +9,20 @@ key_user_ext_status: released
 extensible_key_user: no
 extensible_dev_ext: no
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PURREQNSUBCONTRACTINGCOMP')/$value
 semantic_en: "This CDS view retrieves the details of the item category subcontracting. Subcontracting is a form of procurement where the required product is manufactured by a supplier (in this case the subcontractor) to whom certain components are provided. This CDS view provides the data to answer the following business questions: Which subcontracting components are assigned to a specific purchase requisition item? What is the required quantity versus the withdrawn quantity for a subcontracting component in a purchase requisition? Which components are flagged as bulk material or phantom items in a subcontracting purchase requisition? What are the requirement dates and lead time offsets for subcontracting components? Which components have fixed quantities or are finally issued for a reservation? To help you decide which CDS view to use for your purposes, SAP has introduced the annotation ObjectModel.supportedCapabilities that indicates the most appropriate use cases for each CDS view. To find out what use cases are best supported by this CDS view, access the entry of the CDS view in the View Browser app and find the values for this annotation under the Annotation tab. For more information, see Supported Capabilities for CDS Views."
+semantic_vi: "Subcontracting Component in PurReqn — CDS view giao diện dựa trên R_PurReqnSubcontractingComp."
+keywords:
+  - "subcontracting"
+  - "component"
+  - "purreqn"
+  - "purchase"
+  - "requisition"
+  - "item"
+  - "reservation"
+  - "record"
+  - "type"
 tags:
   - MM
   - bo:companycode
@@ -25,7 +36,7 @@ tags:
   - MM-PUR-REQ-2CL
   - product
   - supplier
-  - metadata-only
+  - bo:purchaseorder
 ---
 # I_PURREQNSUBCONTRACTINGCOMP
 
@@ -41,16 +52,16 @@ tags:
 | Extensible (Key User Extensibility) | No — can custom fields be added directly to THIS entity itself via Key User Extensibility (a different question from "used as a data source" above) |
 | Extensible (Developer Extensibility) | No — can custom fields be added directly to THIS entity itself via ABAP Developer Extensibility |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PURREQNSUBCONTRACTINGCOMP')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PURREQNSUBCONTRACTINGCOMP')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PurchaseRequisition` |  | |  |  | `CHAR(10)` | Purchase Requisition Number |
-| `PurchaseRequisitionItem` |  | |  |  | `NUMC(5)` | Item Number of Purchase Requisition in Order |
-| `ReservationItem` |  | |  |  | `NUMC(4)` | Reservation Item |
-| `RecordType` |  | |  |  | `CHAR(1)` | Reservation Record Type |
+| `PurchaseRequisition` | ✓ | |  |  | `CHAR(10)` | Purchase Requisition Number |
+| `PurchaseRequisitionItem` | ✓ | |  |  | `NUMC(5)` | Item Number of Purchase Requisition in Order |
+| `ReservationItem` | ✓ | |  |  | `NUMC(4)` | Reservation Item |
+| `RecordType` | ✓ | |  |  | `CHAR(1)` | Reservation Record Type |
 | `Reservation` |  | |  |  | `NUMC(10)` | Number of reservation/dependent requirements |
 | `Material` |  | |  |  | `CHAR(40)` | Material Number |
 | `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
@@ -104,3 +115,118 @@ tags:
 | `BOMItemDescription` |  | |  |  | `CHAR(40)` | BOM Item Text (Line 1) |
 | `BOMItemText2` |  | |  |  | `CHAR(40)` | BOM Item Text (Line 2) |
 | `ChangeNumber` |  | |  |  | `CHAR(12)` | Change Number |
+| `_PurchaseRequisition` | | ✓ | | | | |
+| `_PurchaseRequisitionItem` | | ✓ | | | | |
+| `_VariableSize1To3Unit` | | ✓ | | | | |
+| `_VariableSizeCompUnit` | | ✓ | | | | |
+| `_BaseUnit` | | ✓ | | | | |
+| `_EntryUnit` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_PurchaseRequisition` | `I_PurchaseRequisitionAPI01` | [1..1] |
+| `_PurchaseRequisitionItem` | `I_PurchaseRequisitionItemAPI01` | [1..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PURREQNSUBCONTRACTINGCOMP')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PURREQNSUBCONTRACTINGCOMP')/$value)*
+
+```abap
+@ObjectModel.usageType.dataClass:  #TRANSACTIONAL
+@ObjectModel.usageType.serviceQuality: #B
+@ObjectModel.usageType.sizeCategory: #XL
+@ObjectModel.supportedCapabilities: [ #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE, #CDS_MODELING_ASSOCIATION_TARGET ]
+@VDM.viewType: #BASIC
+@VDM.lifecycle.contract.type: #PUBLIC_LOCAL_API
+@AccessControl.personalData.blocking: #BLOCKED_DATA_EXCLUDED
+@Metadata.ignorePropagatedAnnotations:true
+@AccessControl.authorizationCheck: #MANDATORY
+@EndUserText.label: 'Subcontracting Component in PurReqn'
+
+define view entity I_PurReqnSubcontractingComp as select from R_PurReqnSubcontractingComp
+
+  association [1..1] to I_PurchaseRequisitionAPI01      as _PurchaseRequisition     on  $projection.PurchaseRequisition     = _PurchaseRequisition.PurchaseRequisition 
+  association [1..1] to I_PurchaseRequisitionItemAPI01  as _PurchaseRequisitionItem on  $projection.PurchaseRequisition     = _PurchaseRequisitionItem.PurchaseRequisition
+                                                                                    and $projection.PurchaseRequisitionItem = _PurchaseRequisitionItem.PurchaseRequisitionItem
+{ 
+      @ObjectModel.foreignKey.association: '_PurchaseRequisition'
+  key PurchaseRequisition,
+      @ObjectModel.foreignKey.association: '_PurchaseRequisitionItem'
+  key PurchaseRequisitionItem,
+  key ReservationItem,
+  key RecordType,
+      Reservation,
+      Material,
+      @ObjectModel.foreignKey.association: '_BaseUnit'
+      BaseUnit,
+      @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+      RequiredQuantity,
+      @Semantics.quantity.unitOfMeasure: 'BaseUnit'
+      WithdrawnQuantity,
+      QuantityIsFixed,
+      RequirementDate,
+      RequirementTime,
+      Plant,
+      LatestRequirementDate,
+      OrderLevelValue,
+      OrderPathValue,
+      BillOfMaterialItemNumber,
+      MatlCompFreeDefinedAttribute,
+      BOMItemCategory,
+      MaterialComponentIsPhantomItem,
+      IsBulkMaterialComponent,
+      AccountAssignmentCategory,
+      InventorySpecialStockType,
+      ConsumptionPosting,
+      InventorySpecialStockValnType,
+      MaterialProvisionType,
+      SalesOrder,
+      SalesOrderItem,
+      WBSElementInternalID,
+      DebitCreditCode,
+      ReservationIsFinallyIssued,
+      EntryUnit,
+      @Semantics.quantity.unitOfMeasure: 'EntryUnit'
+      QuantityInEntryUnit,
+      MaterialQtyToBaseQtyNmrtr,
+      MaterialQtyToBaseQtyDnmntr,
+      ComponentScrapInPercent,
+      OperationScrapInPercent,
+      IsNetScrap,
+      LeadTimeOffset,
+      QuantityDistributionKey,
+      MaterialRevisionLevel ,
+      MaterialCompIsVariableSized,
+      VariableSizeItemUnit,
+      @Semantics.quantity.unitOfMeasure: 'VariableSizeItemUnit'
+      VariableSizeItemQuantity,      
+      VariableSizeComponentUnit,
+      @Semantics.quantity.unitOfMeasure: 'VariableSizeComponentUnit'
+      VariableSizeComponentQuantity,
+      UnitOfMeasureForSize1To3,
+      @Semantics.quantity.unitOfMeasure: 'UnitOfMeasureForSize1To3'
+      Size1,
+      @Semantics.quantity.unitOfMeasure: 'UnitOfMeasureForSize1To3'
+      Size2,
+      @Semantics.quantity.unitOfMeasure: 'UnitOfMeasureForSize1To3'
+      Size3,
+      FormulaKey,
+      StorageLocation,
+      ProductionSupplyArea,
+      Batch,
+      BOMItemDescription,
+      BOMItemText2,
+      ChangeNumber,
+
+      _PurchaseRequisition,
+      _PurchaseRequisitionItem,
+      _VariableSize1To3Unit,
+      _VariableSizeCompUnit,
+      _BaseUnit,
+      _EntryUnit
+
+
+}
+```

@@ -199,6 +199,32 @@ Best for enterprise environments behind corporate firewalls, VPNs, or proxy serv
 
 Once configured, restart your IDE. The tools will immediately be available for your agent to use.
 
+### Bonus: SAP Docs lookup (`/sap-docs/mcp`)
+
+The same domain also mounts a second, unrelated MCP server under the
+`/sap-docs` path — [mcp-sap-docs](https://github.com/marianfoo/mcp-sap-docs):
+SAPUI5, CAP, wdi5, ABAP keyword docs, and SAP Community search. Point a
+second `mcpServers` entry at it the same way as Option 0/1/2 above, just
+with `/sap-docs/mcp` instead of `/mcp`:
+
+```json
+{
+  "mcpServers": {
+    "cds-kb": { "type": "http", "url": "https://mcp.tringhia.io.vn/mcp" },
+    "sap-docs": { "type": "http", "url": "https://mcp.tringhia.io.vn/sap-docs/mcp" }
+  }
+}
+```
+
+**This repo does not host that server.** `/sap-docs/*` is a pure reverse
+proxy to its author's own public instance
+(`https://mcp-sap-docs.marianzeis.de`) — third-party infrastructure, not
+run or maintained here. [Unverified] Its uptime and rate limits are outside
+this repo's control; if you need guaranteed availability, run your own copy
+(the upstream repo documents both Docker and BTP Cloud Foundry deployment).
+See [`domain-proxy/README.md`](./domain-proxy/README.md) for how the routing
+works.
+
 ---
 
 ## Tools Reference

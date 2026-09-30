@@ -40,10 +40,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAReturnReason` | ✓ | |  | `rlgrd` |  |  |
-| `HouseBank` | ✓ | |  | `hbkid` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAReturnReasonName` |  | |  | `rtext` |  |  |
+| `CAReturnReason` | ✓ | |  | `rlgrd` | `CHAR(3)` | Return Reason |
+| `HouseBank` | ✓ | |  | `hbkid` | `CHAR(5)` | Short Key for a House Bank |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAReturnReasonName` |  | |  | `rtext` | `CHAR(50)` | Name of Returns Reason |
 | `_HouseBank` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 
