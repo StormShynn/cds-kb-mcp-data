@@ -43,7 +43,7 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
-    "esbuild": "^0.28.1"
+    "esbuild": "^0.28.2"
   },
   "overrides": {
     "sharp": "^0.35.5"
