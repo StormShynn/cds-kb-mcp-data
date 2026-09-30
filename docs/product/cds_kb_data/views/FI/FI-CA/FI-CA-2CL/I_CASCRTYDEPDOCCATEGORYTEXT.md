@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CASecurityDepositDocCategory` | ✓ | |  | `cast( left( dd07t.domvalue_l, 3 ) as secdep_doc_category_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
-| `CASecurityDepositDocCatText` |  | |  | `cast( ddtext as secdep_doc_category_text_kk preserving type )` |  |  |
+| `CASecurityDepositDocCategory` | ✓ | |  | `cast( left( dd07t.domvalue_l, 3 ) as secdep_doc_category_kk preserving type )` | `CHAR(3)` | Document Category of Security Deposit |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CASecurityDepositDocCatText` |  | |  | `cast( ddtext as secdep_doc_category_text_kk preserving type )` | `CHAR(60)` | Description of Document Category of Security Deposit |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

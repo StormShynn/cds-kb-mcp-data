@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CARevnAcctgTransfRecordOrigin` | ✓ | |  | `cast( left( domvalue_l, 1 ) as ra_oi_orig_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CARevnAcctgTransfRecdOrignText` |  | |  | `cast( ddtext as ra_oi_orig_text_kk preserving type )` |  |  |
+| `CARevnAcctgTransfRecordOrigin` | ✓ | |  | `cast( left( domvalue_l, 1 ) as ra_oi_orig_kk preserving type )` | `CHAR(1)` | Type of Origin for Transfer Record |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CARevnAcctgTransfRecdOrignText` |  | |  | `cast( ddtext as ra_oi_orig_text_kk preserving type )` | `CHAR(60)` | Description for Origin Type for Transfer Record |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

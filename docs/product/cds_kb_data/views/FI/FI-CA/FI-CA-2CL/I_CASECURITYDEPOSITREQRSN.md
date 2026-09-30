@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CASecurityDepositRequestReason` | ✓ | |  | `reason` |  |  |
+| `CASecurityDepositRequestReason` | ✓ | |  | `reason` | `CHAR(4)` | Reason for Requesting a Security Deposit |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

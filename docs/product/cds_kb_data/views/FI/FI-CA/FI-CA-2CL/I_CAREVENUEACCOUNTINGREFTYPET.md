@@ -38,9 +38,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CARevenueAccountingRefType` | ✓ | |  | `reference_type` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `CARevenueAccountingRefTypeText` |  | |  | `text` |  |  |
+| `CARevenueAccountingRefType` | ✓ | |  | `reference_type` | `CHAR(3)` | Reference Type for Revenue Accounting |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `CARevenueAccountingRefTypeText` |  | |  | `text` | `CHAR(50)` | Text Field |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

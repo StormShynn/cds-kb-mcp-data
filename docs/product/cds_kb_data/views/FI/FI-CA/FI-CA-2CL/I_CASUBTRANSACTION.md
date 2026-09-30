@@ -38,15 +38,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAApplicationArea` | ✓ | |  | `applk` |  |  |
-| `CAMainTransaction` | ✓ | |  | `hvorg` |  |  |
-| `CASubTransaction` | ✓ | |  | `tvorg` |  |  |
-| `CAMainTransactionForReversal` |  | |  | `hvorg_rev` |  |  |
-| `CASubTransactionForReversal` |  | |  | `tvorg_rev` |  |  |
-| `CADueDateDeterminationRule` |  | |  | `faetp` |  |  |
-| `CAWithholdingTaxAmountType` |  | |  | `qsvtp` |  |  |
-| `CARuleForAddlReceivables` |  | |  | `rladdr` |  |  |
-| `CAIsPaymentTransaction` |  | |  | `xpayt` |  |  |
+| `CAApplicationArea` | ✓ | |  | `applk` | `CHAR(1)` | Application Area |
+| `CAMainTransaction` | ✓ | |  | `hvorg` | `CHAR(4)` | Main Transaction for Line Item |
+| `CASubTransaction` | ✓ | |  | `tvorg` | `CHAR(4)` | Subtransaction for Document Item |
+| `CAMainTransactionForReversal` |  | |  | `hvorg_rev` | `CHAR(4)` | Main Transaction for Offsetting Item for Reversal |
+| `CASubTransactionForReversal` |  | |  | `tvorg_rev` | `CHAR(4)` | Subtransaction for Offsetting Item for Reversal |
+| `CADueDateDeterminationRule` |  | |  | `faetp` | `CHAR(1)` | Special Due Date Determination |
+| `CAWithholdingTaxAmountType` |  | |  | `qsvtp` | `CHAR(1)` | Withholding Tax Amount Type |
+| `CARuleForAddlReceivables` |  | |  | `rladdr` | `CHAR(2)` | Rule For Additional Receivable |
+| `CAIsPaymentTransaction` |  | |  | `xpayt` | `CHAR(1)` | Payment Transaction |
 | `_ApplArea` |  | |  | `_CAApplicationArea` |  |  |
 | `_MainTransaction` |  | |  | `_CAMainTransaction` |  |  |
 | `_MainTransactionRev` |  | |  | `_CAReversalMainTransaction` |  |  |

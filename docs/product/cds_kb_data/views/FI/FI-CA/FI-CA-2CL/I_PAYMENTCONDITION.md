@@ -40,10 +40,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PaymentCondition` | ✓ | |  | `zahlkond` |  |  |
-| `PaymentTerms` |  | |  | `cast( zterm as farp_dzterm preserving type)` |  |  |
-| `FactoryCalendar` |  | |  | `cast( fcalid as cr_wfcid preserving type)` |  |  |
-| `CreditMemoPaymentTerms` |  | |  | `cast( gterm as guzte preserving type)` |  |  |
+| `PaymentCondition` | ✓ | |  | `zahlkond` | `CHAR(4)` | Payment Condition |
+| `PaymentTerms` |  | |  | `cast( zterm as farp_dzterm preserving type)` | `CHAR(4)` | Terms of Payment Key |
+| `FactoryCalendar` |  | |  | `cast( fcalid as cr_wfcid preserving type)` | `CHAR(2)` | Factory Calendar ID |
+| `CreditMemoPaymentTerms` |  | |  | `cast( gterm as guzte preserving type)` | `CHAR(4)` | Payment Terms Key for Credit Memos |
 | `_Text` | | ✓ | | | | |
 | `_FactoryCal` | | ✓ | | | | |
 

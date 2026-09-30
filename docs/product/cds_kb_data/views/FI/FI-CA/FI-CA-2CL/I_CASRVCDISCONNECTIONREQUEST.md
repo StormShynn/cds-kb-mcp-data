@@ -38,23 +38,23 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAServiceDisconnectionRequest` | ✓ | |  | `dscpnr` |  |  |
-| `CASrvcDisconncnReqIsInvalid` | ✓ | |  | `xdpinv` |  |  |
-| `CASrvcDisconncnReqIsObsolete` | ✓ | |  | `xiobs` |  |  |
-| `CASrvcDisconncnReqStatus` |  | |  | `cast( case when xdpinv = 'X' then 'I' when xiobs = 'X' then 'O' else 'V' end as disreq_status_kk preserving type )` |  |  |
-| `CAMassRunDate` |  | |  | `laufd` |  |  |
-| `CAMassRunID` |  | |  | `laufi` |  |  |
-| `BusinessPartner` |  | |  | `cast( gpart as bu_partner preserving type )` |  |  |
-| `ContractAccount` |  | |  | `cast( vkont as vkont_gfn_kk preserving type )` |  |  |
-| `CAContract` |  | |  | `cast( vtref as vtref_kk preserving type )` |  |  |
-| `CASubApplication` |  | |  | `subap` |  |  |
-| `CompanyCode` |  | |  | `bukrs` |  |  |
-| `Division` |  | |  | `spart` |  |  |
-| `CADunningAmount` |  | |  | `mbetm` |  |  |
-| `TransactionCurrency` |  | |  | `waers` |  |  |
-| `CreatedByUser` |  | |  | `uname` |  |  |
-| `CreationDate` |  | |  | `crdate` |  |  |
-| `CreationTime` |  | |  | `crtime` |  |  |
+| `CAServiceDisconnectionRequest` | ✓ | |  | `dscpnr` | `CHAR(10)` | Number of Disconnection Request |
+| `CASrvcDisconncnReqIsInvalid` | ✓ | |  | `xdpinv` | `CHAR(1)` | Invalid Disconnection Request |
+| `CASrvcDisconncnReqIsObsolete` | ✓ | |  | `xiobs` | `CHAR(1)` | Obsolete Disconnection Request |
+| `CASrvcDisconncnReqStatus` |  | |  | `cast( case when xdpinv = 'X' then 'I' when xiobs = 'X' then 'O' else 'V' end as disreq_status_kk preserving type )` | `CHAR(1)` | Disconnection Request Status |
+| `CAMassRunDate` |  | |  | `laufd` | `DATS(8)` | Date ID |
+| `CAMassRunID` |  | |  | `laufi` | `CHAR(6)` | Run ID |
+| `BusinessPartner` |  | |  | `cast( gpart as bu_partner preserving type )` | `CHAR(10)` | Business Partner Number |
+| `ContractAccount` |  | |  | `cast( vkont as vkont_gfn_kk preserving type )` | `CHAR(12)` | Contract Account |
+| `CAContract` |  | |  | `cast( vtref as vtref_kk preserving type )` | `CHAR(20)` | Reference Specifications from Contract |
+| `CASubApplication` |  | |  | `subap` | `CHAR(1)` | Subapplication in Contract Accounts Receivable and Payable |
+| `CompanyCode` |  | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `Division` |  | |  | `spart` | `CHAR(2)` | Division |
+| `CADunningAmount` |  | |  | `mbetm` | `CURR(13)` | Dunned Amount in Transaction Currency |
+| `TransactionCurrency` |  | |  | `waers` | `CUKY(5)` | Currency Key |
+| `CreatedByUser` |  | |  | `uname` | `CHAR(12)` | User Name |
+| `CreationDate` |  | |  | `crdate` | `DATS(8)` | Created On |
+| `CreationTime` |  | |  | `crtime` | `TIMS(6)` | Time of Entry |
 | `_BusinessPartner` | | ✓ | | | | |
 | `_CAProviderContract` | | ✓ | | | | |
 | `_CASrvcDisconncnReqStatus` | | ✓ | | | | |

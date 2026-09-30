@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CATransferReason` | ✓ | |  | `umgrd` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CATransferReasonName` |  | |  | `umtxt` |  |  |
+| `CATransferReason` | ✓ | |  | `umgrd` | `CHAR(2)` | Transfer Reason |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CATransferReasonName` |  | |  | `umtxt` | `CHAR(50)` | Transfer Posting Reason Description |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

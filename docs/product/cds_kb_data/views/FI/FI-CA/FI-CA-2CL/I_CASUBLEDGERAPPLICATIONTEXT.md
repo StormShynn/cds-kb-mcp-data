@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CASubledgerApplication` | ✓ | |  | `cast( left( dd07t.domvalue_l, 5 ) as trsla_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CASubledgerApplicationText` |  | |  | `cast( ddtext as trsla_text_kk preserving type )` |  |  |
+| `CASubledgerApplication` | ✓ | |  | `cast( left( dd07t.domvalue_l, 5 ) as trsla_kk preserving type )` | `CHAR(5)` | Subledger Transfer: Application ID |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CASubledgerApplicationText` |  | |  | `cast( ddtext as trsla_text_kk preserving type )` | `CHAR(60)` | Subledger Transfer: Application ID |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

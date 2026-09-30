@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CASEPAPreNotifOriginCode` | ✓ | |  | `cast( left( domvalue_l, 2 ) as pnhkf_kk preserving type )` |  |  |
+| `CASEPAPreNotifOriginCode` | ✓ | |  | `cast( left( domvalue_l, 2 ) as pnhkf_kk preserving type )` | `CHAR(2)` | Origin of Direct Debit Pre-Notification |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

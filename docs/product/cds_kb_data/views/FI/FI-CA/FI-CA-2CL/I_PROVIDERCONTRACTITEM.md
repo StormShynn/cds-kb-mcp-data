@@ -40,122 +40,122 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ProviderContract` | ✓ | |  | `vtkey` |  |  |
-| `ProviderContractItem` | ✓ | |  | `vtpos` |  |  |
-| `CreationDate` |  | |  | `erdat` |  |  |
-| `CreationTime` |  | |  | `cast(ertim as ttet_dt_cr_time preserving type )` |  |  |
-| `CreatedByUser` |  | |  | `ernam` |  |  |
-| `LastChangeDate` |  | |  | `aedat` |  |  |
-| `LastChangeTime` |  | |  | `aetim` |  |  |
-| `LastChangedByUser` |  | |  | `aenam` |  |  |
-| `CAProviderContractItemUUID` |  | |  | `vtpid` |  |  |
-| `CAPrvdrContrParentItemUUID` |  | |  | `papid` |  |  |
-| `CAPrvdrContrItmValidFromDteTme` |  | |  | `valfr` |  |  |
-| `CAPrvdrContrItmValidToDateTime` |  | |  | `valto` |  |  |
-| `CAPrvdrContrItemCanclnDateTime` |  | |  | `cancl` |  |  |
-| `PrvdrContrItmWthdrwlDateTime` |  | |  | `withdrawn_at` |  |  |
-| `CAProviderContractStatus` |  | |  | `status` |  |  |
-| `CAProviderContractItemText` |  | |  | `vtitt` |  |  |
-| `ContractAccount` |  | |  | `vkont` |  |  |
-| `CAPrepaidAccount` |  | |  | `ppacc` |  |  |
-| `CATechnicalResourceGroup` |  | |  | `vttrg` |  |  |
-| `CAServiceRecipient` |  | |  | `srvrp` |  |  |
-| `CAAddressIDOfServiceRecipient` |  | |  | `adrsr` |  |  |
-| `PrvdrContrItmCorrespncRcpnt` |  | |  | `def_rec` |  |  |
-| `AddrIDOfCorrespncRcpnt` |  | |  | `def_rec_adrnr` |  |  |
-| `CAProduct` |  | |  | `prdnr` |  |  |
-| `ProductConfiguration` |  | |  | `cuobj` |  |  |
-| `CASalesPackageProduct` |  | |  | `prdnr_sp` |  |  |
-| `CAMasterAgreement` |  | |  | `makey` |  |  |
-| `CAMasterAgreementProduct` |  | |  | `maprd` |  |  |
-| `CAPartnerSettlementRule` |  | |  | `ptsrl` |  |  |
-| `CASharingContract` |  | |  | `vtkrf` |  |  |
-| `TaxJurisdiction` |  | |  | `txjcd` |  |  |
-| `CAReceivingCountry` |  | |  | `landl` |  |  |
-| `TaxCountry` |  | |  | `tax_country` |  |  |
-| `CASubscriptionChargeType` |  | |  | `charge_type` |  |  |
-| `BusinessSolutionOrder` |  | |  | `solution_order_id` |  |  |
-| `BusinessSolutionOrderItem` |  | |  | `solution_order_item_id` |  |  |
-| `SoldProduct` |  | |  | `matnr_copa` |  |  |
-| `RevenueRecognitionKey` |  | |  | `rev_rec_key` |  |  |
-| `EBRRResultAnalysisInternalID` |  | |  | `rev_rec_key` |  |  |
-| `EBRRIsBundleActive` |  | |  | `bundling` |  |  |
-| `CAProviderContractQuantity` |  | |  | `quantity` |  |  |
-| `CAProviderContractQuantityUnit` |  | |  | `quantity_unit` |  |  |
-| `DistrSystOperatorBP` |  | |  | `uti_dso_bp` |  |  |
-| `DistrSystOperatorMarketCommID` |  | |  | `uti_dso_maco_id` |  |  |
-| `MeterOperatorBusinessPartner` |  | |  | `uti_metop_bp` |  |  |
-| `MeterOperatorMarketCommID` |  | |  | `uti_metop_maco_id` |  |  |
-| `MarketLocationIdentifier` |  | |  | `uti_malo_id` |  |  |
-| `SalesOrganization` |  | |  | `vkorg` |  |  |
-| `DistributionChannel` |  | |  | `vtweg` |  |  |
-| `CompanyCode` |  | |  | `bukrs` |  |  |
-| `CAIntcoCompanyCodeSupplying` |  | |  | `ico_bukrs_sup` |  |  |
-| `BusinessArea` |  | |  | `gsber` |  |  |
-| `Segment` |  | |  | `segmt` |  |  |
-| `ProfitCenter` |  | |  | `prctr` |  |  |
-| `Division` |  | |  | `spart` |  |  |
-| `CAPrvdrContrSalesAreaAttrib1` |  | |  | `vber1` |  |  |
-| `CAPrvdrContrSalesAreaAttrib2` |  | |  | `vber2` |  |  |
-| `WBSElementInternalID` |  | |  | `cast( ps_psp_pnr as fis_wbsint_no_conv preserving type )` |  |  |
-| `InternalOrder` |  | |  | `aufnr` |  |  |
-| `CAStandardDivision` |  | |  | `stdsp` |  |  |
-| `PrvdrContrItmIsRlvtForPrfSgDrv` |  | |  | `x_vt_copa` |  |  |
-| `CABillgCycle` |  | |  | `cycle` |  |  |
-| `CALastDayOfBillingPeriod` |  | |  | `cycle_day` |  |  |
-| `CABillgCyclePeriodStartDate` |  | |  | `cycle_date` |  |  |
-| `CAInvcgSchedule` |  | |  | `inv_schedule` |  |  |
-| `CARatingArea` |  | |  | `rating_area` |  |  |
-| `CABillgPlnNumber` |  | |  | `billplanno` |  |  |
-| `CAConsumptionBillgSoldToParty` |  | |  | `cb_soldto` |  |  |
-| `CAConsumptionBillgInvoiceRcpnt` |  | |  | `cb_billto` |  |  |
-| `ConsumptionBillingPaymentTerms` |  | |  | `cb_dzterm` |  |  |
-| `CnsmpnBillgBillableControl` |  | |  | `cb_bemot` |  |  |
-| `ConsumptionBillingSEPAMandate` |  | |  | `cb_mndid` |  |  |
-| `CAConsumptionBillgPaymentCard` |  | |  | `cb_ccard_id` |  |  |
-| `CAIsRevenueAccountingRelevant` |  | |  | `rarel` |  |  |
-| `CARevenueAcctgMigrationPackage` |  | |  | `ra_mig_package` |  |  |
-| `RevenueAccountingRefType` |  | |  | `ra_reftype` |  |  |
-| `CARevenueAccountingRefType` |  | |  | `ra_reftype` |  |  |
-| `RevenueAccountingReference` |  | |  | `ra_refid` |  |  |
-| `CARevenueAcctgDocumentItem` |  | |  | `ra_srcdoc_id` |  |  |
-| `TransactionPriceCurrency` |  | |  | `trprc_curr` |  |  |
-| `TransactionPrice` |  | |  | `trprc` |  |  |
-| `TotalTransactionPrice` |  | |  | `trprc_total` |  |  |
-| `TransacPriceRcrrcPerdTimeUnit` |  | |  | `trprc_freq_unit` |  |  |
-| `TransacPriceRcrrcPerdDuration` |  | |  | `trprc_freq_duration` |  |  |
-| `StandAloneSellingPriceCurrency` |  | |  | `ssprc_curr` |  |  |
-| `StandAloneSellingPrice` |  | |  | `ssprc` |  |  |
-| `TotalStandAloneSellingPrice` |  | |  | `ssprc_total` |  |  |
-| `SSPriceRecurrencePerdTimeUnit` |  | |  | `ssprc_freq_unit` |  |  |
-| `SSPriceRecurrencePerdDuration` |  | |  | `ssprc_freq_duration` |  |  |
-| `CAPrvdrContrItmChgReason` |  | |  | `chrsn` |  |  |
-| `CAStartOfDurationDateTime` |  | |  | `valfrom_ctrterm` |  |  |
-| `CAEndOfDurationDateTime` |  | |  | `valto_ctrterm` |  |  |
-| `CARevnAcctgRecrrgServiceType` |  | |  | `recurr_service_type` |  |  |
-| `CARevnAcctgTransfRecordOrigin` |  | |  | `ra_oi_orig` |  |  |
-| `CAOriginOfPaymentMasterData` |  | |  | `pay_par_active` |  |  |
-| `PaymentCondition` |  | |  | `zahlkond` |  |  |
-| `CAPaymentMethodForIncgPayment` |  | |  | `ezawe` |  |  |
-| `CAAlternativePayer` |  | |  | `abwre` |  |  |
-| `CAAddressIDOfAlternativePayer` |  | |  | `adrre` |  |  |
-| `CABankIDForIncomingPayments` |  | |  | `ebvty` |  |  |
-| `SEPAMandate` |  | |  | `mndid` |  |  |
-| `CAPaymentCardIDForIncomingPayt` |  | |  | `ccard_id` |  |  |
-| `CAPaymentMethodForOutgPayment` |  | |  | `azawe` |  |  |
-| `CAAlternativePayee` |  | |  | `abwra` |  |  |
-| `CAAddressIDOfAlternativePayee` |  | |  | `adrra` |  |  |
-| `CABankIDForOutgoingPayments` |  | |  | `abvty` |  |  |
-| `CAPaymentCardIDForOutgoingPayt` |  | |  | `ccard_out` |  |  |
-| `CAKeyForPaymentCardSupplement` |  | |  | `pcard_guid` |  |  |
-| `CAOriginOfDunningMasterData` |  | |  | `dunn_par_active` |  |  |
-| `CADunningProcedure` |  | |  | `mahnv` |  |  |
-| `CAServiceDisconncnIsProhibited` |  | |  | `xdiscoexempt` |  |  |
-| `CACollectionStrategy` |  | |  | `strat` |  |  |
-| `CACollectionsMasterDataGroup` |  | |  | `cmgrp` |  |  |
-| `CACollectionsContactPerson` |  | |  | `cpers` |  |  |
-| `PurchaseOrderByCustomer` |  | |  | `bstkd` |  |  |
-| `CustomerPurchaseOrderDate` |  | |  | `bstdk` |  |  |
+| `ProviderContract` | ✓ | |  | `vtkey` | `CHAR(20)` | Identification of a Provider Contract |
+| `ProviderContractItem` | ✓ | |  | `vtpos` | `NUMC(6)` | Contract: Item Number |
+| `CreationDate` |  | |  | `erdat` | `DATS(8)` | Record Creation Date |
+| `CreationTime` |  | |  | `cast(ertim as ttet_dt_cr_time preserving type )` | `TIMS(6)` | Creation Time |
+| `CreatedByUser` |  | |  | `ernam` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `LastChangeDate` |  | |  | `aedat` | `DATS(8)` | Last Changed On |
+| `LastChangeTime` |  | |  | `aetim` | `TIMS(6)` | Last Changed At |
+| `LastChangedByUser` |  | |  | `aenam` | `CHAR(12)` | Name of Person Who Changed Object |
+| `CAProviderContractItemUUID` |  | |  | `vtpid` | `RAW(16)` | External GUID of Provider Contract Items |
+| `CAPrvdrContrParentItemUUID` |  | |  | `papid` | `RAW(16)` | External GUID of Higher-Level Provider Contract Items |
+| `CAPrvdrContrItmValidFromDteTme` |  | |  | `valfr` | `DEC(15)` | Valid From (Time Stamp) |
+| `CAPrvdrContrItmValidToDateTime` |  | |  | `valto` | `DEC(15)` | Valid To (Time Stamp) |
+| `CAPrvdrContrItemCanclnDateTime` |  | |  | `cancl` | `DEC(15)` | Time of Reversal (Time Stamp) |
+| `PrvdrContrItmWthdrwlDateTime` |  | |  | `withdrawn_at` | `DEC(15)` | Withdrawn On (Timestamp) |
+| `CAProviderContractStatus` |  | |  | `status` | `CHAR(1)` | Status of Provider Contract |
+| `CAProviderContractItemText` |  | |  | `vtitt` | `CHAR(50)` | Text for Provider Contract Item |
+| `ContractAccount` |  | |  | `vkont` | `CHAR(12)` | Contract Account Number |
+| `CAPrepaidAccount` |  | |  | `ppacc` | `CHAR(12)` | Prepaid Account |
+| `CATechnicalResourceGroup` |  | |  | `vttrg` | `NUMC(6)` | Group of IDs |
+| `CAServiceRecipient` |  | |  | `srvrp` | `CHAR(10)` | Recipient of Service |
+| `CAAddressIDOfServiceRecipient` |  | |  | `adrsr` | `CHAR(10)` | Address Number for Recipient of the Service |
+| `PrvdrContrItmCorrespncRcpnt` |  | |  | `def_rec` | `CHAR(10)` | Correspondence Recipient in Provider Contract Item |
+| `AddrIDOfCorrespncRcpnt` |  | |  | `def_rec_adrnr` | `CHAR(10)` | Standard Address No. of Alternative Correspondence Recipient |
+| `CAProduct` |  | |  | `prdnr` | `CHAR(40)` | Product Number |
+| `ProductConfiguration` |  | |  | `cuobj` | `NUMC(18)` | Configuration Instance |
+| `CASalesPackageProduct` |  | |  | `prdnr_sp` | `CHAR(40)` | Product ID of the Sales Package |
+| `CAMasterAgreement` |  | |  | `makey` | `CHAR(10)` | Identification of Master Agreement |
+| `CAMasterAgreementProduct` |  | |  | `maprd` | `CHAR(40)` | Custom Product or Product Range |
+| `CAPartnerSettlementRule` |  | |  | `ptsrl` | `CHAR(4)` | Partner Settlement Rule |
+| `CASharingContract` |  | |  | `vtkrf` | `CHAR(20)` | Reference to Sharing Contract |
+| `TaxJurisdiction` |  | |  | `txjcd` | `CHAR(15)` | Jurisdiction for Tax Calculation - Tax Jurisdiction Code |
+| `CAReceivingCountry` |  | |  | `landl` | `CHAR(3)` | Destination Country/Region (for Tax Reports) |
+| `TaxCountry` |  | |  | `tax_country` | `CHAR(3)` | Tax Reporting Country/Region |
+| `CASubscriptionChargeType` |  | |  | `charge_type` | `CHAR(2)` | Charge Type |
+| `BusinessSolutionOrder` |  | |  | `solution_order_id` | `CHAR(10)` | Solution Order |
+| `BusinessSolutionOrderItem` |  | |  | `solution_order_item_id` | `NUMC(6)` | Solution Order Item |
+| `SoldProduct` |  | |  | `matnr_copa` | `CHAR(40)` | Product Sold |
+| `RevenueRecognitionKey` |  | |  | `rev_rec_key` | `CHAR(6)` | Recognition key |
+| `EBRRResultAnalysisInternalID` |  | |  | `rev_rec_key` | `CHAR(6)` | Recognition key |
+| `EBRRIsBundleActive` |  | |  | `bundling` | `CHAR(1)` | Bundling Indicator |
+| `CAProviderContractQuantity` |  | |  | `quantity` | `QUAN(18)` | Quantity |
+| `CAProviderContractQuantityUnit` |  | |  | `quantity_unit` | `UNIT(3)` | Unit of Measure |
+| `DistrSystOperatorBP` |  | |  | `uti_dso_bp` | `CHAR(10)` | Distributor |
+| `DistrSystOperatorMarketCommID` |  | |  | `uti_dso_maco_id` | `CHAR(20)` | Distribution System Operator ID |
+| `MeterOperatorBusinessPartner` |  | |  | `uti_metop_bp` | `CHAR(10)` | Meter Operator |
+| `MeterOperatorMarketCommID` |  | |  | `uti_metop_maco_id` | `CHAR(20)` | Meter Operator ID |
+| `MarketLocationIdentifier` |  | |  | `uti_malo_id` | `CHAR(35)` | Market Location |
+| `SalesOrganization` |  | |  | `vkorg` | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  | `vtweg` | `CHAR(2)` | Distribution Channel |
+| `CompanyCode` |  | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `CAIntcoCompanyCodeSupplying` |  | |  | `ico_bukrs_sup` | `CHAR(4)` | Supplying Company Code |
+| `BusinessArea` |  | |  | `gsber` | `CHAR(4)` | Business Area |
+| `Segment` |  | |  | `segmt` | `CHAR(10)` | Segment for Segmental Reporting |
+| `ProfitCenter` |  | |  | `prctr` | `CHAR(10)` | Profit Center |
+| `Division` |  | |  | `spart` | `CHAR(2)` | Division |
+| `CAPrvdrContrSalesAreaAttrib1` |  | |  | `vber1` | `CHAR(4)` | Contract: Sales Area Attribute 1 |
+| `CAPrvdrContrSalesAreaAttrib2` |  | |  | `vber2` | `CHAR(4)` | Contract: Sales Area Attribute 2 |
+| `WBSElementInternalID` |  | |  | `cast( ps_psp_pnr as fis_wbsint_no_conv preserving type )` | `NUMC(8)` | WBS Element Internal ID |
+| `InternalOrder` |  | |  | `aufnr` | `CHAR(12)` | Order Number |
+| `CAStandardDivision` |  | |  | `stdsp` | `CHAR(2)` | Contract: Standard Division |
+| `PrvdrContrItmIsRlvtForPrfSgDrv` |  | |  | `x_vt_copa` | `CHAR(1)` | Acct Assgmnt of Individual Contracts f. Provider Contracts |
+| `CABillgCycle` |  | |  | `cycle` | `CHAR(4)` | Billing Cycle |
+| `CALastDayOfBillingPeriod` |  | |  | `cycle_day` | `CHAR(2)` | Day of Period End |
+| `CABillgCyclePeriodStartDate` |  | |  | `cycle_date` | `DATS(8)` | Contract: Date of Original Start of Period |
+| `CAInvcgSchedule` |  | |  | `inv_schedule` | `CHAR(4)` | Selection Characteristic for Scheduling |
+| `CARatingArea` |  | |  | `rating_area` | `CHAR(4)` | Rating Area |
+| `CABillgPlnNumber` |  | |  | `billplanno` | `NUMC(12)` | Billing Plan Number |
+| `CAConsumptionBillgSoldToParty` |  | |  | `cb_soldto` | `CHAR(10)` | Sold-To Party |
+| `CAConsumptionBillgInvoiceRcpnt` |  | |  | `cb_billto` | `CHAR(10)` | Invoice Recipient |
+| `ConsumptionBillingPaymentTerms` |  | |  | `cb_dzterm` | `CHAR(4)` | Key for Terms of Payment |
+| `CnsmpnBillgBillableControl` |  | |  | `cb_bemot` | `CHAR(2)` | Accounting Indicator |
+| `ConsumptionBillingSEPAMandate` |  | |  | `cb_mndid` | `CHAR(35)` | Unique Reference to Mandate for each Payee |
+| `CAConsumptionBillgPaymentCard` |  | |  | `cb_ccard_id` | `CHAR(6)` | Payment Card ID for Payments |
+| `CAIsRevenueAccountingRelevant` |  | |  | `rarel` | `CHAR(1)` | Relevant for Revenue Accounting |
+| `CARevenueAcctgMigrationPackage` |  | |  | `ra_mig_package` | `CHAR(4)` | Migration Package ID |
+| `RevenueAccountingRefType` |  | |  | `ra_reftype` | `CHAR(3)` | Reference Type for Revenue Accounting |
+| `CARevenueAccountingRefType` |  | |  | `ra_reftype` | `CHAR(3)` | Reference Type for Revenue Accounting |
+| `RevenueAccountingReference` |  | |  | `ra_refid` | `CHAR(30)` | Reference ID for Revenue Accounting |
+| `CARevenueAcctgDocumentItem` |  | |  | `ra_srcdoc_id` | `CHAR(20)` | Revenue Accounting Item ID |
+| `TransactionPriceCurrency` |  | |  | `trprc_curr` | `CUKY(5)` | Currency Key |
+| `TransactionPrice` |  | |  | `trprc` | `CURR(13)` | Transaction Price for Each Recurrence Period |
+| `TotalTransactionPrice` |  | |  | `trprc_total` | `CURR(13)` | Total Transaction Price |
+| `TransacPriceRcrrcPerdTimeUnit` |  | |  | `trprc_freq_unit` | `CHAR(12)` | Time Unit for Recurrence Period |
+| `TransacPriceRcrrcPerdDuration` |  | |  | `trprc_freq_duration` | `DEC(13)` | Length of Recurrence Period |
+| `StandAloneSellingPriceCurrency` |  | |  | `ssprc_curr` | `CUKY(5)` | Currency Key |
+| `StandAloneSellingPrice` |  | |  | `ssprc` | `CURR(13)` | Standalone Selling Price for Each Recurrence Period |
+| `TotalStandAloneSellingPrice` |  | |  | `ssprc_total` | `CURR(13)` | Total Standalone Selling Price |
+| `SSPriceRecurrencePerdTimeUnit` |  | |  | `ssprc_freq_unit` | `CHAR(12)` | Time Unit for Recurrence Period |
+| `SSPriceRecurrencePerdDuration` |  | |  | `ssprc_freq_duration` | `DEC(13)` | Length of Recurrence Period |
+| `CAPrvdrContrItmChgReason` |  | |  | `chrsn` | `CHAR(2)` | Change Reason |
+| `CAStartOfDurationDateTime` |  | |  | `valfrom_ctrterm` | `DEC(15)` | Contract Term Start (Time Stamp) |
+| `CAEndOfDurationDateTime` |  | |  | `valto_ctrterm` | `DEC(15)` | End of Contract Duration (Time Stamp) |
+| `CARevnAcctgRecrrgServiceType` |  | |  | `recurr_service_type` | `CHAR(6)` | Service Type |
+| `CARevnAcctgTransfRecordOrigin` |  | |  | `ra_oi_orig` | `CHAR(1)` | Type of Origin for Transfer Record |
+| `CAOriginOfPaymentMasterData` |  | |  | `pay_par_active` | `CHAR(1)` | Determination of Payment Data |
+| `PaymentCondition` |  | |  | `zahlkond` | `CHAR(4)` | Payment Condition |
+| `CAPaymentMethodForIncgPayment` |  | |  | `ezawe` | `CHAR(1)` | Incoming Payment Method |
+| `CAAlternativePayer` |  | |  | `abwre` | `CHAR(10)` | Alternative Payer |
+| `CAAddressIDOfAlternativePayer` |  | |  | `adrre` | `CHAR(10)` | Address Number for Alternative Payer |
+| `CABankIDForIncomingPayments` |  | |  | `ebvty` | `CHAR(4)` | Bank Details ID for Incoming Payments |
+| `SEPAMandate` |  | |  | `mndid` | `CHAR(35)` | Unique Reference to Mandate for each Payee |
+| `CAPaymentCardIDForIncomingPayt` |  | |  | `ccard_id` | `CHAR(6)` | Payment Card ID for Incoming Payments |
+| `CAPaymentMethodForOutgPayment` |  | |  | `azawe` | `CHAR(5)` | Outgoing Payment Methods |
+| `CAAlternativePayee` |  | |  | `abwra` | `CHAR(10)` | Alternative Payee |
+| `CAAddressIDOfAlternativePayee` |  | |  | `adrra` | `CHAR(10)` | Address Number for Alternative Payee |
+| `CABankIDForOutgoingPayments` |  | |  | `abvty` | `CHAR(4)` | Bank Details ID for Outgoing Payments |
+| `CAPaymentCardIDForOutgoingPayt` |  | |  | `ccard_out` | `CHAR(6)` | Payment Card ID for Outgoing Payments |
+| `CAKeyForPaymentCardSupplement` |  | |  | `pcard_guid` | `RAW(16)` | Key for Payment Card Supplement |
+| `CAOriginOfDunningMasterData` |  | |  | `dunn_par_active` | `CHAR(1)` | Dunning Control |
+| `CADunningProcedure` |  | |  | `mahnv` | `CHAR(2)` | Dunning Procedure |
+| `CAServiceDisconncnIsProhibited` |  | |  | `xdiscoexempt` | `CHAR(1)` | Disconnection of Service Not Permitted |
+| `CACollectionStrategy` |  | |  | `strat` | `CHAR(2)` | Collection Strategy |
+| `CACollectionsMasterDataGroup` |  | |  | `cmgrp` | `CHAR(2)` | Collection Management: Master Data Group |
+| `CACollectionsContactPerson` |  | |  | `cpers` | `CHAR(10)` | Collections Contact Person |
+| `PurchaseOrderByCustomer` |  | |  | `bstkd` | `CHAR(35)` | Customer Reference |
+| `CustomerPurchaseOrderDate` |  | |  | `bstdk` | `DATS(8)` | Customer Reference Date |
 | `_BillgPln` | | ✓ | | | | |
 | `_BusinessArea` | | ✓ | | | | |
 | `_BillgCycle` | | ✓ | | | | |

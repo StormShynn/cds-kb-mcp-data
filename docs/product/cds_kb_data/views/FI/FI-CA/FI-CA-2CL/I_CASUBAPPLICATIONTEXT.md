@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CASubApplication` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as subap_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type)` |  |  |
-| `CASubApplicationText` |  | |  | `cast( ddtext as subap_text_gfn_kk preserving type )` |  |  |
+| `CASubApplication` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as subap_kk preserving type )` | `CHAR(1)` | Subapplication in Contract Accounts Receivable and Payable |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type)` | `LANG(1)` | Language Key |
+| `CASubApplicationText` |  | |  | `cast( ddtext as subap_text_gfn_kk preserving type )` | `CHAR(60)` | Subapplication Text |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

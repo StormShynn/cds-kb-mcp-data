@@ -38,13 +38,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAReturnReason` | ✓ | |  | `rlgrd` |  |  |
-| `HouseBank` | ✓ | |  | `hbkid` |  |  |
-| `CAReturnType` |  | |  | `rltyp` |  |  |
-| `CAReturnHistoryDays` |  | |  | `histt` |  |  |
-| `CACreditWorthinessRatingValue` |  | |  | `bonig` |  |  |
-| `CAClarificationAccount` |  | |  | `klaeh` |  |  |
-| `CAChequeVoidingReason` |  | |  | `voidr` |  |  |
+| `CAReturnReason` | ✓ | |  | `rlgrd` | `CHAR(3)` | Return Reason |
+| `HouseBank` | ✓ | |  | `hbkid` | `CHAR(5)` | Short Key for a House Bank |
+| `CAReturnType` |  | |  | `rltyp` | `NUMC(2)` | Returns Type |
+| `CAReturnHistoryDays` |  | |  | `histt` | `NUMC(3)` | History days |
+| `CACreditWorthinessRatingValue` |  | |  | `bonig` | `NUMC(2)` | Creditworthiness Number |
+| `CAClarificationAccount` |  | |  | `klaeh` | `CHAR(10)` | Clarification Account |
+| `CAChequeVoidingReason` |  | |  | `voidr` | `CHAR(2)` | Reason for Check Voiding |
 | `_HouseBank` | | ✓ | | | | |
 | `_Text` | | ✓ | | | | |
 

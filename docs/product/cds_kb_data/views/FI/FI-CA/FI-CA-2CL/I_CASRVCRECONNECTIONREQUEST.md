@@ -38,22 +38,22 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAServiceDisconnectionRequest` | ✓ | |  | `dscpnr` |  |  |
-| `CAServiceReconnectionRequest` | ✓ | |  | `recpnr` |  |  |
-| `CASrvcReconncnReqIsInvalid` | ✓ | |  | `xrpinv` |  |  |
-| `CASrvcReconncnReqIsObsolete` | ✓ | |  | `xiobs` |  |  |
-| `CASrvcReconncnReqStatus` |  | |  | `cast( case when xrpinv = 'X' then 'I' when xiobs = 'X' then 'O' else 'V' end as recreq_stat_kk preserving type )` |  |  |
-| `BusinessPartner` |  | |  | `cast( gpart as bu_partner preserving type )` |  |  |
-| `ContractAccount` |  | |  | `cast( vkont as vkont_gfn_kk preserving type )` |  |  |
-| `CAContract` |  | |  | `cast( vtref as vtref_kk preserving type )` |  |  |
-| `CASubApplication` |  | |  | `subap` |  |  |
-| `CADunningAmount` |  | |  | `mbetm` |  |  |
-| `TransactionCurrency` |  | |  | `waers` |  |  |
-| `CAClearingAmountInClearingCrcy` |  | |  | `augbt` |  |  |
-| `CAClearingCurrency` |  | |  | `augwa` |  |  |
-| `CreatedByUser` |  | |  | `uname` |  |  |
-| `CreationDate` |  | |  | `crdate` |  |  |
-| `CreationTime` |  | |  | `crtime` |  |  |
+| `CAServiceDisconnectionRequest` | ✓ | |  | `dscpnr` | `CHAR(10)` | Number of Disconnection Request |
+| `CAServiceReconnectionRequest` | ✓ | |  | `recpnr` | `CHAR(10)` | Number of Reconnection Request |
+| `CASrvcReconncnReqIsInvalid` | ✓ | |  | `xrpinv` | `CHAR(1)` | Invalid Reconnection Request |
+| `CASrvcReconncnReqIsObsolete` | ✓ | |  | `xiobs` | `CHAR(1)` | Obsolete Reconnection Request |
+| `CASrvcReconncnReqStatus` |  | |  | `cast( case when xrpinv = 'X' then 'I' when xiobs = 'X' then 'O' else 'V' end as recreq_stat_kk preserving type )` | `CHAR(1)` | Reconnection Request Status |
+| `BusinessPartner` |  | |  | `cast( gpart as bu_partner preserving type )` | `CHAR(10)` | Business Partner Number |
+| `ContractAccount` |  | |  | `cast( vkont as vkont_gfn_kk preserving type )` | `CHAR(12)` | Contract Account |
+| `CAContract` |  | |  | `cast( vtref as vtref_kk preserving type )` | `CHAR(20)` | Reference Specifications from Contract |
+| `CASubApplication` |  | |  | `subap` | `CHAR(1)` | Subapplication in Contract Accounts Receivable and Payable |
+| `CADunningAmount` |  | |  | `mbetm` | `CURR(13)` | Dunned Amount in Transaction Currency |
+| `TransactionCurrency` |  | |  | `waers` | `CUKY(5)` | Currency Key |
+| `CAClearingAmountInClearingCrcy` |  | |  | `augbt` | `CURR(13)` | Clearing Amount in Clearing Currency |
+| `CAClearingCurrency` |  | |  | `augwa` | `CUKY(5)` | Clearing Currency |
+| `CreatedByUser` |  | |  | `uname` | `CHAR(12)` | User Name |
+| `CreationDate` |  | |  | `crdate` | `DATS(8)` | Created On |
+| `CreationTime` |  | |  | `crtime` | `TIMS(6)` | Calendar: Creation or change time |
 | `_BusinessPartner` | | ✓ | | | | |
 | `_CAProviderContract` | | ✓ | | | | |
 | `_CASrvcReconncnReqStatus` | | ✓ | | | | |

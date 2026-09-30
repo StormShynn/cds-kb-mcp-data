@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAProviderContractCategory` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as vtcat_kk preserving type )` |  |  |
+| `CAProviderContractCategory` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as vtcat_kk preserving type )` | `CHAR(1)` | Contract Category |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -38,7 +38,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CASecurityDepositReversalRsn` | ✓ | |  | `rev_reason` |  |  |
+| `CASecurityDepositReversalRsn` | ✓ | |  | `rev_reason` | `CHAR(4)` | Reversal reason for security deposit |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CARevenueDistributionStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as rdstat_kk preserving type )` |  |  |
+| `CARevenueDistributionStatus` | ✓ | |  | `cast( left( dd07l.domvalue_l, 1 ) as rdstat_kk preserving type )` | `CHAR(1)` | Status Revenue Distribution |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

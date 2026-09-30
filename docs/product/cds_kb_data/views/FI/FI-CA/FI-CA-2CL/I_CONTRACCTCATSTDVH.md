@@ -40,8 +40,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ContractAccountCategory` | ✓ | |  |  |  |  |
-| `CAApplicationArea` | ✓ | |  |  |  |  |
+| `ContractAccountCategory` | ✓ | |  |  | `CHAR(2)` | Contract Account Category |
+| `CAApplicationArea` | ✓ | |  |  | `CHAR(1)` | Application Area |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

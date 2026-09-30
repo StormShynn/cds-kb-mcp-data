@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAProviderContractSenderCat` | ✓ | |  | `cast( left ( dd07l.domvalue_l,1 ) as sendercat_kk preserving type )` |  |  |
+| `CAProviderContractSenderCat` | ✓ | |  | `cast( left ( dd07l.domvalue_l,1 ) as sendercat_kk preserving type )` | `CHAR(1)` | Provider Contract Sender Category |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -38,24 +38,24 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAWriteOffDocumentNumber` | ✓ | |  | `abbel` |  |  |
-| `CADocumentNumber` | ✓ | |  | `opbel` |  |  |
-| `CARepetitionItemNumber` | ✓ | |  | `opupw` |  |  |
-| `CABPItemNumber` | ✓ | |  | `opupk` |  |  |
-| `CASubItemNumber` | ✓ | |  | `opupz` |  |  |
-| `CompanyCode` |  | |  | `bukrs` |  |  |
-| `BusinessPartner` |  | |  | `gpart` |  |  |
-| `ContractAccount` |  | |  | `vkont` |  |  |
-| `TransactionCurrency` |  | |  | `waers` |  |  |
-| `CAAmountInTransactionCurrency` |  | |  | `betrw` |  |  |
-| `CAWriteOffReason` |  | |  | `abgrd` |  |  |
-| `CAWriteOffDate` |  | |  | `abdat` |  |  |
-| `CAStatisticalItemCode` |  | |  | `stakz` |  |  |
-| `CADocumentOriginCode` |  | |  | `herkf` |  |  |
-| `CADocumentType` |  | |  | `blart` |  |  |
-| `CAWriteOffIsReversed` |  | |  | `xrvsd` |  |  |
-| `CAMassRunDate` |  | |  | `laufd` |  |  |
-| `CAMassRunID` |  | |  | `laufi` |  |  |
+| `CAWriteOffDocumentNumber` | ✓ | |  | `abbel` | `CHAR(12)` | Contract account write-off document number |
+| `CADocumentNumber` | ✓ | |  | `opbel` | `CHAR(12)` | Number of a FI-CA Document |
+| `CARepetitionItemNumber` | ✓ | |  | `opupw` | `NUMC(3)` | Repetition Item in FI-CA Document |
+| `CABPItemNumber` | ✓ | |  | `opupk` | `NUMC(4)` | Item Number in FI-CA Document |
+| `CASubItemNumber` | ✓ | |  | `opupz` | `NUMC(3)` | Subitem for a Partial Clearing in Document |
+| `CompanyCode` |  | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `BusinessPartner` |  | |  | `gpart` | `CHAR(10)` | Business Partner Number |
+| `ContractAccount` |  | |  | `vkont` | `CHAR(12)` | Contract Account Number |
+| `TransactionCurrency` |  | |  | `waers` | `CUKY(5)` | Currency Key |
+| `CAAmountInTransactionCurrency` |  | |  | `betrw` | `CURR(13)` | Amount in Transaction Currency with +/- Sign |
+| `CAWriteOffReason` |  | |  | `abgrd` | `CHAR(2)` | Write-Off Reason |
+| `CAWriteOffDate` |  | |  | `abdat` | `DATS(8)` | Date |
+| `CAStatisticalItemCode` |  | |  | `stakz` | `CHAR(1)` | Type of Statistical Line Item |
+| `CADocumentOriginCode` |  | |  | `herkf` | `CHAR(2)` | Document Origin Key |
+| `CADocumentType` |  | |  | `blart` | `CHAR(2)` | Document Type |
+| `CAWriteOffIsReversed` |  | |  | `xrvsd` | `CHAR(1)` | Item is reversed |
+| `CAMassRunDate` |  | |  | `laufd` | `DATS(8)` | Date ID |
+| `CAMassRunID` |  | |  | `laufi` | `CHAR(6)` | Additional Identification Characteristic |
 | `_BusinessPartner` | | ✓ | | | | |
 | `_CADocumentBPItem` | | ✓ | | | | |
 | `_CADocument` | | ✓ | | | | |

@@ -39,10 +39,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Country` | ✓ | |  | `land1` |  |  |
-| `CAWithholdingTaxSupplement` | ✓ | |  | `qssew` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `CAWithholdingTaxSuplmntName` |  | |  | `txt30` |  |  |
+| `Country` | ✓ | |  | `land1` | `CHAR(3)` | Country/Region Key |
+| `CAWithholdingTaxSupplement` | ✓ | |  | `qssew` | `CHAR(2)` | Withholding Tax Supplement |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `CAWithholdingTaxSuplmntName` |  | |  | `txt30` | `CHAR(30)` | Text (30 Characters) |
 | `_Country` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 
