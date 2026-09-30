@@ -29,7 +29,7 @@
     "claude"
   ],
   "dependencies": {
-    "@abaplint/core": "^2.120.21",
+    "@abaplint/core": "^2.120.60",
     "@aws-sdk/client-s3": "^3.787.0",
     "@huggingface/transformers": "^3.8.1",
     "@modelcontextprotocol/core": "^2.0.0",
