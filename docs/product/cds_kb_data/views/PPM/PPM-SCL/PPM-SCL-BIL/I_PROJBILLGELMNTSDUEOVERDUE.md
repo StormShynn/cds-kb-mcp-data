@@ -10,9 +10,25 @@ extensible_key_user: no
 extensible_dev_ext: no
 atc_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROJBILLGELMNTSDUEOVERDUE')/$value
 semantic_en: "Billing elements due and overdue"
+semantic_vi: "Billing elements due and overdue — CDS view giao diện dựa trên P_ProjBillgFixedPrDueOverdue."
+keywords:
+  - "billing"
+  - "elements"
+  - "due"
+  - "and"
+  - "overdue"
+  - "project"
+  - "element"
+  - "date"
+  - "internal"
+  - "document"
+  - "currency"
+  - "billable"
+  - "revenue"
+  - "crcy"
 tags:
   - PPM
   - billing
@@ -21,7 +37,6 @@ tags:
   - interface-view
   - PPM-SCL
   - PPM-SCL-BIL
-  - metadata-only
 ---
 # I_PROJBILLGELMNTSDUEOVERDUE
 
@@ -38,13 +53,13 @@ tags:
 | Extensible (Developer Extensibility) | No — can custom fields be added directly to THIS entity itself via ABAP Developer Extensibility |
 | Release State (SAP ATC / Clean Core) | Released — a third, independent signal from SAP's ABAP Cloud released-objects list |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROJBILLGELMNTSDUEOVERDUE')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROJBILLGELMNTSDUEOVERDUE')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ProjectBillingElementUUID` |  | |  |  | `RAW(16)` | Project Billing Element UUID |
+| `ProjectBillingElementUUID` | ✓ | |  |  | `RAW(16)` | Project Billing Element UUID |
 | `DueBillingDate` |  | |  |  | `DATS(8)` | Billing Date |
 | `BillingWBSElementInternalID` |  | |  |  | `NUMC(8)` |  |
 | `DocumentCurrency` |  | |  |  | `CUKY(5)` | Document Currency |
@@ -55,3 +70,40 @@ tags:
 | `Customer` |  | |  |  | `CHAR(10)` | Project Customer |
 | `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
 | `ProjectBillingRequest` |  | |  |  | `CHAR(10)` |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROJBILLGELMNTSDUEOVERDUE')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_PROJBILLGELMNTSDUEOVERDUE')/$value)*
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@EndUserText.label: 'Billing elements due and overdue'
+@AccessControl.authorizationCheck: #MANDATORY
+@ObjectModel.supportedCapabilities:[#SITUATION_ANCHOR]
+@Metadata.ignorePropagatedAnnotations: true
+@AccessControl.personalData.blocking: #NOT_REQUIRED
+@VDM.viewType: #COMPOSITE
+@ObjectModel.usageType:{
+  serviceQuality: #X,
+  sizeCategory: #S,
+  dataClass: #MIXED
+}
+@ObjectModel.semanticKey: [ 'WBSElementExternalID' ]
+define view entity I_ProjBillgElmntsDueOverdue
+  as select from P_ProjBillgFixedPrDueOverdue
+{
+
+  key ProjectBillingElementUUID,
+      DueBillingDate,
+      BillingWBSElementInternalID,
+      DocumentCurrency,
+      @Semantics.amount.currencyCode: 'DocumentCurrency'
+      BillableRevenueAmtInDocCrcy,
+      BillingPlanUsageCategory,
+      WBSElementExternalID,
+      Project,
+      Customer,
+      ProfitCenter,
+      ProjectBillingRequest
+}
+```

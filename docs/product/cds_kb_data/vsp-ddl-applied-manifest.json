@@ -15268,5 +15268,130 @@
     "appliedAt": "2026-09-30T11:54:49.366Z",
     "fields": 21,
     "action": "updated"
+  },
+  "C_BANKRATINGANALYSISQUERY": {
+    "appliedAt": "2026-10-01T06:24:38.536Z",
+    "fields": 7,
+    "action": "updated"
+  },
+  "C_BKPOAPAYMENTWORKFLOWEDP": {
+    "appliedAt": "2026-10-01T06:24:38.795Z",
+    "fields": 4,
+    "action": "updated"
+  },
+  "C_CHANGERECORDLONGTEXTDEX_2": {
+    "appliedAt": "2026-10-01T06:24:39.019Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "C_CHANGERECORDPARTNERDEX_2": {
+    "appliedAt": "2026-10-01T06:24:39.298Z",
+    "fields": 2,
+    "action": "updated"
+  },
+  "C_CMHDGEVALRPTKEYDATEQUERY": {
+    "appliedAt": "2026-10-01T06:24:39.565Z",
+    "fields": 87,
+    "action": "updated"
+  },
+  "C_CMMDTYHDGEVALREPORTQUERY": {
+    "appliedAt": "2026-10-01T06:24:39.936Z",
+    "fields": 130,
+    "action": "updated"
+  },
+  "C_CMPLOBLASGTTSKBYOVRDDTEQ": {
+    "appliedAt": "2026-10-01T06:24:40.242Z",
+    "fields": 16,
+    "action": "updated"
+  },
+  "C_CMPLRQRSLTMARKETABILITYDEX": {
+    "appliedAt": "2026-10-01T06:24:40.471Z",
+    "fields": 27,
+    "action": "updated"
+  },
+  "C_FINSGLERRITMWRKFLWEMLTMPL": {
+    "appliedAt": "2026-10-01T06:24:40.725Z",
+    "fields": 16,
+    "action": "updated"
+  },
+  "C_PMTUPCOMINGRENEWALFLTRQ": {
+    "appliedAt": "2026-10-01T06:24:41.053Z",
+    "fields": 11,
+    "action": "updated"
+  },
+  "C_PUBSECFINACCTGITEMQRY": {
+    "appliedAt": "2026-10-01T06:24:41.394Z",
+    "fields": 61,
+    "action": "updated"
+  },
+  "C_RECOSTSETTLEMENTCORRESPNCEDP": {
+    "appliedAt": "2026-10-01T06:24:41.642Z",
+    "fields": 14,
+    "action": "updated"
+  },
+  "C_SUSTSUPPLIERINVOICEITEMDEX": {
+    "appliedAt": "2026-10-01T06:24:41.944Z",
+    "fields": 28,
+    "action": "updated"
+  },
+  "I_BANKRATINGANALYSISCUBE": {
+    "appliedAt": "2026-10-01T06:24:42.149Z",
+    "fields": 12,
+    "action": "updated"
+  },
+  "I_BPCREDITPROFILEDEX": {
+    "appliedAt": "2026-10-01T06:24:42.375Z",
+    "fields": 13,
+    "action": "updated"
+  },
+  "I_CREDITMANAGEMENTACCOUNTDEX": {
+    "appliedAt": "2026-10-01T06:24:42.600Z",
+    "fields": 17,
+    "action": "updated"
+  },
+  "I_INTRASTATPRVDROFINFOCOCODE": {
+    "appliedAt": "2026-10-01T06:24:42.815Z",
+    "fields": 2,
+    "action": "updated"
+  },
+  "I_INTRASTATPRVDROFINFOPLANT": {
+    "appliedAt": "2026-10-01T06:24:43.046Z",
+    "fields": 3,
+    "action": "updated"
+  },
+  "I_INTRASTATPRVDROFINFORMATION": {
+    "appliedAt": "2026-10-01T06:24:43.318Z",
+    "fields": 4,
+    "action": "updated"
+  },
+  "I_PERMITUPCOMINGRENEWALCUBE": {
+    "appliedAt": "2026-10-01T06:24:43.562Z",
+    "fields": 11,
+    "action": "updated"
+  },
+  "I_PROJBILLGELMNTSDUEOVERDUE": {
+    "appliedAt": "2026-10-01T06:24:43.835Z",
+    "fields": 11,
+    "action": "updated"
+  },
+  "I_REVENUEGROWTHPROMOTIONVH": {
+    "appliedAt": "2026-10-01T06:24:44.072Z",
+    "fields": 9,
+    "action": "updated"
+  },
+  "I_UNIVERSALALLOCATIONCYCLE": {
+    "appliedAt": "2026-10-01T06:24:44.322Z",
+    "fields": 47,
+    "action": "updated"
+  },
+  "I_UNIVERSALALLOCATIONKEYFIELD": {
+    "appliedAt": "2026-10-01T06:24:44.541Z",
+    "fields": 11,
+    "action": "updated"
+  },
+  "I_UNIVERSALALLOCATIONSEGMENT": {
+    "appliedAt": "2026-10-01T06:24:44.843Z",
+    "fields": 48,
+    "action": "updated"
   }
 }

@@ -9,9 +9,25 @@ key_user_ext_status: released
 extensible_key_user: no
 extensible_dev_ext: no
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PMTUPCOMINGRENEWALFLTRQ')/$value
 semantic_en: "Pmt Upcoming Renewal Fltr - Query"
+semantic_vi: "Pmt Upcoming Renewal Fltr - Query — CDS view tiêu dùng dựa trên Pmt Upcoming Renewal Fltr - Query."
+keywords:
+  - "pmt"
+  - "upcoming"
+  - "renewal"
+  - "fltr"
+  - "query"
+  - "cmplnc"
+  - "obligation"
+  - "assignment"
+  - "compliance"
+  - "title"
+  - "location"
+  - "name"
+  - "cmpl"
+  - "vers"
 tags:
   - EHS
   - component:EHS-SUS-FND-EHS
@@ -19,7 +35,6 @@ tags:
   - EHS-SUS
   - EHS-SUS-FND
   - EHS-SUS-FND-EHS
-  - metadata-only
 ---
 # C_PMTUPCOMINGRENEWALFLTRQ
 
@@ -35,7 +50,7 @@ tags:
 | Extensible (Key User Extensibility) | No — can custom fields be added directly to THIS entity itself via Key User Extensibility (a different question from "used as a data source" above) |
 | Extensible (Developer Extensibility) | No — can custom fields be added directly to THIS entity itself via ABAP Developer Extensibility |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PMTUPCOMINGRENEWALFLTRQ')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PMTUPCOMINGRENEWALFLTRQ')/$value) |
 
 ## Fields
 
@@ -51,4 +66,60 @@ tags:
 | `ComplianceObligationDomainCode` |  | |  |  | `CHAR(21)` | Compliance Obligation Domain |
 | `NumberOfRecords` |  | |  |  | `INT4(10)` | Number of Obligations |
 | `MonthsUntilRenewalDateValue` |  | |  |  | `DECF(34)` |  |
-| `MnthsUntilRnwlDteIsLessThanSix` |  | |  |  | `INT1(3)` |  |
+| `MnthsUntilRnwlDteIsLessThanSix` |  | |  | `case when MonthsUntilRenewalDateValue <= abap.int1'6' then 1 else 0 end` | `INT1(3)` |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PMTUPCOMINGRENEWALFLTRQ')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_PMTUPCOMINGRENEWALFLTRQ')/$value)*
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@VDM.viewType: #CONSUMPTION
+@EndUserText.label: 'Pmt Upcoming Renewal Fltr - Query'
+@AccessControl.authorizationCheck: #NOT_ALLOWED
+@ObjectModel.modelingPattern: #ANALYTICAL_QUERY
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_QUERY]
+@OData.publish: true
+
+@Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
+
+@ObjectModel.usageType:{
+  serviceQuality: #D,
+  sizeCategory: #L,
+  dataClass: #MIXED
+}
+
+define transient view entity C_PmtUpcomingRenewalFltrQ 
+provider contract analytical_query
+as projection on I_PermitUpcomingRenewalCube
+{
+  
+  CmplncObligationAssignmentUUID,
+  
+  ComplianceObligationTitle,
+  
+  EHSLocationUUID,
+  
+  EHSLocationName,
+  
+  CmplRqVersUUID,
+  
+  ComplianceObligationTypeCode,
+  
+  EHSCmplRqPmtSetForRnwlOnDate,
+  
+  ComplianceObligationDomainCode,
+  
+  NumberOfRecords,
+  
+  MonthsUntilRenewalDateValue,
+  
+  @Aggregation.default: #FORMULA
+  case
+    when MonthsUntilRenewalDateValue <= abap.int1'6'
+      then 1
+    else 0
+  end as MnthsUntilRnwlDteIsLessThanSix
+} where EHSCmplRqPmtSetForRnwlOnDate >= $session.system_date
+```

@@ -9,9 +9,25 @@ key_user_ext_status: released
 extensible_key_user: no
 extensible_dev_ext: no
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECOSTSETTLEMENTCORRESPNCEDP')/$value
 semantic_en: "RE Cost Settlement Email Data Provider"
+semantic_vi: "RE Cost Settlement Email Data Provider — CDS view tiêu dùng dựa trên RE Cost Settlement Email Data Provider."
+keywords:
+  - "cost"
+  - "settlement"
+  - "email"
+  - "data"
+  - "provider"
+  - "real"
+  - "estate"
+  - "process"
+  - "contract"
+  - "company"
+  - "code"
+  - "business"
+  - "partner"
+  - "number"
 tags:
   - RE
   - component:RE-FX-CP-2CL
@@ -19,7 +35,6 @@ tags:
   - RE-FX
   - RE-FX-CP
   - RE-FX-CP-2CL
-  - metadata-only
 ---
 # C_RECOSTSETTLEMENTCORRESPNCEDP
 
@@ -35,25 +50,74 @@ tags:
 | Extensible (Key User Extensibility) | No — can custom fields be added directly to THIS entity itself via Key User Extensibility (a different question from "used as a data source" above) |
 | Extensible (Developer Extensibility) | No — can custom fields be added directly to THIS entity itself via ABAP Developer Extensibility |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECOSTSETTLEMENTCORRESPNCEDP')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECOSTSETTLEMENTCORRESPNCEDP')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `RealEstateProcess` |  | |  |  | `CHAR(16)` | Process ID |
-| `RealEstateContract` |  | |  |  | `CHAR(13)` | Real Estate Contract Number |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
-| `RealEstateSettlementNumber` |  | |  |  | `CHAR(20)` | Real Estate Settlement Number |
-| `RESettlementName` |  | |  |  | `CHAR(60)` | Real Estate Cost Settlement Name |
-| `RESettlementPeriodStartDate` |  | |  |  | `DATS(8)` | Start of Cost Settlement |
-| `RESettlementPeriodEndDate` |  | |  |  | `DATS(8)` | End of Cost Settlement |
-| `RESettlementType` |  | |  |  | `CHAR(1)` | Real Estate Cost Settlement Type |
-| `RESettlementTypeText` |  | |  |  | `CHAR(60)` | Real Estate Settlement Type |
-| `RESettlementProcedure` |  | |  |  | `CHAR(10)` | Real Estate Settlement Procedure |
-| `RESettlementProcedureText` |  | |  |  | `CHAR(30)` | Real Estate Settlement Procedure |
-| `REArchitectureObjectName` |  | |  |  | `CHAR(60)` | Real Estate Architecture Object Name |
-| `REContractName` |  | |  |  | `CHAR(80)` | Contract Name |
-| `CompanyCodeName` |  | |  |  | `CHAR(25)` | Name of Company Code or Company |
-| `REContractIntRealEstateNumber` |  | |  |  | `CHAR(13)` | Internal Key of Real Estate Object |
+| `RealEstateProcess` | ✓ | | `_Hier._RESettlementProcess._REProcess` | `RealEstateProcess` | `CHAR(16)` | Process ID |
+| `RealEstateContract` | ✓ | | `_Hier._REContract` | `RealEstateContract` | `CHAR(13)` | Real Estate Contract Number |
+| `CompanyCode` | ✓ | | `_Hier._REContract` | `CompanyCode` | `CHAR(4)` | Company Code |
+| `BusinessPartner` | ✓ | | `_Hier._REContract._REPartnerAssgmt` | `BusinessPartner` | `CHAR(10)` | Business Partner Number |
+| `RealEstateSettlementNumber` |  | | `_Hier._RESettlement` | `RealEstateSettlementNumber` | `CHAR(20)` | Real Estate Settlement Number |
+| `RESettlementName` |  | | `_Hier._RESettlement` | `RESettlementName` | `CHAR(60)` | Real Estate Cost Settlement Name |
+| `RESettlementPeriodStartDate` |  | | `_Hier._RESettlement` | `RESettlementPeriodStartDate` | `DATS(8)` | Start of Cost Settlement |
+| `RESettlementPeriodEndDate` |  | | `_Hier._RESettlement` | `RESettlementPeriodEndDate` | `DATS(8)` | End of Cost Settlement |
+| `RESettlementType` |  | | `_Hier._RESettlement` | `RESettlementType` | `CHAR(1)` | Real Estate Cost Settlement Type |
+| `RESettlementProcedure` |  | | `_Hier._RESettlementProcess` | `RESettlementProcedure` | `CHAR(10)` | Real Estate Settlement Procedure |
+| `REArchitectureObjectName` |  | | `_Hier._REArchitectureObject._REArchitectureObjBuilding` | `REArchitectureObjectName` | `CHAR(60)` | Real Estate Architecture Object Name |
+| `REContractName` |  | | `_Hier._REContract` | `REContractName` | `CHAR(80)` | Contract Name |
+| `CompanyCodeName` |  | | `_Hier._REContract._CompanyCode` | `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
+| `REContractIntRealEstateNumber` |  | | `_Hier` | `REContractIntRealEstateNumber` | `CHAR(13)` | Internal Key of Real Estate Object |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECOSTSETTLEMENTCORRESPNCEDP')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_RECOSTSETTLEMENTCORRESPNCEDP')/$value)*
+
+```abap
+@AccessControl.authorizationCheck: #MANDATORY
+@AccessControl.personalData.blocking: #REQUIRED
+
+@EndUserText.label: 'RE Cost Settlement Email Data Provider'
+
+@Metadata.ignorePropagatedAnnotations: true
+
+@ObjectModel.modelingPattern: #OUTPUT_EMAIL_DATA_PROVIDER
+@ObjectModel.representativeKey: 'RealEstateProcess'
+@ObjectModel.semanticKey: [ 'RealEstateProcess', 'RealEstateContract', 'CompanyCode', 'BusinessPartner' ]
+@ObjectModel.supportedCapabilities: [ #OUTPUT_EMAIL_DATA_PROVIDER ]
+@ObjectModel.usageType: { dataClass: #TRANSACTIONAL, serviceQuality: #C, sizeCategory: #M }
+
+@VDM.viewType: #CONSUMPTION
+
+define view entity C_RECostSettlementCorrespncEDP
+  as select distinct from I_RESettlmtApprtmtHierDetail as _Hier
+
+{
+  key _Hier._RESettlementProcess._REProcess.RealEstateProcess,
+  key _Hier._REContract.RealEstateContract,
+  key _Hier._REContract.CompanyCode,
+  key _Hier._REContract._REPartnerAssgmt.BusinessPartner,
+
+      _Hier._RESettlement.RealEstateSettlementNumber,
+      _Hier._RESettlement.RESettlementName,
+      _Hier._RESettlement.RESettlementPeriodStartDate,
+      _Hier._RESettlement.RESettlementPeriodEndDate,
+      _Hier._RESettlement.RESettlementType,
+
+      _Hier._RESettlement._RESettlementType._Text[1: Language =
+                                                     $session.system_language].RESettlementTypeText,
+
+      _Hier._RESettlementProcess.RESettlementProcedure,
+      _Hier._RESettlementProcess._RESettlementProcedure._Text[1: Language =
+                                                                 $session.system_language].RESettlementProcedureText,
+
+      _Hier._REArchitectureObject._REArchitectureObjBuilding.REArchitectureObjectName,
+      _Hier._REContract.REContractName,
+      _Hier._REContract._CompanyCode.CompanyCodeName,
+      _Hier.REContractIntRealEstateNumber,
+      _Hier._REContract,
+      _Hier._REContract._CompanyCode
+}
+```

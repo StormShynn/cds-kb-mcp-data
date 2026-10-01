@@ -53,14 +53,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `WorkflowTaskInternalID` | ✓ | |  |  |  |  |
-| `CABillgReqDocument` |  | | `_CABillgReq` | `CABillgReqDocument` |  |  |
-| `CABillgReqTotalAmountCurrency` |  | | `_CABillgReq` | `CABillgReqTotalAmountCurrency` |  |  |
-| `CABillgReqType` |  | | `_CABillgReq` | `CABillgReqType` |  |  |
-| `CABillgReqReason` |  | | `_CABillgReq` | `CABillgReqReason` |  |  |
-| `CABillgReqCreationDate` |  | | `_CABillgReq` | `CABillgReqCreationDate` |  |  |
-| `CABillgReqDescription` |  | | `_CABillgReq` | `CABillgReqDescription` |  |  |
-| `WorkflowTaskURL` |  | | `_WorkflowTaskURL` | `WorkflowTaskURL` |  |  |
+| `WorkflowTaskInternalID` | ✓ | |  |  | `NUMC(12)` | Work item ID |
+| `CABillgReqDocument` |  | | `_CABillgReq` | `CABillgReqDocument` | `NUMC(12)` | Billing Request Number |
+| `CABillgReqTotalAmountCurrency` |  | | `_CABillgReq` | `CABillgReqTotalAmountCurrency` | `CUKY(5)` | Transaction Currency |
+| `CABillgReqType` |  | | `_CABillgReq` | `CABillgReqType` | `CHAR(2)` | Billing Request Type |
+| `CABillgReqReason` |  | | `_CABillgReq` | `CABillgReqReason` | `CHAR(4)` | Reason for Billing Request |
+| `CABillgReqCreationDate` |  | | `_CABillgReq` | `CABillgReqCreationDate` | `DATS(8)` | Creation Date of Billing Request |
+| `CABillgReqDescription` |  | | `_CABillgReq` | `CABillgReqDescription` | `CHAR(60)` | Billing Request Description |
+| `WorkflowTaskURL` |  | | `_WorkflowTaskURL` | `WorkflowTaskURL` | `SSTR(1333)` | Workflow: Workflow Task URL |
 
 ## Associations
 

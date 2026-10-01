@@ -23868,5 +23868,205 @@
     "attemptedAt": "2026-09-30T11:56:28.379Z",
     "found": true,
     "matched": 18
+  },
+  "C_BANKRATINGANALYSISQUERY": {
+    "attemptedAt": "2026-10-01T06:25:50.201Z",
+    "found": true,
+    "matched": 7
+  },
+  "C_BKPOAPAYMENTWORKFLOWEDP": {
+    "attemptedAt": "2026-10-01T06:25:51.931Z",
+    "found": true,
+    "matched": 4
+  },
+  "C_CHANGERECORDLONGTEXTDEX_2": {
+    "attemptedAt": "2026-10-01T06:25:53.477Z",
+    "found": true,
+    "matched": 2
+  },
+  "C_CHANGERECORDPARTNERDEX_2": {
+    "attemptedAt": "2026-10-01T06:25:54.767Z",
+    "found": true,
+    "matched": 2
+  },
+  "C_CMHDGEVALRPTKEYDATEQUERY": {
+    "attemptedAt": "2026-10-01T06:26:00.972Z",
+    "found": true,
+    "matched": 87
+  },
+  "C_CMMDTYHDGEVALREPORTQUERY": {
+    "attemptedAt": "2026-10-01T06:26:02.573Z",
+    "found": true,
+    "matched": 130
+  },
+  "C_CMPLOBLASGTTSKBYOVRDDTEQ": {
+    "attemptedAt": "2026-10-01T06:26:04.003Z",
+    "found": true,
+    "matched": 16
+  },
+  "C_CMPLRQRSLTMARKETABILITYDEX": {
+    "attemptedAt": "2026-10-01T06:26:05.303Z",
+    "found": true,
+    "matched": 27
+  },
+  "C_FINSGLERRITMWRKFLWEMLTMPL": {
+    "attemptedAt": "2026-10-01T06:26:06.518Z",
+    "found": true,
+    "matched": 15
+  },
+  "C_PMTUPCOMINGRENEWALFLTRQ": {
+    "attemptedAt": "2026-10-01T06:26:08.033Z",
+    "found": true,
+    "matched": 11
+  },
+  "C_PUBSECFINACCTGITEMQRY": {
+    "attemptedAt": "2026-10-01T06:26:11.684Z",
+    "found": true,
+    "matched": 61
+  },
+  "C_RECOSTSETTLEMENTCORRESPNCEDP": {
+    "attemptedAt": "2026-10-01T06:26:13.422Z",
+    "found": true,
+    "matched": 14
+  },
+  "C_SUSTSUPPLIERINVOICEITEMDEX": {
+    "attemptedAt": "2026-10-01T06:26:16.964Z",
+    "found": true,
+    "matched": 28
+  },
+  "I_BANKRATINGANALYSISCUBE": {
+    "attemptedAt": "2026-10-01T06:26:19.726Z",
+    "found": true,
+    "matched": 12
+  },
+  "I_BPCREDITPROFILEDEX": {
+    "attemptedAt": "2026-10-01T06:26:21.163Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_CREDITMANAGEMENTACCOUNTDEX": {
+    "attemptedAt": "2026-10-01T06:26:22.245Z",
+    "found": true,
+    "matched": 17
+  },
+  "I_INTRASTATPRVDROFINFOCOCODE": {
+    "attemptedAt": "2026-10-01T06:26:23.395Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_INTRASTATPRVDROFINFOPLANT": {
+    "attemptedAt": "2026-10-01T06:26:24.671Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_INTRASTATPRVDROFINFORMATION": {
+    "attemptedAt": "2026-10-01T06:26:25.952Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PERMITUPCOMINGRENEWALCUBE": {
+    "attemptedAt": "2026-10-01T06:26:27.125Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_PROJBILLGELMNTSDUEOVERDUE": {
+    "attemptedAt": "2026-10-01T06:26:29.348Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_REVENUEGROWTHPROMOTIONVH": {
+    "attemptedAt": "2026-10-01T06:26:33.469Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_UNIVERSALALLOCATIONCYCLE": {
+    "attemptedAt": "2026-10-01T06:26:35.465Z",
+    "found": true,
+    "matched": 47
+  },
+  "I_UNIVERSALALLOCATIONKEYFIELD": {
+    "attemptedAt": "2026-10-01T06:26:37.819Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_UNIVERSALALLOCATIONSEGMENT": {
+    "attemptedAt": "2026-10-01T06:26:39.199Z",
+    "found": true,
+    "matched": 48
+  },
+  "I_PROVIDERCONTRACTTYPE": {
+    "attemptedAt": "2026-10-01T06:26:40.058Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PROVIDERCONTRACTTYPETEXT": {
+    "attemptedAt": "2026-10-01T06:26:40.956Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PRVDRCONTRITEMCHGREASON": {
+    "attemptedAt": "2026-10-01T06:26:41.956Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PRVDRCONTRITEMCHGREASONTXT": {
+    "attemptedAt": "2026-10-01T06:26:42.748Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SALESBILLINGPROVIDERCONTRACT": {
+    "attemptedAt": "2026-10-01T06:26:43.666Z",
+    "found": true,
+    "matched": 20
+  },
+  "I_SLSBILLGPROVIDERCONTRACTITEM": {
+    "attemptedAt": "2026-10-01T06:26:44.451Z",
+    "found": true,
+    "matched": 40
+  },
+  "C_CABILLGREQWRKFLWEMLTMPL": {
+    "attemptedAt": "2026-10-01T06:26:45.292Z",
+    "found": true,
+    "matched": 8
+  },
+  "C_CABILLPRNTINVCGHDRCORRESPNC": {
+    "attemptedAt": "2026-10-01T06:26:46.139Z",
+    "found": true,
+    "matched": 64
+  },
+  "D_CABILLGDOCCREATEDSOURCETRANS": {
+    "attemptedAt": "2026-10-01T06:26:46.453Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CABILLGDOCCREATEDSOURCETRANS\" (404)"
+  },
+  "D_CABILLGPLNCREATED": {
+    "attemptedAt": "2026-10-01T06:26:47.174Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CABILLGPLNCREATED\" (404)"
+  },
+  "D_CAINVCGDOCCREATEDSOURCEDOC": {
+    "attemptedAt": "2026-10-01T06:26:47.885Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CAINVCGDOCCREATEDSOURCEDOC\" (404)"
+  },
+  "D_CONTRACCTGBLGDOCUMENTCREATED": {
+    "attemptedAt": "2026-10-01T06:26:48.635Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACCTGBLGDOCUMENTCREATED\" (404)"
+  },
+  "D_CONTRACCTGINVCGDOCCREATED": {
+    "attemptedAt": "2026-10-01T06:26:49.335Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACCTGINVCGDOCCREATED\" (404)"
+  },
+  "FCIHOME_MA_ANALYTIC_V11": {
+    "attemptedAt": "2026-10-01T06:26:50.066Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"FCIHOME_MA_ANALYTIC_V11\" (404)"
+  },
+  "I_CABILLGCYCLE": {
+    "attemptedAt": "2026-10-01T06:26:51.253Z",
+    "found": true,
+    "matched": 4
   }
 }

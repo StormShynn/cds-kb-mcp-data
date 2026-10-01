@@ -10,16 +10,25 @@ extensible_key_user: no
 extensible_dev_ext: no
 atc_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CHANGERECORDLONGTEXTDEX_2')/$value
 semantic_en: "Change Record Long Text"
+semantic_vi: "Change Record Long Text — CDS view tiêu dùng dựa trên I_ChgRecDetailDescriptionTxt."
+keywords:
+  - "change"
+  - "record"
+  - "long"
+  - "text"
+  - "reference"
+  - "language"
+  - "detail"
+  - "description"
 tags:
   - PLM
   - component:PLM-CR-2CL
   - consumption-view
   - PLM-CR
   - PLM-CR-2CL
-  - metadata-only
 ---
 # C_CHANGERECORDLONGTEXTDEX_2
 
@@ -36,11 +45,63 @@ tags:
 | Extensible (Developer Extensibility) | No — can custom fields be added directly to THIS entity itself via ABAP Developer Extensibility |
 | Release State (SAP ATC / Clean Core) | Released — a third, independent signal from SAP's ABAP Cloud released-objects list |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CHANGERECORDLONGTEXTDEX_2')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CHANGERECORDLONGTEXTDEX_2')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ChangeRecordReferenceTextUUID` |  | |  |  | `RAW(16)` | DB Key |
-| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `ChangeRecordReferenceTextUUID` | ✓ | |  |  | `RAW(16)` | DB Key |
+| `Language` | ✓ | |  |  | `LANG(1)` | Language Key |
+| `ChangeRecordDetailDescription` |  | |  |  |  |  |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CHANGERECORDLONGTEXTDEX_2')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CHANGERECORDLONGTEXTDEX_2')/$value)*
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Change Record Long Text'
+@Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions:true
+@ObjectModel.usageType:{
+  serviceQuality: #A,
+  sizeCategory:   #L,
+  dataClass:      #TRANSACTIONAL
+}
+@VDM.viewType: #CONSUMPTION
+@ObjectModel.dataCategory:#TEXT
+@ObjectModel.representativeKey:'ChangeRecordReferenceTextUUID'
+@ObjectModel.sapObjectNodeType.name: 'ChangeRecordLongText'
+@ObjectModel.modelingPattern:           #LANGUAGE_DEPENDENT_TEXT
+@ObjectModel.supportedCapabilities:  [  #CDS_MODELING_DATA_SOURCE,
+                                        #CDS_MODELING_ASSOCIATION_TARGET,
+                                        #LANGUAGE_DEPENDENT_TEXT,
+                                        #SQL_DATA_SOURCE,
+                                        #EXTRACTION_DATA_SOURCE ]
+@Analytics:{
+    internalName: #LOCAL,
+    dataExtraction: {
+        enabled: true,
+        delta.changeDataCapture: {
+          mapping:[
+            {
+              table:'/PLMI/CHGRECD_L', role: #MAIN,
+              viewElement: ['ChangeRecordReferenceTextUUID', 'Language'],
+              tableElement: [ 'DB_KEY', 'LANGU']
+             }
+           ]
+        }
+    }
+}
+define view entity C_ChangeRecordLongTextDEX_2
+  as select from I_ChgRecDetailDescriptionTxt
+{
+  key  ChangeRecordReferenceTextUUID,
+       @Semantics.language: true
+  key  Language,
+       @Semantics.text: true
+       ChangeRecordDetailDescription
+}
+```

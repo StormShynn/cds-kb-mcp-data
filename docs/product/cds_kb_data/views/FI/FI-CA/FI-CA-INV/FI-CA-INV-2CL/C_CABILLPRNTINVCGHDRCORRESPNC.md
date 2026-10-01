@@ -54,70 +54,70 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CACorrespondenceType` | ✓ | |  |  |  |  |
-| `CACorrespondence` | ✓ | |  |  |  |  |
-| `ContractAccount` |  | |  |  |  |  |
-| `BusinessPartner` |  | |  |  |  |  |
-| `CAContract` |  | |  |  |  |  |
-| `OriglCorrespondenceRecipient` |  | |  |  |  |  |
-| `CompanyCode` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `CreationDate` |  | |  |  |  |  |
-| `CreationTime` |  | |  |  |  |  |
-| `CorrespondencePrintDate` |  | |  |  |  |  |
-| `CorrespondenceIssueDate` |  | |  |  |  |  |
-| `CorrespondenceIssueTime` |  | |  |  |  |  |
-| `Currency` |  | |  |  |  |  |
-| `CAAmountInLocalCurrency` |  | |  |  |  |  |
-| `CAMassRunDate` |  | |  |  |  |  |
-| `CAMassRunID` |  | |  |  |  |  |
-| `Language` |  | |  |  |  |  |
-| `Correspondence1stEntityIdn` |  | |  |  |  |  |
-| `Correspondence1stEntityData` |  | |  |  |  |  |
-| `Correspondence2ndEntityIdn` |  | |  |  |  |  |
-| `Correspondence2ndEntityData` |  | |  |  |  |  |
-| `Correspondence3rdEntityIdn` |  | |  |  |  |  |
-| `Correspondence3rdEntityData` |  | |  |  |  |  |
-| `Correspondence4thEntityIdn` |  | |  |  |  |  |
-| `Correspondence4thEntityData` |  | |  |  |  |  |
-| `CACorrespncSenderAddressID` |  | |  |  |  |  |
-| `CompanyCodeName` |  | | `_CACorrespondenceHeader._CompCode` | `CompanyCodeName` |  |  |
-| `SenderCityName` |  | | `_SenderAddress` | `CityName` |  |  |
-| `SenderPostalCode` |  | | `_SenderAddress` | `PostalCode` |  |  |
-| `SenderStreetName` |  | | `_SenderAddress` | `StreetName` |  |  |
-| `SenderHouseNumber` |  | | `_SenderAddress` | `HouseNumber` |  |  |
-| `SenderCountry` |  | | `_SenderAddress` | `Country` |  |  |
-| `BusinessPartnerName` |  | | `_CACorrespondenceHeader._BusinessPartner` | `BusinessPartnerName` |  |  |
-| `RecipientCityName` |  | | `_CACorrespondenceHeader._BusinessPartner._CurrentDefaultAddress._AddressDefaultRepresentation` | `CityName` |  |  |
-| `RecipientPostalCode` |  | | `_CACorrespondenceHeader._BusinessPartner._CurrentDefaultAddress._AddressDefaultRepresentation` | `PostalCode` |  |  |
-| `RecipientStreetName` |  | | `_CACorrespondenceHeader._BusinessPartner._CurrentDefaultAddress._AddressDefaultRepresentation` | `StreetName` |  |  |
-| `RecipientHouseNumber` |  | | `_CACorrespondenceHeader._BusinessPartner._CurrentDefaultAddress._AddressDefaultRepresentation` | `HouseNumber` |  |  |
-| `RecipientCountry` |  | | `_CACorrespondenceHeader._BusinessPartner._CurrentDefaultAddress._AddressDefaultRepresentation` | `Country` |  |  |
-| `OriglCorrespncRecipientName` |  | | `_OriglCorrespncRcpnt._BusinessPartner` | `BusinessPartnerName` |  |  |
-| `CustomerCityName` |  | | `_OriglCorrespncRcpnt._BusinessPartner._CurrentDefaultAddress._AddressDefaultRepresentation` | `CityName` |  |  |
-| `CustomerPostalCode` |  | | `_OriglCorrespncRcpnt._BusinessPartner._CurrentDefaultAddress._AddressDefaultRepresentation` | `PostalCode` |  |  |
-| `CustomerStreetName` |  | | `_OriglCorrespncRcpnt._BusinessPartner._CurrentDefaultAddress._AddressDefaultRepresentation` | `StreetName` |  |  |
-| `BusinessPartnerHouseNumber` |  | | `_OriglCorrespncRcpnt._BusinessPartner._CurrentDefaultAddress._AddressDefaultRepresentation` | `HouseNumber` |  |  |
-| `CustomerCountry` |  | | `_OriglCorrespncRcpnt._BusinessPartner._CurrentDefaultAddress._AddressDefaultRepresentation` | `Country` |  |  |
-| `CAInvcgDocumentReversalReason` |  | | `_CAInvcgDocHeader` | `CAInvcgDocumentReversalReason` |  |  |
-| `CAInvcgDocIsLockedForPrinting` |  | | `_CAInvcgDocHeader` | `CAInvcgDocIsLockedForPrinting` |  |  |
-| `CAInvcgProcess` |  | | `_CAInvcgDocHeader` | `CAInvcgProcess` |  |  |
-| `CAApplicationArea` |  | | `_CAInvcgDocHeader` | `CAApplicationArea` |  |  |
-| `CAInvcgCategory` |  | | `_CAInvcgDocHeader` | `CAInvcgCategory` |  |  |
-| `CAInvcgType` |  | | `_CAInvcgDocHeader` | `CAInvcgType` |  |  |
-| `CAInvcgDocPeriodCategory` |  | | `_CAInvcgDocHeader` | `CAInvcgDocPeriodCategory` |  |  |
-| `CAInvcgTargetProcess` |  | | `_CAInvcgDocHeader` | `CAInvcgTargetProcess` |  |  |
-| `CAInvcgCorrectionCategory` |  | | `_CAInvcgDocHeader` | `CAInvcgCorrectionCategory` |  |  |
-| `CAInvcgDocHasChargeOrDiscItems` |  | | `_CAInvcgDocHeader` | `CAInvcgDocHasChargeOrDiscItems` |  |  |
-| `CAInvcgDocCreationMode` |  | | `_CAInvcgDocHeader` | `CAInvcgDocCreationMode` |  |  |
-| `CAInvcgMasterDataType` |  | | `_CAInvcgDocHeader` | `CAInvcgMasterDataType` |  |  |
-| `CAInvcgTechnicalDocumentType` |  | | `_CAInvcgDocHeader` | `CAInvcgTechnicalDocumentType` |  |  |
-| `CAInvcgDocIsPartOfList` |  | | `_CAInvcgDocHeader` | `CAInvcgDocIsPartOfList` |  |  |
-| `CAInvcgBolloTaxPostStatus` |  | | `_CAInvcgDocHeader` | `CAInvcgBolloTaxPostStatus` |  |  |
-| `CAInvcgDocPeriodDate` |  | | `_CAInvcgDocHeader` | `CAInvcgDocPeriodDate` |  |  |
-| `DocumentDate` |  | | `_CAInvcgDocHeader` | `DocumentDate` |  |  |
-| `CAAmountInTransactionCurrency` |  | | `_CAInvcgDocHeader` | `CAAmountInTransactionCurrency` |  |  |
-| `TransactionCurrency` |  | | `_CAInvcgDocHeader` | `TransactionCurrency` |  |  |
+| `CACorrespondenceType` | ✓ | |  |  | `CHAR(4)` | Correspondence Type |
+| `CACorrespondence` | ✓ | |  |  | `CHAR(36)` | Correspondence Key |
+| `ContractAccount` |  | |  |  | `CHAR(12)` | Contract Account Number |
+| `BusinessPartner` |  | |  |  | `CHAR(10)` | Correspondence Recipient |
+| `CAContract` |  | |  |  | `CHAR(20)` | Reference Specifications from Contract |
+| `OriglCorrespondenceRecipient` |  | |  |  | `CHAR(10)` | Original Correspondence Recipient |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code in Correspondence |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | User Name |
+| `CreationDate` |  | |  |  | `DATS(8)` | Created On |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Time of Creation (to the Second) |
+| `CorrespondencePrintDate` |  | |  |  | `DATS(8)` | Print Date |
+| `CorrespondenceIssueDate` |  | |  |  | `DATS(8)` | Issue Date |
+| `CorrespondenceIssueTime` |  | |  |  | `TIMS(6)` | Issue Time to the Second |
+| `Currency` |  | |  |  | `CUKY(5)` | Transaction Currency |
+| `CAAmountInLocalCurrency` |  | |  |  | `CURR(13)` | Amount in Local Currency with +/- Signs |
+| `CAMassRunDate` |  | |  |  | `DATS(8)` | Date ID for Creation Run |
+| `CAMassRunID` |  | |  |  | `CHAR(6)` | Additional ID Characteristic for Creation Run |
+| `Language` |  | |  |  | `LANG(1)` | Language Key |
+| `Correspondence1stEntityIdn` |  | |  |  | `CHAR(4)` | Correspondence data |
+| `Correspondence1stEntityData` |  | |  |  | `CHAR(32)` | Correspondence Data Field |
+| `Correspondence2ndEntityIdn` |  | |  |  | `CHAR(4)` | Correspondence data |
+| `Correspondence2ndEntityData` |  | |  |  | `CHAR(32)` | Correspondence Data Field |
+| `Correspondence3rdEntityIdn` |  | |  |  | `CHAR(4)` | Correspondence data |
+| `Correspondence3rdEntityData` |  | |  |  | `CHAR(32)` | Correspondence Data Field |
+| `Correspondence4thEntityIdn` |  | |  |  | `CHAR(4)` | Correspondence data |
+| `Correspondence4thEntityData` |  | |  |  | `CHAR(32)` | Correspondence Data Field |
+| `CACorrespncSenderAddressID` |  | |  |  | `CHAR(10)` | Address Number of Correspondence Sender |
+| `CompanyCodeName` |  | | `_CACorrespondenceHeader._CompCode` | `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
+| `SenderCityName` |  | | `_SenderAddress` | `CityName` | `CHAR(40)` | City |
+| `SenderPostalCode` |  | | `_SenderAddress` | `PostalCode` | `CHAR(10)` | City Postal Code |
+| `SenderStreetName` |  | | `_SenderAddress` | `StreetName` | `CHAR(60)` | Street |
+| `SenderHouseNumber` |  | | `_SenderAddress` | `HouseNumber` | `CHAR(10)` | House Number |
+| `SenderCountry` |  | | `_SenderAddress` | `Country` | `CHAR(3)` | Country/Region Key |
+| `BusinessPartnerName` |  | | `_CACorrespondenceHeader._BusinessPartner` | `BusinessPartnerName` | `CHAR(81)` |  |
+| `RecipientCityName` |  | | `_CACorrespondenceHeader._BusinessPartner._CurrentDefaultAddress._AddressDefaultRepresentation` | `CityName` | `CHAR(40)` | City |
+| `RecipientPostalCode` |  | | `_CACorrespondenceHeader._BusinessPartner._CurrentDefaultAddress._AddressDefaultRepresentation` | `PostalCode` | `CHAR(10)` | City Postal Code |
+| `RecipientStreetName` |  | | `_CACorrespondenceHeader._BusinessPartner._CurrentDefaultAddress._AddressDefaultRepresentation` | `StreetName` | `CHAR(60)` | Street |
+| `RecipientHouseNumber` |  | | `_CACorrespondenceHeader._BusinessPartner._CurrentDefaultAddress._AddressDefaultRepresentation` | `HouseNumber` | `CHAR(10)` | House Number |
+| `RecipientCountry` |  | | `_CACorrespondenceHeader._BusinessPartner._CurrentDefaultAddress._AddressDefaultRepresentation` | `Country` | `CHAR(3)` | Country/Region Key |
+| `OriglCorrespncRecipientName` |  | | `_OriglCorrespncRcpnt._BusinessPartner` | `BusinessPartnerName` | `CHAR(81)` |  |
+| `CustomerCityName` |  | | `_OriglCorrespncRcpnt._BusinessPartner._CurrentDefaultAddress._AddressDefaultRepresentation` | `CityName` | `CHAR(40)` | City |
+| `CustomerPostalCode` |  | | `_OriglCorrespncRcpnt._BusinessPartner._CurrentDefaultAddress._AddressDefaultRepresentation` | `PostalCode` | `CHAR(10)` | City Postal Code |
+| `CustomerStreetName` |  | | `_OriglCorrespncRcpnt._BusinessPartner._CurrentDefaultAddress._AddressDefaultRepresentation` | `StreetName` | `CHAR(60)` | Street |
+| `BusinessPartnerHouseNumber` |  | | `_OriglCorrespncRcpnt._BusinessPartner._CurrentDefaultAddress._AddressDefaultRepresentation` | `HouseNumber` | `CHAR(10)` | House Number |
+| `CustomerCountry` |  | | `_OriglCorrespncRcpnt._BusinessPartner._CurrentDefaultAddress._AddressDefaultRepresentation` | `Country` | `CHAR(3)` | Country/Region Key |
+| `CAInvcgDocumentReversalReason` |  | | `_CAInvcgDocHeader` | `CAInvcgDocumentReversalReason` | `CHAR(2)` | Reversal Reason of Invoicing Document |
+| `CAInvcgDocIsLockedForPrinting` |  | | `_CAInvcgDocHeader` | `CAInvcgDocIsLockedForPrinting` | `CHAR(1)` | Invoicing Document Locked for Printing |
+| `CAInvcgProcess` |  | | `_CAInvcgDocHeader` | `CAInvcgProcess` | `CHAR(2)` | Invoicing Process |
+| `CAApplicationArea` |  | | `_CAInvcgDocHeader` | `CAApplicationArea` | `CHAR(1)` | Application Area |
+| `CAInvcgCategory` |  | | `_CAInvcgDocHeader` | `CAInvcgCategory` | `CHAR(4)` | Invoicing Category |
+| `CAInvcgType` |  | | `_CAInvcgDocHeader` | `CAInvcgType` | `CHAR(2)` | Invoicing Type |
+| `CAInvcgDocPeriodCategory` |  | | `_CAInvcgDocHeader` | `CAInvcgDocPeriodCategory` | `CHAR(2)` | Category of Invoicing Period |
+| `CAInvcgTargetProcess` |  | | `_CAInvcgDocHeader` | `CAInvcgTargetProcess` | `CHAR(4)` | Target Process That Invoices the Source Document |
+| `CAInvcgCorrectionCategory` |  | | `_CAInvcgDocHeader` | `CAInvcgCorrectionCategory` | `CHAR(2)` | Category of Invoice Correction |
+| `CAInvcgDocHasChargeOrDiscItems` |  | | `_CAInvcgDocHeader` | `CAInvcgDocHasChargeOrDiscItems` | `CHAR(1)` | Invoicing Document Contains Charge/Discount Items |
+| `CAInvcgDocCreationMode` |  | | `_CAInvcgDocHeader` | `CAInvcgDocCreationMode` | `CHAR(1)` | Creation Mode of Invoicing Document |
+| `CAInvcgMasterDataType` |  | | `_CAInvcgDocHeader` | `CAInvcgMasterDataType` | `CHAR(1)` | Type of Master Record for Convergent Invoicing |
+| `CAInvcgTechnicalDocumentType` |  | | `_CAInvcgDocHeader` | `CAInvcgTechnicalDocumentType` | `CHAR(1)` | Type of Technical Billing/Invoicing Document |
+| `CAInvcgDocIsPartOfList` |  | | `_CAInvcgDocHeader` | `CAInvcgDocIsPartOfList` | `CHAR(1)` | Invoicing Document Is Single Document of Invoicing List |
+| `CAInvcgBolloTaxPostStatus` |  | | `_CAInvcgDocHeader` | `CAInvcgBolloTaxPostStatus` | `CHAR(1)` | Stamp Tax Posted |
+| `CAInvcgDocPeriodDate` |  | | `_CAInvcgDocHeader` | `CAInvcgDocPeriodDate` | `DATS(8)` | Invoicing Period |
+| `DocumentDate` |  | | `_CAInvcgDocHeader` | `DocumentDate` | `DATS(8)` | Document Date in Document |
+| `CAAmountInTransactionCurrency` |  | | `_CAInvcgDocHeader` | `CAAmountInTransactionCurrency` | `CURR(13)` | Amount in Transaction Currency with +/- Sign |
+| `TransactionCurrency` |  | | `_CAInvcgDocHeader` | `TransactionCurrency` | `CUKY(5)` | Transaction Currency |
 | `_CAInvcgDocHeader` | | ✓ | | | | |
 | `_CAInvcgDocReversalReasonText` | | ✓ | | | | |
 | `_CAInvcgDocLockedForPrintText` | | ✓ | | | | |

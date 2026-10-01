@@ -9,9 +9,26 @@ key_user_ext_status: released
 extensible_key_user: no
 extensible_dev_ext: no
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BPCREDITPROFILEDEX')/$value
 semantic_en: "Data Extraction of Credit Profile"
+semantic_vi: "Data Extraction of Credit Profile — CDS view cơ bản dựa trên ukmbp_cms."
+keywords:
+  - "data"
+  - "extraction"
+  - "credit"
+  - "profile"
+  - "business"
+  - "partner"
+  - "crdt"
+  - "mgmt"
+  - "group"
+  - "cust"
+  - "relshp"
+  - "start"
+  - "year"
+  - "worthiness"
+  - "score"
 tags:
   - FIN
   - bo:businesspartner
@@ -21,7 +38,6 @@ tags:
   - FIN-FSCM-CR-2CL
   - interface-view
   - lob:finance
-  - metadata-only
 ---
 # I_BPCREDITPROFILEDEX
 
@@ -37,22 +53,97 @@ tags:
 | Extensible (Key User Extensibility) | No — can custom fields be added directly to THIS entity itself via Key User Extensibility (a different question from "used as a data source" above) |
 | Extensible (Developer Extensibility) | No — can custom fields be added directly to THIS entity itself via ABAP Developer Extensibility |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BPCREDITPROFILEDEX')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BPCREDITPROFILEDEX')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BusinessPartner` |  | |  |  | `CHAR(10)` | Business Partner Number |
-| `CrdtMgmtBusinessPartnerGroup` |  | |  |  | `NUMC(4)` | Customer Credit Group |
-| `CustBusinessRelshpStartYear` |  | |  |  | `NUMC(4)` | First Year of Customer Relationship |
-| `CreditWorthinessScoreValue` |  | |  |  | `CHAR(10)` | Score |
-| `CrdtWrthnssScoreValdtyEndDate` |  | |  |  | `DATS(8)` | Valid To Date |
-| `CrdtWorthinessScoreLastChgDate` |  | |  |  | `DATS(8)` | Change Date for Score |
-| `CalcdCrdtWorthinessScoreValue` |  | |  |  | `CHAR(10)` | Calculated Score |
-| `CreditRiskClass` |  | |  |  | `CHAR(3)` | Risk Class |
-| `CalculatedCreditRiskClass` |  | |  |  | `CHAR(3)` | Calculated Risk Class |
-| `CreditRiskClassLastChangeDate` |  | |  |  | `DATS(8)` | Risk Class Changed On |
-| `CreditCheckRule` |  | |  |  | `CHAR(10)` | Rule for Credit Check |
-| `CreditScoreAndLimitCalcRule` |  | |  |  | `CHAR(10)` | Rule for Calculating Score and Credit Limit |
-| `BPLastChangeDateTime` |  | |  |  | `DEC(15)` | Last Change to Credit Master Data |
+| `BusinessPartner` | ✓ | |  | `partner` | `CHAR(10)` | Business Partner Number |
+| `CrdtMgmtBusinessPartnerGroup` |  | |  | `credit_group` | `NUMC(4)` | Customer Credit Group |
+| `CustBusinessRelshpStartYear` |  | |  | `customer_since_year` | `NUMC(4)` | First Year of Customer Relationship |
+| `CreditWorthinessScoreValue` |  | |  | `own_rating` | `CHAR(10)` | Score |
+| `CrdtWrthnssScoreValdtyEndDate` |  | |  | `rating_val_date` | `DATS(8)` | Valid To Date |
+| `CrdtWorthinessScoreLastChgDate` |  | |  | `rating_chg_date` | `DATS(8)` | Change Date for Score |
+| `CalcdCrdtWorthinessScoreValue` |  | |  | `own_rating_calc` | `CHAR(10)` | Calculated Score |
+| `CreditRiskClass` |  | |  | `risk_class` | `CHAR(3)` | Risk Class |
+| `CalculatedCreditRiskClass` |  | |  | `cast( risk_class_calc as ukm_calculated_risk_class_2 preserving type )` | `CHAR(3)` | Calculated Risk Class |
+| `CreditRiskClassLastChangeDate` |  | |  | `risk_class_chgdt` | `DATS(8)` | Risk Class Changed On |
+| `CreditCheckRule` |  | |  | `check_rule` | `CHAR(10)` | Rule for Credit Check |
+| `CreditScoreAndLimitCalcRule` |  | |  | `cast( limit_rule as ukm_limit_and_score_calc_rule preserving type )` | `CHAR(10)` | Rule for Calculating Score and Credit Limit |
+| `BPLastChangeDateTime` |  | |  | `last_changed_at` | `DEC(15)` | Last Change to Credit Master Data |
+| `_BusinessPartner` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_BusinessPartner` | `I_BusinessPartner` | [0..1] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BPCREDITPROFILEDEX')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_BPCREDITPROFILEDEX')/$value)*
+
+```abap
+@EndUserText.label: 'Data Extraction of Credit Profile'
+@Analytics:{ dataCategory: #DIMENSION,
+             dataExtraction.enabled: true,
+             dataExtraction.delta.changeDataCapture.automatic: true,
+             internalName: #LOCAL,
+             technicalName: 'IBPCRDTPROFDEX'
+}
+
+@AccessControl: { authorizationCheck:     #MANDATORY,
+                  personalData.blocking:  #BLOCKED_DATA_EXCLUDED //data privacy, hide data from blocked business partners
+                }
+
+@Consumption.dbHints: [ 'USE_HEX_PLAN' ]
+
+@Metadata: { allowExtensions: true,
+             ignorePropagatedAnnotations:true
+}
+
+@ObjectModel:{ modelingPattern: #ANALYTICAL_DIMENSION,
+               usageType.serviceQuality: #B,
+               usageType.sizeCategory: #L,
+               usageType.dataClass: #MASTER,
+               sapObjectNodeType.name: 'CreditMgmtBusinessPartner',
+               supportedCapabilities: [ #ANALYTICAL_DIMENSION,
+                                        #CDS_MODELING_ASSOCIATION_TARGET,
+                                        #EXTRACTION_DATA_SOURCE ],
+               representativeKey: 'BusinessPartner'
+}
+
+@VDM: { viewType: #BASIC
+      }
+
+
+define view entity I_BPCreditProfileDEX
+  as select from ukmbp_cms
+  association [0..1] to I_BusinessPartner as _BusinessPartner on $projection.BusinessPartner = _BusinessPartner.BusinessPartner
+{
+  key partner                                                                as BusinessPartner,
+      credit_group                                                           as CrdtMgmtBusinessPartnerGroup,
+      customer_since_year                                                    as CustBusinessRelshpStartYear,
+
+      // Rating
+      own_rating                                                             as CreditWorthinessScoreValue,
+      rating_val_date                                                        as CrdtWrthnssScoreValdtyEndDate,
+      rating_chg_date                                                        as CrdtWorthinessScoreLastChgDate,
+      own_rating_calc                                                        as CalcdCrdtWorthinessScoreValue,
+
+      //Risk Class
+      risk_class                                                             as CreditRiskClass,
+      cast( risk_class_calc as ukm_calculated_risk_class_2 preserving type ) as CalculatedCreditRiskClass,
+      risk_class_chgdt                                                       as CreditRiskClassLastChangeDate,
+
+      //Rules
+      check_rule                                                             as CreditCheckRule,
+      cast( limit_rule as ukm_limit_and_score_calc_rule preserving type )    as CreditScoreAndLimitCalcRule,
+
+      @Semantics.systemDateTime.lastChangedAt:true
+      last_changed_at                                                        as BPLastChangeDateTime,
+
+      _BusinessPartner
+}
+```

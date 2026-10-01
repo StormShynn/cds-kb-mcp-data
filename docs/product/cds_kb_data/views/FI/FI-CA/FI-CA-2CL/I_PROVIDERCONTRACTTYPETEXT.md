@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAProviderContractType` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as vtchr_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CAProviderContractTypeText` |  | |  | `cast( ddtext as vtchr_text_kk preserving type )` |  |  |
+| `CAProviderContractType` | ✓ | |  | `cast( left( dd07t.domvalue_l,1 ) as vtchr_kk preserving type )` | `CHAR(1)` | Contract Specification |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAProviderContractTypeText` |  | |  | `cast( ddtext as vtchr_text_kk preserving type )` | `CHAR(60)` | Description for Contract Specification |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

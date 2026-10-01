@@ -40,46 +40,46 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `SalesBillingProviderContract` | ✓ | |  | `ProviderContract` |  |  |
-| `SlsBillgProviderContractItem` | ✓ | |  | `ProviderContractItem` |  |  |
-| `CAProviderContractItemUUID` |  | |  |  |  |  |
-| `CAPrvdrContrParentItemUUID` |  | |  |  |  |  |
-| `CAProviderContractStatus` |  | |  |  |  |  |
-| `CAProviderContractItemText` |  | |  |  |  |  |
-| `CASubscriptionChargeType` |  | |  |  |  |  |
-| `CreationDate` |  | |  |  |  |  |
-| `CreationTime` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `LastChangeDate` |  | |  |  |  |  |
-| `LastChangeTime` |  | |  |  |  |  |
-| `LastChangedByUser` |  | |  |  |  |  |
-| `CAPrvdrContrItmValidFromDteTme` |  | |  |  |  |  |
-| `CAPrvdrContrItmValidToDateTime` |  | |  |  |  |  |
-| `CAPrvdrContrItemCanclnDateTime` |  | |  |  |  |  |
-| `PrvdrContrItmWthdrwlDateTime` |  | |  |  |  |  |
-| `CAStartOfDurationDateTime` |  | |  |  |  |  |
-| `CAEndOfDurationDateTime` |  | |  |  |  |  |
-| `CAProduct` |  | |  |  |  |  |
-| `ProductConfiguration` |  | |  |  |  |  |
-| `SoldProduct` |  | |  |  |  |  |
-| `PurchaseOrderByCustomer` |  | |  |  |  |  |
-| `CustomerPurchaseOrderDate` |  | |  |  |  |  |
-| `BusinessSolutionOrder` |  | |  |  |  |  |
-| `BusinessSolutionOrderItem` |  | |  |  |  |  |
-| `SalesOrganization` |  | |  |  |  |  |
-| `DistributionChannel` |  | |  |  |  |  |
-| `Division` |  | |  |  |  |  |
-| `CAPrvdrContrSalesAreaAttrib1` |  | |  |  |  |  |
-| `CAPrvdrContrSalesAreaAttrib2` |  | |  |  |  |  |
-| `CompanyCode` |  | |  |  |  |  |
-| `BusinessArea` |  | |  |  |  |  |
-| `Segment` |  | |  |  |  |  |
-| `ProfitCenter` |  | |  |  |  |  |
-| `CAStandardDivision` |  | |  |  |  |  |
-| `WBSElementInternalID` |  | |  |  |  |  |
-| `InternalOrder` |  | |  |  |  |  |
-| `EBRRResultAnalysisInternalID` |  | |  |  |  |  |
-| `EBRRIsBundleActive` |  | |  |  |  |  |
+| `SalesBillingProviderContract` | ✓ | |  | `ProviderContract` | `CHAR(20)` | Identification of a Provider Contract |
+| `SlsBillgProviderContractItem` | ✓ | |  | `ProviderContractItem` | `NUMC(6)` | Contract: Item Number |
+| `CAProviderContractItemUUID` |  | |  |  | `RAW(16)` | External GUID of Provider Contract Items |
+| `CAPrvdrContrParentItemUUID` |  | |  |  | `RAW(16)` | External GUID of Higher-Level Provider Contract Items |
+| `CAProviderContractStatus` |  | |  |  | `CHAR(1)` | Status of Provider Contract |
+| `CAProviderContractItemText` |  | |  |  | `CHAR(50)` | Text for Provider Contract Item |
+| `CASubscriptionChargeType` |  | |  |  | `CHAR(2)` | Charge Type |
+| `CreationDate` |  | |  |  | `DATS(8)` | Record Creation Date |
+| `CreationTime` |  | |  |  | `TIMS(6)` | Creation Time |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `LastChangeDate` |  | |  |  | `DATS(8)` | Last Changed On |
+| `LastChangeTime` |  | |  |  | `TIMS(6)` | Last Changed At |
+| `LastChangedByUser` |  | |  |  | `CHAR(12)` | Name of Person Who Changed Object |
+| `CAPrvdrContrItmValidFromDteTme` |  | |  |  | `DEC(15)` | Valid From (Time Stamp) |
+| `CAPrvdrContrItmValidToDateTime` |  | |  |  | `DEC(15)` | Valid To (Time Stamp) |
+| `CAPrvdrContrItemCanclnDateTime` |  | |  |  | `DEC(15)` | Time of Reversal (Time Stamp) |
+| `PrvdrContrItmWthdrwlDateTime` |  | |  |  | `DEC(15)` | Withdrawn On (Timestamp) |
+| `CAStartOfDurationDateTime` |  | |  |  | `DEC(15)` | Contract Term Start (Time Stamp) |
+| `CAEndOfDurationDateTime` |  | |  |  | `DEC(15)` | End of Contract Duration (Time Stamp) |
+| `CAProduct` |  | |  |  | `CHAR(40)` | Product Number |
+| `ProductConfiguration` |  | |  |  | `NUMC(18)` | Configuration Instance |
+| `SoldProduct` |  | |  |  | `CHAR(40)` | Product Sold |
+| `PurchaseOrderByCustomer` |  | |  |  | `CHAR(35)` | Customer Reference |
+| `CustomerPurchaseOrderDate` |  | |  |  | `DATS(8)` | Customer Reference Date |
+| `BusinessSolutionOrder` |  | |  |  | `CHAR(10)` | Solution Order |
+| `BusinessSolutionOrderItem` |  | |  |  | `NUMC(6)` | Solution Order Item |
+| `SalesOrganization` |  | |  |  | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  |  | `CHAR(2)` | Division |
+| `CAPrvdrContrSalesAreaAttrib1` |  | |  |  | `CHAR(4)` | Contract: Sales Area Attribute 1 |
+| `CAPrvdrContrSalesAreaAttrib2` |  | |  |  | `CHAR(4)` | Contract: Sales Area Attribute 2 |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
+| `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
+| `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
+| `CAStandardDivision` |  | |  |  | `CHAR(2)` | Contract: Standard Division |
+| `WBSElementInternalID` |  | |  |  | `NUMC(8)` | WBS Element Internal ID |
+| `InternalOrder` |  | |  |  | `CHAR(12)` | Order Number |
+| `EBRRResultAnalysisInternalID` |  | |  |  | `CHAR(6)` | Recognition key |
+| `EBRRIsBundleActive` |  | |  |  | `CHAR(1)` | Bundling Indicator |
 | `_PrvdrContr` | | ✓ | | | | |
 | `_Product` | | ✓ | | | | |
 | `_BusinessArea` | | ✓ | | | | |

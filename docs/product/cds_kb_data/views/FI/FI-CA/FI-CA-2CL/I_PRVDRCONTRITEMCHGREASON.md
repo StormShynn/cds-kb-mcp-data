@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPrvdrContrItmChgReason` | ✓ | |  | `change_reason` |  |  |
+| `CAPrvdrContrItmChgReason` | ✓ | |  | `change_reason` | `CHAR(2)` | Change Reason |
 | `_Text` | | ✓ | | | | |
 
 ## Associations
