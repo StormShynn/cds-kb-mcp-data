@@ -9,9 +9,19 @@ key_user_ext_status: released
 extensible_key_user: no
 extensible_dev_ext: no
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INTRASTATPRVDROFINFORMATION')/$value
 semantic_en: "Intrastat Provider of Information"
+semantic_vi: "Intrastat Provider of Information — CDS view giao diện dựa trên Intrastat Provider of Information."
+keywords:
+  - "intrastat"
+  - "provider"
+  - "information"
+  - "declaration"
+  - "country"
+  - "company"
+  - "code"
+  - "leading"
 tags:
   - FT
   - bo:companycode
@@ -19,7 +29,6 @@ tags:
   - FT-ITR
   - FT-ITR-ISR
   - interface-view
-  - metadata-only
 ---
 # I_INTRASTATPRVDROFINFORMATION
 
@@ -35,13 +44,64 @@ tags:
 | Extensible (Key User Extensibility) | No — can custom fields be added directly to THIS entity itself via Key User Extensibility (a different question from "used as a data source" above) |
 | Extensible (Developer Extensibility) | No — can custom fields be added directly to THIS entity itself via ABAP Developer Extensibility |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INTRASTATPRVDROFINFORMATION')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INTRASTATPRVDROFINFORMATION')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `IntrastatProviderOfInformation` |  | |  |  | `CHAR(10)` | Provider of Information ID |
-| `IntrastatDeclarationCountry` |  | |  |  | `CHAR(3)` | Country of Declaration |
-| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `IntrastatLeadingCompanyCode` |  | |  |  | `CHAR(4)` | Leading Company Code for Provider of Information |
+| `IntrastatProviderOfInformation` | ✓ | |  | `poiid` | `CHAR(10)` | Provider of Information ID |
+| `IntrastatDeclarationCountry` |  | |  | `rpcty` | `CHAR(3)` | Country of Declaration |
+| `CompanyCode` |  | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `IntrastatLeadingCompanyCode` |  | |  | `lbukr` | `CHAR(4)` | Leading Company Code for Provider of Information |
+| `_IntrastatPrvdrOfInfoPlant` | | ✓ | | | | |
+| `_IntrastatPrvdrOfInfoCoCode` | | ✓ | | | | |
+
+## Associations
+
+| Alias | Target View | Cardinality |
+|---|---|---|
+| `_IntrastatPrvdrOfInfoPlant` | `I_IntrastatPrvdrOfInfoPlant` | [0..*] |
+| `_IntrastatPrvdrOfInfoCoCode` | `I_IntrastatPrvdrOfInfoCoCode` | [0..*] |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INTRASTATPRVDROFINFORMATION')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_INTRASTATPRVDROFINFORMATION')/$value)*
+
+```abap
+@EndUserText.label: 'Intrastat Provider of Information'
+@AccessControl.authorizationCheck: #MANDATORY
+@AccessControl.personalData.blocking: #NOT_REQUIRED
+@VDM.viewType: #BASIC
+@ObjectModel.usageType.serviceQuality: #A
+@ObjectModel.usageType.sizeCategory: #M
+@ObjectModel.usageType.dataClass: #MASTER
+@Search.searchable: true
+@Metadata.allowExtensions: true
+@Metadata.ignorePropagatedAnnotations:true
+@ObjectModel.modelingPattern:#NONE
+@ObjectModel.supportedCapabilities: [ #CDS_MODELING_DATA_SOURCE, #SQL_DATA_SOURCE ]
+
+
+define view entity I_IntrastatPrvdrOfInformation
+  as select from /ecrs/poia
+
+  association [0..*] to I_IntrastatPrvdrOfInfoPlant  as _IntrastatPrvdrOfInfoPlant  on $projection.IntrastatProviderOfInformation = _IntrastatPrvdrOfInfoPlant.IntrastatProviderOfInformation
+  association [0..*] to I_IntrastatPrvdrOfInfoCoCode as _IntrastatPrvdrOfInfoCoCode on $projection.IntrastatProviderOfInformation = _IntrastatPrvdrOfInfoCoCode.IntrastatProviderOfInformation
+{
+      @Search.defaultSearchElement: true
+  key poiid as IntrastatProviderOfInformation,
+
+
+      rpcty as IntrastatDeclarationCountry,
+
+      @Search.defaultSearchElement: true
+      bukrs as CompanyCode,
+
+      @Search.defaultSearchElement: true
+      lbukr as IntrastatLeadingCompanyCode,
+
+      _IntrastatPrvdrOfInfoPlant,
+      _IntrastatPrvdrOfInfoCoCode
+}
+```

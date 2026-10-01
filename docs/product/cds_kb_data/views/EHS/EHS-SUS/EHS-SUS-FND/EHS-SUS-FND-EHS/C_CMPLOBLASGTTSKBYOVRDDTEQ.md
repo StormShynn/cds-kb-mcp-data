@@ -9,9 +9,24 @@ key_user_ext_status: released
 extensible_key_user: no
 extensible_dev_ext: no
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMPLOBLASGTTSKBYOVRDDTEQ')/$value
 semantic_en: "Tasks by Overdue Date - Query"
+semantic_vi: "Tasks by Overdue Date - Query — CDS view tiêu dùng dựa trên Tasks by Overdue Date - Query."
+keywords:
+  - "tasks"
+  - "overdue"
+  - "date"
+  - "query"
+  - "cmplnc"
+  - "oblgn"
+  - "rqmt"
+  - "assignment"
+  - "planned"
+  - "task"
+  - "location"
+  - "name"
+  - "title"
 tags:
   - EHS
   - component:EHS-SUS-FND-EHS
@@ -20,7 +35,6 @@ tags:
   - EHS-SUS-FND
   - EHS-SUS-FND-EHS
   - task
-  - metadata-only
 ---
 # C_CMPLOBLASGTTSKBYOVRDDTEQ
 
@@ -36,7 +50,7 @@ tags:
 | Extensible (Key User Extensibility) | No — can custom fields be added directly to THIS entity itself via Key User Extensibility (a different question from "used as a data source" above) |
 | Extensible (Developer Extensibility) | No — can custom fields be added directly to THIS entity itself via ABAP Developer Extensibility |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMPLOBLASGTTSKBYOVRDDTEQ')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMPLOBLASGTTSKBYOVRDDTEQ')/$value) |
 
 ## Fields
 
@@ -58,3 +72,53 @@ tags:
 | `EHSTaskHostSemanticObject` |  | |  |  | `CHAR(30)` | Semantic Object |
 | `EHSTaskOwnerUser` |  | |  |  | `CHAR(12)` | User ID |
 | `EHSTaskAssignedUserName` |  | |  |  | `CHAR(80)` | User Description |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMPLOBLASGTTSKBYOVRDDTEQ')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CMPLOBLASGTTSKBYOVRDDTEQ')/$value)*
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@VDM.viewType: #CONSUMPTION
+@EndUserText.label: 'Tasks by Overdue Date - Query'
+@AccessControl.authorizationCheck: #NOT_ALLOWED
+@AccessControl.personalData.blocking: #REQUIRED
+@OData.publish: true
+
+@ObjectModel.modelingPattern: #ANALYTICAL_QUERY
+@ObjectModel.supportedCapabilities: [ #ANALYTICAL_QUERY ]
+
+@ObjectModel.usageType:{
+  serviceQuality: #D,
+  sizeCategory: #L,
+  dataClass: #MIXED
+}
+@Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions
+define transient view entity C_CmplOblAsgtTskByOvrdDteQ
+  provider contract analytical_query
+  as projection on I_CmplOblAsgtTskByDueDateC
+{ 
+  CmplncOblgnRqmtAssignmentUUID,
+  EHSPlannedTaskUUID,
+  EHSLocationUUID,
+  EHSLocationName,
+  EHSTaskTitle,
+  EHSTaskDueDate,
+  EHSTaskStatus,
+  ComplianceObligationTypeCode,
+  CmplncOblgnTypeDescription,
+  ComplianceObligationDomainCode,
+  WorkflowTaskInternalID,
+  EHSTaskDueInValue,
+  @UI.hidden: true
+  NumberOfRecords,
+  EHSTaskHostSemanticObject,
+  EHSTaskOwnerUser,
+  EHSTaskAssignedUserName
+  }
+  where 
+    EHSTaskDueDate <> '00000000'
+    and EHSTaskHostSemanticObject = 'ComplianceRegister'
+    and EHSTaskStatus = '02'
+```

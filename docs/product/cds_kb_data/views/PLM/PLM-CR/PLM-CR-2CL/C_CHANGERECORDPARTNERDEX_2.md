@@ -10,9 +10,16 @@ extensible_key_user: no
 extensible_dev_ext: no
 atc_state: released
 system_type: S/4HANA Cloud Public Edition
-source_available: false
+source_available: true
 source_url: https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CHANGERECORDPARTNERDEX_2')/$value
 semantic_en: "Change Record Partner or Person Resp"
+semantic_vi: "Change Record Partner or Person Resp — CDS view tiêu dùng dựa trên I_ChgRecResponsible_2."
+keywords:
+  - "change"
+  - "record"
+  - "partner"
+  - "person"
+  - "resp"
 tags:
   - PLM
   - bo:salesorder
@@ -20,7 +27,7 @@ tags:
   - consumption-view
   - PLM-CR
   - PLM-CR-2CL
-  - metadata-only
+  - bo:purchaseorder
 ---
 # C_CHANGERECORDPARTNERDEX_2
 
@@ -37,11 +44,54 @@ tags:
 | Extensible (Developer Extensibility) | No — can custom fields be added directly to THIS entity itself via ABAP Developer Extensibility |
 | Release State (SAP ATC / Clean Core) | Released — a third, independent signal from SAP's ABAP Cloud released-objects list |
 | System Type | S/4HANA Cloud Public Edition |
-| Source | [View Hub catalog entry](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CHANGERECORDPARTNERDEX_2')/$value) |
+| Source | [View source file](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CHANGERECORDPARTNERDEX_2')/$value) |
 
 ## Fields
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ChangeRecordUUID` |  | |  |  | `RAW(16)` | DB Key |
+| `ChangeRecordUUID` | ✓ | |  |  | `RAW(16)` | DB Key |
 | `ChangeRecordPartner` |  | |  |  | `CHAR(12)` | Agent |
+
+## Source Code
+
+*Source: [https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CHANGERECORDPARTNERDEX_2')/$value](https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_CHANGERECORDPARTNERDEX_2')/$value)*
+
+```abap
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@EndUserText.label: 'Change Record Partner or Person Resp'
+@Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions:true
+@ObjectModel.usageType:{
+  serviceQuality: #A,
+  sizeCategory:   #M,
+  dataClass:      #TRANSACTIONAL
+}
+@VDM.viewType: #CONSUMPTION
+@ObjectModel.representativeKey:'ChangeRecordUUID'
+@ObjectModel.sapObjectNodeType.name: 'ChangeRecordResponsible'
+@ObjectModel.supportedCapabilities: [ #CDS_MODELING_DATA_SOURCE,
+                                      #CDS_MODELING_ASSOCIATION_TARGET,
+                                      #SQL_DATA_SOURCE,
+                                      #ANALYTICAL_DIMENSION,
+                                      #EXTRACTION_DATA_SOURCE ]
+@ObjectModel.modelingPattern        : #ANALYTICAL_DIMENSION
+
+@Analytics:{
+    internalName: #LOCAL,
+    dataCategory: #DIMENSION,
+    dataExtraction: {
+        enabled: true
+    }
+}
+
+
+define view entity C_ChangeRecordPartnerDEX_2 as select from I_ChgRecResponsible_2
+{
+  key ChangeRecordUUID,  
+//  key ChgRecordPartnerRole2,
+//  key ChangeRecordPartnerType,
+      ChangeRecordPartner
+} where ChgRecordPartnerRole2 = 'BUP003' and ChangeRecordPartnerType = 'BP'
+```
