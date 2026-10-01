@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgPlnItmExcptnReason` | ✓ | |  | `item_excreason` |  |  |
+| `CABillgPlnItmExcptnReason` | ✓ | |  | `item_excreason` | `CHAR(2)` | Reason for Adjusting a Billing Plan Item |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

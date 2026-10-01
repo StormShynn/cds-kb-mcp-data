@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgPlnCategory` | ✓ | | `_tfk8210t` | `bipcat` |  |  |
-| `Language` | ✓ | | `_tfk8210t` | `langu` |  |  |
-| `CABillgPlnCategoryText` |  | |  | `cast( _tfk8210t.text as bipcat_txt_gfn_kk preserving type )` |  |  |
+| `CABillgPlnCategory` | ✓ | | `_tfk8210t` | `bipcat` | `CHAR(5)` | Billing Plan Category |
+| `Language` | ✓ | | `_tfk8210t` | `langu` | `LANG(1)` | Language Key |
+| `CABillgPlnCategoryText` |  | |  | `cast( _tfk8210t.text as bipcat_txt_gfn_kk preserving type )` | `CHAR(50)` | Text for Billing Plan Category |
 | `_CABillgPlnCategory` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

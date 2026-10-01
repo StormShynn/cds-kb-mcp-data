@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgDocOriginProcess` | ✓ | | `_tfk2641` | `srcprocess` |  |  |
+| `CABillgDocOriginProcess` | ✓ | | `_tfk2641` | `srcprocess` | `NUMC(4)` | Origin Process of Billing Document |
 | `_CABillgDocOriginProcessText` | | ✓ | | | | |
 
 ## Associations

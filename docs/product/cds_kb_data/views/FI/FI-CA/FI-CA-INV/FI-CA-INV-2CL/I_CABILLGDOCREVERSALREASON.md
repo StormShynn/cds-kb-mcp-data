@@ -51,7 +51,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgDocumentReversalReason` | ✓ | | `_tfk2646` | `bill_revreason` |  |  |
+| `CABillgDocumentReversalReason` | ✓ | | `_tfk2646` | `bill_revreason` | `CHAR(2)` | Reversal Reason for Billing Document |
 | `_CABillgDocReversalReasonText` | | ✓ | | | | |
 
 ## Associations

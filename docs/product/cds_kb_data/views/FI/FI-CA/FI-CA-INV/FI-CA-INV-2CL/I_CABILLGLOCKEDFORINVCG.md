@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgLockedForInvoicing` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as invlock_kk preserving type )` |  |  |
+| `CABillgLockedForInvoicing` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as invlock_kk preserving type )` | `CHAR(1)` | Billing Document Is Locked for Invoicing |
 | `_CABillgLockedForInvcgText` | | ✓ | | | | |
 
 ## Associations

@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgPlnItmCat` | ✓ | |  | `bipitemcat` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `CABillgPlnItmCatText` |  | |  | `cast( text as bipitemcat_txt_gfn_kk preserving type )` |  |  |
+| `CABillgPlnItmCat` | ✓ | |  | `bipitemcat` | `CHAR(5)` | Billing Plan Item Category |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `CABillgPlnItmCatText` |  | |  | `cast( text as bipitemcat_txt_gfn_kk preserving type )` | `CHAR(50)` | Description of Billing Plan Item Category |
 | `_CABillgPlnItmCat` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

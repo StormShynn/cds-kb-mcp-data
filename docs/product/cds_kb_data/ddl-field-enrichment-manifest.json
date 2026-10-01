@@ -23869,6 +23869,240 @@
     "found": true,
     "matched": 18
   },
+  "I_PROVIDERCONTRACTTYPE": {
+    "attemptedAt": "2026-09-30T14:40:01.631Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PROVIDERCONTRACTTYPETEXT": {
+    "attemptedAt": "2026-09-30T14:40:02.218Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PRVDRCONTRITEMCHGREASON": {
+    "attemptedAt": "2026-09-30T14:40:02.846Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PRVDRCONTRITEMCHGREASONTXT": {
+    "attemptedAt": "2026-09-30T14:40:03.466Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SALESBILLINGPROVIDERCONTRACT": {
+    "attemptedAt": "2026-09-30T14:40:04.030Z",
+    "found": true,
+    "matched": 20
+  },
+  "I_SLSBILLGPROVIDERCONTRACTITEM": {
+    "attemptedAt": "2026-09-30T14:40:04.596Z",
+    "found": true,
+    "matched": 40
+  },
+  "C_CABILLGREQWRKFLWEMLTMPL": {
+    "attemptedAt": "2026-09-30T14:40:05.223Z",
+    "found": true,
+    "matched": 8
+  },
+  "C_CABILLPRNTINVCGHDRCORRESPNC": {
+    "attemptedAt": "2026-09-30T14:40:05.801Z",
+    "found": true,
+    "matched": 64
+  },
+  "D_CABILLGDOCCREATEDSOURCETRANS": {
+    "attemptedAt": "2026-09-30T14:40:06.048Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CABILLGDOCCREATEDSOURCETRANS\" (404)"
+  },
+  "D_CABILLGPLNCREATED": {
+    "attemptedAt": "2026-09-30T14:40:06.518Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CABILLGPLNCREATED\" (404)"
+  },
+  "D_CAINVCGDOCCREATEDSOURCEDOC": {
+    "attemptedAt": "2026-09-30T14:40:06.981Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CAINVCGDOCCREATEDSOURCEDOC\" (404)"
+  },
+  "D_CONTRACCTGBLGDOCUMENTCREATED": {
+    "attemptedAt": "2026-09-30T14:40:07.481Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACCTGBLGDOCUMENTCREATED\" (404)"
+  },
+  "D_CONTRACCTGINVCGDOCCREATED": {
+    "attemptedAt": "2026-09-30T14:40:08.025Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACCTGINVCGDOCCREATED\" (404)"
+  },
+  "FCIHOME_MA_ANALYTIC_V11": {
+    "attemptedAt": "2026-09-30T14:40:08.485Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"FCIHOME_MA_ANALYTIC_V11\" (404)"
+  },
+  "I_CABILLGCYCLE": {
+    "attemptedAt": "2026-09-30T14:40:09.369Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CABILLGCYCLETEXT": {
+    "attemptedAt": "2026-09-30T14:40:09.988Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGDOCHEADER": {
+    "attemptedAt": "2026-09-30T14:40:10.531Z",
+    "found": true,
+    "matched": 54
+  },
+  "I_CABILLGDOCINVCGSTATUS": {
+    "attemptedAt": "2026-09-30T14:40:11.107Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CABILLGDOCINVCGSTATUSTEXT": {
+    "attemptedAt": "2026-09-30T14:40:11.717Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CABILLGDOCITEM": {
+    "attemptedAt": "2026-09-30T14:40:12.341Z",
+    "found": true,
+    "matched": 99
+  },
+  "I_CABILLGDOCITEMCRTNMETHOD": {
+    "attemptedAt": "2026-09-30T14:40:12.915Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGDOCITEMCRTNMETHODTEXT": {
+    "attemptedAt": "2026-09-30T14:40:13.518Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGDOCITEMTP": {
+    "attemptedAt": "2026-09-30T14:40:13.813Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CABILLGDOCITEMTP\" (404)"
+  },
+  "I_CABILLGDOCORIGINPROCESS": {
+    "attemptedAt": "2026-09-30T14:40:14.658Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGDOCORIGINPROCESSTEXT": {
+    "attemptedAt": "2026-09-30T14:40:15.271Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGDOCREVERSALREASON": {
+    "attemptedAt": "2026-09-30T14:40:15.868Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGDOCREVERSALREASONTEXT": {
+    "attemptedAt": "2026-09-30T14:40:16.417Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGDOCUMENTITEMTYPE": {
+    "attemptedAt": "2026-09-30T14:40:21.146Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGDOCUMENTITEMTYPETEXT": {
+    "attemptedAt": "2026-09-30T14:40:21.755Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGDOCUMENTTP": {
+    "attemptedAt": "2026-09-30T14:40:21.989Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CABILLGDOCUMENTTP\" (404)"
+  },
+  "I_CABILLGLOCKEDFORINVCG": {
+    "attemptedAt": "2026-09-30T14:40:22.810Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGLOCKEDFORINVCGTEXT": {
+    "attemptedAt": "2026-09-30T14:40:23.421Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGPLN": {
+    "attemptedAt": "2026-09-30T14:40:24.044Z",
+    "found": true,
+    "matched": 31
+  },
+  "I_CABILLGPLNCATEGORY": {
+    "attemptedAt": "2026-09-30T14:40:24.623Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CABILLGPLNCATEGORYTEXT": {
+    "attemptedAt": "2026-09-30T14:40:25.179Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGPLNCREATIONMODE": {
+    "attemptedAt": "2026-09-30T14:40:25.743Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGPLNCREATIONMODETEXT": {
+    "attemptedAt": "2026-09-30T14:40:26.304Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGPLNITEM": {
+    "attemptedAt": "2026-09-30T14:40:26.967Z",
+    "found": true,
+    "matched": 67
+  },
+  "I_CABILLGPLNITEMTP_2": {
+    "attemptedAt": "2026-09-30T14:40:27.232Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CABILLGPLNITEMTP_2\" (404)"
+  },
+  "I_CABILLGPLNITMAMTDATETYPE": {
+    "attemptedAt": "2026-09-30T14:40:28.057Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGPLNITMAMTDATETYPETEXT": {
+    "attemptedAt": "2026-09-30T14:40:28.688Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGPLNITMAMTDETNTYPE": {
+    "attemptedAt": "2026-09-30T14:40:29.253Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGPLNITMAMTDETNTYPETEXT": {
+    "attemptedAt": "2026-09-30T14:40:29.873Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGPLNITMCAT": {
+    "attemptedAt": "2026-09-30T14:40:30.544Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGPLNITMCATTEXT": {
+    "attemptedAt": "2026-09-30T14:40:31.163Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGPLNITMEXCPTNREASON": {
+    "attemptedAt": "2026-09-30T14:40:31.747Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGPLNITMEXCPTNRSNTEXT": {
+    "attemptedAt": "2026-09-30T14:40:32.396Z",
+    "found": true,
+    "matched": 3
   "C_BANKRATINGANALYSISQUERY": {
     "attemptedAt": "2026-10-01T06:25:50.201Z",
     "found": true,

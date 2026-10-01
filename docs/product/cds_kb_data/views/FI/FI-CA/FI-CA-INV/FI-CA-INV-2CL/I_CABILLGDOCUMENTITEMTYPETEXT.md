@@ -43,9 +43,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgDocumentItemType` | ✓ | | `_CABillgDocumentItemTypeText` | `CAInvcgDocumentItemType` |  |  |
-| `Language` | ✓ | | `_CABillgDocumentItemTypeText` | `Language` |  |  |
-| `CABillgDocumentItemTypeText` |  | | `_CABillgDocumentItemTypeText` | `CAInvcgDocItemTypeText` |  |  |
+| `CABillgDocumentItemType` | ✓ | | `_CABillgDocumentItemTypeText` | `CAInvcgDocumentItemType` | `CHAR(8)` | Type of Billing Item |
+| `Language` | ✓ | | `_CABillgDocumentItemTypeText` | `Language` | `LANG(1)` | Language Key |
+| `CABillgDocumentItemTypeText` |  | | `_CABillgDocumentItemTypeText` | `CAInvcgDocItemTypeText` | `CHAR(50)` | Description of the Billing Item Type |
 | `_CABillgDocumentItemType` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

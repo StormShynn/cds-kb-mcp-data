@@ -40,8 +40,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgDocumentInvcgStatus` | ✓ | |  | `cast( dd07l.domvalue_l as invstatus_kk )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `CABillgDocumentInvcgStatus` | ✓ | |  | `cast( dd07l.domvalue_l as invstatus_kk )` | `CHAR(1)` | Invoicing Status of Billing Document |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_CABillgDocInvcgStatusText` | | ✓ | | | | |
 
 ## Source Code

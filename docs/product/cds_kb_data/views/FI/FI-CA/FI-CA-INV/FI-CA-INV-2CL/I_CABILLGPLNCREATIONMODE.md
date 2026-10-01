@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgPlnCreationMode` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as bip_crmode_kk preserving type)` |  |  |
+| `CABillgPlnCreationMode` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as bip_crmode_kk preserving type)` | `CHAR(1)` | Creation Mode of Billing Plan |
 | `_CABillgPlnCreationModeText` | | ✓ | | | | |
 
 ## Associations

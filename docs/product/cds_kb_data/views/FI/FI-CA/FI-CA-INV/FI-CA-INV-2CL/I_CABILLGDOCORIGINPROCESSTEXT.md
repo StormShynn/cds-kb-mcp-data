@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgDocOriginProcess` | ✓ | | `_tfk2641t` | `srcprocess` |  |  |
-| `Language` | ✓ | | `_tfk2641t` | `spras` |  |  |
-| `CABillgDocOriginProcessText` |  | |  | `cast( _tfk2641t.srcproctext as srcproctext_gfn_kk preserving type )` |  |  |
+| `CABillgDocOriginProcess` | ✓ | | `_tfk2641t` | `srcprocess` | `NUMC(4)` | Origin Process of Billing Document |
+| `Language` | ✓ | | `_tfk2641t` | `spras` | `LANG(1)` | Language Key |
+| `CABillgDocOriginProcessText` |  | |  | `cast( _tfk2641t.srcproctext as srcproctext_gfn_kk preserving type )` | `CHAR(50)` | Text for Origin Process of Billing Document |
 | `_CABillgDocOriginProcess` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 
