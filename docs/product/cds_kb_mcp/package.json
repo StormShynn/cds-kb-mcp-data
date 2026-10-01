@@ -37,7 +37,7 @@
     "@modelcontextprotocol/node": "^2.0.0",
     "@modelcontextprotocol/server": "^2.1.0",
     "express": "^5.2.1",
-    "jose": "^6.0.10",
+    "jose": "^6.2.12",
     "minisearch": "^7.2.0",
     "swagger-ui-express": "^5.0.1",
     "zod": "^4.4.3"
