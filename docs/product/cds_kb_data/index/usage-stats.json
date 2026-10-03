@@ -1,11 +1,14 @@
 {
-  "fetchedAt": "2026-10-02T10:54:58.001Z",
-  "viewCount": 4,
-  "totalPings": 5,
+  "fetchedAt": "2026-10-03T10:15:06.170Z",
+  "viewCount": 7,
+  "totalPings": 8,
   "counts": {
     "I_CREDITMEMOREQUESTTP": 1,
+    "I_CUSTOMERRETURNITEMTP": 1,
     "I_DEBITMEMOREQUESTTP": 1,
     "I_PRODUCT": 2,
+    "I_RETURNSFOLLOWUPACTIVITY": 1,
+    "I_RETURNSFOLLOWUPACTIVITYTEXT": 1,
     "I_SALESDOCUMENT": 1
   }
 }
