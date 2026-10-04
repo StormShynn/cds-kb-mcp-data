@@ -703,5 +703,240 @@
     "attemptedAt": "2026-10-03T13:06:06.346Z",
     "found": true,
     "matched": 3
+  },
+  "I_WORKFLOWTASKEXTERNALSTATUS": {
+    "attemptedAt": "2026-10-04T13:44:05.450Z",
+    "found": true,
+    "matched": 1
+  },
+  "D_CPWF_CONTEXT_PARAMETER": {
+    "attemptedAt": "2026-10-04T13:44:05.641Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CPWF_CONTEXT_PARAMETER\" (404)"
+  },
+  "D_CPWF_START_PARAMETER": {
+    "attemptedAt": "2026-10-04T13:44:06.075Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CPWF_START_PARAMETER\" (404)"
+  },
+  "I_CPWF_INST": {
+    "attemptedAt": "2026-10-04T13:44:06.476Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CPWF_INST\" (404)"
+  },
+  "I_ABAPTRANSPORTREQUESTTEXT": {
+    "attemptedAt": "2026-10-04T13:44:07.240Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CUSTABAPOBJDIRECTORYENTRY": {
+    "attemptedAt": "2026-10-04T13:44:07.744Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_CUSTABAPPACKAGE": {
+    "attemptedAt": "2026-10-04T13:44:08.247Z",
+    "found": true,
+    "matched": 8
+  },
+  "D_SELECTCUSTOMIZINGTRANSPTREQP": {
+    "attemptedAt": "2026-10-04T13:44:08.393Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SELECTCUSTOMIZINGTRANSPTREQP\" (404)"
+  },
+  "I_CSTMBIZCONFIGNLASTCHGD": {
+    "attemptedAt": "2026-10-04T13:44:08.782Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CSTMBIZCONFIGNLASTCHGD\" (404)"
+  },
+  "I_DATAEXTRACTIONENABLEDVIEW": {
+    "attemptedAt": "2026-10-04T13:44:09.519Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_LANGUAGE": {
+    "attemptedAt": "2026-10-04T13:44:09.994Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_LANGUAGETEXT": {
+    "attemptedAt": "2026-10-04T13:44:10.463Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LANGUAGEVH": {
+    "attemptedAt": "2026-10-04T13:44:10.973Z",
+    "found": true,
+    "matched": 2
+  },
+  "SYCM_APS_ATC_FINDINGS": {
+    "attemptedAt": "2026-10-04T13:44:11.129Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"SYCM_APS_ATC_FINDINGS\" (404)"
+  },
+  "SYCM_APS_PROJECT": {
+    "attemptedAt": "2026-10-04T13:44:11.541Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"SYCM_APS_PROJECT\" (404)"
+  },
+  "SYCM_APS_SCOPE_BY_EP_ITEM": {
+    "attemptedAt": "2026-10-04T13:44:11.933Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"SYCM_APS_SCOPE_BY_EP_ITEM\" (404)"
+  },
+  "DDCDS_CUSTOMER_DOMAIN_VALUE": {
+    "attemptedAt": "2026-10-04T13:44:12.324Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_CUSTOMER_DOMAIN_VALUE\" (404)"
+  },
+  "DDCDS_CUSTOMER_DOMAIN_VALUE_T": {
+    "attemptedAt": "2026-10-04T13:44:12.713Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_CUSTOMER_DOMAIN_VALUE_T\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_CHAR1_SCP": {
+    "attemptedAt": "2026-10-04T13:44:13.107Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_CHAR1_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_CHAR1_T_SCP": {
+    "attemptedAt": "2026-10-04T13:44:13.504Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_CHAR1_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_CHAR2_SCP": {
+    "attemptedAt": "2026-10-04T13:44:13.909Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_CHAR2_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_CHAR2_T_SCP": {
+    "attemptedAt": "2026-10-04T13:44:14.304Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_CHAR2_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_CHAR3_SCP": {
+    "attemptedAt": "2026-10-04T13:44:14.694Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_CHAR3_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_CHAR3_T_SCP": {
+    "attemptedAt": "2026-10-04T13:44:15.088Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_CHAR3_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_CHAR4_SCP": {
+    "attemptedAt": "2026-10-04T13:44:15.480Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_CHAR4_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_CHAR4_T_SCP": {
+    "attemptedAt": "2026-10-04T13:44:15.898Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_CHAR4_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_CHAR5_SCP": {
+    "attemptedAt": "2026-10-04T13:44:16.289Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_CHAR5_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_CHAR5_T_SCP": {
+    "attemptedAt": "2026-10-04T13:44:16.678Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_CHAR5_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_CHAR6_SCP": {
+    "attemptedAt": "2026-10-04T13:44:17.066Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_CHAR6_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_CHAR6_T_SCP": {
+    "attemptedAt": "2026-10-04T13:44:17.479Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_CHAR6_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_CHAR7_SCP": {
+    "attemptedAt": "2026-10-04T13:44:17.863Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_CHAR7_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_CHAR7_T_SCP": {
+    "attemptedAt": "2026-10-04T13:44:18.261Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_CHAR7_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_CHAR8_SCP": {
+    "attemptedAt": "2026-10-04T13:44:18.658Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_CHAR8_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_CHAR8_T_SCP": {
+    "attemptedAt": "2026-10-04T13:44:19.051Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_CHAR8_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_INT1_SCP": {
+    "attemptedAt": "2026-10-04T13:44:19.444Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_INT1_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_INT1_T_SCP": {
+    "attemptedAt": "2026-10-04T13:44:19.839Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_INT1_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_INT2_SCP": {
+    "attemptedAt": "2026-10-04T13:44:20.233Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_INT2_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_INT2_T_SCP": {
+    "attemptedAt": "2026-10-04T13:44:20.624Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_INT2_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_INT4_SCP": {
+    "attemptedAt": "2026-10-04T13:44:21.017Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_INT4_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_INT4_T_SCP": {
+    "attemptedAt": "2026-10-04T13:44:21.406Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_INT4_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC1_SCP": {
+    "attemptedAt": "2026-10-04T13:44:21.798Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC1_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC1_T_SCP": {
+    "attemptedAt": "2026-10-04T13:44:22.186Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC1_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC2_SCP": {
+    "attemptedAt": "2026-10-04T13:44:22.597Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC2_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC2_T_SCP": {
+    "attemptedAt": "2026-10-04T13:44:22.985Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC2_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC3_SCP": {
+    "attemptedAt": "2026-10-04T13:44:23.379Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC3_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC3_T_SCP": {
+    "attemptedAt": "2026-10-04T13:44:23.804Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC3_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC4_SCP": {
+    "attemptedAt": "2026-10-04T13:44:24.197Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC4_SCP\" (404)"
   }
 }
