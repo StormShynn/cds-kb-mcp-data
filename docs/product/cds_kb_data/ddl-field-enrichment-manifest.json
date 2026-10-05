@@ -938,5 +938,240 @@
     "attemptedAt": "2026-10-04T13:44:24.197Z",
     "found": false,
     "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC4_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC4_T_SCP": {
+    "attemptedAt": "2026-10-05T16:51:21.164Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC4_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC5_SCP": {
+    "attemptedAt": "2026-10-05T16:51:21.640Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC5_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC5_T_SCP": {
+    "attemptedAt": "2026-10-05T16:51:22.107Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC5_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC6_SCP": {
+    "attemptedAt": "2026-10-05T16:51:22.600Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC6_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC6_T_SCP": {
+    "attemptedAt": "2026-10-05T16:51:23.087Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC6_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC7_SCP": {
+    "attemptedAt": "2026-10-05T16:51:23.559Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC7_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC7_T_SCP": {
+    "attemptedAt": "2026-10-05T16:51:24.041Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC7_T_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC8_SCP": {
+    "attemptedAt": "2026-10-05T16:51:24.503Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC8_SCP\" (404)"
+  },
+  "DDCDS_TYPE_ENUMVAL_NUMC8_T_SCP": {
+    "attemptedAt": "2026-10-05T16:51:24.966Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"DDCDS_TYPE_ENUMVAL_NUMC8_T_SCP\" (404)"
+  },
+  "I_CONFIGNDEPRECATIONCODE": {
+    "attemptedAt": "2026-10-05T16:51:25.778Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CONFIGNDEPRECATIONCODETEXT": {
+    "attemptedAt": "2026-10-05T16:51:26.335Z",
+    "found": true,
+    "matched": 4
+  },
+  "SATC_API_FINDINGS": {
+    "attemptedAt": "2026-10-05T16:51:26.548Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"SATC_API_FINDINGS\" (404)"
+  },
+  "SATC_API_RESULT_HEADERS": {
+    "attemptedAt": "2026-10-05T16:51:27.014Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"SATC_API_RESULT_HEADERS\" (404)"
+  },
+  "SATC_EXEMPTIONS_DDLV_EC1": {
+    "attemptedAt": "2026-10-05T16:51:27.480Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"SATC_EXEMPTIONS_DDLV_EC1\" (404)"
+  },
+  "SATC_EXEMPTIONS_DDLV_EC2": {
+    "attemptedAt": "2026-10-05T16:51:27.960Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"SATC_EXEMPTIONS_DDLV_EC2\" (404)"
+  },
+  "I_SYSTEMUSER": {
+    "attemptedAt": "2026-10-05T16:51:28.751Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_USER": {
+    "attemptedAt": "2026-10-05T16:51:29.326Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_ACADEMICTITLE": {
+    "attemptedAt": "2026-10-05T16:51:29.902Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_ACADEMICTITLETEXT": {
+    "attemptedAt": "2026-10-05T16:51:30.453Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ACADEMICTITLEVH": {
+    "attemptedAt": "2026-10-05T16:51:31.024Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_ACTIVEADDRESSREPRESENTATION": {
+    "attemptedAt": "2026-10-05T16:51:31.580Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ADDRCOMMUNICATIONMETHODTEXT": {
+    "attemptedAt": "2026-10-05T16:51:32.146Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ADDRCURDEFAULTEMAILADDRESS": {
+    "attemptedAt": "2026-10-05T16:51:32.674Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_ADDRCURDEFAULTFAXNUMBER": {
+    "attemptedAt": "2026-10-05T16:51:33.589Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_ADDRCURDFLTLANDLINEPHONENMBR": {
+    "attemptedAt": "2026-10-05T16:51:34.291Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_ADDRCURDFLTMOBILEPHONENUMBER": {
+    "attemptedAt": "2026-10-05T16:51:34.838Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_ADDRDELIVERYSERVICETYPETEXT": {
+    "attemptedAt": "2026-10-05T16:51:35.374Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ADDRDELIVERYSERVICETYPEVH": {
+    "attemptedAt": "2026-10-05T16:51:36.149Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_ADDRESSCOMMUNICATIONMETHOD": {
+    "attemptedAt": "2026-10-05T16:51:36.722Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ADDRESSCOMMUNICATIONMETHODVH": {
+    "attemptedAt": "2026-10-05T16:51:37.278Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ADDRESSCOMMUNICATIONREMARK_2": {
+    "attemptedAt": "2026-10-05T16:51:37.815Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_ADDRESSCOMMUNICATIONUSAGE": {
+    "attemptedAt": "2026-10-05T16:51:38.379Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_ADDRESSDEFAULTREPRESENTATION": {
+    "attemptedAt": "2026-10-05T16:51:38.943Z",
+    "found": true,
+    "matched": 57
+  },
+  "I_ADDRESSDELIVERYSERVICETYPE": {
+    "attemptedAt": "2026-10-05T16:51:39.484Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_ADDRESSEMAILADDRESS_2": {
+    "attemptedAt": "2026-10-05T16:51:40.069Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_ADDRESSFAXNUMBER_2": {
+    "attemptedAt": "2026-10-05T16:51:40.629Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_ADDRESSGROUP": {
+    "attemptedAt": "2026-10-05T16:51:41.197Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ADDRESSGROUPTEXT": {
+    "attemptedAt": "2026-10-05T16:51:41.754Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ADDRESSGROUPVH": {
+    "attemptedAt": "2026-10-05T16:51:42.286Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ADDRESSMAINWEBSITEURL": {
+    "attemptedAt": "2026-10-05T16:51:42.833Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_ADDRESSMANAGEMENTURITYPE": {
+    "attemptedAt": "2026-10-05T16:51:43.408Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_ADDRESSMANAGEMENTURITYPETEXT": {
+    "attemptedAt": "2026-10-05T16:51:43.966Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ADDRESSMANAGEMENTURITYPEVH": {
+    "attemptedAt": "2026-10-05T16:51:44.532Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_ADDRESSNONDELIVERABLEREASON": {
+    "attemptedAt": "2026-10-05T16:51:45.156Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ADDRESSNONDELIVERABLEREASONT": {
+    "attemptedAt": "2026-10-05T16:51:45.718Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_ADDRESSOBJECTTYPE": {
+    "attemptedAt": "2026-10-05T16:51:46.282Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ADDRESSOBJECTTYPETEXT": {
+    "attemptedAt": "2026-10-05T16:51:46.851Z",
+    "found": true,
+    "matched": 3
   }
 }
