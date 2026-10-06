@@ -1173,5 +1173,240 @@
     "attemptedAt": "2026-10-05T16:51:46.851Z",
     "found": true,
     "matched": 3
+  },
+  "I_ADDRESSPERSONNAME": {
+    "attemptedAt": "2026-10-06T14:46:53.725Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_ADDRESSPHONENUMBER_2": {
+    "attemptedAt": "2026-10-06T14:46:54.232Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_ADDRESSREMARK_2": {
+    "attemptedAt": "2026-10-06T14:46:54.724Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_ADDRESSREPRESENTATION": {
+    "attemptedAt": "2026-10-06T14:46:55.213Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ADDRESSREPRESENTATIONCODEVH": {
+    "attemptedAt": "2026-10-06T14:46:55.733Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ADDRESSREPRESENTATIONTEXT": {
+    "attemptedAt": "2026-10-06T14:46:56.263Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ADDRESSURI": {
+    "attemptedAt": "2026-10-06T14:46:56.727Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_ADDRESSWORKPLACEDETAILS": {
+    "attemptedAt": "2026-10-06T14:46:57.206Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_ADDRESS_2": {
+    "attemptedAt": "2026-10-06T14:46:57.725Z",
+    "found": true,
+    "matched": 64
+  },
+  "I_ADDRNONDELIVERABLEREASONVH": {
+    "attemptedAt": "2026-10-06T14:46:58.194Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ADDRORGNAMEPOSTALADDRESS": {
+    "attemptedAt": "2026-10-06T14:46:58.697Z",
+    "found": true,
+    "matched": 60
+  },
+  "I_ADDRPERSNNAMEDFLTRPRSTN": {
+    "attemptedAt": "2026-10-06T14:46:59.189Z",
+    "found": true,
+    "matched": 19
+  },
+  "I_COUNTRY": {
+    "attemptedAt": "2026-10-06T14:46:59.673Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_COUNTRYTEXT": {
+    "attemptedAt": "2026-10-06T14:47:00.137Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_COUNTRYVH": {
+    "attemptedAt": "2026-10-06T14:47:00.665Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_FAMILYNAMEPREFIX": {
+    "attemptedAt": "2026-10-06T14:47:01.182Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_FAMILYNAMEPREFIXVH": {
+    "attemptedAt": "2026-10-06T14:47:01.663Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_FORMOFADDRESS": {
+    "attemptedAt": "2026-10-06T14:47:02.155Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_FORMOFADDRESSTEXT": {
+    "attemptedAt": "2026-10-06T14:47:02.648Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_NAMESUPPLEMENT": {
+    "attemptedAt": "2026-10-06T14:47:03.144Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_NAMESUPPLEMENTTEXT": {
+    "attemptedAt": "2026-10-06T14:47:03.623Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_NAMESUPPLEMENTVH": {
+    "attemptedAt": "2026-10-06T14:47:04.123Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_ORGADDRESSDEFAULTRPRSTN": {
+    "attemptedAt": "2026-10-06T14:47:04.623Z",
+    "found": true,
+    "matched": 55
+  },
+  "I_ORGANIZATIONADDRESS": {
+    "attemptedAt": "2026-10-06T14:47:05.113Z",
+    "found": true,
+    "matched": 62
+  },
+  "I_ORGNAMEPOSTLADDRDFLTRPRSTN": {
+    "attemptedAt": "2026-10-06T14:47:05.601Z",
+    "found": true,
+    "matched": 53
+  },
+  "I_PERSONADDRESS": {
+    "attemptedAt": "2026-10-06T14:47:06.107Z",
+    "found": true,
+    "matched": 73
+  },
+  "I_PERSONADDRESSDEFAULTRPRSTN": {
+    "attemptedAt": "2026-10-06T14:47:06.581Z",
+    "found": true,
+    "matched": 63
+  },
+  "I_PERSONWORKPLACEADDRESS": {
+    "attemptedAt": "2026-10-06T14:47:07.099Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_PHONENUMBERTYPE": {
+    "attemptedAt": "2026-10-06T14:47:07.607Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PHONENUMBERTYPETEXT": {
+    "attemptedAt": "2026-10-06T14:47:08.123Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_POSTALCITY": {
+    "attemptedAt": "2026-10-06T14:47:08.607Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_POSTALCITYTEXT": {
+    "attemptedAt": "2026-10-06T14:47:09.089Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_REGION": {
+    "attemptedAt": "2026-10-06T14:47:09.617Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_REGIONALSTRUCCHECKSTATUSTEXT": {
+    "attemptedAt": "2026-10-06T14:47:10.136Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_REGIONALSTRUCTURECHECKSTATUS": {
+    "attemptedAt": "2026-10-06T14:47:10.662Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_REGIONTEXT": {
+    "attemptedAt": "2026-10-06T14:47:11.149Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_REGIONVH": {
+    "attemptedAt": "2026-10-06T14:47:11.630Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SECONDARYREGION": {
+    "attemptedAt": "2026-10-06T14:47:12.120Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SECONDARYREGIONTEXT": {
+    "attemptedAt": "2026-10-06T14:47:12.637Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_STREET": {
+    "attemptedAt": "2026-10-06T14:47:13.150Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_STREETTEXT": {
+    "attemptedAt": "2026-10-06T14:47:13.652Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_TAXINGCOUNTY": {
+    "attemptedAt": "2026-10-06T14:47:14.136Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_TAXINGCOUNTYTEXT": {
+    "attemptedAt": "2026-10-06T14:47:14.668Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_TERTIARYREGION": {
+    "attemptedAt": "2026-10-06T14:47:15.149Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_TERTIARYREGIONTEXT": {
+    "attemptedAt": "2026-10-06T14:47:15.668Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_TRANSPORTATIONZONE": {
+    "attemptedAt": "2026-10-06T14:47:16.224Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_TRANSPORTATIONZONETEXT": {
+    "attemptedAt": "2026-10-06T14:47:16.732Z",
+    "found": true,
+    "matched": 4
   }
 }
