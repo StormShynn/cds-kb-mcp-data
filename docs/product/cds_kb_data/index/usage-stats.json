@@ -1,8 +1,10 @@
 {
-  "fetchedAt": "2026-10-07T11:35:20.878Z",
-  "viewCount": 7,
-  "totalPings": 8,
+  "fetchedAt": "2026-10-08T11:49:49.160Z",
+  "viewCount": 9,
+  "totalPings": 10,
   "counts": {
+    "DDCDS_CUSTOMER_DOMAIN_VALUE": 1,
+    "DDCDS_CUSTOMER_DOMAIN_VALUE_T": 1,
     "I_CREDITMEMOREQUESTTP": 1,
     "I_CUSTOMERRETURNITEMTP": 1,
     "I_DEBITMEMOREQUESTTP": 1,
