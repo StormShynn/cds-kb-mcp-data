@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-08T03:38:38.447Z",
-  "coverageGeneratedAt": "2026-10-08T03:38:37.741Z",
+  "generatedAt": "2026-10-08T12:29:54.619Z",
+  "coverageGeneratedAt": "2026-10-08T12:29:54.238Z",
   "hubContainer": "SAPS4HANACloud",
   "note": "Locally tagged release_state: released, but not on the Hub's current RELEASED list for this container as of coverageGeneratedAt. Not proof the view is wrong — the Hub reflects the current moment only (deprecated/renamed/different-container views drop off it too) — needs a human look, not an automatic relabel. release_state is left untouched by this script.",
-  "totalCandidates": 1708,
+  "totalCandidates": 1711,
   "likelyStillValid": {
     "note": "Not Hub-confirmed, but has Full DDL (real SAP-generated source) — treat as validated by that instead, no action needed.",
-    "total": 1697,
+    "total": 1700,
     "candidates": [
       {
         "name": "ABP_BEHV_DRAFT_USER_ACCESS",
@@ -90,6 +90,13 @@
         "path": "views/FIN/FIN-CS/FIN-CS-EA/FIN-CS-EA-2CL/C_CNSLDTNGRPJRNLITEMQ_2.md",
         "appComponent": "FIN-CS-EA-2CL",
         "description": "\"Cnsldtngrpjrnlitemq 2\"",
+        "hasFullDdl": true
+      },
+      {
+        "name": "C_EQUIPMENTDATADEX",
+        "path": "views/PM/PM-EQM/PM-EQM-EQ/PM-EQM-EQ-2CL/C_EQUIPMENTDATADEX.md",
+        "appComponent": "PM-EQM-EQ-2CL",
+        "description": "\"Equipment DEX\"",
         "hasFullDdl": true
       },
       {
@@ -4094,6 +4101,20 @@
         "path": "views/SD/SD-BIL/SD-BIL-2CL/I_BILLINGDOCUMENTTP.md",
         "appComponent": "SD-BIL-2CL",
         "description": "\"Billing DocumentUMENTTP\"",
+        "hasFullDdl": true
+      },
+      {
+        "name": "I_BILLINGPLANUSAGECATEGORY",
+        "path": "views/SD/SD-BIL/SD-BIL-IV/SD-BIL-IV-BP/SD-BIL-IV-BP-2CL/I_BILLINGPLANUSAGECATEGORY.md",
+        "appComponent": "SD-BIL-IV-BP-2CL",
+        "description": "\"Billingplanusagecategory\"",
+        "hasFullDdl": true
+      },
+      {
+        "name": "I_BILLINGPLANUSAGECATEGORYTEXT",
+        "path": "views/SD/SD-BIL/SD-BIL-IV/SD-BIL-IV-BP/SD-BIL-IV-BP-2CL/I_BILLINGPLANUSAGECATEGORYTEXT.md",
+        "appComponent": "SD-BIL-IV-BP-2CL",
+        "description": "\"Billingplanusagecategorytext\"",
         "hasFullDdl": true
       },
       {
