@@ -1643,5 +1643,240 @@
     "attemptedAt": "2026-10-08T15:15:52.016Z",
     "found": true,
     "matched": 8
+  },
+  "I_EXCHANGERATERAWDATA": {
+    "attemptedAt": "2026-10-09T15:00:49.043Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_EXCHANGERATESPREADRAWDATA": {
+    "attemptedAt": "2026-10-09T15:00:49.595Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_EXCHANGERATETYPE": {
+    "attemptedAt": "2026-10-09T15:00:50.178Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_EXCHANGERATETYPESTDVH": {
+    "attemptedAt": "2026-10-09T15:00:50.729Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_EXCHANGERATETYPETEXT": {
+    "attemptedAt": "2026-10-09T15:00:51.295Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_EXCHRATEQTANTYPERAWDATA": {
+    "attemptedAt": "2026-10-09T15:00:51.864Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_BPUSREXTERNALID": {
+    "attemptedAt": "2026-10-09T15:00:52.404Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_BPUSRROLE": {
+    "attemptedAt": "2026-10-09T15:00:53.024Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_BUSINESSUSERBASIC": {
+    "attemptedAt": "2026-10-09T15:00:53.563Z",
+    "found": true,
+    "matched": 39
+  },
+  "I_BUSINESSUSERVH": {
+    "attemptedAt": "2026-10-09T15:00:54.141Z",
+    "found": true,
+    "matched": 23
+  },
+  "I_CASEATTRIBUTE": {
+    "attemptedAt": "2026-10-09T15:00:54.697Z",
+    "found": true,
+    "matched": 25
+  },
+  "I_CASEATTRIBUTEPROFILE": {
+    "attemptedAt": "2026-10-09T15:00:55.267Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CASEATTRIBUTEPROFILETEXT": {
+    "attemptedAt": "2026-10-09T15:00:55.812Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASEAUTHORIZATIONLEVEL": {
+    "attemptedAt": "2026-10-09T15:00:56.395Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASEAUTHORIZATIONLEVELTEXT": {
+    "attemptedAt": "2026-10-09T15:00:56.942Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASECATEGORY": {
+    "attemptedAt": "2026-10-09T15:00:57.516Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CASECATEGORYTEXT": {
+    "attemptedAt": "2026-10-09T15:00:58.014Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CASEENTITY": {
+    "attemptedAt": "2026-10-09T15:00:58.559Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CASEESCALATIONREASON": {
+    "attemptedAt": "2026-10-09T15:00:59.107Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASEESCALATIONREASONTEXT": {
+    "attemptedAt": "2026-10-09T15:00:59.680Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASEFUNCTIONPROFILE": {
+    "attemptedAt": "2026-10-09T15:01:00.260Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASEFUNCTIONPROFILETEXT": {
+    "attemptedAt": "2026-10-09T15:01:00.807Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASEINDIVIDUALSTATUS": {
+    "attemptedAt": "2026-10-09T15:01:01.360Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_CASEINDIVIDUALSTATUSTEXT": {
+    "attemptedAt": "2026-10-09T15:01:01.907Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CASEPRIORITY": {
+    "attemptedAt": "2026-10-09T15:01:02.423Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASEPRIORITYTEXT": {
+    "attemptedAt": "2026-10-09T15:01:02.963Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASEPROCESS": {
+    "attemptedAt": "2026-10-09T15:01:03.509Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASEPROCESSTEXT": {
+    "attemptedAt": "2026-10-09T15:01:04.170Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASEREASONS": {
+    "attemptedAt": "2026-10-09T15:01:04.754Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CASEREASONSTEXT": {
+    "attemptedAt": "2026-10-09T15:01:05.354Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CASESTATUSPROFILE": {
+    "attemptedAt": "2026-10-09T15:01:05.989Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASESTATUSPROFILETEXT": {
+    "attemptedAt": "2026-10-09T15:01:06.539Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASESYSTEMSTATUSTEXT": {
+    "attemptedAt": "2026-10-09T15:01:07.102Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASETERMINOLOGYPROFILE": {
+    "attemptedAt": "2026-10-09T15:01:07.661Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASETERMINOLOGYPROFILETEXT": {
+    "attemptedAt": "2026-10-09T15:01:08.257Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASETEXTPROFILE": {
+    "attemptedAt": "2026-10-09T15:01:08.850Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CASETEXTPROFILETEXT": {
+    "attemptedAt": "2026-10-09T15:01:09.378Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASETYPES": {
+    "attemptedAt": "2026-10-09T15:01:09.904Z",
+    "found": true,
+    "matched": 17
+  },
+  "I_CASETYPESTEXT": {
+    "attemptedAt": "2026-10-09T15:01:10.449Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DAYLIGHTSAVINGRULE": {
+    "attemptedAt": "2026-10-09T15:01:11.072Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DAYLIGHTSAVINGRULETEXT": {
+    "attemptedAt": "2026-10-09T15:01:11.656Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_TIMEZONE": {
+    "attemptedAt": "2026-10-09T15:01:12.234Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_TIMEZONEIANACODEMAP": {
+    "attemptedAt": "2026-10-09T15:01:12.758Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_TIMEZONEIANACODESTDVH": {
+    "attemptedAt": "2026-10-09T15:01:13.334Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_TIMEZONERULE": {
+    "attemptedAt": "2026-10-09T15:01:13.912Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_TIMEZONERULETEXT": {
+    "attemptedAt": "2026-10-09T15:01:14.471Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_TIMEZONETEXT": {
+    "attemptedAt": "2026-10-09T15:01:14.999Z",
+    "found": true,
+    "matched": 3
   }
 }
