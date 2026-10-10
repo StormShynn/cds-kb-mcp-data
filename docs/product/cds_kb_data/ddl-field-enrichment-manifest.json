@@ -1878,5 +1878,240 @@
     "attemptedAt": "2026-10-09T15:01:14.999Z",
     "found": true,
     "matched": 3
+  },
+  "C_CONCURACCTGDOCITMRLTNDEX": {
+    "attemptedAt": "2026-10-10T14:16:53.883Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_CONCURDOCACCTGDOCRELATION": {
+    "attemptedAt": "2026-10-10T14:16:54.443Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_CONCURDOCUMENTTYPE": {
+    "attemptedAt": "2026-10-10T14:16:55.016Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CONCURDOCUMENTTYPETEXT": {
+    "attemptedAt": "2026-10-10T14:16:55.561Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_ILMDATAPRIVACYNOTIFICATION": {
+    "attemptedAt": "2026-10-10T14:16:56.106Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_ATPCHECKINGGROUP": {
+    "attemptedAt": "2026-10-10T14:16:56.720Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_ATPCHECKINGGROUPTEXT": {
+    "attemptedAt": "2026-10-10T14:16:57.263Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SDSCHEDULELINEWTHOPENRQMTQTY": {
+    "attemptedAt": "2026-10-10T14:16:57.820Z",
+    "found": true,
+    "matched": 23
+  },
+  "I_AVAILYCHGLOG": {
+    "attemptedAt": "2026-10-10T14:16:58.360Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_AVAILYCHGLOGCAT": {
+    "attemptedAt": "2026-10-10T14:16:58.942Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_AVAILYCHGLOGCATTEXT": {
+    "attemptedAt": "2026-10-10T14:16:59.468Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_AVAILYCHGLOGTMESTMP": {
+    "attemptedAt": "2026-10-10T14:17:00.035Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_OBJVALDETNACTIVATIONSTATUS": {
+    "attemptedAt": "2026-10-10T14:17:00.591Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_OBJVALDETNACTIVATIONSTSTEXT": {
+    "attemptedAt": "2026-10-10T14:17:01.147Z",
+    "found": true,
+    "matched": 4
+  },
+  "D_CHARCVALCOMBNDELACTVENTITYP": {
+    "attemptedAt": "2026-10-10T14:17:01.335Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CHARCVALCOMBNDELACTVENTITYP\" (404)"
+  },
+  "D_TMESERSDELETEACTIVEENTITYP": {
+    "attemptedAt": "2026-10-10T14:17:01.812Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_TMESERSDELETEACTIVEENTITYP\" (404)"
+  },
+  "I_COLLECTIVEALLOCATIONTYPE": {
+    "attemptedAt": "2026-10-10T14:17:02.590Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_COLLECTIVEALLOCATIONTYPET": {
+    "attemptedAt": "2026-10-10T14:17:03.137Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_HRZCONSUMPTIONDIRECTION": {
+    "attemptedAt": "2026-10-10T14:17:03.693Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_HRZCONSUMPTIONDIRECTIONT": {
+    "attemptedAt": "2026-10-10T14:17:04.251Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PRODALLOCACTIVATIONSTATUS": {
+    "attemptedAt": "2026-10-10T14:17:04.786Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PRODALLOCACTIVATIONSTATUST": {
+    "attemptedAt": "2026-10-10T14:17:05.317Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PRODALLOCATIONOBJECTTP_2": {
+    "attemptedAt": "2026-10-10T14:17:05.507Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODALLOCATIONOBJECTTP_2\" (404)"
+  },
+  "I_PRODALLOCATIONOBJECTTXTTP_2": {
+    "attemptedAt": "2026-10-10T14:17:05.942Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODALLOCATIONOBJECTTXTTP_2\" (404)"
+  },
+  "I_PRODALLOCATIONSEQUENCETP_2": {
+    "attemptedAt": "2026-10-10T14:17:06.381Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODALLOCATIONSEQUENCETP_2\" (404)"
+  },
+  "I_PRODALLOCCHARCCSTRTSTATUS": {
+    "attemptedAt": "2026-10-10T14:17:07.176Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PRODALLOCCHARCCSTRTSTATUST": {
+    "attemptedAt": "2026-10-10T14:17:07.752Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PRODALLOCCHARCMETADATATP_2": {
+    "attemptedAt": "2026-10-10T14:17:07.946Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODALLOCCHARCMETADATATP_2\" (404)"
+  },
+  "I_PRODALLOCCHARCVALCOMBNTP_2": {
+    "attemptedAt": "2026-10-10T14:17:08.394Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODALLOCCHARCVALCOMBNTP_2\" (404)"
+  },
+  "I_PRODALLOCCHECKDATETIMETYPE": {
+    "attemptedAt": "2026-10-10T14:17:09.185Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PRODALLOCCHECKDATETIMETYPET": {
+    "attemptedAt": "2026-10-10T14:17:09.776Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PRODALLOCCHECKMETHOD": {
+    "attemptedAt": "2026-10-10T14:17:10.305Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_PRODALLOCCHECKMETHODT": {
+    "attemptedAt": "2026-10-10T14:17:10.855Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PRODALLOCCHKDATASNPSHTTYPE": {
+    "attemptedAt": "2026-10-10T14:17:11.402Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_PRODALLOCCHKDATASNPSHTTYPET": {
+    "attemptedAt": "2026-10-10T14:17:11.974Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PRODALLOCCHKPERDCNSMPNTYPE": {
+    "attemptedAt": "2026-10-10T14:17:12.532Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_PRODALLOCCHKPERDCNSMPNTYPET": {
+    "attemptedAt": "2026-10-10T14:17:13.093Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PRODALLOCCHKRSTRCNSTATUS": {
+    "attemptedAt": "2026-10-10T14:17:13.648Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_PRODALLOCCHKRSTRCNSTATUST": {
+    "attemptedAt": "2026-10-10T14:17:14.184Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PRODALLOCCONSISTENCYSTATUS": {
+    "attemptedAt": "2026-10-10T14:17:14.780Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PRODALLOCCONSISTENCYSTATUST": {
+    "attemptedAt": "2026-10-10T14:17:15.313Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PRODALLOCLIFECYCLESTATUS": {
+    "attemptedAt": "2026-10-10T14:17:15.879Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PRODALLOCLIFECYCLESTATUST": {
+    "attemptedAt": "2026-10-10T14:17:16.443Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PRODALLOCOBJTIMESERIESTP_2": {
+    "attemptedAt": "2026-10-10T14:17:16.636Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODALLOCOBJTIMESERIESTP_2\" (404)"
+  },
+  "I_PRODALLOCSEQUENCETXTTP_2": {
+    "attemptedAt": "2026-10-10T14:17:17.074Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODALLOCSEQUENCETXTTP_2\" (404)"
+  },
+  "I_PRODALLOCSQNCASSGMTTP_2": {
+    "attemptedAt": "2026-10-10T14:17:17.514Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODALLOCSQNCASSGMTTP_2\" (404)"
+  },
+  "I_PRODALLOCSQNCCSTRTTP_2": {
+    "attemptedAt": "2026-10-10T14:17:17.948Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODALLOCSQNCCSTRTTP_2\" (404)"
   }
 }
