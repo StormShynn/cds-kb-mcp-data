@@ -2113,5 +2113,240 @@
     "attemptedAt": "2026-10-10T14:17:17.948Z",
     "found": false,
     "reason": "Hub catalog fetch failed for \"I_PRODALLOCSQNCCSTRTTP_2\" (404)"
+  },
+  "I_PRODALLOCSQNCCSTRTTXTTP_2": {
+    "attemptedAt": "2026-10-11T14:41:52.823Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODALLOCSQNCCSTRTTXTTP_2\" (404)"
+  },
+  "I_PRODALLOCSQNCGROUPTP_2": {
+    "attemptedAt": "2026-10-11T14:41:53.233Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODALLOCSQNCGROUPTP_2\" (404)"
+  },
+  "I_PRODALLOCSQNCGROUPTXTTP_2": {
+    "attemptedAt": "2026-10-11T14:41:53.644Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODALLOCSQNCGROUPTXTTP_2\" (404)"
+  },
+  "I_PRODUCTALLOCATIONPERIODTYPE": {
+    "attemptedAt": "2026-10-11T14:41:54.415Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PRODUCTALLOCATIONPERIODTYPET": {
+    "attemptedAt": "2026-10-11T14:41:54.940Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_VERTICALCONSUMPTIONDIRECTION": {
+    "attemptedAt": "2026-10-11T14:41:55.473Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_VRTCONSUMPTIONDIRECTIONT": {
+    "attemptedAt": "2026-10-11T14:41:56.004Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SUPPLYPROTECTION": {
+    "attemptedAt": "2026-10-11T14:41:56.574Z",
+    "found": true,
+    "matched": 35
+  },
+  "I_SUPPLYPROTECTIONGROUP": {
+    "attemptedAt": "2026-10-11T14:41:57.093Z",
+    "found": true,
+    "matched": 43
+  },
+  "I_BANKADDRESSTP": {
+    "attemptedAt": "2026-10-11T14:41:57.261Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BANKADDRESSTP\" (404)"
+  },
+  "I_BANKCHANGEDOCUMENT": {
+    "attemptedAt": "2026-10-11T14:41:58.064Z",
+    "found": true,
+    "matched": 18
+  },
+  "I_BANKENHANCED": {
+    "attemptedAt": "2026-10-11T14:41:58.664Z",
+    "found": true,
+    "matched": 24
+  },
+  "I_BANKSCRIPTEDADDRESSTP": {
+    "attemptedAt": "2026-10-11T14:41:58.861Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BANKSCRIPTEDADDRESSTP\" (404)"
+  },
+  "I_BANKTP": {
+    "attemptedAt": "2026-10-11T14:41:59.270Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BANKTP\" (404)"
+  },
+  "I_BANKVH": {
+    "attemptedAt": "2026-10-11T14:42:00.059Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_BANK_2": {
+    "attemptedAt": "2026-10-11T14:42:00.586Z",
+    "found": true,
+    "matched": 22
+  },
+  "I_BANKADDRESS": {
+    "attemptedAt": "2026-10-11T14:42:01.111Z",
+    "found": true,
+    "matched": 48
+  },
+  "I_BANKSCRIPTEDADDRESS": {
+    "attemptedAt": "2026-10-11T14:42:01.648Z",
+    "found": true,
+    "matched": 48
+  },
+  "I_CLFNCHARACTERISTIC": {
+    "attemptedAt": "2026-10-11T14:42:02.180Z",
+    "found": true,
+    "matched": 46
+  },
+  "I_CLFNCHARACTERISTICDEX": {
+    "attemptedAt": "2026-10-11T14:42:02.705Z",
+    "found": true,
+    "matched": 46
+  },
+  "I_CLFNCHARACTERISTICFORKEYDATE": {
+    "attemptedAt": "2026-10-11T14:42:03.219Z",
+    "found": true,
+    "matched": 44
+  },
+  "I_CLFNCHARCAUTHOR": {
+    "attemptedAt": "2026-10-11T14:42:03.726Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CLFNCHARCAUTHORTEXT": {
+    "attemptedAt": "2026-10-11T14:42:04.291Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CLFNCHARCDATATYPE": {
+    "attemptedAt": "2026-10-11T14:42:04.816Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CLFNCHARCDATATYPETEXT": {
+    "attemptedAt": "2026-10-11T14:42:05.348Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CLFNCHARCDESC": {
+    "attemptedAt": "2026-10-11T14:42:05.873Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_CLFNCHARCDESCDEX": {
+    "attemptedAt": "2026-10-11T14:42:06.383Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_CLFNCHARCDESCFORKEYDATE": {
+    "attemptedAt": "2026-10-11T14:42:06.904Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_CLFNCHARCEXPONENTFORMAT": {
+    "attemptedAt": "2026-10-11T14:42:07.424Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CLFNCHARCEXPONENTFORMATTEXT": {
+    "attemptedAt": "2026-10-11T14:42:07.942Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CLFNCHARCGROUP": {
+    "attemptedAt": "2026-10-11T14:42:08.475Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CLFNCHARCGROUPSTDVH": {
+    "attemptedAt": "2026-10-11T14:42:08.983Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CLFNCHARCGROUPTEXT": {
+    "attemptedAt": "2026-10-11T14:42:09.514Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CLFNCHARCRESTRICTION": {
+    "attemptedAt": "2026-10-11T14:42:10.022Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CLFNCHARCRESTRICTIONDEX": {
+    "attemptedAt": "2026-10-11T14:42:10.564Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CLFNCHARCSTATUS": {
+    "attemptedAt": "2026-10-11T14:42:11.114Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CLFNCHARCSTATUSSTDVH": {
+    "attemptedAt": "2026-10-11T14:42:11.633Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CLFNCHARCSTATUSTEXT": {
+    "attemptedAt": "2026-10-11T14:42:12.167Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CLFNCHARCVALINTERVALTYPE": {
+    "attemptedAt": "2026-10-11T14:42:12.684Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CLFNCHARCVALINTERVALTYPETEXT": {
+    "attemptedAt": "2026-10-11T14:42:13.240Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CLFNCHARCVALUE": {
+    "attemptedAt": "2026-10-11T14:42:13.761Z",
+    "found": true,
+    "matched": 31
+  },
+  "I_CLFNCHARCVALUEDESC": {
+    "attemptedAt": "2026-10-11T14:42:14.258Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_CLFNCHARCVALUEDESCDEX": {
+    "attemptedAt": "2026-10-11T14:42:14.822Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_CLFNCHARCVALUEDESCFORKEYDATE": {
+    "attemptedAt": "2026-10-11T14:42:15.356Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_CLFNCHARCVALUEDEX": {
+    "attemptedAt": "2026-10-11T14:42:15.862Z",
+    "found": true,
+    "matched": 29
+  },
+  "I_CLFNCHARCVALUEFORKEYDATE": {
+    "attemptedAt": "2026-10-11T14:42:16.410Z",
+    "found": true,
+    "matched": 28
+  },
+  "I_CLFNCLASS": {
+    "attemptedAt": "2026-10-11T14:42:16.936Z",
+    "found": true,
+    "matched": 30
   }
 }
