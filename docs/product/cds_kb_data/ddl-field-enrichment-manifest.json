@@ -2348,5 +2348,240 @@
     "attemptedAt": "2026-10-11T14:42:16.936Z",
     "found": true,
     "matched": 30
+  },
+  "I_CLFNCLASSCHARACTERISTICDEX": {
+    "attemptedAt": "2026-10-12T17:26:30.202Z",
+    "found": true,
+    "matched": 17
+  },
+  "I_CLFNCLASSCHARCBASIC": {
+    "attemptedAt": "2026-10-12T17:26:30.702Z",
+    "found": true,
+    "matched": 17
+  },
+  "I_CLFNCLASSCHARCFORKEYDATE": {
+    "attemptedAt": "2026-10-12T17:26:31.202Z",
+    "found": true,
+    "matched": 14
+  },
+  "I_CLFNCLASSDESCFORKEYDATE": {
+    "attemptedAt": "2026-10-12T17:26:31.744Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CLFNCLASSDESCRIPTION": {
+    "attemptedAt": "2026-10-12T17:26:32.254Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CLFNCLASSDESCRIPTIONDEX": {
+    "attemptedAt": "2026-10-12T17:26:32.764Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CLFNCLASSDEX": {
+    "attemptedAt": "2026-10-12T17:26:33.286Z",
+    "found": true,
+    "matched": 30
+  },
+  "I_CLFNCLASSFORKEYDATE": {
+    "attemptedAt": "2026-10-12T17:26:33.772Z",
+    "found": true,
+    "matched": 30
+  },
+  "I_CLFNCLASSGROUP": {
+    "attemptedAt": "2026-10-12T17:26:34.274Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CLFNCLASSGROUPSTDVH": {
+    "attemptedAt": "2026-10-12T17:26:34.801Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CLFNCLASSGROUPTEXT": {
+    "attemptedAt": "2026-10-12T17:26:35.309Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CLFNCLASSKEYWORD": {
+    "attemptedAt": "2026-10-12T17:26:35.805Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CLFNCLASSKEYWORDDEX": {
+    "attemptedAt": "2026-10-12T17:26:36.306Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CLFNCLASSKEYWORDFORKEYDATE": {
+    "attemptedAt": "2026-10-12T17:26:36.823Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CLFNCLASSSTATUS": {
+    "attemptedAt": "2026-10-12T17:26:37.310Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CLFNCLASSSTATUSSTDVH": {
+    "attemptedAt": "2026-10-12T17:26:37.834Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CLFNCLASSSTATUSTEXT": {
+    "attemptedAt": "2026-10-12T17:26:38.317Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CLFNCLASSTYPEBASIC": {
+    "attemptedAt": "2026-10-12T17:26:38.819Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_CLFNCLASSTYPESTDVH": {
+    "attemptedAt": "2026-10-12T17:26:39.331Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CLFNCLASSTYPETEXT": {
+    "attemptedAt": "2026-10-12T17:26:39.824Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CLFNOBJECTCHARCVALFORKEYDATE": {
+    "attemptedAt": "2026-10-12T17:26:40.487Z",
+    "found": true,
+    "matched": 27
+  },
+  "I_CLFNOBJECTCHARCVALUE": {
+    "attemptedAt": "2026-10-12T17:26:40.993Z",
+    "found": true,
+    "matched": 30
+  },
+  "I_CLFNOBJECTCHARCVALUEDEX": {
+    "attemptedAt": "2026-10-12T17:26:41.491Z",
+    "found": true,
+    "matched": 29
+  },
+  "I_CLFNOBJECTCLASS": {
+    "attemptedAt": "2026-10-12T17:26:41.995Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_CLFNOBJECTCLASSDEX": {
+    "attemptedAt": "2026-10-12T17:26:42.503Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_CLFNOBJECTCLASSFORKEYDATE": {
+    "attemptedAt": "2026-10-12T17:26:42.988Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_CLFNORGANIZATIONALAREA": {
+    "attemptedAt": "2026-10-12T17:26:43.482Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CLFNORGANIZATIONALAREATEXT": {
+    "attemptedAt": "2026-10-12T17:26:43.986Z",
+    "found": true,
+    "matched": 4
+  },
+  "C_ENGAGEMENTPROJECTROLES": {
+    "attemptedAt": "2026-10-12T17:26:44.502Z",
+    "found": true,
+    "matched": 6
+  },
+  "C_ENGMNTPROJBILLGANDRBLSQRY": {
+    "attemptedAt": "2026-10-12T17:26:45.001Z",
+    "found": true,
+    "matched": 32
+  },
+  "C_ENGMNTPROJCOSTQUERY": {
+    "attemptedAt": "2026-10-12T17:26:45.491Z",
+    "found": true,
+    "matched": 44
+  },
+  "C_ENGMNTPROJFCSTQUERY_2": {
+    "attemptedAt": "2026-10-12T17:26:45.997Z",
+    "found": true,
+    "matched": 73
+  },
+  "C_ENGMNTPROJSTAFFINGANLYSQUERY": {
+    "attemptedAt": "2026-10-12T17:26:46.494Z",
+    "found": true,
+    "matched": 27
+  },
+  "C_ENGMNTPROJTMEEXPNBILLGQ": {
+    "attemptedAt": "2026-10-12T17:26:46.999Z",
+    "found": true,
+    "matched": 33
+  },
+  "C_ENGMNTPROJUNBILLEDREVENUEQRY": {
+    "attemptedAt": "2026-10-12T17:26:47.524Z",
+    "found": true,
+    "matched": 20
+  },
+  "C_ENGMTPROJMARGANLYSQUERY": {
+    "attemptedAt": "2026-10-12T17:26:48.037Z",
+    "found": true,
+    "matched": 39
+  },
+  "C_ENGMTPROJWORKANLYSQUERY": {
+    "attemptedAt": "2026-10-12T17:26:48.550Z",
+    "found": true,
+    "matched": 28
+  },
+  "I_CUSTOMERPROJECTITEM": {
+    "attemptedAt": "2026-10-12T17:26:49.041Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_ENGAGEMENTPROJECT": {
+    "attemptedAt": "2026-10-12T17:26:49.562Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_ENGAGEMENTPROJECTATTRIBUTE": {
+    "attemptedAt": "2026-10-12T17:26:50.046Z",
+    "found": true,
+    "matched": 16
+  },
+  "I_ENGAGEMENTPROJECTITEM": {
+    "attemptedAt": "2026-10-12T17:26:50.554Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_ENGAGEMENTPROJECTRESOURCE": {
+    "attemptedAt": "2026-10-12T17:26:51.037Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ENGAGEMENTPROJECTROLES": {
+    "attemptedAt": "2026-10-12T17:26:51.518Z",
+    "found": true,
+    "matched": 20
+  },
+  "I_ENGAGEMENTPROJECTSRVCORG": {
+    "attemptedAt": "2026-10-12T17:26:52.022Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_ENGAGEMENTPROJECTSRVCORGTEXT": {
+    "attemptedAt": "2026-10-12T17:26:52.521Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ENGAGEMENTPROJECTSTAGE": {
+    "attemptedAt": "2026-10-12T17:26:53.026Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ENGAGEMENTPROJECTSTAGETEXT": {
+    "attemptedAt": "2026-10-12T17:26:53.539Z",
+    "found": true,
+    "matched": 3
   }
 }
