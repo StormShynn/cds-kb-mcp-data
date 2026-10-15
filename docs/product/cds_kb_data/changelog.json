@@ -76701,5 +76701,16 @@
     "tags": 6,
     "error": null,
     "sourceUrl": null
+  },
+  {
+    "viewName": "ZR_APG_POINT.DDLS",
+    "action": "added",
+    "timestamp": "2026-10-15T10:59:00.468Z",
+    "source": "github",
+    "fields": 15,
+    "associations": 1,
+    "tags": 3,
+    "error": null,
+    "sourceUrl": "https://github.com/greltel/abap-point-gate/blob/65b298011b9b083fe643acaeaa5796b4bbfb03ba/src/zr_apg_point.ddls.asddls"
   }
 ]
