@@ -3288,5 +3288,240 @@
     "attemptedAt": "2026-10-15T13:07:06.376Z",
     "found": true,
     "matched": 3
+  },
+  "I_CO_ELECTRONICDOCINCGINVOICE": {
+    "attemptedAt": "2026-10-16T13:02:53.858Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_CO_ELECTRONICDOCINVOICE": {
+    "attemptedAt": "2026-10-16T13:02:54.428Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_CO_ELECTRONICDOCPAYROLL": {
+    "attemptedAt": "2026-10-16T13:02:54.953Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_EG_EDOCBRANCHID": {
+    "attemptedAt": "2026-10-16T13:02:55.490Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_EG_EDOCCANCELLATIONREASON": {
+    "attemptedAt": "2026-10-16T13:02:56.036Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_EG_EDOCFOREIGNTAXCATEGORY": {
+    "attemptedAt": "2026-10-16T13:02:56.554Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_EG_EDOCINTEGRATIONDATE": {
+    "attemptedAt": "2026-10-16T13:02:57.088Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_EG_EDOCITEMCODEMATERIALGROUP": {
+    "attemptedAt": "2026-10-16T13:02:57.636Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_EG_EDOCITMCODE": {
+    "attemptedAt": "2026-10-16T13:02:58.218Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_EG_EDOCRECEIVERTYPE": {
+    "attemptedAt": "2026-10-16T13:02:58.785Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_EG_EDOCREJECTIONREASON": {
+    "attemptedAt": "2026-10-16T13:02:59.336Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_EG_EDOCTAXCATWITHHOLDINGCODE": {
+    "attemptedAt": "2026-10-16T13:02:59.895Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_EG_EDOCTXCATEGORYFORVATCODE": {
+    "attemptedAt": "2026-10-16T13:03:00.448Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_EG_EDOCVERSIONFLAG": {
+    "attemptedAt": "2026-10-16T13:03:01.062Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_EG_ELECTRONICDOCINCGINVOICE": {
+    "attemptedAt": "2026-10-16T13:03:01.581Z",
+    "found": true,
+    "matched": 19
+  },
+  "I_EG_ELECTRONICDOCINVOICE": {
+    "attemptedAt": "2026-10-16T13:03:02.120Z",
+    "found": true,
+    "matched": 18
+  },
+  "I_ES_EDOCVERIFACTUEXT": {
+    "attemptedAt": "2026-10-16T13:03:02.684Z",
+    "found": true,
+    "matched": 24
+  },
+  "I_FR_ELECTRONICDOCINCGINVOICE": {
+    "attemptedAt": "2026-10-16T13:03:03.213Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_GR_ELECTRONICDOCINVOICE": {
+    "attemptedAt": "2026-10-16T13:03:03.783Z",
+    "found": true,
+    "matched": 53
+  },
+  "I_HU_ELECTRONICDOCINVOICE": {
+    "attemptedAt": "2026-10-16T13:03:04.375Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_IN_ELECTRONICDOCTRANSPTREGN": {
+    "attemptedAt": "2026-10-16T13:03:04.884Z",
+    "found": true,
+    "matched": 50
+  },
+  "I_IN_ELECTRONICDOCINVOICE": {
+    "attemptedAt": "2026-10-16T13:03:05.408Z",
+    "found": true,
+    "matched": 33
+  },
+  "C_IT_ELECTRONICDOCPARTSTATVH": {
+    "attemptedAt": "2026-10-16T13:03:05.946Z",
+    "found": true,
+    "matched": 2
+  },
+  "C_IT_ELECTRONICDOCREJECTCODEVH": {
+    "attemptedAt": "2026-10-16T13:03:06.494Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_IT_ELECTRONICDOCINCGINVOICE": {
+    "attemptedAt": "2026-10-16T13:03:07.068Z",
+    "found": true,
+    "matched": 16
+  },
+  "I_IT_ELECTRONICDOCINVOICE": {
+    "attemptedAt": "2026-10-16T13:03:07.626Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_IT_ELECTRONICDOCREJECTCODE": {
+    "attemptedAt": "2026-10-16T13:03:08.178Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_IT_ELECTRONICDOCSTATPART": {
+    "attemptedAt": "2026-10-16T13:03:08.737Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_IT_ELECTRONICDOCSTATPARTT": {
+    "attemptedAt": "2026-10-16T13:03:09.314Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_KR_EDOCSELFBILLINVCMAPPING": {
+    "attemptedAt": "2026-10-16T13:03:09.845Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_KR_EDOCSELFBILLPURCHASERINVC": {
+    "attemptedAt": "2026-10-16T13:03:10.384Z",
+    "found": true,
+    "matched": 18
+  },
+  "I_KR_ELECTRONICDOCHOMETAXDATA": {
+    "attemptedAt": "2026-10-16T13:03:10.939Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_KR_ELECTRONICDOCINCGINVOICE": {
+    "attemptedAt": "2026-10-16T13:03:11.448Z",
+    "found": true,
+    "matched": 37
+  },
+  "I_KR_ELECTRONICDOCINVOICE": {
+    "attemptedAt": "2026-10-16T13:03:12.002Z",
+    "found": true,
+    "matched": 22
+  },
+  "I_KR_ELECTRONICDOCSELFBILLINVC": {
+    "attemptedAt": "2026-10-16T13:03:12.587Z",
+    "found": true,
+    "matched": 22
+  },
+  "I_KZ_ELECTRONICDOCINVOICE": {
+    "attemptedAt": "2026-10-16T13:03:13.131Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_MY_ELECTRONICDOCINVOICE": {
+    "attemptedAt": "2026-10-16T13:03:13.721Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_EUELECTRONICDOCBANKACC": {
+    "attemptedAt": "2026-10-16T13:03:14.297Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_EUELECTRONICDOCCATEGORYVH": {
+    "attemptedAt": "2026-10-16T13:03:14.813Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_EUELECTRONICDOCCOMMCHANNELVH": {
+    "attemptedAt": "2026-10-16T13:03:15.402Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_EUELECTRONICDOCCOMP": {
+    "attemptedAt": "2026-10-16T13:03:15.960Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_EUELECTRONICDOCDOCTYPE": {
+    "attemptedAt": "2026-10-16T13:03:16.544Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_EUELECTRONICDOCDOCTYPEID": {
+    "attemptedAt": "2026-10-16T13:03:17.146Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_EUELECTRONICDOCEMAILVH": {
+    "attemptedAt": "2026-10-16T13:03:17.704Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_EUELECTRONICDOCPARTNER": {
+    "attemptedAt": "2026-10-16T13:03:18.236Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_EUELECTRONICDOCPARTNERIDTYPE": {
+    "attemptedAt": "2026-10-16T13:03:18.812Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_EUELECTRONICDOCPARTYDOCTYPE": {
+    "attemptedAt": "2026-10-16T13:03:19.352Z",
+    "found": true,
+    "matched": 6
   }
 }
