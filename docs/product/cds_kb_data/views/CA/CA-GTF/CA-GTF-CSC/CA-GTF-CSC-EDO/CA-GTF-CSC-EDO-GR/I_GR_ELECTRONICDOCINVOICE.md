@@ -47,7 +47,7 @@ tags:
 | `GR_ElectronicDocLegalNumber` |  | |  |  | `CHAR(50)` | eDocument Greece: Document Counter |
 | `GR_ElectronicDocUniqueID` |  | |  |  | `CHAR(40)` | eDocument Greece: UID Unique Identification |
 | `GR_ElectronicDocMarkID` |  | |  |  | `CHAR(20)` | eDocument Greece: MARK Identification |
-| `GR_ElectronicDocClfnMarkID` |  | |  |  | `CHAR(20)` | eDocument Greece: Classifcation MARK Identification |
+| `GR_ElectronicDocClfnMarkID` |  | |  |  | `CHAR(20)` | eDocument Greece: Classifcation/Reject MARK Identification |
 | `GR_ElectronicDocCancelMarkID` |  | |  |  | `CHAR(20)` | eDocument Greece: Cancel MARK Identification |
 | `GR_ElectronicDocCustVATID` |  | |  |  | `CHAR(20)` | eDocument Greece: Customer VAT Id |
 | `GR_ElectronicDocIssueDate` |  | |  |  | `DATS(8)` | eDocument Greece: Issue Date |
