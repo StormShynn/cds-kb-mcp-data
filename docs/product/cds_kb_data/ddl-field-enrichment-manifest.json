@@ -3523,5 +3523,240 @@
     "attemptedAt": "2026-10-16T13:03:19.352Z",
     "found": true,
     "matched": 6
+  },
+  "I_EUELECTRONICDOCPAYMENTMEANVH": {
+    "attemptedAt": "2026-10-17T11:59:59.854Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PT_ELECTRONICDOCINVOICE": {
+    "attemptedAt": "2026-10-17T12:00:00.486Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_PT_ELECTRONICDOCPARTNER": {
+    "attemptedAt": "2026-10-17T12:00:01.294Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SA_EDOCCRYPTOGRAPHICSTMPID": {
+    "attemptedAt": "2026-10-17T12:00:01.906Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_SA_EDOCINVOICEADDLDET": {
+    "attemptedAt": "2026-10-17T12:00:02.534Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_SA_EDOCLGCLSOLNID": {
+    "attemptedAt": "2026-10-17T12:00:03.075Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_TR_EDOCCOMPANYDATA": {
+    "attemptedAt": "2026-10-17T12:00:03.652Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_TR_EDOCCOMPANYINFORMATION": {
+    "attemptedAt": "2026-10-17T12:00:04.234Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_TR_EDOCCUSTOMERSCENARIO": {
+    "attemptedAt": "2026-10-17T12:00:04.859Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_TR_EDOCFREEZONECUSTOMER": {
+    "attemptedAt": "2026-10-17T12:00:05.513Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_TR_EDOCINCGINVOICEIDENTIFIER": {
+    "attemptedAt": "2026-10-17T12:00:06.083Z",
+    "found": true,
+    "matched": 17
+  },
+  "I_TR_EDOCINVOICEIDENTIFIER": {
+    "attemptedAt": "2026-10-17T12:00:06.672Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_TR_EDOCNUMBERCODEDESCRIPTION": {
+    "attemptedAt": "2026-10-17T12:00:07.267Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_TR_EDOCREGISTEREDUSERLIST": {
+    "attemptedAt": "2026-10-17T12:00:07.886Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_TR_EDOCSUPLRSCENARIO": {
+    "attemptedAt": "2026-10-17T12:00:08.476Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_TR_EDOCTAXCODEDETERMINATION": {
+    "attemptedAt": "2026-10-17T12:00:09.135Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_TR_EDOCUNICODENUMBERRANGEGRP": {
+    "attemptedAt": "2026-10-17T12:00:09.768Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_TR_ELECTRONICDOCEXPINVOICE": {
+    "attemptedAt": "2026-10-17T12:00:10.302Z",
+    "found": true,
+    "matched": 18
+  },
+  "I_TR_ELECTRONICDOCINVOICE": {
+    "attemptedAt": "2026-10-17T12:00:10.861Z",
+    "found": true,
+    "matched": 29
+  },
+  "I_VN_EDOCINVOICE": {
+    "attemptedAt": "2026-10-17T12:00:11.452Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_ELECTRONICDOCPARTNERTYPEVH": {
+    "attemptedAt": "2026-10-17T12:00:12.011Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_ELECTRONICDOCPROCESSTEXT": {
+    "attemptedAt": "2026-10-17T12:00:12.563Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_BUSPARTADDRDEPDNTTAXNMBR": {
+    "attemptedAt": "2026-10-17T12:00:13.154Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_BUSPARTADDRDEPDNTTAXTYPEVH": {
+    "attemptedAt": "2026-10-17T12:00:13.675Z",
+    "found": true,
+    "matched": 2
+  },
+  "C_GREGORIANCALDATEFUNCVH": {
+    "attemptedAt": "2026-10-17T12:00:14.281Z",
+    "found": true,
+    "matched": 3
+  },
+  "C_GREGORIANCALSGLDATEFUNCVH": {
+    "attemptedAt": "2026-10-17T12:00:14.843Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CALENDARDATE": {
+    "attemptedAt": "2026-10-17T12:00:15.397Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_CALENDARMONTH": {
+    "attemptedAt": "2026-10-17T12:00:15.962Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CALENDARMONTHTEXT": {
+    "attemptedAt": "2026-10-17T12:00:16.538Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CALENDARMONTHVH": {
+    "attemptedAt": "2026-10-17T12:00:17.119Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CALENDARQUARTER": {
+    "attemptedAt": "2026-10-17T12:00:17.681Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CALENDARQUARTERTEXT": {
+    "attemptedAt": "2026-10-17T12:00:18.245Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CALENDARYEAR": {
+    "attemptedAt": "2026-10-17T12:00:18.780Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DATEFUNCTIONVALUE": {
+    "attemptedAt": "2026-10-17T12:00:19.313Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SGLGREGORIANCALDATEFUNCTION": {
+    "attemptedAt": "2026-10-17T12:00:19.919Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_SHIFTEDCALENDARDATE": {
+    "attemptedAt": "2026-10-17T12:00:20.517Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_WEEKDAY": {
+    "attemptedAt": "2026-10-17T12:00:21.126Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_WEEKDAYTEXT": {
+    "attemptedAt": "2026-10-17T12:00:21.696Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_YEARMONTH": {
+    "attemptedAt": "2026-10-17T12:00:22.281Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_EMLTMPLCUSTSUPLRCOMPANYCODE": {
+    "attemptedAt": "2026-10-17T12:00:22.877Z",
+    "found": true,
+    "matched": 24
+  },
+  "I_PAYMENTADVICE": {
+    "attemptedAt": "2026-10-17T12:00:23.526Z",
+    "found": true,
+    "matched": 45
+  },
+  "I_PAYMENTADVICEITEM": {
+    "attemptedAt": "2026-10-17T12:00:24.094Z",
+    "found": true,
+    "matched": 57
+  },
+  "I_PAYTADVICECOMPANYCODEVH": {
+    "attemptedAt": "2026-10-17T12:00:24.626Z",
+    "found": true,
+    "matched": 5
+  },
+  "D_COSTACCTGDOCUMENTREVERSEP": {
+    "attemptedAt": "2026-10-17T12:00:24.851Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_COSTACCTGDOCUMENTREVERSEP\" (404)"
+  },
+  "I_COSTANDREVENUEREASSIGNMENTTP": {
+    "attemptedAt": "2026-10-17T12:00:25.336Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_COSTANDREVENUEREASSIGNMENTTP\" (404)"
+  },
+  "I_COSTANDREVNREASSGMTITEMTP": {
+    "attemptedAt": "2026-10-17T12:00:25.807Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_COSTANDREVNREASSGMTITEMTP\" (404)"
+  },
+  "I_COSTCENTERTEXTTP_2": {
+    "attemptedAt": "2026-10-17T12:00:26.290Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_COSTCENTERTEXTTP_2\" (404)"
   }
 }
