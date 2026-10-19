@@ -3993,5 +3993,240 @@
     "attemptedAt": "2026-10-18T12:28:45.745Z",
     "found": true,
     "matched": 2
+  },
+  "I_ASSGMTEXCHMKTIDFRCODE": {
+    "attemptedAt": "2026-10-19T15:19:11.741Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CMMDTYDRVTVCONTRSPEC": {
+    "attemptedAt": "2026-10-19T15:19:12.255Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DCSCATEGORY": {
+    "attemptedAt": "2026-10-19T15:19:12.785Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_DCSCATEGORYTEXT": {
+    "attemptedAt": "2026-10-19T15:19:13.279Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DERIVATIVECONTRACTSPECTEXT": {
+    "attemptedAt": "2026-10-19T15:19:13.803Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_FINASSETSMGNTPRODUCTTYPE": {
+    "attemptedAt": "2026-10-19T15:19:14.354Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_FINASSETSMGNTPRODUCTTYPET": {
+    "attemptedAt": "2026-10-19T15:19:14.826Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_LISTEDDRVTVPRICEQUOTATION": {
+    "attemptedAt": "2026-10-19T15:19:15.375Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_MARKETIDENTIFIERCODETEXT": {
+    "attemptedAt": "2026-10-19T15:19:15.844Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_FACTORYCALENDAR": {
+    "attemptedAt": "2026-10-19T15:19:16.382Z",
+    "found": true,
+    "matched": 18
+  },
+  "I_FACTORYCALENDARSPECIALRULE": {
+    "attemptedAt": "2026-10-19T15:19:16.983Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_FACTORYCALENDARSTATISTICS": {
+    "attemptedAt": "2026-10-19T15:19:17.456Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_FACTORYCALENDARTEXT": {
+    "attemptedAt": "2026-10-19T15:19:17.928Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_FACTORYCALSPECIALRULETEXT": {
+    "attemptedAt": "2026-10-19T15:19:18.485Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_FACTORYCALWORKINGDAYSPERYR": {
+    "attemptedAt": "2026-10-19T15:19:18.992Z",
+    "found": true,
+    "matched": 17
+  },
+  "I_PUBLHOLIDAYCALHOLIDAYDATE": {
+    "attemptedAt": "2026-10-19T15:19:19.602Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PUBLHOLIDAYCALHOLIDAYSPERYR": {
+    "attemptedAt": "2026-10-19T15:19:20.123Z",
+    "found": true,
+    "matched": 17
+  },
+  "I_PUBLICHOLIDAYCALENDAR": {
+    "attemptedAt": "2026-10-19T15:19:20.610Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_PUBLICHOLIDAYCALENDARHOLIDAY": {
+    "attemptedAt": "2026-10-19T15:19:21.087Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PUBLICHOLIDAYCALENDARTEXT": {
+    "attemptedAt": "2026-10-19T15:19:21.620Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PUBLICHOLIDAYCODE": {
+    "attemptedAt": "2026-10-19T15:19:22.097Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_PUBLICHOLIDAYCODETEXT": {
+    "attemptedAt": "2026-10-19T15:19:22.654Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PUBLICHOLIDAYDATEPERYEAR": {
+    "attemptedAt": "2026-10-19T15:19:23.207Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_STATUSOBJECTSTATUSCHANGE": {
+    "attemptedAt": "2026-10-19T15:19:23.741Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_STATUSPROFILE": {
+    "attemptedAt": "2026-10-19T15:19:24.267Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_STATUSPROFILETEXT": {
+    "attemptedAt": "2026-10-19T15:19:24.744Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SYSTEMSTATUS": {
+    "attemptedAt": "2026-10-19T15:19:25.310Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SYSTEMSTATUSTEXT": {
+    "attemptedAt": "2026-10-19T15:19:25.818Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_TEXTOBJECTCATEGORY": {
+    "attemptedAt": "2026-10-19T15:19:26.359Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_TEXTOBJECTCATEGORYTEXT": {
+    "attemptedAt": "2026-10-19T15:19:26.874Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_TEXTOBJECTTYPE": {
+    "attemptedAt": "2026-10-19T15:19:27.372Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_TEXTOBJECTTYPETEXT": {
+    "attemptedAt": "2026-10-19T15:19:27.877Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_USERSTATUS": {
+    "attemptedAt": "2026-10-19T15:19:28.360Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_USERSTATUSTEXT": {
+    "attemptedAt": "2026-10-19T15:19:28.833Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_JNTOPGAGRMTDRILLINGRATIOTP": {
+    "attemptedAt": "2026-10-19T15:19:28.987Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTDRILLINGRATIOTP\" (404)"
+  },
+  "I_JNTOPGAGRMTEQUITYTYPEGRPTP": {
+    "attemptedAt": "2026-10-19T15:19:29.425Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTEQUITYTYPEGRPTP\" (404)"
+  },
+  "I_JNTOPGAGRMTPARENTCOOVHDTP": {
+    "attemptedAt": "2026-10-19T15:19:29.846Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTPARENTCOOVHDTP\" (404)"
+  },
+  "I_JNTOPGAGRMTPARTSHRTP": {
+    "attemptedAt": "2026-10-19T15:19:30.242Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTPARTSHRTP\" (404)"
+  },
+  "I_JNTOPGAGRMTPAYROLLBURDENTP": {
+    "attemptedAt": "2026-10-19T15:19:30.668Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTPAYROLLBURDENTP\" (404)"
+  },
+  "I_JNTOPGAGRMTPNLTYCATRCVRYTP": {
+    "attemptedAt": "2026-10-19T15:19:31.063Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTPNLTYCATRCVRYTP\" (404)"
+  },
+  "I_JNTOPGAGRMTPRODGSTATASSGMTTP": {
+    "attemptedAt": "2026-10-19T15:19:31.530Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTPRODGSTATASSGMTTP\" (404)"
+  },
+  "I_JNTOPGAGRMTPRODGSTATTHLDTP": {
+    "attemptedAt": "2026-10-19T15:19:31.933Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTPRODGSTATTHLDTP\" (404)"
+  },
+  "I_JNTOPGAGRMTPROJSTEPPEDRATETP": {
+    "attemptedAt": "2026-10-19T15:19:32.336Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTPROJSTEPPEDRATETP\" (404)"
+  },
+  "I_JNTOPGAGRMTTEXTTP": {
+    "attemptedAt": "2026-10-19T15:19:32.730Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTTEXTTP\" (404)"
+  },
+  "I_JNTOPGAGRMTTP": {
+    "attemptedAt": "2026-10-19T15:19:33.121Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTOPGAGRMTTP\" (404)"
+  },
+  "I_JNTVNTRBUSINESSPARTNERTP": {
+    "attemptedAt": "2026-10-19T15:19:33.527Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTVNTRBUSINESSPARTNERTP\" (404)"
+  },
+  "I_JNTVNTRFUNDCRCYBYEQUITYGRPTP": {
+    "attemptedAt": "2026-10-19T15:19:33.927Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_JNTVNTRFUNDCRCYBYEQUITYGRPTP\" (404)"
   }
 }
