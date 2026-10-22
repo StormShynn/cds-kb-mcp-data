@@ -36,7 +36,7 @@
   "devDependencies": {
     "@abaplint/core": "^2.120.67",
     "@huggingface/transformers": "^4.3.0",
-    "playwright": "^1.63.0"
+    "playwright": "^1.64.1"
   },
   "overrides": {
     "sharp": "^0.35.4"
