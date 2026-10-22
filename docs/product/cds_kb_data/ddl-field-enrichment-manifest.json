@@ -4698,5 +4698,240 @@
     "attemptedAt": "2026-10-21T13:30:09.181Z",
     "found": true,
     "matched": 3
+  },
+  "I_TIMESHEETSTATUSTEXT": {
+    "attemptedAt": "2026-10-22T13:30:51.824Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_TIMESHEETTASKTYPE": {
+    "attemptedAt": "2026-10-22T13:30:52.379Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_TIMESHEETTASKTYPERELEVANCE": {
+    "attemptedAt": "2026-10-22T13:30:52.983Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_TIMESHEETTASKTYPERLVNCETEXT": {
+    "attemptedAt": "2026-10-22T13:30:53.524Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_TIMESHEETTASKTYPETEXT": {
+    "attemptedAt": "2026-10-22T13:30:54.180Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_TIMESHEETTP": {
+    "attemptedAt": "2026-10-22T13:30:54.368Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_TIMESHEETTP\" (404)"
+  },
+  "I_TIMESHEETWRKLOC": {
+    "attemptedAt": "2026-10-22T13:30:55.186Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_TIMESHEETWRKLOCTEXT": {
+    "attemptedAt": "2026-10-22T13:30:55.785Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_WORKASSGMTADDRESSDEX": {
+    "attemptedAt": "2026-10-22T13:30:56.334Z",
+    "found": true,
+    "matched": 32
+  },
+  "I_WORKASSGMTDETSDEX": {
+    "attemptedAt": "2026-10-22T13:30:57.077Z",
+    "found": true,
+    "matched": 18
+  },
+  "I_WORKASSGMTDETSDEX_1": {
+    "attemptedAt": "2026-10-22T13:30:57.736Z",
+    "found": true,
+    "matched": 17
+  },
+  "I_WORKASSGMTPAYMENTDEX": {
+    "attemptedAt": "2026-10-22T13:30:58.350Z",
+    "found": true,
+    "matched": 19
+  },
+  "I_WORKASSGMTSRVCCOSTLVLDEX_1": {
+    "attemptedAt": "2026-10-22T13:30:58.975Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_WORKASSGMTTOEXTIDDEX": {
+    "attemptedAt": "2026-10-22T13:30:59.538Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_WORKASSGMTWORKORDERDEX": {
+    "attemptedAt": "2026-10-22T13:31:00.074Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_WORKASSIGNMENTADDRESS": {
+    "attemptedAt": "2026-10-22T13:31:00.672Z",
+    "found": true,
+    "matched": 41
+  },
+  "I_WORKASSIGNMENTDETAIL": {
+    "attemptedAt": "2026-10-22T13:31:01.230Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_WORKASSIGNMENTDEX": {
+    "attemptedAt": "2026-10-22T13:31:01.814Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_WORKASSIGNMENTDEX_1": {
+    "attemptedAt": "2026-10-22T13:31:02.371Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_WORKASSIGNMENT_1": {
+    "attemptedAt": "2026-10-22T13:31:02.965Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_WORKFORCEPERSNDATASOURCE": {
+    "attemptedAt": "2026-10-22T13:31:03.516Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_WORKFORCEPERSONADDRESS": {
+    "attemptedAt": "2026-10-22T13:31:04.092Z",
+    "found": true,
+    "matched": 38
+  },
+  "I_WORKFORCEPERSONDEX": {
+    "attemptedAt": "2026-10-22T13:31:04.734Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_WORKFORCEPERSONDEX_1": {
+    "attemptedAt": "2026-10-22T13:31:05.290Z",
+    "found": true,
+    "matched": 12
+  },
+  "I_WORKFORCEPERSONMAPPING": {
+    "attemptedAt": "2026-10-22T13:31:05.838Z",
+    "found": true,
+    "matched": 14
+  },
+  "I_WORKFORCEPERSONSKILLTAG": {
+    "attemptedAt": "2026-10-22T13:31:06.451Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_WORKFORCEPERSONSKILLTAGDEX": {
+    "attemptedAt": "2026-10-22T13:31:06.998Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_WORKFORCEPERSON_1": {
+    "attemptedAt": "2026-10-22T13:31:07.546Z",
+    "found": true,
+    "matched": 22
+  },
+  "I_WRKASSGMTPAYMENTDETAIL": {
+    "attemptedAt": "2026-10-22T13:31:08.085Z",
+    "found": true,
+    "matched": 17
+  },
+  "I_WRKASSGMTSRVCCOSTLVLDEX": {
+    "attemptedAt": "2026-10-22T13:31:08.695Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_WRKASSGMTSRVCCOSTLVL_1": {
+    "attemptedAt": "2026-10-22T13:31:09.280Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_WRKASSGMTWRKORDERDETAIL": {
+    "attemptedAt": "2026-10-22T13:31:09.832Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_WORKASSIGNMENTADDRESSTP": {
+    "attemptedAt": "2026-10-22T13:31:10.008Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_WORKASSIGNMENTADDRESSTP\" (404)"
+  },
+  "I_WORKASSIGNMENTDETAILTP_1": {
+    "attemptedAt": "2026-10-22T13:31:10.478Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_WORKASSIGNMENTDETAILTP_1\" (404)"
+  },
+  "I_WORKASSIGNMENTTP_1": {
+    "attemptedAt": "2026-10-22T13:31:10.918Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_WORKASSIGNMENTTP_1\" (404)"
+  },
+  "I_WORKFORCEPERSONSKILLTAGTP_1": {
+    "attemptedAt": "2026-10-22T13:31:11.411Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_WORKFORCEPERSONSKILLTAGTP_1\" (404)"
+  },
+  "I_WORKFORCEPERSONTP_1": {
+    "attemptedAt": "2026-10-22T13:31:12.331Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_WORKFORCEPERSONTP_1\" (404)"
+  },
+  "I_WRKASSGMTPAYMENTTP_1": {
+    "attemptedAt": "2026-10-22T13:31:12.794Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_WRKASSGMTPAYMENTTP_1\" (404)"
+  },
+  "I_WRKASSGMTSRVCCOSTLVLTP_1": {
+    "attemptedAt": "2026-10-22T13:31:13.310Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_WRKASSGMTSRVCCOSTLVLTP_1\" (404)"
+  },
+  "I_WRKASSGMTWRKORDDETTP": {
+    "attemptedAt": "2026-10-22T13:31:13.749Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_WRKASSGMTWRKORDDETTP\" (404)"
+  },
+  "I_ORGANIZATIONALUNITTEXT": {
+    "attemptedAt": "2026-10-22T13:31:14.651Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_ORGMANAGEMENTPOSITIONTEXT": {
+    "attemptedAt": "2026-10-22T13:31:15.198Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_PERSONWORKAGREEMENT_1": {
+    "attemptedAt": "2026-10-22T13:31:15.770Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_PERSONWORKAGRMTFORKEYDATE": {
+    "attemptedAt": "2026-10-22T13:31:16.304Z",
+    "found": true,
+    "matched": 12
+  },
+  "I_PERSONWORKAGRMTJOBTEXT": {
+    "attemptedAt": "2026-10-22T13:31:16.878Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_PERSONWORKAGRMTORGLDETAILS": {
+    "attemptedAt": "2026-10-22T13:31:17.500Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_PERSONWORKAGRMTPLNDWRKGTIME": {
+    "attemptedAt": "2026-10-22T13:31:18.111Z",
+    "found": true,
+    "matched": 7
   }
 }
