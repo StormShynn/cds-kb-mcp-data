@@ -99,7 +99,7 @@ tags:
 | `BillToParty` |  | |  |  | `CHAR(10)` | Bill-to Party |
 | `Segment` |  | |  |  | `CHAR(10)` | Segment for Segmental Reporting |
 | `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
-| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role |
 | `PlanningCategory` |  | |  |  | `CHAR(10)` | Plan Category |
 | `RecognizedRevnAmtInDspCrcy` |  | |  | `case when ActualPlanCode = 'A' and LineIsSemTagCalculated = 'X' then RecognizedRevnAmtInDspCrcy else null end` | `CURR(23)` | Recognized Revenue Amount in Display Currency |
 | `BilledRevenueAmtInDspCrcy` |  | |  | `case when ActualPlanCode = 'A' and LineIsSemTagCalculated = 'X' then BilledRevenueAmtInDspCrcy else null end` | `CURR(23)` | Billed Revenue |

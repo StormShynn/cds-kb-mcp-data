@@ -98,7 +98,7 @@ tags:
 | `ServiceDocumentItem` |  | |  |  | `NUMC(6)` | Service Document Item ID |
 | `DistributionChannel` |  | |  |  | `CHAR(2)` | Distribution Channel |
 | `OrganizationDivision` |  | |  |  | `CHAR(2)` | Division |
-| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role |
 | `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
 | `NetRevenueAmountInDspCrcy` |  | |  | `cast( $projection.RevenueAmountInDisplayCrcy + $projection.SalesDeductionAmountInDspCrcy as fcopa_net_revenue_dspcrcy )` | `CURR(23)` | Net Revenue in Display Currency |
 | `RevenueAmountInDisplayCrcy` |  | |  | `cast( $projection.BilledRevenueAmtInDspCrcy + $projection.RevenueAdjustmentAmtInDspCrcy as fis_revenue_amount_dsp_crcy )` | `CURR(23)` | Revenue Amount in Display Currency |

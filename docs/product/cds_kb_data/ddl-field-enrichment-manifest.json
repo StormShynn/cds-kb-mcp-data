@@ -5403,5 +5403,240 @@
     "attemptedAt": "2026-10-24T12:28:45.431Z",
     "found": true,
     "matched": 3
+  },
+  "I_LGLCNTNTMINTCNTCTTYPE": {
+    "attemptedAt": "2026-10-25T12:59:34.573Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_LGLCNTNTMINTCNTCTTYPETEXT": {
+    "attemptedAt": "2026-10-25T12:59:35.189Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LGLCNTNTMLINKDOBJTYPE": {
+    "attemptedAt": "2026-10-25T12:59:35.828Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_LGLCNTNTMLINKDOBJTYPETEXT": {
+    "attemptedAt": "2026-10-25T12:59:36.430Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LGLCNTNTMRELSHPTYPE": {
+    "attemptedAt": "2026-10-25T12:59:36.980Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_LGLCNTNTMRELSHPTYPETEXT": {
+    "attemptedAt": "2026-10-25T12:59:37.554Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LGLTRANSCATEGORYAPI01": {
+    "attemptedAt": "2026-10-25T12:59:38.169Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_LGLTRANSCATEGORYGROUPAPI01": {
+    "attemptedAt": "2026-10-25T12:59:38.735Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_LGLTRANSDATESAPI01": {
+    "attemptedAt": "2026-10-25T12:59:39.375Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_LGLTRANSDOCLINKAPI01": {
+    "attemptedAt": "2026-10-25T12:59:39.924Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LGLTRANSENTITYAPI01": {
+    "attemptedAt": "2026-10-25T12:59:40.547Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_LGLTRANSEXTCONTACTAPI01": {
+    "attemptedAt": "2026-10-25T12:59:41.134Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_LGLTRANSINTCONTACTAPI01": {
+    "attemptedAt": "2026-10-25T12:59:41.756Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_LGLTRANSLINKEDOBJECTAPI01": {
+    "attemptedAt": "2026-10-25T12:59:42.324Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_LGLTRANSMANDFLAGTXTAPI01": {
+    "attemptedAt": "2026-10-25T12:59:42.943Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LGLTRANSPARENTCATEGORYAPI01": {
+    "attemptedAt": "2026-10-25T12:59:43.490Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_LGLTRANSRELATIONSHIPAPI01": {
+    "attemptedAt": "2026-10-25T12:59:44.092Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_LGLTRANSRNWLTERMNAPI01": {
+    "attemptedAt": "2026-10-25T12:59:44.703Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_LGLTRANSSRCETXTAPI01": {
+    "attemptedAt": "2026-10-25T12:59:45.283Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_LGLTRANSWRKFLWEMLDEADLINE": {
+    "attemptedAt": "2026-10-25T12:59:45.845Z",
+    "found": true,
+    "matched": 22
+  },
+  "I_LGLTRANSWRKFLWINSTCE": {
+    "attemptedAt": "2026-10-25T12:59:46.501Z",
+    "found": true,
+    "matched": 20
+  },
+  "I_LGLTRANSWRKFLWSTARTEDTASKDET": {
+    "attemptedAt": "2026-10-25T12:59:47.053Z",
+    "found": true,
+    "matched": 12
+  },
+  "I_LGLCNTNTMGMTWRKFLWLGLTRANS": {
+    "attemptedAt": "2026-10-25T12:59:47.644Z",
+    "found": true,
+    "matched": 9
+  },
+  "C_ACTLPLNSRVCMARGITEMQUERY": {
+    "attemptedAt": "2026-10-25T12:59:48.245Z",
+    "found": true,
+    "matched": 67
+  },
+  "C_COMARGINFORPERIODCOMPRNQRY": {
+    "attemptedAt": "2026-10-25T12:59:48.881Z",
+    "found": true,
+    "matched": 99
+  },
+  "C_COMARGPERDCOMPARISONQRY_2": {
+    "attemptedAt": "2026-10-25T12:59:49.457Z",
+    "found": true,
+    "matched": 102
+  },
+  "C_COMPANYMARGINQUERY": {
+    "attemptedAt": "2026-10-25T12:59:50.054Z",
+    "found": true,
+    "matched": 81
+  },
+  "C_COMPANYMARGINQUERY_2": {
+    "attemptedAt": "2026-10-25T12:59:50.609Z",
+    "found": true,
+    "matched": 84
+  },
+  "C_CUSTPROJBILLGELMNTMARGQ": {
+    "attemptedAt": "2026-10-25T12:59:51.165Z",
+    "found": true,
+    "matched": 105
+  },
+  "C_CUSTPROJMARGOVWQRY": {
+    "attemptedAt": "2026-10-25T12:59:51.734Z",
+    "found": true,
+    "matched": 105
+  },
+  "C_ENTPROJASSIGNEDORDERQRY": {
+    "attemptedAt": "2026-10-25T12:59:52.302Z",
+    "found": true,
+    "matched": 45
+  },
+  "C_ENTPROJBDGTAVAILYCTRLQRY": {
+    "attemptedAt": "2026-10-25T12:59:52.930Z",
+    "found": true,
+    "matched": 52
+  },
+  "C_ENTPROJCOSTBRKDWNQUERY": {
+    "attemptedAt": "2026-10-25T12:59:53.552Z",
+    "found": true,
+    "matched": 39
+  },
+  "C_ENTPROJMARGINANALYSISQUERY": {
+    "attemptedAt": "2026-10-25T12:59:54.107Z",
+    "found": true,
+    "matched": 81
+  },
+  "C_ENTPROJMARGINOVERVIEWQRY": {
+    "attemptedAt": "2026-10-25T12:59:54.679Z",
+    "found": true,
+    "matched": 55
+  },
+  "C_ENTPROJOVHDBDGTCMTMTQRY": {
+    "attemptedAt": "2026-10-25T12:59:55.272Z",
+    "found": true,
+    "matched": 53
+  },
+  "C_ENTPROJOVHDDEBITCRDTQRY": {
+    "attemptedAt": "2026-10-25T12:59:55.836Z",
+    "found": true,
+    "matched": 40
+  },
+  "C_ENTPROJOVHDPLNACTLCMTMTQRY": {
+    "attemptedAt": "2026-10-25T12:59:56.403Z",
+    "found": true,
+    "matched": 37
+  },
+  "C_ENTREVNPRJBILLGELMNTQRY": {
+    "attemptedAt": "2026-10-25T12:59:56.970Z",
+    "found": true,
+    "matched": 64
+  },
+  "C_INTERNALPROJECTITEMQUERY": {
+    "attemptedAt": "2026-10-25T12:59:57.579Z",
+    "found": true,
+    "matched": 34
+  },
+  "C_INTPROJPLNACTOVERVIEWQUERY": {
+    "attemptedAt": "2026-10-25T12:59:58.205Z",
+    "found": true,
+    "matched": 44
+  },
+  "C_INVMTPRJPLNACTLCMTMTQ": {
+    "attemptedAt": "2026-10-25T12:59:58.824Z",
+    "found": true,
+    "matched": 38
+  },
+  "C_INVMTPROJACTLLINEITM2Q": {
+    "attemptedAt": "2026-10-25T12:59:59.393Z",
+    "found": true,
+    "matched": 34
+  },
+  "C_INVMTPROJACTLLINEITMQ": {
+    "attemptedAt": "2026-10-25T12:59:59.955Z",
+    "found": true,
+    "matched": 33
+  },
+  "C_INVMTPROJBDGTCMTMT2QUERY": {
+    "attemptedAt": "2026-10-25T13:00:00.533Z",
+    "found": true,
+    "matched": 47
+  },
+  "C_INVMTPROJBDGTCMTMTQUERY": {
+    "attemptedAt": "2026-10-25T13:00:01.275Z",
+    "found": true,
+    "matched": 47
+  },
+  "C_INVMTPROJPLNACTLCMTMT2Q": {
+    "attemptedAt": "2026-10-25T13:00:01.868Z",
+    "found": true,
+    "matched": 38
   }
 }

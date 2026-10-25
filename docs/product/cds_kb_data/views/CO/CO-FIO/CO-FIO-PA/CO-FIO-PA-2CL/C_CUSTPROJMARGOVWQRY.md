@@ -61,7 +61,7 @@ tags:
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
 | `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
-| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role |
 | `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
 | `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
 | `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
