@@ -64,7 +64,7 @@ tags:
 | `CustomerGroup` |  | |  |  | `CHAR(2)` | Customer Group |
 | `SoldProductGroup` |  | |  |  | `CHAR(9)` | Product Sold Group |
 | `GLAccount` |  | |  |  | `CHAR(10)` | G/L Account |
-| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role |
 | `CostCtrActivityType` |  | |  |  | `CHAR(6)` | Activity Type |
 | `BusinessTransactionType` |  | |  |  | `CHAR(4)` | Business Transaction Type |
 | `CalendarMonth` |  | |  |  | `NUMC(2)` | Calendar Month |

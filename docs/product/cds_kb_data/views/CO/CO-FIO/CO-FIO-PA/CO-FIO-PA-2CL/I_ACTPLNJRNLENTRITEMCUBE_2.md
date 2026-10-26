@@ -68,7 +68,7 @@ tags:
 | `FinancialPlanningReqTransSqnc` | ✓ | |  |  | `NUMC(23)` | Financial Planning Request Transaction Sequence Number |
 | `FinancialPlanningDataPacket` | ✓ | |  |  | `NUMC(6)` | Financial Planning Data Packet Number |
 | `ActualPlanJournalEntryItem` | ✓ | |  |  | `CHAR(12)` | Actual Plan Journal Entry Item |
-| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role |
 | `LedgerGLLineItem` |  | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
 | `FinancialPlanningEntryItem` |  | |  |  | `INT4(10)` | Financial Planning Entry Item |
 | `ControllingArea` |  | |  |  | `CHAR(4)` | Controlling Area |
@@ -218,13 +218,13 @@ tags:
 | `SettlementReferenceDate` |  | |  |  | `DATS(8)` | Settlement Reference Date |
 | `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
 | `CostSourceUnit` |  | |  |  | `UNIT(3)` | Cost Source Unit |
-| `AmountInDisplayCurrency` |  | |  |  | `DEC(23)` |  |
+| `AmountInDisplayCurrency` |  | |  |  | `CURR(23)` | Amount in Display Currency |
 | `ValuationQuantity` |  | |  |  | `QUAN(23)` | Valuation Quantity |
 | `BaseUnit` |  | |  |  | `UNIT(3)` | Base Unit of Measure |
 | `Quantity` |  | |  |  | `QUAN(23)` | Quantity |
-| `ActualAmountInDisplayCurrency` |  | |  |  | `DEC(23)` |  |
+| `ActualAmountInDisplayCurrency` |  | |  |  | `CURR(23)` | Amount in Display Currency |
 | `ActualValuationQuantity` |  | |  |  | `QUAN(23)` | Actual Valuation Quantity |
-| `PlanAmountInDisplayCurrency` |  | |  |  | `DEC(23)` |  |
+| `PlanAmountInDisplayCurrency` |  | |  |  | `CURR(23)` | Amount in Display Currency |
 | `PlanValuationQuantity` |  | |  |  | `QUAN(23)` | Plan Valuation Quantity |
 | `CalendarYear` |  | |  |  | `NUMC(4)` | Calendar Year |
 | `CalendarQuarter` |  | |  |  | `NUMC(1)` | Calendar Quarter |

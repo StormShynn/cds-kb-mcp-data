@@ -67,7 +67,7 @@ tags:
 | `ComponentBreakdownMethod` | ✓ | |  |  | `CHAR(4)` | Component Breakdown Method |
 | `ComponentBreakdown` | ✓ | |  |  | `CHAR(16)` | Component Breakdown |
 | `ComponentBreakdownComponent` | ✓ | |  |  | `CHAR(6)` | Breakdown Component |
-| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role |
 | `CostBreakdownStructure` | ✓ | |  |  | `CHAR(2)` | Cost Breakdown Structure |
 | `CostBreakdownComponent` | ✓ | |  |  | `CHAR(10)` |  |
 | `CurrencyRole` |  | |  |  | `CHAR(2)` | Currency Role |
