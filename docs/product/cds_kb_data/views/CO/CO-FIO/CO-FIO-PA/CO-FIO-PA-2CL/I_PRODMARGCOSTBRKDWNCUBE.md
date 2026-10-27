@@ -66,7 +66,7 @@ tags:
 | `AccountingDocument` | ✓ | |  |  | `CHAR(10)` | Journal Entry |
 | `LedgerGLLineItem` | ✓ | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
 | `ComponentBreakdownMethod` | ✓ | |  |  | `CHAR(4)` | Component Breakdown Method |
-| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role |
 | `CurrencyRole` |  | |  |  | `CHAR(2)` | Currency Role |
 | `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
 | `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |

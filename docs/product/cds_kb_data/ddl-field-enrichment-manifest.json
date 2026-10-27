@@ -5873,5 +5873,240 @@
     "attemptedAt": "2026-10-26T14:54:11.473Z",
     "found": true,
     "matched": 1
+  },
+  "I_MARGANLYSPRODANDSRVCOBJTYPET": {
+    "attemptedAt": "2026-10-27T14:01:55.469Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_MARGANLYSRPTCURRENCYFIELD": {
+    "attemptedAt": "2026-10-27T14:01:55.949Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_MKTSGMTREPCRCYFLD": {
+    "attemptedAt": "2026-10-27T14:01:56.484Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_OVHDPROJMARGOVWCUBE": {
+    "attemptedAt": "2026-10-27T14:01:56.970Z",
+    "found": true,
+    "matched": 90
+  },
+  "I_OVHDPROJMARGOVWDST": {
+    "attemptedAt": "2026-10-27T14:01:57.491Z",
+    "found": true,
+    "matched": 284
+  },
+  "I_PRJMARGANLYSRPTCRCYFLD": {
+    "attemptedAt": "2026-10-27T14:01:57.997Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PRJMARGANLYSRPTCRCYFLDTXT": {
+    "attemptedAt": "2026-10-27T14:01:58.504Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PRODANDSRVCMARGANLYSCUBE": {
+    "attemptedAt": "2026-10-27T14:01:59.028Z",
+    "found": true,
+    "matched": 89
+  },
+  "I_PRODMARGCOSTBRKDWNCUBE": {
+    "attemptedAt": "2026-10-27T14:01:59.548Z",
+    "found": true,
+    "matched": 47
+  },
+  "I_PRODMARGCOSTBRKDWNDST": {
+    "attemptedAt": "2026-10-27T14:02:00.056Z",
+    "found": true,
+    "matched": 202
+  },
+  "I_PRODSRVCMARGREPCRCYFLD": {
+    "attemptedAt": "2026-10-27T14:02:00.562Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PRODUCTMARGINANALYSISCUBE": {
+    "attemptedAt": "2026-10-27T14:02:01.091Z",
+    "found": true,
+    "matched": 63
+  },
+  "I_PRODUCTMARGINANALYSISDST": {
+    "attemptedAt": "2026-10-27T14:02:01.596Z",
+    "found": true,
+    "matched": 216
+  },
+  "I_PROFITABILITYCUBE": {
+    "attemptedAt": "2026-10-27T14:02:02.119Z",
+    "found": true,
+    "matched": 94
+  },
+  "I_PROJECTUNFORMATTEDID": {
+    "attemptedAt": "2026-10-27T14:02:02.608Z",
+    "found": true,
+    "matched": 16
+  },
+  "I_PROJMARGPLANNINGCATEGORY": {
+    "attemptedAt": "2026-10-27T14:02:03.138Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SERVICEMARGINCUBE": {
+    "attemptedAt": "2026-10-27T14:02:03.663Z",
+    "found": true,
+    "matched": 74
+  },
+  "I_SERVICEMARGINDST": {
+    "attemptedAt": "2026-10-27T14:02:04.188Z",
+    "found": true,
+    "matched": 250
+  },
+  "C_SERVICECOSTRATEDEX": {
+    "attemptedAt": "2026-10-27T14:02:04.708Z",
+    "found": true,
+    "matched": 27
+  },
+  "I_ACTUALCOSTRATEDEX": {
+    "attemptedAt": "2026-10-27T14:02:05.275Z",
+    "found": true,
+    "matched": 22
+  },
+  "I_ACTUALCOSTRATETP": {
+    "attemptedAt": "2026-10-27T14:02:05.569Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_ACTUALCOSTRATETP\" (404)"
+  },
+  "I_BUDGETINGTYPE": {
+    "attemptedAt": "2026-10-27T14:02:06.369Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_BUDGETINGTYPETEXT": {
+    "attemptedAt": "2026-10-27T14:02:06.851Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_BUDGETPROCESS": {
+    "attemptedAt": "2026-10-27T14:02:07.382Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_BUDGETPROCESSTEXT": {
+    "attemptedAt": "2026-10-27T14:02:07.870Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CONTROLLINGOBJECTVH": {
+    "attemptedAt": "2026-10-27T14:02:08.373Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_COSTCENTER": {
+    "attemptedAt": "2026-10-27T14:02:08.860Z",
+    "found": true,
+    "matched": 85
+  },
+  "I_COSTCENTERACTIVITYTYPE": {
+    "attemptedAt": "2026-10-27T14:02:09.408Z",
+    "found": true,
+    "matched": 23
+  },
+  "I_COSTCENTERACTIVITYTYPESTDVH": {
+    "attemptedAt": "2026-10-27T14:02:09.905Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_COSTCENTERACTIVITYTYPETEXT": {
+    "attemptedAt": "2026-10-27T14:02:10.420Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_COSTCENTERCATEGORY": {
+    "attemptedAt": "2026-10-27T14:02:10.923Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_COSTCENTERCATEGORYTEXT": {
+    "attemptedAt": "2026-10-27T14:02:11.452Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTCENTERCHANGELOG": {
+    "attemptedAt": "2026-10-27T14:02:11.938Z",
+    "found": true,
+    "matched": 27
+  },
+  "I_COSTCENTERSTDVH": {
+    "attemptedAt": "2026-10-27T14:02:12.480Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_COSTCENTERTEXT": {
+    "attemptedAt": "2026-10-27T14:02:12.963Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_ENTPROJSETTLMTDISTRRULE": {
+    "attemptedAt": "2026-10-27T14:02:13.499Z",
+    "found": true,
+    "matched": 53
+  },
+  "I_ENTPROJSETTLMTRULE": {
+    "attemptedAt": "2026-10-27T14:02:13.997Z",
+    "found": true,
+    "matched": 24
+  },
+  "I_INTERNALORDER": {
+    "attemptedAt": "2026-10-27T14:02:14.525Z",
+    "found": true,
+    "matched": 77
+  },
+  "I_INTERNALORDERSTDVH": {
+    "attemptedAt": "2026-10-27T14:02:15.051Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PLANCOSTRATEDEX": {
+    "attemptedAt": "2026-10-27T14:02:15.574Z",
+    "found": true,
+    "matched": 22
+  },
+  "I_PLANCOSTRATETP": {
+    "attemptedAt": "2026-10-27T14:02:15.765Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PLANCOSTRATETP\" (404)"
+  },
+  "I_SERVICECOSTLEVEL": {
+    "attemptedAt": "2026-10-27T14:02:16.519Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SERVICECOSTLEVELTEXT": {
+    "attemptedAt": "2026-10-27T14:02:17.018Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SERVICECOSTLEVELTEXT_2": {
+    "attemptedAt": "2026-10-27T14:02:17.501Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_SERVICECOSTRATEDEX": {
+    "attemptedAt": "2026-10-27T14:02:18.049Z",
+    "found": true,
+    "matched": 29
+  },
+  "I_SERVICECOSTRATETP": {
+    "attemptedAt": "2026-10-27T14:02:18.222Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SERVICECOSTRATETP\" (404)"
+  },
+  "I_SERVICECOSTRATE_2": {
+    "attemptedAt": "2026-10-27T14:02:18.967Z",
+    "found": true,
+    "matched": 28
   }
 }

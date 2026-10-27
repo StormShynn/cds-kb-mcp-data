@@ -69,7 +69,7 @@ tags:
 | `SemanticTag` | ✓ | |  |  | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
 | `ValidityStartDate` | ✓ | |  |  | `DATS(8)` | Valid-From Date |
 | `ValidityEndDate` | ✓ | |  |  | `DATS(8)` | Valid To Date |
-| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role |
 | `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
 | `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
 | `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
