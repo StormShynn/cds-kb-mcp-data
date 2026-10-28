@@ -6108,5 +6108,240 @@
     "attemptedAt": "2026-10-27T14:02:18.967Z",
     "found": true,
     "matched": 28
+  },
+  "I_STATISTICALKEYFIGURE": {
+    "attemptedAt": "2026-10-28T14:53:26.781Z",
+    "found": true,
+    "matched": 14
+  },
+  "I_STATISTICALKEYFIGURECAT": {
+    "attemptedAt": "2026-10-28T14:53:27.221Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_STATISTICALKEYFIGURECATTEXT": {
+    "attemptedAt": "2026-10-28T14:53:27.696Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_STATISTICALKEYFIGURESTDVH": {
+    "attemptedAt": "2026-10-28T14:53:28.148Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_STATISTICALKEYFIGURETEXT": {
+    "attemptedAt": "2026-10-28T14:53:28.649Z",
+    "found": true,
+    "matched": 4
+  },
+  "C_COSTCENTERACTUALQUERY": {
+    "attemptedAt": "2026-10-28T14:53:29.135Z",
+    "found": true,
+    "matched": 58
+  },
+  "C_COSTCENTERBUDGETQUERY": {
+    "attemptedAt": "2026-10-28T14:53:29.717Z",
+    "found": true,
+    "matched": 43
+  },
+  "C_COSTCENTERPLANACTUALQUERY": {
+    "attemptedAt": "2026-10-28T14:53:30.215Z",
+    "found": true,
+    "matched": 46
+  },
+  "I_ACTPLNCOSTCENTERRPTGCUBE": {
+    "attemptedAt": "2026-10-28T14:53:30.661Z",
+    "found": true,
+    "matched": 101
+  },
+  "I_BUDGETCOSTCENTER": {
+    "attemptedAt": "2026-10-28T14:53:31.092Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_BUDGETCOSTCENTERRPTGCUBE": {
+    "attemptedAt": "2026-10-28T14:53:31.610Z",
+    "found": true,
+    "matched": 104
+  },
+  "I_BUDGETGLACCTHIERGROUPT": {
+    "attemptedAt": "2026-10-28T14:53:32.076Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_MDI_COSTCENTEROID": {
+    "attemptedAt": "2026-10-28T14:53:32.527Z",
+    "found": true,
+    "matched": 3
+  },
+  "C_COSTCTRWTHACTVAVAILYCTRLPRFL": {
+    "attemptedAt": "2026-10-28T14:53:32.976Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_COSTCENTERBUDGET": {
+    "attemptedAt": "2026-10-28T14:53:33.400Z",
+    "found": true,
+    "matched": 62
+  },
+  "I_FINDIMENSIONSQTYFIELDS": {
+    "attemptedAt": "2026-10-28T14:53:33.934Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_PROFITABILITYSEGMENT": {
+    "attemptedAt": "2026-10-28T14:53:34.520Z",
+    "found": true,
+    "matched": 40
+  },
+  "I_ACTCOSTINGRUNTYPEVH": {
+    "attemptedAt": "2026-10-28T14:53:34.981Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_ACTLCOSTGMATLVALUECHAINITEM": {
+    "attemptedAt": "2026-10-28T14:53:35.442Z",
+    "found": true,
+    "matched": 34
+  },
+  "I_ACTUALCOSTINGACTIVITYRESULT": {
+    "attemptedAt": "2026-10-28T14:53:35.937Z",
+    "found": true,
+    "matched": 29
+  },
+  "I_ACTUALCOSTINGRUNRESULT": {
+    "attemptedAt": "2026-10-28T14:53:36.387Z",
+    "found": true,
+    "matched": 25
+  },
+  "I_MATLINVTRYLDGRQTYSTRUCTURE": {
+    "attemptedAt": "2026-10-28T14:53:36.915Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_TRANSBSDMATLVALUECHAINITEM": {
+    "attemptedAt": "2026-10-28T14:53:37.475Z",
+    "found": true,
+    "matched": 34
+  },
+  "I_WIPQUANTITYDOCUMENT": {
+    "attemptedAt": "2026-10-28T14:53:37.918Z",
+    "found": true,
+    "matched": 29
+  },
+  "I_CURRENTMATLVALNPRICEDEX": {
+    "attemptedAt": "2026-10-28T14:53:38.348Z",
+    "found": true,
+    "matched": 24
+  },
+  "I_INVENTORYAMTBYFSCLPERD": {
+    "attemptedAt": "2026-10-28T14:53:38.813Z",
+    "found": true,
+    "matched": 21
+  },
+  "I_INVENTORYPRICEBYKEYDATE": {
+    "attemptedAt": "2026-10-28T14:53:39.243Z",
+    "found": true,
+    "matched": 29
+  },
+  "I_INVENTORYPRICEBYKEYDATE_2": {
+    "attemptedAt": "2026-10-28T14:53:39.743Z",
+    "found": true,
+    "matched": 30
+  },
+  "I_MATERIALLEDGERCUBE_LIT": {
+    "attemptedAt": "2026-10-28T14:53:40.190Z",
+    "found": true,
+    "matched": 59
+  },
+  "I_MATERIALVALUATIONDEX": {
+    "attemptedAt": "2026-10-28T14:53:40.631Z",
+    "found": true,
+    "matched": 28
+  },
+  "I_MATERIALVALUATIONTYPEVH": {
+    "attemptedAt": "2026-10-28T14:53:41.161Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_ML_BALANCE": {
+    "attemptedAt": "2026-10-28T14:53:41.591Z",
+    "found": true,
+    "matched": 62
+  },
+  "I_PRICEDETERMINATIONCONTROL": {
+    "attemptedAt": "2026-10-28T14:53:42.081Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_PRICEDETERMINATIONCONTROLTXT": {
+    "attemptedAt": "2026-10-28T14:53:42.542Z",
+    "found": true,
+    "matched": 4
+  },
+  "C_MFGORDACTLPLNTGTLDGRCOST": {
+    "attemptedAt": "2026-10-28T14:53:42.975Z",
+    "found": true,
+    "matched": 37
+  },
+  "C_MFGORDEREVTBSDWIPVARCQRY": {
+    "attemptedAt": "2026-10-28T14:53:43.436Z",
+    "found": true,
+    "matched": 30
+  },
+  "C_PRODUCTCOSTBYORDERQUERY": {
+    "attemptedAt": "2026-10-28T14:53:43.895Z",
+    "found": true,
+    "matched": 52
+  },
+  "C_WORKCENTERPRODCOSTQUERY": {
+    "attemptedAt": "2026-10-28T14:53:44.390Z",
+    "found": true,
+    "matched": 35
+  },
+  "I_EVENTBASEDERRORSITUATION": {
+    "attemptedAt": "2026-10-28T14:53:44.834Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_EVENTBASEDORDERPOSTINGRULE": {
+    "attemptedAt": "2026-10-28T14:53:45.326Z",
+    "found": true,
+    "matched": 33
+  },
+  "I_EVENTBASEDORDERPOSTINGRULETP": {
+    "attemptedAt": "2026-10-28T14:53:45.529Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_EVENTBASEDORDERPOSTINGRULETP\" (404)"
+  },
+  "I_EVENTBASEDPROCESSINGKEY": {
+    "attemptedAt": "2026-10-28T14:53:46.209Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_EVENTBASEDPROCESSINGKEYSTDVH": {
+    "attemptedAt": "2026-10-28T14:53:46.652Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_EVENTBASEDPROCESSINGKEYTEXT": {
+    "attemptedAt": "2026-10-28T14:53:47.142Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_MFGORDERACTLPLANTGTLDGRCOST": {
+    "attemptedAt": "2026-10-28T14:53:47.683Z",
+    "found": true,
+    "matched": 44
+  },
+  "I_MFGORDEREVTBSDWIPVARIANCE": {
+    "attemptedAt": "2026-10-28T14:53:48.155Z",
+    "found": true,
+    "matched": 34
+  },
+  "I_MFGORDNONMATRCVRACCTDETNMETH": {
+    "attemptedAt": "2026-10-28T14:53:48.676Z",
+    "found": true,
+    "matched": 2
   }
 }
