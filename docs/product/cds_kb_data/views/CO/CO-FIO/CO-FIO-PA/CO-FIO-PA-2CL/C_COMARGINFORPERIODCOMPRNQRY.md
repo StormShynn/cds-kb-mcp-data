@@ -118,7 +118,7 @@ tags:
 | `PrevYearCurrentFYQuarterValue` |  | |  | `cast( case when ( FiscalYearQuarter = $parameters.P_FiscalYearQuarterPrevYear ) then 1 else null end as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
 | `DeltaCurPrevFYQuarterValue` |  | |  | `cast( $projection.CurrentFiscalQuarterValue - $projection.PrevYearCurrentFYQuarterValue as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
 | `DeltaCurPrevFYQuarterRatio` |  | |  | `ratio_of( portion=>$projection.DeltaCurPrevFYQuarterValue, total=>abs( $projection.PrevYearCurrentFYQuarterValue ) ) * 100` | `DECF(34)` |  |
-| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role |
 | `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
 | `NetRevenueAmountInCoCodeCrcy` |  | |  | `cast( $projection.RevenueAmountInCompanyCodeCrcy + $projection.SalesDeductionAmtInCoCodeCrcy as fcopa_net_revenue_cccrcy )` | `CURR(23)` | Net Revenue in Company Code Currency |
 | `RevenueAmountInCompanyCodeCrcy` |  | |  | `cast( $projection.BilledRevenueAmtInCoCodeCrcy + $projection.RevenueAdjustmentAmtInCCCrcy as fcopa_revenue_cccrcy )` | `CURR(23)` | Net Revenue in Company Code Currency |

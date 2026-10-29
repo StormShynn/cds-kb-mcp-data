@@ -66,7 +66,7 @@ tags:
 | `LedgerGLLineItem` | ✓ | |  |  | `CHAR(6)` | General Ledger Journal Entry Line Item |
 | `GLAccountHierarchy` | ✓ | |  |  | `CHAR(42)` | Financial Statement Version |
 | `SemanticTag` | ✓ | |  |  | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
-| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role |
 | `CurrencyRole` |  | |  |  | `CHAR(2)` | Currency Role |
 | `LedgerFiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year of Ledger |
 | `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |

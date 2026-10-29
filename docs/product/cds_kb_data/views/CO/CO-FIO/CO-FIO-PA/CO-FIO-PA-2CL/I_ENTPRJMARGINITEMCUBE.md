@@ -68,7 +68,7 @@ tags:
 | `FinancialPlanningReqTransSqnc` | ✓ | |  |  | `NUMC(23)` | Financial Planning Request Transaction Sequence Number |
 | `FinancialPlanningDataPacket` | ✓ | |  |  | `NUMC(6)` | Financial Planning Data Packet Number |
 | `ActualPlanJournalEntryItem` | ✓ | |  |  | `CHAR(12)` | Actual Plan Journal Entry Item |
-| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role |
 | `FinancialPlanningEntryItem` |  | |  |  | `INT4(10)` | Financial Planning Entry Item |
 | `PlanningCategory` |  | |  |  | `CHAR(10)` | Plan Category |
 | `ActualPlanCode` |  | |  |  | `CHAR(1)` | Actual Plan Code |

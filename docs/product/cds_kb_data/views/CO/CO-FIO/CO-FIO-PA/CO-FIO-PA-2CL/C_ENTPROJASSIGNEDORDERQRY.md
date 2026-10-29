@@ -102,7 +102,7 @@ tags:
 | `ServiceDocumentType` |  | |  |  | `CHAR(4)` | Service Document Type |
 | `ControllingDebitCreditCode` |  | |  |  | `CHAR(1)` | CO Debit/Credit Indicator |
 | `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
-| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role |
 | `AmountInDisplayCurrency` |  | |  |  | `CURR(23)` | Amount in Display Currency |
 | `ProjectManager` |  | |  |  | `CHAR(10)` | Business Partner Number |
 | `_LedgerText` | | ✓ | | | | |

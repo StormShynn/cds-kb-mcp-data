@@ -126,7 +126,7 @@ tags:
 | `AssetClass` |  | |  |  | `CHAR(8)` | Asset Class |
 | `AccountingDocCreatedByUser` |  | |  |  | `CHAR(12)` | User that created the journal entry |
 | `SubLedgerAcctLineItemType` |  | |  |  | `NUMC(5)` | Subledger-Specific Line Item Type |
-| `CurrencyField` |  | | `_CurrencyField` | `CurrencyField` | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` |  | | `_CurrencyField` | `CurrencyField` | `CHAR(4)` | Currency Role |
 | `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
 | `AmountInCompanyCodeCurrency` |  | |  |  | `CURR(23)` | Amount in Company Code Currency |
 | `VariableAmountInCoCodeCrcy` |  | |  | `cast( $projection.amountincompanycodecurrency - FixedAmountInCoCodeCrcy as fis_hsl_inverted )` | `CURR(23)` | Inverted Amount in Company Code Currency |

@@ -49,7 +49,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

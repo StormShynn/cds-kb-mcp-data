@@ -64,7 +64,7 @@ tags:
 | `FiscalPeriod` |  | |  |  | `NUMC(3)` | Fiscal Period |
 | `FiscalYearPeriod` |  | |  |  | `NUMC(7)` | Fiscal Year Period |
 | `AccountAssignmentType` |  | |  |  | `CHAR(2)` | Account Assignment Type |
-| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role |
 | `FiscalYearVariant` |  | |  |  | `CHAR(2)` | Fiscal Year Variant |
 | `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
 | `OriginProfitCenter` |  | |  |  | `CHAR(10)` | Origin Profit Center |

@@ -120,7 +120,7 @@ tags:
 | `PrevYearCurrentFYQuarterValue` |  | |  | `cast( case when ( FiscalYearQuarter = $parameters.P_FiscalYearQuarterPrevYear ) then 1 else null end as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
 | `DeltaCurPrevFYQuarterValue` |  | |  | `cast( $projection.CurrentFiscalQuarterValue - $projection.PrevYearCurrentFYQuarterValue as abap.dec( 23, 2 ) )` | `DEC(23)` |  |
 | `DeltaCurPrevFYQuarterRatio` |  | |  | `ratio_of( portion=>$projection.DeltaCurPrevFYQuarterValue, total=>abs( $projection.PrevYearCurrentFYQuarterValue ) ) * 100` | `DECF(34)` |  |
-| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` |  | |  |  | `CHAR(4)` | Currency Role |
 | `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
 | `NetRevenueAmountInDspCrcy` |  | |  | `cast( $projection.RevenueAmountInDisplayCrcy + $projection.SalesDeductionAmountInDspCrcy as fcopa_net_revenue_dspcrcy )` | `CURR(23)` | Net Revenue in Display Currency |
 | `RevenueAmountInDisplayCrcy` |  | |  | `cast( $projection.BilledRevenueAmtInDspCrcy + $projection.RevenueAdjustmentAmtInDspCrcy as fis_revenue_amount_dsp_crcy )` | `CURR(23)` | Revenue Amount in Display Currency |

@@ -38,7 +38,7 @@ tags:
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
 | `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
-| `CurrencyField` | ✓ | |  | `cast( dd07t.domvalue_l as fis_crcy_role_field )` | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` | ✓ | |  | `cast( dd07t.domvalue_l as fis_crcy_role_field )` | `CHAR(4)` | Currency Role |
 | `CurrencyFieldName` |  | |  | `cast( dd07t.ddtext as fis_crcy_role_field_text preserving type )` | `CHAR(60)` | Text for Currency Role Field |
 | `_Language` | | ✓ | | | | |
 

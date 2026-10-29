@@ -68,7 +68,7 @@ tags:
 | `FinancialPlanningDataPacket` | ✓ | |  |  | `NUMC(6)` | Financial Planning Data Packet Number |
 | `FinancialPlanningEntryItem` | ✓ | |  |  | `INT4(10)` | Financial Planning Entry Item |
 | `SemanticTag` | ✓ | |  |  | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
-| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role |
 | `LineIsSemTagCalculated` | ✓ | |  |  | `CHAR(1)` | Indicator: Calculated by Semantic Tag |
 | `ActualPlanCode` |  | |  |  | `CHAR(1)` | Actual Plan Code |
 | `PlanningCategory` |  | |  |  | `CHAR(10)` | Plan Category |
@@ -145,7 +145,7 @@ tags:
 | `PartnerCostCtrActivityType` |  | |  |  | `CHAR(6)` | Partner Cost Center Activity Type |
 | `IsCommitment` |  | |  |  | `CHAR(1)` | Indicator: Is Commitment |
 | `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
-| `AmountInDisplayCurrency` |  | |  |  | `DEC(23)` |  |
+| `AmountInDisplayCurrency` |  | |  |  | `CURR(23)` | Amount in Display Currency |
 | `BilledRevenueAmtInDspCrcy` |  | |  |  | `CURR(23)` | Billed Revenue |
 | `ActualSalesDdctdInDspCrcy` |  | |  |  | `CURR(23)` | Sales Deduction |
 | `ActualCostAmtInDspCrcy` |  | |  |  | `CURR(23)` | Actual Cost |

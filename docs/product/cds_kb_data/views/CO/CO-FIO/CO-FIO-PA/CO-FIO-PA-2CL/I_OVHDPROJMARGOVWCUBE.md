@@ -69,7 +69,7 @@ tags:
 | `FinancialPlanningDataPacket` | ✓ | |  |  | `NUMC(6)` | Financial Planning Data Packet Number |
 | `FinancialPlanningEntryItem` | ✓ | |  |  | `INT4(10)` | Financial Planning Entry Item |
 | `SemanticTag` | ✓ | |  |  | `CHAR(10)` | Semantic Tag of a Hierarchy Node |
-| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role |
 | `LineIsSemTagCalculated` | ✓ | |  |  | `CHAR(1)` | Indicator: Calculated by Semantic Tag |
 | `ActualPlanCode` |  | |  |  | `CHAR(1)` | Actual Plan Code |
 | `PlanningCategory` |  | |  |  | `CHAR(10)` | Plan Category |
@@ -143,7 +143,7 @@ tags:
 | `IsCommitment` |  | |  |  | `CHAR(1)` | Indicator: Is Commitment |
 | `AvailabilityControlIsActive` |  | |  |  | `CHAR(1)` | Availability control indicator(AVC) |
 | `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
-| `AmountInDisplayCurrency` |  | |  |  | `DEC(23)` |  |
+| `AmountInDisplayCurrency` |  | |  |  | `CURR(23)` | Amount in Display Currency |
 | `ActualCostAmtInDspCrcy` |  | |  |  | `CURR(23)` | Actual Cost |
 | `PlannedCosAmtInDspCrcy` |  | |  |  | `CURR(23)` | Inverted Amount in Company Code Currency |
 | `BdgtCtrldBdgtCostInDspCrcy` |  | |  |  | `CURR(23)` | Amount in Global Currency |
