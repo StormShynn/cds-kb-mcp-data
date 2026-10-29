@@ -6343,5 +6343,240 @@
     "attemptedAt": "2026-10-28T14:53:48.676Z",
     "found": true,
     "matched": 2
+  },
+  "C_PCCACTLTGTCOSTQRY": {
+    "attemptedAt": "2026-10-29T14:58:50.137Z",
+    "found": true,
+    "matched": 26
+  },
+  "C_PCCEVTBSDWIPVARCQRY": {
+    "attemptedAt": "2026-10-29T14:58:50.683Z",
+    "found": true,
+    "matched": 19
+  },
+  "I_PCCACTLTGTCOSTCUBE": {
+    "attemptedAt": "2026-10-29T14:58:51.195Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_PCCEVTBSDWIPVARIANCECUBE": {
+    "attemptedAt": "2026-10-29T14:58:51.775Z",
+    "found": true,
+    "matched": 20
+  },
+  "I_ACCOUNTINGSERVICEDOCUMENT": {
+    "attemptedAt": "2026-10-29T14:58:52.332Z",
+    "found": true,
+    "matched": 77
+  },
+  "I_ACCTGSERVICECONTRACTVH": {
+    "attemptedAt": "2026-10-29T14:58:52.946Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ACCTGSERVICEDOCUMENTITEMVH": {
+    "attemptedAt": "2026-10-29T14:58:53.490Z",
+    "found": true,
+    "matched": 14
+  },
+  "I_ACCTGSERVICEDOCUMENTTYPE": {
+    "attemptedAt": "2026-10-29T14:58:54.105Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_ACCTGSERVICEDOCUMENTTYPEVH": {
+    "attemptedAt": "2026-10-29T14:58:54.640Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_ACCTGSERVICEDOCUMENTVH": {
+    "attemptedAt": "2026-10-29T14:58:55.161Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_ACCTGSRVCDOCUMENTITEMBASIC": {
+    "attemptedAt": "2026-10-29T14:58:55.699Z",
+    "found": true,
+    "matched": 90
+  },
+  "C_COSTCOMPONENTASSIGNMENTDEX": {
+    "attemptedAt": "2026-10-29T14:58:56.252Z",
+    "found": true,
+    "matched": 6
+  },
+  "C_PRODCOSTESTCOSTCOMPDEX": {
+    "attemptedAt": "2026-10-29T14:58:56.757Z",
+    "found": true,
+    "matched": 23
+  },
+  "D_COSTESTCOSTCOMPONENTR": {
+    "attemptedAt": "2026-10-29T14:58:56.972Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_COSTESTCOSTCOMPONENTR\" (404)"
+  },
+  "D_COSTESTGETBRKDWNBYCOMPVIEWP": {
+    "attemptedAt": "2026-10-29T14:58:57.444Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_COSTESTGETBRKDWNBYCOMPVIEWP\" (404)"
+  },
+  "D_COSTESTGETBRKDWNBYCOMPVIEWR": {
+    "attemptedAt": "2026-10-29T14:58:57.919Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_COSTESTGETBRKDWNBYCOMPVIEWR\" (404)"
+  },
+  "D_COSTINGVARIANTEXPLAINWITHAIP": {
+    "attemptedAt": "2026-10-29T14:58:58.385Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_COSTINGVARIANTEXPLAINWITHAIP\" (404)"
+  },
+  "D_COSTINGVARIANTEXPLAINWITHAIR": {
+    "attemptedAt": "2026-10-29T14:58:58.924Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_COSTINGVARIANTEXPLAINWITHAIR\" (404)"
+  },
+  "I_COMPONENTBREAKDOWNMETHOD": {
+    "attemptedAt": "2026-10-29T14:58:59.716Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_COMPONENTBREAKDOWNMETHODTEXT": {
+    "attemptedAt": "2026-10-29T14:59:00.253Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTBREAKDOWNCOMPONENT": {
+    "attemptedAt": "2026-10-29T14:59:00.775Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_COSTBREAKDOWNCOMPONENTTEXT": {
+    "attemptedAt": "2026-10-29T14:59:01.314Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_COSTBREAKDOWNMETHOD": {
+    "attemptedAt": "2026-10-29T14:59:01.822Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_COSTBREAKDOWNSTRUCTURE": {
+    "attemptedAt": "2026-10-29T14:59:02.348Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_COSTBREAKDOWNSTRUCTURETEXT": {
+    "attemptedAt": "2026-10-29T14:59:02.959Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTCOMPONENTASSIGNMENT": {
+    "attemptedAt": "2026-10-29T14:59:03.467Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_COSTCOMPONENTSTDVH": {
+    "attemptedAt": "2026-10-29T14:59:03.982Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTCOMPONENTSTRUCTURE": {
+    "attemptedAt": "2026-10-29T14:59:04.499Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_COSTCOMPONENTSTRUCTURETEXT": {
+    "attemptedAt": "2026-10-29T14:59:05.132Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTCOMPONENTVIEW": {
+    "attemptedAt": "2026-10-29T14:59:05.631Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_COSTCOMPONENTVIEWTEXT": {
+    "attemptedAt": "2026-10-29T14:59:06.152Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTINGOVERHEADGROUP": {
+    "attemptedAt": "2026-10-29T14:59:06.666Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTINGOVERHEADGROUPTEXT": {
+    "attemptedAt": "2026-10-29T14:59:07.174Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_COSTINGTYPE": {
+    "attemptedAt": "2026-10-29T14:59:07.720Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_COSTINGTYPESTDVH": {
+    "attemptedAt": "2026-10-29T14:59:08.227Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_COSTINGTYPETEXT": {
+    "attemptedAt": "2026-10-29T14:59:08.770Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTINGVALUATIONVARIANT": {
+    "attemptedAt": "2026-10-29T14:59:09.272Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTINGVALUATIONVARIANTSTDVH": {
+    "attemptedAt": "2026-10-29T14:59:09.868Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_COSTINGVALUATIONVARTEXT": {
+    "attemptedAt": "2026-10-29T14:59:10.391Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTINGVARIANT": {
+    "attemptedAt": "2026-10-29T14:59:10.959Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_COSTINGVARIANTSTDVH": {
+    "attemptedAt": "2026-10-29T14:59:11.502Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_COSTINGVARIANTTEXT": {
+    "attemptedAt": "2026-10-29T14:59:12.014Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTINGVERSION": {
+    "attemptedAt": "2026-10-29T14:59:12.588Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_COSTINGVERSIONTEXT": {
+    "attemptedAt": "2026-10-29T14:59:13.103Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_COSTORIGINGROUP": {
+    "attemptedAt": "2026-10-29T14:59:13.615Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTORIGINGROUPSTDVH": {
+    "attemptedAt": "2026-10-29T14:59:14.251Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTORIGINGROUPSTDVH_2": {
+    "attemptedAt": "2026-10-29T14:59:14.761Z",
+    "found": true,
+    "matched": 1
   }
 }
