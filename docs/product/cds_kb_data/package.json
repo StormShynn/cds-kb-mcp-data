@@ -34,7 +34,7 @@
     "node": ">=24"
   },
   "devDependencies": {
-    "@abaplint/core": "^2.120.67",
+    "@abaplint/core": "^2.120.86",
     "@huggingface/transformers": "^4.3.1",
     "playwright": "^1.63.0"
   },
