@@ -6578,5 +6578,240 @@
     "attemptedAt": "2026-10-29T14:59:14.761Z",
     "found": true,
     "matched": 1
+  },
+  "I_COSTORIGINGROUPTEXT": {
+    "attemptedAt": "2026-10-30T14:52:25.726Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_COSTORIGINGROUPTEXT_2": {
+    "attemptedAt": "2026-10-30T14:52:26.205Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTORIGINGROUP_2": {
+    "attemptedAt": "2026-10-30T14:52:26.689Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_COSTORIGINTYPE": {
+    "attemptedAt": "2026-10-30T14:52:27.328Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_COSTORIGINTYPETEXT": {
+    "attemptedAt": "2026-10-30T14:52:27.807Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_ESTIMATEDCOSTCOSTINGRUNSTDVH": {
+    "attemptedAt": "2026-10-30T14:52:28.272Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_MATERIALCOSTESTCOSTINGRUNDEX": {
+    "attemptedAt": "2026-10-30T14:52:28.739Z",
+    "found": true,
+    "matched": 18
+  },
+  "I_PRODCOSTESTCOSTCOMPRAWDEX": {
+    "attemptedAt": "2026-10-30T14:52:29.215Z",
+    "found": true,
+    "matched": 134
+  },
+  "I_PRODCOSTINGCOSTINGVARIANTVH": {
+    "attemptedAt": "2026-10-30T14:52:29.702Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_PRODUCTCOSTESTIMATE": {
+    "attemptedAt": "2026-10-30T14:52:30.205Z",
+    "found": true,
+    "matched": 76
+  },
+  "I_PRODUCTCOSTESTIMATEDEX": {
+    "attemptedAt": "2026-10-30T14:52:30.690Z",
+    "found": true,
+    "matched": 71
+  },
+  "I_PRODUCTCOSTESTIMATEERRORLOG": {
+    "attemptedAt": "2026-10-30T14:52:31.161Z",
+    "found": true,
+    "matched": 16
+  },
+  "I_PRODUCTCOSTESTIMATEITEM": {
+    "attemptedAt": "2026-10-30T14:52:31.629Z",
+    "found": true,
+    "matched": 59
+  },
+  "I_PRODUCTCOSTESTIMATEITEMDEX": {
+    "attemptedAt": "2026-10-30T14:52:32.207Z",
+    "found": true,
+    "matched": 64
+  },
+  "I_PRODUCTCOSTESTIMATEITEMTP": {
+    "attemptedAt": "2026-10-30T14:52:32.388Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODUCTCOSTESTIMATEITEMTP\" (404)"
+  },
+  "I_PRODUCTCOSTESTIMATETP": {
+    "attemptedAt": "2026-10-30T14:52:32.877Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODUCTCOSTESTIMATETP\" (404)"
+  },
+  "I_SALESORDERITEMCOSTESTIMATE": {
+    "attemptedAt": "2026-10-30T14:52:33.609Z",
+    "found": true,
+    "matched": 55
+  },
+  "I_SALESORDERITEMCOSTESTITEM": {
+    "attemptedAt": "2026-10-30T14:52:34.083Z",
+    "found": true,
+    "matched": 49
+  },
+  "I_SLSDOCCOSTINGVARIANTVH": {
+    "attemptedAt": "2026-10-30T14:52:34.563Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SLSORDPROJVALNSTRATEGYSTDVH": {
+    "attemptedAt": "2026-10-30T14:52:35.043Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SLSORDPROJVALNSTRATEGYTEXT": {
+    "attemptedAt": "2026-10-30T14:52:35.554Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SLSORDPROJVALUATIONSTRATEGY": {
+    "attemptedAt": "2026-10-30T14:52:36.042Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CUSTMGMTDATERULE": {
+    "attemptedAt": "2026-10-30T14:52:36.545Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CUSTMGMTDATERULETEXT": {
+    "attemptedAt": "2026-10-30T14:52:37.048Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCMGMTPARTNERFUNCTION": {
+    "attemptedAt": "2026-10-30T14:52:37.522Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SRVCMGMTPARTNERFUNCTIONTEXT": {
+    "attemptedAt": "2026-10-30T14:52:38.016Z",
+    "found": true,
+    "matched": 3
+  },
+  "C_BUSINESSSOLUTIONORDERITEMDEX": {
+    "attemptedAt": "2026-10-30T14:52:38.515Z",
+    "found": true,
+    "matched": 120
+  },
+  "C_SERVICECONFIRMATIONITEMDEX": {
+    "attemptedAt": "2026-10-30T14:52:38.978Z",
+    "found": true,
+    "matched": 113
+  },
+  "C_SERVICECONTRACTITEMDEX": {
+    "attemptedAt": "2026-10-30T14:52:39.595Z",
+    "found": true,
+    "matched": 137
+  },
+  "C_SERVICEORDERITEMDEX": {
+    "attemptedAt": "2026-10-30T14:52:40.090Z",
+    "found": true,
+    "matched": 142
+  },
+  "C_SERVICEQUOTATIONDEX": {
+    "attemptedAt": "2026-10-30T14:52:40.647Z",
+    "found": true,
+    "matched": 32
+  },
+  "C_SERVICEQUOTATIONITEMDEX": {
+    "attemptedAt": "2026-10-30T14:52:41.117Z",
+    "found": true,
+    "matched": 38
+  },
+  "C_BSORDGLACCTLINEITEMQRY": {
+    "attemptedAt": "2026-10-30T14:52:41.595Z",
+    "found": true,
+    "matched": 38
+  },
+  "C_BUSINESSSOLUTIONORDERQRY": {
+    "attemptedAt": "2026-10-30T14:52:42.070Z",
+    "found": true,
+    "matched": 25
+  },
+  "C_BUSSOLNORDITMFINANCIALQ": {
+    "attemptedAt": "2026-10-30T14:52:42.591Z",
+    "found": true,
+    "matched": 43
+  },
+  "C_SERVICEORDERQUERY": {
+    "attemptedAt": "2026-10-30T14:52:43.045Z",
+    "found": true,
+    "matched": 25
+  },
+  "C_UPCGSRVCCONTRITEMQUERY": {
+    "attemptedAt": "2026-10-30T14:52:43.524Z",
+    "found": true,
+    "matched": 41
+  },
+  "I_BSORDGLACCTLINEITEMCUBE": {
+    "attemptedAt": "2026-10-30T14:52:44.012Z",
+    "found": true,
+    "matched": 40
+  },
+  "I_BUSINESSSOLUTIONORDERCUBE": {
+    "attemptedAt": "2026-10-30T14:52:44.494Z",
+    "found": true,
+    "matched": 25
+  },
+  "I_BUSSOLNORDBASICFINANCIAL": {
+    "attemptedAt": "2026-10-30T14:52:44.991Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_BUSSOLNORDITMBASICFINANCIAL": {
+    "attemptedAt": "2026-10-30T14:52:45.523Z",
+    "found": true,
+    "matched": 41
+  },
+  "I_BUSSOLNORDITMFINANCIALCUBE": {
+    "attemptedAt": "2026-10-30T14:52:46.061Z",
+    "found": true,
+    "matched": 43
+  },
+  "I_SERVICECONTRACTCUBE_2": {
+    "attemptedAt": "2026-10-30T14:52:46.536Z",
+    "found": true,
+    "matched": 42
+  },
+  "I_SERVICEORDERCUBE_2": {
+    "attemptedAt": "2026-10-30T14:52:47.018Z",
+    "found": true,
+    "matched": 44
+  },
+  "I_SRVCMGMTORGANIZATIONUNIT": {
+    "attemptedAt": "2026-10-30T14:52:47.496Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_SRVCMGMTORGANIZATIONUNITTEXT": {
+    "attemptedAt": "2026-10-30T14:52:47.980Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_UPCGSRVCCONTRITEMCUBE": {
+    "attemptedAt": "2026-10-30T14:52:48.473Z",
+    "found": true,
+    "matched": 45
   }
 }

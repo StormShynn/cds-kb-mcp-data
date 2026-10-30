@@ -125,7 +125,7 @@ tags:
 | `BusinessArea` |  | |  |  | `CHAR(4)` | Business Area |
 | `ProfitCenter` |  | |  |  | `CHAR(10)` | Profit Center |
 | `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
-| `GroupCurrency` |  | |  | `ControllingAreaCurrency` | `CUKY(5)` | Global Currency |
+| `GroupCurrency` |  | |  | `ControllingAreaCurrency` | `CUKY(5)` | Currency Key for the Group Currency |
 | `EstimatedCostCostingRun` |  | |  |  | `CHAR(8)` | Name of Costing Run |
 | `EstimatedCostCostingRunDate` |  | |  |  | `DATS(8)` | Costing Run Date |
 | `ConfiguredProduct` |  | |  |  | `CHAR(40)` | Configured Material (Variant) |
