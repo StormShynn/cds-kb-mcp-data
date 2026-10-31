@@ -6813,5 +6813,240 @@
     "attemptedAt": "2026-10-30T14:52:48.473Z",
     "found": true,
     "matched": 45
+  },
+  "I_SRVCDOCCREDITSTATUS": {
+    "attemptedAt": "2026-10-31T14:20:19.022Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SRVCDOCCREDITSTATUSTEXT": {
+    "attemptedAt": "2026-10-31T14:20:19.515Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SRVCDOCITEMCREDITSTATUS": {
+    "attemptedAt": "2026-10-31T14:20:19.989Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SRVCDOCITEMCREDITSTATUSTEXT": {
+    "attemptedAt": "2026-10-31T14:20:20.558Z",
+    "found": true,
+    "matched": 4
+  },
+  "D_SERVICECONFIRMATIONCHANGED": {
+    "attemptedAt": "2026-10-31T14:20:20.731Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICECONFIRMATIONCHANGED\" (404)"
+  },
+  "D_SERVICECONFIRMATIONCREATED": {
+    "attemptedAt": "2026-10-31T14:20:21.180Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICECONFIRMATIONCREATED\" (404)"
+  },
+  "D_SERVICECONFIRMATIONDELETED": {
+    "attemptedAt": "2026-10-31T14:20:21.573Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICECONFIRMATIONDELETED\" (404)"
+  },
+  "D_SERVICECONTRACTCHANGED": {
+    "attemptedAt": "2026-10-31T14:20:21.965Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICECONTRACTCHANGED\" (404)"
+  },
+  "D_SERVICECONTRACTCREATED": {
+    "attemptedAt": "2026-10-31T14:20:22.368Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICECONTRACTCREATED\" (404)"
+  },
+  "D_SERVICEORDERCHANGED": {
+    "attemptedAt": "2026-10-31T14:20:22.826Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERCHANGED\" (404)"
+  },
+  "D_SERVICEORDERCHGDWHENRELEASED": {
+    "attemptedAt": "2026-10-31T14:20:23.217Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERCHGDWHENRELEASED\" (404)"
+  },
+  "D_SERVICEORDERCOMPLETED": {
+    "attemptedAt": "2026-10-31T14:20:23.624Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERCOMPLETED\" (404)"
+  },
+  "D_SERVICEORDERCREATED": {
+    "attemptedAt": "2026-10-31T14:20:24.026Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERCREATED\" (404)"
+  },
+  "D_SERVICEORDERDELETED": {
+    "attemptedAt": "2026-10-31T14:20:24.418Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERDELETED\" (404)"
+  },
+  "D_SERVICEORDERRELEASED": {
+    "attemptedAt": "2026-10-31T14:20:24.847Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERRELEASED\" (404)"
+  },
+  "D_SERVICEORDERRELEASEREVOKED": {
+    "attemptedAt": "2026-10-31T14:20:25.247Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERRELEASEREVOKED\" (404)"
+  },
+  "D_SERVICEORDERTMPLCHANGED": {
+    "attemptedAt": "2026-10-31T14:20:25.643Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERTMPLCHANGED\" (404)"
+  },
+  "D_SERVICEORDERTMPLCOMPLETED": {
+    "attemptedAt": "2026-10-31T14:20:26.049Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERTMPLCOMPLETED\" (404)"
+  },
+  "D_SERVICEORDERTMPLCREATED": {
+    "attemptedAt": "2026-10-31T14:20:26.446Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERTMPLCREATED\" (404)"
+  },
+  "D_SERVICEORDERTMPLDELETED": {
+    "attemptedAt": "2026-10-31T14:20:26.897Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERTMPLDELETED\" (404)"
+  },
+  "D_SERVICEORDERTMPLRELEASED": {
+    "attemptedAt": "2026-10-31T14:20:27.291Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERTMPLRELEASED\" (404)"
+  },
+  "D_SRVCORDTMPLRELEASEREVOKED": {
+    "attemptedAt": "2026-10-31T14:20:27.743Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SRVCORDTMPLRELEASEREVOKED\" (404)"
+  },
+  "I_SUBSCRPNCONTRDURNUNIT": {
+    "attemptedAt": "2026-10-31T14:20:28.444Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SUBSCRPNCONTRDURNUNITT": {
+    "attemptedAt": "2026-10-31T14:20:28.886Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SUBSCRPNCONTRDURNUNITVH": {
+    "attemptedAt": "2026-10-31T14:20:29.326Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_INHOUSEREPAIR": {
+    "attemptedAt": "2026-10-31T14:20:29.834Z",
+    "found": true,
+    "matched": 28
+  },
+  "I_INHOUSEREPAIRITEM": {
+    "attemptedAt": "2026-10-31T14:20:30.305Z",
+    "found": true,
+    "matched": 28
+  },
+  "I_INHREPAIRITEMAVAILYSTATUS": {
+    "attemptedAt": "2026-10-31T14:20:30.869Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_INHREPAIRITEMAVAILYSTATUSTXT": {
+    "attemptedAt": "2026-10-31T14:20:31.297Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_INHREPAIRITEMSTATUS": {
+    "attemptedAt": "2026-10-31T14:20:31.787Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_INHREPAIRITEMSTATUSTEXT": {
+    "attemptedAt": "2026-10-31T14:20:32.252Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_INHREPAIRSTATUS": {
+    "attemptedAt": "2026-10-31T14:20:32.691Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_INHREPAIRSTATUSTEXT": {
+    "attemptedAt": "2026-10-31T14:20:33.138Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_INHREPAIRTRANSACTIONRELATION": {
+    "attemptedAt": "2026-10-31T14:20:33.659Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_SERVICECHECKLISTINSTANCE": {
+    "attemptedAt": "2026-10-31T14:20:34.131Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_SERVICECHECKLISTTEMPLATE": {
+    "attemptedAt": "2026-10-31T14:20:34.653Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_SRVCCHECKLISTINSTANCEENHCD": {
+    "attemptedAt": "2026-10-31T14:20:35.083Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_SRVCCHECKLISTTEMPLATEENHCD": {
+    "attemptedAt": "2026-10-31T14:20:35.533Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_SRVCCHKLSTINSTCETEXT": {
+    "attemptedAt": "2026-10-31T14:20:36.041Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SRVCCHKLSTINSTCEVALUE": {
+    "attemptedAt": "2026-10-31T14:20:36.566Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_SRVCCHKLSTTMPLELEMENT": {
+    "attemptedAt": "2026-10-31T14:20:37.019Z",
+    "found": true,
+    "matched": 47
+  },
+  "I_SRVCCHKLSTTMPLELMNTTEXT": {
+    "attemptedAt": "2026-10-31T14:20:37.457Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_SRVCCHKLSTTMPLTEXT": {
+    "attemptedAt": "2026-10-31T14:20:37.885Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_BILLGREQITMSETTLMTSTATUS": {
+    "attemptedAt": "2026-10-31T14:20:38.340Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_BILLGREQITMSETTLMTSTATUSTEXT": {
+    "attemptedAt": "2026-10-31T14:20:38.797Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_BILLINGREQUESTITEM": {
+    "attemptedAt": "2026-10-31T14:20:39.223Z",
+    "found": true,
+    "matched": 20
+  },
+  "I_BUSINESSACTIVITYCATEGORY": {
+    "attemptedAt": "2026-10-31T14:20:39.751Z",
+    "found": true,
+    "matched": 2
   }
 }
