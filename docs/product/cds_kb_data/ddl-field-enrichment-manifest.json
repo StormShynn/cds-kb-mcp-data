@@ -8223,5 +8223,240 @@
     "attemptedAt": "2026-11-05T16:12:41.005Z",
     "found": false,
     "reason": "Hub catalog fetch failed for \"I_SRVCORDITEMLONGTEXTTP\" (404)"
+  },
+  "I_SRVCORDITEMPARTNERADDRESSTP": {
+    "attemptedAt": "2026-11-06T15:42:45.401Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITEMPARTNERADDRESSTP\" (404)"
+  },
+  "I_SRVCORDITEMPRICEELEMENTTP": {
+    "attemptedAt": "2026-11-06T15:42:45.827Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITEMPRICEELEMENTTP\" (404)"
+  },
+  "I_SRVCORDITEMREFERENCEOBJECTTP": {
+    "attemptedAt": "2026-11-06T15:42:46.247Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITEMREFERENCEOBJECTTP\" (404)"
+  },
+  "I_SRVCORDITEMUSERSTATUSTP": {
+    "attemptedAt": "2026-11-06T15:42:46.639Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITEMUSERSTATUSTP\" (404)"
+  },
+  "I_SRVCORDITMFUPBILLGDOCTP": {
+    "attemptedAt": "2026-11-06T15:42:47.052Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITMFUPBILLGDOCTP\" (404)"
+  },
+  "I_SRVCORDITMFUPPURCHASEORDERTP": {
+    "attemptedAt": "2026-11-06T15:42:47.449Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITMFUPPURCHASEORDERTP\" (404)"
+  },
+  "I_SRVCORDITMFUPPURREQNTP": {
+    "attemptedAt": "2026-11-06T15:42:47.854Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITMFUPPURREQNTP\" (404)"
+  },
+  "I_SRVCORDITMFUPSRVCCONFTP": {
+    "attemptedAt": "2026-11-06T15:42:48.258Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITMFUPSRVCCONFTP\" (404)"
+  },
+  "I_SRVCORDITMFUPSRVCENTRSHEETTP": {
+    "attemptedAt": "2026-11-06T15:42:48.707Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITMFUPSRVCENTRSHEETTP\" (404)"
+  },
+  "I_SRVCORDITMFUPSUPLRINVCTP": {
+    "attemptedAt": "2026-11-06T15:42:49.125Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITMFUPSUPLRINVCTP\" (404)"
+  },
+  "I_SRVCORDITMPARTNERTP": {
+    "attemptedAt": "2026-11-06T15:42:49.523Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITMPARTNERTP\" (404)"
+  },
+  "I_SRVCORDLONGTEXTTP": {
+    "attemptedAt": "2026-11-06T15:42:49.924Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDLONGTEXTTP\" (404)"
+  },
+  "I_SRVCORDPARTNERADDRESSTP": {
+    "attemptedAt": "2026-11-06T15:42:50.344Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDPARTNERADDRESSTP\" (404)"
+  },
+  "I_SRVCORDPARTNERTP": {
+    "attemptedAt": "2026-11-06T15:42:50.746Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDPARTNERTP\" (404)"
+  },
+  "I_SRVCORDPRICEELEMENTTP": {
+    "attemptedAt": "2026-11-06T15:42:51.153Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDPRICEELEMENTTP\" (404)"
+  },
+  "I_SRVCORDREFERENCEOBJECTTP": {
+    "attemptedAt": "2026-11-06T15:42:51.626Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDREFERENCEOBJECTTP\" (404)"
+  },
+  "I_SRVCORDUSERSTATUSTP": {
+    "attemptedAt": "2026-11-06T15:42:52.042Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDUSERSTATUSTP\" (404)"
+  },
+  "D_SERVICEQUOTATIONCHANGED": {
+    "attemptedAt": "2026-11-06T15:42:52.434Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEQUOTATIONCHANGED\" (404)"
+  },
+  "D_SERVICEQUOTATIONCREATED": {
+    "attemptedAt": "2026-11-06T15:42:52.832Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEQUOTATIONCREATED\" (404)"
+  },
+  "D_SRVCQTANAPPRVLWRKFLWCANCELED": {
+    "attemptedAt": "2026-11-06T15:42:53.225Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SRVCQTANAPPRVLWRKFLWCANCELED\" (404)"
+  },
+  "D_SRVCQTANAPPRVLWRKFLWSTARTED": {
+    "attemptedAt": "2026-11-06T15:42:53.680Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SRVCQTANAPPRVLWRKFLWSTARTED\" (404)"
+  },
+  "I_SERVICEQUOTATIONITEMTP": {
+    "attemptedAt": "2026-11-06T15:42:54.075Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SERVICEQUOTATIONITEMTP\" (404)"
+  },
+  "I_SERVICEQUOTATIONTP": {
+    "attemptedAt": "2026-11-06T15:42:54.478Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SERVICEQUOTATIONTP\" (404)"
+  },
+  "I_SRVCQTANAPPOINTMENTTP": {
+    "attemptedAt": "2026-11-06T15:42:54.869Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANAPPOINTMENTTP\" (404)"
+  },
+  "I_SRVCQTANDURATIONTP": {
+    "attemptedAt": "2026-11-06T15:42:55.289Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANDURATIONTP\" (404)"
+  },
+  "I_SRVCQTANFUPSRVCORDTP": {
+    "attemptedAt": "2026-11-06T15:42:55.710Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANFUPSRVCORDTP\" (404)"
+  },
+  "I_SRVCQTANITEMAPPOINTMENTTP": {
+    "attemptedAt": "2026-11-06T15:42:56.110Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANITEMAPPOINTMENTTP\" (404)"
+  },
+  "I_SRVCQTANITEMDURATIONTP": {
+    "attemptedAt": "2026-11-06T15:42:56.512Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANITEMDURATIONTP\" (404)"
+  },
+  "I_SRVCQTANITEMLONGTEXTTP": {
+    "attemptedAt": "2026-11-06T15:42:56.914Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANITEMLONGTEXTTP\" (404)"
+  },
+  "I_SRVCQTANITEMPARTNERADDRESSTP": {
+    "attemptedAt": "2026-11-06T15:42:57.324Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANITEMPARTNERADDRESSTP\" (404)"
+  },
+  "I_SRVCQTANITEMPARTNERTP": {
+    "attemptedAt": "2026-11-06T15:42:57.723Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANITEMPARTNERTP\" (404)"
+  },
+  "I_SRVCQTANITEMPRICEELEMENTTP": {
+    "attemptedAt": "2026-11-06T15:42:58.131Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANITEMPRICEELEMENTTP\" (404)"
+  },
+  "I_SRVCQTANITEMREFOBJECTTP": {
+    "attemptedAt": "2026-11-06T15:42:58.531Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANITEMREFOBJECTTP\" (404)"
+  },
+  "I_SRVCQTANITEMUSERSTATUSTP": {
+    "attemptedAt": "2026-11-06T15:42:58.924Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANITEMUSERSTATUSTP\" (404)"
+  },
+  "I_SRVCQTANITMFUPSRVCORDTP": {
+    "attemptedAt": "2026-11-06T15:42:59.323Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANITMFUPSRVCORDTP\" (404)"
+  },
+  "I_SRVCQTANLONGTEXTTP": {
+    "attemptedAt": "2026-11-06T15:42:59.749Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANLONGTEXTTP\" (404)"
+  },
+  "I_SRVCQTANPARTNERADDRESSTP": {
+    "attemptedAt": "2026-11-06T15:43:00.148Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANPARTNERADDRESSTP\" (404)"
+  },
+  "I_SRVCQTANPARTNERTP": {
+    "attemptedAt": "2026-11-06T15:43:00.552Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANPARTNERTP\" (404)"
+  },
+  "I_SRVCQTANPRICEELEMENTTP": {
+    "attemptedAt": "2026-11-06T15:43:00.957Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANPRICEELEMENTTP\" (404)"
+  },
+  "I_SRVCQTANREFERENCEOBJECTTP": {
+    "attemptedAt": "2026-11-06T15:43:01.364Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANREFERENCEOBJECTTP\" (404)"
+  },
+  "I_SRVCQTANUSERSTATUSTP": {
+    "attemptedAt": "2026-11-06T15:43:01.779Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANUSERSTATUSTP\" (404)"
+  },
+  "I_SERVICEORDERTEMPLATEITEMTP": {
+    "attemptedAt": "2026-11-06T15:43:02.211Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SERVICEORDERTEMPLATEITEMTP\" (404)"
+  },
+  "I_SERVICEORDERTEMPLATETP": {
+    "attemptedAt": "2026-11-06T15:43:02.664Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SERVICEORDERTEMPLATETP\" (404)"
+  },
+  "I_SRVCORDTMPLAPPOINTMENTTP": {
+    "attemptedAt": "2026-11-06T15:43:03.066Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLAPPOINTMENTTP\" (404)"
+  },
+  "I_SRVCORDTMPLDURATIONTP": {
+    "attemptedAt": "2026-11-06T15:43:03.459Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLDURATIONTP\" (404)"
+  },
+  "I_SRVCORDTMPLITEMAPPOINTMENTTP": {
+    "attemptedAt": "2026-11-06T15:43:03.852Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLITEMAPPOINTMENTTP\" (404)"
+  },
+  "I_SRVCORDTMPLITEMDURATIONTP": {
+    "attemptedAt": "2026-11-06T15:43:04.261Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLITEMDURATIONTP\" (404)"
   }
 }
