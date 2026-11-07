@@ -86381,5 +86381,27 @@
     "tags": 8,
     "error": null,
     "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('I_SRVCCONTRARNWLPRICECALCBASIS')/$value"
+  },
+  {
+    "viewName": "C_ELECTRONICDOCUMENTREFERENCE",
+    "action": "updated",
+    "timestamp": "2026-11-07T13:46:44.916Z",
+    "source": "hub-catalog",
+    "fields": 4,
+    "associations": 0,
+    "tags": 9,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ELECTRONICDOCUMENTREFERENCE')/$value"
+  },
+  {
+    "viewName": "C_ELECTRONICDOCUMENT",
+    "action": "updated",
+    "timestamp": "2026-11-07T13:46:45.345Z",
+    "source": "hub-catalog",
+    "fields": 37,
+    "associations": 0,
+    "tags": 9,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ELECTRONICDOCUMENT')/$value"
   }
 ]
