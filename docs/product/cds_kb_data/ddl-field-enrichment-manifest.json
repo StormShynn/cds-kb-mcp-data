@@ -6343,5 +6343,2355 @@
     "attemptedAt": "2026-10-28T14:53:48.676Z",
     "found": true,
     "matched": 2
+  },
+  "C_PCCACTLTGTCOSTQRY": {
+    "attemptedAt": "2026-10-29T14:58:50.137Z",
+    "found": true,
+    "matched": 26
+  },
+  "C_PCCEVTBSDWIPVARCQRY": {
+    "attemptedAt": "2026-10-29T14:58:50.683Z",
+    "found": true,
+    "matched": 19
+  },
+  "I_PCCACTLTGTCOSTCUBE": {
+    "attemptedAt": "2026-10-29T14:58:51.195Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_PCCEVTBSDWIPVARIANCECUBE": {
+    "attemptedAt": "2026-10-29T14:58:51.775Z",
+    "found": true,
+    "matched": 20
+  },
+  "I_ACCOUNTINGSERVICEDOCUMENT": {
+    "attemptedAt": "2026-10-29T14:58:52.332Z",
+    "found": true,
+    "matched": 77
+  },
+  "I_ACCTGSERVICECONTRACTVH": {
+    "attemptedAt": "2026-10-29T14:58:52.946Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ACCTGSERVICEDOCUMENTITEMVH": {
+    "attemptedAt": "2026-10-29T14:58:53.490Z",
+    "found": true,
+    "matched": 14
+  },
+  "I_ACCTGSERVICEDOCUMENTTYPE": {
+    "attemptedAt": "2026-10-29T14:58:54.105Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_ACCTGSERVICEDOCUMENTTYPEVH": {
+    "attemptedAt": "2026-10-29T14:58:54.640Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_ACCTGSERVICEDOCUMENTVH": {
+    "attemptedAt": "2026-10-29T14:58:55.161Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_ACCTGSRVCDOCUMENTITEMBASIC": {
+    "attemptedAt": "2026-10-29T14:58:55.699Z",
+    "found": true,
+    "matched": 90
+  },
+  "C_COSTCOMPONENTASSIGNMENTDEX": {
+    "attemptedAt": "2026-10-29T14:58:56.252Z",
+    "found": true,
+    "matched": 6
+  },
+  "C_PRODCOSTESTCOSTCOMPDEX": {
+    "attemptedAt": "2026-10-29T14:58:56.757Z",
+    "found": true,
+    "matched": 23
+  },
+  "D_COSTESTCOSTCOMPONENTR": {
+    "attemptedAt": "2026-10-29T14:58:56.972Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_COSTESTCOSTCOMPONENTR\" (404)"
+  },
+  "D_COSTESTGETBRKDWNBYCOMPVIEWP": {
+    "attemptedAt": "2026-10-29T14:58:57.444Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_COSTESTGETBRKDWNBYCOMPVIEWP\" (404)"
+  },
+  "D_COSTESTGETBRKDWNBYCOMPVIEWR": {
+    "attemptedAt": "2026-10-29T14:58:57.919Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_COSTESTGETBRKDWNBYCOMPVIEWR\" (404)"
+  },
+  "D_COSTINGVARIANTEXPLAINWITHAIP": {
+    "attemptedAt": "2026-10-29T14:58:58.385Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_COSTINGVARIANTEXPLAINWITHAIP\" (404)"
+  },
+  "D_COSTINGVARIANTEXPLAINWITHAIR": {
+    "attemptedAt": "2026-10-29T14:58:58.924Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_COSTINGVARIANTEXPLAINWITHAIR\" (404)"
+  },
+  "I_COMPONENTBREAKDOWNMETHOD": {
+    "attemptedAt": "2026-10-29T14:58:59.716Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_COMPONENTBREAKDOWNMETHODTEXT": {
+    "attemptedAt": "2026-10-29T14:59:00.253Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTBREAKDOWNCOMPONENT": {
+    "attemptedAt": "2026-10-29T14:59:00.775Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_COSTBREAKDOWNCOMPONENTTEXT": {
+    "attemptedAt": "2026-10-29T14:59:01.314Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_COSTBREAKDOWNMETHOD": {
+    "attemptedAt": "2026-10-29T14:59:01.822Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_COSTBREAKDOWNSTRUCTURE": {
+    "attemptedAt": "2026-10-29T14:59:02.348Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_COSTBREAKDOWNSTRUCTURETEXT": {
+    "attemptedAt": "2026-10-29T14:59:02.959Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTCOMPONENTASSIGNMENT": {
+    "attemptedAt": "2026-10-29T14:59:03.467Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_COSTCOMPONENTSTDVH": {
+    "attemptedAt": "2026-10-29T14:59:03.982Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTCOMPONENTSTRUCTURE": {
+    "attemptedAt": "2026-10-29T14:59:04.499Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_COSTCOMPONENTSTRUCTURETEXT": {
+    "attemptedAt": "2026-10-29T14:59:05.132Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTCOMPONENTVIEW": {
+    "attemptedAt": "2026-10-29T14:59:05.631Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_COSTCOMPONENTVIEWTEXT": {
+    "attemptedAt": "2026-10-29T14:59:06.152Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTINGOVERHEADGROUP": {
+    "attemptedAt": "2026-10-29T14:59:06.666Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTINGOVERHEADGROUPTEXT": {
+    "attemptedAt": "2026-10-29T14:59:07.174Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_COSTINGTYPE": {
+    "attemptedAt": "2026-10-29T14:59:07.720Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_COSTINGTYPESTDVH": {
+    "attemptedAt": "2026-10-29T14:59:08.227Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_COSTINGTYPETEXT": {
+    "attemptedAt": "2026-10-29T14:59:08.770Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTINGVALUATIONVARIANT": {
+    "attemptedAt": "2026-10-29T14:59:09.272Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTINGVALUATIONVARIANTSTDVH": {
+    "attemptedAt": "2026-10-29T14:59:09.868Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_COSTINGVALUATIONVARTEXT": {
+    "attemptedAt": "2026-10-29T14:59:10.391Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTINGVARIANT": {
+    "attemptedAt": "2026-10-29T14:59:10.959Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_COSTINGVARIANTSTDVH": {
+    "attemptedAt": "2026-10-29T14:59:11.502Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_COSTINGVARIANTTEXT": {
+    "attemptedAt": "2026-10-29T14:59:12.014Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTINGVERSION": {
+    "attemptedAt": "2026-10-29T14:59:12.588Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_COSTINGVERSIONTEXT": {
+    "attemptedAt": "2026-10-29T14:59:13.103Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_COSTORIGINGROUP": {
+    "attemptedAt": "2026-10-29T14:59:13.615Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTORIGINGROUPSTDVH": {
+    "attemptedAt": "2026-10-29T14:59:14.251Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTORIGINGROUPSTDVH_2": {
+    "attemptedAt": "2026-10-29T14:59:14.761Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_COSTORIGINGROUPTEXT": {
+    "attemptedAt": "2026-10-30T14:52:25.726Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_COSTORIGINGROUPTEXT_2": {
+    "attemptedAt": "2026-10-30T14:52:26.205Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COSTORIGINGROUP_2": {
+    "attemptedAt": "2026-10-30T14:52:26.689Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_COSTORIGINTYPE": {
+    "attemptedAt": "2026-10-30T14:52:27.328Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_COSTORIGINTYPETEXT": {
+    "attemptedAt": "2026-10-30T14:52:27.807Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_ESTIMATEDCOSTCOSTINGRUNSTDVH": {
+    "attemptedAt": "2026-10-30T14:52:28.272Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_MATERIALCOSTESTCOSTINGRUNDEX": {
+    "attemptedAt": "2026-10-30T14:52:28.739Z",
+    "found": true,
+    "matched": 18
+  },
+  "I_PRODCOSTESTCOSTCOMPRAWDEX": {
+    "attemptedAt": "2026-10-30T14:52:29.215Z",
+    "found": true,
+    "matched": 134
+  },
+  "I_PRODCOSTINGCOSTINGVARIANTVH": {
+    "attemptedAt": "2026-10-30T14:52:29.702Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_PRODUCTCOSTESTIMATE": {
+    "attemptedAt": "2026-10-30T14:52:30.205Z",
+    "found": true,
+    "matched": 76
+  },
+  "I_PRODUCTCOSTESTIMATEDEX": {
+    "attemptedAt": "2026-10-30T14:52:30.690Z",
+    "found": true,
+    "matched": 71
+  },
+  "I_PRODUCTCOSTESTIMATEERRORLOG": {
+    "attemptedAt": "2026-10-30T14:52:31.161Z",
+    "found": true,
+    "matched": 16
+  },
+  "I_PRODUCTCOSTESTIMATEITEM": {
+    "attemptedAt": "2026-10-30T14:52:31.629Z",
+    "found": true,
+    "matched": 59
+  },
+  "I_PRODUCTCOSTESTIMATEITEMDEX": {
+    "attemptedAt": "2026-10-30T14:52:32.207Z",
+    "found": true,
+    "matched": 64
+  },
+  "I_PRODUCTCOSTESTIMATEITEMTP": {
+    "attemptedAt": "2026-10-30T14:52:32.388Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODUCTCOSTESTIMATEITEMTP\" (404)"
+  },
+  "I_PRODUCTCOSTESTIMATETP": {
+    "attemptedAt": "2026-10-30T14:52:32.877Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODUCTCOSTESTIMATETP\" (404)"
+  },
+  "I_SALESORDERITEMCOSTESTIMATE": {
+    "attemptedAt": "2026-10-30T14:52:33.609Z",
+    "found": true,
+    "matched": 55
+  },
+  "I_SALESORDERITEMCOSTESTITEM": {
+    "attemptedAt": "2026-10-30T14:52:34.083Z",
+    "found": true,
+    "matched": 49
+  },
+  "I_SLSDOCCOSTINGVARIANTVH": {
+    "attemptedAt": "2026-10-30T14:52:34.563Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SLSORDPROJVALNSTRATEGYSTDVH": {
+    "attemptedAt": "2026-10-30T14:52:35.043Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SLSORDPROJVALNSTRATEGYTEXT": {
+    "attemptedAt": "2026-10-30T14:52:35.554Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SLSORDPROJVALUATIONSTRATEGY": {
+    "attemptedAt": "2026-10-30T14:52:36.042Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CUSTMGMTDATERULE": {
+    "attemptedAt": "2026-10-30T14:52:36.545Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CUSTMGMTDATERULETEXT": {
+    "attemptedAt": "2026-10-30T14:52:37.048Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCMGMTPARTNERFUNCTION": {
+    "attemptedAt": "2026-10-30T14:52:37.522Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SRVCMGMTPARTNERFUNCTIONTEXT": {
+    "attemptedAt": "2026-10-30T14:52:38.016Z",
+    "found": true,
+    "matched": 3
+  },
+  "C_BUSINESSSOLUTIONORDERITEMDEX": {
+    "attemptedAt": "2026-10-30T14:52:38.515Z",
+    "found": true,
+    "matched": 120
+  },
+  "C_SERVICECONFIRMATIONITEMDEX": {
+    "attemptedAt": "2026-10-30T14:52:38.978Z",
+    "found": true,
+    "matched": 113
+  },
+  "C_SERVICECONTRACTITEMDEX": {
+    "attemptedAt": "2026-10-30T14:52:39.595Z",
+    "found": true,
+    "matched": 137
+  },
+  "C_SERVICEORDERITEMDEX": {
+    "attemptedAt": "2026-10-30T14:52:40.090Z",
+    "found": true,
+    "matched": 142
+  },
+  "C_SERVICEQUOTATIONDEX": {
+    "attemptedAt": "2026-10-30T14:52:40.647Z",
+    "found": true,
+    "matched": 32
+  },
+  "C_SERVICEQUOTATIONITEMDEX": {
+    "attemptedAt": "2026-10-30T14:52:41.117Z",
+    "found": true,
+    "matched": 38
+  },
+  "C_BSORDGLACCTLINEITEMQRY": {
+    "attemptedAt": "2026-10-30T14:52:41.595Z",
+    "found": true,
+    "matched": 38
+  },
+  "C_BUSINESSSOLUTIONORDERQRY": {
+    "attemptedAt": "2026-10-30T14:52:42.070Z",
+    "found": true,
+    "matched": 25
+  },
+  "C_BUSSOLNORDITMFINANCIALQ": {
+    "attemptedAt": "2026-10-30T14:52:42.591Z",
+    "found": true,
+    "matched": 43
+  },
+  "C_SERVICEORDERQUERY": {
+    "attemptedAt": "2026-10-30T14:52:43.045Z",
+    "found": true,
+    "matched": 25
+  },
+  "C_UPCGSRVCCONTRITEMQUERY": {
+    "attemptedAt": "2026-10-30T14:52:43.524Z",
+    "found": true,
+    "matched": 41
+  },
+  "I_BSORDGLACCTLINEITEMCUBE": {
+    "attemptedAt": "2026-10-30T14:52:44.012Z",
+    "found": true,
+    "matched": 40
+  },
+  "I_BUSINESSSOLUTIONORDERCUBE": {
+    "attemptedAt": "2026-10-30T14:52:44.494Z",
+    "found": true,
+    "matched": 25
+  },
+  "I_BUSSOLNORDBASICFINANCIAL": {
+    "attemptedAt": "2026-10-30T14:52:44.991Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_BUSSOLNORDITMBASICFINANCIAL": {
+    "attemptedAt": "2026-10-30T14:52:45.523Z",
+    "found": true,
+    "matched": 41
+  },
+  "I_BUSSOLNORDITMFINANCIALCUBE": {
+    "attemptedAt": "2026-10-30T14:52:46.061Z",
+    "found": true,
+    "matched": 43
+  },
+  "I_SERVICECONTRACTCUBE_2": {
+    "attemptedAt": "2026-10-30T14:52:46.536Z",
+    "found": true,
+    "matched": 42
+  },
+  "I_SERVICEORDERCUBE_2": {
+    "attemptedAt": "2026-10-30T14:52:47.018Z",
+    "found": true,
+    "matched": 44
+  },
+  "I_SRVCMGMTORGANIZATIONUNIT": {
+    "attemptedAt": "2026-10-30T14:52:47.496Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_SRVCMGMTORGANIZATIONUNITTEXT": {
+    "attemptedAt": "2026-10-30T14:52:47.980Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_UPCGSRVCCONTRITEMCUBE": {
+    "attemptedAt": "2026-10-30T14:52:48.473Z",
+    "found": true,
+    "matched": 45
+  },
+  "I_SRVCDOCCREDITSTATUS": {
+    "attemptedAt": "2026-10-31T14:20:19.022Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SRVCDOCCREDITSTATUSTEXT": {
+    "attemptedAt": "2026-10-31T14:20:19.515Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SRVCDOCITEMCREDITSTATUS": {
+    "attemptedAt": "2026-10-31T14:20:19.989Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SRVCDOCITEMCREDITSTATUSTEXT": {
+    "attemptedAt": "2026-10-31T14:20:20.558Z",
+    "found": true,
+    "matched": 4
+  },
+  "D_SERVICECONFIRMATIONCHANGED": {
+    "attemptedAt": "2026-10-31T14:20:20.731Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICECONFIRMATIONCHANGED\" (404)"
+  },
+  "D_SERVICECONFIRMATIONCREATED": {
+    "attemptedAt": "2026-10-31T14:20:21.180Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICECONFIRMATIONCREATED\" (404)"
+  },
+  "D_SERVICECONFIRMATIONDELETED": {
+    "attemptedAt": "2026-10-31T14:20:21.573Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICECONFIRMATIONDELETED\" (404)"
+  },
+  "D_SERVICECONTRACTCHANGED": {
+    "attemptedAt": "2026-10-31T14:20:21.965Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICECONTRACTCHANGED\" (404)"
+  },
+  "D_SERVICECONTRACTCREATED": {
+    "attemptedAt": "2026-10-31T14:20:22.368Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICECONTRACTCREATED\" (404)"
+  },
+  "D_SERVICEORDERCHANGED": {
+    "attemptedAt": "2026-10-31T14:20:22.826Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERCHANGED\" (404)"
+  },
+  "D_SERVICEORDERCHGDWHENRELEASED": {
+    "attemptedAt": "2026-10-31T14:20:23.217Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERCHGDWHENRELEASED\" (404)"
+  },
+  "D_SERVICEORDERCOMPLETED": {
+    "attemptedAt": "2026-10-31T14:20:23.624Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERCOMPLETED\" (404)"
+  },
+  "D_SERVICEORDERCREATED": {
+    "attemptedAt": "2026-10-31T14:20:24.026Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERCREATED\" (404)"
+  },
+  "D_SERVICEORDERDELETED": {
+    "attemptedAt": "2026-10-31T14:20:24.418Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERDELETED\" (404)"
+  },
+  "D_SERVICEORDERRELEASED": {
+    "attemptedAt": "2026-10-31T14:20:24.847Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERRELEASED\" (404)"
+  },
+  "D_SERVICEORDERRELEASEREVOKED": {
+    "attemptedAt": "2026-10-31T14:20:25.247Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERRELEASEREVOKED\" (404)"
+  },
+  "D_SERVICEORDERTMPLCHANGED": {
+    "attemptedAt": "2026-10-31T14:20:25.643Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERTMPLCHANGED\" (404)"
+  },
+  "D_SERVICEORDERTMPLCOMPLETED": {
+    "attemptedAt": "2026-10-31T14:20:26.049Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERTMPLCOMPLETED\" (404)"
+  },
+  "D_SERVICEORDERTMPLCREATED": {
+    "attemptedAt": "2026-10-31T14:20:26.446Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERTMPLCREATED\" (404)"
+  },
+  "D_SERVICEORDERTMPLDELETED": {
+    "attemptedAt": "2026-10-31T14:20:26.897Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERTMPLDELETED\" (404)"
+  },
+  "D_SERVICEORDERTMPLRELEASED": {
+    "attemptedAt": "2026-10-31T14:20:27.291Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEORDERTMPLRELEASED\" (404)"
+  },
+  "D_SRVCORDTMPLRELEASEREVOKED": {
+    "attemptedAt": "2026-10-31T14:20:27.743Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SRVCORDTMPLRELEASEREVOKED\" (404)"
+  },
+  "I_SUBSCRPNCONTRDURNUNIT": {
+    "attemptedAt": "2026-10-31T14:20:28.444Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SUBSCRPNCONTRDURNUNITT": {
+    "attemptedAt": "2026-10-31T14:20:28.886Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SUBSCRPNCONTRDURNUNITVH": {
+    "attemptedAt": "2026-10-31T14:20:29.326Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_INHOUSEREPAIR": {
+    "attemptedAt": "2026-10-31T14:20:29.834Z",
+    "found": true,
+    "matched": 28
+  },
+  "I_INHOUSEREPAIRITEM": {
+    "attemptedAt": "2026-10-31T14:20:30.305Z",
+    "found": true,
+    "matched": 28
+  },
+  "I_INHREPAIRITEMAVAILYSTATUS": {
+    "attemptedAt": "2026-10-31T14:20:30.869Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_INHREPAIRITEMAVAILYSTATUSTXT": {
+    "attemptedAt": "2026-10-31T14:20:31.297Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_INHREPAIRITEMSTATUS": {
+    "attemptedAt": "2026-10-31T14:20:31.787Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_INHREPAIRITEMSTATUSTEXT": {
+    "attemptedAt": "2026-10-31T14:20:32.252Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_INHREPAIRSTATUS": {
+    "attemptedAt": "2026-10-31T14:20:32.691Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_INHREPAIRSTATUSTEXT": {
+    "attemptedAt": "2026-10-31T14:20:33.138Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_INHREPAIRTRANSACTIONRELATION": {
+    "attemptedAt": "2026-10-31T14:20:33.659Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_SERVICECHECKLISTINSTANCE": {
+    "attemptedAt": "2026-10-31T14:20:34.131Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_SERVICECHECKLISTTEMPLATE": {
+    "attemptedAt": "2026-10-31T14:20:34.653Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_SRVCCHECKLISTINSTANCEENHCD": {
+    "attemptedAt": "2026-10-31T14:20:35.083Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_SRVCCHECKLISTTEMPLATEENHCD": {
+    "attemptedAt": "2026-10-31T14:20:35.533Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_SRVCCHKLSTINSTCETEXT": {
+    "attemptedAt": "2026-10-31T14:20:36.041Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SRVCCHKLSTINSTCEVALUE": {
+    "attemptedAt": "2026-10-31T14:20:36.566Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_SRVCCHKLSTTMPLELEMENT": {
+    "attemptedAt": "2026-10-31T14:20:37.019Z",
+    "found": true,
+    "matched": 47
+  },
+  "I_SRVCCHKLSTTMPLELMNTTEXT": {
+    "attemptedAt": "2026-10-31T14:20:37.457Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_SRVCCHKLSTTMPLTEXT": {
+    "attemptedAt": "2026-10-31T14:20:37.885Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_BILLGREQITMSETTLMTSTATUS": {
+    "attemptedAt": "2026-10-31T14:20:38.340Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_BILLGREQITMSETTLMTSTATUSTEXT": {
+    "attemptedAt": "2026-10-31T14:20:38.797Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_BILLINGREQUESTITEM": {
+    "attemptedAt": "2026-10-31T14:20:39.223Z",
+    "found": true,
+    "matched": 20
+  },
+  "I_BUSINESSACTIVITYCATEGORY": {
+    "attemptedAt": "2026-10-31T14:20:39.751Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_BUSINESSACTIVITYCATEGORYTEXT": {
+    "attemptedAt": "2026-11-01T14:46:44.782Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_BUSINESSSOLUTIONORDER": {
+    "attemptedAt": "2026-11-01T14:46:45.473Z",
+    "found": true,
+    "matched": 40
+  },
+  "I_BUSINESSSOLUTIONORDERENHCD": {
+    "attemptedAt": "2026-11-01T14:46:45.984Z",
+    "found": true,
+    "matched": 41
+  },
+  "I_BUSINESSSOLUTIONORDERITEM": {
+    "attemptedAt": "2026-11-01T14:46:46.492Z",
+    "found": true,
+    "matched": 107
+  },
+  "I_BUSSOLNORDITEMPRICEELEMENT": {
+    "attemptedAt": "2026-11-01T14:46:47.097Z",
+    "found": true,
+    "matched": 47
+  },
+  "I_BUSSOLUTIONORDERITEMENHCD": {
+    "attemptedAt": "2026-11-01T14:46:47.639Z",
+    "found": true,
+    "matched": 115
+  },
+  "I_CUSTMGMTBUSOBJTYPE": {
+    "attemptedAt": "2026-11-01T14:46:48.233Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CUSTMGMTBUSOBJTYPETEXT": {
+    "attemptedAt": "2026-11-01T14:46:48.750Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CUSTMGMTITMBUSOBJTYPE": {
+    "attemptedAt": "2026-11-01T14:46:49.292Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CUSTMGMTITMBUSOBJTYPETEXT": {
+    "attemptedAt": "2026-11-01T14:46:49.905Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CUSTMGMTPARTNER": {
+    "attemptedAt": "2026-11-01T14:46:50.428Z",
+    "found": true,
+    "matched": 12
+  },
+  "I_RESPONSEPROFILE": {
+    "attemptedAt": "2026-11-01T14:46:50.915Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_RESPONSEPROFILETEXT": {
+    "attemptedAt": "2026-11-01T14:46:51.505Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SALESORGANIZATIONUNIT": {
+    "attemptedAt": "2026-11-01T14:46:52.036Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SALESORGANIZATIONUNITTEXT": {
+    "attemptedAt": "2026-11-01T14:46:52.538Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_SERVICECANCELLATIONPARTY": {
+    "attemptedAt": "2026-11-01T14:46:53.046Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SERVICECANCELLATIONPARTYTEXT": {
+    "attemptedAt": "2026-11-01T14:46:53.547Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SERVICECANCELLATIONREASON": {
+    "attemptedAt": "2026-11-01T14:46:54.047Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SERVICECANCLNREASONTEXT": {
+    "attemptedAt": "2026-11-01T14:46:54.556Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SERVICECONTRACT": {
+    "attemptedAt": "2026-11-01T14:46:55.064Z",
+    "found": true,
+    "matched": 56
+  },
+  "I_SERVICECONTRACTCANCLNSTS": {
+    "attemptedAt": "2026-11-01T14:46:55.605Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SERVICECONTRACTCANCLNSTSTXT": {
+    "attemptedAt": "2026-11-01T14:46:56.110Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SERVICECONTRACTENHCD": {
+    "attemptedAt": "2026-11-01T14:46:56.685Z",
+    "found": true,
+    "matched": 60
+  },
+  "I_SERVICECONTRACTITEM": {
+    "attemptedAt": "2026-11-01T14:46:57.184Z",
+    "found": true,
+    "matched": 86
+  },
+  "I_SERVICECONTRACTITEMENHCD": {
+    "attemptedAt": "2026-11-01T14:46:57.721Z",
+    "found": true,
+    "matched": 94
+  },
+  "I_SERVICECONTRACTTYPESTDVH": {
+    "attemptedAt": "2026-11-01T14:46:58.211Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SERVICEDOCBILLINGSTATUS": {
+    "attemptedAt": "2026-11-01T14:46:58.702Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SERVICEDOCBILLINGSTATUSTEXT": {
+    "attemptedAt": "2026-11-01T14:46:59.213Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SERVICEDOCERRORSTATUS": {
+    "attemptedAt": "2026-11-01T14:46:59.714Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SERVICEDOCERRORSTATUSTEXT": {
+    "attemptedAt": "2026-11-01T14:47:00.310Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SERVICEDOCITEMCATEGORY": {
+    "attemptedAt": "2026-11-01T14:47:00.838Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_SERVICEDOCITEMCATEGORYTEXT": {
+    "attemptedAt": "2026-11-01T14:47:01.343Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SERVICEDOCITEMNOTE": {
+    "attemptedAt": "2026-11-01T14:47:01.851Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_SERVICEDOCITEMTYPESLSSTTG": {
+    "attemptedAt": "2026-11-01T14:47:02.457Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SERVICEDOCOPENSTATUS": {
+    "attemptedAt": "2026-11-01T14:47:02.950Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SERVICEDOCOPENSTATUSTEXT": {
+    "attemptedAt": "2026-11-01T14:47:03.460Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SERVICEDOCPROBLEMCATEGORY": {
+    "attemptedAt": "2026-11-01T14:47:03.946Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SERVICEDOCUMENT": {
+    "attemptedAt": "2026-11-01T14:47:04.457Z",
+    "found": true,
+    "matched": 125
+  },
+  "I_SERVICEDOCUMENTENHCD": {
+    "attemptedAt": "2026-11-01T14:47:05.073Z",
+    "found": true,
+    "matched": 131
+  },
+  "I_SERVICEDOCUMENTITEM": {
+    "attemptedAt": "2026-11-01T14:47:05.627Z",
+    "found": true,
+    "matched": 292
+  },
+  "I_SERVICEDOCUMENTITEMENHCD": {
+    "attemptedAt": "2026-11-01T14:47:06.130Z",
+    "found": true,
+    "matched": 301
+  },
+  "I_SERVICEDOCUMENTITEMPRDCSSR_2": {
+    "attemptedAt": "2026-11-01T14:47:06.631Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_SERVICEDOCUMENTITEMPRDCSSR_3": {
+    "attemptedAt": "2026-11-01T14:47:07.168Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_SERVICEDOCUMENTITEMSUCCSSR_2": {
+    "attemptedAt": "2026-11-01T14:47:07.723Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_SERVICEDOCUMENTITEMSUCCSSR_3": {
+    "attemptedAt": "2026-11-01T14:47:08.233Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_SERVICEDOCUMENTITEM_2": {
+    "attemptedAt": "2026-11-01T14:47:08.753Z",
+    "found": true,
+    "matched": 190
+  },
+  "I_SERVICEDOCUMENTPREDECESSOR": {
+    "attemptedAt": "2026-11-01T14:47:09.279Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_SERVICEDOCUMENTPRIORITY": {
+    "attemptedAt": "2026-11-02T17:53:23.652Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SERVICEDOCUMENTPRIORITYTEXT": {
+    "attemptedAt": "2026-11-02T17:53:24.123Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SERVICEDOCUMENTREFOBJECT": {
+    "attemptedAt": "2026-11-02T17:53:24.686Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_SERVICEDOCUMENTSTATUS": {
+    "attemptedAt": "2026-11-02T17:53:25.179Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SERVICEDOCUMENTSTATUSTEXT": {
+    "attemptedAt": "2026-11-02T17:53:25.668Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SERVICEDOCUMENTSUCCESSOR": {
+    "attemptedAt": "2026-11-02T17:53:26.122Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_SERVICEDOCUMENTTYPE": {
+    "attemptedAt": "2026-11-02T17:53:26.595Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_SERVICEDOCUMENTTYPETEXT": {
+    "attemptedAt": "2026-11-02T17:53:27.144Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SERVICEDOCUMENT_2": {
+    "attemptedAt": "2026-11-02T17:53:27.597Z",
+    "found": true,
+    "matched": 93
+  },
+  "I_SERVICEPROFILE": {
+    "attemptedAt": "2026-11-02T17:53:28.074Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SERVICEPROFILETEXT": {
+    "attemptedAt": "2026-11-02T17:53:28.549Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCCANCLNPROCEDURE": {
+    "attemptedAt": "2026-11-02T17:53:29.011Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SRVCCANCLNPROCEDURETEXT": {
+    "attemptedAt": "2026-11-02T17:53:29.491Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCCONTRITEMPRICEELEMENT": {
+    "attemptedAt": "2026-11-02T17:53:30.107Z",
+    "found": true,
+    "matched": 47
+  },
+  "I_SRVCCONTRITEMWITHAUTORENEWAL": {
+    "attemptedAt": "2026-11-02T17:53:30.565Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_SRVCDOCAPPOINTMENTTYPE": {
+    "attemptedAt": "2026-11-02T17:53:31.021Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SRVCDOCAPPOINTMENTTYPETEXT": {
+    "attemptedAt": "2026-11-02T17:53:31.501Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCDOCBYDOCUMENTTYPE": {
+    "attemptedAt": "2026-11-02T17:53:31.966Z",
+    "found": true,
+    "matched": 75
+  },
+  "I_SRVCDOCDELIVERYSTATUS": {
+    "attemptedAt": "2026-11-02T17:53:32.444Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SRVCDOCDELIVERYSTATUSTEXT": {
+    "attemptedAt": "2026-11-02T17:53:32.990Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SRVCDOCDURATIONTYPE": {
+    "attemptedAt": "2026-11-02T17:53:33.445Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SRVCDOCDURATIONTYPETEXT": {
+    "attemptedAt": "2026-11-02T17:53:33.910Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCDOCESCALATION": {
+    "attemptedAt": "2026-11-02T17:53:34.369Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SRVCDOCESCALATIONTEXT": {
+    "attemptedAt": "2026-11-02T17:53:34.848Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCDOCGOODSISSUESTATUS": {
+    "attemptedAt": "2026-11-02T17:53:35.398Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SRVCDOCGOODSISSUESTATUSTEXT": {
+    "attemptedAt": "2026-11-02T17:53:35.875Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCDOCHEADERLONGTEXT": {
+    "attemptedAt": "2026-11-02T17:53:36.337Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_SRVCDOCITEMBYDOCUMENTTYPE": {
+    "attemptedAt": "2026-11-02T17:53:36.857Z",
+    "found": true,
+    "matched": 81
+  },
+  "I_SRVCDOCITEMLONGTEXT": {
+    "attemptedAt": "2026-11-02T17:53:37.332Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_SRVCDOCITEMPRICEELEMENT": {
+    "attemptedAt": "2026-11-02T17:53:37.793Z",
+    "found": true,
+    "matched": 48
+  },
+  "I_SRVCDOCITEMRELATIONSHIPS": {
+    "attemptedAt": "2026-11-02T17:53:38.261Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_SRVCDOCLIFECYCLESTATUS": {
+    "attemptedAt": "2026-11-02T17:53:38.800Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SRVCDOCLIFECYCLESTATUSTEXT": {
+    "attemptedAt": "2026-11-02T17:53:39.265Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCDOCPAYMENTMETHOD": {
+    "attemptedAt": "2026-11-02T17:53:39.774Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SRVCDOCPROBLEMCATEGORYTEXT": {
+    "attemptedAt": "2026-11-02T17:53:40.282Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCDOCQUOTATIONSTATUS": {
+    "attemptedAt": "2026-11-02T17:53:40.737Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SRVCDOCQUOTATIONSTATUSTEXT": {
+    "attemptedAt": "2026-11-02T17:53:41.192Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCDOCQUOTATIONSTATUST_2": {
+    "attemptedAt": "2026-11-02T17:53:41.644Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCDOCQUOTATIONSTATUS_2": {
+    "attemptedAt": "2026-11-02T17:53:42.114Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SRVCDOCREJECTIONSTATUS": {
+    "attemptedAt": "2026-11-02T17:53:42.589Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SRVCDOCREJECTIONSTATUSTEXT": {
+    "attemptedAt": "2026-11-02T17:53:43.055Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCDOCRELEASESTATUS": {
+    "attemptedAt": "2026-11-02T17:53:43.674Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SRVCDOCRELEASESTATUSTEXT": {
+    "attemptedAt": "2026-11-02T17:53:44.152Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCDOCRELFORBILLGSTS": {
+    "attemptedAt": "2026-11-02T17:53:44.708Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SRVCDOCRELFORBILLGSTSTEXT": {
+    "attemptedAt": "2026-11-02T17:53:45.162Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCITEMRELATIONSHIPTYPE": {
+    "attemptedAt": "2026-11-02T17:53:45.639Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SRVCITEMRELATIONSHIPTYPETEXT": {
+    "attemptedAt": "2026-11-02T17:53:46.090Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SRVCMGMTPRODUCTHIERARCHY": {
+    "attemptedAt": "2026-11-03T15:53:29.471Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SRVCMGMTPRODUCTHIERARCHYTEXT": {
+    "attemptedAt": "2026-11-03T15:53:29.976Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCORDITMCONFRELEVANCE": {
+    "attemptedAt": "2026-11-03T15:53:30.542Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SRVCORDITMCONFRELEVANCETEXT": {
+    "attemptedAt": "2026-11-03T15:53:31.029Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCQTANACCEPTANCESTATUS": {
+    "attemptedAt": "2026-11-03T15:53:31.525Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SRVCQTANACCEPTANCESTATUSTEXT": {
+    "attemptedAt": "2026-11-03T15:53:32.083Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCREFERENCEOBJECTTYPE": {
+    "attemptedAt": "2026-11-03T15:53:32.574Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SRVCREFERENCEOBJECTTYPETEXT": {
+    "attemptedAt": "2026-11-03T15:53:33.194Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCSEPAMANDATERELEVANCE": {
+    "attemptedAt": "2026-11-03T15:53:33.682Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SRVCSEPAMANDATERELEVANCETEXT": {
+    "attemptedAt": "2026-11-03T15:53:34.172Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SUBSCRIPTIONBILLINGCYCLE": {
+    "attemptedAt": "2026-11-03T15:53:34.744Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SUBSCRIPTIONBILLINGCYCLETEXT": {
+    "attemptedAt": "2026-11-03T15:53:35.244Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SUBSCRPNBILLGCNDNCALCTYPE": {
+    "attemptedAt": "2026-11-03T15:53:35.740Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SUBSCRPNBILLGCNDNCALCTYPETXT": {
+    "attemptedAt": "2026-11-03T15:53:36.219Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SUBSCRPNBILLGPRCGSCALETYPE": {
+    "attemptedAt": "2026-11-03T15:53:36.741Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SUBSCRPNBILLGPRCGSCTYPETEXT": {
+    "attemptedAt": "2026-11-03T15:53:37.226Z",
+    "found": true,
+    "matched": 4
+  },
+  "C_BUSSOLNORDENTPROJDTESITN1": {
+    "attemptedAt": "2026-11-03T15:53:37.755Z",
+    "found": true,
+    "matched": 22
+  },
+  "C_BUSSOLNORDENTPROJECTITMSITN": {
+    "attemptedAt": "2026-11-03T15:53:38.345Z",
+    "found": true,
+    "matched": 19
+  },
+  "D_BSORDORDITMSETTODISTRINCRRT": {
+    "attemptedAt": "2026-11-03T15:53:38.538Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_BSORDORDITMSETTODISTRINCRRT\" (404)"
+  },
+  "D_BUSSOLNORDCHANGED": {
+    "attemptedAt": "2026-11-03T15:53:39.002Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_BUSSOLNORDCHANGED\" (404)"
+  },
+  "D_BUSSOLNORDCREATED": {
+    "attemptedAt": "2026-11-03T15:53:39.439Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_BUSSOLNORDCREATED\" (404)"
+  },
+  "D_BUSSOLNORDDELETED": {
+    "attemptedAt": "2026-11-03T15:53:39.872Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_BUSSOLNORDDELETED\" (404)"
+  },
+  "D_BUSSOLNORDERRORRESOLVED": {
+    "attemptedAt": "2026-11-03T15:53:40.305Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_BUSSOLNORDERRORRESOLVED\" (404)"
+  },
+  "D_BUSSOLNORDFUPTRANSCREATED": {
+    "attemptedAt": "2026-11-03T15:53:40.735Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_BUSSOLNORDFUPTRANSCREATED\" (404)"
+  },
+  "D_BUSSOLNORDITMCHANGED": {
+    "attemptedAt": "2026-11-03T15:53:41.183Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_BUSSOLNORDITMCHANGED\" (404)"
+  },
+  "D_BUSSOLNORDITMCREATED": {
+    "attemptedAt": "2026-11-03T15:53:41.624Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_BUSSOLNORDITMCREATED\" (404)"
+  },
+  "D_BUSSOLNORDITMDELETED": {
+    "attemptedAt": "2026-11-03T15:53:42.062Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_BUSSOLNORDITMDELETED\" (404)"
+  },
+  "D_BUSSOLNORDORDITMSETTODISTRD": {
+    "attemptedAt": "2026-11-03T15:53:42.509Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_BUSSOLNORDORDITMSETTODISTRD\" (404)"
+  },
+  "I_BSORDITMPRDCSSRSRVCCONTRTP": {
+    "attemptedAt": "2026-11-03T15:53:42.949Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BSORDITMPRDCSSRSRVCCONTRTP\" (404)"
+  },
+  "I_BSORDITMRATEELEMENTTP": {
+    "attemptedAt": "2026-11-03T15:53:43.391Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BSORDITMRATEELEMENTTP\" (404)"
+  },
+  "I_BSORDITMSUBSCRPNPARAMTP_2": {
+    "attemptedAt": "2026-11-03T15:53:43.827Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BSORDITMSUBSCRPNPARAMTP_2\" (404)"
+  },
+  "I_BSORDITMSUBSCRPNPRICEAGRMTTP": {
+    "attemptedAt": "2026-11-03T15:53:44.270Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BSORDITMSUBSCRPNPRICEAGRMTTP\" (404)"
+  },
+  "I_BSORDITMSUBSCRPNPRICEPARAMTP": {
+    "attemptedAt": "2026-11-03T15:53:44.718Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BSORDITMSUBSCRPNPRICEPARAMTP\" (404)"
+  },
+  "I_BSORDPRDCSSRSRVCCONTRTP": {
+    "attemptedAt": "2026-11-03T15:53:45.153Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BSORDPRDCSSRSRVCCONTRTP\" (404)"
+  },
+  "I_BUSINESSSOLUTIONORDERITEMTP": {
+    "attemptedAt": "2026-11-03T15:53:45.660Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSINESSSOLUTIONORDERITEMTP\" (404)"
+  },
+  "I_BUSINESSSOLUTIONORDERTP": {
+    "attemptedAt": "2026-11-03T15:53:46.092Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSINESSSOLUTIONORDERTP\" (404)"
+  },
+  "I_BUSSOLNORDAPPOINTMENTTP": {
+    "attemptedAt": "2026-11-03T15:53:46.594Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDAPPOINTMENTTP\" (404)"
+  },
+  "I_BUSSOLNORDFUPENTPROJECTTP": {
+    "attemptedAt": "2026-11-03T15:53:47.033Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDFUPENTPROJECTTP\" (404)"
+  },
+  "I_BUSSOLNORDFUPSALESORDERTP": {
+    "attemptedAt": "2026-11-03T15:53:47.548Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDFUPSALESORDERTP\" (404)"
+  },
+  "I_BUSSOLNORDFUPSRVCCONTRTP": {
+    "attemptedAt": "2026-11-03T15:53:48.020Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDFUPSRVCCONTRTP\" (404)"
+  },
+  "I_BUSSOLNORDFUPSRVCORDTP": {
+    "attemptedAt": "2026-11-03T15:53:48.485Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDFUPSRVCORDTP\" (404)"
+  },
+  "I_BUSSOLNORDFUPSUBSCRPNTP": {
+    "attemptedAt": "2026-11-03T15:53:48.933Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDFUPSUBSCRPNTP\" (404)"
+  },
+  "I_BUSSOLNORDITEMLONGTEXTTP": {
+    "attemptedAt": "2026-11-03T15:53:49.370Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDITEMLONGTEXTTP\" (404)"
+  },
+  "I_BUSSOLNORDITEMRELATIONSHIPTP": {
+    "attemptedAt": "2026-11-03T15:53:49.804Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDITEMRELATIONSHIPTP\" (404)"
+  },
+  "I_BUSSOLNORDITMAPPOINTMENTTP": {
+    "attemptedAt": "2026-11-03T15:53:50.282Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDITMAPPOINTMENTTP\" (404)"
+  },
+  "I_BUSSOLNORDITMCONFIGURATIONTP": {
+    "attemptedAt": "2026-11-03T15:53:50.721Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDITMCONFIGURATIONTP\" (404)"
+  },
+  "I_BUSSOLNORDITMDURATIONTP": {
+    "attemptedAt": "2026-11-03T15:53:51.151Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDITMDURATIONTP\" (404)"
+  },
+  "I_BUSSOLNORDITMFUPENTPROJECTTP": {
+    "attemptedAt": "2026-11-04T15:59:11.658Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDITMFUPENTPROJECTTP\" (404)"
+  },
+  "I_BUSSOLNORDITMFUPSALESORDERTP": {
+    "attemptedAt": "2026-11-04T15:59:12.156Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDITMFUPSALESORDERTP\" (404)"
+  },
+  "I_BUSSOLNORDITMFUPSRVCCONTRTP": {
+    "attemptedAt": "2026-11-04T15:59:12.648Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDITMFUPSRVCCONTRTP\" (404)"
+  },
+  "I_BUSSOLNORDITMFUPSRVCORDTP": {
+    "attemptedAt": "2026-11-04T15:59:13.151Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDITMFUPSRVCORDTP\" (404)"
+  },
+  "I_BUSSOLNORDITMFUPSUBSCRPNTP": {
+    "attemptedAt": "2026-11-04T15:59:13.598Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDITMFUPSUBSCRPNTP\" (404)"
+  },
+  "I_BUSSOLNORDITMPARTNERADDRTP": {
+    "attemptedAt": "2026-11-04T15:59:14.104Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDITMPARTNERADDRTP\" (404)"
+  },
+  "I_BUSSOLNORDITMPARTNERTP": {
+    "attemptedAt": "2026-11-04T15:59:14.546Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDITMPARTNERTP\" (404)"
+  },
+  "I_BUSSOLNORDITMPRICEELEMENTTP": {
+    "attemptedAt": "2026-11-04T15:59:14.992Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDITMPRICEELEMENTTP\" (404)"
+  },
+  "I_BUSSOLNORDITMPRODUCTTP": {
+    "attemptedAt": "2026-11-04T15:59:15.488Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDITMPRODUCTTP\" (404)"
+  },
+  "I_BUSSOLNORDITMREFOBJECTTP": {
+    "attemptedAt": "2026-11-04T15:59:15.934Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDITMREFOBJECTTP\" (404)"
+  },
+  "I_BUSSOLNORDITMSCHEDULELINETP": {
+    "attemptedAt": "2026-11-04T15:59:16.403Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDITMSCHEDULELINETP\" (404)"
+  },
+  "I_BUSSOLNORDITMUSERSTATUSTP": {
+    "attemptedAt": "2026-11-04T15:59:16.851Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDITMUSERSTATUSTP\" (404)"
+  },
+  "I_BUSSOLNORDLONGTEXTTP": {
+    "attemptedAt": "2026-11-04T15:59:17.326Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDLONGTEXTTP\" (404)"
+  },
+  "I_BUSSOLNORDPARTNERADDRESSTP": {
+    "attemptedAt": "2026-11-04T15:59:17.778Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDPARTNERADDRESSTP\" (404)"
+  },
+  "I_BUSSOLNORDPARTNERTP": {
+    "attemptedAt": "2026-11-04T15:59:18.242Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDPARTNERTP\" (404)"
+  },
+  "I_BUSSOLNORDPRICEELEMENTTP": {
+    "attemptedAt": "2026-11-04T15:59:18.739Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDPRICEELEMENTTP\" (404)"
+  },
+  "I_BUSSOLNORDUSERSTATUSTP": {
+    "attemptedAt": "2026-11-04T15:59:19.197Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_BUSSOLNORDUSERSTATUSTP\" (404)"
+  },
+  "I_SRVCSUBSCRPNPARAMVALTYPE": {
+    "attemptedAt": "2026-11-04T15:59:19.999Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SRVCSUBSCRPNPARAMVALTYPETEXT": {
+    "attemptedAt": "2026-11-04T15:59:20.561Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SRVCSUBSCRPNRATEELMNTTYPE": {
+    "attemptedAt": "2026-11-04T15:59:21.091Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SRVCSUBSCRPNRATEELMNTTYPETXT": {
+    "attemptedAt": "2026-11-04T15:59:21.628Z",
+    "found": true,
+    "matched": 3
+  },
+  "C_SERVICECONTRACTSTATUSVH": {
+    "attemptedAt": "2026-11-04T15:59:22.148Z",
+    "found": true,
+    "matched": 2
+  },
+  "C_SRVCCONTRPRICINGTYPEVH": {
+    "attemptedAt": "2026-11-04T15:59:22.684Z",
+    "found": true,
+    "matched": 1
+  },
+  "D_SERVICECONTRACTITEMCHANGED": {
+    "attemptedAt": "2026-11-04T15:59:22.872Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICECONTRACTITEMCHANGED\" (404)"
+  },
+  "D_SERVICECONTRACTITEMCREATED": {
+    "attemptedAt": "2026-11-04T15:59:23.358Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICECONTRACTITEMCREATED\" (404)"
+  },
+  "D_SERVICECONTRACTITEMDELETED": {
+    "attemptedAt": "2026-11-04T15:59:23.804Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICECONTRACTITEMDELETED\" (404)"
+  },
+  "D_SRVCCONTRACTPERFORMRENEWALP": {
+    "attemptedAt": "2026-11-04T15:59:24.264Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SRVCCONTRACTPERFORMRENEWALP\" (404)"
+  },
+  "D_SRVCCONTRCHANGESOLDTOPARTYP": {
+    "attemptedAt": "2026-11-04T15:59:24.719Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SRVCCONTRCHANGESOLDTOPARTYP\" (404)"
+  },
+  "D_SRVCCONTRITEMPERFORMRENEWALP": {
+    "attemptedAt": "2026-11-04T15:59:25.163Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SRVCCONTRITEMPERFORMRENEWALP\" (404)"
+  },
+  "D_SRVCCONTRITEMUPDATEPRICESP": {
+    "attemptedAt": "2026-11-04T15:59:25.613Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SRVCCONTRITEMUPDATEPRICESP\" (404)"
+  },
+  "D_SRVCCONTRUPDATEPRICESP": {
+    "attemptedAt": "2026-11-04T15:59:26.055Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SRVCCONTRUPDATEPRICESP\" (404)"
+  },
+  "I_SERVICECONTRACTITEMTP": {
+    "attemptedAt": "2026-11-04T15:59:26.499Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SERVICECONTRACTITEMTP\" (404)"
+  },
+  "I_SERVICECONTRACTITEMTP_2": {
+    "attemptedAt": "2026-11-04T15:59:26.957Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SERVICECONTRACTITEMTP_2\" (404)"
+  },
+  "I_SERVICECONTRACTTP": {
+    "attemptedAt": "2026-11-04T15:59:27.416Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SERVICECONTRACTTP\" (404)"
+  },
+  "I_SERVICECONTRACTTP_2": {
+    "attemptedAt": "2026-11-04T15:59:27.860Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SERVICECONTRACTTP_2\" (404)"
+  },
+  "I_SRVCCONTRAPPOINTMENTTP": {
+    "attemptedAt": "2026-11-04T15:59:28.299Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONTRAPPOINTMENTTP\" (404)"
+  },
+  "I_SRVCCONTRDURATIONTP": {
+    "attemptedAt": "2026-11-04T15:59:28.760Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONTRDURATIONTP\" (404)"
+  },
+  "I_SRVCCONTRFUPBILLGDOCTP": {
+    "attemptedAt": "2026-11-04T15:59:29.243Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONTRFUPBILLGDOCTP\" (404)"
+  },
+  "I_SRVCCONTRFUPSRVCORDTP": {
+    "attemptedAt": "2026-11-04T15:59:29.679Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONTRFUPSRVCORDTP\" (404)"
+  },
+  "I_SRVCCONTRITEMAPPOINTMENTTP": {
+    "attemptedAt": "2026-11-04T15:59:30.126Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONTRITEMAPPOINTMENTTP\" (404)"
+  },
+  "I_SRVCCONTRITEMDURATIONTP": {
+    "attemptedAt": "2026-11-04T15:59:30.583Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONTRITEMDURATIONTP\" (404)"
+  },
+  "I_SRVCCONTRITEMPARTNERTP": {
+    "attemptedAt": "2026-11-04T15:59:31.053Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONTRITEMPARTNERTP\" (404)"
+  },
+  "I_SRVCCONTRITEMPRICEELEMENTTP": {
+    "attemptedAt": "2026-11-04T15:59:31.495Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONTRITEMPRICEELEMENTTP\" (404)"
+  },
+  "I_SRVCCONTRITEMPRODUCTTP": {
+    "attemptedAt": "2026-11-04T15:59:31.945Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONTRITEMPRODUCTTP\" (404)"
+  },
+  "I_SRVCCONTRITEMREFOBJECTTP": {
+    "attemptedAt": "2026-11-04T15:59:32.387Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONTRITEMREFOBJECTTP\" (404)"
+  },
+  "I_SRVCCONTRITEMUSERSTATUSTP": {
+    "attemptedAt": "2026-11-04T15:59:32.835Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONTRITEMUSERSTATUSTP\" (404)"
+  },
+  "I_SRVCCONTRITMBILLGREQITEMTP": {
+    "attemptedAt": "2026-11-04T15:59:33.289Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONTRITMBILLGREQITEMTP\" (404)"
+  },
+  "I_SRVCCONTRITMFUPBILLGDOCTP": {
+    "attemptedAt": "2026-11-05T16:12:19.263Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONTRITMFUPBILLGDOCTP\" (404)"
+  },
+  "I_SRVCCONTRITMFUPSRVCORDTP": {
+    "attemptedAt": "2026-11-05T16:12:19.738Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONTRITMFUPSRVCORDTP\" (404)"
+  },
+  "I_SRVCCONTRITMPARTNERADDRESSTP": {
+    "attemptedAt": "2026-11-05T16:12:20.246Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONTRITMPARTNERADDRESSTP\" (404)"
+  },
+  "I_SRVCCONTRPARTNERADDRESSTP": {
+    "attemptedAt": "2026-11-05T16:12:20.709Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONTRPARTNERADDRESSTP\" (404)"
+  },
+  "I_SRVCCONTRPARTNERTP": {
+    "attemptedAt": "2026-11-05T16:12:21.162Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONTRPARTNERTP\" (404)"
+  },
+  "I_SRVCCONTRUSERSTATUSTP": {
+    "attemptedAt": "2026-11-05T16:12:21.642Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONTRUSERSTATUSTP\" (404)"
+  },
+  "C_SRVCCONTRPAYMENTMETHODVH": {
+    "attemptedAt": "2026-11-05T16:12:22.483Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SRVCMGMTPAYMENTTERMSVH": {
+    "attemptedAt": "2026-11-05T16:12:23.008Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SERVICECONFIRMATIONITEMTP": {
+    "attemptedAt": "2026-11-05T16:12:23.210Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SERVICECONFIRMATIONITEMTP\" (404)"
+  },
+  "I_SERVICECONFIRMATIONTP": {
+    "attemptedAt": "2026-11-05T16:12:23.666Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SERVICECONFIRMATIONTP\" (404)"
+  },
+  "I_SRVCCONFAPPOINTMENTTP": {
+    "attemptedAt": "2026-11-05T16:12:24.123Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONFAPPOINTMENTTP\" (404)"
+  },
+  "I_SRVCCONFDURATIONTP": {
+    "attemptedAt": "2026-11-05T16:12:24.584Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONFDURATIONTP\" (404)"
+  },
+  "I_SRVCCONFFUPBILLGDOCTP": {
+    "attemptedAt": "2026-11-05T16:12:25.052Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONFFUPBILLGDOCTP\" (404)"
+  },
+  "I_SRVCCONFFUPTIMESHEETTP": {
+    "attemptedAt": "2026-11-05T16:12:25.528Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONFFUPTIMESHEETTP\" (404)"
+  },
+  "I_SRVCCONFITEMAPPOINTMENTTP": {
+    "attemptedAt": "2026-11-05T16:12:25.994Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONFITEMAPPOINTMENTTP\" (404)"
+  },
+  "I_SRVCCONFITEMDURATIONTP": {
+    "attemptedAt": "2026-11-05T16:12:26.457Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONFITEMDURATIONTP\" (404)"
+  },
+  "I_SRVCCONFITEMLONGTEXTTP": {
+    "attemptedAt": "2026-11-05T16:12:26.906Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONFITEMLONGTEXTTP\" (404)"
+  },
+  "I_SRVCCONFITEMPARTNERADDRESSTP": {
+    "attemptedAt": "2026-11-05T16:12:27.393Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONFITEMPARTNERADDRESSTP\" (404)"
+  },
+  "I_SRVCCONFITEMPARTNERTP": {
+    "attemptedAt": "2026-11-05T16:12:27.852Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONFITEMPARTNERTP\" (404)"
+  },
+  "I_SRVCCONFITEMPRICEELEMENTTP": {
+    "attemptedAt": "2026-11-05T16:12:28.311Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONFITEMPRICEELEMENTTP\" (404)"
+  },
+  "I_SRVCCONFITEMREFOBJECTTP": {
+    "attemptedAt": "2026-11-05T16:12:28.790Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONFITEMREFOBJECTTP\" (404)"
+  },
+  "I_SRVCCONFITEMSERIALNUMBERTP": {
+    "attemptedAt": "2026-11-05T16:12:29.247Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONFITEMSERIALNUMBERTP\" (404)"
+  },
+  "I_SRVCCONFITEMUSERSTATUSTP": {
+    "attemptedAt": "2026-11-05T16:12:29.728Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONFITEMUSERSTATUSTP\" (404)"
+  },
+  "I_SRVCCONFITMFUPBILLGDOCTP": {
+    "attemptedAt": "2026-11-05T16:12:30.211Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONFITMFUPBILLGDOCTP\" (404)"
+  },
+  "I_SRVCCONFITMFUPTIMESHEETTP": {
+    "attemptedAt": "2026-11-05T16:12:30.684Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONFITMFUPTIMESHEETTP\" (404)"
+  },
+  "I_SRVCCONFLONGTEXTTP": {
+    "attemptedAt": "2026-11-05T16:12:31.144Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONFLONGTEXTTP\" (404)"
+  },
+  "I_SRVCCONFPARTNERADDRESSTP": {
+    "attemptedAt": "2026-11-05T16:12:31.601Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONFPARTNERADDRESSTP\" (404)"
+  },
+  "I_SRVCCONFPARTNERTP": {
+    "attemptedAt": "2026-11-05T16:12:32.068Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONFPARTNERTP\" (404)"
+  },
+  "I_SRVCCONFREFOBJECTTP": {
+    "attemptedAt": "2026-11-05T16:12:32.524Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONFREFOBJECTTP\" (404)"
+  },
+  "I_SRVCCONFUSERSTATUSTP": {
+    "attemptedAt": "2026-11-05T16:12:32.979Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCCONFUSERSTATUSTP\" (404)"
+  },
+  "I_SERVICEORDERITEMTP": {
+    "attemptedAt": "2026-11-05T16:12:33.444Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SERVICEORDERITEMTP\" (404)"
+  },
+  "I_SERVICEORDERTP": {
+    "attemptedAt": "2026-11-05T16:12:33.911Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SERVICEORDERTP\" (404)"
+  },
+  "I_SRVCDOCEXECUTIONSTATUS": {
+    "attemptedAt": "2026-11-05T16:12:34.688Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SRVCDOCEXECUTIONSTATUSTEXT": {
+    "attemptedAt": "2026-11-05T16:12:35.188Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_SRVCDOCTRANSFERSTATUS": {
+    "attemptedAt": "2026-11-05T16:12:35.682Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SRVCDOCTRANSFERSTATUSTEXT": {
+    "attemptedAt": "2026-11-05T16:12:36.190Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SRVCORDAPPOINTMENTTP": {
+    "attemptedAt": "2026-11-05T16:12:36.398Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDAPPOINTMENTTP\" (404)"
+  },
+  "I_SRVCORDDURATIONTP": {
+    "attemptedAt": "2026-11-05T16:12:36.879Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDDURATIONTP\" (404)"
+  },
+  "I_SRVCORDFUPBILLGDOCTP": {
+    "attemptedAt": "2026-11-05T16:12:37.338Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDFUPBILLGDOCTP\" (404)"
+  },
+  "I_SRVCORDFUPPURCHASEORDERTP": {
+    "attemptedAt": "2026-11-05T16:12:37.797Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDFUPPURCHASEORDERTP\" (404)"
+  },
+  "I_SRVCORDFUPPURREQNTP": {
+    "attemptedAt": "2026-11-05T16:12:38.274Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDFUPPURREQNTP\" (404)"
+  },
+  "I_SRVCORDFUPSRVCCONFTP": {
+    "attemptedAt": "2026-11-05T16:12:38.731Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDFUPSRVCCONFTP\" (404)"
+  },
+  "I_SRVCORDFUPSRVCENTRSHEETTP": {
+    "attemptedAt": "2026-11-05T16:12:39.183Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDFUPSRVCENTRSHEETTP\" (404)"
+  },
+  "I_SRVCORDFUPSUPLRINVCTP": {
+    "attemptedAt": "2026-11-05T16:12:39.636Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDFUPSUPLRINVCTP\" (404)"
+  },
+  "I_SRVCORDITEMAPPOINTMENTTP": {
+    "attemptedAt": "2026-11-05T16:12:40.088Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITEMAPPOINTMENTTP\" (404)"
+  },
+  "I_SRVCORDITEMDURATIONTP": {
+    "attemptedAt": "2026-11-05T16:12:40.543Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITEMDURATIONTP\" (404)"
+  },
+  "I_SRVCORDITEMLONGTEXTTP": {
+    "attemptedAt": "2026-11-05T16:12:41.005Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITEMLONGTEXTTP\" (404)"
+  },
+  "I_SRVCORDITEMPARTNERADDRESSTP": {
+    "attemptedAt": "2026-11-06T15:42:45.401Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITEMPARTNERADDRESSTP\" (404)"
+  },
+  "I_SRVCORDITEMPRICEELEMENTTP": {
+    "attemptedAt": "2026-11-06T15:42:45.827Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITEMPRICEELEMENTTP\" (404)"
+  },
+  "I_SRVCORDITEMREFERENCEOBJECTTP": {
+    "attemptedAt": "2026-11-06T15:42:46.247Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITEMREFERENCEOBJECTTP\" (404)"
+  },
+  "I_SRVCORDITEMUSERSTATUSTP": {
+    "attemptedAt": "2026-11-06T15:42:46.639Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITEMUSERSTATUSTP\" (404)"
+  },
+  "I_SRVCORDITMFUPBILLGDOCTP": {
+    "attemptedAt": "2026-11-06T15:42:47.052Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITMFUPBILLGDOCTP\" (404)"
+  },
+  "I_SRVCORDITMFUPPURCHASEORDERTP": {
+    "attemptedAt": "2026-11-06T15:42:47.449Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITMFUPPURCHASEORDERTP\" (404)"
+  },
+  "I_SRVCORDITMFUPPURREQNTP": {
+    "attemptedAt": "2026-11-06T15:42:47.854Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITMFUPPURREQNTP\" (404)"
+  },
+  "I_SRVCORDITMFUPSRVCCONFTP": {
+    "attemptedAt": "2026-11-06T15:42:48.258Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITMFUPSRVCCONFTP\" (404)"
+  },
+  "I_SRVCORDITMFUPSRVCENTRSHEETTP": {
+    "attemptedAt": "2026-11-06T15:42:48.707Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITMFUPSRVCENTRSHEETTP\" (404)"
+  },
+  "I_SRVCORDITMFUPSUPLRINVCTP": {
+    "attemptedAt": "2026-11-06T15:42:49.125Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITMFUPSUPLRINVCTP\" (404)"
+  },
+  "I_SRVCORDITMPARTNERTP": {
+    "attemptedAt": "2026-11-06T15:42:49.523Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDITMPARTNERTP\" (404)"
+  },
+  "I_SRVCORDLONGTEXTTP": {
+    "attemptedAt": "2026-11-06T15:42:49.924Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDLONGTEXTTP\" (404)"
+  },
+  "I_SRVCORDPARTNERADDRESSTP": {
+    "attemptedAt": "2026-11-06T15:42:50.344Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDPARTNERADDRESSTP\" (404)"
+  },
+  "I_SRVCORDPARTNERTP": {
+    "attemptedAt": "2026-11-06T15:42:50.746Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDPARTNERTP\" (404)"
+  },
+  "I_SRVCORDPRICEELEMENTTP": {
+    "attemptedAt": "2026-11-06T15:42:51.153Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDPRICEELEMENTTP\" (404)"
+  },
+  "I_SRVCORDREFERENCEOBJECTTP": {
+    "attemptedAt": "2026-11-06T15:42:51.626Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDREFERENCEOBJECTTP\" (404)"
+  },
+  "I_SRVCORDUSERSTATUSTP": {
+    "attemptedAt": "2026-11-06T15:42:52.042Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDUSERSTATUSTP\" (404)"
+  },
+  "D_SERVICEQUOTATIONCHANGED": {
+    "attemptedAt": "2026-11-06T15:42:52.434Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEQUOTATIONCHANGED\" (404)"
+  },
+  "D_SERVICEQUOTATIONCREATED": {
+    "attemptedAt": "2026-11-06T15:42:52.832Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SERVICEQUOTATIONCREATED\" (404)"
+  },
+  "D_SRVCQTANAPPRVLWRKFLWCANCELED": {
+    "attemptedAt": "2026-11-06T15:42:53.225Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SRVCQTANAPPRVLWRKFLWCANCELED\" (404)"
+  },
+  "D_SRVCQTANAPPRVLWRKFLWSTARTED": {
+    "attemptedAt": "2026-11-06T15:42:53.680Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_SRVCQTANAPPRVLWRKFLWSTARTED\" (404)"
+  },
+  "I_SERVICEQUOTATIONITEMTP": {
+    "attemptedAt": "2026-11-06T15:42:54.075Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SERVICEQUOTATIONITEMTP\" (404)"
+  },
+  "I_SERVICEQUOTATIONTP": {
+    "attemptedAt": "2026-11-06T15:42:54.478Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SERVICEQUOTATIONTP\" (404)"
+  },
+  "I_SRVCQTANAPPOINTMENTTP": {
+    "attemptedAt": "2026-11-06T15:42:54.869Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANAPPOINTMENTTP\" (404)"
+  },
+  "I_SRVCQTANDURATIONTP": {
+    "attemptedAt": "2026-11-06T15:42:55.289Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANDURATIONTP\" (404)"
+  },
+  "I_SRVCQTANFUPSRVCORDTP": {
+    "attemptedAt": "2026-11-06T15:42:55.710Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANFUPSRVCORDTP\" (404)"
+  },
+  "I_SRVCQTANITEMAPPOINTMENTTP": {
+    "attemptedAt": "2026-11-06T15:42:56.110Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANITEMAPPOINTMENTTP\" (404)"
+  },
+  "I_SRVCQTANITEMDURATIONTP": {
+    "attemptedAt": "2026-11-06T15:42:56.512Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANITEMDURATIONTP\" (404)"
+  },
+  "I_SRVCQTANITEMLONGTEXTTP": {
+    "attemptedAt": "2026-11-06T15:42:56.914Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANITEMLONGTEXTTP\" (404)"
+  },
+  "I_SRVCQTANITEMPARTNERADDRESSTP": {
+    "attemptedAt": "2026-11-06T15:42:57.324Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANITEMPARTNERADDRESSTP\" (404)"
+  },
+  "I_SRVCQTANITEMPARTNERTP": {
+    "attemptedAt": "2026-11-06T15:42:57.723Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANITEMPARTNERTP\" (404)"
+  },
+  "I_SRVCQTANITEMPRICEELEMENTTP": {
+    "attemptedAt": "2026-11-06T15:42:58.131Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANITEMPRICEELEMENTTP\" (404)"
+  },
+  "I_SRVCQTANITEMREFOBJECTTP": {
+    "attemptedAt": "2026-11-06T15:42:58.531Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANITEMREFOBJECTTP\" (404)"
+  },
+  "I_SRVCQTANITEMUSERSTATUSTP": {
+    "attemptedAt": "2026-11-06T15:42:58.924Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANITEMUSERSTATUSTP\" (404)"
+  },
+  "I_SRVCQTANITMFUPSRVCORDTP": {
+    "attemptedAt": "2026-11-06T15:42:59.323Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANITMFUPSRVCORDTP\" (404)"
+  },
+  "I_SRVCQTANLONGTEXTTP": {
+    "attemptedAt": "2026-11-06T15:42:59.749Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANLONGTEXTTP\" (404)"
+  },
+  "I_SRVCQTANPARTNERADDRESSTP": {
+    "attemptedAt": "2026-11-06T15:43:00.148Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANPARTNERADDRESSTP\" (404)"
+  },
+  "I_SRVCQTANPARTNERTP": {
+    "attemptedAt": "2026-11-06T15:43:00.552Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANPARTNERTP\" (404)"
+  },
+  "I_SRVCQTANPRICEELEMENTTP": {
+    "attemptedAt": "2026-11-06T15:43:00.957Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANPRICEELEMENTTP\" (404)"
+  },
+  "I_SRVCQTANREFERENCEOBJECTTP": {
+    "attemptedAt": "2026-11-06T15:43:01.364Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANREFERENCEOBJECTTP\" (404)"
+  },
+  "I_SRVCQTANUSERSTATUSTP": {
+    "attemptedAt": "2026-11-06T15:43:01.779Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCQTANUSERSTATUSTP\" (404)"
+  },
+  "I_SERVICEORDERTEMPLATEITEMTP": {
+    "attemptedAt": "2026-11-06T15:43:02.211Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SERVICEORDERTEMPLATEITEMTP\" (404)"
+  },
+  "I_SERVICEORDERTEMPLATETP": {
+    "attemptedAt": "2026-11-06T15:43:02.664Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SERVICEORDERTEMPLATETP\" (404)"
+  },
+  "I_SRVCORDTMPLAPPOINTMENTTP": {
+    "attemptedAt": "2026-11-06T15:43:03.066Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLAPPOINTMENTTP\" (404)"
+  },
+  "I_SRVCORDTMPLDURATIONTP": {
+    "attemptedAt": "2026-11-06T15:43:03.459Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLDURATIONTP\" (404)"
+  },
+  "I_SRVCORDTMPLITEMAPPOINTMENTTP": {
+    "attemptedAt": "2026-11-06T15:43:03.852Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLITEMAPPOINTMENTTP\" (404)"
+  },
+  "I_SRVCORDTMPLITEMDURATIONTP": {
+    "attemptedAt": "2026-11-06T15:43:04.261Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLITEMDURATIONTP\" (404)"
+  },
+  "I_SRVCORDTMPLITEMLONGTEXTTP": {
+    "attemptedAt": "2026-11-07T14:43:07.453Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLITEMLONGTEXTTP\" (404)"
+  },
+  "I_SRVCORDTMPLITEMUSERSTATUSTP": {
+    "attemptedAt": "2026-11-07T14:43:08.097Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLITEMUSERSTATUSTP\" (404)"
+  },
+  "I_SRVCORDTMPLITMREFOBJECTTP": {
+    "attemptedAt": "2026-11-07T14:43:08.574Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLITMREFOBJECTTP\" (404)"
+  },
+  "I_SRVCORDTMPLLONGTEXTTP": {
+    "attemptedAt": "2026-11-07T14:43:09.031Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLLONGTEXTTP\" (404)"
+  },
+  "I_SRVCORDTMPLPARTNERADDRESSTP": {
+    "attemptedAt": "2026-11-07T14:43:09.504Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLPARTNERADDRESSTP\" (404)"
+  },
+  "I_SRVCORDTMPLPARTNERTP": {
+    "attemptedAt": "2026-11-07T14:43:09.957Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLPARTNERTP\" (404)"
+  },
+  "I_SRVCORDTMPLREFOBJECTTP": {
+    "attemptedAt": "2026-11-07T14:43:10.395Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLREFOBJECTTP\" (404)"
+  },
+  "I_SRVCORDTMPLUSERSTATUSTP": {
+    "attemptedAt": "2026-11-07T14:43:10.828Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLUSERSTATUSTP\" (404)"
+  },
+  "D_PRFTCTRCHANGEVALIDITYPERIODP": {
+    "attemptedAt": "2026-11-07T14:43:11.273Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PRFTCTRCHANGEVALIDITYPERIODP\" (404)"
+  },
+  "I_PRFTCTRCOMPANYCODEASSIGNMENT": {
+    "attemptedAt": "2026-11-07T14:43:12.002Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_PRFTCTRCOMPCODEASSGMTTP_2": {
+    "attemptedAt": "2026-11-07T14:43:12.207Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRFTCTRCOMPCODEASSGMTTP_2\" (404)"
+  },
+  "I_PROFITCENTER": {
+    "attemptedAt": "2026-11-07T14:43:12.950Z",
+    "found": true,
+    "matched": 38
+  },
+  "I_PROFITCENTERHIERARCHY": {
+    "attemptedAt": "2026-11-07T14:43:13.451Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_PROFITCENTERHIERARCHYNODE": {
+    "attemptedAt": "2026-11-07T14:43:13.949Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_PROFITCENTERHIERARCHYNODET": {
+    "attemptedAt": "2026-11-07T14:43:14.445Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_PROFITCENTERHIERARCHYTEXT": {
+    "attemptedAt": "2026-11-07T14:43:14.959Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_PROFITCENTERSTDVH": {
+    "attemptedAt": "2026-11-07T14:43:15.443Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PROFITCENTERTEXT": {
+    "attemptedAt": "2026-11-07T14:43:15.939Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_PROFITCENTERTEXTTP_2": {
+    "attemptedAt": "2026-11-07T14:43:16.150Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PROFITCENTERTEXTTP_2\" (404)"
+  },
+  "I_PROFITCENTERTP_2": {
+    "attemptedAt": "2026-11-07T14:43:16.584Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PROFITCENTERTP_2\" (404)"
+  },
+  "I_PROFITCENTERVH": {
+    "attemptedAt": "2026-11-07T14:43:17.349Z",
+    "found": true,
+    "matched": 7
+  },
+  "C_LISTEDSUBSTANCECUSTDEX": {
+    "attemptedAt": "2026-11-07T14:43:17.822Z",
+    "found": true,
+    "matched": 9
+  },
+  "C_LISTEDSUBSTANCEELEMENTDEX": {
+    "attemptedAt": "2026-11-07T14:43:18.311Z",
+    "found": true,
+    "matched": 3
+  },
+  "C_LISTEDSUBSTANCENAMECUSTDEX": {
+    "attemptedAt": "2026-11-07T14:43:18.809Z",
+    "found": true,
+    "matched": 6
+  },
+  "C_LISTEDSUBSTANCENAMESAPDEX": {
+    "attemptedAt": "2026-11-07T14:43:19.280Z",
+    "found": true,
+    "matched": 6
+  },
+  "C_LISTEDSUBSTANCESAPDEX": {
+    "attemptedAt": "2026-11-07T14:43:19.750Z",
+    "found": true,
+    "matched": 9
+  },
+  "C_LSTDSUBSTELEMENTNAMEDEX": {
+    "attemptedAt": "2026-11-07T14:43:20.232Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_ACTIVECOMPLIANCERQMTVERSION": {
+    "attemptedAt": "2026-11-07T14:43:20.713Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_CMPLNCRQMTAUTHZNFIELDS": {
+    "attemptedAt": "2026-11-07T14:43:21.248Z",
+    "found": true,
+    "matched": 4
+  },
+  "D_CALCTDANGEROUSGOODSPOINTSR": {
+    "attemptedAt": "2026-11-07T14:43:21.445Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CALCTDANGEROUSGOODSPOINTSR\" (404)"
+  },
+  "D_CALCTDNGRSGDSPTSCATEGORYR": {
+    "attemptedAt": "2026-11-07T14:43:21.888Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CALCTDNGRSGDSPTSCATEGORYR\" (404)"
+  },
+  "D_CALCTDNGRSGDSPTSITMRGLNR": {
+    "attemptedAt": "2026-11-07T14:43:22.331Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CALCTDNGRSGDSPTSITMRGLNR\" (404)"
+  },
+  "D_CALCTDNGRSGOODSPOINTSITEMR": {
+    "attemptedAt": "2026-11-07T14:43:22.760Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CALCTDNGRSGOODSPOINTSITEMR\" (404)"
+  },
+  "D_DAGDSCLFNCLCTDAGDSPTSPAINSNR": {
+    "attemptedAt": "2026-11-07T14:43:23.204Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_DAGDSCLFNCLCTDAGDSPTSPAINSNR\" (404)"
+  },
+  "D_DNGRSGDSCLASSFCTNGETDESCSR": {
+    "attemptedAt": "2026-11-07T14:43:23.643Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_DNGRSGDSCLASSFCTNGETDESCSR\" (404)"
+  },
+  "I_COUNTRYTRANSPORTSTATUS": {
+    "attemptedAt": "2026-11-07T14:43:24.376Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_COUNTRYTRANSPORTSTATUSTEXT": {
+    "attemptedAt": "2026-11-07T14:43:24.862Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DNGRSGDSRGLNLANGUAGETYPETEXT": {
+    "attemptedAt": "2026-11-07T14:43:25.359Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_TRANSPORTCHECKRULETEXT": {
+    "attemptedAt": "2026-11-07T14:43:25.845Z",
+    "found": true,
+    "matched": 3
+  },
+  "C_DVTNINCDNTFORLOCIDQ": {
+    "attemptedAt": "2026-11-07T14:43:26.389Z",
+    "found": true,
+    "matched": 35
+  },
+  "C_EHSAMOUNTDEX": {
+    "attemptedAt": "2026-11-07T14:43:26.920Z",
+    "found": true,
+    "matched": 12
+  },
+  "C_EHSAMOUNTSQUERY": {
+    "attemptedAt": "2026-11-07T14:43:27.409Z",
+    "found": true,
+    "matched": 58
+  },
+  "C_EHSCALCDEFINITIONDEX": {
+    "attemptedAt": "2026-11-07T14:43:27.892Z",
+    "found": true,
+    "matched": 4
+  },
+  "C_EHSCALCDEFRESULTHEADERDEX": {
+    "attemptedAt": "2026-11-07T14:43:28.374Z",
+    "found": true,
+    "matched": 11
+  },
+  "C_EHSCALCDEFRSLTHDRCLSFRDEX": {
+    "attemptedAt": "2026-11-07T14:43:28.877Z",
+    "found": true,
+    "matched": 14
+  },
+  "C_EHSCALCULATIONAMOUNTDEX": {
+    "attemptedAt": "2026-11-07T14:43:29.342Z",
+    "found": true,
+    "matched": 17
+  },
+  "C_EHSCHMLPHYSPROPERTYDEX": {
+    "attemptedAt": "2026-11-07T14:43:29.833Z",
+    "found": true,
+    "matched": 5
   }
 }
