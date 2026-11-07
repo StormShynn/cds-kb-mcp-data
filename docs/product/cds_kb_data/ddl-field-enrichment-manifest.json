@@ -8458,5 +8458,240 @@
     "attemptedAt": "2026-11-06T15:43:04.261Z",
     "found": false,
     "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLITEMDURATIONTP\" (404)"
+  },
+  "I_SRVCORDTMPLITEMLONGTEXTTP": {
+    "attemptedAt": "2026-11-07T14:43:07.453Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLITEMLONGTEXTTP\" (404)"
+  },
+  "I_SRVCORDTMPLITEMUSERSTATUSTP": {
+    "attemptedAt": "2026-11-07T14:43:08.097Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLITEMUSERSTATUSTP\" (404)"
+  },
+  "I_SRVCORDTMPLITMREFOBJECTTP": {
+    "attemptedAt": "2026-11-07T14:43:08.574Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLITMREFOBJECTTP\" (404)"
+  },
+  "I_SRVCORDTMPLLONGTEXTTP": {
+    "attemptedAt": "2026-11-07T14:43:09.031Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLLONGTEXTTP\" (404)"
+  },
+  "I_SRVCORDTMPLPARTNERADDRESSTP": {
+    "attemptedAt": "2026-11-07T14:43:09.504Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLPARTNERADDRESSTP\" (404)"
+  },
+  "I_SRVCORDTMPLPARTNERTP": {
+    "attemptedAt": "2026-11-07T14:43:09.957Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLPARTNERTP\" (404)"
+  },
+  "I_SRVCORDTMPLREFOBJECTTP": {
+    "attemptedAt": "2026-11-07T14:43:10.395Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLREFOBJECTTP\" (404)"
+  },
+  "I_SRVCORDTMPLUSERSTATUSTP": {
+    "attemptedAt": "2026-11-07T14:43:10.828Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_SRVCORDTMPLUSERSTATUSTP\" (404)"
+  },
+  "D_PRFTCTRCHANGEVALIDITYPERIODP": {
+    "attemptedAt": "2026-11-07T14:43:11.273Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PRFTCTRCHANGEVALIDITYPERIODP\" (404)"
+  },
+  "I_PRFTCTRCOMPANYCODEASSIGNMENT": {
+    "attemptedAt": "2026-11-07T14:43:12.002Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_PRFTCTRCOMPCODEASSGMTTP_2": {
+    "attemptedAt": "2026-11-07T14:43:12.207Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRFTCTRCOMPCODEASSGMTTP_2\" (404)"
+  },
+  "I_PROFITCENTER": {
+    "attemptedAt": "2026-11-07T14:43:12.950Z",
+    "found": true,
+    "matched": 38
+  },
+  "I_PROFITCENTERHIERARCHY": {
+    "attemptedAt": "2026-11-07T14:43:13.451Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_PROFITCENTERHIERARCHYNODE": {
+    "attemptedAt": "2026-11-07T14:43:13.949Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_PROFITCENTERHIERARCHYNODET": {
+    "attemptedAt": "2026-11-07T14:43:14.445Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_PROFITCENTERHIERARCHYTEXT": {
+    "attemptedAt": "2026-11-07T14:43:14.959Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_PROFITCENTERSTDVH": {
+    "attemptedAt": "2026-11-07T14:43:15.443Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PROFITCENTERTEXT": {
+    "attemptedAt": "2026-11-07T14:43:15.939Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_PROFITCENTERTEXTTP_2": {
+    "attemptedAt": "2026-11-07T14:43:16.150Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PROFITCENTERTEXTTP_2\" (404)"
+  },
+  "I_PROFITCENTERTP_2": {
+    "attemptedAt": "2026-11-07T14:43:16.584Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PROFITCENTERTP_2\" (404)"
+  },
+  "I_PROFITCENTERVH": {
+    "attemptedAt": "2026-11-07T14:43:17.349Z",
+    "found": true,
+    "matched": 7
+  },
+  "C_LISTEDSUBSTANCECUSTDEX": {
+    "attemptedAt": "2026-11-07T14:43:17.822Z",
+    "found": true,
+    "matched": 9
+  },
+  "C_LISTEDSUBSTANCEELEMENTDEX": {
+    "attemptedAt": "2026-11-07T14:43:18.311Z",
+    "found": true,
+    "matched": 3
+  },
+  "C_LISTEDSUBSTANCENAMECUSTDEX": {
+    "attemptedAt": "2026-11-07T14:43:18.809Z",
+    "found": true,
+    "matched": 6
+  },
+  "C_LISTEDSUBSTANCENAMESAPDEX": {
+    "attemptedAt": "2026-11-07T14:43:19.280Z",
+    "found": true,
+    "matched": 6
+  },
+  "C_LISTEDSUBSTANCESAPDEX": {
+    "attemptedAt": "2026-11-07T14:43:19.750Z",
+    "found": true,
+    "matched": 9
+  },
+  "C_LSTDSUBSTELEMENTNAMEDEX": {
+    "attemptedAt": "2026-11-07T14:43:20.232Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_ACTIVECOMPLIANCERQMTVERSION": {
+    "attemptedAt": "2026-11-07T14:43:20.713Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_CMPLNCRQMTAUTHZNFIELDS": {
+    "attemptedAt": "2026-11-07T14:43:21.248Z",
+    "found": true,
+    "matched": 4
+  },
+  "D_CALCTDANGEROUSGOODSPOINTSR": {
+    "attemptedAt": "2026-11-07T14:43:21.445Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CALCTDANGEROUSGOODSPOINTSR\" (404)"
+  },
+  "D_CALCTDNGRSGDSPTSCATEGORYR": {
+    "attemptedAt": "2026-11-07T14:43:21.888Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CALCTDNGRSGDSPTSCATEGORYR\" (404)"
+  },
+  "D_CALCTDNGRSGDSPTSITMRGLNR": {
+    "attemptedAt": "2026-11-07T14:43:22.331Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CALCTDNGRSGDSPTSITMRGLNR\" (404)"
+  },
+  "D_CALCTDNGRSGOODSPOINTSITEMR": {
+    "attemptedAt": "2026-11-07T14:43:22.760Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CALCTDNGRSGOODSPOINTSITEMR\" (404)"
+  },
+  "D_DAGDSCLFNCLCTDAGDSPTSPAINSNR": {
+    "attemptedAt": "2026-11-07T14:43:23.204Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_DAGDSCLFNCLCTDAGDSPTSPAINSNR\" (404)"
+  },
+  "D_DNGRSGDSCLASSFCTNGETDESCSR": {
+    "attemptedAt": "2026-11-07T14:43:23.643Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_DNGRSGDSCLASSFCTNGETDESCSR\" (404)"
+  },
+  "I_COUNTRYTRANSPORTSTATUS": {
+    "attemptedAt": "2026-11-07T14:43:24.376Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_COUNTRYTRANSPORTSTATUSTEXT": {
+    "attemptedAt": "2026-11-07T14:43:24.862Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DNGRSGDSRGLNLANGUAGETYPETEXT": {
+    "attemptedAt": "2026-11-07T14:43:25.359Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_TRANSPORTCHECKRULETEXT": {
+    "attemptedAt": "2026-11-07T14:43:25.845Z",
+    "found": true,
+    "matched": 3
+  },
+  "C_DVTNINCDNTFORLOCIDQ": {
+    "attemptedAt": "2026-11-07T14:43:26.389Z",
+    "found": true,
+    "matched": 35
+  },
+  "C_EHSAMOUNTDEX": {
+    "attemptedAt": "2026-11-07T14:43:26.920Z",
+    "found": true,
+    "matched": 12
+  },
+  "C_EHSAMOUNTSQUERY": {
+    "attemptedAt": "2026-11-07T14:43:27.409Z",
+    "found": true,
+    "matched": 58
+  },
+  "C_EHSCALCDEFINITIONDEX": {
+    "attemptedAt": "2026-11-07T14:43:27.892Z",
+    "found": true,
+    "matched": 4
+  },
+  "C_EHSCALCDEFRESULTHEADERDEX": {
+    "attemptedAt": "2026-11-07T14:43:28.374Z",
+    "found": true,
+    "matched": 11
+  },
+  "C_EHSCALCDEFRSLTHDRCLSFRDEX": {
+    "attemptedAt": "2026-11-07T14:43:28.877Z",
+    "found": true,
+    "matched": 14
+  },
+  "C_EHSCALCULATIONAMOUNTDEX": {
+    "attemptedAt": "2026-11-07T14:43:29.342Z",
+    "found": true,
+    "matched": 17
+  },
+  "C_EHSCHMLPHYSPROPERTYDEX": {
+    "attemptedAt": "2026-11-07T14:43:29.833Z",
+    "found": true,
+    "matched": 5
   }
 }
