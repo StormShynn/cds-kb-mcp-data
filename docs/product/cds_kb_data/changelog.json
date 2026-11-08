@@ -86403,5 +86403,27 @@
     "tags": 9,
     "error": null,
     "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ELECTRONICDOCUMENT')/$value"
+  },
+  {
+    "viewName": "C_ELECTRONICDOCUMENTREFERENCE",
+    "action": "updated",
+    "timestamp": "2026-11-08T14:07:06.555Z",
+    "source": "hub-catalog",
+    "fields": 4,
+    "associations": 0,
+    "tags": 9,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ELECTRONICDOCUMENTREFERENCE')/$value"
+  },
+  {
+    "viewName": "C_ELECTRONICDOCUMENT",
+    "action": "updated",
+    "timestamp": "2026-11-08T14:07:06.597Z",
+    "source": "hub-catalog",
+    "fields": 37,
+    "associations": 0,
+    "tags": 9,
+    "error": null,
+    "sourceUrl": "https://api.sap.com/odata/1.0/catalog.svc/CdsViewsContent.CdsViews('C_ELECTRONICDOCUMENT')/$value"
   }
 ]
