@@ -53,7 +53,7 @@ tags:
 | `Plant` |  | |  |  | `CHAR(4)` | Plant |
 | `Product` |  | |  |  | `CHAR(40)` | Product |
 | `ValuationType` |  | |  |  | `CHAR(10)` | Valuation Type |
-| `ControllingAreaCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `ControllingAreaCurrency` |  | |  |  | `CUKY(5)` | Controlling area currency |
 | `TotalPriceInInCtrlgAreaCrcy` |  | |  |  | `CURR(15)` | Total Price in Controlling Area Currency |
 | `FixedPriceInCtrlgAreaCrcy` |  | |  |  | `CURR(15)` | Fixed Price in Controlling Area Currency |
 | `TotalAmountInCtrlgAreaCrcy` |  | |  |  | `CURR(15)` | Total Amount in Controlling Area Currency |

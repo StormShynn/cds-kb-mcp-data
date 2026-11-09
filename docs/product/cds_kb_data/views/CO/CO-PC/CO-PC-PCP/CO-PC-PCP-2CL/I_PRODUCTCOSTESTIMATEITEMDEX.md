@@ -80,11 +80,11 @@ tags:
 | `Material` |  | |  | `Product` | `CHAR(40)` | Product |
 | `ValuationType` |  | |  |  | `CHAR(10)` | Valuation Type |
 | `Creditor` |  | |  |  | `CHAR(10)` | Account Number of Supplier |
-| `GroupCurrency` |  | |  | `ControllingAreaCurrency` | `CUKY(5)` | Global Currency |
+| `GroupCurrency` |  | |  | `ControllingAreaCurrency` | `CUKY(5)` | Currency Key for the Group Currency |
 | `TotalPriceInGroupCrcy` |  | |  | `cast(TotalPriceInInCtrlgAreaCrcy as ck_gpkw preserving type)` | `CURR(15)` | Total Price in Group Currency |
 | `FixedPriceInGroupCrcy` |  | |  | `cast(FixedPriceInCtrlgAreaCrcy as ck_fpkw preserving type)` | `CURR(15)` | Fixed Price in Group Currency |
-| `TotalAmountInGroupCrcy` |  | |  | `cast(TotalAmountInCtrlgAreaCrcy as ck_twkw preserving type)` | `CURR(15)` | Total Value in Group Currency |
-| `FixedAmountInGroupCurrency` |  | |  | `cast(FixedAmountInCtrlgAreaCrcy as ck_fwkw preserving type)` | `CURR(15)` | Fixed Value in Group Currency |
+| `TotalAmountInGroupCrcy` |  | |  | `cast(TotalAmountInCtrlgAreaCrcy as ck_twkw preserving type)` | `CURR(15)` | Total Amount in Group Currency |
+| `FixedAmountInGroupCurrency` |  | |  | `cast(FixedAmountInCtrlgAreaCrcy as ck_fwkw preserving type)` | `CURR(15)` | Total Amount in Group Currency |
 | `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
 | `TotalPriceInCompanyCodeCrcy` |  | |  |  | `CURR(15)` | Total Price in Company Code Currency |
 | `FixedPriceInCompanyCodeCrcy` |  | |  |  | `CURR(15)` | Fixed Price in Company Code Currency |
