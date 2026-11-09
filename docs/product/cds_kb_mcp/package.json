@@ -30,7 +30,7 @@
   ],
   "dependencies": {
     "@abaplint/core": "^2.120.74",
-    "@aws-sdk/client-s3": "^3.1146.0",
+    "@aws-sdk/client-s3": "^3.1163.0",
     "@huggingface/transformers": "^4.3.2",
     "@modelcontextprotocol/core": "^2.4.0",
     "@modelcontextprotocol/express": "^2.0.2",
