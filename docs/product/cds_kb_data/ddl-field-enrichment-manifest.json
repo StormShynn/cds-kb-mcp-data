@@ -9398,5 +9398,240 @@
     "attemptedAt": "2026-11-11T15:54:15.156Z",
     "found": true,
     "matched": 3
+  },
+  "I_INCIDENTINJRYILLNLOGTYPE": {
+    "attemptedAt": "2026-11-12T16:37:23.728Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_INCIDENTINJRYILLNLOGTYPETEXT": {
+    "attemptedAt": "2026-11-12T16:37:24.220Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_INCIDENTINJUREDPERSONINFO": {
+    "attemptedAt": "2026-11-12T16:37:24.753Z",
+    "found": true,
+    "matched": 14
+  },
+  "I_INCIDENTINJURYILLNESS": {
+    "attemptedAt": "2026-11-12T16:37:25.243Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_INCIDENTINVOLVEDPERSON": {
+    "attemptedAt": "2026-11-12T16:37:25.737Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_INCIDENTMAJORROOTCAUSE": {
+    "attemptedAt": "2026-11-12T16:37:26.213Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_INCIDENTMAJORROOTCAUSETEXT": {
+    "attemptedAt": "2026-11-12T16:37:26.688Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_INCIDENTNTCOFVIOLTNCASECUBE": {
+    "attemptedAt": "2026-11-12T16:37:27.156Z",
+    "found": true,
+    "matched": 31
+  },
+  "I_INCIDENTPERSONROLE": {
+    "attemptedAt": "2026-11-12T16:37:27.654Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_INCIDENTRELEASECASECUBE": {
+    "attemptedAt": "2026-11-12T16:37:28.186Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_INCIDENTRELEASESIZE": {
+    "attemptedAt": "2026-11-12T16:37:28.675Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_INCIDENTRELEASESIZETEXT": {
+    "attemptedAt": "2026-11-12T16:37:29.167Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_INCIDENTRELEASETYPE": {
+    "attemptedAt": "2026-11-12T16:37:29.661Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_INCIDENTRELEASETYPETEXT": {
+    "attemptedAt": "2026-11-12T16:37:30.129Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_INCIDENTREPORTINGSOURCE": {
+    "attemptedAt": "2026-11-12T16:37:30.622Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_INCIDENTREPORTINGSOURCETEXT": {
+    "attemptedAt": "2026-11-12T16:37:31.105Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_INCIDENTRESTRICTEDDUTY": {
+    "attemptedAt": "2026-11-12T16:37:31.582Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_INCIDENTSTATUS": {
+    "attemptedAt": "2026-11-12T16:37:32.057Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_INCIDENTSTATUSTEXT": {
+    "attemptedAt": "2026-11-12T16:37:32.593Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_INCIDENTTIMEDATA": {
+    "attemptedAt": "2026-11-12T16:37:33.091Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_INJRYILLNCASESANDHRSWRK": {
+    "attemptedAt": "2026-11-12T16:37:33.577Z",
+    "found": true,
+    "matched": 16
+  },
+  "I_NEARMISSGROUPCODE": {
+    "attemptedAt": "2026-11-12T16:37:34.136Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_NEARMISSGROUPCODETEXT": {
+    "attemptedAt": "2026-11-12T16:37:34.624Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_NOTICEOFVIOLATIONCATEGORY": {
+    "attemptedAt": "2026-11-12T16:37:35.098Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_NOTICEOFVIOLATIONCATEGORYT": {
+    "attemptedAt": "2026-11-12T16:37:35.569Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_NOTICEOFVIOLATIONSOURCE": {
+    "attemptedAt": "2026-11-12T16:37:36.139Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_NOTICEOFVIOLATIONSOURCET": {
+    "attemptedAt": "2026-11-12T16:37:36.644Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_NOTICEOFVIOLATIONTYPE": {
+    "attemptedAt": "2026-11-12T16:37:37.171Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_NOTICEOFVIOLATIONTYPETEXT": {
+    "attemptedAt": "2026-11-12T16:37:37.645Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SAFETYOBSERVATIONGROUPCODE": {
+    "attemptedAt": "2026-11-12T16:37:38.149Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SAFETYOBSERVATIONGROUPCODET": {
+    "attemptedAt": "2026-11-12T16:37:38.621Z",
+    "found": true,
+    "matched": 3
+  },
+  "C_CMPLRQRSLTMARKETABILITYDEX": {
+    "attemptedAt": "2026-11-12T16:37:39.078Z",
+    "found": true,
+    "matched": 27
+  },
+  "C_SFTYDATASHTOUTPREQFDP_2": {
+    "attemptedAt": "2026-11-12T16:37:39.532Z",
+    "found": true,
+    "matched": 13
+  },
+  "D_PCLBLFLDVERSREGLBLFLDCALCTRP": {
+    "attemptedAt": "2026-11-12T16:37:39.702Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLBLFLDVERSREGLBLFLDCALCTRP\" (404)"
+  },
+  "I_PRODCMPLNCLABELFLDGROUPTP_2": {
+    "attemptedAt": "2026-11-12T16:37:40.123Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLABELFLDGROUPTP_2\" (404)"
+  },
+  "I_PRODCMPLNCLBLFLDGROUPTXTTP_2": {
+    "attemptedAt": "2026-11-12T16:37:40.540Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLBLFLDGROUPTXTTP_2\" (404)"
+  },
+  "I_PRODCMPLNCLBLFLDVERSIONTP_2": {
+    "attemptedAt": "2026-11-12T16:37:40.963Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLBLFLDVERSIONTP_2\" (404)"
+  },
+  "I_PRODCMPLNCLBLFLDVERSTXTTP_2": {
+    "attemptedAt": "2026-11-12T16:37:41.389Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLBLFLDVERSTXTTP_2\" (404)"
+  },
+  "C_WASTEANALYTICSQUERY": {
+    "attemptedAt": "2026-11-12T16:37:42.189Z",
+    "found": true,
+    "matched": 44
+  },
+  "I_ENVRMTWASTECODEDIMENSION": {
+    "attemptedAt": "2026-11-12T16:37:42.728Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ENVRMTWASTETRANSPDOCMATLDIMN": {
+    "attemptedAt": "2026-11-12T16:37:43.214Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_ENVWSTTRANSPDOCWASTELOCATION": {
+    "attemptedAt": "2026-11-12T16:37:43.665Z",
+    "found": true,
+    "matched": 16
+  },
+  "I_WASTEANALYTICSCUBE": {
+    "attemptedAt": "2026-11-12T16:37:44.141Z",
+    "found": true,
+    "matched": 52
+  },
+  "I_WASTECMPLRQVERSDIMN": {
+    "attemptedAt": "2026-11-12T16:37:44.615Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_WASTECONTAINERTYPEDIMENSION": {
+    "attemptedAt": "2026-11-12T16:37:45.113Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_WASTEDANGEROUSGOODDIMENSION": {
+    "attemptedAt": "2026-11-12T16:37:45.656Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_WASTEDISPOSALCHNLDIMENSION": {
+    "attemptedAt": "2026-11-12T16:37:46.159Z",
+    "found": true,
+    "matched": 10
   }
 }
