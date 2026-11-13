@@ -9633,5 +9633,240 @@
     "attemptedAt": "2026-11-12T16:37:46.159Z",
     "found": true,
     "matched": 10
+  },
+  "I_WASTEDISPOSERDIMENSION": {
+    "attemptedAt": "2026-11-13T15:56:59.115Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_WASTEHAZARDTYPEDIMENSION": {
+    "attemptedAt": "2026-11-13T15:56:59.659Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_WASTEMGMTMETHCODEDIMENSION": {
+    "attemptedAt": "2026-11-13T15:57:00.141Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_WASTEPERMITDIMENSION": {
+    "attemptedAt": "2026-11-13T15:57:00.635Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_WASTEPTOFGNRTNDIMENSION": {
+    "attemptedAt": "2026-11-13T15:57:01.145Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_WASTESTREAMRGTYCODECONFIGN": {
+    "attemptedAt": "2026-11-13T15:57:01.646Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_WASTETRANSFREQDIMENSION": {
+    "attemptedAt": "2026-11-13T15:57:02.157Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_WASTETRANSFREQSTSDIMN": {
+    "attemptedAt": "2026-11-13T15:57:02.719Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_WASTETRANSPDOCGNRTRDIMENSION": {
+    "attemptedAt": "2026-11-13T15:57:03.214Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_WASTETRANSPDOCSTSDIMENSION": {
+    "attemptedAt": "2026-11-13T15:57:03.696Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_WASTETRANSPDOCTYPEDIMENSION": {
+    "attemptedAt": "2026-11-13T15:57:04.198Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_WASTETRANSPORTERDIMENSION": {
+    "attemptedAt": "2026-11-13T15:57:04.712Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_WSTSTMRGTYCODEVALDIMN": {
+    "attemptedAt": "2026-11-13T15:57:05.212Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_FIXEDASSETUSAGEOBJECT": {
+    "attemptedAt": "2026-11-13T15:57:05.701Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_FIXEDASSETUSAGEOBJECTPERIOD": {
+    "attemptedAt": "2026-11-13T15:57:06.176Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_FIXEDASSETUSAGEOBJECTTOTAL": {
+    "attemptedAt": "2026-11-13T15:57:06.669Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_ASSETBALANCESKEYFIGURESETVH": {
+    "attemptedAt": "2026-11-13T15:57:07.153Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ASSETDEPRECIATIONPHASE": {
+    "attemptedAt": "2026-11-13T15:57:07.659Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ASSETDEPRECIATIONPHASETEXT": {
+    "attemptedAt": "2026-11-13T15:57:08.191Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ASSETDEPRECIATIONTYPE": {
+    "attemptedAt": "2026-11-13T15:57:08.713Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ASSETDEPRECIATIONTYPETEXT": {
+    "attemptedAt": "2026-11-13T15:57:09.190Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ASSETHISTSHEETKEYFIGURESETVH": {
+    "attemptedAt": "2026-11-13T15:57:09.678Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ASSETKEYFIGURE": {
+    "attemptedAt": "2026-11-13T15:57:10.156Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ASSETKEYFIGURESET": {
+    "attemptedAt": "2026-11-13T15:57:10.644Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_ASSETKEYFIGURESETTEXT": {
+    "attemptedAt": "2026-11-13T15:57:11.112Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ASSETKEYFIGURETEXT": {
+    "attemptedAt": "2026-11-13T15:57:11.680Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ASSETSORTEDKEYFIGURESETSPEC": {
+    "attemptedAt": "2026-11-13T15:57:12.196Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_DEPRECIATIONPROFILE": {
+    "attemptedAt": "2026-11-13T15:57:12.705Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_DEPRECIATIONPROFILESTDVH": {
+    "attemptedAt": "2026-11-13T15:57:13.234Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_DEPRECIATIONPROFILETEXT": {
+    "attemptedAt": "2026-11-13T15:57:13.720Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DEPRPRFLACCTGPRNCPSTDVH": {
+    "attemptedAt": "2026-11-13T15:57:14.234Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_DEPRPROFILEACCTGPRNCPASSGMT": {
+    "attemptedAt": "2026-11-13T15:57:14.759Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_DEPRPROFILEPHASE": {
+    "attemptedAt": "2026-11-13T15:57:15.248Z",
+    "found": true,
+    "matched": 30
+  },
+  "I_DEPRPROFILEPHASELEVEL": {
+    "attemptedAt": "2026-11-13T15:57:15.762Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_ASSETREVALUATIONINDEX": {
+    "attemptedAt": "2026-11-13T15:57:16.289Z",
+    "found": true,
+    "matched": 14
+  },
+  "I_ASSETREVALUATIONINDEXITEM": {
+    "attemptedAt": "2026-11-13T15:57:16.764Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PAYMENTBLOCKLEVEL": {
+    "attemptedAt": "2026-11-13T15:57:17.237Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_PAYMENTBLOCKLEVELTEXT": {
+    "attemptedAt": "2026-11-13T15:57:17.705Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PAYMENTPROGRAMCONTROL": {
+    "attemptedAt": "2026-11-13T15:57:18.225Z",
+    "found": true,
+    "matched": 17
+  },
+  "I_PAYMENTPROPOSALITEM": {
+    "attemptedAt": "2026-11-13T15:57:18.725Z",
+    "found": true,
+    "matched": 71
+  },
+  "I_PAYMENTPROPOSALPAYMENT": {
+    "attemptedAt": "2026-11-13T15:57:19.246Z",
+    "found": true,
+    "matched": 129
+  },
+  "I_PAYMENTREASON": {
+    "attemptedAt": "2026-11-13T15:57:19.759Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PAYMENTREASONTEXT": {
+    "attemptedAt": "2026-11-13T15:57:20.265Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PAYTPRPSLBLKDFINACCOUNT": {
+    "attemptedAt": "2026-11-13T15:57:20.759Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_WITHHOLDINGTAXCODEVH": {
+    "attemptedAt": "2026-11-13T15:57:21.238Z",
+    "found": true,
+    "matched": 12
+  },
+  "I_WITHHOLDINGTAXINCOMETYPE": {
+    "attemptedAt": "2026-11-13T15:57:21.753Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_WITHHOLDINGTAXINCOMETYPETEXT": {
+    "attemptedAt": "2026-11-13T15:57:22.261Z",
+    "found": true,
+    "matched": 4
   }
 }
