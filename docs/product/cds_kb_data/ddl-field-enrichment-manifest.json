@@ -9868,5 +9868,240 @@
     "attemptedAt": "2026-11-13T15:57:22.261Z",
     "found": true,
     "matched": 4
+  },
+  "I_WITHHOLDINGTAXITEM": {
+    "attemptedAt": "2026-11-14T14:48:17.324Z",
+    "found": true,
+    "matched": 48
+  },
+  "C_APDAYSPAYOUTST": {
+    "attemptedAt": "2026-11-14T14:48:17.878Z",
+    "found": true,
+    "matched": 15
+  },
+  "C_APFLEXIBLEAGING": {
+    "attemptedAt": "2026-11-14T14:48:18.387Z",
+    "found": true,
+    "matched": 21
+  },
+  "C_APJRNLENTRITMAGINGGRID": {
+    "attemptedAt": "2026-11-14T14:48:18.861Z",
+    "found": true,
+    "matched": 39
+  },
+  "I_APDAYSPAYOUTST": {
+    "attemptedAt": "2026-11-14T14:48:19.387Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_APFLEXIBLEAGING": {
+    "attemptedAt": "2026-11-14T14:48:19.834Z",
+    "found": true,
+    "matched": 17
+  },
+  "I_APJRNLENTRITMAGINGGRID": {
+    "attemptedAt": "2026-11-14T14:48:20.282Z",
+    "found": true,
+    "matched": 34
+  },
+  "I_PAYMENTMETHOD": {
+    "attemptedAt": "2026-11-14T14:48:20.759Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_PAYMENTMETHODINCOMPANYCODE": {
+    "attemptedAt": "2026-11-14T14:48:21.208Z",
+    "found": true,
+    "matched": 14
+  },
+  "I_PAYMENTMETHODTEXT": {
+    "attemptedAt": "2026-11-14T14:48:21.688Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_DUNNINGAREA": {
+    "attemptedAt": "2026-11-14T14:48:22.137Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_DUNNINGAREASTDVH": {
+    "attemptedAt": "2026-11-14T14:48:22.635Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_DUNNINGAREATEXT": {
+    "attemptedAt": "2026-11-14T14:48:23.133Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_DUNNINGBLOCKINGREASONCODE": {
+    "attemptedAt": "2026-11-14T14:48:23.616Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_DUNNINGBLOCKINGREASONTEXT": {
+    "attemptedAt": "2026-11-14T14:48:24.090Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DUNNINGENTRY": {
+    "attemptedAt": "2026-11-14T14:48:24.568Z",
+    "found": true,
+    "matched": 49
+  },
+  "I_DUNNINGENTRYITEM": {
+    "attemptedAt": "2026-11-14T14:48:25.020Z",
+    "found": true,
+    "matched": 49
+  },
+  "I_DUNNINGKEY": {
+    "attemptedAt": "2026-11-14T14:48:25.496Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_DUNNINGKEYTEXT": {
+    "attemptedAt": "2026-11-14T14:48:25.967Z",
+    "found": true,
+    "matched": 3
+  },
+  "C_BALANCECONFIRMATIONEMAILTMPL": {
+    "attemptedAt": "2026-11-14T14:48:26.455Z",
+    "found": true,
+    "matched": 12
+  },
+  "I_RBLFINANCINGSTATUSTEXT": {
+    "attemptedAt": "2026-11-14T14:48:26.928Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_RECEIVABLEFINANCINGSTATUS": {
+    "attemptedAt": "2026-11-14T14:48:27.432Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_RECEIVABLEFINANCINGSTATUSVH": {
+    "attemptedAt": "2026-11-14T14:48:27.890Z",
+    "found": true,
+    "matched": 1
+  },
+  "C_ARAGINGGRIDGENLEDGERQRY": {
+    "attemptedAt": "2026-11-14T14:48:28.349Z",
+    "found": true,
+    "matched": 47
+  },
+  "C_ARBANKSTMTREPROCESSING": {
+    "attemptedAt": "2026-11-14T14:48:28.790Z",
+    "found": true,
+    "matched": 22
+  },
+  "C_ARJRNLENTRITMAGINGGRID": {
+    "attemptedAt": "2026-11-14T14:48:29.231Z",
+    "found": true,
+    "matched": 42
+  },
+  "C_COLLECTIONPROGRESSQ": {
+    "attemptedAt": "2026-11-14T14:48:29.695Z",
+    "found": true,
+    "matched": 16
+  },
+  "C_DAYSBEYONDTERMS": {
+    "attemptedAt": "2026-11-14T14:48:30.137Z",
+    "found": true,
+    "matched": 27
+  },
+  "C_DAYSSALESOUTSTANDING": {
+    "attemptedAt": "2026-11-14T14:48:30.642Z",
+    "found": true,
+    "matched": 30
+  },
+  "C_DUNNINGLEVELDISTRIBUTION": {
+    "attemptedAt": "2026-11-14T14:48:31.092Z",
+    "found": true,
+    "matched": 30
+  },
+  "C_FUTUREACCTRBLS": {
+    "attemptedAt": "2026-11-14T14:48:31.567Z",
+    "found": true,
+    "matched": 33
+  },
+  "C_OPENCLOSEDDISPUTECASE": {
+    "attemptedAt": "2026-11-14T14:48:32.032Z",
+    "found": true,
+    "matched": 40
+  },
+  "C_OPENDISPPROCESSINGDAYS": {
+    "attemptedAt": "2026-11-14T14:48:32.488Z",
+    "found": true,
+    "matched": 45
+  },
+  "C_OPENDISPUTECASE": {
+    "attemptedAt": "2026-11-14T14:48:32.951Z",
+    "found": true,
+    "matched": 33
+  },
+  "C_OVERDUEACCTRBLS": {
+    "attemptedAt": "2026-11-14T14:48:33.389Z",
+    "found": true,
+    "matched": 39
+  },
+  "C_PROMISETOPAYOVERVIEW": {
+    "attemptedAt": "2026-11-14T14:48:33.862Z",
+    "found": true,
+    "matched": 35
+  },
+  "C_RESOLVEDDISPUTECASE": {
+    "attemptedAt": "2026-11-14T14:48:34.361Z",
+    "found": true,
+    "matched": 47
+  },
+  "C_SOLVEDDSPUTCASESTSDURNQ": {
+    "attemptedAt": "2026-11-14T14:48:34.861Z",
+    "found": true,
+    "matched": 18
+  },
+  "C_TOTALACCOUNTSRECEIVABLES": {
+    "attemptedAt": "2026-11-14T14:48:35.335Z",
+    "found": true,
+    "matched": 32
+  },
+  "I_APARTOLERANCEGROUP": {
+    "attemptedAt": "2026-11-14T14:48:35.834Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_APARTOLERANCEGROUPTEXT": {
+    "attemptedAt": "2026-11-14T14:48:36.298Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_ARAGINGGRIDGENLEDGERCUBE": {
+    "attemptedAt": "2026-11-14T14:48:36.762Z",
+    "found": true,
+    "matched": 52
+  },
+  "I_ARJRNLENTRITMAGINGGRID": {
+    "attemptedAt": "2026-11-14T14:48:37.207Z",
+    "found": true,
+    "matched": 37
+  },
+  "I_BANKSTMNTITEMREPROCESSREASON": {
+    "attemptedAt": "2026-11-14T14:48:37.683Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_BANKSTMNTITMREPROCESSRSNNAME": {
+    "attemptedAt": "2026-11-14T14:48:38.158Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CUSTOMERCONTACTATTRIBUTE": {
+    "attemptedAt": "2026-11-14T14:48:38.617Z",
+    "found": true,
+    "matched": 22
+  },
+  "I_DAYSBEYONDTERMS": {
+    "attemptedAt": "2026-11-14T14:48:39.148Z",
+    "found": true,
+    "matched": 22
   }
 }
