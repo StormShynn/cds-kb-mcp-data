@@ -10103,5 +10103,240 @@
     "attemptedAt": "2026-11-14T14:48:39.148Z",
     "found": true,
     "matched": 22
+  },
+  "I_DAYSSALESOUTSTANDING": {
+    "attemptedAt": "2026-11-15T15:24:35.691Z",
+    "found": true,
+    "matched": 22
+  },
+  "I_DUNNINGLEVELDISTRIBUTION": {
+    "attemptedAt": "2026-11-15T15:24:36.387Z",
+    "found": true,
+    "matched": 25
+  },
+  "I_FUTUREACCOUNTSRECEIVABLES": {
+    "attemptedAt": "2026-11-15T15:24:36.913Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_JOURNALENTRYITEMONETIMEDATA": {
+    "attemptedAt": "2026-11-15T15:24:37.587Z",
+    "found": true,
+    "matched": 41
+  },
+  "I_ONETIMEACCOUNTCUSTOMER": {
+    "attemptedAt": "2026-11-15T15:24:38.108Z",
+    "found": true,
+    "matched": 27
+  },
+  "I_ONETIMEACCOUNTSUPPLIER": {
+    "attemptedAt": "2026-11-15T15:24:38.622Z",
+    "found": true,
+    "matched": 27
+  },
+  "I_OVERDUEACCOUNTSRECEIVABLES": {
+    "attemptedAt": "2026-11-15T15:24:39.112Z",
+    "found": true,
+    "matched": 28
+  },
+  "I_PAYMENTBLOCKINGREASON": {
+    "attemptedAt": "2026-11-15T15:24:39.619Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PAYMENTBLOCKINGREASONTEXT": {
+    "attemptedAt": "2026-11-15T15:24:40.120Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PAYMENTDIFFERENCEREASON": {
+    "attemptedAt": "2026-11-15T15:24:40.646Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PAYMENTDIFFERENCEREASONT": {
+    "attemptedAt": "2026-11-15T15:24:41.138Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_PAYMENTTERMS": {
+    "attemptedAt": "2026-11-15T15:24:41.662Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_PAYMENTTERMSCONDITIONS": {
+    "attemptedAt": "2026-11-15T15:24:42.167Z",
+    "found": true,
+    "matched": 27
+  },
+  "I_PAYMENTTERMSCONDITIONSTEXT": {
+    "attemptedAt": "2026-11-15T15:24:42.688Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PAYMENTTERMSINSTALLMENTITEM": {
+    "attemptedAt": "2026-11-15T15:24:43.172Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PAYMENTTERMSTEXT": {
+    "attemptedAt": "2026-11-15T15:24:43.688Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SEPAAPPLICATION": {
+    "attemptedAt": "2026-11-15T15:24:44.212Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SEPAAPPLICATIONTEXT": {
+    "attemptedAt": "2026-11-15T15:24:44.711Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SEPAMANDATE": {
+    "attemptedAt": "2026-11-15T15:24:45.223Z",
+    "found": true,
+    "matched": 67
+  },
+  "I_SEPAMANDATESTATUS": {
+    "attemptedAt": "2026-11-15T15:24:45.708Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SEPAMANDATESTATUSCHGREASON": {
+    "attemptedAt": "2026-11-15T15:24:46.231Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SEPAMANDATESTATUSTEXT": {
+    "attemptedAt": "2026-11-15T15:24:46.711Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SEPAMANDATESTSCHGRSNTEXT": {
+    "attemptedAt": "2026-11-15T15:24:47.193Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_SEPAMANDATEUSAGE": {
+    "attemptedAt": "2026-11-15T15:24:47.728Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SEPAPAYMENTTYPE": {
+    "attemptedAt": "2026-11-15T15:24:48.256Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SEPAPAYMENTTYPETEXT": {
+    "attemptedAt": "2026-11-15T15:24:48.787Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_STATECENTRALBANKPAYTRSN": {
+    "attemptedAt": "2026-11-15T15:24:49.296Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_TOTALACCOUNTSRECEIVABLES": {
+    "attemptedAt": "2026-11-15T15:24:49.814Z",
+    "found": true,
+    "matched": 25
+  },
+  "I_USERTOLERANCEGROUP": {
+    "attemptedAt": "2026-11-15T15:24:50.350Z",
+    "found": true,
+    "matched": 12
+  },
+  "I_USERTOUSERTOLERANCEGROUP": {
+    "attemptedAt": "2026-11-15T15:24:50.839Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_BANKCHAINBANKDETAIL": {
+    "attemptedAt": "2026-11-15T15:24:51.370Z",
+    "found": true,
+    "matched": 25
+  },
+  "I_BANKCHAINHEADER": {
+    "attemptedAt": "2026-11-15T15:24:51.861Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_BANKCHAINITEM": {
+    "attemptedAt": "2026-11-15T15:24:52.375Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_CASHJOURNALDOCUMENT_2": {
+    "attemptedAt": "2026-11-15T15:24:52.895Z",
+    "found": true,
+    "matched": 41
+  },
+  "D_CONTRACCTGDOCUMENTCANCELED": {
+    "attemptedAt": "2026-11-15T15:24:53.095Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACCTGDOCUMENTCANCELED\" (404)"
+  },
+  "D_CONTRACCTGDOCUMENTCHANGED": {
+    "attemptedAt": "2026-11-15T15:24:53.552Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACCTGDOCUMENTCHANGED\" (404)"
+  },
+  "D_CONTRACCTGDOCUMENTCREATED": {
+    "attemptedAt": "2026-11-15T15:24:54.016Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACCTGDOCUMENTCREATED\" (404)"
+  },
+  "D_CONTRACTACCOUNTCHANGED": {
+    "attemptedAt": "2026-11-15T15:24:54.470Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACTACCOUNTCHANGED\" (404)"
+  },
+  "D_CONTRACTACCOUNTCREATED": {
+    "attemptedAt": "2026-11-15T15:24:54.927Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACTACCOUNTCREATED\" (404)"
+  },
+  "I_CAACCOUNTASSIGNMENTCATEGORY": {
+    "attemptedAt": "2026-11-15T15:24:55.696Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAACCOUNTASSIGNMENTCATEGORYT": {
+    "attemptedAt": "2026-11-15T15:24:56.236Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAACCOUNTDETNCODE": {
+    "attemptedAt": "2026-11-15T15:24:56.756Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAACCOUNTDETNCODETEXT": {
+    "attemptedAt": "2026-11-15T15:24:57.280Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAACCTASSGMTDISTRCODE": {
+    "attemptedAt": "2026-11-15T15:24:57.805Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAACCTASSGMTDISTRCODETEXT": {
+    "attemptedAt": "2026-11-15T15:24:58.344Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAACCTDETNTRANSKEY": {
+    "attemptedAt": "2026-11-15T15:24:58.872Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAACCTDETNTRANSKEYTEXT": {
+    "attemptedAt": "2026-11-15T15:24:59.389Z",
+    "found": true,
+    "matched": 3
   }
 }
