@@ -10573,5 +10573,240 @@
     "attemptedAt": "2026-11-16T17:59:52.372Z",
     "found": true,
     "matched": 3
+  },
+  "I_CACLEARINGREASON": {
+    "attemptedAt": "2026-11-17T17:25:04.710Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CACLEARINGREASONTEXT": {
+    "attemptedAt": "2026-11-17T17:25:05.177Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACLEARINGRESTRICTIONCODE": {
+    "attemptedAt": "2026-11-17T17:25:05.658Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACLEARINGRESTRICTIONCODET": {
+    "attemptedAt": "2026-11-17T17:25:06.125Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACLEARINGSTATUS": {
+    "attemptedAt": "2026-11-17T17:25:06.618Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACLEARINGSTATUSTEXT": {
+    "attemptedAt": "2026-11-17T17:25:07.088Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACOLLECTIONAGENCY": {
+    "attemptedAt": "2026-11-17T17:25:07.544Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACOLLECTIONSTEP": {
+    "attemptedAt": "2026-11-17T17:25:08.019Z",
+    "found": true,
+    "matched": 17
+  },
+  "I_CACOLLECTIONSTEPTEXT": {
+    "attemptedAt": "2026-11-17T17:25:08.468Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACOLLECTIONSTRATEGY": {
+    "attemptedAt": "2026-11-17T17:25:08.974Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACOLLECTIONSTRATEGYTEXT": {
+    "attemptedAt": "2026-11-17T17:25:09.480Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACOLLMASTERDATAGROUP": {
+    "attemptedAt": "2026-11-17T17:25:09.957Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CACOLLMASTERDATAGROUPTEXT": {
+    "attemptedAt": "2026-11-17T17:25:10.421Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACOMPANYCODEGROUP": {
+    "attemptedAt": "2026-11-17T17:25:10.870Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CACOMPANYCODEGROUPTEXT": {
+    "attemptedAt": "2026-11-17T17:25:11.327Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACORRESPNCACTIVITYCODE": {
+    "attemptedAt": "2026-11-17T17:25:11.774Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACORRESPNCACTIVITYCODET": {
+    "attemptedAt": "2026-11-17T17:25:12.212Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACORRESPONDENCETYPE": {
+    "attemptedAt": "2026-11-17T17:25:12.734Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CACORRESPONDENCETYPETEXT": {
+    "attemptedAt": "2026-11-17T17:25:13.177Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACORRESPONDENCEVARIANT": {
+    "attemptedAt": "2026-11-17T17:25:13.666Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACORRESPONDENCEVARIANTTEXT": {
+    "attemptedAt": "2026-11-17T17:25:14.146Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACRDTWORTHINESSITEMSTATUS": {
+    "attemptedAt": "2026-11-17T17:25:14.594Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACRDTWORTHINESSITEMSTATUST": {
+    "attemptedAt": "2026-11-17T17:25:15.056Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACREDITPOSTINGORIGIN": {
+    "attemptedAt": "2026-11-17T17:25:15.517Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACREDITPOSTINGORIGINTEXT": {
+    "attemptedAt": "2026-11-17T17:25:15.970Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACREDITWORTHINESS": {
+    "attemptedAt": "2026-11-17T17:25:16.413Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_CACREDITWORTHINESSITEM": {
+    "attemptedAt": "2026-11-17T17:25:16.908Z",
+    "found": true,
+    "matched": 21
+  },
+  "I_CACREDITWORTHINESSORIGIN": {
+    "attemptedAt": "2026-11-17T17:25:17.368Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACREDITWORTHINESSORIGINTEXT": {
+    "attemptedAt": "2026-11-17T17:25:17.803Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADBTFLORVALUEADJMTCODE": {
+    "attemptedAt": "2026-11-17T17:25:18.257Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADBTFLORVALUEADJMTCODET": {
+    "attemptedAt": "2026-11-17T17:25:18.764Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADFLTCLEARINGRSTRCNCODE": {
+    "attemptedAt": "2026-11-17T17:25:19.209Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADFLTCLEARINGRSTRCNCODET": {
+    "attemptedAt": "2026-11-17T17:25:19.657Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADIRECTDEBITLIMITCALCMODE": {
+    "attemptedAt": "2026-11-17T17:25:20.104Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADIRECTDEBITLIMITCALCMODET": {
+    "attemptedAt": "2026-11-17T17:25:20.650Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADISPUTEEXTCALLERCODE": {
+    "attemptedAt": "2026-11-17T17:25:21.134Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADISPUTEEXTCALLERCODETEXT": {
+    "attemptedAt": "2026-11-17T17:25:21.587Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADISPUTETYPE": {
+    "attemptedAt": "2026-11-17T17:25:22.070Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADISPUTETYPETEXT": {
+    "attemptedAt": "2026-11-17T17:25:22.572Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADOCCTNDOCITEMREFTYPE": {
+    "attemptedAt": "2026-11-17T17:25:23.059Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADOCCTNDOCITEMREFTYPETEXT": {
+    "attemptedAt": "2026-11-17T17:25:23.506Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADOCCTNREFTYPE": {
+    "attemptedAt": "2026-11-17T17:25:24.006Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CADOCCTNREFTYPETEXT": {
+    "attemptedAt": "2026-11-17T17:25:24.475Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADOCTRANSACTIONCLASS": {
+    "attemptedAt": "2026-11-17T17:25:24.939Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADOCTRANSACTIONCLASSTEXT": {
+    "attemptedAt": "2026-11-17T17:25:25.421Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADOCUMENT": {
+    "attemptedAt": "2026-11-17T17:25:25.950Z",
+    "found": true,
+    "matched": 45
+  },
+  "I_CADOCUMENTBPITEM": {
+    "attemptedAt": "2026-11-17T17:25:26.457Z",
+    "found": true,
+    "matched": 154
   }
 }
