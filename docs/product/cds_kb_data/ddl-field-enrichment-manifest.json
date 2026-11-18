@@ -10808,5 +10808,240 @@
     "attemptedAt": "2026-11-17T17:25:26.457Z",
     "found": true,
     "matched": 154
+  },
+  "I_CADOCUMENTBPITEMBUSLOCKTP": {
+    "attemptedAt": "2026-11-18T16:58:31.535Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CADOCUMENTBPITEMBUSLOCKTP\" (404)"
+  },
+  "I_CADOCUMENTBPITEMCUBE": {
+    "attemptedAt": "2026-11-18T16:58:32.258Z",
+    "found": true,
+    "matched": 140
+  },
+  "I_CADOCUMENTBPITEMTP": {
+    "attemptedAt": "2026-11-18T16:58:32.410Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CADOCUMENTBPITEMTP\" (404)"
+  },
+  "I_CADOCUMENTCLASS": {
+    "attemptedAt": "2026-11-18T16:58:33.106Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADOCUMENTCLASSTEXT": {
+    "attemptedAt": "2026-11-18T16:58:33.556Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADOCUMENTCUBE": {
+    "attemptedAt": "2026-11-18T16:58:34.013Z",
+    "found": true,
+    "matched": 36
+  },
+  "I_CADOCUMENTGLITEM": {
+    "attemptedAt": "2026-11-18T16:58:34.496Z",
+    "found": true,
+    "matched": 89
+  },
+  "I_CADOCUMENTGLITEMPAYMENTDATA": {
+    "attemptedAt": "2026-11-18T16:58:34.953Z",
+    "found": true,
+    "matched": 52
+  },
+  "I_CADOCUMENTORIGINCODE": {
+    "attemptedAt": "2026-11-18T16:58:35.427Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_CADOCUMENTORIGINCODETEXT": {
+    "attemptedAt": "2026-11-18T16:58:35.869Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADOCUMENTSUPPLEMENT": {
+    "attemptedAt": "2026-11-18T16:58:36.344Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADOCUMENTSUPPLEMENTTEXT": {
+    "attemptedAt": "2026-11-18T16:58:36.791Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADOCUMENTTP": {
+    "attemptedAt": "2026-11-18T16:58:36.979Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CADOCUMENTTP\" (404)"
+  },
+  "I_CADOCUMENTTYPE": {
+    "attemptedAt": "2026-11-18T16:58:37.710Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_CADOCUMENTTYPETEXT": {
+    "attemptedAt": "2026-11-18T16:58:38.150Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CADOCUMENTVERSION": {
+    "attemptedAt": "2026-11-18T16:58:38.590Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADOCUMENTVERSIONTEXT": {
+    "attemptedAt": "2026-11-18T16:58:39.039Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADUNCHRGANDINTRSTPOSTGCODE": {
+    "attemptedAt": "2026-11-18T16:58:39.478Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADUNCHRGANDINTRSTPOSTGCODET": {
+    "attemptedAt": "2026-11-18T16:58:39.944Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADUNNINGEXCEPTIONREASON": {
+    "attemptedAt": "2026-11-18T16:58:40.459Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CADUNNINGEXCEPTIONREASONTEXT": {
+    "attemptedAt": "2026-11-18T16:58:40.940Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADUNNINGHEADER": {
+    "attemptedAt": "2026-11-18T16:58:41.416Z",
+    "found": true,
+    "matched": 72
+  },
+  "I_CADUNNINGITEM": {
+    "attemptedAt": "2026-11-18T16:58:41.874Z",
+    "found": true,
+    "matched": 38
+  },
+  "I_CADUNNINGLETTERHEADER": {
+    "attemptedAt": "2026-11-18T16:58:42.350Z",
+    "found": true,
+    "matched": 24
+  },
+  "I_CADUNNINGLEVEL": {
+    "attemptedAt": "2026-11-18T16:58:42.804Z",
+    "found": true,
+    "matched": 25
+  },
+  "I_CADUNNINGLEVELCATEGORY": {
+    "attemptedAt": "2026-11-18T16:58:43.249Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADUNNINGLEVELCATEGORYTEXT": {
+    "attemptedAt": "2026-11-18T16:58:43.695Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADUNNINGLEVELTEXT": {
+    "attemptedAt": "2026-11-18T16:58:44.153Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CADUNNINGMASTERDATAORIGIN": {
+    "attemptedAt": "2026-11-18T16:58:44.587Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADUNNINGMASTERDATAORIGINT": {
+    "attemptedAt": "2026-11-18T16:58:45.085Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADUNNINGNOTICEGROUP": {
+    "attemptedAt": "2026-11-18T16:58:45.544Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADUNNINGNOTICEGROUPTEXT": {
+    "attemptedAt": "2026-11-18T16:58:45.978Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADUNNINGNOTICEISREVERSED": {
+    "attemptedAt": "2026-11-18T16:58:46.422Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADUNNINGPROCEDURE": {
+    "attemptedAt": "2026-11-18T16:58:46.876Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_CADUNNINGPROCEDURECATEGORY": {
+    "attemptedAt": "2026-11-18T16:58:47.316Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADUNNINGPROCEDURECATEGORYT": {
+    "attemptedAt": "2026-11-18T16:58:47.818Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADUNNINGPROCEDURETEXT": {
+    "attemptedAt": "2026-11-18T16:58:48.295Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADUNNINGVALUATIONSTATUS": {
+    "attemptedAt": "2026-11-18T16:58:48.772Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADUNNINGVALUATIONSTATUSTEXT": {
+    "attemptedAt": "2026-11-18T16:58:49.244Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADUNNOTICEISREVERSEDTEXT": {
+    "attemptedAt": "2026-11-18T16:58:49.687Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAEUROCONVERSIONSTATUS": {
+    "attemptedAt": "2026-11-18T16:58:50.140Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAEUROCONVERSIONSTATUSTEXT": {
+    "attemptedAt": "2026-11-18T16:58:50.601Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAFACTORINGCLRGCHECKSTATUS": {
+    "attemptedAt": "2026-11-18T16:58:51.039Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAFACTORINGCLRGCHECKSTATUST": {
+    "attemptedAt": "2026-11-18T16:58:51.487Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAFACTORINGRECEIVABLESTATUS": {
+    "attemptedAt": "2026-11-18T16:58:51.972Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAFACTORINGRECEIVABLESTATUST": {
+    "attemptedAt": "2026-11-18T16:58:52.431Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAHOUSEBANKREFERENCE": {
+    "attemptedAt": "2026-11-18T16:58:52.873Z",
+    "found": true,
+    "matched": 6
   }
 }
