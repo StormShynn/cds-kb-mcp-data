@@ -11513,5 +11513,240 @@
     "attemptedAt": "2026-11-20T16:45:01.035Z",
     "found": true,
     "matched": 3
+  },
+  "I_CASRVCRECONNECTIONREQUEST": {
+    "attemptedAt": "2026-11-21T15:56:00.750Z",
+    "found": true,
+    "matched": 16
+  },
+  "I_CASTATISTICALITEMCODE": {
+    "attemptedAt": "2026-11-21T15:56:01.207Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASTATISTICALITEMCODETEXT": {
+    "attemptedAt": "2026-11-21T15:56:01.717Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASUBAPPLICATION": {
+    "attemptedAt": "2026-11-21T15:56:02.187Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASUBAPPLICATIONTEXT": {
+    "attemptedAt": "2026-11-21T15:56:02.641Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASUBLEDGERAPPLICATION": {
+    "attemptedAt": "2026-11-21T15:56:03.174Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASUBLEDGERAPPLICATIONTEXT": {
+    "attemptedAt": "2026-11-21T15:56:03.684Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASUBSCRIPTIONCHARGETYPE": {
+    "attemptedAt": "2026-11-21T15:56:04.118Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASUBSCRIPTIONCHARGETYPETEXT": {
+    "attemptedAt": "2026-11-21T15:56:04.564Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASUBSTITUTEDOCCATEGORY": {
+    "attemptedAt": "2026-11-21T15:56:05.069Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASUBSTITUTEDOCCATEGORYTEXT": {
+    "attemptedAt": "2026-11-21T15:56:05.547Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASUBTRANSACTION": {
+    "attemptedAt": "2026-11-21T15:56:06.009Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_CASUBTRANSACTIONTEXT": {
+    "attemptedAt": "2026-11-21T15:56:06.493Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_CATAXDETERMINATIONCODE": {
+    "attemptedAt": "2026-11-21T15:56:06.983Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_CATAXSUPPLEMENTSTORAGELOC": {
+    "attemptedAt": "2026-11-21T15:56:07.457Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CATAXSUPPLEMENTSTORAGELOCT": {
+    "attemptedAt": "2026-11-21T15:56:07.905Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CATOLERANCEGROUP": {
+    "attemptedAt": "2026-11-21T15:56:08.358Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_CATOLERANCEGROUPTEXT": {
+    "attemptedAt": "2026-11-21T15:56:08.845Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CATRANSFERREASON": {
+    "attemptedAt": "2026-11-21T15:56:09.323Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CATRANSFERREASONTEXT": {
+    "attemptedAt": "2026-11-21T15:56:09.817Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAWITHHOLDINGTAXCAT": {
+    "attemptedAt": "2026-11-21T15:56:10.270Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAWITHHOLDINGTAXCATTEXT": {
+    "attemptedAt": "2026-11-21T15:56:10.725Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAWITHHOLDINGTAXSUPPLEMENT": {
+    "attemptedAt": "2026-11-21T15:56:11.168Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAWITHHOLDINGTAXSUPPLEMENTT": {
+    "attemptedAt": "2026-11-21T15:56:11.708Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAWORKFLOWCHECKPROCESS": {
+    "attemptedAt": "2026-11-21T15:56:12.173Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAWORKFLOWCHECKPROCESSTEXT": {
+    "attemptedAt": "2026-11-21T15:56:12.609Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAWORKFLOWCHECKREASON": {
+    "attemptedAt": "2026-11-21T15:56:13.056Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_CAWORKFLOWCHECKREASONTEXT": {
+    "attemptedAt": "2026-11-21T15:56:13.541Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAWRITEOFFDOCUMENT": {
+    "attemptedAt": "2026-11-21T15:56:13.972Z",
+    "found": true,
+    "matched": 37
+  },
+  "I_CAWRITEOFFHISTORY": {
+    "attemptedAt": "2026-11-21T15:56:14.416Z",
+    "found": true,
+    "matched": 18
+  },
+  "I_CAWRITEOFFREASON": {
+    "attemptedAt": "2026-11-21T15:56:14.880Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAWRITEOFFREASONTEXT": {
+    "attemptedAt": "2026-11-21T15:56:15.312Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CONACCTPRTNINVCGCHRGANDDISC": {
+    "attemptedAt": "2026-11-21T15:56:15.799Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_CONACCTPRTNINVCGCHRGDSCTP": {
+    "attemptedAt": "2026-11-21T15:56:15.946Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CONACCTPRTNINVCGCHRGDSCTP\" (404)"
+  },
+  "I_CONTRACCTCATSTDVH": {
+    "attemptedAt": "2026-11-21T15:56:16.639Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CONTRACCTPRTNBUSINESSLOCKTP": {
+    "attemptedAt": "2026-11-21T15:56:16.803Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CONTRACCTPRTNBUSINESSLOCKTP\" (404)"
+  },
+  "I_CONTRACCTPRTNCORRESPNCTP": {
+    "attemptedAt": "2026-11-21T15:56:17.247Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CONTRACCTPRTNCORRESPNCTP\" (404)"
+  },
+  "I_CONTRACCTPRTNRELSHPTYPE": {
+    "attemptedAt": "2026-11-21T15:56:17.959Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CONTRACCTPRTNRELSHPTYPETXT": {
+    "attemptedAt": "2026-11-21T15:56:18.437Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CONTRACCTTAXEXEMPTIONTP": {
+    "attemptedAt": "2026-11-21T15:56:18.577Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CONTRACCTTAXEXEMPTIONTP\" (404)"
+  },
+  "I_CONTRACTACCOUNTCATEGORY": {
+    "attemptedAt": "2026-11-21T15:56:19.319Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_CONTRACTACCOUNTCATEGORYTEXT": {
+    "attemptedAt": "2026-11-21T15:56:19.772Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CONTRACTACCOUNTHEADER": {
+    "attemptedAt": "2026-11-21T15:56:20.216Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_CONTRACTACCOUNTHEADERSTDVH": {
+    "attemptedAt": "2026-11-21T15:56:20.654Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CONTRACTACCOUNTPARTNER": {
+    "attemptedAt": "2026-11-21T15:56:21.103Z",
+    "found": true,
+    "matched": 99
+  },
+  "I_CONTRACTACCOUNTPARTNERTP": {
+    "attemptedAt": "2026-11-21T15:56:21.258Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CONTRACTACCOUNTPARTNERTP\" (404)"
+  },
+  "I_CONTRACTACCOUNTTP": {
+    "attemptedAt": "2026-11-21T15:56:21.661Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CONTRACTACCOUNTTP\" (404)"
   }
 }
