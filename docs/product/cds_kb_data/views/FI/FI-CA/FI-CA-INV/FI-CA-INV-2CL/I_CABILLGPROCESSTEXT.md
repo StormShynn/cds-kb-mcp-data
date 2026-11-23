@@ -54,9 +54,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgProcess` | ✓ | | `_tfk8110t` | `bill_process` |  |  |
-| `Language` | ✓ | | `_tfk8110t` | `langu` |  |  |
-| `CABillgProcessText` |  | |  | `cast( _tfk8110t.text as bill_process_txt_gfn_kk preserving type )` |  |  |
+| `CABillgProcess` | ✓ | | `_tfk8110t` | `bill_process` | `CHAR(4)` | Billing Process |
+| `Language` | ✓ | | `_tfk8110t` | `langu` | `LANG(1)` | Language Key |
+| `CABillgProcessText` |  | |  | `cast( _tfk8110t.text as bill_process_txt_gfn_kk preserving type )` | `CHAR(50)` | Text for Billing Process |
 | `_CABillgProcess` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

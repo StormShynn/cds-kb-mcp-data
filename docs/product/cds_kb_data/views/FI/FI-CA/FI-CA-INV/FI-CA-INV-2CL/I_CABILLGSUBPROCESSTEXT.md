@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgSubprocess` | ✓ | | `_tfk8104t` | `subprocess` |  |  |
-| `Language` | ✓ | | `_tfk8104t` | `langu` |  |  |
-| `CABillgSubprocessText` |  | |  | `cast( _tfk8104t.text as subprocess_txt_gfn_kk preserving type )` |  |  |
+| `CABillgSubprocess` | ✓ | | `_tfk8104t` | `subprocess` | `CHAR(4)` | Subprocess of Billing |
+| `Language` | ✓ | | `_tfk8104t` | `langu` | `LANG(1)` | Language Key |
+| `CABillgSubprocessText` |  | |  | `cast( _tfk8104t.text as subprocess_txt_gfn_kk preserving type )` | `CHAR(50)` | Text for Subprocess of Billing |
 | `_CABillgSubprocess` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

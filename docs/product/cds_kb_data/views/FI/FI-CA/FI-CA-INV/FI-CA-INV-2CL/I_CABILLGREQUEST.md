@@ -39,32 +39,32 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgReqDocument` | ✓ | |  | `billreqno` |  |  |
-| `CABillgReqCategory` |  | |  | `billreqcat` |  |  |
-| `CABillgReqType` |  | |  | `billreqtype` |  |  |
-| `CABillgReqReason` |  | |  | `billreqrsn` |  |  |
-| `CAApplicationArea` |  | |  | `applk` |  |  |
-| `ContractAccount` |  | |  | `vkont` |  |  |
-| `BusinessPartner` |  | |  | `cast(gpart as bu_partner preserving type)` |  |  |
-| `CAInvoicingDocument` |  | |  | `inv_ref` |  |  |
-| `CABillgReqDescription` |  | |  | `billreq_descr` |  |  |
-| `CABillgReqStatus` |  | |  | `billreqstatus` |  |  |
-| `CABillgReqTotalAmount` |  | |  | `billreq_total_amt` |  |  |
-| `CABillgReqTotalAmountCurrency` |  | |  | `billreq_total_curr` |  |  |
-| `CABillgReqTotalAmtTxIsIncluded` |  | |  | `billreq_total_tax_included` |  |  |
-| `CABillgReqCreationUser` |  | |  | `crname` |  |  |
-| `CABillgReqCreationDate` |  | |  | `crdate` |  |  |
-| `CABillgReqCreationTime` |  | |  | `crtime` |  |  |
-| `CABillgReqChangeUser` |  | |  | `chname` |  |  |
-| `CABillgReqChangeDate` |  | |  | `chdate` |  |  |
-| `CABillgReqChangeTime` |  | |  | `chtime` |  |  |
-| `CAClrfctnExist` |  | |  | `cfc_exists` |  |  |
-| `CABillgReqReference` |  | |  | `reference` |  |  |
-| `CABillgReqNumberOfItems` |  | |  | `billreq_recnum` |  |  |
-| `LogicalSystem` |  | |  | `log_system` |  |  |
-| `CABllbleItmListId` |  | |  | `bitlist_id` |  |  |
-| `CADeletionDate` |  | |  | `loedt` |  |  |
-| `CABillgReqCompletionDate` |  | |  | `completion_date` |  |  |
+| `CABillgReqDocument` | ✓ | |  | `billreqno` | `NUMC(12)` | Billing Request Number |
+| `CABillgReqCategory` |  | |  | `billreqcat` | `CHAR(4)` | Billing Request Category |
+| `CABillgReqType` |  | |  | `billreqtype` | `CHAR(2)` | Billing Request Type |
+| `CABillgReqReason` |  | |  | `billreqrsn` | `CHAR(4)` | Reason for Billing Request |
+| `CAApplicationArea` |  | |  | `applk` | `CHAR(1)` | Application Area |
+| `ContractAccount` |  | |  | `vkont` | `CHAR(12)` | Contract Account Number |
+| `BusinessPartner` |  | |  | `cast(gpart as bu_partner preserving type)` | `CHAR(10)` | Business Partner Number |
+| `CAInvoicingDocument` |  | |  | `inv_ref` | `CHAR(12)` | Number of Invoicing Document |
+| `CABillgReqDescription` |  | |  | `billreq_descr` | `CHAR(60)` | Billing Request Description |
+| `CABillgReqStatus` |  | |  | `billreqstatus` | `CHAR(1)` | Status of Billing Request |
+| `CABillgReqTotalAmount` |  | |  | `billreq_total_amt` | `CURR(13)` | Total Amount of Billing Request |
+| `CABillgReqTotalAmountCurrency` |  | |  | `billreq_total_curr` | `CUKY(5)` | Transaction Currency |
+| `CABillgReqTotalAmtTxIsIncluded` |  | |  | `billreq_total_tax_included` | `CHAR(1)` | Tax Included in Total Amount of Billing Request |
+| `CABillgReqCreationUser` |  | |  | `crname` | `CHAR(12)` | User Who Created the Billing Request |
+| `CABillgReqCreationDate` |  | |  | `crdate` | `DATS(8)` | Creation Date of Billing Request |
+| `CABillgReqCreationTime` |  | |  | `crtime` | `TIMS(6)` | Creation Time of Billing Request |
+| `CABillgReqChangeUser` |  | |  | `chname` | `CHAR(12)` | User Who Changed the Billing Request |
+| `CABillgReqChangeDate` |  | |  | `chdate` | `DATS(8)` | Change Date of Billing Request |
+| `CABillgReqChangeTime` |  | |  | `chtime` | `TIMS(6)` | Billing Request Last Changed At |
+| `CAClrfctnExist` |  | |  | `cfc_exists` | `CHAR(1)` | Validity Test Negative |
+| `CABillgReqReference` |  | |  | `reference` | `CHAR(32)` | External Reference of Billing Request |
+| `CABillgReqNumberOfItems` |  | |  | `billreq_recnum` | `INT4(10)` | Total Number of Billing Request Items |
+| `LogicalSystem` |  | |  | `log_system` | `CHAR(10)` | Logical System |
+| `CABllbleItmListId` |  | |  | `bitlist_id` | `NUMC(12)` | List ID |
+| `CADeletionDate` |  | |  | `loedt` | `DATS(8)` | Date on which the entry can be deleted again |
+| `CABillgReqCompletionDate` |  | |  | `completion_date` | `DATS(8)` | Completion Date of Billing Request |
 | `_CABillgReqStatus` | | ✓ | | | | |
 | `_CABillgReqCategory` | | ✓ | | | | |
 | `_CABillgReqType` | | ✓ | | | | |

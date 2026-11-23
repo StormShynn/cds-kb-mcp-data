@@ -40,7 +40,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgPlnStatus` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as bip_status_kk preserving type)` |  |  |
+| `CABillgPlnStatus` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as bip_status_kk preserving type)` | `CHAR(1)` | Status of Billing Plan |
 | `_CABillgPlnStatusText` | | ✓ | | | | |
 
 ## Associations

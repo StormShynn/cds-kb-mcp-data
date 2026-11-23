@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgReqCategory` | ✓ | |  | `billreqcat` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `CABillgReqCategoryText` |  | |  | `cast ( billreqcat_txt as billreqcat_txt_gfn_kk preserving type )` |  |  |
+| `CABillgReqCategory` | ✓ | |  | `billreqcat` | `CHAR(4)` | Billing Request Category |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `CABillgReqCategoryText` |  | |  | `cast ( billreqcat_txt as billreqcat_txt_gfn_kk preserving type )` | `CHAR(50)` | Text for Billing Request Category |
 | `_CABillgReqCategory` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

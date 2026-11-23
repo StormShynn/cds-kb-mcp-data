@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgReqStatus` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as billreqstatus_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
-| `CABillgReqStatusText` |  | |  | `cast ( ddtext as descr_60_kk preserving type )` |  |  |
+| `CABillgReqStatus` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as billreqstatus_kk preserving type )` | `CHAR(1)` | Status of Billing Request |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CABillgReqStatusText` |  | |  | `cast ( ddtext as descr_60_kk preserving type )` | `CHAR(60)` | Description |
 | `_CABillgReqStatus` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

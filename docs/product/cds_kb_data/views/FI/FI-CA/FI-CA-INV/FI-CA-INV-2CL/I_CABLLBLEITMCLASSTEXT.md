@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABllbleItmClass` | ✓ | | `_tfk8101t` | `bitcat` |  |  |
-| `Language` | ✓ | | `_tfk8101t` | `langu` |  |  |
-| `CABllbleItmClassText` |  | | `_tfk8101t` | `bitcat_txt` |  |  |
+| `CABllbleItmClass` | ✓ | | `_tfk8101t` | `bitcat` | `CHAR(4)` | Billable Item Class |
+| `Language` | ✓ | | `_tfk8101t` | `langu` | `LANG(1)` | Language Key |
+| `CABllbleItmClassText` |  | | `_tfk8101t` | `bitcat_txt` | `CHAR(50)` | Name of Billable Item Class |
 | `_CABllbleItmClass` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

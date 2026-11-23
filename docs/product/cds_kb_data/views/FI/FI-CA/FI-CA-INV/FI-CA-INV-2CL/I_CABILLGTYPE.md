@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgType` | ✓ | | `_tfk8112` | `bill_type` |  |  |
+| `CABillgType` | ✓ | | `_tfk8112` | `bill_type` | `CHAR(4)` | Billing Type |
 | `_CABillgTypeText` | | ✓ | | | | |
 
 ## Associations
