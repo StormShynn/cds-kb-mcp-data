@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | | `_tfk2617t` | `langu` |  |  |
-| `CAApplicationArea` | ✓ | | `_tfk2617t` | `applk` |  |  |
-| `CAInvcgChargeAndDiscountKey` | ✓ | | `_tfk2617t` | `chgkey` |  |  |
-| `CAInvcgChrgAndDiscKeyText` |  | | `_tfk2617t` | `text` |  |  |
+| `Language` | ✓ | | `_tfk2617t` | `langu` | `LANG(1)` | Language Key |
+| `CAApplicationArea` | ✓ | | `_tfk2617t` | `applk` | `CHAR(1)` | Application Area |
+| `CAInvcgChargeAndDiscountKey` | ✓ | | `_tfk2617t` | `chgkey` | `CHAR(8)` | Charge and Discount Key |
+| `CAInvcgChrgAndDiscKeyText` |  | | `_tfk2617t` | `text` | `CHAR(50)` | Name of Charge and Discount Key |
 | `_ApplArea` | | ✓ | | | | |
 | `_CAInvcgChrgAndDiscKey` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |

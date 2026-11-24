@@ -41,7 +41,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgBolloTaxPostStatus` | ✓ | |  | `cast ( cast ( substring( dd07l.domvalue_l,1,1 ) as abap.char( 1 ) ) as inv_bollotax_kk)` |  |  |
+| `CAInvcgBolloTaxPostStatus` | ✓ | |  | `cast ( cast ( substring( dd07l.domvalue_l,1,1 ) as abap.char( 1 ) ) as inv_bollotax_kk)` | `CHAR(1)` | Stamp Tax Posted |
 | `_CAInvcgBolloTaxPostStatText` | | ✓ | | | | |
 
 ## Associations

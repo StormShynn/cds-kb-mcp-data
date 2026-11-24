@@ -39,18 +39,18 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvoicingDocument` | ✓ | |  | `invdocno` |  |  |
-| `CADocumentNumber` | ✓ | |  | `opbel` |  |  |
-| `CABPItemNumber` | ✓ | |  | `opupk` |  |  |
-| `CAInvcgChargeAndDiscountKey` |  | |  | `chgkey` |  |  |
-| `CAInvcgIsChargeOrDiscount` |  | |  | `chgdisc` |  |  |
-| `CACreditWorthiness` |  | |  | `bonit` |  |  |
-| `CAItemPeriodStartDate` |  | |  | `date_from` |  |  |
-| `CAItemPeriodEndDate` |  | |  | `date_to` |  |  |
-| `TransactionCurrency` |  | |  | `waers` |  |  |
-| `CAInvcgChrgAndDiscBaseAmount` |  | |  | `basamt` |  |  |
-| `CAInvcgChrgAndDiscAmount` |  | |  | `chgamt` |  |  |
-| `CAInvcgChrgAndDiscIsExisting` |  | |  | `chghist` |  |  |
+| `CAInvoicingDocument` | ✓ | |  | `invdocno` | `CHAR(12)` | Number of Invoicing Document |
+| `CADocumentNumber` | ✓ | |  | `opbel` | `CHAR(12)` | Number of a FI-CA Document |
+| `CABPItemNumber` | ✓ | |  | `opupk` | `NUMC(4)` | Item Number in FI-CA Document |
+| `CAInvcgChargeAndDiscountKey` |  | |  | `chgkey` | `CHAR(8)` | Charge and Discount Key |
+| `CAInvcgIsChargeOrDiscount` |  | |  | `chgdisc` | `CHAR(1)` | Charge/Discount |
+| `CACreditWorthiness` |  | |  | `bonit` | `NUMC(4)` | FI-CA Creditworthiness |
+| `CAItemPeriodStartDate` |  | |  | `date_from` | `DATS(8)` | Start of Period of Line Item |
+| `CAItemPeriodEndDate` |  | |  | `date_to` | `DATS(8)` | End of Period of Line Item |
+| `TransactionCurrency` |  | |  | `waers` | `CUKY(5)` | Transaction Currency |
+| `CAInvcgChrgAndDiscBaseAmount` |  | |  | `basamt` | `CURR(13)` | Base Amount for Calculation of Charges/Discounts |
+| `CAInvcgChrgAndDiscAmount` |  | |  | `chgamt` | `CURR(13)` | Charge/Discount Amount |
+| `CAInvcgChrgAndDiscIsExisting` |  | |  | `chghist` | `CHAR(1)` | Entry/Exist. of Indiv. History Records per Source Doc. Item |
 | `_CAInvcgDocHeader` | | ✓ | | | | |
 | `_CADocument` | | ✓ | | | | |
 | `_TransactionCurrency` | | ✓ | | | | |

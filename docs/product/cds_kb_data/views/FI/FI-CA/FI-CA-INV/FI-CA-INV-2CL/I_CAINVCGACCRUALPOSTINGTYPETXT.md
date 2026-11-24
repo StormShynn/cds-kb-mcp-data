@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgAccrualPostingType` | ✓ | |  | `cast( tfk2715t.billac_type as billac_type_gfn_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `CAInvcgAccrualPostingTypeTxt` |  | |  | `cast( tfk2715t.text as billac_type_txt_gfn_kk preserving type )` |  |  |
+| `CAInvcgAccrualPostingType` | ✓ | |  | `cast( tfk2715t.billac_type as billac_type_gfn_kk preserving type )` | `CHAR(4)` | Type of Accrual/Deferral Posting |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `CAInvcgAccrualPostingTypeTxt` |  | |  | `cast( tfk2715t.text as billac_type_txt_gfn_kk preserving type )` | `CHAR(50)` | Text for Type of Accrual/Deferral Posting |
 | `_Language` | | ✓ | | | | |
 | `_CAInvcgAccrualPostingType` | | ✓ | | | | |
 

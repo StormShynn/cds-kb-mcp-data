@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgAccrualPostingType` | ✓ | |  | `billac_type` |  |  |
+| `CAInvcgAccrualPostingType` | ✓ | |  | `billac_type` | `CHAR(4)` | Type of Accrual/Deferral Posting - Individual Procedure |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

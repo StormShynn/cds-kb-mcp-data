@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABllbleItmSourceTransType` | ✓ | | `_tfk8103` | `srctatype` |  |  |
-| `CABllbleItmSourceTransSemObj` |  | |  | `semantic_object` |  |  |
+| `CABllbleItmSourceTransType` | ✓ | | `_tfk8103` | `srctatype` | `CHAR(5)` | Source Transaction Type |
+| `CABllbleItmSourceTransSemObj` |  | |  | `semantic_object` | `CHAR(30)` | Semantic Object |
 | `_CABllbleItmSrceTransTypeText` | | ✓ | | | | |
 
 ## Associations

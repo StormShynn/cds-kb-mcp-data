@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgCategory` | ✓ | | `_tfk2604t` | `inv_category` |  |  |
-| `Language` | ✓ | | `_tfk2604t` | `langu` |  |  |
-| `CAInvcgCategoryText` |  | |  | `cast( _tfk2604t.text as inv_category_txt_gfn_kk preserving type )` |  |  |
+| `CAInvcgCategory` | ✓ | | `_tfk2604t` | `inv_category` | `CHAR(4)` | Invoicing Category |
+| `Language` | ✓ | | `_tfk2604t` | `langu` | `LANG(1)` | Language Key |
+| `CAInvcgCategoryText` |  | |  | `cast( _tfk2604t.text as inv_category_txt_gfn_kk preserving type )` | `CHAR(50)` | Text for Invoicing Category |
 | `_CAInvcgCategory` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

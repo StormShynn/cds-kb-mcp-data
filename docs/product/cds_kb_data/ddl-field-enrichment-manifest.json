@@ -12218,5 +12218,240 @@
     "attemptedAt": "2026-11-23T19:54:27.681Z",
     "found": true,
     "matched": 3
+  },
+  "I_CABLLBLEITMCOSTSUBTYPE": {
+    "attemptedAt": "2026-11-24T19:22:42.162Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CABLLBLEITMCOSTSUBTYPETEXT": {
+    "attemptedAt": "2026-11-24T19:22:42.722Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CABLLBLEITMCOSTTYPE": {
+    "attemptedAt": "2026-11-24T19:22:43.245Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABLLBLEITMCOSTTYPETEXT": {
+    "attemptedAt": "2026-11-24T19:22:43.762Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABLLBLEITMDISCOUNTKEY": {
+    "attemptedAt": "2026-11-24T19:22:44.286Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CABLLBLEITMDISCOUNTKEYTEXT": {
+    "attemptedAt": "2026-11-24T19:22:44.818Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABLLBLEITMMAINBILLABLE": {
+    "attemptedAt": "2026-11-24T19:22:45.308Z",
+    "found": true,
+    "matched": 145
+  },
+  "I_CABLLBLEITMMAINBILLED": {
+    "attemptedAt": "2026-11-24T19:22:45.834Z",
+    "found": true,
+    "matched": 153
+  },
+  "I_CABLLBLEITMMAINBLLBLEEXCPTD": {
+    "attemptedAt": "2026-11-24T19:22:46.337Z",
+    "found": true,
+    "matched": 149
+  },
+  "I_CABLLBLEITMMAINRAW": {
+    "attemptedAt": "2026-11-24T19:22:46.829Z",
+    "found": true,
+    "matched": 151
+  },
+  "I_CABLLBLEITMMAINRAWEXCPTD": {
+    "attemptedAt": "2026-11-24T19:22:47.361Z",
+    "found": true,
+    "matched": 154
+  },
+  "I_CABLLBLEITMSRCETRANSTYPE": {
+    "attemptedAt": "2026-11-24T19:22:47.902Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CABLLBLEITMSRCETRANSTYPETEXT": {
+    "attemptedAt": "2026-11-24T19:22:48.416Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADEPENDENTITEMTYPE": {
+    "attemptedAt": "2026-11-24T19:22:48.983Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADEPENDENTITEMTYPETEXT": {
+    "attemptedAt": "2026-11-24T19:22:49.491Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINTCOPROCEDURE": {
+    "attemptedAt": "2026-11-24T19:22:49.980Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINTCOPROCEDURETEXT": {
+    "attemptedAt": "2026-11-24T19:22:50.504Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINTCOSUBTYPE": {
+    "attemptedAt": "2026-11-24T19:22:51.010Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAINTCOSUBTYPETEXT": {
+    "attemptedAt": "2026-11-24T19:22:51.544Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAINTCOTYPE": {
+    "attemptedAt": "2026-11-24T19:22:52.055Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINTCOTYPETEXT": {
+    "attemptedAt": "2026-11-24T19:22:52.584Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGACCRUALPOSTINGTYPE": {
+    "attemptedAt": "2026-11-24T19:22:53.068Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGACCRUALPOSTINGTYPETXT": {
+    "attemptedAt": "2026-11-24T19:22:53.630Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGBOLLOTAXPOSTSTATTEXT": {
+    "attemptedAt": "2026-11-24T19:22:54.161Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGBOLLOTAXPOSTSTATUS": {
+    "attemptedAt": "2026-11-24T19:22:54.701Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGCATEGORY": {
+    "attemptedAt": "2026-11-24T19:22:55.219Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGCATEGORYTEXT": {
+    "attemptedAt": "2026-11-24T19:22:55.883Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGCHRGANDDISCKEY": {
+    "attemptedAt": "2026-11-24T19:22:56.371Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGCHRGANDDISCKEYTEXT": {
+    "attemptedAt": "2026-11-24T19:22:56.897Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAINVCGCONTROLOFINVCGUNIT": {
+    "attemptedAt": "2026-11-24T19:22:57.429Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGCONTROLOFINVCGUNITTXT": {
+    "attemptedAt": "2026-11-24T19:22:57.917Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGCORRECTIONCAT": {
+    "attemptedAt": "2026-11-24T19:22:58.441Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGCORRECTIONCATTEXT": {
+    "attemptedAt": "2026-11-24T19:22:58.953Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGDOCCHARGEANDDISCOUNT": {
+    "attemptedAt": "2026-11-24T19:22:59.439Z",
+    "found": true,
+    "matched": 12
+  },
+  "I_CAINVCGDOCCHRGANDDISCHISTORY": {
+    "attemptedAt": "2026-11-24T19:23:00.001Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_CAINVCGDOCCREATIONMODE": {
+    "attemptedAt": "2026-11-24T19:23:00.549Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGDOCCREATIONMODETEXT": {
+    "attemptedAt": "2026-11-24T19:23:01.086Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGDOCHEADER": {
+    "attemptedAt": "2026-11-24T19:23:01.575Z",
+    "found": true,
+    "matched": 68
+  },
+  "I_CAINVCGDOCITEM": {
+    "attemptedAt": "2026-11-24T19:23:02.090Z",
+    "found": true,
+    "matched": 90
+  },
+  "I_CAINVCGDOCITEMTP": {
+    "attemptedAt": "2026-11-24T19:23:02.290Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CAINVCGDOCITEMTP\" (404)"
+  },
+  "I_CAINVCGDOCITEMTYPE": {
+    "attemptedAt": "2026-11-24T19:23:03.062Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGDOCITEMTYPETEXT": {
+    "attemptedAt": "2026-11-24T19:23:03.586Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGDOCITMCRTNMETHOD": {
+    "attemptedAt": "2026-11-24T19:23:04.152Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGDOCITMCRTNMETHODTEXT": {
+    "attemptedAt": "2026-11-24T19:23:04.675Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGDOCITMSRCEITMCAT": {
+    "attemptedAt": "2026-11-24T19:23:05.174Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGDOCITMSRCEITMCATTEXT": {
+    "attemptedAt": "2026-11-24T19:23:05.697Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGDOCOFFSETTING": {
+    "attemptedAt": "2026-11-24T19:23:06.219Z",
+    "found": true,
+    "matched": 16
   }
 }

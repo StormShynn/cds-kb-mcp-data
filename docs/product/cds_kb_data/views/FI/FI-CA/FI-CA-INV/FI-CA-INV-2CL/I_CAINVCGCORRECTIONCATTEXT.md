@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgCorrectionCategory` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,2 ) as corrcat_gfn_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
-| `CAInvcgCorrectionCatText` |  | |  | `cast ( ddtext as corrcat_txt_gfn_kk preserving type )` |  |  |
+| `CAInvcgCorrectionCategory` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,2 ) as corrcat_gfn_kk preserving type )` | `CHAR(2)` | Category of Invoice Correction |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAInvcgCorrectionCatText` |  | |  | `cast ( ddtext as corrcat_txt_gfn_kk preserving type )` | `CHAR(60)` | Text for Category of Invoice Correction |
 | `_CAInvcgCorrectionCat` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADependentItemType` | ✓ | |  | `cast( _tfk8240t.dittype as ditrsn_gfn_kk preserving type )` |  |  |
-| `Language` | ✓ | | `_tfk8240t` | `langu` |  |  |
-| `CADependentItemTypeText` |  | | `_tfk8240t` | `text` |  |  |
+| `CADependentItemType` | ✓ | |  | `cast( _tfk8240t.dittype as ditrsn_gfn_kk preserving type )` | `CHAR(8)` | Dependent Item Reason |
+| `Language` | ✓ | | `_tfk8240t` | `langu` | `LANG(1)` | Language Key |
+| `CADependentItemTypeText` |  | | `_tfk8240t` | `text` | `CHAR(50)` | Dependent Item Type Description |
 | `_CADependentItemType` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

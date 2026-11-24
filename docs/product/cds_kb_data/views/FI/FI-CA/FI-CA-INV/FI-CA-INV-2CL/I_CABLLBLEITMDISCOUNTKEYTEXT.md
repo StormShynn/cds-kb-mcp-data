@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABllbleItmDiscountKey` | ✓ | | `_tfk8117t` | `disckey` |  |  |
-| `Language` | ✓ | | `_tfk8117t` | `langu` |  |  |
-| `CABllbleItmDiscountKeyText` |  | |  | `cast(_tfk8117t.text as disckey_txt_gfn_kk preserving type )` |  |  |
+| `CABllbleItmDiscountKey` | ✓ | | `_tfk8117t` | `disckey` | `CHAR(8)` | Discount/Charge Key |
+| `Language` | ✓ | | `_tfk8117t` | `langu` | `LANG(1)` | Language Key |
+| `CABllbleItmDiscountKeyText` |  | |  | `cast(_tfk8117t.text as disckey_txt_gfn_kk preserving type )` | `CHAR(80)` | Text for Discount/Charge Key |
 | `_CABllbleItmDiscountKey` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

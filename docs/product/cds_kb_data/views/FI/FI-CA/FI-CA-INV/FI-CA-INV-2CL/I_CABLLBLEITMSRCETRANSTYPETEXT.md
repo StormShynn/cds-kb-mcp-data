@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABllbleItmSourceTransType` | ✓ | |  | `cast( _tfk8103t.srctatype as srctatype_gfn_kk )` |  |  |
-| `Language` | ✓ | | `_tfk8103t` | `langu` |  |  |
-| `CABllbleItmSrceTransTypeText` |  | |  | `cast( _tfk8103t.text as srctatype_txt_gfn_kk preserving type )` |  |  |
+| `CABllbleItmSourceTransType` | ✓ | |  | `cast( _tfk8103t.srctatype as srctatype_gfn_kk )` | `CHAR(5)` | Source Transaction Type |
+| `Language` | ✓ | | `_tfk8103t` | `langu` | `LANG(1)` | Language Key |
+| `CABllbleItmSrceTransTypeText` |  | |  | `cast( _tfk8103t.text as srctatype_txt_gfn_kk preserving type )` | `CHAR(50)` | Text for Source Transaction Type |
 | `_CABllbleItmSrceTransType` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

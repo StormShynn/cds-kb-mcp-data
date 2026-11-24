@@ -40,7 +40,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CADependentItemType` | ✓ | |  | `cast( _tfk8240.dittype as ditrsn_gfn_kk preserving type )` |  |  |
+| `CADependentItemType` | ✓ | |  | `cast( _tfk8240.dittype as ditrsn_gfn_kk preserving type )` | `CHAR(8)` | Dependent Item Reason |
 | `_CADependentItemTypeText` | | ✓ | | | | |
 
 ## Associations

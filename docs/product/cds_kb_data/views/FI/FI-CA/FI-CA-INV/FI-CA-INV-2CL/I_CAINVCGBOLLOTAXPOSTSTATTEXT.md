@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgBolloTaxPostStatus` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as inv_bollotax_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
-| `CAInvcgBolloTaxPostStatText` |  | |  | `cast ( ddtext as inv_bollotax_txt_gfn_kk preserving type )` |  |  |
+| `CAInvcgBolloTaxPostStatus` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as inv_bollotax_kk preserving type )` | `CHAR(1)` | Stamp Tax Posted |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAInvcgBolloTaxPostStatText` |  | |  | `cast ( ddtext as inv_bollotax_txt_gfn_kk preserving type )` | `CHAR(60)` | Text for Stamp Tax Posted |
 | `_CAInvcgBolloTaxPostStatus` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

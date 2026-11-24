@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAIntcoProcedure` | ✓ | |  | `cast( substring( l.domvalue_l, 1, 2 ) as ico_proc_kk preserving type )` |  |  |
+| `CAIntcoProcedure` | ✓ | |  | `cast( substring( l.domvalue_l, 1, 2 ) as ico_proc_kk preserving type )` | `CHAR(2)` | Intercompany Settlement Procedure |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

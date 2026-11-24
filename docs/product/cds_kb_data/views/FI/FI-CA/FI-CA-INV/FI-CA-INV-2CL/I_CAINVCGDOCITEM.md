@@ -40,96 +40,96 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvoicingDocument` | ✓ | |  | `invdocno` |  |  |
-| `CAInvcgDocItem` | ✓ | |  | `invdocitem` |  |  |
-| `CAInvcgDocumentItemType` |  | |  | `itemtype` |  |  |
-| `CompanyCode` |  | |  | `bukrs` |  |  |
-| `Division` |  | |  | `spart` |  |  |
-| `CAContract` |  | |  | `vtref` |  |  |
-| `CAProviderContractItemNumber` |  | |  | `vtpos` |  |  |
-| `CASubApplication` |  | |  | `subap` |  |  |
-| `CAInvcgItmAltvBusinessPartner` |  | |  | `cast(gpart_a as inv_gpart_a_gfn_kk preserving type)` |  |  |
-| `CAInvcgItmAltvContractAccount` |  | |  | `cast(vkont_a as inv_vkont_a_gfn_kk preserving type)` |  |  |
-| `CAInvcgDocItmAltvMDCat` |  | |  | `cast(gpvkt_a_cat as inv_gpvkt_a_cat_gfn_kk preserving type)` |  |  |
-| `CAMainTransaction` |  | |  | `hvorg` |  |  |
-| `CASubTransaction` |  | |  | `tvorg` |  |  |
-| `CAIsDocItemSimulated` |  | |  | `item_simulated` |  |  |
-| `CAInvcgDocItemIsReversal` |  | |  | `reversalitem` |  |  |
-| `CAInvcgIsInFinalAmt` |  | |  | `cast(totalrel as totalrel_gfn_kk preserving type)` |  |  |
-| `CAInvcgIsItemPostingRelevant` |  | |  | `postrel` |  |  |
-| `CAInvcgIsNotBPRelevant` |  | |  | `not_bprel` |  |  |
-| `CAInvcgIsItemPrintingRelevant` |  | |  | `printrel` |  |  |
-| `CAInvcgSubstituteGroupPrinting` |  | |  | `print_substitute` |  |  |
-| `TransactionCurrency` |  | |  | `waers` |  |  |
-| `CAAmountInTransactionCurrency` |  | |  | `betrw` |  |  |
-| `CAInvcgDocItmLoclCurrency` |  | |  | `invwaerh` |  |  |
-| `CAInvcgDocItmAmtInLoclCurrency` |  | |  | `invbetrh` |  |  |
-| `CAInvcgDocItmTaxBaseAmtInLCrcy` |  | |  | `invsbash` |  |  |
-| `CACurrencySourceDocument` |  | |  | `cast(srcdoc_curr as srcdoc_curr_gfn_kk preserving type)` |  |  |
-| `CAInvcgSourceDocumentAmount` |  | |  | `cast(srcdoc_amt as srcdoc_amt_gfn_kk preserving type)` |  |  |
-| `CAGroupingCurrencyTranslation` |  | |  | `cast(currc_group as currc_group_gfn_kk preserving type)` |  |  |
-| `CAAccountDeterminationCode` |  | |  | `kofiz` |  |  |
-| `BusinessPlace` |  | |  | `cast(bupla as farp_bupla preserving type)` |  |  |
-| `BusinessArea` |  | |  | `cast(gsber as fis_rbusa preserving type)` |  |  |
-| `CATaxIsIncluded` |  | |  | `tax_included` |  |  |
-| `CATaxDetnType` |  | |  | `tax_det_type` |  |  |
-| `CAInvcgTaxGroupingKey` |  | |  | `taxgr` |  |  |
-| `CAOtherTaxCode` |  | |  | `strkz` |  |  |
-| `TaxCode` |  | |  | `mwskz` |  |  |
-| `CATaxDeterminationCode` |  | |  | `ermwskz` |  |  |
-| `TaxJurisdiction` |  | |  | `txjcd` |  |  |
-| `CATransactionKeyAccountDetn` |  | |  | `ktosl` |  |  |
-| `CAConditionType` |  | |  | `kschl` |  |  |
-| `CATaxRateInPercent` |  | |  | `tax_perc` |  |  |
-| `TaxCountry` |  | |  | `tax_country` |  |  |
-| `TransToTaxCntryCrcyCnvrsnFctr` |  | |  | `taxc_factor` |  |  |
-| `CAInvcgOffsettingAction` |  | |  | `offset_action` |  |  |
-| `CAInvcgOffsettingCategory` |  | |  | `offset_cat` |  |  |
-| `CAInvcgOffsettingProcedure` |  | |  | `offset_proc` |  |  |
-| `CATaxDate` |  | |  | `txdat` |  |  |
-| `CATaxBaseAmount` |  | |  | `sbasw` |  |  |
-| `CATaxAmountInTransCurrency` |  | |  | `sbetw` |  |  |
-| `CATaxPortionInTransCurrency` |  | |  | `sttax` |  |  |
-| `WithholdingTaxCode` |  | |  | `qsskz` |  |  |
-| `CAIsDownPaymentRequest` |  | |  | `xanza` |  |  |
-| `CAStatisticalItemCode` |  | |  | `stakz` |  |  |
-| `CAInvcgOffsettingGroup` |  | |  | `offset_invgr` |  |  |
-| `CAInvcgDfrrdRevenueStatus` |  | |  | `cast(defrev_stat as defrev_stat_gfn_kk preserving type)` |  |  |
-| `CAIsRevenueAccountingRelevant` |  | |  | `rarel` |  |  |
-| `CAInvcgRevenueGrouping` |  | |  | `ra_invgr` |  |  |
-| `CARevenueAccountingServiceType` |  | |  | `service_type` |  |  |
-| `CAInvcgAccrualPostingType` |  | |  | `cast(billac_type as billac_type_gfn_kk preserving type)` |  |  |
-| `CAIsPrepaid` |  | |  | `prepaid` |  |  |
-| `UnitOfMeasure` |  | |  | `meins` |  |  |
-| `Quantity` |  | |  | `menge` |  |  |
-| `CANetDueDate` |  | |  | `faedn` |  |  |
-| `CACashDiscountDueDate` |  | |  | `faeds` |  |  |
-| `CACashDiscountRate` |  | |  | `sktpz` |  |  |
-| `CAInvcgDocItemDefStatus` |  | |  | `xstund` |  |  |
-| `CAItemPeriodStartDate` |  | |  | `date_from` |  |  |
-| `CAItemPeriodEndDate` |  | |  | `date_to` |  |  |
-| `CAInvcgRefPostingDocType` |  | |  | `cast(cadoctype as cadoctype_gfn_kk preserving type )` |  |  |
-| `CADocumentNumber` |  | |  | `cast(opbel as opbel_gfn_kk preserving type )` |  |  |
-| `CAGroupingKeyDocumentItems` |  | |  | `psgrp` |  |  |
-| `CAInvcgGroupingKey` |  | |  | `invgr` |  |  |
-| `CAClearingDocumentNumber` |  | |  | `augbl` |  |  |
-| `CAClearingAmountInTransCrcy` |  | |  | `augbw` |  |  |
-| `CAInvcgDocItemCrtnMethod` |  | |  | `item_crmet` |  |  |
-| `CAInvcgFunction` |  | |  | `inv_function` |  |  |
-| `CAInvcgSourceDocumentCat` |  | |  | `cast(srcdoccat as srcdoccat_gfn_kk preserving type)` |  |  |
-| `CAInvcgSourceDocumentNumber` |  | |  | `cast(srcdocno as srcdocno_gfn_kk preserving type)` |  |  |
-| `CAInvcgDocItemSourceItmCat` |  | |  | `srcitemcat` |  |  |
-| `CAInvcgSourceDocumentItem` |  | |  | `srcdocitem` |  |  |
-| `CABllbleItmDiscountKey` |  | |  | `cast(disckey as disckey_gfn_kk preserving type)` |  |  |
-| `CABllbleItmDiscountVersion` |  | |  | `disckey_versno` |  |  |
-| `CAInvcgCorrectionCategory` |  | |  | `cast(corrcat as corrcat_gfn_kk preserving type)` |  |  |
-| `CABillToParty` |  | |  | `bill_to_party` |  |  |
-| `CABillToRegion` |  | |  | `bill_to_region` |  |  |
-| `CABillFromRegion` |  | |  | `bill_from_region` |  |  |
-| `CAControlCode` |  | |  | `steuc` |  |  |
-| `CASupplyRegion` |  | |  | `supply_region` |  |  |
-| `CABillToCountry` |  | |  | `bill_to_country` |  |  |
-| `WBSElementInternalID` |  | |  | `cast( ps_psp_pnr as fis_wbsint_no_conv preserving type )` |  |  |
+| `CAInvoicingDocument` | ✓ | |  | `invdocno` | `CHAR(12)` | Number of Invoicing Document |
+| `CAInvcgDocItem` | ✓ | |  | `invdocitem` | `NUMC(8)` | Sequential Number of Document Item |
+| `CAInvcgDocumentItemType` |  | |  | `itemtype` | `CHAR(8)` | Type of Invoicing Item |
+| `CompanyCode` |  | |  | `bukrs` | `CHAR(4)` | Company Code |
+| `Division` |  | |  | `spart` | `CHAR(2)` | Division |
+| `CAContract` |  | |  | `vtref` | `CHAR(20)` | Reference Specifications from Contract |
+| `CAProviderContractItemNumber` |  | |  | `vtpos` | `NUMC(6)` | Contract: Item Number |
+| `CASubApplication` |  | |  | `subap` | `CHAR(1)` | Subapplication in Contract Accounts Receivable and Payable |
+| `CAInvcgItmAltvBusinessPartner` |  | |  | `cast(gpart_a as inv_gpart_a_gfn_kk preserving type)` | `CHAR(10)` | Altv Business Partner of Invoicing Item |
+| `CAInvcgItmAltvContractAccount` |  | |  | `cast(vkont_a as inv_vkont_a_gfn_kk preserving type)` | `CHAR(12)` | Altv Contract Account of Invoicing item |
+| `CAInvcgDocItmAltvMDCat` |  | |  | `cast(gpvkt_a_cat as inv_gpvkt_a_cat_gfn_kk preserving type)` | `CHAR(2)` | Cat of Altv Master Data for Invcg Item |
+| `CAMainTransaction` |  | |  | `hvorg` | `CHAR(4)` | Main Transaction for Line Item |
+| `CASubTransaction` |  | |  | `tvorg` | `CHAR(4)` | Subtransaction for Document Item |
+| `CAIsDocItemSimulated` |  | |  | `item_simulated` | `CHAR(1)` | Line Item Is Simulated |
+| `CAInvcgDocItemIsReversal` |  | |  | `reversalitem` | `CHAR(1)` | Reversal Item |
+| `CAInvcgIsInFinalAmt` |  | |  | `cast(totalrel as totalrel_gfn_kk preserving type)` | `CHAR(1)` | Consider Items In Invoice Final Amount |
+| `CAInvcgIsItemPostingRelevant` |  | |  | `postrel` | `CHAR(1)` | Item Is Relevant for Posting |
+| `CAInvcgIsNotBPRelevant` |  | |  | `not_bprel` | `CHAR(1)` | Not Relevant for Business Partner Items |
+| `CAInvcgIsItemPrintingRelevant` |  | |  | `printrel` | `CHAR(1)` | Item Is Relevant for Printing |
+| `CAInvcgSubstituteGroupPrinting` |  | |  | `print_substitute` | `CHAR(4)` | Substitute Group for Invoice Printing |
+| `TransactionCurrency` |  | |  | `waers` | `CUKY(5)` | Transaction Currency |
+| `CAAmountInTransactionCurrency` |  | |  | `betrw` | `CURR(13)` | Amount in Transaction Currency with +/- Sign |
+| `CAInvcgDocItmLoclCurrency` |  | |  | `invwaerh` | `CUKY(5)` | Currency key for Proportional Local Currency Amount |
+| `CAInvcgDocItmAmtInLoclCurrency` |  | |  | `invbetrh` | `CURR(13)` | Proportional Local Currency Amount of Billing Doc Item |
+| `CAInvcgDocItmTaxBaseAmtInLCrcy` |  | |  | `invsbash` | `CURR(13)` | Proportional Taxable Amount in Local Currency (Tax Base) |
+| `CACurrencySourceDocument` |  | |  | `cast(srcdoc_curr as srcdoc_curr_gfn_kk preserving type)` | `CUKY(5)` | Currency of Source Document |
+| `CAInvcgSourceDocumentAmount` |  | |  | `cast(srcdoc_amt as srcdoc_amt_gfn_kk preserving type)` | `CURR(13)` | Amount in Source Document Currency |
+| `CAGroupingCurrencyTranslation` |  | |  | `cast(currc_group as currc_group_gfn_kk preserving type)` | `NUMC(6)` | Grouping for Currency Translation |
+| `CAAccountDeterminationCode` |  | |  | `kofiz` | `CHAR(2)` | Account Determination ID |
+| `BusinessPlace` |  | |  | `cast(bupla as farp_bupla preserving type)` | `CHAR(4)` | Business Place |
+| `BusinessArea` |  | |  | `cast(gsber as fis_rbusa preserving type)` | `CHAR(4)` | Business Area |
+| `CATaxIsIncluded` |  | |  | `tax_included` | `CHAR(1)` | Tax Included in Amount |
+| `CATaxDetnType` |  | |  | `tax_det_type` | `CHAR(2)` | Type of Tax Calculation |
+| `CAInvcgTaxGroupingKey` |  | |  | `taxgr` | `NUMC(6)` | Grouping Key for Tax Display |
+| `CAOtherTaxCode` |  | |  | `strkz` | `CHAR(2)` | Tax Code for Other Taxes |
+| `TaxCode` |  | |  | `mwskz` | `CHAR(2)` | Tax on Sales/Purchases Code |
+| `CATaxDeterminationCode` |  | |  | `ermwskz` | `CHAR(2)` | Indicator: Tax Determination Code |
+| `TaxJurisdiction` |  | |  | `txjcd` | `CHAR(15)` | Tax Jurisdiction |
+| `CATransactionKeyAccountDetn` |  | |  | `ktosl` | `CHAR(3)` | Transaction Key for Account Determination |
+| `CAConditionType` |  | |  | `kschl` | `CHAR(4)` | Condition Type |
+| `CATaxRateInPercent` |  | |  | `tax_perc` | `DEC(6)` | Tax Percentage |
+| `TaxCountry` |  | |  | `tax_country` | `CHAR(3)` | Tax Reporting Country/Region |
+| `TransToTaxCntryCrcyCnvrsnFctr` |  | |  | `taxc_factor` | `DEC(31)` | Factor for Conversion into Tax Country/Region Currency |
+| `CAInvcgOffsettingAction` |  | |  | `offset_action` | `CHAR(1)` | Action Code for Offsetting |
+| `CAInvcgOffsettingCategory` |  | |  | `offset_cat` | `CHAR(3)` | Offsetting Category |
+| `CAInvcgOffsettingProcedure` |  | |  | `offset_proc` | `CHAR(2)` | Offsetting Procedure |
+| `CATaxDate` |  | |  | `txdat` | `DATS(8)` | Decisive Date for Calculating Taxes |
+| `CATaxBaseAmount` |  | |  | `sbasw` | `CURR(13)` | Amount Subject to Tax in Transaction Currency (Tax Base Amt) |
+| `CATaxAmountInTransCurrency` |  | |  | `sbetw` | `CURR(13)` | Tax Amount in Transaction Currency with +/- Sign |
+| `CATaxPortionInTransCurrency` |  | |  | `sttax` | `CURR(13)` | Tax Portion in Document Currency |
+| `WithholdingTaxCode` |  | |  | `qsskz` | `CHAR(2)` | Withholding Tax Code |
+| `CAIsDownPaymentRequest` |  | |  | `xanza` | `CHAR(1)` | Item is a Down Payment/Down Payment Request |
+| `CAStatisticalItemCode` |  | |  | `stakz` | `CHAR(1)` | Type of Statistical Line Item |
+| `CAInvcgOffsettingGroup` |  | |  | `offset_invgr` | `CHAR(6)` | Grouping of Offsetting Items |
+| `CAInvcgDfrrdRevenueStatus` |  | |  | `cast(defrev_stat as defrev_stat_gfn_kk preserving type)` | `CHAR(1)` | Status of Processing Deferred Revenues |
+| `CAIsRevenueAccountingRelevant` |  | |  | `rarel` | `CHAR(1)` | Relevant for Revenue Accounting |
+| `CAInvcgRevenueGrouping` |  | |  | `ra_invgr` | `CHAR(6)` | Revenue Grouping of Invoicing |
+| `CARevenueAccountingServiceType` |  | |  | `service_type` | `CHAR(6)` | Service Type for Revenue Accounting |
+| `CAInvcgAccrualPostingType` |  | |  | `cast(billac_type as billac_type_gfn_kk preserving type)` | `CHAR(4)` | Type of Accrual/Deferral Posting |
+| `CAIsPrepaid` |  | |  | `prepaid` | `CHAR(1)` | Prepaid |
+| `UnitOfMeasure` |  | |  | `meins` | `UNIT(3)` | Base Unit of Measure |
+| `Quantity` |  | |  | `menge` | `QUAN(13)` | Quantity |
+| `CANetDueDate` |  | |  | `faedn` | `DATS(8)` | Due date for net payment |
+| `CACashDiscountDueDate` |  | |  | `faeds` | `DATS(8)` | Due Date for Cash Discount |
+| `CACashDiscountRate` |  | |  | `sktpz` | `DEC(5)` | Cash Discount Percentage Rate |
+| `CAInvcgDocItemDefStatus` |  | |  | `xstund` | `CHAR(1)` | Item Deferred until Due Date for Invoice |
+| `CAItemPeriodStartDate` |  | |  | `date_from` | `DATS(8)` | Start of Period of Line Item |
+| `CAItemPeriodEndDate` |  | |  | `date_to` | `DATS(8)` | End of Period of Line Item |
+| `CAInvcgRefPostingDocType` |  | |  | `cast(cadoctype as cadoctype_gfn_kk preserving type )` | `CHAR(4)` | Reference Document Type of Posting Document for Invoicing |
+| `CADocumentNumber` |  | |  | `cast(opbel as opbel_gfn_kk preserving type )` | `CHAR(12)` | Document |
+| `CAGroupingKeyDocumentItems` |  | |  | `psgrp` | `CHAR(4)` | Grouping Key for Document Items |
+| `CAInvcgGroupingKey` |  | |  | `invgr` | `CHAR(4)` | Grouping Key for Invoicing |
+| `CAClearingDocumentNumber` |  | |  | `augbl` | `CHAR(12)` | Clearing Document or Printed Document |
+| `CAClearingAmountInTransCrcy` |  | |  | `augbw` | `CURR(13)` | Clearing Amount in Transaction Currency (With +/- Sign) |
+| `CAInvcgDocItemCrtnMethod` |  | |  | `item_crmet` | `CHAR(1)` | Creation Method of Invoicing Document Item |
+| `CAInvcgFunction` |  | |  | `inv_function` | `CHAR(12)` | Invoicing Function |
+| `CAInvcgSourceDocumentCat` |  | |  | `cast(srcdoccat as srcdoccat_gfn_kk preserving type)` | `CHAR(5)` | Category of Source Document To Be Invoiced |
+| `CAInvcgSourceDocumentNumber` |  | |  | `cast(srcdocno as srcdocno_gfn_kk preserving type)` | `CHAR(20)` | Source Document Number |
+| `CAInvcgDocItemSourceItmCat` |  | |  | `srcitemcat` | `CHAR(5)` | Category of Source Document Item Invoiced |
+| `CAInvcgSourceDocumentItem` |  | |  | `srcdocitem` | `CHAR(20)` | Item of Invoiced Source Document |
+| `CABllbleItmDiscountKey` |  | |  | `cast(disckey as disckey_gfn_kk preserving type)` | `CHAR(8)` | Discount/Charge Key |
+| `CABllbleItmDiscountVersion` |  | |  | `disckey_versno` | `NUMC(2)` | Version Number of Disccount on Billable Items |
+| `CAInvcgCorrectionCategory` |  | |  | `cast(corrcat as corrcat_gfn_kk preserving type)` | `CHAR(2)` | Category of Invoice Correction |
+| `CABillToParty` |  | |  | `bill_to_party` | `CHAR(10)` | Bill-to Party |
+| `CABillToRegion` |  | |  | `bill_to_region` | `CHAR(3)` | Bill-To Region |
+| `CABillFromRegion` |  | |  | `bill_from_region` | `CHAR(3)` | Region Where the Delivery Plant is Located |
+| `CAControlCode` |  | |  | `steuc` | `CHAR(16)` | Control Code for Consumption Taxes in Foreign Trade |
+| `CASupplyRegion` |  | |  | `supply_region` | `CHAR(3)` | Supply Region |
+| `CABillToCountry` |  | |  | `bill_to_country` | `CHAR(3)` | Bill-to Country |
+| `WBSElementInternalID` |  | |  | `cast( ps_psp_pnr as fis_wbsint_no_conv preserving type )` | `NUMC(8)` | WBS Element Internal ID |
 | `_CAInvcgDocHeader` | | ✓ | | | | |
 | `_CompCode` | | ✓ | | | | |
 | `_Division` | | ✓ | | | | |

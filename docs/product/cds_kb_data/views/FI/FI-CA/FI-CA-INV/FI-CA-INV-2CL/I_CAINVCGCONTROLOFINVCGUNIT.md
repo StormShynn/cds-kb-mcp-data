@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgControlOfInvoicingUnit` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as separate_inv_kk preserving type )` |  |  |
+| `CAInvcgControlOfInvoicingUnit` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as separate_inv_kk preserving type )` | `CHAR(1)` | Control of Invoicing Unit |
 | `_CAInvcgControlOfInvcgUnitTxt` | | ✓ | | | | |
 
 ## Associations

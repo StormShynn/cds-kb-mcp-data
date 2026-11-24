@@ -39,22 +39,22 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvoicingDocument` | ✓ | |  | `invdocno` |  |  |
-| `CAInvcgDocOffsettingItem` | ✓ | |  | `invdocoitem` |  |  |
-| `CAInvcgOffsettingReferenceKey` |  | |  | `offset_refid` |  |  |
-| `CAInvcgOffsettingCategory` |  | |  | `offset_cat` |  |  |
-| `CAInvcgOffsettingProcedure` |  | |  | `offset_proc` |  |  |
-| `CAInvcgOffsettingGroup` |  | |  | `offset_invgr` |  |  |
-| `CAInvcgOffsettingStatus` |  | |  | `offset_status` |  |  |
-| `CAContract` |  | |  | `vtref` |  |  |
-| `CAProviderContractItemNumber` |  | |  | `vtpos` |  |  |
-| `CASubApplication` |  | |  | `subap` |  |  |
-| `CAInvcgDocumentReqd` |  | |  | `invdocno_req` |  |  |
-| `CAItemReqdPeriodStartDate` |  | |  | `date_from_req` |  |  |
-| `CAItemReqdPeriodEndDate` |  | |  | `date_to_req` |  |  |
-| `CADocumentNumberReqd` |  | |  | `cast(opbel_req as opbel_gfn_kk preserving type )` |  |  |
-| `CARepetitionItemNumberReqd` |  | |  | `opupw_req` |  |  |
-| `CABusinessPartnerItemNmbrReqd` |  | |  | `opupk_req` |  |  |
+| `CAInvoicingDocument` | ✓ | |  | `invdocno` | `CHAR(12)` | Number of Invoicing Document |
+| `CAInvcgDocOffsettingItem` | ✓ | |  | `invdocoitem` | `NUMC(8)` | Sequential Number of Document Item |
+| `CAInvcgOffsettingReferenceKey` |  | |  | `offset_refid` | `CHAR(20)` | Offsetting Reference Key |
+| `CAInvcgOffsettingCategory` |  | |  | `offset_cat` | `CHAR(3)` | Offsetting Category |
+| `CAInvcgOffsettingProcedure` |  | |  | `offset_proc` | `CHAR(2)` | Offsetting Procedure |
+| `CAInvcgOffsettingGroup` |  | |  | `offset_invgr` | `CHAR(6)` | Grouping of Offsetting Items |
+| `CAInvcgOffsettingStatus` |  | |  | `offset_status` | `CHAR(1)` | Status of Offsetting Processing |
+| `CAContract` |  | |  | `vtref` | `CHAR(20)` | Reference Specifications from Contract |
+| `CAProviderContractItemNumber` |  | |  | `vtpos` | `NUMC(6)` | Contract: Item Number |
+| `CASubApplication` |  | |  | `subap` | `CHAR(1)` | Subapplication in Contract Accounts Receivable and Payable |
+| `CAInvcgDocumentReqd` |  | |  | `invdocno_req` | `CHAR(12)` | Offset Invoice Document |
+| `CAItemReqdPeriodStartDate` |  | |  | `date_from_req` | `DATS(8)` | Start of Period of Line Item |
+| `CAItemReqdPeriodEndDate` |  | |  | `date_to_req` | `DATS(8)` | End of Period of Line Item |
+| `CADocumentNumberReqd` |  | |  | `cast(opbel_req as opbel_gfn_kk preserving type )` | `CHAR(12)` | Document |
+| `CARepetitionItemNumberReqd` |  | |  | `opupw_req` | `NUMC(3)` | Repetition Item in FI-CA Document |
+| `CABusinessPartnerItemNmbrReqd` |  | |  | `opupk_req` | `NUMC(4)` | Item Number in FI-CA Document |
 | `_CAInvcgDocHeader` | | ✓ | | | | |
 | `_CAInvcgOffsettingCategory` | | ✓ | | | | |
 | `_CAInvcgOffsettingProcedure` | | ✓ | | | | |

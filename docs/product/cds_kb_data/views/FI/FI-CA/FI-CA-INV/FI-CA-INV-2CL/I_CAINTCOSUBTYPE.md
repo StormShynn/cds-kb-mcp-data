@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAIntcoType` | ✓ | |  | `cast(_tfk8250s.ico_type as ico_type_gfn_kk preserving type)` |  |  |
-| `CAIntcoSubtype` | ✓ | |  | `cast(_tfk8250s.ico_subtype as ico_subtype_gfn_kk preserving type)` |  |  |
+| `CAIntcoType` | ✓ | |  | `cast(_tfk8250s.ico_type as ico_type_gfn_kk preserving type)` | `CHAR(4)` | Intercompany Settlement Type |
+| `CAIntcoSubtype` | ✓ | |  | `cast(_tfk8250s.ico_subtype as ico_subtype_gfn_kk preserving type)` | `CHAR(4)` | Intercompany Settlement Subtype |
 | `_CAIntcoType` | | ✓ | | | | |
 | `_CAIntcoSubtypeText` | | ✓ | | | | |
 

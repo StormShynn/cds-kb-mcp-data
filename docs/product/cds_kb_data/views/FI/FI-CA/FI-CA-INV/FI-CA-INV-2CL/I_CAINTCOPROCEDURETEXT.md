@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAIntcoProcedure` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 2 ) as ico_proc_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
-| `CAIntcoProcedureText` |  | |  | `cast ( ddtext as ico_proc_txt_gfn_kk preserving type )` |  |  |
+| `CAIntcoProcedure` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 2 ) as ico_proc_kk preserving type )` | `CHAR(2)` | Intercompany Settlement Procedure |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAIntcoProcedureText` |  | |  | `cast ( ddtext as ico_proc_txt_gfn_kk preserving type )` | `CHAR(60)` | Text for Intercompany Settlement Procedure |
 | `_CAIntcoProcedure` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 
