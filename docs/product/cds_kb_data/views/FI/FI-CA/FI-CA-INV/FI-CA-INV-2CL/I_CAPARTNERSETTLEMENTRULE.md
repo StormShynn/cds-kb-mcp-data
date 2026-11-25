@@ -40,8 +40,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPartnerSettlementRule` | ✓ | |  | `ptsrl` |  |  |
-| `CAInvcgPreliminaryCategory` |  | |  | `prlinv_cat` |  |  |
+| `CAPartnerSettlementRule` | ✓ | |  | `ptsrl` | `CHAR(4)` | Partner Settlement Rule |
+| `CAInvcgPreliminaryCategory` |  | |  | `prlinv_cat` | `CHAR(4)` | Preliminary Invoice Category |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

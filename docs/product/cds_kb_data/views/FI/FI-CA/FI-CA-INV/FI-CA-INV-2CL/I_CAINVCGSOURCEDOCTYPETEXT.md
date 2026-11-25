@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgSourceDocumentType` | ✓ | | `_tfk2605sct` | `srcdoctype` |  |  |
-| `CAInvcgSourceDocumentCat` | ✓ | | `_tfk2605sct` | `srcdoccat` |  |  |
-| `Language` | ✓ | | `_tfk2605sct` | `langu` |  |  |
-| `CAInvcgSourceDocTypeText` |  | |  | `cast( _tfk2605sct.text as srcdoctype_txt_gfn_kk preserving type )` |  |  |
+| `CAInvcgSourceDocumentType` | ✓ | | `_tfk2605sct` | `srcdoctype` | `CHAR(3)` | Type of Source Document to Be Invoiced |
+| `CAInvcgSourceDocumentCat` | ✓ | | `_tfk2605sct` | `srcdoccat` | `CHAR(5)` | Category of Source Document To Be Invoiced |
+| `Language` | ✓ | | `_tfk2605sct` | `langu` | `LANG(1)` | Language Key |
+| `CAInvcgSourceDocTypeText` |  | |  | `cast( _tfk2605sct.text as srcdoctype_txt_gfn_kk preserving type )` | `CHAR(50)` | Text for Source Document Type |
 | `_Language` | | ✓ | | | | |
 | `_CAInvcgSourceDocCat` | | ✓ | | | | |
 | `_CAInvcgSourceDocType` | | ✓ | | | | |

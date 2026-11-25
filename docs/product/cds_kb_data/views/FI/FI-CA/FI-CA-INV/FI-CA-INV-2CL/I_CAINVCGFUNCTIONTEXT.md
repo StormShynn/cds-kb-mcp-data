@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgFunction` | ✓ | | `_tfk2601t` | `inv_function` |  |  |
-| `Language` | ✓ | | `_tfk2601t` | `langu` |  |  |
-| `CAInvcgFunctionText` |  | | `_tfk2601t` | `text` |  |  |
+| `CAInvcgFunction` | ✓ | | `_tfk2601t` | `inv_function` | `CHAR(12)` | Invoicing Function |
+| `Language` | ✓ | | `_tfk2601t` | `langu` | `LANG(1)` | Language Key |
+| `CAInvcgFunctionText` |  | | `_tfk2601t` | `text` | `CHAR(60)` | Name of Invoicing Function |
 | `_CAInvcgFunction` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

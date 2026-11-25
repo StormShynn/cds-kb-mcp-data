@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgType` | ✓ | | `_tfk2603a` | `inv_type` |  |  |
-| `CAApplicationArea` | ✓ | | `_tfk2603a` | `applk` |  |  |
+| `CAInvcgType` | ✓ | | `_tfk2603a` | `inv_type` | `CHAR(2)` | Invoicing Type |
+| `CAApplicationArea` | ✓ | | `_tfk2603a` | `applk` | `CHAR(1)` | Application Area |
 | `_CAInvcgTypeText` | | ✓ | | | | |
 | `_CAApplicationArea` | | ✓ | | | | |
 

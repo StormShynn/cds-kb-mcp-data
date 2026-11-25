@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgSourceDocumentCat` | ✓ | | `_tfk2605sc` | `srcdoccat` |  |  |
-| `CAInvcgSourceDocumentType` | ✓ | | `_tfk2605sc` | `srcdoctype` |  |  |
+| `CAInvcgSourceDocumentCat` | ✓ | | `_tfk2605sc` | `srcdoccat` | `CHAR(5)` | Category of Source Document To Be Invoiced |
+| `CAInvcgSourceDocumentType` | ✓ | | `_tfk2605sc` | `srcdoctype` | `CHAR(3)` | Type of Source Document to Be Invoiced |
 | `_CAInvcgSourceDocTypeText` | | ✓ | | | | |
 | `_CAInvcgSourceDocCat` | | ✓ | | | | |
 

@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgSchedule` | ✓ | | `_tfk2606t` | `inv_schedule` |  |  |
-| `Language` | ✓ | | `_tfk2606t` | `langu` |  |  |
-| `CAInvcgScheduleText` |  | | `_tfk2606t` | `text` |  |  |
+| `CAInvcgSchedule` | ✓ | | `_tfk2606t` | `inv_schedule` | `CHAR(4)` | Selection Characteristic for Scheduling |
+| `Language` | ✓ | | `_tfk2606t` | `langu` | `LANG(1)` | Language Key |
+| `CAInvcgScheduleText` |  | | `_tfk2606t` | `text` | `CHAR(50)` | Text for Scheduling for Invoicing |
 | `_CAInvcgSchedule` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

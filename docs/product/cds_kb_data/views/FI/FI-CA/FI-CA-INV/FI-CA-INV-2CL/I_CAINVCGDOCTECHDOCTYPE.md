@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgTechnicalDocumentType` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as techdoctype_gfn_kk preserving type )` |  |  |
+| `CAInvcgTechnicalDocumentType` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as techdoctype_gfn_kk preserving type )` | `CHAR(1)` | Type of Technical Billing/Invoicing Document |
 | `_CAInvcgDocTechDocTypeText` | | ✓ | | | | |
 
 ## Associations

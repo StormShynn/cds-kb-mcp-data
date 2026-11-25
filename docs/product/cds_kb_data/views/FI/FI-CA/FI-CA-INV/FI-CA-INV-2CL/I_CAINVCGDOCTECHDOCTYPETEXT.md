@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgTechnicalDocumentType` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as techdoctype_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
-| `CAInvcgDocTechDocTypeText` |  | |  | `cast ( ddtext as techdoctype_txt_gfn_kk preserving type )` |  |  |
+| `CAInvcgTechnicalDocumentType` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as techdoctype_kk preserving type )` | `CHAR(1)` | Type of Technical Billing/Invoicing Document |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAInvcgDocTechDocTypeText` |  | |  | `cast ( ddtext as techdoctype_txt_gfn_kk preserving type )` | `CHAR(60)` | Text for Type of Technical Billing/Invoicing Document |
 | `_CAInvcgDocTechDocType` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

@@ -39,14 +39,14 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgReferenceObject` | ✓ | |  | `refobjname` |  |  |
-| `CAReferenceObjectID` | ✓ | |  | `refobjvalue` |  |  |
-| `CAInvcgCreationDate` | ✓ | |  | `crdate` |  |  |
-| `CAInvoicingDocument` | ✓ | |  | `invdocno` |  |  |
-| `CAInvcgIsDocumentPosted` |  | |  | `invoiced` |  |  |
-| `CAInvcgIsDocumentSimulated` |  | |  | `simulated` |  |  |
-| `CAInvcgIsDocumentPreliminary` |  | |  | `cast(preliminary as inv_preliminary_gfn_kk preserving type)` |  |  |
-| `CAReferenceObjectAddlText` |  | |  | `cast(refobjvalue2 as inv_refobjvalue2_gfn_kk preserving type)` |  |  |
+| `CAInvcgReferenceObject` | ✓ | |  | `refobjname` | `CHAR(10)` | Reference Object |
+| `CAReferenceObjectID` | ✓ | |  | `refobjvalue` | `CHAR(40)` | Reference Object ID |
+| `CAInvcgCreationDate` | ✓ | |  | `crdate` | `DATS(8)` | Creation Date of Invoicing Document |
+| `CAInvoicingDocument` | ✓ | |  | `invdocno` | `CHAR(12)` | Number of Invoicing Document |
+| `CAInvcgIsDocumentPosted` |  | |  | `invoiced` | `CHAR(1)` | Invoicing Document Posted |
+| `CAInvcgIsDocumentSimulated` |  | |  | `simulated` | `CHAR(1)` | Invoicing Document Is Simulated |
+| `CAInvcgIsDocumentPreliminary` |  | |  | `cast(preliminary as inv_preliminary_gfn_kk preserving type)` | `CHAR(1)` | Preliminary Invoice |
+| `CAReferenceObjectAddlText` |  | |  | `cast(refobjvalue2 as inv_refobjvalue2_gfn_kk preserving type)` | `CHAR(128)` | Additional Data for Reference Object |
 | `_CAInvcgReferenceObj` | | ✓ | | | | |
 | `_CAInvcgDocHeader` | | ✓ | | | | |
 

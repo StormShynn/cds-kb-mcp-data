@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgRefPostingDocType` | ✓ | |  | `cast(_tfk2605t.cadoctype as cadoctype_gfn_kk preserving type )` |  |  |
-| `Language` | ✓ | | `_tfk2605t` | `langu` |  |  |
-| `CAInvcgRefPostgDocTypeTxt` |  | |  | `cast(_tfk2605t.text as cadoctype_txt_gfn_kk preserving type )` |  |  |
+| `CAInvcgRefPostingDocType` | ✓ | |  | `cast(_tfk2605t.cadoctype as cadoctype_gfn_kk preserving type )` | `CHAR(4)` | Reference Document Type of Posting Document for Invoicing |
+| `Language` | ✓ | | `_tfk2605t` | `langu` | `LANG(1)` | Language Key |
+| `CAInvcgRefPostgDocTypeTxt` |  | |  | `cast(_tfk2605t.text as cadoctype_txt_gfn_kk preserving type )` | `CHAR(50)` | Name of Reference Document Type of Posting Document |
 | `_CAInvcgRefPostgDocType` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

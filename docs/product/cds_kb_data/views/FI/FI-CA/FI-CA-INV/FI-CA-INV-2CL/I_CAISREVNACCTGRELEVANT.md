@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAIsRevenueAccountingRelevant` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as rarel_kk preserving type )` |  |  |
+| `CAIsRevenueAccountingRelevant` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as rarel_kk preserving type )` | `CHAR(1)` | Relevant for Revenue Accounting |
 | `_CAIsRevnAcctgRelevantText` | | ✓ | | | | |
 
 ## Associations

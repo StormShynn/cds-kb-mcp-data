@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgProcess` | ✓ | | `_tfk2602` | `inv_process` |  |  |
-| `CAApplicationArea` | ✓ | | `_tfk2602` | `applk` |  |  |
+| `CAInvcgProcess` | ✓ | | `_tfk2602` | `inv_process` | `CHAR(2)` | Invoicing Process |
+| `CAApplicationArea` | ✓ | | `_tfk2602` | `applk` | `CHAR(1)` | Application Area |
 | `_CAInvcgProcessText` | | ✓ | | | | |
 | `_CAApplicationArea` | | ✓ | | | | |
 

@@ -40,7 +40,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgSchedule` | ✓ | | `_tfk2606` | `inv_schedule` |  |  |
+| `CAInvcgSchedule` | ✓ | | `_tfk2606` | `inv_schedule` | `CHAR(4)` | Selection Characteristic for Scheduling |
 | `_CAInvcgScheduleText` | | ✓ | | | | |
 
 ## Associations

@@ -12453,5 +12453,240 @@
     "attemptedAt": "2026-11-24T19:23:06.219Z",
     "found": true,
     "matched": 16
+  },
+  "I_CAINVCGDOCPOSTING": {
+    "attemptedAt": "2026-11-25T18:27:52.447Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_CAINVCGDOCRELATION": {
+    "attemptedAt": "2026-11-25T18:27:52.984Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_CAINVCGDOCREVERSALREASON": {
+    "attemptedAt": "2026-11-25T18:27:53.488Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGDOCREVERSALREASONTEXT": {
+    "attemptedAt": "2026-11-25T18:27:54.020Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGDOCSOURCE": {
+    "attemptedAt": "2026-11-25T18:27:54.552Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_CAINVCGDOCTECHDOCTYPE": {
+    "attemptedAt": "2026-11-25T18:27:55.062Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGDOCTECHDOCTYPETEXT": {
+    "attemptedAt": "2026-11-25T18:27:55.590Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGDOCUMENTTP": {
+    "attemptedAt": "2026-11-25T18:27:55.821Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CAINVCGDOCUMENTTP\" (404)"
+  },
+  "I_CAINVCGFUNCTION": {
+    "attemptedAt": "2026-11-25T18:27:56.576Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGFUNCTIONTEXT": {
+    "attemptedAt": "2026-11-25T18:27:57.068Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGOFFSETTINGACTION": {
+    "attemptedAt": "2026-11-25T18:27:57.610Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGOFFSETTINGACTIONTEXT": {
+    "attemptedAt": "2026-11-25T18:27:58.146Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGOFFSETTINGCATEGORY": {
+    "attemptedAt": "2026-11-25T18:27:58.675Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAINVCGOFFSETTINGCATEGORYTXT": {
+    "attemptedAt": "2026-11-25T18:27:59.179Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGOFFSETTINGPROCEDTXT": {
+    "attemptedAt": "2026-11-25T18:27:59.712Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGOFFSETTINGPROCEDURE": {
+    "attemptedAt": "2026-11-25T18:28:00.236Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGPRELIMINARYCATEGORY": {
+    "attemptedAt": "2026-11-25T18:28:00.734Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGPRELIMINARYCATEGORYT": {
+    "attemptedAt": "2026-11-25T18:28:01.268Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGPROCESS": {
+    "attemptedAt": "2026-11-25T18:28:01.798Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAINVCGPROCESSTEXT": {
+    "attemptedAt": "2026-11-25T18:28:02.290Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAINVCGREFPOSTGDOCTYP": {
+    "attemptedAt": "2026-11-25T18:28:02.827Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGREFPOSTGDOCTYPTXT": {
+    "attemptedAt": "2026-11-25T18:28:03.315Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGSCHEDULE": {
+    "attemptedAt": "2026-11-25T18:28:03.906Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGSCHEDULETEXT": {
+    "attemptedAt": "2026-11-25T18:28:04.400Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGSOURCEDOCCAT": {
+    "attemptedAt": "2026-11-25T18:28:04.939Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAINVCGSOURCEDOCCATTEXT": {
+    "attemptedAt": "2026-11-25T18:28:05.441Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGSOURCEDOCTYPE": {
+    "attemptedAt": "2026-11-25T18:28:05.973Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAINVCGSOURCEDOCTYPETEXT": {
+    "attemptedAt": "2026-11-25T18:28:06.515Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAINVCGTYPE": {
+    "attemptedAt": "2026-11-25T18:28:07.042Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAINVCGTYPEPROCTEXT": {
+    "attemptedAt": "2026-11-25T18:28:07.561Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_CAINVCGTYPETEXT": {
+    "attemptedAt": "2026-11-25T18:28:08.177Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAISREVNACCTGRELEVANT": {
+    "attemptedAt": "2026-11-25T18:28:08.688Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAISREVNACCTGRELEVANTTEXT": {
+    "attemptedAt": "2026-11-25T18:28:09.311Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAPARTNERSETTLEMENTRULE": {
+    "attemptedAt": "2026-11-25T18:28:09.826Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAPARTNERSETTLEMENTRULET": {
+    "attemptedAt": "2026-11-25T18:28:10.334Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAPRELIMINARYINVCGDOCSTATUS": {
+    "attemptedAt": "2026-11-25T18:28:10.872Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAPRELIMINARYINVCGDOCSTATUST": {
+    "attemptedAt": "2026-11-25T18:28:11.402Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CATAXDATETYPE": {
+    "attemptedAt": "2026-11-25T18:28:11.925Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CATAXDATETYPETEXT": {
+    "attemptedAt": "2026-11-25T18:28:12.471Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CATAXDETNTYPE": {
+    "attemptedAt": "2026-11-25T18:28:13.019Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CATAXDETNTYPETEXT": {
+    "attemptedAt": "2026-11-25T18:28:13.557Z",
+    "found": true,
+    "matched": 3
+  },
+  "C_ASSETBALANCE": {
+    "attemptedAt": "2026-11-25T18:28:14.085Z",
+    "found": true,
+    "matched": 102
+  },
+  "C_ASSETHISTORYSHEET": {
+    "attemptedAt": "2026-11-25T18:28:14.663Z",
+    "found": true,
+    "matched": 105
+  },
+  "I_ASSETACCTDETERMINATION": {
+    "attemptedAt": "2026-11-25T18:28:15.187Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ASSETACCTDETERMINATIONTEXT": {
+    "attemptedAt": "2026-11-25T18:28:15.708Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ASSETBALANCECUBE": {
+    "attemptedAt": "2026-11-25T18:28:16.244Z",
+    "found": true,
+    "matched": 143
+  },
+  "I_ASSETCLASS": {
+    "attemptedAt": "2026-11-25T18:28:16.813Z",
+    "found": true,
+    "matched": 18
   }
 }

@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgPreliminaryCategory` | ✓ | |  | `prlinv_cat` |  |  |
+| `CAInvcgPreliminaryCategory` | ✓ | |  | `prlinv_cat` | `CHAR(4)` | Preliminary Invoice Category |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code
