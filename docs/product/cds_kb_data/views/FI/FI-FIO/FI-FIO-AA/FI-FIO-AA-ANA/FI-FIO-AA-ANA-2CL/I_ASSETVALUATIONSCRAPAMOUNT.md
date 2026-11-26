@@ -50,34 +50,34 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `MasterFixedAsset` | ✓ | |  |  |  |  |
-| `FixedAsset` | ✓ | |  |  |  |  |
-| `Ledger` | ✓ | |  |  |  |  |
-| `AssetRealDepreciationArea` | ✓ | |  |  |  |  |
-| `ValidityEndDate` | ✓ | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `AcqnProdnCostScrapPercent` |  | |  |  |  |  |
-| `ScrapAmountInCoCodeCrcy` |  | |  |  |  |  |
-| `CompanyCodeCurrency` |  | |  |  |  |  |
-| `ScrapAmountInGlobCrcy` |  | |  |  |  |  |
-| `GlobalCurrency` |  | |  |  |  |  |
-| `ScrapAmountInFreeDefinedCrcy1` |  | |  |  |  |  |
-| `FreeDefinedCurrency1` |  | |  |  |  |  |
-| `ScrapAmountInFreeDefinedCrcy2` |  | |  |  |  |  |
-| `FreeDefinedCurrency2` |  | |  |  |  |  |
-| `ScrapAmountInFreeDefinedCrcy3` |  | |  |  |  |  |
-| `FreeDefinedCurrency3` |  | |  |  |  |  |
-| `ScrapAmountInFreeDefinedCrcy4` |  | |  |  |  |  |
-| `FreeDefinedCurrency4` |  | |  |  |  |  |
-| `ScrapAmountInFreeDefinedCrcy5` |  | |  |  |  |  |
-| `FreeDefinedCurrency5` |  | |  |  |  |  |
-| `ScrapAmountInFreeDefinedCrcy6` |  | |  |  |  |  |
-| `FreeDefinedCurrency6` |  | |  |  |  |  |
-| `ScrapAmountInFreeDefinedCrcy7` |  | |  |  |  |  |
-| `FreeDefinedCurrency7` |  | |  |  |  |  |
-| `ScrapAmountInFreeDefinedCrcy8` |  | |  |  |  |  |
-| `FreeDefinedCurrency8` |  | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `MasterFixedAsset` | ✓ | |  |  | `CHAR(12)` | Main Asset Number |
+| `FixedAsset` | ✓ | |  |  | `CHAR(4)` | Asset Subnumber |
+| `Ledger` | ✓ | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `AssetRealDepreciationArea` | ✓ | |  |  | `NUMC(2)` | Real depreciation area |
+| `ValidityEndDate` | ✓ | |  |  | `DATS(8)` | Date Validity Ends |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Date for Beginning of Validity |
+| `AcqnProdnCostScrapPercent` |  | |  |  | `DEC(14)` | Scrap Value as Percentage of APC |
+| `ScrapAmountInCoCodeCrcy` |  | |  |  | `CURR(23)` | Scrap Value in Company Code Currency |
+| `CompanyCodeCurrency` |  | |  |  | `CUKY(5)` | Company Code Currency |
+| `ScrapAmountInGlobCrcy` |  | |  |  | `CURR(23)` | Scrap Value in Global Currency |
+| `GlobalCurrency` |  | |  |  | `CUKY(5)` | Global Currency |
+| `ScrapAmountInFreeDefinedCrcy1` |  | |  |  | `CURR(23)` | Scrap Value in Freely Defined Currency 1 |
+| `FreeDefinedCurrency1` |  | |  |  | `CUKY(5)` | Freely Defined Currency 1 |
+| `ScrapAmountInFreeDefinedCrcy2` |  | |  |  | `CURR(23)` | Scrap Value in Freely Defined Currency 2 |
+| `FreeDefinedCurrency2` |  | |  |  | `CUKY(5)` | Freely Defined Currency 2 |
+| `ScrapAmountInFreeDefinedCrcy3` |  | |  |  | `CURR(23)` | Scrap Value in Freely Defined Currency 3 |
+| `FreeDefinedCurrency3` |  | |  |  | `CUKY(5)` | Freely Defined Currency 3 |
+| `ScrapAmountInFreeDefinedCrcy4` |  | |  |  | `CURR(23)` | Scrap Value in Freely Defined Currency 4 |
+| `FreeDefinedCurrency4` |  | |  |  | `CUKY(5)` | Freely Defined Currency 4 |
+| `ScrapAmountInFreeDefinedCrcy5` |  | |  |  | `CURR(23)` | Scrap Value in Freely Defined Currency 5 |
+| `FreeDefinedCurrency5` |  | |  |  | `CUKY(5)` | Freely Defined Currency 5 |
+| `ScrapAmountInFreeDefinedCrcy6` |  | |  |  | `CURR(23)` | Scrap Value in Freely Defined Currency 6 |
+| `FreeDefinedCurrency6` |  | |  |  | `CUKY(5)` | Freely Defined Currency 6 |
+| `ScrapAmountInFreeDefinedCrcy7` |  | |  |  | `CURR(23)` | Scrap Value in Freely Defined Currency 7 |
+| `FreeDefinedCurrency7` |  | |  |  | `CUKY(5)` | Freely Defined Currency 7 |
+| `ScrapAmountInFreeDefinedCrcy8` |  | |  |  | `CURR(23)` | Scrap Value in Freely Defined Currency 8 |
+| `FreeDefinedCurrency8` |  | |  |  | `CUKY(5)` | Freely Defined Currency 8 |
 | `_CompanyCode` | | ✓ | | | | |
 | `_MasterFixedAsset` | | ✓ | | | | |
 | `_FixedAsset` | | ✓ | | | | |

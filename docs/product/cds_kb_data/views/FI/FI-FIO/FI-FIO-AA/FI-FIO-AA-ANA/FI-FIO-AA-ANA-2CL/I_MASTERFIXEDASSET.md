@@ -39,10 +39,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `comp_code` |  |  |
-| `MasterFixedAsset` | ✓ | |  | `asset_no` |  |  |
-| `MasterFixedAssetDescription` |  | |  | `cast(main.description as anlhtxt)` |  |  |
-| `AssetAuthorizationContext` |  | |  | `cast('NEW' as faa_authcntxt)` |  |  |
+| `CompanyCode` | ✓ | |  | `comp_code` | `CHAR(4)` | Company Code |
+| `MasterFixedAsset` | ✓ | |  | `asset_no` | `CHAR(12)` | Main Asset Number |
+| `MasterFixedAssetDescription` |  | |  | `cast(main.description as anlhtxt)` | `CHAR(50)` | Asset Main Number Text |
+| `AssetAuthorizationContext` |  | |  | `cast('NEW' as faa_authcntxt)` | `CHAR(10)` | Asset Authorization Context |
 | `_CompanyCode` | | ✓ | | | | |
 | `_FixedAsset` | | ✓ | | | | |
 

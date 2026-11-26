@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ChartOfDepreciation` | ✓ | |  | `afapl` |  |  |
-| `Language` | ✓ | |  | `spras` |  |  |
-| `ChartOfDepreciationName` |  | |  | `ktext` |  |  |
+| `ChartOfDepreciation` | ✓ | |  | `afapl` | `CHAR(4)` | Chart of Depreciaton for Asset Valuation |
+| `Language` | ✓ | |  | `spras` | `LANG(1)` | Language Key |
+| `ChartOfDepreciationName` |  | |  | `ktext` | `CHAR(50)` | Description: Company code group for dep. calculation |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

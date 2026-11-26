@@ -12688,5 +12688,240 @@
     "attemptedAt": "2026-11-25T18:28:16.813Z",
     "found": true,
     "matched": 18
+  },
+  "I_ASSETCLASSTEXT": {
+    "attemptedAt": "2026-11-26T18:10:12.188Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_ASSETEVALUATIONKEYTEXT": {
+    "attemptedAt": "2026-11-26T18:10:12.642Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_ASSETHISTORYSHEETCUBE": {
+    "attemptedAt": "2026-11-26T18:10:13.156Z",
+    "found": true,
+    "matched": 131
+  },
+  "I_ASSETREDESIGNSWITCHSTATUS": {
+    "attemptedAt": "2026-11-26T18:10:13.654Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ASSETTRANSACTIONTYPE": {
+    "attemptedAt": "2026-11-26T18:10:14.175Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_ASSETTRANSACTIONTYPETEXT": {
+    "attemptedAt": "2026-11-26T18:10:14.617Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ASSETVALUATIONFORLEDGER": {
+    "attemptedAt": "2026-11-26T18:10:15.045Z",
+    "found": true,
+    "matched": 33
+  },
+  "I_ASSETVALUATIONSCRAPAMOUNT": {
+    "attemptedAt": "2026-11-26T18:10:15.527Z",
+    "found": true,
+    "matched": 28
+  },
+  "I_CHARTOFDEPRECIATION": {
+    "attemptedAt": "2026-11-26T18:10:15.992Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CHARTOFDEPRECIATIONTEXT": {
+    "attemptedAt": "2026-11-26T18:10:16.481Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COMPANYCODEASSET": {
+    "attemptedAt": "2026-11-26T18:10:16.941Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DEPRAREAFORLEDGERTEXT": {
+    "attemptedAt": "2026-11-26T18:10:17.400Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_DEPRECIATIONAREA": {
+    "attemptedAt": "2026-11-26T18:10:17.830Z",
+    "found": true,
+    "matched": 21
+  },
+  "I_DEPRECIATIONAREAFORLEDGER": {
+    "attemptedAt": "2026-11-26T18:10:18.288Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_DEPRECIATIONKEY": {
+    "attemptedAt": "2026-11-26T18:10:18.765Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_DEPRECIATIONKEYTEXT": {
+    "attemptedAt": "2026-11-26T18:10:19.237Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_FIXEDASSET": {
+    "attemptedAt": "2026-11-26T18:10:19.731Z",
+    "found": true,
+    "matched": 109
+  },
+  "I_FIXEDASSETASSGMT": {
+    "attemptedAt": "2026-11-26T18:10:20.215Z",
+    "found": true,
+    "matched": 38
+  },
+  "I_FIXEDASSETCOUNTRYDATA": {
+    "attemptedAt": "2026-11-26T18:10:20.683Z",
+    "found": true,
+    "matched": 49
+  },
+  "I_FIXEDASSETFORLEDGER": {
+    "attemptedAt": "2026-11-26T18:10:21.154Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_FIXEDASSETGROUP": {
+    "attemptedAt": "2026-11-26T18:10:21.623Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_FIXEDASSETGROUPTEXT": {
+    "attemptedAt": "2026-11-26T18:10:22.097Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_FIXEDASSETSTDVH": {
+    "attemptedAt": "2026-11-26T18:10:22.555Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_GROUP1ASSETEVALUATIONKEY": {
+    "attemptedAt": "2026-11-26T18:10:23.016Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_GROUP1ASSETEVALUATIONKEYTEXT": {
+    "attemptedAt": "2026-11-26T18:10:23.479Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_GROUP2ASSETEVALUATIONKEY": {
+    "attemptedAt": "2026-11-26T18:10:23.919Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_GROUP2ASSETEVALUATIONKEYTEXT": {
+    "attemptedAt": "2026-11-26T18:10:24.366Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_GROUP3ASSETEVALUATIONKEY": {
+    "attemptedAt": "2026-11-26T18:10:25.030Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_GROUP3ASSETEVALUATIONKEYTEXT": {
+    "attemptedAt": "2026-11-26T18:10:25.531Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_GROUP4ASSETEVALUATIONKEY": {
+    "attemptedAt": "2026-11-26T18:10:26.005Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_GROUP4ASSETEVALUATIONKEYTEXT": {
+    "attemptedAt": "2026-11-26T18:10:26.463Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_GROUP5ASSETEVALUATIONKEY": {
+    "attemptedAt": "2026-11-26T18:10:26.949Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_GROUP5ASSETEVALUATIONKEYTEXT": {
+    "attemptedAt": "2026-11-26T18:10:27.397Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_MASTERFIXEDASSET": {
+    "attemptedAt": "2026-11-26T18:10:27.881Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_USERSETTINGSFORDEPRAREA": {
+    "attemptedAt": "2026-11-26T18:10:28.389Z",
+    "found": true,
+    "matched": 2
+  },
+  "C_RECRRGSUPLRINVCTMPL": {
+    "attemptedAt": "2026-11-26T18:10:28.878Z",
+    "found": true,
+    "matched": 80
+  },
+  "C_RECRRGSUPLRINVCTMPLINSTCE": {
+    "attemptedAt": "2026-11-26T18:10:29.373Z",
+    "found": true,
+    "matched": 12
+  },
+  "C_RECRRGSUPLRINVCTMPLITEM": {
+    "attemptedAt": "2026-11-26T18:10:29.812Z",
+    "found": true,
+    "matched": 44
+  },
+  "C_RECRRGSUPLRINVCTMPLWHGDTAX": {
+    "attemptedAt": "2026-11-26T18:10:30.243Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_APCHECKBOOK": {
+    "attemptedAt": "2026-11-26T18:10:30.739Z",
+    "found": true,
+    "matched": 20
+  },
+  "I_OUTGOINGCHECK": {
+    "attemptedAt": "2026-11-26T18:10:31.166Z",
+    "found": true,
+    "matched": 44
+  },
+  "C_FINCUSTOMERINVOICEEDP": {
+    "attemptedAt": "2026-11-26T18:10:31.631Z",
+    "found": true,
+    "matched": 9
+  },
+  "C_FININVOICEHEADERFDP": {
+    "attemptedAt": "2026-11-26T18:10:32.112Z",
+    "found": true,
+    "matched": 43
+  },
+  "C_FININVOICEITEMFDP": {
+    "attemptedAt": "2026-11-26T18:10:32.583Z",
+    "found": true,
+    "matched": 90
+  },
+  "I_BANKSTATEMENT": {
+    "attemptedAt": "2026-11-26T18:10:33.070Z",
+    "found": true,
+    "matched": 21
+  },
+  "I_BANKSTATEMENTITEM": {
+    "attemptedAt": "2026-11-26T18:10:33.621Z",
+    "found": true,
+    "matched": 43
+  },
+  "I_BANKSTATEMENTITEMDETAIL": {
+    "attemptedAt": "2026-11-26T18:10:34.067Z",
+    "found": true,
+    "matched": 20
   }
 }
