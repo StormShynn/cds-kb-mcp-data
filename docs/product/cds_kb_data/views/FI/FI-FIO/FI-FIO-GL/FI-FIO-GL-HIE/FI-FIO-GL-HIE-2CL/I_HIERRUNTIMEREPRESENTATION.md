@@ -37,39 +37,39 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `RuntimeHierarchy` | ✓ | |  | `hryid` |  |  |
-| `ValidityEndDate` | ✓ | |  | `cast(hryvalto as fis_datbi preserving type )` |  |  |
-| `HierarchyType` |  | |  | `hrytyp` |  |  |
-| `ValidityStartDate` |  | |  | `cast(hryvalfrom as fis_datab preserving type )` |  |  |
-| `LastChangedByUser` |  | |  | `upduser` |  |  |
-| `LastChangeDateTime` |  | |  | `updtime` |  |  |
-| `HierarchyClass` |  | |  | `hrycls` |  |  |
-| `HierarchyShortID` |  | |  | `hrysid` |  |  |
-| `FromCreationDateTime` |  | |  | `cretime` |  |  |
-| `CreatedByUser` |  | |  | `creuser` |  |  |
-| `ControllingArea` |  | |  | `kokrs` |  |  |
-| `ChartOfAccounts` |  | |  | `ktopl` |  |  |
-| `ConsolidationChartOfAccounts` |  | |  | `itclg` |  |  |
-| `SubItemCategory` |  | |  | `sityp` |  |  |
-| `ValidationScenarioID` |  | |  | `scen_id` |  |  |
-| `FinancialManagementArea` |  | |  | `fikrs` |  |  |
-| `FinMgmtAreaFiscalYear` |  | |  | `fma_fisyear` |  |  |
-| `SalesOrganization` |  | |  | `salesorganization` |  |  |
-| `DistributionChannel` |  | |  | `distributionchannel` |  |  |
-| `Division` |  | |  | `division` |  |  |
-| `Language` |  | |  | `dspra` |  |  |
-| `GroupChartOfAccountIsUsed` |  | |  | `xergs` |  |  |
-| `FinancialStatementAssetsItem` |  | |  | `aktva` |  |  |
-| `FinStatementLiabilitiesItem` |  | |  | `pssva` |  |  |
-| `FinancialStatementNetLossItem` |  | |  | `ergak` |  |  |
-| `FinStatementNetProfitItem` |  | |  | `ergpa` |  |  |
-| `FinStatementProfitAndLossItem` |  | |  | `erggv` |  |  |
-| `FinancialStatementOrphansItem` |  | |  | `zuord` |  |  |
-| `FinancialStatementNotesItem` |  | |  | `anhng` |  |  |
-| `GeneralLedgerAgingScope` |  | |  | `aging` |  |  |
-| `FunctionalAreaIsUsed` |  | |  | `funareaassigned` |  |  |
-| `SemanticTagIsUsed` |  | |  | `semtagassigned` |  |  |
-| `HierarchyNodeIsTimeDependent` |  | |  | `node_timedep` |  |  |
+| `RuntimeHierarchy` | ✓ | |  | `hryid` | `CHAR(40)` | Hierarchy ID |
+| `ValidityEndDate` | ✓ | |  | `cast(hryvalto as fis_datbi preserving type )` | `DATS(8)` | Validity End Date |
+| `HierarchyType` |  | |  | `hrytyp` | `CHAR(4)` | Hierarchy Type |
+| `ValidityStartDate` |  | |  | `cast(hryvalfrom as fis_datab preserving type )` | `DATS(8)` | Validity Start Date |
+| `LastChangedByUser` |  | |  | `upduser` | `CHAR(12)` | Last Changed By |
+| `LastChangeDateTime` |  | |  | `updtime` | `DEC(15)` | Last Updated At (Timestamp) |
+| `HierarchyClass` |  | |  | `hrycls` | `CHAR(12)` | Hierarchy Class |
+| `HierarchyShortID` |  | |  | `hrysid` | `CHAR(20)` | Hierarchy ID |
+| `FromCreationDateTime` |  | |  | `cretime` | `DEC(15)` | Created At (Timestamp) |
+| `CreatedByUser` |  | |  | `creuser` | `CHAR(12)` | Created by |
+| `ControllingArea` |  | |  | `kokrs` | `CHAR(4)` | Controlling Area |
+| `ChartOfAccounts` |  | |  | `ktopl` | `CHAR(4)` | Chart of Accounts |
+| `ConsolidationChartOfAccounts` |  | |  | `itclg` | `CHAR(2)` | Consolidation Chart of Accounts |
+| `SubItemCategory` |  | |  | `sityp` | `CHAR(3)` | Subitem Category |
+| `ValidationScenarioID` |  | |  | `scen_id` | `CHAR(5)` | Validation Scenario |
+| `FinancialManagementArea` |  | |  | `fikrs` | `CHAR(4)` | Financial Management Area |
+| `FinMgmtAreaFiscalYear` |  | |  | `fma_fisyear` | `NUMC(4)` | Fiscal Year for Financial Management Area |
+| `SalesOrganization` |  | |  | `salesorganization` | `CHAR(4)` | Sales Organization |
+| `DistributionChannel` |  | |  | `distributionchannel` | `CHAR(2)` | Distribution Channel |
+| `Division` |  | |  | `division` | `CHAR(2)` | Division |
+| `Language` |  | |  | `dspra` | `LANG(1)` | Language Key |
+| `GroupChartOfAccountIsUsed` |  | |  | `xergs` | `CHAR(1)` | Financial Statement Version Uses Group Chart of Accounts |
+| `FinancialStatementAssetsItem` |  | |  | `aktva` | `CHAR(10)` | Item Key Representing the Assets |
+| `FinStatementLiabilitiesItem` |  | |  | `pssva` | `CHAR(10)` | Item Key Representing the Liabilities |
+| `FinancialStatementNetLossItem` |  | |  | `ergak` | `CHAR(10)` | Item Key Representing the Line Item Net Loss |
+| `FinStatementNetProfitItem` |  | |  | `ergpa` | `CHAR(10)` | Fin.Statement Key Representing the Net Profit/Yr |
+| `FinStatementProfitAndLossItem` |  | |  | `erggv` | `CHAR(10)` | Fin.Statement Key Representing the P+L Profit Item |
+| `FinancialStatementOrphansItem` |  | |  | `zuord` | `CHAR(10)` | Item Key Representing the Non-Assignable Accounts |
+| `FinancialStatementNotesItem` |  | |  | `anhng` | `CHAR(10)` | Item Key That Represents the Notes to Financial Statements |
+| `GeneralLedgerAgingScope` |  | |  | `aging` | `CHAR(10)` | Aging |
+| `FunctionalAreaIsUsed` |  | |  | `funareaassigned` | `CHAR(1)` | Indicator: Functional Area Enabled |
+| `SemanticTagIsUsed` |  | |  | `semtagassigned` | `CHAR(1)` | Indicator: Semantic Tag Assigned |
+| `HierarchyNodeIsTimeDependent` |  | |  | `node_timedep` | `CHAR(1)` | Indicator: Node is time-dependent |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

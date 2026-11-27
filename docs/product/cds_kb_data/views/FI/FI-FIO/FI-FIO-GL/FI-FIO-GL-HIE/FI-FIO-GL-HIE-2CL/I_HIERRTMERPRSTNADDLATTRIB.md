@@ -37,12 +37,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `RuntimeHierarchy` | ✓ | |  | `hryid` |  |  |
-| `ValidityEndDate` | ✓ | |  | `cast(hryvalto as fis_datbi preserving type )` |  |  |
-| `HierarchyAttributeName` | ✓ | |  | `hryattrname` |  |  |
-| `HierAttributeRangeFromVal` | ✓ | |  | `hryattrvalue` |  |  |
-| `HierarchyType` |  | |  | `hrytyp` |  |  |
-| `HierAttributeRangeToVal` |  | |  | `hryattrhvalue` |  |  |
+| `RuntimeHierarchy` | ✓ | |  | `hryid` | `CHAR(40)` | Hierarchy ID |
+| `ValidityEndDate` | ✓ | |  | `cast(hryvalto as fis_datbi preserving type )` | `DATS(8)` | Validity End Date |
+| `HierarchyAttributeName` | ✓ | |  | `hryattrname` | `CHAR(30)` | Hierarchy Attribute Name |
+| `HierAttributeRangeFromVal` | ✓ | |  | `hryattrvalue` | `CHAR(80)` | Hierarchy Attribute Value |
+| `HierarchyType` |  | |  | `hrytyp` | `CHAR(4)` | Hierarchy Type |
+| `HierAttributeRangeToVal` |  | |  | `hryattrhvalue` | `CHAR(80)` | Hierarchy Attribute High Value |
 | `_Hierarchy` | | ✓ | | | | |
 
 ## Associations
