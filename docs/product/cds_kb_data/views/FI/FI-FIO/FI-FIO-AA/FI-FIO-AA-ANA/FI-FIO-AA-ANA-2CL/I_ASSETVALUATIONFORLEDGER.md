@@ -53,39 +53,39 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  |  |  |  |
-| `MasterFixedAsset` | ✓ | |  |  |  |  |
-| `FixedAsset` | ✓ | |  |  |  |  |
-| `Ledger` | ✓ | |  |  |  |  |
-| `AssetRealDepreciationArea` | ✓ | |  | `cast(I_AssetTimeBasedValuation.AssetDepreciationArea as afabe_d)` |  |  |
-| `ValidityEndDate` | ✓ | |  |  |  |  |
-| `ValidityStartDate` |  | |  |  |  |  |
-| `DepreciationStartDate` |  | |  |  |  |  |
-| `SpecialDeprStartDate` |  | |  |  |  |  |
-| `DeprKeyChangeoverYear` |  | |  | `cast(I_AssetValuation.DeprKeyChangeoverYear as fis_umjar)` |  |  |
-| `DeprKeyChangeoverPeriod` |  | |  |  |  |  |
-| `DepreciationKey` |  | |  |  |  |  |
-| `InvestmentSupportMeasure` |  | |  | `cast('' as faa_invsl)` |  |  |
-| `PlannedUsefulLifeInPeriods` |  | |  | `cast(I_AssetTimeBasedValuation.PlannedUsefulLifeInPeriods as fis_ndper)` |  |  |
-| `PlannedUsefulLifeInYears` |  | |  | `cast(I_AssetTimeBasedValuation.PlannedUsefulLifeInYears as fis_ndjar)` |  |  |
-| `VintageYear` |  | |  | `cast('0000' as fis_vyear)` |  |  |
-| `VintageMonth` |  | |  | `cast('000' as fis_vmnth)` |  |  |
-| `OriglAstUsefulLifeInPerds` |  | |  | `cast('000' as fis_ndurp)` |  |  |
-| `OriglAstUsefulLifeInYears` |  | |  | `cast('000' as ndurj)` |  |  |
-| `ReplacementValueIndexSers` |  | |  |  |  |  |
-| `RplcmtValueAgingIndexSers` |  | |  | `cast(I_AssetValuation.RplcmtValueAgingIndexSers as fis_alind)` |  |  |
-| `AcqnProdnCostScrapPercent` |  | |  |  |  |  |
-| `VariableDeprPercent` |  | |  |  |  |  |
-| `ShiftOperationFactor` |  | |  |  |  |  |
-| `IsShutDown` |  | |  |  |  |  |
-| `DeprCalcBaseValuePercent` |  | |  |  |  |  |
-| `LastRetirementValueDate` |  | |  |  |  |  |
-| `DepreciationAreaType` |  | |  |  |  |  |
-| `ScrapAmountInCoCodeCrcy` |  | |  |  |  |  |
-| `CompanyCodeCurrency` |  | | `_CompanyCode` | `Currency` |  |  |
-| `AssetOpgReadinessDate` |  | |  |  |  |  |
-| `FixedAssetUsageObject` |  | |  |  |  |  |
-| `AssetRevaluationIndex` |  | |  |  |  |  |
+| `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
+| `MasterFixedAsset` | ✓ | |  |  | `CHAR(12)` | Main Asset Number |
+| `FixedAsset` | ✓ | |  |  | `CHAR(4)` | Asset Subnumber |
+| `Ledger` | ✓ | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `AssetRealDepreciationArea` | ✓ | |  | `cast(I_AssetTimeBasedValuation.AssetDepreciationArea as afabe_d)` | `NUMC(2)` | Real depreciation area |
+| `ValidityEndDate` | ✓ | |  |  | `DATS(8)` | Date Validity Ends |
+| `ValidityStartDate` |  | |  |  | `DATS(8)` | Date for Beginning of Validity |
+| `DepreciationStartDate` |  | |  |  | `DATS(8)` | Depreciation Calculation Start Date |
+| `SpecialDeprStartDate` |  | |  |  | `DATS(8)` | Start Date for Special Depreciation |
+| `DeprKeyChangeoverYear` |  | |  | `cast(I_AssetValuation.DeprKeyChangeoverYear as fis_umjar)` | `NUMC(4)` | Changeover Year of Depreciation Key |
+| `DeprKeyChangeoverPeriod` |  | |  |  | `NUMC(3)` | Changeover Period of Depreciation Key |
+| `DepreciationKey` |  | |  |  | `CHAR(4)` | Depreciation Key |
+| `InvestmentSupportMeasure` |  | |  | `cast('' as faa_invsl)` | `CHAR(2)` | Investment Support Key |
+| `PlannedUsefulLifeInPeriods` |  | |  | `cast(I_AssetTimeBasedValuation.PlannedUsefulLifeInPeriods as fis_ndper)` | `NUMC(3)` | Planned Useful Life in Periods |
+| `PlannedUsefulLifeInYears` |  | |  | `cast(I_AssetTimeBasedValuation.PlannedUsefulLifeInYears as fis_ndjar)` | `NUMC(3)` | Planned Useful Life in Years |
+| `VintageYear` |  | |  | `cast('0000' as fis_vyear)` | `NUMC(4)` | Acquisition Year |
+| `VintageMonth` |  | |  | `cast('000' as fis_vmnth)` | `NUMC(3)` | Acquisition Month |
+| `OriglAstUsefulLifeInPerds` |  | |  | `cast('000' as fis_ndurp)` | `NUMC(3)` | Original Useful Life in Periods |
+| `OriglAstUsefulLifeInYears` |  | |  | `cast('000' as ndurj)` | `NUMC(3)` | Original Useful Life in Years |
+| `ReplacementValueIndexSers` |  | |  |  | `CHAR(5)` | Index Series for Replacement Values |
+| `RplcmtValueAgingIndexSers` |  | |  | `cast(I_AssetValuation.RplcmtValueAgingIndexSers as fis_alind)` | `CHAR(5)` | Age-Dependent Index Series |
+| `AcqnProdnCostScrapPercent` |  | |  |  | `DEC(14)` | Scrap Value as Percentage of APC |
+| `VariableDeprPercent` |  | |  |  | `DEC(7)` | Variable Depreciation Portion |
+| `ShiftOperationFactor` |  | |  |  | `DEC(3)` | Multiple-Shift Factor for Multiple Shift Operation |
+| `IsShutDown` |  | |  |  | `CHAR(1)` | Asset Shutdown |
+| `DeprCalcBaseValuePercent` |  | |  |  | `DEC(16)` | Base Value Percentage |
+| `LastRetirementValueDate` |  | |  |  | `DATS(8)` | Value date of last retirement for the depreciation area |
+| `DepreciationAreaType` |  | |  |  | `CHAR(1)` | Calculation View Type |
+| `ScrapAmountInCoCodeCrcy` |  | |  |  | `CURR(23)` | Scrap Value in Company Code Currency |
+| `CompanyCodeCurrency` |  | | `_CompanyCode` | `Currency` | `CUKY(5)` | Currency Key |
+| `AssetOpgReadinessDate` |  | |  |  | `DATS(8)` | Asset Accounting:  Date of Operating Readiness |
+| `FixedAssetUsageObject` |  | |  |  | `NUMC(12)` | Usage Object |
+| `AssetRevaluationIndex` |  | |  |  | `CHAR(10)` | Asset Revaluation: Index ID |
 | `_CompanyCode` | | ✓ | | | | |
 | `_MasterFixedAsset` | | ✓ | | | | |
 | `_FixedAsset` | | ✓ | | | | |

@@ -54,9 +54,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AssetAccountDetermination` | ✓ | |  | `gl_account_det` |  |  |
-| `Language` | ✓ | |  | `language` |  |  |
-| `AssetAccountDeterminationDesc` |  | |  | `description_short` |  |  |
+| `AssetAccountDetermination` | ✓ | |  | `gl_account_det` | `CHAR(8)` | Account Determination |
+| `Language` | ✓ | |  | `language` | `LANG(1)` | Language Key |
+| `AssetAccountDeterminationDesc` |  | |  | `description_short` | `CHAR(50)` | Name of Account Determination |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

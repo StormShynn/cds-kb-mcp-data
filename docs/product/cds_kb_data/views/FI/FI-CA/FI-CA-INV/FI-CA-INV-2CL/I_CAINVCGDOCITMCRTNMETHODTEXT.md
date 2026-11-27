@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgDocItemCrtnMethod` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as invitem_crmet_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
-| `CAInvcgDocItmCrtnMethodText` |  | |  | `cast ( ddtext as invitem_crmet_txt_gfn_kk preserving type )` |  |  |
+| `CAInvcgDocItemCrtnMethod` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as invitem_crmet_kk preserving type )` | `CHAR(1)` | Creation Method of Invoicing Document Item |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAInvcgDocItmCrtnMethodText` |  | |  | `cast ( ddtext as invitem_crmet_txt_gfn_kk preserving type )` | `CHAR(60)` | Text for Creation Method of Invoicing Document Item |
 | `_CAInvcgDocItmCrtnMethod` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

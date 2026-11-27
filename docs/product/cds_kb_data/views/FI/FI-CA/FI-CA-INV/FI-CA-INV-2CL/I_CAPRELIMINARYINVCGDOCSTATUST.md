@@ -40,10 +40,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPreliminaryInvcgDocStatus` | ✓ | |  | `cast( dd07t.domvalue_l as prlinv_status_kk )` |  |  |
-| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
-| `CAPreliminaryInvcgDocStatusTxt` |  | |  | `cast( dd07t.ddtext as prlinv_status_txt_gfn_kk preserving type )` |  |  |
+| `CAPreliminaryInvcgDocStatus` | ✓ | |  | `cast( dd07t.domvalue_l as prlinv_status_kk )` | `CHAR(1)` | Status of Preliminary Invoice |
+| `Language` | ✓ | |  | `cast( dd07t.ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
+| `CAPreliminaryInvcgDocStatusTxt` |  | |  | `cast( dd07t.ddtext as prlinv_status_txt_gfn_kk preserving type )` | `CHAR(60)` | Text for Status of Preliminary Invoice |
 | `_Language` | | ✓ | | | | |
 | `_CAPreliminaryInvcgDocStatus` | | ✓ | | | | |
 

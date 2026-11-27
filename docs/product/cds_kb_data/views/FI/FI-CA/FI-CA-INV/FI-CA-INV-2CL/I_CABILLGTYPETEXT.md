@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgType` | ✓ | | `_tfk8112t` | `bill_type` |  |  |
-| `Language` | ✓ | | `_tfk8112t` | `langu` |  |  |
-| `CABillgTypeText` |  | | `_tfk8112t` | `text` |  |  |
+| `CABillgType` | ✓ | | `_tfk8112t` | `bill_type` | `CHAR(4)` | Billing Type |
+| `Language` | ✓ | | `_tfk8112t` | `langu` | `LANG(1)` | Language Key |
+| `CABillgTypeText` |  | | `_tfk8112t` | `text` | `CHAR(50)` | Name of Billing Type |
 | `_CABillgType` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

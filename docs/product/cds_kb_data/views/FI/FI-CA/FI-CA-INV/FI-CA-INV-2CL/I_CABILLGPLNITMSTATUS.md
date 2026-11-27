@@ -53,7 +53,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgPlnItemStatus` | ✓ | |  | `cast( substring(dd07l.domvalue_l, 1, 1) as bipitem_status_kk preserving type )` |  |  |
+| `CABillgPlnItemStatus` | ✓ | |  | `cast( substring(dd07l.domvalue_l, 1, 1) as bipitem_status_kk preserving type )` | `CHAR(1)` | Status of Billing Plan Item |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

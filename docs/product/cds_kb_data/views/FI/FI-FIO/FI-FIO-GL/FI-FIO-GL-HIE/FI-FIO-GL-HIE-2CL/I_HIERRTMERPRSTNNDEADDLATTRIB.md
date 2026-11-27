@@ -37,15 +37,15 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `RuntimeHierarchy` | ✓ | |  | `hryid` |  |  |
-| `ValidityEndDate` | ✓ | |  | `cast(hryvalto as fis_datbi preserving type )` |  |  |
-| `HierarchyNode` | ✓ | |  | `hrynode` |  |  |
-| `HierarchyNodeClass` | ✓ | |  | `nodecls` |  |  |
-| `ParentNode` | ✓ | |  | `parnode` |  |  |
-| `HierarchyNodeAttributeName` | ✓ | |  | `hryattrname` |  |  |
-| `HierarchyType` | ✓ | |  | `hrytyp` |  |  |
-| `HierNodeAttributeRangeFromVal` | ✓ | |  | `hryattrvalue` |  |  |
-| `HierNodeAttributeRangeToVal` |  | |  | `hryattrhvalue` |  |  |
+| `RuntimeHierarchy` | ✓ | |  | `hryid` | `CHAR(40)` | Hierarchy ID |
+| `ValidityEndDate` | ✓ | |  | `cast(hryvalto as fis_datbi preserving type )` | `DATS(8)` | Validity End Date |
+| `HierarchyNode` | ✓ | |  | `hrynode` | `CHAR(50)` | Hierarchy node |
+| `HierarchyNodeClass` | ✓ | |  | `nodecls` | `CHAR(12)` | Node class |
+| `ParentNode` | ✓ | |  | `parnode` | `CHAR(50)` | Hierarchy parent node |
+| `HierarchyNodeAttributeName` | ✓ | |  | `hryattrname` | `CHAR(30)` | Hierarchy Attribute Name |
+| `HierarchyType` | ✓ | |  | `hrytyp` | `CHAR(4)` | Hierarchy Type |
+| `HierNodeAttributeRangeFromVal` | ✓ | |  | `hryattrvalue` | `CHAR(80)` | Hierarchy Attribute Value |
+| `HierNodeAttributeRangeToVal` |  | |  | `hryattrhvalue` | `CHAR(80)` | Hierarchy Attribute High Value |
 | `_Hierarchy` | | ✓ | | | | |
 
 ## Associations

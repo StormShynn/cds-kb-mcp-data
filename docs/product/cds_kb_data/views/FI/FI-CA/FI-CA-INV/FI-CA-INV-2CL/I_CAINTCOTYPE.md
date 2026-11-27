@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAIntcoType` | ✓ | |  | `cast(_tfk8250.ico_type as ico_type_gfn_kk preserving type)` |  |  |
+| `CAIntcoType` | ✓ | |  | `cast(_tfk8250.ico_type as ico_type_gfn_kk preserving type)` | `CHAR(4)` | Intercompany Settlement Type |
 | `_CAIntcoTypeText` | | ✓ | | | | |
 
 ## Associations

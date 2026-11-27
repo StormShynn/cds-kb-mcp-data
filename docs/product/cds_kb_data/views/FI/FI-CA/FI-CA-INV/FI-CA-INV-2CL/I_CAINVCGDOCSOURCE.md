@@ -39,19 +39,19 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgSourceDocumentCat` | ✓ | |  | `cast(srcdoccat as srcdoccat_gfn_kk preserving type)` |  |  |
-| `CAInvcgSourceDocumentNumber` | ✓ | |  | `cast(srcdocno as srcdocno_gfn_kk preserving type)` |  |  |
-| `CAInvoicingDocument` | ✓ | |  | `invdocno` |  |  |
-| `CAInvcgSourceDocumentType` |  | |  | `srcdoctype` |  |  |
-| `LogicalSystem` |  | |  | `log_system` |  |  |
-| `CAApplicationArea` |  | |  | `applk` |  |  |
-| `CAInvcgIsDocumentPosted` |  | |  | `invoiced` |  |  |
-| `CAInvcgIsDocumentSimulated` |  | |  | `simulated` |  |  |
-| `CAInvcgIsDocumentPreliminary` |  | |  | `cast(preliminary as inv_preliminary_gfn_kk preserving type)` |  |  |
-| `CAInvcgReversalDocument` |  | |  | `cast(reversaldoc as inv_reversaldoc_gfn_kk preserving type)` |  |  |
-| `CAInvcgReversedDocument` |  | |  | `cast(reverseddoc as inv_reverseddoc_gfn_kk preserving type)` |  |  |
-| `CAInvcgCreationDate` |  | |  | `crdate` |  |  |
-| `CAInvcgCreationTime` |  | |  | `crtime` |  |  |
+| `CAInvcgSourceDocumentCat` | ✓ | |  | `cast(srcdoccat as srcdoccat_gfn_kk preserving type)` | `CHAR(5)` | Category of Source Document To Be Invoiced |
+| `CAInvcgSourceDocumentNumber` | ✓ | |  | `cast(srcdocno as srcdocno_gfn_kk preserving type)` | `CHAR(20)` | Source Document Number |
+| `CAInvoicingDocument` | ✓ | |  | `invdocno` | `CHAR(12)` | Number of Invoicing Document |
+| `CAInvcgSourceDocumentType` |  | |  | `srcdoctype` | `CHAR(3)` | Type of Source Document to Be Invoiced |
+| `LogicalSystem` |  | |  | `log_system` | `CHAR(10)` | Logical System |
+| `CAApplicationArea` |  | |  | `applk` | `CHAR(1)` | Application Area |
+| `CAInvcgIsDocumentPosted` |  | |  | `invoiced` | `CHAR(1)` | Invoicing Document Posted |
+| `CAInvcgIsDocumentSimulated` |  | |  | `simulated` | `CHAR(1)` | Invoicing Document Is Simulated |
+| `CAInvcgIsDocumentPreliminary` |  | |  | `cast(preliminary as inv_preliminary_gfn_kk preserving type)` | `CHAR(1)` | Preliminary Invoice |
+| `CAInvcgReversalDocument` |  | |  | `cast(reversaldoc as inv_reversaldoc_gfn_kk preserving type)` | `CHAR(12)` | Number of Reversal Invoicing Document |
+| `CAInvcgReversedDocument` |  | |  | `cast(reverseddoc as inv_reverseddoc_gfn_kk preserving type)` | `CHAR(12)` | Number of Reversed Invoicing Document |
+| `CAInvcgCreationDate` |  | |  | `crdate` | `DATS(8)` | Creation Date of Invoicing Document |
+| `CAInvcgCreationTime` |  | |  | `crtime` | `TIMS(6)` | Time of Creation of Invoicing Document |
 | `_CAInvcgDocHeader` | | ✓ | | | | |
 | `_CAInvcgSourceDocCat` | | ✓ | | | | |
 | `_CAInvcgSourceDocType` | | ✓ | | | | |

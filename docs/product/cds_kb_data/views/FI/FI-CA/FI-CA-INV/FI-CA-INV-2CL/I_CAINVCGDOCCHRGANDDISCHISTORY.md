@@ -39,17 +39,17 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvoicingDocument` | ✓ | |  | `invdocno` |  |  |
-| `CADocumentNumber` | ✓ | |  | `opbel` |  |  |
-| `CABPItemNumber` | ✓ | |  | `opupk` |  |  |
-| `CASequenceNumber` | ✓ | |  | `consno` |  |  |
-| `CADocumentNumberSrce` |  | |  | `opbel_src` |  |  |
-| `CARepetitionItemNumberSrce` |  | |  | `opupw_src` |  |  |
-| `CABusinessPartnerItemNmbrSrce` |  | |  | `opupk_src` |  |  |
-| `CASubstituteDocumentNumberSrce` |  | |  | `abwbl_src` |  |  |
-| `CAAmountInTransactionCrcySrce` |  | |  | `betrw_src` |  |  |
-| `TransactionCurrency` |  | |  | `waers` |  |  |
-| `CAInvcgChrgAndDiscAmount` |  | |  | `chgamt` |  |  |
+| `CAInvoicingDocument` | ✓ | |  | `invdocno` | `CHAR(12)` | Number of Invoicing Document |
+| `CADocumentNumber` | ✓ | |  | `opbel` | `CHAR(12)` | Number of a FI-CA Document |
+| `CABPItemNumber` | ✓ | |  | `opupk` | `NUMC(4)` | Item Number in FI-CA Document |
+| `CASequenceNumber` | ✓ | |  | `consno` | `NUMC(6)` | Sequence Number |
+| `CADocumentNumberSrce` |  | |  | `opbel_src` | `CHAR(12)` | Number of a FI-CA Document |
+| `CARepetitionItemNumberSrce` |  | |  | `opupw_src` | `NUMC(3)` | Repetition Item in FI-CA Document |
+| `CABusinessPartnerItemNmbrSrce` |  | |  | `opupk_src` | `NUMC(4)` | Item Number in FI-CA Document |
+| `CASubstituteDocumentNumberSrce` |  | |  | `abwbl_src` | `CHAR(12)` | Number of the Substitute FI-CA Document |
+| `CAAmountInTransactionCrcySrce` |  | |  | `betrw_src` | `CURR(13)` | Amount in Transaction Currency with +/- Sign |
+| `TransactionCurrency` |  | |  | `waers` | `CUKY(5)` | Transaction Currency |
+| `CAInvcgChrgAndDiscAmount` |  | |  | `chgamt` | `CURR(13)` | Charge/Discount Amount |
 | `_CAInvcgDocHeader` | | ✓ | | | | |
 | `_CADocument` | | ✓ | | | | |
 | `_CADocumentSrce` | | ✓ | | | | |

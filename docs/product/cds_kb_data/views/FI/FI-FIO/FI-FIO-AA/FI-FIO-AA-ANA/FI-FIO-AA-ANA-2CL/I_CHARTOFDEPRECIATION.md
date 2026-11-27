@@ -37,8 +37,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `ChartOfDepreciation` | ✓ | |  | `afapl` |  |  |
-| `ChartOfDepreciationIsActive` |  | |  | `bplakt` |  |  |
+| `ChartOfDepreciation` | ✓ | |  | `afapl` | `CHAR(4)` | Chart of Depreciaton for Asset Valuation |
+| `ChartOfDepreciationIsActive` |  | |  | `bplakt` | `CHAR(1)` | ID Chart of Depreciation Active |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

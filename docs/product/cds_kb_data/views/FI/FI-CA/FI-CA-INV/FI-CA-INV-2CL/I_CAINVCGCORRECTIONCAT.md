@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgCorrectionCategory` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,2 ) as corrcat_kk preserving type )` |  |  |
+| `CAInvcgCorrectionCategory` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,2 ) as corrcat_kk preserving type )` | `CHAR(2)` | Category of Invoice Correction |
 | `_CAInvcgCorrectionCatText` | | ✓ | | | | |
 
 ## Associations

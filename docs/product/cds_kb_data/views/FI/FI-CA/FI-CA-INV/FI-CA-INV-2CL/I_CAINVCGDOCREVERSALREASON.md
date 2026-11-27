@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgDocumentReversalReason` | ✓ | | `_tfk2661` | `revreason` |  |  |
+| `CAInvcgDocumentReversalReason` | ✓ | | `_tfk2661` | `revreason` | `CHAR(2)` | Reversal Reason of Invoicing Document |
 | `_CAInvcgDocReversalReasonText` | | ✓ | | | | |
 
 ## Associations

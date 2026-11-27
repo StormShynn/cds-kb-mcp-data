@@ -41,12 +41,12 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgType` | ✓ | | `_tfk2603t` | `inv_type` |  |  |
-| `CAInvcgProcess` | ✓ | | `_tfk2603t` | `inv_process` |  |  |
-| `CAApplicationArea` | ✓ | | `_tfk2603t` | `applk` |  |  |
-| `Language` | ✓ | | `_tfk2603t` | `langu` |  |  |
-| `CAInvcgTypeProcText` |  | |  | `cast( _tfk2603t.text as inv_type_proc_txt_gfn_kk preserving type )` |  |  |
-| `CAInvcgDocumentTitleText` |  | | `_tfk2603t` | `inv_doc_title` |  |  |
+| `CAInvcgType` | ✓ | | `_tfk2603t` | `inv_type` | `CHAR(2)` | Invoicing Type |
+| `CAInvcgProcess` | ✓ | | `_tfk2603t` | `inv_process` | `CHAR(2)` | Invoicing Process |
+| `CAApplicationArea` | ✓ | | `_tfk2603t` | `applk` | `CHAR(1)` | Application Area |
+| `Language` | ✓ | | `_tfk2603t` | `langu` | `LANG(1)` | Language Key |
+| `CAInvcgTypeProcText` |  | |  | `cast( _tfk2603t.text as inv_type_proc_txt_gfn_kk preserving type )` | `CHAR(50)` | Text for Invoicing Type |
+| `CAInvcgDocumentTitleText` |  | | `_tfk2603t` | `inv_doc_title` | `CHAR(50)` | Name of Invoicing Document (for Invoicing Printing) |
 | `_Language` | | ✓ | | | | |
 | `_CAApplicationArea` | | ✓ | | | | |
 | `_CAInvcgProcess` | | ✓ | | | | |

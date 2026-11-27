@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgProcess` | ✓ | | `_tfk2602t` | `inv_process` |  |  |
-| `CAApplicationArea` | ✓ | | `_tfk2602t` | `applk` |  |  |
-| `Language` | ✓ | | `_tfk2602t` | `langu` |  |  |
-| `CAInvcgProcessText` |  | | `_tfk2602t` | `text` |  |  |
+| `CAInvcgProcess` | ✓ | | `_tfk2602t` | `inv_process` | `CHAR(2)` | Invoicing Process |
+| `CAApplicationArea` | ✓ | | `_tfk2602t` | `applk` | `CHAR(1)` | Application Area |
+| `Language` | ✓ | | `_tfk2602t` | `langu` | `LANG(1)` | Language Key |
+| `CAInvcgProcessText` |  | | `_tfk2602t` | `text` | `CHAR(50)` | Name of Invoicing Process |
 | `_CAInvcgProcess` | | ✓ | | | | |
 | `_CAApplicationArea` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |

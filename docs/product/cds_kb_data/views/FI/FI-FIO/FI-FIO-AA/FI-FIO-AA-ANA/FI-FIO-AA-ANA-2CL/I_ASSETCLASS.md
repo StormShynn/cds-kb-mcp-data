@@ -51,24 +51,24 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AssetClass` | ✓ | |  | `asset_class` |  |  |
-| `AssetAccountDetermination` |  | |  | `gl_account_det` |  |  |
-| `BusinessArea` |  | |  | `cast('' as gsber)` |  |  |
-| `Plant` |  | |  | `cast('' as werks_d)` |  |  |
-| `CostCenter` |  | |  | `cast('' as kostl)` |  |  |
-| `FixedAssetFinDataCmpltns` |  | |  | `cast('' as aneqs)` |  |  |
-| `AssetCountryOfOrigin` |  | |  | `cast('' as am_land1)` |  |  |
-| `Supplier` |  | |  | `cast('' as am_lifnr)` |  |  |
-| `FixedAssetGroup` |  | |  | `cast('' as anlue)` |  |  |
-| `FixedAssetPropertyType` |  | |  | `cast('' as eigkz)` |  |  |
-| `PropertyClass` |  | |  | `cast('' as vmgli)` |  |  |
-| `InvestmentSupportMeasure` |  | |  | `cast('' as invsl)` |  |  |
-| `Group1AssetEvaluationKey` |  | |  | `cast('' as ord41)` |  |  |
-| `Group2AssetEvaluationKey` |  | |  | `cast('' as ord42)` |  |  |
-| `Group3AssetEvaluationKey` |  | |  | `cast('' as ord43)` |  |  |
-| `Group4AssetEvaluationKey` |  | |  | `cast('' as ord44)` |  |  |
-| `InvestmentReason` |  | |  | `cast('' as izwek)` |  |  |
-| `AssetAuthorizationContext` |  | |  | `cast('NEW' as faa_authcntxt)` |  |  |
+| `AssetClass` | ✓ | |  | `asset_class` | `CHAR(8)` | Asset Class |
+| `AssetAccountDetermination` |  | |  | `gl_account_det` | `CHAR(8)` | Account Determination |
+| `BusinessArea` |  | |  | `cast('' as gsber)` | `CHAR(4)` | Business Area |
+| `Plant` |  | |  | `cast('' as werks_d)` | `CHAR(4)` | Plant |
+| `CostCenter` |  | |  | `cast('' as kostl)` | `CHAR(10)` | Cost Center |
+| `FixedAssetFinDataCmpltns` |  | |  | `cast('' as aneqs)` | `NUMC(1)` | Completeness indicator for the asset |
+| `AssetCountryOfOrigin` |  | |  | `cast('' as am_land1)` | `CHAR(3)` | Asset's Country/Region of Origin |
+| `Supplier` |  | |  | `cast('' as am_lifnr)` | `CHAR(10)` | Account Number of Supplier (Other Key Word) |
+| `FixedAssetGroup` |  | |  | `cast('' as anlue)` | `CHAR(12)` | Asset Super Number |
+| `FixedAssetPropertyType` |  | |  | `cast('' as eigkz)` | `CHAR(1)` | Property Indicator |
+| `PropertyClass` |  | |  | `cast('' as vmgli)` | `CHAR(4)` | Property Classification Key |
+| `InvestmentSupportMeasure` |  | |  | `cast('' as invsl)` | `CHAR(2)` | Investment Support Key |
+| `Group1AssetEvaluationKey` |  | |  | `cast('' as ord41)` | `CHAR(4)` | Evaluation Group 1 |
+| `Group2AssetEvaluationKey` |  | |  | `cast('' as ord42)` | `CHAR(4)` | Evaluation Group 2 |
+| `Group3AssetEvaluationKey` |  | |  | `cast('' as ord43)` | `CHAR(4)` | Evaluation Group 3 |
+| `Group4AssetEvaluationKey` |  | |  | `cast('' as ord44)` | `CHAR(4)` | Evaluation Group 4 |
+| `InvestmentReason` |  | |  | `cast('' as izwek)` | `CHAR(2)` | Reason for Investment |
+| `AssetAuthorizationContext` |  | |  | `cast('NEW' as faa_authcntxt)` | `CHAR(10)` | Asset Authorization Context |
 | `_Text` | | ✓ | | | | |
 | `_AssetAcctDetermination` | | ✓ | | | | |
 | `_BusinessArea` | | ✓ | | | | |

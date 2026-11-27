@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAIntcoType` | ✓ | | `_tfk8250t` | `ico_type` |  |  |
-| `Language` | ✓ | | `_tfk8250t` | `langu` |  |  |
-| `CAIntcoTypeText` |  | |  | `cast ( _tfk8250t.text as ico_type_txt_gfn_kk preserving type )` |  |  |
+| `CAIntcoType` | ✓ | | `_tfk8250t` | `ico_type` | `CHAR(4)` | Intercompany Settlement Type |
+| `Language` | ✓ | | `_tfk8250t` | `langu` | `LANG(1)` | Language Key |
+| `CAIntcoTypeText` |  | |  | `cast ( _tfk8250t.text as ico_type_txt_gfn_kk preserving type )` | `CHAR(50)` | Text for Intercompany Settlement Type |
 | `_CAIntcoType` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

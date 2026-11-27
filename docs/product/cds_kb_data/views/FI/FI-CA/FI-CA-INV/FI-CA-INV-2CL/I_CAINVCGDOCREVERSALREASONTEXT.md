@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgDocumentReversalReason` | ✓ | | `_tfk2661t` | `revreason` |  |  |
-| `Language` | ✓ | | `_tfk2661t` | `langu` |  |  |
-| `CAInvcgDocReversalReasonText` |  | |  | `cast( _tfk2661t.text as revreason_txt_gfn_kk preserving type )` |  |  |
+| `CAInvcgDocumentReversalReason` | ✓ | | `_tfk2661t` | `revreason` | `CHAR(2)` | Reversal Reason of Invoicing Document |
+| `Language` | ✓ | | `_tfk2661t` | `langu` | `LANG(1)` | Language Key |
+| `CAInvcgDocReversalReasonText` |  | |  | `cast( _tfk2661t.text as revreason_txt_gfn_kk preserving type )` | `CHAR(50)` | Name of Reversal Reason for Invoicing Document |
 | `_CAInvcgDocReversalReason` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

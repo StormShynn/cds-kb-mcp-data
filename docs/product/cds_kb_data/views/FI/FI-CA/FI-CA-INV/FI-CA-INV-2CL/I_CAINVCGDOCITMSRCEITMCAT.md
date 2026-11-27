@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgDocItemSourceItmCat` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,5 ) as srcitemcat_kk preserving type )` |  |  |
+| `CAInvcgDocItemSourceItmCat` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,5 ) as srcitemcat_kk preserving type )` | `CHAR(5)` | Category of Source Document Item Invoiced |
 | `_CAInvcgDocItmSrceItmCatText` | | ✓ | | | | |
 
 ## Associations

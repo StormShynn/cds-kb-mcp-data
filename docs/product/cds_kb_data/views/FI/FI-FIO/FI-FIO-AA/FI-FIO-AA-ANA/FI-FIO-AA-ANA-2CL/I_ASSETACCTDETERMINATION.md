@@ -52,7 +52,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AssetAccountDetermination` | ✓ | |  | `gl_account_det` |  |  |
+| `AssetAccountDetermination` | ✓ | |  | `gl_account_det` | `CHAR(8)` | Account Determination |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgPlnItemStatus` | ✓ | |  | `cast( substring(dd07t.domvalue_l, 1, 1) as bipitem_status_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` |  |  |
-| `CABillgPlnItmStatusText` |  | |  | `cast( ddtext as bipitem_status_txt_gfn_kk preserving type )` |  |  |
+| `CABillgPlnItemStatus` | ✓ | |  | `cast( substring(dd07t.domvalue_l, 1, 1) as bipitem_status_kk preserving type )` | `CHAR(1)` | Status of Billing Plan Item |
+| `Language` | ✓ | |  | `cast( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CABillgPlnItmStatusText` |  | |  | `cast( ddtext as bipitem_status_txt_gfn_kk preserving type )` | `CHAR(60)` | Text for Status of Billing Plan Item |
 | `_CABillgPlnItmStatus` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

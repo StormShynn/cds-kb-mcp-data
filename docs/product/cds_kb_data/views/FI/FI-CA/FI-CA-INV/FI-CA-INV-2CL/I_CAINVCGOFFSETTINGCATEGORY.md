@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgOffsettingCategory` | ✓ | |  | `offset_cat` |  |  |
-| `CAInvcgOffsettingProcedure` |  | |  | `offset_proc` |  |  |
+| `CAInvcgOffsettingCategory` | ✓ | |  | `offset_cat` | `CHAR(3)` | Offsetting Category |
+| `CAInvcgOffsettingProcedure` |  | |  | `offset_proc` | `CHAR(2)` | Offsetting Procedure |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgDocItemCrtnMethod` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as invitem_crmet_kk preserving type )` |  |  |
+| `CAInvcgDocItemCrtnMethod` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as invitem_crmet_kk preserving type )` | `CHAR(1)` | Creation Method of Invoicing Document Item |
 | `_CAInvcgDocItmCrtnMethodText` | | ✓ | | | | |
 
 ## Associations

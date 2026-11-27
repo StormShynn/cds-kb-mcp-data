@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgDocCreationMode` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as inv_crmode_kk preserving type )` |  |  |
+| `CAInvcgDocCreationMode` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,1 ) as inv_crmode_kk preserving type )` | `CHAR(1)` | Creation Mode of Invoicing Document |
 | `_CAInvcgDocCreationModeText` | | ✓ | | | | |
 
 ## Associations

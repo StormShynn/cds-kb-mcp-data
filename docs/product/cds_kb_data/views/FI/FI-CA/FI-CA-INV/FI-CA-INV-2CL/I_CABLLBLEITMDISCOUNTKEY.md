@@ -51,8 +51,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABllbleItmDiscountKey` | ✓ | | `_tfk8117` | `disckey` |  |  |
-| `CABllbleItmDiscUtilzn` |  | | `_tfk8117` | `utilization` |  |  |
+| `CABllbleItmDiscountKey` | ✓ | | `_tfk8117` | `disckey` | `CHAR(8)` | Discount/Charge Key |
+| `CABllbleItmDiscUtilzn` |  | | `_tfk8117` | `utilization` | `CHAR(1)` | Use of Discount/Charge |
 | `_CABllbleItmDiscountKeyText` | | ✓ | | | | |
 
 ## Associations

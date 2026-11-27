@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgPreliminaryCategory` | ✓ | |  | `cast( prlinv_cat as prlinv_cat_gfn_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `CAInvcgPreliminaryCategoryTxt` |  | |  | `cast( text as prlinv_cat_txt_gfn_kk preserving type )` |  |  |
+| `CAInvcgPreliminaryCategory` | ✓ | |  | `cast( prlinv_cat as prlinv_cat_gfn_kk preserving type )` | `CHAR(4)` | Preliminary Invoice Category |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `CAInvcgPreliminaryCategoryTxt` |  | |  | `cast( text as prlinv_cat_txt_gfn_kk preserving type )` | `CHAR(50)` | Text for Category of Preliminary Invoice |
 | `_Language` | | ✓ | | | | |
 | `_CAInvcgPreliminaryCategory` | | ✓ | | | | |
 

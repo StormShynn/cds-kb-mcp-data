@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgReqReason` | ✓ | |  | `billreqrsn` |  |  |
-| `CABillgReqType` |  | |  | `billreqtype` |  |  |
+| `CABillgReqReason` | ✓ | |  | `billreqrsn` | `CHAR(4)` | Reason for Billing Request |
+| `CABillgReqType` |  | |  | `billreqtype` | `CHAR(2)` | Billing Request Type |
 | `_CABillgReqType` | | ✓ | | | | |
 | `_CABillgReqReasonText` | | ✓ | | | | |
 

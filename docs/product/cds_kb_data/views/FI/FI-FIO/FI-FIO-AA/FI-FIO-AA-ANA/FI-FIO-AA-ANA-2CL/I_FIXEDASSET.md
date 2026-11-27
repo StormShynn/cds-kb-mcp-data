@@ -39,115 +39,115 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `comp_code` |  |  |
-| `MasterFixedAsset` | ✓ | |  | `asset_no` |  |  |
-| `FixedAsset` | ✓ | |  | `asset_subno` |  |  |
-| `FixedAssetExternalID` |  | |  | `case when root.asset_subno = '0000' then cast( concat(ltrim(root.asset_no, '0'), '-0' ) as fis_fixedasset_ext_id) when root.asset_subno <> '0000' then cast( concat(concat( ltrim(root.asset_no, '0') , '-' ), ltrim(root.asset_subno, '0' )) as fis_fixedasset_ext_id) end` |  |  |
-| `AssetClass` |  | |  | `asset_class` |  |  |
-| `AssetSerialNumber` |  | |  | `serial_number` |  |  |
-| `Quantity` |  | |  | `cast( 0 as am_menge )` |  |  |
-| `BaseUnit` |  | |  | `base_unit` |  |  |
-| `Inventory` |  | |  | `inventory_number` |  |  |
-| `FixedAssetDescription` |  | |  | `description` |  |  |
-| `AssetAdditionalDescription` |  | |  | `add_description` |  |  |
-| `Currency` |  | |  | `waers` |  |  |
-| `OriglAcqnAmtInCoCodeCrcy` |  | |  | `cast( 0 as urwrt )` |  |  |
-| `PartnerCompany` |  | |  | `trade_id` |  |  |
-| `AssetManufacturerName` |  | |  | `manufacturer` |  |  |
-| `InHouseProdnPercent` |  | |  | `inhouse_prod_percent` |  |  |
-| `AssetSupplierName` |  | |  | `cast( '' as liefe )` |  |  |
-| `InventoryNote` |  | |  | `inventory_note` |  |  |
-| `Group1AssetEvaluationKey` |  | |  | `cast( '' as ord41 )` |  |  |
-| `Group2AssetEvaluationKey` |  | |  | `cast( '' as ord42 )` |  |  |
-| `Group3AssetEvaluationKey` |  | |  | `cast( '' as ord43 )` |  |  |
-| `Group4AssetEvaluationKey` |  | |  | `cast( '' as ord44 )` |  |  |
-| `Group5AssetEvaluationKey` |  | |  | `cast( '' as gdlgrp )` |  |  |
-| `AssetAccountDetermination` |  | |  | `gl_account_det` |  |  |
-| `HasHistory` |  | |  | `cast( root.is_historical_managed as aneqk )` |  |  |
-| `AssetCapitalizationDate` |  | |  | `cast( '00000000' as aktivd )` |  |  |
-| `FirstAcquisitionFiscalYear` |  | |  | `cast( '0000' as dzujahr )` |  |  |
-| `FirstAcquisitionFiscalPeriod` |  | |  | `cast( '000' as dzuper )` |  |  |
-| `AssetDeactivationDate` |  | |  | `cast( '00000000' as deakt )` |  |  |
-| `PlannedRetirementDate` |  | |  | `cast( '00000000' as gplab )` |  |  |
-| `FixedAssetOrderDate` |  | |  | `purchase_order_date` |  |  |
-| `OriginalMasterFixedAsset` |  | |  | `original_asset` |  |  |
-| `FixedAssetGroup` |  | |  | `asset_super_no` |  |  |
-| `InvestmentReason` |  | |  | `invest_reason` |  |  |
-| `AssetIsRealEstate` |  | |  | `real_estate_asset` |  |  |
-| `AreaSizeUnit` |  | |  | `surface_area_unit` |  |  |
-| `InvestmentOrder` |  | |  | `investment_io_origin` |  |  |
-| `InvestmentProjectWBSElement_2` |  | |  | `cast( main.investment_wbs_origin as faa_inv_wbs_element_int preserving type )` |  |  |
-| `InvestmentProjectWBSElement` |  | |  | `investment_wbs_origin` |  |  |
-| `InventoryIsCounted` |  | |  | `inventory_indicator` |  |  |
-| `LastInventoryDate` |  | |  | `inventory_date` |  |  |
-| `AssetSynchronizationRule` |  | |  | `cast( '' as aapm_act_change_pm )` |  |  |
-| `OriginalAcquisitionFiscalYear` |  | |  | `original_acq_year` |  |  |
-| `AssetTypeName` |  | |  | `asset_type_name` |  |  |
-| `Supplier` |  | |  | `supplier_no` |  |  |
-| `AssetCountryOfOrigin` |  | |  | `origin_country` |  |  |
-| `NoticeOfAssessmentTaxID` |  | |  | `assessment_tax_number` |  |  |
-| `LastAssessmentNoticeDate` |  | |  | `assessment_date` |  |  |
-| `EnvrnmtlInvestmentReason` |  | |  | `environmental_investment` |  |  |
-| `LastChangeDate` |  | |  | `case when main.lastchange_datetime = 0 then cast( '00000000' as fis_aedat_anla ) when main.lastchange_datetime <> 0 then cast( substring( cast( main.lastchange_datetime as char17 ), 1, 8 ) as fis_aedat_anla) end` |  |  |
-| `FixedAssetFinDataCmpltns` |  | |  | `cast(root.completeness_status as aneqs)` |  |  |
-| `AccountIsMarkedForDeletion` |  | |  | `case when root.lifecycle_status = '2' then cast( 'X' as xloev ) when root.lifecycle_status <> '2' then cast( '' as xloev ) end` |  |  |
-| `AccountIsBlockedForPosting` |  | |  | `cast( root.is_blocked as xspeb_anla )` |  |  |
-| `AcquisitionValueDate` |  | |  | `cast( '00000000' as dzugdat )` |  |  |
-| `OriginalFixedAssetValueDate` |  | |  | `original_acq_date` |  |  |
-| `AssetUnderConstIsInvmtMsr` |  | |  | `case when root.auc_status = '2' then cast( 'X' as im_xinvm ) when root.auc_status <> '2' then cast( '' as im_xinvm ) end` |  |  |
-| `LastRetirementValueDate` |  | |  | `cast( '00000000' as abgdat )` |  |  |
-| `LastChangedByUser` |  | |  | `lastchange_user` |  |  |
-| `FixedAssetPropertyType` |  | |  | `property_ind` |  |  |
-| `CreationDate` |  | |  | `cast( substring( cast( main.creation_datetime as char17 ), 1, 8 ) as erdat )` |  |  |
-| `CreatedByUser` |  | |  | `creation_user` |  |  |
-| `ManualDepreciationReason` |  | |  | `cast( '' as grund )` |  |  |
-| `LastReorganizationDate` |  | |  | `last_reorg_date` |  |  |
-| `LegacyDataTransferDate` |  | |  | `legacy_transfer_date` |  |  |
-| `IsGroupAsset` |  | |  | `cast( '' as xanlgr_1 )` |  |  |
-| `IsLineItemSettled` |  | |  | `case when root.auc_status = '1' then cast( 'X' as opvwa ) when root.auc_status <> '1' then cast( '' as opvwa ) end` |  |  |
-| `OriginalFixedAsset` |  | |  | `original_subasset` |  |  |
-| `MasterFixedAssetSearchTerm` |  | |  | `cast( main.description as mcoa1 )` |  |  |
-| `AssetStatusAtPurchase` |  | |  | `case when main.asset_acquired_used = 'X' then cast( 'X' as fis_asset_purchased_new_or_usd ) when not main.asset_acquired_used = 'X' then cast( 'N' as fis_asset_purchased_new_or_usd ) end` |  |  |
-| `AssetIsAcquiredUsed` |  | |  | `asset_acquired_used` |  |  |
-| `IsMainAsset` |  | |  | `is_main_asset` |  |  |
-| `AssetLifecycleStatus` |  | |  | `lifecycle_status` |  |  |
-| `AssetCompletenessStatus` |  | |  | `completeness_status` |  |  |
-| `AssetUnderConstructionStatus` |  | |  | `auc_status` |  |  |
-| `AssetCreationValidityDate` |  | |  | `validity_date` |  |  |
-| `CreationDateTime` |  | |  | `creation_datetime` |  |  |
-| `LastChangeDateTime` |  | |  | `lastchange_datetime` |  |  |
-| `AssetScreenLayout` |  | |  | `screen_layout` |  |  |
-| `OriginalAcquisitionAmount` |  | |  | `original_acq_value` |  |  |
-| `OriginalAcquisitionCurrency` |  | |  | `original_acq_value_curr` |  |  |
-| `PropertyClass` |  | |  | `property_key` |  |  |
-| `LocalTaxOffice` |  | |  | `land_tax_office` |  |  |
-| `Municipality` |  | |  | `land_municipality` |  |  |
-| `LandRegisterDate` |  | |  | `land_register_of` |  |  |
-| `LandRegisterEntrySequence` |  | |  | `land_register_entry_number` |  |  |
-| `LandRegisterEntryDate` |  | |  | `land_register_entry` |  |  |
-| `LandRegisterVolume` |  | |  | `land_register_volume` |  |  |
-| `LandRegisterPage` |  | |  | `land_register_page` |  |  |
-| `LandRegisterMap` |  | |  | `land_register_map_no` |  |  |
-| `LandPlot` |  | |  | `land_plot_number` |  |  |
-| `ConveyanceDate` |  | |  | `conveyance_date` |  |  |
-| `AreaSize` |  | |  | `surface_area` |  |  |
-| `LeaseSupplier` |  | |  | `lease_company` |  |  |
-| `LeaseAgreement` |  | |  | `lease_agreement_no` |  |  |
-| `LeaseAgreementDate` |  | |  | `lease_agreement_date` |  |  |
-| `LeaseTermEndDate` |  | |  | `lease_notice_date` |  |  |
-| `LeaseTermStartDate` |  | |  | `lease_start_date` |  |  |
-| `LeaseDurationInFiscalYears` |  | |  | `lease_years` |  |  |
-| `LeaseDurationInFiscalPeriods` |  | |  | `lease_periods` |  |  |
-| `LeaseType` |  | |  | `lease_type` |  |  |
-| `LeasedAssetNote` |  | |  | `lease_data_text` |  |  |
-| `LegacyAsset` |  | |  | `cast( main.legacy_asset_no as faa_legacyasset )` |  |  |
-| `LegacyFixedAssetCompanyCode` |  | |  | `legacy_comp_code` |  |  |
-| `LegacyMasterFixedAsset` |  | |  | `legacy_asset_no` |  |  |
-| `LegacyFixedAsset` |  | |  | `legacy_asset_subno` |  |  |
-| `LegacyDataTransferSequence` |  | |  | `legacy_transfer_seq_no` |  |  |
-| `AssetIsForPostCapitalization` |  | |  | `is_post_capitalization` |  |  |
-| `AssetAuthorizationContext` |  | |  | `cast( 'NEW' as faa_authcntxt )` |  |  |
-| `ObjectInternalID` |  | |  | `object_nr` |  |  |
+| `CompanyCode` | ✓ | |  | `comp_code` | `CHAR(4)` | Company Code |
+| `MasterFixedAsset` | ✓ | |  | `asset_no` | `CHAR(12)` | Main Asset Number |
+| `FixedAsset` | ✓ | |  | `asset_subno` | `CHAR(4)` | Asset Subnumber |
+| `FixedAssetExternalID` |  | |  | `case when root.asset_subno = '0000' then cast( concat(ltrim(root.asset_no, '0'), '-0' ) as fis_fixedasset_ext_id) when root.asset_subno <> '0000' then cast( concat(concat( ltrim(root.asset_no, '0') , '-' ), ltrim(root.asset_subno, '0' )) as fis_fixedasset_ext_id) end` | `CHAR(17)` | Asset Number |
+| `AssetClass` |  | |  | `asset_class` | `CHAR(8)` | Asset Class |
+| `AssetSerialNumber` |  | |  | `serial_number` | `CHAR(18)` | Serial Number |
+| `Quantity` |  | |  | `cast( 0 as am_menge )` | `QUAN(13)` | Quantity |
+| `BaseUnit` |  | |  | `base_unit` | `UNIT(3)` | Base Unit of Measure |
+| `Inventory` |  | |  | `inventory_number` | `CHAR(25)` | Inventory Number |
+| `FixedAssetDescription` |  | |  | `description` | `CHAR(50)` | Asset Description |
+| `AssetAdditionalDescription` |  | |  | `add_description` | `CHAR(50)` | Additional asset description |
+| `Currency` |  | |  | `waers` | `CUKY(5)` | Currency Key |
+| `OriglAcqnAmtInCoCodeCrcy` |  | |  | `cast( 0 as urwrt )` | `CURR(23)` | Original Acquisition Value |
+| `PartnerCompany` |  | |  | `trade_id` | `CHAR(6)` | Company ID of Trading Partner |
+| `AssetManufacturerName` |  | |  | `manufacturer` | `CHAR(30)` | Manufacturer of Asset |
+| `InHouseProdnPercent` |  | |  | `inhouse_prod_percent` | `DEC(5)` | In-House Production Percentage |
+| `AssetSupplierName` |  | |  | `cast( '' as liefe )` | `CHAR(30)` | Name of Asset Supplier |
+| `InventoryNote` |  | |  | `inventory_note` | `CHAR(15)` | Supplementary Inventory Specifications |
+| `Group1AssetEvaluationKey` |  | |  | `cast( '' as ord41 )` | `CHAR(4)` | Evaluation Group 1 |
+| `Group2AssetEvaluationKey` |  | |  | `cast( '' as ord42 )` | `CHAR(4)` | Evaluation Group 2 |
+| `Group3AssetEvaluationKey` |  | |  | `cast( '' as ord43 )` | `CHAR(4)` | Evaluation Group 3 |
+| `Group4AssetEvaluationKey` |  | |  | `cast( '' as ord44 )` | `CHAR(4)` | Evaluation Group 4 |
+| `Group5AssetEvaluationKey` |  | |  | `cast( '' as gdlgrp )` | `CHAR(8)` | Evaluation Group 5 |
+| `AssetAccountDetermination` |  | |  | `gl_account_det` | `CHAR(8)` | Account Determination |
+| `HasHistory` |  | |  | `cast( root.is_historical_managed as aneqk )` | `NUMC(1)` | Indicator: Historical Management |
+| `AssetCapitalizationDate` |  | |  | `cast( '00000000' as aktivd )` | `DATS(8)` | Asset Capitalization Date |
+| `FirstAcquisitionFiscalYear` |  | |  | `cast( '0000' as dzujahr )` | `NUMC(4)` | Fiscal Year in Which First Acquisition Was Posted |
+| `FirstAcquisitionFiscalPeriod` |  | |  | `cast( '000' as dzuper )` | `NUMC(3)` | Period in Which First Acquisition Was Posted |
+| `AssetDeactivationDate` |  | |  | `cast( '00000000' as deakt )` | `DATS(8)` | Deactivation Date |
+| `PlannedRetirementDate` |  | |  | `cast( '00000000' as gplab )` | `DATS(8)` | Planned Retirement Date |
+| `FixedAssetOrderDate` |  | |  | `purchase_order_date` | `DATS(8)` | Asset Purchase Order Date |
+| `OriginalMasterFixedAsset` |  | |  | `original_asset` | `CHAR(12)` | Original Asset That Was Transferred |
+| `FixedAssetGroup` |  | |  | `asset_super_no` | `CHAR(12)` | Asset Super Number |
+| `InvestmentReason` |  | |  | `invest_reason` | `CHAR(2)` | Reason for Investment |
+| `AssetIsRealEstate` |  | |  | `real_estate_asset` | `NUMC(1)` | Indicator: Real Estate |
+| `AreaSizeUnit` |  | |  | `surface_area_unit` | `UNIT(3)` | Area Unit |
+| `InvestmentOrder` |  | |  | `investment_io_origin` | `CHAR(12)` | Investment Order |
+| `InvestmentProjectWBSElement_2` |  | |  | `cast( main.investment_wbs_origin as faa_inv_wbs_element_int preserving type )` | `NUMC(8)` | Asset WBS Element (Internal ID) |
+| `InvestmentProjectWBSElement` |  | |  | `investment_wbs_origin` | `NUMC(8)` | WBS Element of Investment Project |
+| `InventoryIsCounted` |  | |  | `inventory_indicator` | `CHAR(1)` | Inventory Indicator |
+| `LastInventoryDate` |  | |  | `inventory_date` | `DATS(8)` | Last Inventory Date |
+| `AssetSynchronizationRule` |  | |  | `cast( '' as aapm_act_change_pm )` | `CHAR(1)` | Change Asset Master Record from Equipment Master |
+| `OriginalAcquisitionFiscalYear` |  | |  | `original_acq_year` | `NUMC(4)` | Fiscal Year of Original Acquisition |
+| `AssetTypeName` |  | |  | `asset_type_name` | `CHAR(15)` | Asset type name |
+| `Supplier` |  | |  | `supplier_no` | `CHAR(10)` | Account Number of Supplier (Other Key Word) |
+| `AssetCountryOfOrigin` |  | |  | `origin_country` | `CHAR(3)` | Asset's Country/Region of Origin |
+| `NoticeOfAssessmentTaxID` |  | |  | `assessment_tax_number` | `CHAR(16)` | Tax Number of the Notice of Assessment |
+| `LastAssessmentNoticeDate` |  | |  | `assessment_date` | `DATS(8)` | Date of Last Notice of Assessment |
+| `EnvrnmtlInvestmentReason` |  | |  | `environmental_investment` | `CHAR(5)` | Reason for Environmental Investment |
+| `LastChangeDate` |  | |  | `case when main.lastchange_datetime = 0 then cast( '00000000' as fis_aedat_anla ) when main.lastchange_datetime <> 0 then cast( substring( cast( main.lastchange_datetime as char17 ), 1, 8 ) as fis_aedat_anla) end` | `DATS(8)` | Changed On |
+| `FixedAssetFinDataCmpltns` |  | |  | `cast(root.completeness_status as aneqs)` | `NUMC(1)` | Completeness indicator for the asset |
+| `AccountIsMarkedForDeletion` |  | |  | `case when root.lifecycle_status = '2' then cast( 'X' as xloev ) when root.lifecycle_status <> '2' then cast( '' as xloev ) end` | `CHAR(1)` | Indicator: Account Marked for Deletion? |
+| `AccountIsBlockedForPosting` |  | |  | `cast( root.is_blocked as xspeb_anla )` | `CHAR(1)` | Indicator: Asset Locked to Acquisition Postings |
+| `AcquisitionValueDate` |  | |  | `cast( '00000000' as dzugdat )` | `DATS(8)` | Asset Value Date of the First Posting |
+| `OriginalFixedAssetValueDate` |  | |  | `original_acq_date` | `DATS(8)` | Original Acquisition Date of AuC/ Transferred Asset |
+| `AssetUnderConstIsInvmtMsr` |  | |  | `case when root.auc_status = '2' then cast( 'X' as im_xinvm ) when root.auc_status <> '2' then cast( '' as im_xinvm ) end` | `CHAR(1)` | Asset under Construction for Investment Measures |
+| `LastRetirementValueDate` |  | |  | `cast( '00000000' as abgdat )` | `DATS(8)` | Asset Value Date for the Last Retirement |
+| `LastChangedByUser` |  | |  | `lastchange_user` | `CHAR(12)` | Name of Person Who Changed Object |
+| `FixedAssetPropertyType` |  | |  | `property_ind` | `CHAR(1)` | Property Indicator |
+| `CreationDate` |  | |  | `cast( substring( cast( main.creation_datetime as char17 ), 1, 8 ) as erdat )` | `DATS(8)` | Record Creation Date |
+| `CreatedByUser` |  | |  | `creation_user` | `CHAR(12)` | Name of Person Responsible for Creating the Object |
+| `ManualDepreciationReason` |  | |  | `cast( '' as grund )` | `CHAR(3)` | Reason for Manual Valuation of Net Assets |
+| `LastReorganizationDate` |  | |  | `last_reorg_date` | `DATS(8)` | Date of Last Reorganization |
+| `LegacyDataTransferDate` |  | |  | `legacy_transfer_date` | `DATS(8)` | Legacy Data Transfer Date |
+| `IsGroupAsset` |  | |  | `cast( '' as xanlgr_1 )` | `CHAR(1)` | Indicator: Asset is a Group Asset |
+| `IsLineItemSettled` |  | |  | `case when root.auc_status = '1' then cast( 'X' as opvwa ) when root.auc_status <> '1' then cast( '' as opvwa ) end` | `CHAR(1)` | Asset Under Construct. with Line Item Settlement |
+| `OriginalFixedAsset` |  | |  | `original_subasset` | `CHAR(4)` | Original Asset That Was Transferred |
+| `MasterFixedAssetSearchTerm` |  | |  | `cast( main.description as mcoa1 )` | `CHAR(30)` | Search term for matchcode search |
+| `AssetStatusAtPurchase` |  | |  | `case when main.asset_acquired_used = 'X' then cast( 'X' as fis_asset_purchased_new_or_usd ) when not main.asset_acquired_used = 'X' then cast( 'N' as fis_asset_purchased_new_or_usd ) end` | `CHAR(1)` | Asset Status at Purchase: New, Used or Unknown |
+| `AssetIsAcquiredUsed` |  | |  | `asset_acquired_used` | `CHAR(1)` | Asset Acquired Used |
+| `IsMainAsset` |  | |  | `is_main_asset` | `CHAR(1)` | Indicator for Main Asset |
+| `AssetLifecycleStatus` |  | |  | `lifecycle_status` | `CHAR(1)` | Lifecycle Status |
+| `AssetCompletenessStatus` |  | |  | `completeness_status` | `CHAR(1)` | Completeness Status |
+| `AssetUnderConstructionStatus` |  | |  | `auc_status` | `CHAR(1)` | Asset Under Construction Status |
+| `AssetCreationValidityDate` |  | |  | `validity_date` | `DATS(8)` | Validity Date from Asset Class |
+| `CreationDateTime` |  | |  | `creation_datetime` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `LastChangeDateTime` |  | |  | `lastchange_datetime` | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `AssetScreenLayout` |  | |  | `screen_layout` | `CHAR(20)` | Layout for Asset Master Data |
+| `OriginalAcquisitionAmount` |  | |  | `original_acq_value` | `CURR(23)` | Original Acquisition Value |
+| `OriginalAcquisitionCurrency` |  | |  | `original_acq_value_curr` | `CUKY(5)` | Original Acquisition Value Currency |
+| `PropertyClass` |  | |  | `property_key` | `CHAR(4)` | Property Classification Key |
+| `LocalTaxOffice` |  | |  | `land_tax_office` | `CHAR(25)` | Local Tax Office |
+| `Municipality` |  | |  | `land_municipality` | `CHAR(25)` | Municipality |
+| `LandRegisterDate` |  | |  | `land_register_of` | `DATS(8)` | Land Register of |
+| `LandRegisterEntrySequence` |  | |  | `land_register_entry_number` | `CHAR(4)` | Land Register Entry: Sequence Number |
+| `LandRegisterEntryDate` |  | |  | `land_register_entry` | `DATS(8)` | Land Register Entry on |
+| `LandRegisterVolume` |  | |  | `land_register_volume` | `CHAR(5)` | Land Register Volume |
+| `LandRegisterPage` |  | |  | `land_register_page` | `CHAR(5)` | Land Register Page |
+| `LandRegisterMap` |  | |  | `land_register_map_no` | `CHAR(4)` | Land Register Map Number |
+| `LandPlot` |  | |  | `land_plot_number` | `CHAR(10)` | Plot Number |
+| `ConveyanceDate` |  | |  | `conveyance_date` | `DATS(8)` | Date of Conveyance |
+| `AreaSize` |  | |  | `surface_area` | `QUAN(13)` | Surface Area |
+| `LeaseSupplier` |  | |  | `lease_company` | `CHAR(10)` | Leasing Company |
+| `LeaseAgreement` |  | |  | `lease_agreement_no` | `CHAR(15)` | Leasing agreement number |
+| `LeaseAgreementDate` |  | |  | `lease_agreement_date` | `DATS(8)` | Leasing Agreement Date |
+| `LeaseTermEndDate` |  | |  | `lease_notice_date` | `DATS(8)` | Leasing Agreement Notice Date |
+| `LeaseTermStartDate` |  | |  | `lease_start_date` | `DATS(8)` | Lease Start Date |
+| `LeaseDurationInFiscalYears` |  | |  | `lease_years` | `NUMC(3)` | Length of Lease in Years |
+| `LeaseDurationInFiscalPeriods` |  | |  | `lease_periods` | `NUMC(3)` | Length of Lease in Periods |
+| `LeaseType` |  | |  | `lease_type` | `CHAR(2)` | Leasing type |
+| `LeasedAssetNote` |  | |  | `lease_data_text` | `CHAR(50)` | Leasing data text |
+| `LegacyAsset` |  | |  | `cast( main.legacy_asset_no as faa_legacyasset )` | `CHAR(16)` | Legacy Asset Number |
+| `LegacyFixedAssetCompanyCode` |  | |  | `legacy_comp_code` | `CHAR(80)` | Legacy Fixed Asset Company Code |
+| `LegacyMasterFixedAsset` |  | |  | `legacy_asset_no` | `CHAR(80)` | Legacy Main Asset Number |
+| `LegacyFixedAsset` |  | |  | `legacy_asset_subno` | `CHAR(5)` | Legacy Asset Subnumber |
+| `LegacyDataTransferSequence` |  | |  | `legacy_transfer_seq_no` | `NUMC(5)` | Legacy Data Transfer - sequence number |
+| `AssetIsForPostCapitalization` |  | |  | `is_post_capitalization` | `CHAR(1)` | Fixed Asset with Post-Capitalization |
+| `AssetAuthorizationContext` |  | |  | `cast( 'NEW' as faa_authcntxt )` | `CHAR(10)` | Asset Authorization Context |
+| `ObjectInternalID` |  | |  | `object_nr` | `CHAR(22)` | Object Number |
 | `_FixedAssetAssgmt` | | ✓ | | | | |
 | `_FixedAssetDeprArea` | | ✓ | | | | |
 | `_AssetValuationForLedger` | | ✓ | | | | |

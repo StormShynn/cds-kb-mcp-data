@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABllbleItmClass` | ✓ | | `_tfk8101C` | `bitcat` |  |  |
+| `CABllbleItmClass` | ✓ | | `_tfk8101C` | `bitcat` | `CHAR(4)` | Billable Item Class |
 | `_CABllbleItmClassText` | | ✓ | | | | |
 
 ## Associations

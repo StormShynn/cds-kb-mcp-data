@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgCategory` | ✓ | | `_tfk2604` | `inv_category` |  |  |
+| `CAInvcgCategory` | ✓ | | `_tfk2604` | `inv_category` | `CHAR(4)` | Invoicing Category |
 | `_CAInvcgCategoryText` | | ✓ | | | | |
 
 ## Associations

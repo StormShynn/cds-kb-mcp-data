@@ -40,7 +40,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CATaxDateType` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,2 ) as tax_date_type_kk preserving type )` |  |  |
+| `CATaxDateType` | ✓ | |  | `cast ( substring( dd07l.domvalue_l,1,2 ) as tax_date_type_kk preserving type )` | `CHAR(2)` | Type of Tax Date |
 | `_CATaxDateTypeText` | | ✓ | | | | |
 
 ## Associations

@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgRefPostingDocType` | ✓ | | `_tfk2605` | `cadoctype` |  |  |
+| `CAInvcgRefPostingDocType` | ✓ | | `_tfk2605` | `cadoctype` | `CHAR(4)` | Reference Document Type of Posting Document for Invoicing |
 | `_CAInvcgRefPostgDocTypTxt` | | ✓ | | | | |
 
 ## Associations

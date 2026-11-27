@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgDocumentItemType` | ✓ | | `_CAInvcgDocItemType0Text` | `CAInvcgDocumentItemType` |  |  |
-| `Language` | ✓ | | `_CAInvcgDocItemType0Text` | `Language` |  |  |
-| `CAInvcgDocItemTypeText` |  | | `_CAInvcgDocItemType0Text` | `CAInvcgDocItemTypeText` |  |  |
+| `CAInvcgDocumentItemType` | ✓ | | `_CAInvcgDocItemType0Text` | `CAInvcgDocumentItemType` | `CHAR(8)` | Type of Invoicing Item |
+| `Language` | ✓ | | `_CAInvcgDocItemType0Text` | `Language` | `LANG(1)` | Language Key |
+| `CAInvcgDocItemTypeText` |  | | `_CAInvcgDocItemType0Text` | `CAInvcgDocItemTypeText` | `CHAR(50)` | Name of Invoicing Item Type |
 | `_CAInvcgDocItemType` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

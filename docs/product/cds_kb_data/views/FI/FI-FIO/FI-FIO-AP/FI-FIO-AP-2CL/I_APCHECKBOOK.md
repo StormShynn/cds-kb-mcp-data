@@ -52,26 +52,26 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PaymentCompanyCode` | ✓ | |  |  |  |  |
-| `HouseBank` | ✓ | |  |  |  |  |
-| `HouseBankAccount` | ✓ | |  |  |  |  |
-| `Chequebook` | ✓ | |  |  |  |  |
-| `ChequebookFirstCheque` |  | |  |  |  |  |
-| `ChequebookLastCheque` |  | |  |  |  |  |
-| `NextChequebook` |  | |  |  |  |  |
-| `LastAssignedCheque` |  | |  |  |  |  |
-| `ChequebookName` |  | |  |  |  |  |
-| `ChequebookIsNonSequential` |  | |  |  |  |  |
-| `ChequebookPurchaseDate` |  | |  | `case cb.ChequebookPurchaseDate when '' then cast ( ' ' as abap.dats ) else cast ( cb.ChequebookPurchaseDate as abap.dats ) end` |  |  |
-| `ChequebookPaymentMethodList` |  | |  |  |  |  |
-| `ChequebookMinimalChequeCount` |  | |  |  |  |  |
-| `ChequebookPurchaser` |  | |  |  |  |  |
-| `ChequebookCreatedByUser` |  | |  |  |  |  |
-| `ChequebookCreationDate` |  | |  |  |  |  |
-| `ChequebookCreationTime` |  | |  |  |  |  |
-| `ChequeType` |  | |  |  |  |  |
-| `ChequebookStatus` |  | |  | `cast( ' ' as abap.char(10))` |  |  |
-| `BankAccountName` |  | | `_HouseBankAccount` | `HouseBankAccountDescription` |  |  |
+| `PaymentCompanyCode` | ✓ | |  |  | `CHAR(4)` | Paying Company Code |
+| `HouseBank` | ✓ | |  |  | `CHAR(5)` | Short Key for a House Bank |
+| `HouseBankAccount` | ✓ | |  |  | `CHAR(5)` | ID for Account Details |
+| `Chequebook` | ✓ | |  |  | `NUMC(4)` | Lot Number |
+| `ChequebookFirstCheque` |  | |  |  | `CHAR(13)` | Check Number From |
+| `ChequebookLastCheque` |  | |  |  | `CHAR(13)` | Check number |
+| `NextChequebook` |  | |  |  | `NUMC(4)` | Next Lot |
+| `LastAssignedCheque` |  | |  |  | `CHAR(13)` | Last Check Number Assigned |
+| `ChequebookName` |  | |  |  | `CHAR(30)` | Short Information on the Lot |
+| `ChequebookIsNonSequential` |  | |  |  | `CHAR(1)` | Indicator: Non-Sequential Check Number Management |
+| `ChequebookPurchaseDate` |  | |  | `case cb.ChequebookPurchaseDate when '' then cast ( ' ' as abap.dats ) else cast ( cb.ChequebookPurchaseDate as abap.dats ) end` | `DATS(8)` |  |
+| `ChequebookPaymentMethodList` |  | |  |  | `CHAR(10)` | List of Pmnt Methods Permitted for This Check Lot |
+| `ChequebookMinimalChequeCount` |  | |  |  | `NUMC(13)` | Minimal Alert Number |
+| `ChequebookPurchaser` |  | |  |  | `CHAR(12)` | Purchase By |
+| `ChequebookCreatedByUser` |  | |  |  | `CHAR(12)` | Created By |
+| `ChequebookCreationDate` |  | |  |  | `DATS(8)` | Date |
+| `ChequebookCreationTime` |  | |  |  | `TIMS(6)` | Time |
+| `ChequeType` |  | |  |  | `CHAR(2)` | Type of Check for China Specific |
+| `ChequebookStatus` |  | |  | `cast( ' ' as abap.char(10))` | `CHAR(10)` |  |
+| `BankAccountName` |  | | `_HouseBankAccount` | `HouseBankAccountDescription` | `CHAR(60)` | Account Description |
 
 ## Associations
 

@@ -51,11 +51,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AssetClass` | ✓ | |  | `asset_class` |  |  |
-| `Language` | ✓ | |  | `language` |  |  |
-| `AssetClassName` |  | |  | `cast(description_short as faa_asset_class_name )` |  |  |
-| `AssetClassDescription` |  | |  | `description_long` |  |  |
-| `AssetAuthorizationContext` |  | |  | `cast('NEW' as faa_authcntxt)` |  |  |
+| `AssetClass` | ✓ | |  | `asset_class` | `CHAR(8)` | Asset Class |
+| `Language` | ✓ | |  | `language` | `LANG(1)` | Language Key |
+| `AssetClassName` |  | |  | `cast(description_short as faa_asset_class_name )` | `CHAR(20)` | Asset Class, Name |
+| `AssetClassDescription` |  | |  | `description_long` | `CHAR(50)` | Asset class description |
+| `AssetAuthorizationContext` |  | |  | `cast('NEW' as faa_authcntxt)` | `CHAR(10)` | Asset Authorization Context |
 | `_Language` | | ✓ | | | | |
 
 ## Associations

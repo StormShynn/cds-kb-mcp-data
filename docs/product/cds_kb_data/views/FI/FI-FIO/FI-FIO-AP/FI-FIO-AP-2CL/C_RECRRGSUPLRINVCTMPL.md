@@ -51,86 +51,86 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `RecrrgSuplrInvcTmplUUID` | ✓ | | `_Tmpl` | `RecrrgSuplrInvcTmplUUID` |  |  |
-| `RecrrgSupplierInvoiceTemplate` |  | | `_Tmpl` | `RecrrgSupplierInvoiceTemplate` |  |  |
-| `AccountingDocumentType` |  | | `_Tmpl` | `AccountingDocumentType` |  |  |
-| `CompanyCode` |  | | `_Tmpl` | `CompanyCode` |  |  |
-| `DocumentReferenceID` |  | | `_Tmpl` | `DocumentReferenceID` |  |  |
-| `AccountingDocumentHeaderText` |  | | `_Tmpl` | `AccountingDocumentHeaderText` |  |  |
-| `TotalAmountInTransactionCrcy` |  | | `_Tmpl` | `TotalAmountInTransactionCrcy` |  |  |
-| `InvoicingParty` |  | | `_Tmpl` | `InvoicingParty` |  |  |
-| `ExchangeRate` |  | | `_Tmpl` | `ExchangeRate` |  |  |
-| `TotalAmountInLocalCurrency` |  | | `_Tmpl` | `TotalAmountInLocalCurrency` |  |  |
-| `TransactionCurrency` |  | | `_Tmpl` | `TransactionCurrency` |  |  |
-| `LocalCurrency` |  | | `_Tmpl` | `LocalCurrency` |  |  |
-| `AssignmentReference` |  | | `_Tmpl` | `AssignmentReference` |  |  |
-| `SupplierBankType` |  | | `_Tmpl` | `SupplierBankType` |  |  |
-| `IBAN` |  | | `_Tmpl` | `IBAN` |  |  |
-| `SWIFTCode` |  | | `_Tmpl` | `SWIFTCode` |  |  |
-| `PaymentSystem` |  | |  | `case when _Tmpl.SupplierBankType is initial then '' else _BPBankAlias._BusinessPartnerBankAlias.PaymentSystem end` |  |  |
-| `AliasType` |  | |  | `case when _Tmpl.SupplierBankType is initial then '' else _BPBankAlias._BusinessPartnerBankAlias.AliasType end` |  |  |
-| `BPBankAccountAliasName` |  | |  | `case when _Tmpl.SupplierBankType is initial then '' else _BPBankAlias._BusinessPartnerBankAlias.BPBankAccountAliasName end` |  |  |
-| `ReportingCountry` |  | | `_Tmpl` | `ReportingCountry` |  |  |
-| `CompanyCodeCountry` |  | | `_Tmpl` | `CompanyCodeCountry` |  |  |
-| `SupplierVATRegistration` |  | | `_Tmpl` | `SupplierVATRegistration` |  |  |
-| `IsEUTriangularDeal` |  | | `_Tmpl` | `IsEUTriangularDeal` |  |  |
-| `DocumentItemText` |  | | `_Tmpl` | `DocumentItemText` |  |  |
-| `CreatedByUser` |  | | `_Tmpl` | `CreatedByUser` |  |  |
-| `CreatedByUserName` |  | | `_Tmpl` | `CreatedByUserName` |  |  |
-| `CreationDate` |  | | `_Tmpl` | `CreationDate` |  |  |
-| `StateCentralBankPaymentReason` |  | | `_Tmpl` | `StateCentralBankPaymentReason` |  |  |
-| `SupplyingCountry` |  | | `_Tmpl` | `SupplyingCountry` |  |  |
-| `PaymentTerms` |  | | `_Tmpl` | `PaymentTerms` |  |  |
-| `PaymentMethod` |  | | `_Tmpl` | `PaymentMethod` |  |  |
-| `PaymentReference` |  | | `_Tmpl` | `PaymentReference` |  |  |
-| `CashDiscount1Days` |  | | `_Tmpl` | `CashDiscount1Days` |  |  |
-| `CashDiscount1Percent` |  | | `_Tmpl` | `CashDiscount1Percent` |  |  |
-| `CashDiscount2Days` |  | | `_Tmpl` | `CashDiscount2Days` |  |  |
-| `CashDiscount2Percent` |  | | `_Tmpl` | `CashDiscount2Percent` |  |  |
-| `NetPaymentDays` |  | | `_Tmpl` | `NetPaymentDays` |  |  |
-| `HouseBank` |  | | `_Tmpl` | `HouseBank` |  |  |
-| `HouseBankAccount` |  | | `_Tmpl` | `HouseBankAccount` |  |  |
-| `ManualCashDiscountAmount` |  | | `_Tmpl` | `ManualCashDiscountAmount` |  |  |
-| `PaymentMethodSupplement` |  | | `_Tmpl` | `PaymentMethodSupplement` |  |  |
-| `SuplrInvcPaymentBlockingReason` |  | | `_Tmpl` | `SuplrInvcPaymentBlockingReason` |  |  |
-| `PaytSlipWthRefCheckDigit` |  | | `_Tmpl` | `PaytSlipWthRefCheckDigit` |  |  |
-| `PaytSlipWthRefReference` |  | | `_Tmpl` | `PaytSlipWthRefReference` |  |  |
-| `PaytSlipWthRefSubscriber` |  | | `_Tmpl` | `PaytSlipWthRefSubscriber` |  |  |
-| `TaxCode` |  | | `_Tmpl` | `TaxCode` |  |  |
-| `FixedCashDiscount` |  | | `_Tmpl` | `FixedCashDiscount` |  |  |
-| `TaxBaseAmountInTransCrcy` |  | | `_Tmpl` | `TaxBaseAmountInTransCrcy` |  |  |
-| `TaxDeterminationDate` |  | | `_Tmpl` | `TaxDeterminationDate` |  |  |
-| `TaxJurisdiction` |  | | `_Tmpl` | `TaxJurisdiction` |  |  |
-| `TaxCountry` |  | | `_Tmpl` | `TaxCountry` |  |  |
-| `WithholdingTaxIsEnabled` |  | | `_Tmpl` | `WithholdingTaxIsEnabled` |  |  |
-| `GLAccount` |  | | `_Tmpl` | `GLAccount` |  |  |
-| `SettlmtCoCodeTaxCountry` |  | | `_Tmpl` | `SettlmtCoCodeTaxCountry` |  |  |
-| `RecurrenceStartDate` |  | | `_Tmpl` | `RecurrenceStartDate` |  |  |
-| `FirstOccurrenceDate` |  | | `_Tmpl` | `FirstOccurrenceDate` |  |  |
-| `NextOccurrenceDate` |  | | `_Tmpl` | `NextOccurrenceDate` |  |  |
-| `NextOccurrenceAmountInTC` |  | | `_Tmpl` | `NextOccurrenceAmountInTC` |  |  |
-| `RecurrencePattern` |  | | `_Tmpl` | `RecurrencePattern` |  |  |
-| `RecurrencePatternName` |  | |  | `cast( _RecurrencePatternText._Text[ Language = $session.system_language ].RecurrenceTypeName as fap_rsiv_recurr_pattern preserving type )` |  |  |
-| `RecurrenceIntervalInDays` |  | | `_Tmpl` | `RecurrenceIntervalInDays` |  |  |
-| `RecurrenceIntervalInWeeks` |  | | `_Tmpl` | `RecurrenceIntervalInWeeks` |  |  |
-| `RecurrenceIntervalInMonths` |  | | `_Tmpl` | `RecurrenceIntervalInMonths` |  |  |
-| `RecurrenceDayOfMonth` |  | | `_Tmpl` | `RecurrenceDayOfMonth` |  |  |
-| `RecurrenceDayOfWeek` |  | | `_Tmpl` | `RecurrenceDayOfWeek` |  |  |
-| `RecurrenceEndType` |  | | `_Tmpl` | `RecurrenceEndType` |  |  |
-| `RecurrenceEndTypeName` |  | |  | `cast( _RecurrenceEndTypeText._Text[ Language = $session.system_language ].RecurrenceEndTypeName as fap_rsiv_recurr_end_type preserving type )` |  |  |
-| `NumberOfOccurrences` |  | | `_Tmpl` | `NumberOfOccurrences` |  |  |
-| `NumberOfPostedInvoices` |  | | `_Tmpl` | `NumberOfPostedInvoices` |  |  |
-| `NumberOfNotPostedInvoices` |  | | `_Tmpl` | `NumberOfNotPostedInvoices` |  |  |
-| `LastOccurrenceDate` |  | | `_Tmpl` | `LastOccurrenceDate` |  |  |
-| `ForeignCrcyAmtCnvrsnRule` |  | | `_Tmpl` | `ForeignCrcyAmtCnvrsnRule` |  |  |
-| `BusinessPlace` |  | | `_Tmpl` | `BusinessPlace` |  |  |
-| `BusinessSectionCode` |  | | `_Tmpl` | `BusinessSectionCode` |  |  |
-| `IN_GSTPartner` |  | | `_Tmpl` | `IN_GSTPartner` |  |  |
-| `IN_GSTPlaceOfSupply` |  | | `_Tmpl` | `IN_GSTPlaceOfSupply` |  |  |
-| `IN_InvoiceReferenceNumber` |  | | `_Tmpl` | `IN_InvoiceReferenceNumber` |  |  |
-| `QuickResponseIBAN` |  | | `_Tmpl` | `QuickResponseIBAN` |  |  |
-| `OneTimeAcctCntrySpecificRef1` |  | | `_Tmpl` | `OneTimeAcctCntrySpecificRef1` |  |  |
-| `ReferenceAccountForIBAN` |  | | `_Tmpl` | `ReferenceAccountForIBAN` |  |  |
+| `RecrrgSuplrInvcTmplUUID` | ✓ | | `_Tmpl` | `RecrrgSuplrInvcTmplUUID` | `RAW(16)` | GUID of Recurring Supplier Invoice Template |
+| `RecrrgSupplierInvoiceTemplate` |  | | `_Tmpl` | `RecrrgSupplierInvoiceTemplate` | `CHAR(10)` | Document Number of a Recurring Supplier Invoice Template |
+| `AccountingDocumentType` |  | | `_Tmpl` | `AccountingDocumentType` | `CHAR(2)` | Document Type |
+| `CompanyCode` |  | | `_Tmpl` | `CompanyCode` | `CHAR(4)` | Company Code |
+| `DocumentReferenceID` |  | | `_Tmpl` | `DocumentReferenceID` | `CHAR(16)` | Reference Document Number |
+| `AccountingDocumentHeaderText` |  | | `_Tmpl` | `AccountingDocumentHeaderText` | `CHAR(25)` | Document Header Text |
+| `TotalAmountInTransactionCrcy` |  | | `_Tmpl` | `TotalAmountInTransactionCrcy` | `CURR(23)` | Gross Invoice Amount in Document Currency |
+| `InvoicingParty` |  | | `_Tmpl` | `InvoicingParty` | `CHAR(10)` | Different Invoicing Party |
+| `ExchangeRate` |  | | `_Tmpl` | `ExchangeRate` | `DEC(9)` | Exchange Rate |
+| `TotalAmountInLocalCurrency` |  | | `_Tmpl` | `TotalAmountInLocalCurrency` | `CURR(23)` | Signed Amount in Local Currency (Long) |
+| `TransactionCurrency` |  | | `_Tmpl` | `TransactionCurrency` | `CUKY(5)` | Transaction Currency |
+| `LocalCurrency` |  | | `_Tmpl` | `LocalCurrency` | `CUKY(5)` | Local Currency |
+| `AssignmentReference` |  | | `_Tmpl` | `AssignmentReference` | `CHAR(18)` | Assignment Reference |
+| `SupplierBankType` |  | | `_Tmpl` | `SupplierBankType` | `CHAR(4)` | Partner bank type |
+| `IBAN` |  | | `_Tmpl` | `IBAN` | `CHAR(34)` | IBAN (International Bank Account Number) |
+| `SWIFTCode` |  | | `_Tmpl` | `SWIFTCode` | `CHAR(11)` | SWIFT/BIC for International Payments |
+| `PaymentSystem` |  | |  | `case when _Tmpl.SupplierBankType is initial then '' else _BPBankAlias._BusinessPartnerBankAlias.PaymentSystem end` | `CHAR(15)` | Payment System ID |
+| `AliasType` |  | |  | `case when _Tmpl.SupplierBankType is initial then '' else _BPBankAlias._BusinessPartnerBankAlias.AliasType end` | `CHAR(15)` | Bank Account Alias Type ID |
+| `BPBankAccountAliasName` |  | |  | `case when _Tmpl.SupplierBankType is initial then '' else _BPBankAlias._BusinessPartnerBankAlias.BPBankAccountAliasName end` | `CHAR(255)` | BP: Bank Account Alias |
+| `ReportingCountry` |  | | `_Tmpl` | `ReportingCountry` | `CHAR(3)` | Reporting Country/Region |
+| `CompanyCodeCountry` |  | | `_Tmpl` | `CompanyCodeCountry` | `CHAR(3)` | Company Code Country/Region |
+| `SupplierVATRegistration` |  | | `_Tmpl` | `SupplierVATRegistration` | `CHAR(20)` | VAT Registration Number |
+| `IsEUTriangularDeal` |  | | `_Tmpl` | `IsEUTriangularDeal` | `CHAR(1)` | Indicator: Triangular Deal Within the EU |
+| `DocumentItemText` |  | | `_Tmpl` | `DocumentItemText` | `CHAR(50)` | Item Text |
+| `CreatedByUser` |  | | `_Tmpl` | `CreatedByUser` | `CHAR(12)` | Name of the Processor Who Entered the Object |
+| `CreatedByUserName` |  | | `_Tmpl` | `CreatedByUserName` | `CHAR(80)` | Full Name of Person |
+| `CreationDate` |  | | `_Tmpl` | `CreationDate` | `DATS(8)` | Creation Date |
+| `StateCentralBankPaymentReason` |  | | `_Tmpl` | `StateCentralBankPaymentReason` | `CHAR(3)` | State Central Bank Indicator |
+| `SupplyingCountry` |  | | `_Tmpl` | `SupplyingCountry` | `CHAR(3)` | Supplying Country/Region |
+| `PaymentTerms` |  | | `_Tmpl` | `PaymentTerms` | `CHAR(4)` | Key for Terms of Payment |
+| `PaymentMethod` |  | | `_Tmpl` | `PaymentMethod` | `CHAR(1)` | Payment Method |
+| `PaymentReference` |  | | `_Tmpl` | `PaymentReference` | `CHAR(30)` | Payment Reference |
+| `CashDiscount1Days` |  | | `_Tmpl` | `CashDiscount1Days` | `DEC(3)` | Cash Discount Days 1 |
+| `CashDiscount1Percent` |  | | `_Tmpl` | `CashDiscount1Percent` | `DEC(5)` | Cash Discount Percentage 1 |
+| `CashDiscount2Days` |  | | `_Tmpl` | `CashDiscount2Days` | `DEC(3)` | Cash Discount Days 2 |
+| `CashDiscount2Percent` |  | | `_Tmpl` | `CashDiscount2Percent` | `DEC(5)` | Cash Discount Percentage 2 |
+| `NetPaymentDays` |  | | `_Tmpl` | `NetPaymentDays` | `DEC(3)` | Net Payment Terms Period |
+| `HouseBank` |  | | `_Tmpl` | `HouseBank` | `CHAR(5)` | Short Key for a House Bank |
+| `HouseBankAccount` |  | | `_Tmpl` | `HouseBankAccount` | `CHAR(5)` | ID for Account Details |
+| `ManualCashDiscountAmount` |  | | `_Tmpl` | `ManualCashDiscountAmount` | `CURR(23)` | Cash Discount Amount |
+| `PaymentMethodSupplement` |  | | `_Tmpl` | `PaymentMethodSupplement` | `CHAR(2)` | Payment method supplement |
+| `SuplrInvcPaymentBlockingReason` |  | | `_Tmpl` | `SuplrInvcPaymentBlockingReason` | `CHAR(1)` | Payment Block Key |
+| `PaytSlipWthRefCheckDigit` |  | | `_Tmpl` | `PaytSlipWthRefCheckDigit` | `CHAR(2)` | POR Check Digit |
+| `PaytSlipWthRefReference` |  | | `_Tmpl` | `PaytSlipWthRefReference` | `CHAR(27)` | POR Reference Number |
+| `PaytSlipWthRefSubscriber` |  | | `_Tmpl` | `PaytSlipWthRefSubscriber` | `CHAR(11)` | POR Subscriber Number |
+| `TaxCode` |  | | `_Tmpl` | `TaxCode` | `CHAR(2)` | Tax code |
+| `FixedCashDiscount` |  | | `_Tmpl` | `FixedCashDiscount` | `CHAR(1)` | Fixed Payment Terms |
+| `TaxBaseAmountInTransCrcy` |  | | `_Tmpl` | `TaxBaseAmountInTransCrcy` | `CURR(13)` | Tax Amount in Document Currency with +/- Sign |
+| `TaxDeterminationDate` |  | | `_Tmpl` | `TaxDeterminationDate` | `DATS(8)` | Date for Determining Tax Rates |
+| `TaxJurisdiction` |  | | `_Tmpl` | `TaxJurisdiction` | `CHAR(15)` | Tax Jurisdiction |
+| `TaxCountry` |  | | `_Tmpl` | `TaxCountry` | `CHAR(3)` | Tax Reporting Country/Region |
+| `WithholdingTaxIsEnabled` |  | | `_Tmpl` | `WithholdingTaxIsEnabled` | `CHAR(1)` | recurring supplier invoice withholding tax enable indicator |
+| `GLAccount` |  | | `_Tmpl` | `GLAccount` | `CHAR(10)` | General Ledger Account |
+| `SettlmtCoCodeTaxCountry` |  | | `_Tmpl` | `SettlmtCoCodeTaxCountry` | `CHAR(3)` | Tax Country/Region Company Code |
+| `RecurrenceStartDate` |  | | `_Tmpl` | `RecurrenceStartDate` | `DATS(8)` | Recurrence Start Date |
+| `FirstOccurrenceDate` |  | | `_Tmpl` | `FirstOccurrenceDate` | `DATS(8)` | First Occurrence Date |
+| `NextOccurrenceDate` |  | | `_Tmpl` | `NextOccurrenceDate` | `DATS(8)` | Next Calculation Date of the Recurring Entry |
+| `NextOccurrenceAmountInTC` |  | | `_Tmpl` | `NextOccurrenceAmountInTC` | `CURR(23)` | Next Posting Amount |
+| `RecurrencePattern` |  | | `_Tmpl` | `RecurrencePattern` | `CHAR(1)` | Recurrence Type |
+| `RecurrencePatternName` |  | |  | `cast( _RecurrencePatternText._Text[ Language = $session.system_language ].RecurrenceTypeName as fap_rsiv_recurr_pattern preserving type )` | `CHAR(60)` | Recurrence Pattern Name |
+| `RecurrenceIntervalInDays` |  | | `_Tmpl` | `RecurrenceIntervalInDays` | `INT2(5)` | Interval In Days |
+| `RecurrenceIntervalInWeeks` |  | | `_Tmpl` | `RecurrenceIntervalInWeeks` | `INT2(5)` | Interval In Weeks |
+| `RecurrenceIntervalInMonths` |  | | `_Tmpl` | `RecurrenceIntervalInMonths` | `INT2(5)` | Interval In Months |
+| `RecurrenceDayOfMonth` |  | | `_Tmpl` | `RecurrenceDayOfMonth` | `NUMC(2)` | Occurrence Day in a Month |
+| `RecurrenceDayOfWeek` |  | | `_Tmpl` | `RecurrenceDayOfWeek` | `NUMC(1)` | Occurrence Day in a Week |
+| `RecurrenceEndType` |  | | `_Tmpl` | `RecurrenceEndType` | `CHAR(1)` | End Recurrence By |
+| `RecurrenceEndTypeName` |  | |  | `cast( _RecurrenceEndTypeText._Text[ Language = $session.system_language ].RecurrenceEndTypeName as fap_rsiv_recurr_end_type preserving type )` | `CHAR(60)` | Recurrence End Type Name |
+| `NumberOfOccurrences` |  | | `_Tmpl` | `NumberOfOccurrences` | `INT2(5)` | Number of Occurrences |
+| `NumberOfPostedInvoices` |  | | `_Tmpl` | `NumberOfPostedInvoices` | `INT2(5)` | Number of Posted Occurrences |
+| `NumberOfNotPostedInvoices` |  | | `_Tmpl` | `NumberOfNotPostedInvoices` | `INT2(5)` | Number of Unposted Occurrences |
+| `LastOccurrenceDate` |  | | `_Tmpl` | `LastOccurrenceDate` | `DATS(8)` | Recurrence End Date |
+| `ForeignCrcyAmtCnvrsnRule` |  | | `_Tmpl` | `ForeignCrcyAmtCnvrsnRule` | `CHAR(1)` | Conversion Rule for Foreign Currency Amounts |
+| `BusinessPlace` |  | | `_Tmpl` | `BusinessPlace` | `CHAR(4)` | Business Place |
+| `BusinessSectionCode` |  | | `_Tmpl` | `BusinessSectionCode` | `CHAR(4)` | Section Code |
+| `IN_GSTPartner` |  | | `_Tmpl` | `IN_GSTPartner` | `CHAR(10)` | GST Partner |
+| `IN_GSTPlaceOfSupply` |  | | `_Tmpl` | `IN_GSTPlaceOfSupply` | `CHAR(3)` | Place of Supply |
+| `IN_InvoiceReferenceNumber` |  | | `_Tmpl` | `IN_InvoiceReferenceNumber` | `CHAR(64)` | Invoice Reference Number |
+| `QuickResponseIBAN` |  | | `_Tmpl` | `QuickResponseIBAN` | `CHAR(34)` | QR-IBAN International Bank Account Number |
+| `OneTimeAcctCntrySpecificRef1` |  | | `_Tmpl` | `OneTimeAcctCntrySpecificRef1` | `CHAR(140)` | Ctry/Reg. Specific Reference in the One Time Account Data |
+| `ReferenceAccountForIBAN` |  | | `_Tmpl` | `ReferenceAccountForIBAN` | `CHAR(10)` | Reference Account for IBAN |
 | `_RecrrgSuplrInvcTmplItem` | | ✓ | | | | |
 | `_RecrrgSuplrInvcTmplInstce` | | ✓ | | | | |
 | `_RecrrgSuplrInvcTmplWhgdTax` | | ✓ | | | | |

@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgPlnItmType` | ✓ | | `_tfk8213` | `bipitemtype` |  |  |
-| `CABillgPlnItmCat` |  | | `_tfk8213` | `bipitemcat` |  |  |
+| `CABillgPlnItmType` | ✓ | | `_tfk8213` | `bipitemtype` | `CHAR(5)` | Billing Plan Item Type |
+| `CABillgPlnItmCat` |  | | `_tfk8213` | `bipitemcat` | `CHAR(5)` | Billing Plan Item Category |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

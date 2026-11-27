@@ -40,7 +40,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgDocumentItemType` | ✓ | | `_CAInvcgDocItemType0` | `CAInvcgDocumentItemType` |  |  |
+| `CAInvcgDocumentItemType` | ✓ | | `_CAInvcgDocItemType0` | `CAInvcgDocumentItemType` | `CHAR(8)` | Type of Invoicing Item |
 | `_CAInvcgDocItemTypeText` | | ✓ | | | | |
 
 ## Associations

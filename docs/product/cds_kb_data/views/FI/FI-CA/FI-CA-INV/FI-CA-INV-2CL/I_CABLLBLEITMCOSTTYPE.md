@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABllbleItmCostType` | ✓ | |  | `cast(co_type as co_type_gfn_kk preserving type)` |  |  |
+| `CABllbleItmCostType` | ✓ | |  | `cast(co_type as co_type_gfn_kk preserving type)` | `CHAR(8)` | Billable Item Cost Type |
 | `_CABllbleItmCostTypeText` | | ✓ | | | | |
 
 ## Associations

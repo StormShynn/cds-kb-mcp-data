@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgPlnType` | ✓ | | `_tfk8211t` | `biptype` |  |  |
-| `Language` | ✓ | | `_tfk8211t` | `langu` |  |  |
-| `CABillgPlnTypeText` |  | |  | `cast( _tfk8211t.text as biptype_txt_gfn_kk preserving type )` |  |  |
+| `CABillgPlnType` | ✓ | | `_tfk8211t` | `biptype` | `CHAR(5)` | Billing Plan Type |
+| `Language` | ✓ | | `_tfk8211t` | `langu` | `LANG(1)` | Language Key |
+| `CABillgPlnTypeText` |  | |  | `cast( _tfk8211t.text as biptype_txt_gfn_kk preserving type )` | `CHAR(50)` | Text for Billing Plan Type |
 | `_CABillgPlnType` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

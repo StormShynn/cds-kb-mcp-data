@@ -50,50 +50,50 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `RecrrgSuplrInvcTmplItemUUID` | ✓ | | `_GlLine` | `RecrrgSuplrInvcTmplItemUUID` |  |  |
-| `RecrrgSuplrInvcTmplUUID` |  | | `_GlLine` | `RecrrgSuplrInvcTmplUUID` |  |  |
-| `RecrrgSuplrInvoiceTemplateItem` |  | | `_GlLine` | `RecrrgSuplrInvoiceTemplateItem` |  |  |
-| `GLAccount` |  | | `_GlLine` | `GLAccount` |  |  |
-| `AmountInTransactionCurrency` |  | | `_GlLine` | `AmountInTransactionCurrency` |  |  |
-| `DebitCreditCode` |  | | `_GlLine` | `DebitCreditCode` |  |  |
-| `DebitCreditCodeName` |  | |  | `_DebitCreditCodeText._Text[ Language = $session.system_language ].DebitCreditCodeName` |  |  |
-| `IsNegativePosting` |  | | `_GlLine` | `IsNegativePosting` |  |  |
-| `CompanyCode` |  | | `_GlLine` | `CompanyCode` |  |  |
-| `TaxCode` |  | | `_GlLine` | `TaxCode` |  |  |
-| `TaxCountry` |  | | `_GlLine` | `TaxCountry` |  |  |
-| `TaxJurisdiction` |  | | `_GlLine` | `TaxJurisdiction` |  |  |
-| `DocumentItemText` |  | | `_GlLine` | `DocumentItemText` |  |  |
-| `CostCenter` |  | | `_GlLine` | `CostCenter` |  |  |
-| `SalesDocument` |  | | `_GlLine` | `SalesDocument` |  |  |
-| `SalesDocumentItem` |  | | `_GlLine` | `SalesDocumentItem` |  |  |
-| `InternalOrder` |  | | `_GlLine` | `InternalOrder` |  |  |
-| `SettlementReferenceDate` |  | | `_GlLine` | `SettlementReferenceDate` |  |  |
-| `FundsCenter` |  | | `_GlLine` | `FundsCenter` |  |  |
-| `FunctionalArea` |  | | `_GlLine` | `FunctionalArea` |  |  |
-| `ProfitCenter` |  | | `_GlLine` | `ProfitCenter` |  |  |
-| `Fund` |  | | `_GlLine` | `Fund` |  |  |
-| `CostObject` |  | | `_GlLine` | `CostObject` |  |  |
-| `ProjectNetwork` |  | | `_GlLine` | `ProjectNetwork` |  |  |
-| `NetworkActivity` |  | | `_GlLine` | `NetworkActivity` |  |  |
-| `WBSElementExternalID` |  | | `_GlLine` | `WBSElementExternalID` |  |  |
-| `CostCtrActivityType` |  | | `_GlLine` | `CostCtrActivityType` |  |  |
-| `PersonnelNumber` |  | | `_GlLine` | `PersonnelNumber` |  |  |
-| `REInternalFinNumber` |  | | `_GlLine` | `REInternalFinNumber` |  |  |
-| `BusinessProcess` |  | | `_GlLine` | `BusinessProcess` |  |  |
-| `GrantID` |  | | `_GlLine` | `GrantID` |  |  |
-| `CommitmentItem` |  | | `_GlLine` | `CommitmentItem` |  |  |
-| `Quantity` |  | | `_GlLine` | `Quantity` |  |  |
-| `BaseUnit` |  | | `_GlLine` | `BaseUnit` |  |  |
-| `AssignmentReference` |  | | `_GlLine` | `AssignmentReference` |  |  |
-| `IsNotCashDiscountLiable` |  | | `_GlLine` | `IsNotCashDiscountLiable` |  |  |
-| `TaxBaseAmountInTransCrcy` |  | | `_GlLine` | `TaxBaseAmountInTransCrcy` |  |  |
-| `ProfitabilitySegment` |  | | `_GlLine` | `ProfitabilitySegment` |  |  |
-| `Plant` |  | | `_GlLine` | `Plant` |  |  |
-| `BudgetPeriod` |  | | `_GlLine` | `BudgetPeriod` |  |  |
-| `ControllingArea` |  | | `_GlLine` | `ControllingArea` |  |  |
-| `JointVentureCostRecoveryCode` |  | | `_GlLine` | `JointVentureCostRecoveryCode` |  |  |
-| `WorkItem` |  | | `_GlLine` | `WorkItem` |  |  |
-| `TransactionCurrency` |  | | `_Tmpl` | `TransactionCurrency` |  |  |
+| `RecrrgSuplrInvcTmplItemUUID` | ✓ | | `_GlLine` | `RecrrgSuplrInvcTmplItemUUID` | `RAW(16)` | GUID of G/L Item in Recurring Supplier Invoice Template |
+| `RecrrgSuplrInvcTmplUUID` |  | | `_GlLine` | `RecrrgSuplrInvcTmplUUID` | `RAW(16)` | GUID in recurring supplier invoice template |
+| `RecrrgSuplrInvoiceTemplateItem` |  | | `_GlLine` | `RecrrgSuplrInvoiceTemplateItem` | `NUMC(3)` | recurring supplier invoice g/l item number |
+| `GLAccount` |  | | `_GlLine` | `GLAccount` | `CHAR(10)` | General Ledger Account |
+| `AmountInTransactionCurrency` |  | | `_GlLine` | `AmountInTransactionCurrency` | `DEC(25)` | Amount in Document Currency |
+| `DebitCreditCode` |  | | `_GlLine` | `DebitCreditCode` | `CHAR(1)` | Debit/Credit Indicator |
+| `DebitCreditCodeName` |  | |  | `_DebitCreditCodeText._Text[ Language = $session.system_language ].DebitCreditCodeName` | `CHAR(60)` | Debit/Credit Code Name |
+| `IsNegativePosting` |  | | `_GlLine` | `IsNegativePosting` | `CHAR(1)` | Indicator: Negative Posting |
+| `CompanyCode` |  | | `_GlLine` | `CompanyCode` | `CHAR(4)` | Company Code |
+| `TaxCode` |  | | `_GlLine` | `TaxCode` | `CHAR(2)` | Tax on Sales/Purchases Code |
+| `TaxCountry` |  | | `_GlLine` | `TaxCountry` | `CHAR(3)` | Tax Reporting Country/Region |
+| `TaxJurisdiction` |  | | `_GlLine` | `TaxJurisdiction` | `CHAR(15)` | Tax Jurisdiction |
+| `DocumentItemText` |  | | `_GlLine` | `DocumentItemText` | `CHAR(50)` | Item Text |
+| `CostCenter` |  | | `_GlLine` | `CostCenter` | `CHAR(10)` | Cost Center |
+| `SalesDocument` |  | | `_GlLine` | `SalesDocument` | `CHAR(10)` | Sales and Distribution Document Number |
+| `SalesDocumentItem` |  | | `_GlLine` | `SalesDocumentItem` | `NUMC(6)` | Sales document item |
+| `InternalOrder` |  | | `_GlLine` | `InternalOrder` | `CHAR(12)` | Internal Order |
+| `SettlementReferenceDate` |  | | `_GlLine` | `SettlementReferenceDate` | `DATS(8)` | Reference Date for Settlement |
+| `FundsCenter` |  | | `_GlLine` | `FundsCenter` | `CHAR(16)` | Funds Center |
+| `FunctionalArea` |  | | `_GlLine` | `FunctionalArea` | `CHAR(16)` | Functional Area |
+| `ProfitCenter` |  | | `_GlLine` | `ProfitCenter` | `CHAR(10)` | Profit Center |
+| `Fund` |  | | `_GlLine` | `Fund` | `CHAR(10)` | Fund |
+| `CostObject` |  | | `_GlLine` | `CostObject` | `CHAR(12)` | Cost Object |
+| `ProjectNetwork` |  | | `_GlLine` | `ProjectNetwork` | `CHAR(12)` | Network Number for Account Assignment |
+| `NetworkActivity` |  | | `_GlLine` | `NetworkActivity` | `CHAR(4)` | Operation/Activity Number |
+| `WBSElementExternalID` |  | | `_GlLine` | `WBSElementExternalID` | `CHAR(24)` | Work Breakdown Structure Element (WBS Element) Edited |
+| `CostCtrActivityType` |  | | `_GlLine` | `CostCtrActivityType` | `CHAR(6)` | Activity Type |
+| `PersonnelNumber` |  | | `_GlLine` | `PersonnelNumber` | `NUMC(8)` | Personnel Number |
+| `REInternalFinNumber` |  | | `_GlLine` | `REInternalFinNumber` | `CHAR(8)` | Internal Key of Real Estate Object (FI) |
+| `BusinessProcess` |  | | `_GlLine` | `BusinessProcess` | `CHAR(12)` | Business Process |
+| `GrantID` |  | | `_GlLine` | `GrantID` | `CHAR(20)` | Grant |
+| `CommitmentItem` |  | | `_GlLine` | `CommitmentItem` | `CHAR(24)` | Commitment Item |
+| `Quantity` |  | | `_GlLine` | `Quantity` | `QUAN(13)` | Quantity |
+| `BaseUnit` |  | | `_GlLine` | `BaseUnit` | `UNIT(3)` | Base Unit of Measure |
+| `AssignmentReference` |  | | `_GlLine` | `AssignmentReference` | `CHAR(18)` | Assignment Number |
+| `IsNotCashDiscountLiable` |  | | `_GlLine` | `IsNotCashDiscountLiable` | `CHAR(1)` | Indicator: Line Item Not Liable to Cash Discount? |
+| `TaxBaseAmountInTransCrcy` |  | | `_GlLine` | `TaxBaseAmountInTransCrcy` | `DEC(25)` | Tax Base Amount in Document Currency |
+| `ProfitabilitySegment` |  | | `_GlLine` | `ProfitabilitySegment` | `CHAR(10)` | Profitability Segment Number (CO-PA) |
+| `Plant` |  | | `_GlLine` | `Plant` | `CHAR(4)` | Plant |
+| `BudgetPeriod` |  | | `_GlLine` | `BudgetPeriod` | `CHAR(10)` | Budget Period |
+| `ControllingArea` |  | | `_GlLine` | `ControllingArea` | `CHAR(4)` | Controlling Area |
+| `JointVentureCostRecoveryCode` |  | | `_GlLine` | `JointVentureCostRecoveryCode` | `CHAR(2)` | Joint Venture Cost Recovery Code |
+| `WorkItem` |  | | `_GlLine` | `WorkItem` | `CHAR(10)` | Work Item ID |
+| `TransactionCurrency` |  | | `_Tmpl` | `TransactionCurrency` | `CUKY(5)` | Transaction Currency |
 | `_Tmpl` | | ✓ | | | | |
 
 ## Associations

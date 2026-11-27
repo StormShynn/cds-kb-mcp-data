@@ -49,7 +49,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgSubprocess` | ✓ | | `_TFK8104` | `subprocess` |  |  |
+| `CABillgSubprocess` | ✓ | | `_TFK8104` | `subprocess` | `CHAR(4)` | Subprocess of Billing |
 | `_CABillgSubprocessText` | | ✓ | | | | |
 
 ## Associations

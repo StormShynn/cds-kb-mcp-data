@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CATaxDateType` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 2 ) as tax_date_type_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
-| `CATaxDateTypeText` |  | |  | `cast ( ddtext as tax_date_type_txt_gfn_kk preserving type )` |  |  |
+| `CATaxDateType` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 2 ) as tax_date_type_kk preserving type )` | `CHAR(2)` | Type of Tax Date |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CATaxDateTypeText` |  | |  | `cast ( ddtext as tax_date_type_txt_gfn_kk preserving type )` | `CHAR(60)` | Text for Tax Date Type |
 | `_CATaxDateType` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

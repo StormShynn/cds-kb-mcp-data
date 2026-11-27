@@ -39,16 +39,16 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CompanyCode` | ✓ | |  | `comp_code` |  |  |
-| `MasterFixedAsset` | ✓ | |  | `asset_no` |  |  |
-| `FixedAsset` | ✓ | |  | `asset_subno` |  |  |
-| `Ledger` | ✓ | |  | `ledger` |  |  |
-| `AssetCapitalizationDate` |  | |  | `capitalization_date` |  |  |
-| `AssetDeactivationDate` |  | |  | `deactivation_date` |  |  |
-| `AcquisitionValueDate` |  | |  | `acquisition_date` |  |  |
-| `FirstAcquisitionFiscalYear` |  | |  | `acquisition_year` |  |  |
-| `FirstAcquisitionFiscalPeriod` |  | |  | `acquisition_period` |  |  |
-| `LastRevaluationDate` |  | |  | `last_reval_date` |  |  |
+| `CompanyCode` | ✓ | |  | `comp_code` | `CHAR(4)` | Company Code |
+| `MasterFixedAsset` | ✓ | |  | `asset_no` | `CHAR(12)` | Main Asset Number |
+| `FixedAsset` | ✓ | |  | `asset_subno` | `CHAR(4)` | Asset Subnumber |
+| `Ledger` | ✓ | |  | `ledger` | `CHAR(2)` | Ledger in General Ledger Accounting |
+| `AssetCapitalizationDate` |  | |  | `capitalization_date` | `DATS(8)` | Asset Capitalization Date |
+| `AssetDeactivationDate` |  | |  | `deactivation_date` | `DATS(8)` | Deactivation Date |
+| `AcquisitionValueDate` |  | |  | `acquisition_date` | `DATS(8)` | Asset Value Date of the First Posting |
+| `FirstAcquisitionFiscalYear` |  | |  | `acquisition_year` | `NUMC(4)` | Fiscal Year in Which First Acquisition Was Posted |
+| `FirstAcquisitionFiscalPeriod` |  | |  | `acquisition_period` | `NUMC(3)` | Period in Which First Acquisition Was Posted |
+| `LastRevaluationDate` |  | |  | `last_reval_date` | `DATS(8)` | Date of Last Revaluation |
 | `_CompanyCode` | | ✓ | | | | |
 | `_MasterFixedAsset` | | ✓ | | | | |
 | `_FixedAsset` | | ✓ | | | | |

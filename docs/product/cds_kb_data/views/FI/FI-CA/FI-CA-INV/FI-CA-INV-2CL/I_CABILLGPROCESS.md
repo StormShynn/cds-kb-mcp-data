@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgProcess` | ✓ | | `_tfk8110` | `bill_process` |  |  |
+| `CABillgProcess` | ✓ | | `_tfk8110` | `bill_process` | `CHAR(4)` | Billing Process |
 | `_CABillgProcessText` | | ✓ | | | | |
 
 ## Associations

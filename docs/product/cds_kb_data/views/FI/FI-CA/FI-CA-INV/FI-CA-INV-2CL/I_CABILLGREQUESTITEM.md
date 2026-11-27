@@ -40,19 +40,19 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgReqDocument` | ✓ | |  | `billreqno` |  |  |
-| `CABillgReqItem` | ✓ | |  | `billreqitem` |  |  |
-| `CABllbleItmListId` |  | |  | `bitlist_id` |  |  |
-| `CABillgReqItmAmount` |  | |  | `bixreq_amount` |  |  |
-| `CABillgReqItmAmountCurrency` |  | |  | `bixreq_curr` |  |  |
-| `CABillgFirstDate` |  | |  | `bill_first` |  |  |
-| `CATaxIsIncluded` |  | |  | `tax_included` |  |  |
-| `CABllbleItmClass` |  | |  | `bitcat` |  |  |
-| `CABllbleItmSourceTransType` |  | |  | `cast( srctatype as srctatype_gfn_kk preserving type )` |  |  |
-| `CABllbleItmSourceTransId` |  | |  | `cast( srctaid as srctaid_gfn_kk preserving type )` |  |  |
-| `CABllbleItmPackageUUID` |  | |  | `bitpackuuid` |  |  |
-| `CABllbleItmPackNo` |  | |  | `bitpackcno` |  |  |
-| `CABllbleItmCreationDate` |  | |  | `bitcrdate` |  |  |
+| `CABillgReqDocument` | ✓ | |  | `billreqno` | `NUMC(12)` | Billing Request Number |
+| `CABillgReqItem` | ✓ | |  | `billreqitem` | `NUMC(8)` | Current Billing Request Item Number |
+| `CABllbleItmListId` |  | |  | `bitlist_id` | `NUMC(12)` | List ID |
+| `CABillgReqItmAmount` |  | |  | `bixreq_amount` | `CURR(13)` | Billing Request Item Amount |
+| `CABillgReqItmAmountCurrency` |  | |  | `bixreq_curr` | `CUKY(5)` | Currency of Billing Request Item |
+| `CABillgFirstDate` |  | |  | `bill_first` | `DATS(8)` | Target Date for Billing |
+| `CATaxIsIncluded` |  | |  | `tax_included` | `CHAR(1)` | Tax Included in Amount |
+| `CABllbleItmClass` |  | |  | `bitcat` | `CHAR(4)` | Billable Item Class |
+| `CABllbleItmSourceTransType` |  | |  | `cast( srctatype as srctatype_gfn_kk preserving type )` | `CHAR(5)` | Source Transaction Type |
+| `CABllbleItmSourceTransId` |  | |  | `cast( srctaid as srctaid_gfn_kk preserving type )` | `CHAR(22)` | Source Transaction ID |
+| `CABllbleItmPackageUUID` |  | |  | `bitpackuuid` | `RAW(16)` | GUID of Package of Billable Items |
+| `CABllbleItmPackNo` |  | |  | `bitpackcno` | `NUMC(8)` | Sequence Number of Billable Item in Package |
+| `CABllbleItmCreationDate` |  | |  | `bitcrdate` | `DATS(8)` | Created On |
 | `_CABillgRequest` | | ✓ | | | | |
 | `_CABllbleItmClass` | | ✓ | | | | |
 | `_CABllbleItmSrceTransType` | | ✓ | | | | |

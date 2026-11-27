@@ -42,9 +42,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CATaxDetnType` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 2 ) as tax_det_type_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
-| `CATaxDetnTypeText` |  | |  | `cast ( ddtext as tax_det_type_txt_gfn_kk preserving type )` |  |  |
+| `CATaxDetnType` | ✓ | |  | `cast ( substring( dd07t.domvalue_l, 1, 2 ) as tax_det_type_kk preserving type )` | `CHAR(2)` | Type of Tax Calculation |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CATaxDetnTypeText` |  | |  | `cast ( ddtext as tax_det_type_txt_gfn_kk preserving type )` | `CHAR(60)` | Text for Type of Tax Calculation |
 | `_CATaxDetnType` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

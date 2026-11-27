@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgFunction` | ✓ | | `_tfk2601` | `inv_function` |  |  |
+| `CAInvcgFunction` | ✓ | | `_tfk2601` | `inv_function` | `CHAR(12)` | Invoicing Function |
 | `_CAInvcgFunctionText` | | ✓ | | | | |
 
 ## Associations

@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgReqType` | ✓ | |  | `billreqtype` |  |  |
+| `CABillgReqType` | ✓ | |  | `billreqtype` | `CHAR(2)` | Billing Request Type |
 | `_CABillgReqTypeText` | | ✓ | | | | |
 
 ## Associations

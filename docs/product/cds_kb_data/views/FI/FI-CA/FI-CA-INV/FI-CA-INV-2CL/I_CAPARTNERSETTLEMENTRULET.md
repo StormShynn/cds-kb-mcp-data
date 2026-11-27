@@ -40,9 +40,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `Language` | ✓ | |  | `cast( langu as spras preserving type )` |  |  |
-| `CAPartnerSettlementRule` | ✓ | |  | `ptsrl` |  |  |
-| `CAPartnerSettlementRuleText` |  | |  | `text` |  |  |
+| `Language` | ✓ | |  | `cast( langu as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAPartnerSettlementRule` | ✓ | |  | `ptsrl` | `CHAR(4)` | Partner Settlement Rule |
+| `CAPartnerSettlementRuleText` |  | |  | `text` | `CHAR(50)` | Text Field |
 | `_CAPartnerSettlementRule` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

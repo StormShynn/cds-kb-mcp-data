@@ -39,13 +39,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvoicingDocument` | ✓ | |  | `invdocno` |  |  |
-| `CASequenceNumber` | ✓ | |  | `consno` |  |  |
-| `CAInvcgRefPostingDocType` |  | |  | `cast(cadoctype as cadoctype_gfn_kk preserving type )` |  |  |
-| `CADocumentNumber` |  | |  | `cast(opbel as opbel_gfn_kk preserving type)` |  |  |
-| `CARepetitionItemNumber` |  | |  | `opupw` |  |  |
-| `CABPItemNumber` |  | |  | `opupk` |  |  |
-| `CAInvcgIsPostedInCurrentInvcg` |  | |  | `xnewdoc` |  |  |
+| `CAInvoicingDocument` | ✓ | |  | `invdocno` | `CHAR(12)` | Number of Invoicing Document |
+| `CASequenceNumber` | ✓ | |  | `consno` | `NUMC(6)` | Sequence Number |
+| `CAInvcgRefPostingDocType` |  | |  | `cast(cadoctype as cadoctype_gfn_kk preserving type )` | `CHAR(4)` | Reference Document Type of Posting Document for Invoicing |
+| `CADocumentNumber` |  | |  | `cast(opbel as opbel_gfn_kk preserving type)` | `CHAR(12)` | Document |
+| `CARepetitionItemNumber` |  | |  | `opupw` | `NUMC(3)` | Repetition Item in FI-CA Document |
+| `CABPItemNumber` |  | |  | `opupk` | `NUMC(4)` | Item Number in FI-CA Document |
+| `CAInvcgIsPostedInCurrentInvcg` |  | |  | `xnewdoc` | `CHAR(1)` | Document Posted in Current Invoicing |
 | `_CAInvcgDocHeader` | | ✓ | | | | |
 | `_CAInvcgRefPostgDocTyp` | | ✓ | | | | |
 | `_CADocument` | | ✓ | | | | |

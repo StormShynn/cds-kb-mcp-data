@@ -8928,5 +8928,4235 @@
     "attemptedAt": "2026-11-08T14:48:45.576Z",
     "found": true,
     "matched": 11
+  },
+  "I_CMPLOBLASGTTSKBYDUEDATEC": {
+    "attemptedAt": "2026-11-10T16:08:49.172Z",
+    "found": true,
+    "matched": 18
+  },
+  "I_CMPLOBLRQMTASGTTASKCUBE": {
+    "attemptedAt": "2026-11-10T16:08:49.640Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_CURRENTEHSPARENTLOCATIONID": {
+    "attemptedAt": "2026-11-10T16:08:50.096Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_EHSAMOUNTSOURCETYPE": {
+    "attemptedAt": "2026-11-10T16:08:50.556Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_EHSAMOUNTSOURCETYPENAME": {
+    "attemptedAt": "2026-11-10T16:08:51.182Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_EHSAMOUNTSUBJECTTYPE": {
+    "attemptedAt": "2026-11-10T16:08:51.665Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_EHSAMOUNTSUBJECTTYPETEXT": {
+    "attemptedAt": "2026-11-10T16:08:52.150Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_EHSLOCATION": {
+    "attemptedAt": "2026-11-10T16:08:52.635Z",
+    "found": true,
+    "matched": 29
+  },
+  "I_EHSLOCATIONBYIDENTIFIER": {
+    "attemptedAt": "2026-11-10T16:08:53.108Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_EHSLOCATIONFORLOCIDC": {
+    "attemptedAt": "2026-11-10T16:08:53.533Z",
+    "found": true,
+    "matched": 16
+  },
+  "I_EHSLOCATIONGEOPOINT": {
+    "attemptedAt": "2026-11-10T16:08:54.013Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_EHSLOCATIONHIERARCHY": {
+    "attemptedAt": "2026-11-10T16:08:54.459Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_EHSLOCATIONHIERARCHYREVISION": {
+    "attemptedAt": "2026-11-10T16:08:54.913Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_EHSLOCATIONNAME": {
+    "attemptedAt": "2026-11-10T16:08:55.372Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_EHSLOCATIONREVISION": {
+    "attemptedAt": "2026-11-10T16:08:55.844Z",
+    "found": true,
+    "matched": 28
+  },
+  "I_EHSLOCATIONREVISIONBASIC": {
+    "attemptedAt": "2026-11-10T16:08:56.294Z",
+    "found": true,
+    "matched": 31
+  },
+  "I_EHSLOCATIONREVISIONNAMET": {
+    "attemptedAt": "2026-11-10T16:08:56.722Z",
+    "found": true,
+    "matched": 12
+  },
+  "I_EHSLOCATIONROOT": {
+    "attemptedAt": "2026-11-10T16:08:57.185Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_EHSLOCATIONSTATUS": {
+    "attemptedAt": "2026-11-10T16:08:57.693Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_EHSLOCATIONSTATUSTEXT": {
+    "attemptedAt": "2026-11-10T16:08:58.158Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_EHSLOCATIONTYPE": {
+    "attemptedAt": "2026-11-10T16:08:58.624Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_EHSLOCATIONTYPETEXT": {
+    "attemptedAt": "2026-11-10T16:08:59.129Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_EHSLOCATIONWITHFILTER": {
+    "attemptedAt": "2026-11-10T16:08:59.563Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_EHSLOCATIONWITHUUIDFILTER": {
+    "attemptedAt": "2026-11-10T16:09:00.039Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_EHSLOCCLASSIFIERNAME": {
+    "attemptedAt": "2026-11-10T16:09:00.510Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_EHSLOCNAMEBYIDENTIFIERTEXT": {
+    "attemptedAt": "2026-11-10T16:09:01.067Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_EHSLTSTLOCHIERARCHYREVISION": {
+    "attemptedAt": "2026-11-10T16:09:01.544Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_EHSOVRDTSKTRNDCUBE": {
+    "attemptedAt": "2026-11-10T16:09:02.043Z",
+    "found": true,
+    "matched": 16
+  },
+  "I_EHSTASKINSTANCECUBE": {
+    "attemptedAt": "2026-11-10T16:09:02.508Z",
+    "found": true,
+    "matched": 44
+  },
+  "I_PERMITUPCOMINGRENEWALCUBE": {
+    "attemptedAt": "2026-11-10T16:09:03.007Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_USERWITHMYEHSLOCATION": {
+    "attemptedAt": "2026-11-10T16:09:03.488Z",
+    "found": true,
+    "matched": 4
+  },
+  "C_CHMLCMPLNCINFODEX": {
+    "attemptedAt": "2026-11-10T16:09:03.957Z",
+    "found": true,
+    "matched": 15
+  },
+  "C_CHMLCMPLNCMATLASSGMTDEX": {
+    "attemptedAt": "2026-11-10T16:09:04.419Z",
+    "found": true,
+    "matched": 4
+  },
+  "C_CHMLCMPLNCPRIMMATLDEX": {
+    "attemptedAt": "2026-11-10T16:09:04.862Z",
+    "found": true,
+    "matched": 17
+  },
+  "D_PCLGSDCGETDAGDSDOCINFOGROUPR": {
+    "attemptedAt": "2026-11-10T16:09:05.025Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETDAGDSDOCINFOGROUPR\" (404)"
+  },
+  "D_PCLGSDCGETDAGDSDOCINFOITEMP": {
+    "attemptedAt": "2026-11-10T16:09:05.462Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETDAGDSDOCINFOITEMP\" (404)"
+  },
+  "D_PCLGSDCGETDAGDSDOCINFOITEMR": {
+    "attemptedAt": "2026-11-10T16:09:05.899Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETDAGDSDOCINFOITEMR\" (404)"
+  },
+  "D_PCLGSDCGETDAGDSDOCINFOPOINTR": {
+    "attemptedAt": "2026-11-10T16:09:06.312Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETDAGDSDOCINFOPOINTR\" (404)"
+  },
+  "D_PCLGSDCGETDAGDSEDIINFOITEMP": {
+    "attemptedAt": "2026-11-10T16:09:06.757Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETDAGDSEDIINFOITEMP\" (404)"
+  },
+  "D_PCLGSDCGETDAGDSEDIINFOITEMR": {
+    "attemptedAt": "2026-11-10T16:09:07.192Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETDAGDSEDIINFOITEMR\" (404)"
+  },
+  "D_PCLGSDCGETDNGRSGDSDOCINFOP": {
+    "attemptedAt": "2026-11-10T16:09:07.612Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETDNGRSGDSDOCINFOP\" (404)"
+  },
+  "D_PCLGSDCGETDNGRSGDSDOCINFOR": {
+    "attemptedAt": "2026-11-10T16:09:08.035Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETDNGRSGDSDOCINFOR\" (404)"
+  },
+  "D_PCLGSDCGETDNGRSGOODSEDIINFOP": {
+    "attemptedAt": "2026-11-10T16:09:08.434Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETDNGRSGOODSEDIINFOP\" (404)"
+  },
+  "D_PCLGSDCGETDNGRSGOODSEDIINFOR": {
+    "attemptedAt": "2026-11-10T16:09:08.858Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETDNGRSGOODSEDIINFOR\" (404)"
+  },
+  "D_PCLGSDCGETMXDLDGICMTSCNTRYP": {
+    "attemptedAt": "2026-11-10T16:09:09.304Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETMXDLDGICMTSCNTRYP\" (404)"
+  },
+  "D_PCLGSDCGETMXDLDGICMTSP": {
+    "attemptedAt": "2026-11-10T16:09:09.719Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETMXDLDGICMTSP\" (404)"
+  },
+  "D_PCLGSDCGETMXDLDGICMTSPRODP": {
+    "attemptedAt": "2026-11-10T16:09:10.157Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETMXDLDGICMTSPRODP\" (404)"
+  },
+  "D_PCLGSDCGETMXDLDGICMTSR": {
+    "attemptedAt": "2026-11-11T15:53:54.545Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCGETMXDLDGICMTSR\" (404)"
+  },
+  "D_PCLGSDCITEMUPDTMKTBLTYSTSP": {
+    "attemptedAt": "2026-11-11T15:53:54.940Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCITEMUPDTMKTBLTYSTSP\" (404)"
+  },
+  "D_PCLGSDCITMGETDNGRSGDSDESCSP": {
+    "attemptedAt": "2026-11-11T15:53:55.344Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLGSDCITMGETDNGRSGDSDESCSP\" (404)"
+  },
+  "I_CHMLCMPLNCIDFR": {
+    "attemptedAt": "2026-11-11T15:53:56.067Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_PCLGSDCITMPACKGINSTRUCTIONTP": {
+    "attemptedAt": "2026-11-11T15:53:56.224Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PCLGSDCITMPACKGINSTRUCTIONTP\" (404)"
+  },
+  "I_PCLGSDCMNLLYOVRWRTNADDRTP": {
+    "attemptedAt": "2026-11-11T15:53:56.617Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PCLGSDCMNLLYOVRWRTNADDRTP\" (404)"
+  },
+  "I_PRODCMPLNCLOGSDOCSTAGEITEMTP": {
+    "attemptedAt": "2026-11-11T15:53:57.014Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLOGSDOCSTAGEITEMTP\" (404)"
+  },
+  "I_PRODCMPLNCLOGSDOCSTAGETP": {
+    "attemptedAt": "2026-11-11T15:53:57.411Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLOGSDOCSTAGETP\" (404)"
+  },
+  "I_PRODCMPLNCLOGSDOCSTATUSMSGTP": {
+    "attemptedAt": "2026-11-11T15:53:57.832Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLOGSDOCSTATUSMSGTP\" (404)"
+  },
+  "I_PRODCMPLNCLOGSDOCTRNSTCTRYTP": {
+    "attemptedAt": "2026-11-11T15:53:58.245Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLOGSDOCTRNSTCTRYTP\" (404)"
+  },
+  "I_PRODCMPLNCLOGSDOCUMENTITEMTP": {
+    "attemptedAt": "2026-11-11T15:53:58.674Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLOGSDOCUMENTITEMTP\" (404)"
+  },
+  "I_PRODCMPLNCLOGSDOCUMENTTP": {
+    "attemptedAt": "2026-11-11T15:53:59.077Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLOGSDOCUMENTTP\" (404)"
+  },
+  "I_PRODCMPLNCRECMDDUSETP": {
+    "attemptedAt": "2026-11-11T15:53:59.472Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCRECMDDUSETP\" (404)"
+  },
+  "I_PRODCMPLNCRSTRCDUSETP": {
+    "attemptedAt": "2026-11-11T15:53:59.861Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCRSTRCDUSETP\" (404)"
+  },
+  "I_PRODCMPLNCUSETP": {
+    "attemptedAt": "2026-11-11T15:54:00.274Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCUSETP\" (404)"
+  },
+  "I_PRODCMPLNCWAYOFAPPLTP": {
+    "attemptedAt": "2026-11-11T15:54:00.684Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCWAYOFAPPLTP\" (404)"
+  },
+  "I_EHSINDICATOR": {
+    "attemptedAt": "2026-11-11T15:54:01.436Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_EHSINDICATORTEXT": {
+    "attemptedAt": "2026-11-11T15:54:01.867Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_EHSORGUNIT": {
+    "attemptedAt": "2026-11-11T15:54:02.296Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_EHSORGUNITTEXT": {
+    "attemptedAt": "2026-11-11T15:54:02.750Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_TERNARYLOGICALSTATE": {
+    "attemptedAt": "2026-11-11T15:54:03.232Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_TERNARYLOGICALSTATETEXT": {
+    "attemptedAt": "2026-11-11T15:54:03.681Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_EHSCTRLIMPLMTNAUTHZNFIELDS": {
+    "attemptedAt": "2026-11-11T15:54:04.117Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_EHSRSKASSESSMENTAUTHZNFIELDS": {
+    "attemptedAt": "2026-11-11T15:54:04.594Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_EHSRSKASSMT2RSKCTRLAUTHZNFLD": {
+    "attemptedAt": "2026-11-11T15:54:05.064Z",
+    "found": true,
+    "matched": 8
+  },
+  "C_INCDNTALLGRPSWITHFILTERQ": {
+    "attemptedAt": "2026-11-11T15:54:05.543Z",
+    "found": true,
+    "matched": 25
+  },
+  "C_INCDNTNTCVIOLTNWTHFLTRQ": {
+    "attemptedAt": "2026-11-11T15:54:05.995Z",
+    "found": true,
+    "matched": 25
+  },
+  "C_INCDNTRATESWITHFLTRQRY": {
+    "attemptedAt": "2026-11-11T15:54:06.459Z",
+    "found": true,
+    "matched": 32
+  },
+  "C_INCDNTRELWTHFILTERQRY": {
+    "attemptedAt": "2026-11-11T15:54:06.894Z",
+    "found": true,
+    "matched": 21
+  },
+  "I_EHSESUBMSNSTATUS": {
+    "attemptedAt": "2026-11-11T15:54:07.355Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_EHSESUBMSNSTATUSTEXT": {
+    "attemptedAt": "2026-11-11T15:54:07.784Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_EHSINVESTIGATIONSTATUS": {
+    "attemptedAt": "2026-11-11T15:54:08.250Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_EHSINVESTIGATIONSTATUSTEXT": {
+    "attemptedAt": "2026-11-11T15:54:08.712Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_EHSINVSTGNACTIVITYSTATUS": {
+    "attemptedAt": "2026-11-11T15:54:09.176Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_EHSINVSTGNACTIVITYSTATUSTEXT": {
+    "attemptedAt": "2026-11-11T15:54:09.603Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_INCIDENT": {
+    "attemptedAt": "2026-11-11T15:54:10.048Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_INCIDENTBASICINFO": {
+    "attemptedAt": "2026-11-11T15:54:10.507Z",
+    "found": true,
+    "matched": 33
+  },
+  "I_INCIDENTCATEGORY": {
+    "attemptedAt": "2026-11-11T15:54:10.973Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_INCIDENTCATEGORYTEXT": {
+    "attemptedAt": "2026-11-11T15:54:11.457Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_INCIDENTCOMBAUTHFIELDS": {
+    "attemptedAt": "2026-11-11T15:54:11.911Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_INCIDENTGROUP": {
+    "attemptedAt": "2026-11-11T15:54:12.339Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_INCIDENTGROUPCODE": {
+    "attemptedAt": "2026-11-11T15:54:12.793Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_INCIDENTGROUPCODETEXT": {
+    "attemptedAt": "2026-11-11T15:54:13.294Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_INCIDENTGROUPCUBE": {
+    "attemptedAt": "2026-11-11T15:54:13.764Z",
+    "found": true,
+    "matched": 32
+  },
+  "I_INCIDENTGROUPSEVERITYTEXT": {
+    "attemptedAt": "2026-11-11T15:54:14.232Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_INCIDENTHOUR": {
+    "attemptedAt": "2026-11-11T15:54:14.699Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_INCIDENTHOURTEXT": {
+    "attemptedAt": "2026-11-11T15:54:15.156Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_INCIDENTINJRYILLNLOGTYPE": {
+    "attemptedAt": "2026-11-12T16:37:23.728Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_INCIDENTINJRYILLNLOGTYPETEXT": {
+    "attemptedAt": "2026-11-12T16:37:24.220Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_INCIDENTINJUREDPERSONINFO": {
+    "attemptedAt": "2026-11-12T16:37:24.753Z",
+    "found": true,
+    "matched": 14
+  },
+  "I_INCIDENTINJURYILLNESS": {
+    "attemptedAt": "2026-11-12T16:37:25.243Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_INCIDENTINVOLVEDPERSON": {
+    "attemptedAt": "2026-11-12T16:37:25.737Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_INCIDENTMAJORROOTCAUSE": {
+    "attemptedAt": "2026-11-12T16:37:26.213Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_INCIDENTMAJORROOTCAUSETEXT": {
+    "attemptedAt": "2026-11-12T16:37:26.688Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_INCIDENTNTCOFVIOLTNCASECUBE": {
+    "attemptedAt": "2026-11-12T16:37:27.156Z",
+    "found": true,
+    "matched": 31
+  },
+  "I_INCIDENTPERSONROLE": {
+    "attemptedAt": "2026-11-12T16:37:27.654Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_INCIDENTRELEASECASECUBE": {
+    "attemptedAt": "2026-11-12T16:37:28.186Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_INCIDENTRELEASESIZE": {
+    "attemptedAt": "2026-11-12T16:37:28.675Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_INCIDENTRELEASESIZETEXT": {
+    "attemptedAt": "2026-11-12T16:37:29.167Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_INCIDENTRELEASETYPE": {
+    "attemptedAt": "2026-11-12T16:37:29.661Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_INCIDENTRELEASETYPETEXT": {
+    "attemptedAt": "2026-11-12T16:37:30.129Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_INCIDENTREPORTINGSOURCE": {
+    "attemptedAt": "2026-11-12T16:37:30.622Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_INCIDENTREPORTINGSOURCETEXT": {
+    "attemptedAt": "2026-11-12T16:37:31.105Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_INCIDENTRESTRICTEDDUTY": {
+    "attemptedAt": "2026-11-12T16:37:31.582Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_INCIDENTSTATUS": {
+    "attemptedAt": "2026-11-12T16:37:32.057Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_INCIDENTSTATUSTEXT": {
+    "attemptedAt": "2026-11-12T16:37:32.593Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_INCIDENTTIMEDATA": {
+    "attemptedAt": "2026-11-12T16:37:33.091Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_INJRYILLNCASESANDHRSWRK": {
+    "attemptedAt": "2026-11-12T16:37:33.577Z",
+    "found": true,
+    "matched": 16
+  },
+  "I_NEARMISSGROUPCODE": {
+    "attemptedAt": "2026-11-12T16:37:34.136Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_NEARMISSGROUPCODETEXT": {
+    "attemptedAt": "2026-11-12T16:37:34.624Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_NOTICEOFVIOLATIONCATEGORY": {
+    "attemptedAt": "2026-11-12T16:37:35.098Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_NOTICEOFVIOLATIONCATEGORYT": {
+    "attemptedAt": "2026-11-12T16:37:35.569Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_NOTICEOFVIOLATIONSOURCE": {
+    "attemptedAt": "2026-11-12T16:37:36.139Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_NOTICEOFVIOLATIONSOURCET": {
+    "attemptedAt": "2026-11-12T16:37:36.644Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_NOTICEOFVIOLATIONTYPE": {
+    "attemptedAt": "2026-11-12T16:37:37.171Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_NOTICEOFVIOLATIONTYPETEXT": {
+    "attemptedAt": "2026-11-12T16:37:37.645Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SAFETYOBSERVATIONGROUPCODE": {
+    "attemptedAt": "2026-11-12T16:37:38.149Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_SAFETYOBSERVATIONGROUPCODET": {
+    "attemptedAt": "2026-11-12T16:37:38.621Z",
+    "found": true,
+    "matched": 3
+  },
+  "C_CMPLRQRSLTMARKETABILITYDEX": {
+    "attemptedAt": "2026-11-12T16:37:39.078Z",
+    "found": true,
+    "matched": 27
+  },
+  "C_SFTYDATASHTOUTPREQFDP_2": {
+    "attemptedAt": "2026-11-12T16:37:39.532Z",
+    "found": true,
+    "matched": 13
+  },
+  "D_PCLBLFLDVERSREGLBLFLDCALCTRP": {
+    "attemptedAt": "2026-11-12T16:37:39.702Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_PCLBLFLDVERSREGLBLFLDCALCTRP\" (404)"
+  },
+  "I_PRODCMPLNCLABELFLDGROUPTP_2": {
+    "attemptedAt": "2026-11-12T16:37:40.123Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLABELFLDGROUPTP_2\" (404)"
+  },
+  "I_PRODCMPLNCLBLFLDGROUPTXTTP_2": {
+    "attemptedAt": "2026-11-12T16:37:40.540Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLBLFLDGROUPTXTTP_2\" (404)"
+  },
+  "I_PRODCMPLNCLBLFLDVERSIONTP_2": {
+    "attemptedAt": "2026-11-12T16:37:40.963Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLBLFLDVERSIONTP_2\" (404)"
+  },
+  "I_PRODCMPLNCLBLFLDVERSTXTTP_2": {
+    "attemptedAt": "2026-11-12T16:37:41.389Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_PRODCMPLNCLBLFLDVERSTXTTP_2\" (404)"
+  },
+  "C_WASTEANALYTICSQUERY": {
+    "attemptedAt": "2026-11-12T16:37:42.189Z",
+    "found": true,
+    "matched": 44
+  },
+  "I_ENVRMTWASTECODEDIMENSION": {
+    "attemptedAt": "2026-11-12T16:37:42.728Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ENVRMTWASTETRANSPDOCMATLDIMN": {
+    "attemptedAt": "2026-11-12T16:37:43.214Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_ENVWSTTRANSPDOCWASTELOCATION": {
+    "attemptedAt": "2026-11-12T16:37:43.665Z",
+    "found": true,
+    "matched": 16
+  },
+  "I_WASTEANALYTICSCUBE": {
+    "attemptedAt": "2026-11-12T16:37:44.141Z",
+    "found": true,
+    "matched": 52
+  },
+  "I_WASTECMPLRQVERSDIMN": {
+    "attemptedAt": "2026-11-12T16:37:44.615Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_WASTECONTAINERTYPEDIMENSION": {
+    "attemptedAt": "2026-11-12T16:37:45.113Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_WASTEDANGEROUSGOODDIMENSION": {
+    "attemptedAt": "2026-11-12T16:37:45.656Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_WASTEDISPOSALCHNLDIMENSION": {
+    "attemptedAt": "2026-11-12T16:37:46.159Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_WASTEDISPOSERDIMENSION": {
+    "attemptedAt": "2026-11-13T15:56:59.115Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_WASTEHAZARDTYPEDIMENSION": {
+    "attemptedAt": "2026-11-13T15:56:59.659Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_WASTEMGMTMETHCODEDIMENSION": {
+    "attemptedAt": "2026-11-13T15:57:00.141Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_WASTEPERMITDIMENSION": {
+    "attemptedAt": "2026-11-13T15:57:00.635Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_WASTEPTOFGNRTNDIMENSION": {
+    "attemptedAt": "2026-11-13T15:57:01.145Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_WASTESTREAMRGTYCODECONFIGN": {
+    "attemptedAt": "2026-11-13T15:57:01.646Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_WASTETRANSFREQDIMENSION": {
+    "attemptedAt": "2026-11-13T15:57:02.157Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_WASTETRANSFREQSTSDIMN": {
+    "attemptedAt": "2026-11-13T15:57:02.719Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_WASTETRANSPDOCGNRTRDIMENSION": {
+    "attemptedAt": "2026-11-13T15:57:03.214Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_WASTETRANSPDOCSTSDIMENSION": {
+    "attemptedAt": "2026-11-13T15:57:03.696Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_WASTETRANSPDOCTYPEDIMENSION": {
+    "attemptedAt": "2026-11-13T15:57:04.198Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_WASTETRANSPORTERDIMENSION": {
+    "attemptedAt": "2026-11-13T15:57:04.712Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_WSTSTMRGTYCODEVALDIMN": {
+    "attemptedAt": "2026-11-13T15:57:05.212Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_FIXEDASSETUSAGEOBJECT": {
+    "attemptedAt": "2026-11-13T15:57:05.701Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_FIXEDASSETUSAGEOBJECTPERIOD": {
+    "attemptedAt": "2026-11-13T15:57:06.176Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_FIXEDASSETUSAGEOBJECTTOTAL": {
+    "attemptedAt": "2026-11-13T15:57:06.669Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_ASSETBALANCESKEYFIGURESETVH": {
+    "attemptedAt": "2026-11-13T15:57:07.153Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ASSETDEPRECIATIONPHASE": {
+    "attemptedAt": "2026-11-13T15:57:07.659Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ASSETDEPRECIATIONPHASETEXT": {
+    "attemptedAt": "2026-11-13T15:57:08.191Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ASSETDEPRECIATIONTYPE": {
+    "attemptedAt": "2026-11-13T15:57:08.713Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ASSETDEPRECIATIONTYPETEXT": {
+    "attemptedAt": "2026-11-13T15:57:09.190Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ASSETHISTSHEETKEYFIGURESETVH": {
+    "attemptedAt": "2026-11-13T15:57:09.678Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ASSETKEYFIGURE": {
+    "attemptedAt": "2026-11-13T15:57:10.156Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ASSETKEYFIGURESET": {
+    "attemptedAt": "2026-11-13T15:57:10.644Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_ASSETKEYFIGURESETTEXT": {
+    "attemptedAt": "2026-11-13T15:57:11.112Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ASSETKEYFIGURETEXT": {
+    "attemptedAt": "2026-11-13T15:57:11.680Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ASSETSORTEDKEYFIGURESETSPEC": {
+    "attemptedAt": "2026-11-13T15:57:12.196Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_DEPRECIATIONPROFILE": {
+    "attemptedAt": "2026-11-13T15:57:12.705Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_DEPRECIATIONPROFILESTDVH": {
+    "attemptedAt": "2026-11-13T15:57:13.234Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_DEPRECIATIONPROFILETEXT": {
+    "attemptedAt": "2026-11-13T15:57:13.720Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DEPRPRFLACCTGPRNCPSTDVH": {
+    "attemptedAt": "2026-11-13T15:57:14.234Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_DEPRPROFILEACCTGPRNCPASSGMT": {
+    "attemptedAt": "2026-11-13T15:57:14.759Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_DEPRPROFILEPHASE": {
+    "attemptedAt": "2026-11-13T15:57:15.248Z",
+    "found": true,
+    "matched": 30
+  },
+  "I_DEPRPROFILEPHASELEVEL": {
+    "attemptedAt": "2026-11-13T15:57:15.762Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_ASSETREVALUATIONINDEX": {
+    "attemptedAt": "2026-11-13T15:57:16.289Z",
+    "found": true,
+    "matched": 14
+  },
+  "I_ASSETREVALUATIONINDEXITEM": {
+    "attemptedAt": "2026-11-13T15:57:16.764Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PAYMENTBLOCKLEVEL": {
+    "attemptedAt": "2026-11-13T15:57:17.237Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_PAYMENTBLOCKLEVELTEXT": {
+    "attemptedAt": "2026-11-13T15:57:17.705Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PAYMENTPROGRAMCONTROL": {
+    "attemptedAt": "2026-11-13T15:57:18.225Z",
+    "found": true,
+    "matched": 17
+  },
+  "I_PAYMENTPROPOSALITEM": {
+    "attemptedAt": "2026-11-13T15:57:18.725Z",
+    "found": true,
+    "matched": 71
+  },
+  "I_PAYMENTPROPOSALPAYMENT": {
+    "attemptedAt": "2026-11-13T15:57:19.246Z",
+    "found": true,
+    "matched": 129
+  },
+  "I_PAYMENTREASON": {
+    "attemptedAt": "2026-11-13T15:57:19.759Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PAYMENTREASONTEXT": {
+    "attemptedAt": "2026-11-13T15:57:20.265Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PAYTPRPSLBLKDFINACCOUNT": {
+    "attemptedAt": "2026-11-13T15:57:20.759Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_WITHHOLDINGTAXCODEVH": {
+    "attemptedAt": "2026-11-13T15:57:21.238Z",
+    "found": true,
+    "matched": 12
+  },
+  "I_WITHHOLDINGTAXINCOMETYPE": {
+    "attemptedAt": "2026-11-13T15:57:21.753Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_WITHHOLDINGTAXINCOMETYPETEXT": {
+    "attemptedAt": "2026-11-13T15:57:22.261Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_WITHHOLDINGTAXITEM": {
+    "attemptedAt": "2026-11-14T14:48:17.324Z",
+    "found": true,
+    "matched": 48
+  },
+  "C_APDAYSPAYOUTST": {
+    "attemptedAt": "2026-11-14T14:48:17.878Z",
+    "found": true,
+    "matched": 15
+  },
+  "C_APFLEXIBLEAGING": {
+    "attemptedAt": "2026-11-14T14:48:18.387Z",
+    "found": true,
+    "matched": 21
+  },
+  "C_APJRNLENTRITMAGINGGRID": {
+    "attemptedAt": "2026-11-14T14:48:18.861Z",
+    "found": true,
+    "matched": 39
+  },
+  "I_APDAYSPAYOUTST": {
+    "attemptedAt": "2026-11-14T14:48:19.387Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_APFLEXIBLEAGING": {
+    "attemptedAt": "2026-11-14T14:48:19.834Z",
+    "found": true,
+    "matched": 17
+  },
+  "I_APJRNLENTRITMAGINGGRID": {
+    "attemptedAt": "2026-11-14T14:48:20.282Z",
+    "found": true,
+    "matched": 34
+  },
+  "I_PAYMENTMETHOD": {
+    "attemptedAt": "2026-11-14T14:48:20.759Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_PAYMENTMETHODINCOMPANYCODE": {
+    "attemptedAt": "2026-11-14T14:48:21.208Z",
+    "found": true,
+    "matched": 14
+  },
+  "I_PAYMENTMETHODTEXT": {
+    "attemptedAt": "2026-11-14T14:48:21.688Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_DUNNINGAREA": {
+    "attemptedAt": "2026-11-14T14:48:22.137Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_DUNNINGAREASTDVH": {
+    "attemptedAt": "2026-11-14T14:48:22.635Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_DUNNINGAREATEXT": {
+    "attemptedAt": "2026-11-14T14:48:23.133Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_DUNNINGBLOCKINGREASONCODE": {
+    "attemptedAt": "2026-11-14T14:48:23.616Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_DUNNINGBLOCKINGREASONTEXT": {
+    "attemptedAt": "2026-11-14T14:48:24.090Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DUNNINGENTRY": {
+    "attemptedAt": "2026-11-14T14:48:24.568Z",
+    "found": true,
+    "matched": 49
+  },
+  "I_DUNNINGENTRYITEM": {
+    "attemptedAt": "2026-11-14T14:48:25.020Z",
+    "found": true,
+    "matched": 49
+  },
+  "I_DUNNINGKEY": {
+    "attemptedAt": "2026-11-14T14:48:25.496Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_DUNNINGKEYTEXT": {
+    "attemptedAt": "2026-11-14T14:48:25.967Z",
+    "found": true,
+    "matched": 3
+  },
+  "C_BALANCECONFIRMATIONEMAILTMPL": {
+    "attemptedAt": "2026-11-14T14:48:26.455Z",
+    "found": true,
+    "matched": 12
+  },
+  "I_RBLFINANCINGSTATUSTEXT": {
+    "attemptedAt": "2026-11-14T14:48:26.928Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_RECEIVABLEFINANCINGSTATUS": {
+    "attemptedAt": "2026-11-14T14:48:27.432Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_RECEIVABLEFINANCINGSTATUSVH": {
+    "attemptedAt": "2026-11-14T14:48:27.890Z",
+    "found": true,
+    "matched": 1
+  },
+  "C_ARAGINGGRIDGENLEDGERQRY": {
+    "attemptedAt": "2026-11-14T14:48:28.349Z",
+    "found": true,
+    "matched": 47
+  },
+  "C_ARBANKSTMTREPROCESSING": {
+    "attemptedAt": "2026-11-14T14:48:28.790Z",
+    "found": true,
+    "matched": 22
+  },
+  "C_ARJRNLENTRITMAGINGGRID": {
+    "attemptedAt": "2026-11-14T14:48:29.231Z",
+    "found": true,
+    "matched": 42
+  },
+  "C_COLLECTIONPROGRESSQ": {
+    "attemptedAt": "2026-11-14T14:48:29.695Z",
+    "found": true,
+    "matched": 16
+  },
+  "C_DAYSBEYONDTERMS": {
+    "attemptedAt": "2026-11-14T14:48:30.137Z",
+    "found": true,
+    "matched": 27
+  },
+  "C_DAYSSALESOUTSTANDING": {
+    "attemptedAt": "2026-11-14T14:48:30.642Z",
+    "found": true,
+    "matched": 30
+  },
+  "C_DUNNINGLEVELDISTRIBUTION": {
+    "attemptedAt": "2026-11-14T14:48:31.092Z",
+    "found": true,
+    "matched": 30
+  },
+  "C_FUTUREACCTRBLS": {
+    "attemptedAt": "2026-11-14T14:48:31.567Z",
+    "found": true,
+    "matched": 33
+  },
+  "C_OPENCLOSEDDISPUTECASE": {
+    "attemptedAt": "2026-11-14T14:48:32.032Z",
+    "found": true,
+    "matched": 40
+  },
+  "C_OPENDISPPROCESSINGDAYS": {
+    "attemptedAt": "2026-11-14T14:48:32.488Z",
+    "found": true,
+    "matched": 45
+  },
+  "C_OPENDISPUTECASE": {
+    "attemptedAt": "2026-11-14T14:48:32.951Z",
+    "found": true,
+    "matched": 33
+  },
+  "C_OVERDUEACCTRBLS": {
+    "attemptedAt": "2026-11-14T14:48:33.389Z",
+    "found": true,
+    "matched": 39
+  },
+  "C_PROMISETOPAYOVERVIEW": {
+    "attemptedAt": "2026-11-14T14:48:33.862Z",
+    "found": true,
+    "matched": 35
+  },
+  "C_RESOLVEDDISPUTECASE": {
+    "attemptedAt": "2026-11-14T14:48:34.361Z",
+    "found": true,
+    "matched": 47
+  },
+  "C_SOLVEDDSPUTCASESTSDURNQ": {
+    "attemptedAt": "2026-11-14T14:48:34.861Z",
+    "found": true,
+    "matched": 18
+  },
+  "C_TOTALACCOUNTSRECEIVABLES": {
+    "attemptedAt": "2026-11-14T14:48:35.335Z",
+    "found": true,
+    "matched": 32
+  },
+  "I_APARTOLERANCEGROUP": {
+    "attemptedAt": "2026-11-14T14:48:35.834Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_APARTOLERANCEGROUPTEXT": {
+    "attemptedAt": "2026-11-14T14:48:36.298Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_ARAGINGGRIDGENLEDGERCUBE": {
+    "attemptedAt": "2026-11-14T14:48:36.762Z",
+    "found": true,
+    "matched": 52
+  },
+  "I_ARJRNLENTRITMAGINGGRID": {
+    "attemptedAt": "2026-11-14T14:48:37.207Z",
+    "found": true,
+    "matched": 37
+  },
+  "I_BANKSTMNTITEMREPROCESSREASON": {
+    "attemptedAt": "2026-11-14T14:48:37.683Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_BANKSTMNTITMREPROCESSRSNNAME": {
+    "attemptedAt": "2026-11-14T14:48:38.158Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CUSTOMERCONTACTATTRIBUTE": {
+    "attemptedAt": "2026-11-14T14:48:38.617Z",
+    "found": true,
+    "matched": 22
+  },
+  "I_DAYSBEYONDTERMS": {
+    "attemptedAt": "2026-11-14T14:48:39.148Z",
+    "found": true,
+    "matched": 22
+  },
+  "I_DAYSSALESOUTSTANDING": {
+    "attemptedAt": "2026-11-15T15:24:35.691Z",
+    "found": true,
+    "matched": 22
+  },
+  "I_DUNNINGLEVELDISTRIBUTION": {
+    "attemptedAt": "2026-11-15T15:24:36.387Z",
+    "found": true,
+    "matched": 25
+  },
+  "I_FUTUREACCOUNTSRECEIVABLES": {
+    "attemptedAt": "2026-11-15T15:24:36.913Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_JOURNALENTRYITEMONETIMEDATA": {
+    "attemptedAt": "2026-11-15T15:24:37.587Z",
+    "found": true,
+    "matched": 41
+  },
+  "I_ONETIMEACCOUNTCUSTOMER": {
+    "attemptedAt": "2026-11-15T15:24:38.108Z",
+    "found": true,
+    "matched": 27
+  },
+  "I_ONETIMEACCOUNTSUPPLIER": {
+    "attemptedAt": "2026-11-15T15:24:38.622Z",
+    "found": true,
+    "matched": 27
+  },
+  "I_OVERDUEACCOUNTSRECEIVABLES": {
+    "attemptedAt": "2026-11-15T15:24:39.112Z",
+    "found": true,
+    "matched": 28
+  },
+  "I_PAYMENTBLOCKINGREASON": {
+    "attemptedAt": "2026-11-15T15:24:39.619Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PAYMENTBLOCKINGREASONTEXT": {
+    "attemptedAt": "2026-11-15T15:24:40.120Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PAYMENTDIFFERENCEREASON": {
+    "attemptedAt": "2026-11-15T15:24:40.646Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PAYMENTDIFFERENCEREASONT": {
+    "attemptedAt": "2026-11-15T15:24:41.138Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_PAYMENTTERMS": {
+    "attemptedAt": "2026-11-15T15:24:41.662Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_PAYMENTTERMSCONDITIONS": {
+    "attemptedAt": "2026-11-15T15:24:42.167Z",
+    "found": true,
+    "matched": 27
+  },
+  "I_PAYMENTTERMSCONDITIONSTEXT": {
+    "attemptedAt": "2026-11-15T15:24:42.688Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PAYMENTTERMSINSTALLMENTITEM": {
+    "attemptedAt": "2026-11-15T15:24:43.172Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PAYMENTTERMSTEXT": {
+    "attemptedAt": "2026-11-15T15:24:43.688Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SEPAAPPLICATION": {
+    "attemptedAt": "2026-11-15T15:24:44.212Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SEPAAPPLICATIONTEXT": {
+    "attemptedAt": "2026-11-15T15:24:44.711Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SEPAMANDATE": {
+    "attemptedAt": "2026-11-15T15:24:45.223Z",
+    "found": true,
+    "matched": 67
+  },
+  "I_SEPAMANDATESTATUS": {
+    "attemptedAt": "2026-11-15T15:24:45.708Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SEPAMANDATESTATUSCHGREASON": {
+    "attemptedAt": "2026-11-15T15:24:46.231Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SEPAMANDATESTATUSTEXT": {
+    "attemptedAt": "2026-11-15T15:24:46.711Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SEPAMANDATESTSCHGRSNTEXT": {
+    "attemptedAt": "2026-11-15T15:24:47.193Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_SEPAMANDATEUSAGE": {
+    "attemptedAt": "2026-11-15T15:24:47.728Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_SEPAPAYMENTTYPE": {
+    "attemptedAt": "2026-11-15T15:24:48.256Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_SEPAPAYMENTTYPETEXT": {
+    "attemptedAt": "2026-11-15T15:24:48.787Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_STATECENTRALBANKPAYTRSN": {
+    "attemptedAt": "2026-11-15T15:24:49.296Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_TOTALACCOUNTSRECEIVABLES": {
+    "attemptedAt": "2026-11-15T15:24:49.814Z",
+    "found": true,
+    "matched": 25
+  },
+  "I_USERTOLERANCEGROUP": {
+    "attemptedAt": "2026-11-15T15:24:50.350Z",
+    "found": true,
+    "matched": 12
+  },
+  "I_USERTOUSERTOLERANCEGROUP": {
+    "attemptedAt": "2026-11-15T15:24:50.839Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_BANKCHAINBANKDETAIL": {
+    "attemptedAt": "2026-11-15T15:24:51.370Z",
+    "found": true,
+    "matched": 25
+  },
+  "I_BANKCHAINHEADER": {
+    "attemptedAt": "2026-11-15T15:24:51.861Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_BANKCHAINITEM": {
+    "attemptedAt": "2026-11-15T15:24:52.375Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_CASHJOURNALDOCUMENT_2": {
+    "attemptedAt": "2026-11-15T15:24:52.895Z",
+    "found": true,
+    "matched": 41
+  },
+  "D_CONTRACCTGDOCUMENTCANCELED": {
+    "attemptedAt": "2026-11-15T15:24:53.095Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACCTGDOCUMENTCANCELED\" (404)"
+  },
+  "D_CONTRACCTGDOCUMENTCHANGED": {
+    "attemptedAt": "2026-11-15T15:24:53.552Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACCTGDOCUMENTCHANGED\" (404)"
+  },
+  "D_CONTRACCTGDOCUMENTCREATED": {
+    "attemptedAt": "2026-11-15T15:24:54.016Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACCTGDOCUMENTCREATED\" (404)"
+  },
+  "D_CONTRACTACCOUNTCHANGED": {
+    "attemptedAt": "2026-11-15T15:24:54.470Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACTACCOUNTCHANGED\" (404)"
+  },
+  "D_CONTRACTACCOUNTCREATED": {
+    "attemptedAt": "2026-11-15T15:24:54.927Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACTACCOUNTCREATED\" (404)"
+  },
+  "I_CAACCOUNTASSIGNMENTCATEGORY": {
+    "attemptedAt": "2026-11-15T15:24:55.696Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAACCOUNTASSIGNMENTCATEGORYT": {
+    "attemptedAt": "2026-11-15T15:24:56.236Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAACCOUNTDETNCODE": {
+    "attemptedAt": "2026-11-15T15:24:56.756Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAACCOUNTDETNCODETEXT": {
+    "attemptedAt": "2026-11-15T15:24:57.280Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAACCTASSGMTDISTRCODE": {
+    "attemptedAt": "2026-11-15T15:24:57.805Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAACCTASSGMTDISTRCODETEXT": {
+    "attemptedAt": "2026-11-15T15:24:58.344Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAACCTDETNTRANSKEY": {
+    "attemptedAt": "2026-11-15T15:24:58.872Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAACCTDETNTRANSKEYTEXT": {
+    "attemptedAt": "2026-11-15T15:24:59.389Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAADDLBANKCLEARINGACCOUNT": {
+    "attemptedAt": "2026-11-16T17:59:28.559Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAADJUSTMENTREQUESTREASON": {
+    "attemptedAt": "2026-11-16T17:59:29.060Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAADJUSTMENTREQUESTREASONT": {
+    "attemptedAt": "2026-11-16T17:59:29.582Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAALTVEXCHANGERATESETCODE": {
+    "attemptedAt": "2026-11-16T17:59:30.110Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAALTVEXCHANGERATESETCODET": {
+    "attemptedAt": "2026-11-16T17:59:30.604Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAAPPLICATIONAREA": {
+    "attemptedAt": "2026-11-16T17:59:31.096Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAAPPLICATIONAREATEXT": {
+    "attemptedAt": "2026-11-16T17:59:31.582Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAAUTHORIZATIONGROUP": {
+    "attemptedAt": "2026-11-16T17:59:32.113Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAAUTHORIZATIONGROUPOBJECT": {
+    "attemptedAt": "2026-11-16T17:59:32.636Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAAUTHORIZATIONGROUPOBJECTT": {
+    "attemptedAt": "2026-11-16T17:59:33.135Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAAUTHORIZATIONGROUPTEXT": {
+    "attemptedAt": "2026-11-16T17:59:33.661Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAAUTHORIZATIONTYPE": {
+    "attemptedAt": "2026-11-16T17:59:34.146Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAAUTHORIZATIONTYPETEXT": {
+    "attemptedAt": "2026-11-16T17:59:34.673Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABANKCLEARINGACCOUNT": {
+    "attemptedAt": "2026-11-16T17:59:35.196Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_CABUSINESSLOCKREASON": {
+    "attemptedAt": "2026-11-16T17:59:35.726Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABUSINESSLOCKREASONTEXT": {
+    "attemptedAt": "2026-11-16T17:59:36.219Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CABUSINESSPROCESS": {
+    "attemptedAt": "2026-11-16T17:59:36.719Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CABUSINESSPROCESSTEXT": {
+    "attemptedAt": "2026-11-16T17:59:37.210Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABUSINESSTRANSACTION": {
+    "attemptedAt": "2026-11-16T17:59:37.751Z",
+    "found": true,
+    "matched": 52
+  },
+  "I_CABUSPARTINVOICEITEMSTATUS": {
+    "attemptedAt": "2026-11-16T17:59:38.249Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABUSPARTINVOICEITEMSTATUST": {
+    "attemptedAt": "2026-11-16T17:59:38.745Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABUSPARTINVOICESTATUS": {
+    "attemptedAt": "2026-11-16T17:59:39.275Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABUSPARTINVOICESTATUSTEXT": {
+    "attemptedAt": "2026-11-16T17:59:39.861Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABUSPRTNADDLLOCKEXSTCCODE": {
+    "attemptedAt": "2026-11-16T17:59:40.362Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABUSPRTNADDLLOCKEXSTCCODET": {
+    "attemptedAt": "2026-11-16T17:59:40.898Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABUSPRTNPOSTGLOCKEXSTCCODE": {
+    "attemptedAt": "2026-11-16T17:59:41.413Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABUSPRTNPOSTGLOCKEXSTCCODET": {
+    "attemptedAt": "2026-11-16T17:59:41.933Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABUSTRANSACTIVITY": {
+    "attemptedAt": "2026-11-16T17:59:42.432Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABUSTRANSACTIVITYTEXT": {
+    "attemptedAt": "2026-11-16T17:59:42.929Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABUSTRANSDOCUMENTTYPE": {
+    "attemptedAt": "2026-11-16T17:59:43.418Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABUSTRANSDOCUMENTTYPETEXT": {
+    "attemptedAt": "2026-11-16T17:59:43.945Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABUSTRANSOBJECT": {
+    "attemptedAt": "2026-11-16T17:59:44.484Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABUSTRANSOBJECTTEXT": {
+    "attemptedAt": "2026-11-16T17:59:45.005Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABUSTRANSPROCESS": {
+    "attemptedAt": "2026-11-16T17:59:45.511Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABUSTRANSPROCESSTEXT": {
+    "attemptedAt": "2026-11-16T17:59:46.053Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABUSTRANSRELATIONSHIP": {
+    "attemptedAt": "2026-11-16T17:59:46.564Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABUSTRANSRELATIONSHIPTEXT": {
+    "attemptedAt": "2026-11-16T17:59:47.098Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACASHSECURITYDEPOSITSTATUS": {
+    "attemptedAt": "2026-11-16T17:59:47.595Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACASHSECURITYDEPOSITSTSTEXT": {
+    "attemptedAt": "2026-11-16T17:59:48.096Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACHARGESSCHEMA": {
+    "attemptedAt": "2026-11-16T17:59:48.583Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACHARGESSCHEMATEXT": {
+    "attemptedAt": "2026-11-16T17:59:49.095Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACHARGETYPE": {
+    "attemptedAt": "2026-11-16T17:59:49.622Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACHARGETYPETEXT": {
+    "attemptedAt": "2026-11-16T17:59:50.186Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACLEARINGCATEGORY": {
+    "attemptedAt": "2026-11-16T17:59:50.680Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACLEARINGCATEGORYTEXT": {
+    "attemptedAt": "2026-11-16T17:59:51.223Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACLEARINGINFORMATION": {
+    "attemptedAt": "2026-11-16T17:59:51.790Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACLEARINGINFORMATIONTEXT": {
+    "attemptedAt": "2026-11-16T17:59:52.372Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACLEARINGREASON": {
+    "attemptedAt": "2026-11-17T17:25:04.710Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CACLEARINGREASONTEXT": {
+    "attemptedAt": "2026-11-17T17:25:05.177Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACLEARINGRESTRICTIONCODE": {
+    "attemptedAt": "2026-11-17T17:25:05.658Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACLEARINGRESTRICTIONCODET": {
+    "attemptedAt": "2026-11-17T17:25:06.125Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACLEARINGSTATUS": {
+    "attemptedAt": "2026-11-17T17:25:06.618Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACLEARINGSTATUSTEXT": {
+    "attemptedAt": "2026-11-17T17:25:07.088Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACOLLECTIONAGENCY": {
+    "attemptedAt": "2026-11-17T17:25:07.544Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACOLLECTIONSTEP": {
+    "attemptedAt": "2026-11-17T17:25:08.019Z",
+    "found": true,
+    "matched": 17
+  },
+  "I_CACOLLECTIONSTEPTEXT": {
+    "attemptedAt": "2026-11-17T17:25:08.468Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACOLLECTIONSTRATEGY": {
+    "attemptedAt": "2026-11-17T17:25:08.974Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACOLLECTIONSTRATEGYTEXT": {
+    "attemptedAt": "2026-11-17T17:25:09.480Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACOLLMASTERDATAGROUP": {
+    "attemptedAt": "2026-11-17T17:25:09.957Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CACOLLMASTERDATAGROUPTEXT": {
+    "attemptedAt": "2026-11-17T17:25:10.421Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACOMPANYCODEGROUP": {
+    "attemptedAt": "2026-11-17T17:25:10.870Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CACOMPANYCODEGROUPTEXT": {
+    "attemptedAt": "2026-11-17T17:25:11.327Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACORRESPNCACTIVITYCODE": {
+    "attemptedAt": "2026-11-17T17:25:11.774Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACORRESPNCACTIVITYCODET": {
+    "attemptedAt": "2026-11-17T17:25:12.212Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACORRESPONDENCETYPE": {
+    "attemptedAt": "2026-11-17T17:25:12.734Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CACORRESPONDENCETYPETEXT": {
+    "attemptedAt": "2026-11-17T17:25:13.177Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACORRESPONDENCEVARIANT": {
+    "attemptedAt": "2026-11-17T17:25:13.666Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACORRESPONDENCEVARIANTTEXT": {
+    "attemptedAt": "2026-11-17T17:25:14.146Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACRDTWORTHINESSITEMSTATUS": {
+    "attemptedAt": "2026-11-17T17:25:14.594Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACRDTWORTHINESSITEMSTATUST": {
+    "attemptedAt": "2026-11-17T17:25:15.056Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACREDITPOSTINGORIGIN": {
+    "attemptedAt": "2026-11-17T17:25:15.517Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACREDITPOSTINGORIGINTEXT": {
+    "attemptedAt": "2026-11-17T17:25:15.970Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CACREDITWORTHINESS": {
+    "attemptedAt": "2026-11-17T17:25:16.413Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_CACREDITWORTHINESSITEM": {
+    "attemptedAt": "2026-11-17T17:25:16.908Z",
+    "found": true,
+    "matched": 21
+  },
+  "I_CACREDITWORTHINESSORIGIN": {
+    "attemptedAt": "2026-11-17T17:25:17.368Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CACREDITWORTHINESSORIGINTEXT": {
+    "attemptedAt": "2026-11-17T17:25:17.803Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADBTFLORVALUEADJMTCODE": {
+    "attemptedAt": "2026-11-17T17:25:18.257Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADBTFLORVALUEADJMTCODET": {
+    "attemptedAt": "2026-11-17T17:25:18.764Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADFLTCLEARINGRSTRCNCODE": {
+    "attemptedAt": "2026-11-17T17:25:19.209Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADFLTCLEARINGRSTRCNCODET": {
+    "attemptedAt": "2026-11-17T17:25:19.657Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADIRECTDEBITLIMITCALCMODE": {
+    "attemptedAt": "2026-11-17T17:25:20.104Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADIRECTDEBITLIMITCALCMODET": {
+    "attemptedAt": "2026-11-17T17:25:20.650Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADISPUTEEXTCALLERCODE": {
+    "attemptedAt": "2026-11-17T17:25:21.134Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADISPUTEEXTCALLERCODETEXT": {
+    "attemptedAt": "2026-11-17T17:25:21.587Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADISPUTETYPE": {
+    "attemptedAt": "2026-11-17T17:25:22.070Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADISPUTETYPETEXT": {
+    "attemptedAt": "2026-11-17T17:25:22.572Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADOCCTNDOCITEMREFTYPE": {
+    "attemptedAt": "2026-11-17T17:25:23.059Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADOCCTNDOCITEMREFTYPETEXT": {
+    "attemptedAt": "2026-11-17T17:25:23.506Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADOCCTNREFTYPE": {
+    "attemptedAt": "2026-11-17T17:25:24.006Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CADOCCTNREFTYPETEXT": {
+    "attemptedAt": "2026-11-17T17:25:24.475Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADOCTRANSACTIONCLASS": {
+    "attemptedAt": "2026-11-17T17:25:24.939Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADOCTRANSACTIONCLASSTEXT": {
+    "attemptedAt": "2026-11-17T17:25:25.421Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADOCUMENT": {
+    "attemptedAt": "2026-11-17T17:25:25.950Z",
+    "found": true,
+    "matched": 45
+  },
+  "I_CADOCUMENTBPITEM": {
+    "attemptedAt": "2026-11-17T17:25:26.457Z",
+    "found": true,
+    "matched": 154
+  },
+  "I_CADOCUMENTBPITEMBUSLOCKTP": {
+    "attemptedAt": "2026-11-18T16:58:31.535Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CADOCUMENTBPITEMBUSLOCKTP\" (404)"
+  },
+  "I_CADOCUMENTBPITEMCUBE": {
+    "attemptedAt": "2026-11-18T16:58:32.258Z",
+    "found": true,
+    "matched": 140
+  },
+  "I_CADOCUMENTBPITEMTP": {
+    "attemptedAt": "2026-11-18T16:58:32.410Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CADOCUMENTBPITEMTP\" (404)"
+  },
+  "I_CADOCUMENTCLASS": {
+    "attemptedAt": "2026-11-18T16:58:33.106Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADOCUMENTCLASSTEXT": {
+    "attemptedAt": "2026-11-18T16:58:33.556Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADOCUMENTCUBE": {
+    "attemptedAt": "2026-11-18T16:58:34.013Z",
+    "found": true,
+    "matched": 36
+  },
+  "I_CADOCUMENTGLITEM": {
+    "attemptedAt": "2026-11-18T16:58:34.496Z",
+    "found": true,
+    "matched": 89
+  },
+  "I_CADOCUMENTGLITEMPAYMENTDATA": {
+    "attemptedAt": "2026-11-18T16:58:34.953Z",
+    "found": true,
+    "matched": 52
+  },
+  "I_CADOCUMENTORIGINCODE": {
+    "attemptedAt": "2026-11-18T16:58:35.427Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_CADOCUMENTORIGINCODETEXT": {
+    "attemptedAt": "2026-11-18T16:58:35.869Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADOCUMENTSUPPLEMENT": {
+    "attemptedAt": "2026-11-18T16:58:36.344Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADOCUMENTSUPPLEMENTTEXT": {
+    "attemptedAt": "2026-11-18T16:58:36.791Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADOCUMENTTP": {
+    "attemptedAt": "2026-11-18T16:58:36.979Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CADOCUMENTTP\" (404)"
+  },
+  "I_CADOCUMENTTYPE": {
+    "attemptedAt": "2026-11-18T16:58:37.710Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_CADOCUMENTTYPETEXT": {
+    "attemptedAt": "2026-11-18T16:58:38.150Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CADOCUMENTVERSION": {
+    "attemptedAt": "2026-11-18T16:58:38.590Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADOCUMENTVERSIONTEXT": {
+    "attemptedAt": "2026-11-18T16:58:39.039Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADUNCHRGANDINTRSTPOSTGCODE": {
+    "attemptedAt": "2026-11-18T16:58:39.478Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADUNCHRGANDINTRSTPOSTGCODET": {
+    "attemptedAt": "2026-11-18T16:58:39.944Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADUNNINGEXCEPTIONREASON": {
+    "attemptedAt": "2026-11-18T16:58:40.459Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CADUNNINGEXCEPTIONREASONTEXT": {
+    "attemptedAt": "2026-11-18T16:58:40.940Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADUNNINGHEADER": {
+    "attemptedAt": "2026-11-18T16:58:41.416Z",
+    "found": true,
+    "matched": 72
+  },
+  "I_CADUNNINGITEM": {
+    "attemptedAt": "2026-11-18T16:58:41.874Z",
+    "found": true,
+    "matched": 38
+  },
+  "I_CADUNNINGLETTERHEADER": {
+    "attemptedAt": "2026-11-18T16:58:42.350Z",
+    "found": true,
+    "matched": 24
+  },
+  "I_CADUNNINGLEVEL": {
+    "attemptedAt": "2026-11-18T16:58:42.804Z",
+    "found": true,
+    "matched": 25
+  },
+  "I_CADUNNINGLEVELCATEGORY": {
+    "attemptedAt": "2026-11-18T16:58:43.249Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADUNNINGLEVELCATEGORYTEXT": {
+    "attemptedAt": "2026-11-18T16:58:43.695Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADUNNINGLEVELTEXT": {
+    "attemptedAt": "2026-11-18T16:58:44.153Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CADUNNINGMASTERDATAORIGIN": {
+    "attemptedAt": "2026-11-18T16:58:44.587Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADUNNINGMASTERDATAORIGINT": {
+    "attemptedAt": "2026-11-18T16:58:45.085Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADUNNINGNOTICEGROUP": {
+    "attemptedAt": "2026-11-18T16:58:45.544Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADUNNINGNOTICEGROUPTEXT": {
+    "attemptedAt": "2026-11-18T16:58:45.978Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADUNNINGNOTICEISREVERSED": {
+    "attemptedAt": "2026-11-18T16:58:46.422Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADUNNINGPROCEDURE": {
+    "attemptedAt": "2026-11-18T16:58:46.876Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_CADUNNINGPROCEDURECATEGORY": {
+    "attemptedAt": "2026-11-18T16:58:47.316Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADUNNINGPROCEDURECATEGORYT": {
+    "attemptedAt": "2026-11-18T16:58:47.818Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADUNNINGPROCEDURETEXT": {
+    "attemptedAt": "2026-11-18T16:58:48.295Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADUNNINGVALUATIONSTATUS": {
+    "attemptedAt": "2026-11-18T16:58:48.772Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADUNNINGVALUATIONSTATUSTEXT": {
+    "attemptedAt": "2026-11-18T16:58:49.244Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADUNNOTICEISREVERSEDTEXT": {
+    "attemptedAt": "2026-11-18T16:58:49.687Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAEUROCONVERSIONSTATUS": {
+    "attemptedAt": "2026-11-18T16:58:50.140Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAEUROCONVERSIONSTATUSTEXT": {
+    "attemptedAt": "2026-11-18T16:58:50.601Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAFACTORINGCLRGCHECKSTATUS": {
+    "attemptedAt": "2026-11-18T16:58:51.039Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAFACTORINGCLRGCHECKSTATUST": {
+    "attemptedAt": "2026-11-18T16:58:51.487Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAFACTORINGRECEIVABLESTATUS": {
+    "attemptedAt": "2026-11-18T16:58:51.972Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAFACTORINGRECEIVABLESTATUST": {
+    "attemptedAt": "2026-11-18T16:58:52.431Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAHOUSEBANKREFERENCE": {
+    "attemptedAt": "2026-11-18T16:58:52.873Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_CAHOUSEBANKREFERENCETEXT": {
+    "attemptedAt": "2026-11-19T17:05:59.294Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAINCOMINGPAYMENTMETHOD": {
+    "attemptedAt": "2026-11-19T17:05:59.773Z",
+    "found": true,
+    "matched": 21
+  },
+  "I_CAINSTALLMENTPLANCATEGORY": {
+    "attemptedAt": "2026-11-19T17:06:00.242Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_CAINSTALLMENTPLANCATEGORYT": {
+    "attemptedAt": "2026-11-19T17:06:00.706Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINSTALLMENTPLANHEADER": {
+    "attemptedAt": "2026-11-19T17:06:01.174Z",
+    "found": true,
+    "matched": 29
+  },
+  "I_CAINSTALLMENTPLANITEM": {
+    "attemptedAt": "2026-11-19T17:06:01.656Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_CAINSTLMNTPLANDACTVTNRSN": {
+    "attemptedAt": "2026-11-19T17:06:02.137Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINSTLMNTPLANDACTVTNRSNT": {
+    "attemptedAt": "2026-11-19T17:06:02.632Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINTERESTCODE": {
+    "attemptedAt": "2026-11-19T17:06:03.126Z",
+    "found": true,
+    "matched": 12
+  },
+  "I_CAINTERESTCODETEXT": {
+    "attemptedAt": "2026-11-19T17:06:03.596Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINTPOSTINGREASONCODE": {
+    "attemptedAt": "2026-11-19T17:06:04.075Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINTPOSTINGREASONCODETEXT": {
+    "attemptedAt": "2026-11-19T17:06:04.546Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAMAINTRANSACTION": {
+    "attemptedAt": "2026-11-19T17:06:04.997Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAMAINTRANSACTIONTEXT": {
+    "attemptedAt": "2026-11-19T17:06:05.496Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CANEGATIVEPOSTINGCTRLCODE": {
+    "attemptedAt": "2026-11-19T17:06:05.948Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CANEGATIVEPOSTINGCTRLCODET": {
+    "attemptedAt": "2026-11-19T17:06:06.407Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CANONDCBLINPUTTAXCODE": {
+    "attemptedAt": "2026-11-19T17:06:06.904Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CANONDCBLINPUTTAXCODETEXT": {
+    "attemptedAt": "2026-11-19T17:06:07.405Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAOPENITEMLIST": {
+    "attemptedAt": "2026-11-19T17:06:07.908Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_CAOPENITEMLISTITEM": {
+    "attemptedAt": "2026-11-19T17:06:08.421Z",
+    "found": true,
+    "matched": 142
+  },
+  "I_CAORIGLSTSTCLITEMCODE": {
+    "attemptedAt": "2026-11-19T17:06:08.895Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAORIGLSTSTCLITEMCODETEXT": {
+    "attemptedAt": "2026-11-19T17:06:09.421Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAOTHERTAXCODE": {
+    "attemptedAt": "2026-11-19T17:06:09.920Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_CAOTHERTAXCODETEXT": {
+    "attemptedAt": "2026-11-19T17:06:10.422Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAOUTGOINGPAYMENTMETHOD": {
+    "attemptedAt": "2026-11-19T17:06:10.913Z",
+    "found": true,
+    "matched": 21
+  },
+  "I_CAOVERDUEITEM": {
+    "attemptedAt": "2026-11-19T17:06:11.431Z",
+    "found": true,
+    "matched": 14
+  },
+  "I_CAOVERDUEITEMORIGIN": {
+    "attemptedAt": "2026-11-19T17:06:11.976Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAOVERDUEITEMORIGINTEXT": {
+    "attemptedAt": "2026-11-19T17:06:12.460Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAPARTNERSETTLEMENTSTATUS": {
+    "attemptedAt": "2026-11-19T17:06:12.946Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAPARTNERSETTLEMENTSTATUST": {
+    "attemptedAt": "2026-11-19T17:06:13.435Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAPAYMENTBILLINGSTATUS": {
+    "attemptedAt": "2026-11-19T17:06:13.918Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAPAYMENTBILLINGSTATUSTEXT": {
+    "attemptedAt": "2026-11-19T17:06:14.455Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAPAYMENTEXCEPTIONREASON": {
+    "attemptedAt": "2026-11-19T17:06:14.935Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAPAYMENTEXCEPTIONREASONTEXT": {
+    "attemptedAt": "2026-11-19T17:06:15.406Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAPAYMENTLOT": {
+    "attemptedAt": "2026-11-19T17:06:15.876Z",
+    "found": true,
+    "matched": 36
+  },
+  "I_CAPAYMENTLOTSTATUS": {
+    "attemptedAt": "2026-11-19T17:06:16.336Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAPAYMENTLOTSTATUSTEXT": {
+    "attemptedAt": "2026-11-19T17:06:16.830Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAPAYMENTMASTERDATAORIGIN": {
+    "attemptedAt": "2026-11-19T17:06:17.355Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAPAYMENTMASTERDATAORIGINT": {
+    "attemptedAt": "2026-11-19T17:06:17.819Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAPAYMENTMETHOD": {
+    "attemptedAt": "2026-11-19T17:06:18.305Z",
+    "found": true,
+    "matched": 23
+  },
+  "I_CAPAYMENTMETHODTEXT": {
+    "attemptedAt": "2026-11-19T17:06:18.781Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAPAYTPRENOTIFICATIONCODE": {
+    "attemptedAt": "2026-11-19T17:06:19.275Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAPAYTPRENOTIFICATIONCODET": {
+    "attemptedAt": "2026-11-19T17:06:19.763Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAPAYTSPECIFICATIONCAT": {
+    "attemptedAt": "2026-11-19T17:06:20.307Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAPAYTSPECIFICATIONCATTEXT": {
+    "attemptedAt": "2026-11-19T17:06:20.830Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAPERIODCODE": {
+    "attemptedAt": "2026-11-19T17:06:21.304Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAPERIODCODETEXT": {
+    "attemptedAt": "2026-11-19T17:06:21.873Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAPOSTINGREASON": {
+    "attemptedAt": "2026-11-20T16:44:37.410Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAPOSTINGREASONTEXT": {
+    "attemptedAt": "2026-11-20T16:44:37.938Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAPROMISETOPAYREASON": {
+    "attemptedAt": "2026-11-20T16:44:38.438Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAPROMISETOPAYREASONTEXT": {
+    "attemptedAt": "2026-11-20T16:44:38.970Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAPROMISETOPAYWTHDRWLREASON": {
+    "attemptedAt": "2026-11-20T16:44:39.485Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_CAPROMISETOPAYWTHDRWLREASONT": {
+    "attemptedAt": "2026-11-20T16:44:39.970Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAPROVIDERCONTRACTHEADER": {
+    "attemptedAt": "2026-11-20T16:44:40.501Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_CAPROVIDERCONTRACTITEM": {
+    "attemptedAt": "2026-11-20T16:44:41.027Z",
+    "found": true,
+    "matched": 113
+  },
+  "I_CAPROVIDERCONTRACTTECHRSCE": {
+    "attemptedAt": "2026-11-20T16:44:41.525Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_CARATINGAREA": {
+    "attemptedAt": "2026-11-20T16:44:42.096Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CARATINGAREATEXT": {
+    "attemptedAt": "2026-11-20T16:44:42.595Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CARECEIVABLEADJREASONTEXT": {
+    "attemptedAt": "2026-11-20T16:44:43.138Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CARECEIVABLEADJUSTMENTREASON": {
+    "attemptedAt": "2026-11-20T16:44:43.637Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAREQUESTEDSPECIALPERIOD": {
+    "attemptedAt": "2026-11-20T16:44:44.153Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAREQUESTEDSPECIALPERIODT": {
+    "attemptedAt": "2026-11-20T16:44:44.704Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CARETURNREASON": {
+    "attemptedAt": "2026-11-20T16:44:45.230Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_CARETURNREASONTEXT": {
+    "attemptedAt": "2026-11-20T16:44:45.774Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAREVENUEACCOUNTINGREFTYPE": {
+    "attemptedAt": "2026-11-20T16:44:46.300Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAREVENUEACCOUNTINGREFTYPET": {
+    "attemptedAt": "2026-11-20T16:44:46.780Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAREVENUEDISTRSTATUS": {
+    "attemptedAt": "2026-11-20T16:44:47.274Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAREVENUEDISTRSTATUSTEXT": {
+    "attemptedAt": "2026-11-20T16:44:47.757Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAREVERSALREASON": {
+    "attemptedAt": "2026-11-20T16:44:48.260Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAREVERSALREASONTEXT": {
+    "attemptedAt": "2026-11-20T16:44:48.786Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAREVNACCTGSERVICETYPE": {
+    "attemptedAt": "2026-11-20T16:44:49.310Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAREVNACCTGSERVICETYPETEXT": {
+    "attemptedAt": "2026-11-20T16:44:49.811Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAREVNACCTGTRANSFRECDORIGIN": {
+    "attemptedAt": "2026-11-20T16:44:50.304Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAREVNACCTGTRANSFRECDORIGINT": {
+    "attemptedAt": "2026-11-20T16:44:50.795Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAROUNDINGITEMCODE": {
+    "attemptedAt": "2026-11-20T16:44:51.315Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAROUNDINGITEMCODETEXT": {
+    "attemptedAt": "2026-11-20T16:44:51.824Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASCRTYDEPDOCBPITEMSTATUS": {
+    "attemptedAt": "2026-11-20T16:44:52.361Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASCRTYDEPDOCBPITEMSTATUST": {
+    "attemptedAt": "2026-11-20T16:44:52.861Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASCRTYDEPDOCCATEGORYTEXT": {
+    "attemptedAt": "2026-11-20T16:44:53.417Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASCRTYDEPDOCUMENTCATEGORY": {
+    "attemptedAt": "2026-11-20T16:44:53.901Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASECURITYDEPOSITREQRSN": {
+    "attemptedAt": "2026-11-20T16:44:54.396Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASECURITYDEPOSITREQRSNTEXT": {
+    "attemptedAt": "2026-11-20T16:44:54.946Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASECURITYDEPOSITREVERSALRSN": {
+    "attemptedAt": "2026-11-20T16:44:55.442Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASECURITYDEPOSITRVSLRSNTEXT": {
+    "attemptedAt": "2026-11-20T16:44:55.928Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASEPAPRENOTIFORIGINCODE": {
+    "attemptedAt": "2026-11-20T16:44:56.419Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASEPAPRENOTIFORIGINCODETEXT": {
+    "attemptedAt": "2026-11-20T16:44:56.917Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASEPAPRENOTIFRQMTCODE": {
+    "attemptedAt": "2026-11-20T16:44:57.426Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASEPAPRENOTIFRQMTCODETEXT": {
+    "attemptedAt": "2026-11-20T16:44:57.916Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASRVCDISCONNCNREQSTATUS": {
+    "attemptedAt": "2026-11-20T16:44:58.423Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASRVCDISCONNCNREQSTATUSTEXT": {
+    "attemptedAt": "2026-11-20T16:44:58.923Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASRVCDISCONNECTIONREQITEM": {
+    "attemptedAt": "2026-11-20T16:44:59.452Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_CASRVCDISCONNECTIONREQUEST": {
+    "attemptedAt": "2026-11-20T16:45:00.015Z",
+    "found": true,
+    "matched": 17
+  },
+  "I_CASRVCRECONNCNREQSTATUS": {
+    "attemptedAt": "2026-11-20T16:45:00.514Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASRVCRECONNCNREQSTATUSTEXT": {
+    "attemptedAt": "2026-11-20T16:45:01.035Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASRVCRECONNECTIONREQUEST": {
+    "attemptedAt": "2026-11-21T15:56:00.750Z",
+    "found": true,
+    "matched": 16
+  },
+  "I_CASTATISTICALITEMCODE": {
+    "attemptedAt": "2026-11-21T15:56:01.207Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASTATISTICALITEMCODETEXT": {
+    "attemptedAt": "2026-11-21T15:56:01.717Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASUBAPPLICATION": {
+    "attemptedAt": "2026-11-21T15:56:02.187Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASUBAPPLICATIONTEXT": {
+    "attemptedAt": "2026-11-21T15:56:02.641Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASUBLEDGERAPPLICATION": {
+    "attemptedAt": "2026-11-21T15:56:03.174Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASUBLEDGERAPPLICATIONTEXT": {
+    "attemptedAt": "2026-11-21T15:56:03.684Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASUBSCRIPTIONCHARGETYPE": {
+    "attemptedAt": "2026-11-21T15:56:04.118Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASUBSCRIPTIONCHARGETYPETEXT": {
+    "attemptedAt": "2026-11-21T15:56:04.564Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASUBSTITUTEDOCCATEGORY": {
+    "attemptedAt": "2026-11-21T15:56:05.069Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CASUBSTITUTEDOCCATEGORYTEXT": {
+    "attemptedAt": "2026-11-21T15:56:05.547Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CASUBTRANSACTION": {
+    "attemptedAt": "2026-11-21T15:56:06.009Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_CASUBTRANSACTIONTEXT": {
+    "attemptedAt": "2026-11-21T15:56:06.493Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_CATAXDETERMINATIONCODE": {
+    "attemptedAt": "2026-11-21T15:56:06.983Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_CATAXSUPPLEMENTSTORAGELOC": {
+    "attemptedAt": "2026-11-21T15:56:07.457Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CATAXSUPPLEMENTSTORAGELOCT": {
+    "attemptedAt": "2026-11-21T15:56:07.905Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CATOLERANCEGROUP": {
+    "attemptedAt": "2026-11-21T15:56:08.358Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_CATOLERANCEGROUPTEXT": {
+    "attemptedAt": "2026-11-21T15:56:08.845Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CATRANSFERREASON": {
+    "attemptedAt": "2026-11-21T15:56:09.323Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CATRANSFERREASONTEXT": {
+    "attemptedAt": "2026-11-21T15:56:09.817Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAWITHHOLDINGTAXCAT": {
+    "attemptedAt": "2026-11-21T15:56:10.270Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAWITHHOLDINGTAXCATTEXT": {
+    "attemptedAt": "2026-11-21T15:56:10.725Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAWITHHOLDINGTAXSUPPLEMENT": {
+    "attemptedAt": "2026-11-21T15:56:11.168Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAWITHHOLDINGTAXSUPPLEMENTT": {
+    "attemptedAt": "2026-11-21T15:56:11.708Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAWORKFLOWCHECKPROCESS": {
+    "attemptedAt": "2026-11-21T15:56:12.173Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAWORKFLOWCHECKPROCESSTEXT": {
+    "attemptedAt": "2026-11-21T15:56:12.609Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAWORKFLOWCHECKREASON": {
+    "attemptedAt": "2026-11-21T15:56:13.056Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_CAWORKFLOWCHECKREASONTEXT": {
+    "attemptedAt": "2026-11-21T15:56:13.541Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAWRITEOFFDOCUMENT": {
+    "attemptedAt": "2026-11-21T15:56:13.972Z",
+    "found": true,
+    "matched": 37
+  },
+  "I_CAWRITEOFFHISTORY": {
+    "attemptedAt": "2026-11-21T15:56:14.416Z",
+    "found": true,
+    "matched": 18
+  },
+  "I_CAWRITEOFFREASON": {
+    "attemptedAt": "2026-11-21T15:56:14.880Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAWRITEOFFREASONTEXT": {
+    "attemptedAt": "2026-11-21T15:56:15.312Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CONACCTPRTNINVCGCHRGANDDISC": {
+    "attemptedAt": "2026-11-21T15:56:15.799Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_CONACCTPRTNINVCGCHRGDSCTP": {
+    "attemptedAt": "2026-11-21T15:56:15.946Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CONACCTPRTNINVCGCHRGDSCTP\" (404)"
+  },
+  "I_CONTRACCTCATSTDVH": {
+    "attemptedAt": "2026-11-21T15:56:16.639Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CONTRACCTPRTNBUSINESSLOCKTP": {
+    "attemptedAt": "2026-11-21T15:56:16.803Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CONTRACCTPRTNBUSINESSLOCKTP\" (404)"
+  },
+  "I_CONTRACCTPRTNCORRESPNCTP": {
+    "attemptedAt": "2026-11-21T15:56:17.247Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CONTRACCTPRTNCORRESPNCTP\" (404)"
+  },
+  "I_CONTRACCTPRTNRELSHPTYPE": {
+    "attemptedAt": "2026-11-21T15:56:17.959Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CONTRACCTPRTNRELSHPTYPETXT": {
+    "attemptedAt": "2026-11-21T15:56:18.437Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CONTRACCTTAXEXEMPTIONTP": {
+    "attemptedAt": "2026-11-21T15:56:18.577Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CONTRACCTTAXEXEMPTIONTP\" (404)"
+  },
+  "I_CONTRACTACCOUNTCATEGORY": {
+    "attemptedAt": "2026-11-21T15:56:19.319Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_CONTRACTACCOUNTCATEGORYTEXT": {
+    "attemptedAt": "2026-11-21T15:56:19.772Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CONTRACTACCOUNTHEADER": {
+    "attemptedAt": "2026-11-21T15:56:20.216Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_CONTRACTACCOUNTHEADERSTDVH": {
+    "attemptedAt": "2026-11-21T15:56:20.654Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CONTRACTACCOUNTPARTNER": {
+    "attemptedAt": "2026-11-21T15:56:21.103Z",
+    "found": true,
+    "matched": 99
+  },
+  "I_CONTRACTACCOUNTPARTNERTP": {
+    "attemptedAt": "2026-11-21T15:56:21.258Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CONTRACTACCOUNTPARTNERTP\" (404)"
+  },
+  "I_CONTRACTACCOUNTTP": {
+    "attemptedAt": "2026-11-21T15:56:21.661Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CONTRACTACCOUNTTP\" (404)"
+  },
+  "I_PAYMENTCONDITION": {
+    "attemptedAt": "2026-11-22T15:58:17.412Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PAYMENTCONDITIONTEXT": {
+    "attemptedAt": "2026-11-22T15:58:18.153Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PROVIDERCONTRACT": {
+    "attemptedAt": "2026-11-22T15:58:18.604Z",
+    "found": true,
+    "matched": 27
+  },
+  "I_PROVIDERCONTRACTCATEGORY": {
+    "attemptedAt": "2026-11-22T15:58:19.079Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PROVIDERCONTRACTCATEGORYTEXT": {
+    "attemptedAt": "2026-11-22T15:58:19.533Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PROVIDERCONTRACTITEM": {
+    "attemptedAt": "2026-11-22T15:58:19.973Z",
+    "found": true,
+    "matched": 116
+  },
+  "I_PROVIDERCONTRACTMIGRTNSTS": {
+    "attemptedAt": "2026-11-22T15:58:20.472Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PROVIDERCONTRACTMIGRTNSTST": {
+    "attemptedAt": "2026-11-22T15:58:20.918Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PROVIDERCONTRACTSENDER": {
+    "attemptedAt": "2026-11-22T15:58:21.361Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_PROVIDERCONTRACTSENDERCAT": {
+    "attemptedAt": "2026-11-22T15:58:21.799Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PROVIDERCONTRACTSENDERCATTXT": {
+    "attemptedAt": "2026-11-22T15:58:22.267Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PROVIDERCONTRACTSENDERTEXT": {
+    "attemptedAt": "2026-11-22T15:58:22.770Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PROVIDERCONTRACTSTATUS": {
+    "attemptedAt": "2026-11-22T15:58:23.207Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PROVIDERCONTRACTSTATUSTEXT": {
+    "attemptedAt": "2026-11-22T15:58:23.688Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PROVIDERCONTRACTTYPE": {
+    "attemptedAt": "2026-11-22T15:58:24.157Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PROVIDERCONTRACTTYPETEXT": {
+    "attemptedAt": "2026-11-22T15:58:24.603Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_PRVDRCONTRITEMCHGREASON": {
+    "attemptedAt": "2026-11-22T15:58:25.069Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_PRVDRCONTRITEMCHGREASONTXT": {
+    "attemptedAt": "2026-11-22T15:58:25.515Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_SALESBILLINGPROVIDERCONTRACT": {
+    "attemptedAt": "2026-11-22T15:58:25.968Z",
+    "found": true,
+    "matched": 20
+  },
+  "I_SLSBILLGPROVIDERCONTRACTITEM": {
+    "attemptedAt": "2026-11-22T15:58:26.403Z",
+    "found": true,
+    "matched": 40
+  },
+  "C_CABILLGREQWRKFLWEMLTMPL": {
+    "attemptedAt": "2026-11-22T15:58:26.877Z",
+    "found": true,
+    "matched": 8
+  },
+  "C_CABILLPRNTINVCGHDRCORRESPNC": {
+    "attemptedAt": "2026-11-22T15:58:27.324Z",
+    "found": true,
+    "matched": 64
+  },
+  "D_CABILLGDOCCREATEDSOURCETRANS": {
+    "attemptedAt": "2026-11-22T15:58:27.494Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CABILLGDOCCREATEDSOURCETRANS\" (404)"
+  },
+  "D_CABILLGPLNCREATED": {
+    "attemptedAt": "2026-11-22T15:58:27.887Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CABILLGPLNCREATED\" (404)"
+  },
+  "D_CAINVCGDOCCREATEDSOURCEDOC": {
+    "attemptedAt": "2026-11-22T15:58:28.293Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CAINVCGDOCCREATEDSOURCEDOC\" (404)"
+  },
+  "D_CONTRACCTGBLGDOCUMENTCREATED": {
+    "attemptedAt": "2026-11-22T15:58:28.682Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACCTGBLGDOCUMENTCREATED\" (404)"
+  },
+  "D_CONTRACCTGINVCGDOCCREATED": {
+    "attemptedAt": "2026-11-22T15:58:29.113Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"D_CONTRACCTGINVCGDOCCREATED\" (404)"
+  },
+  "FCIHOME_MA_ANALYTIC_V11": {
+    "attemptedAt": "2026-11-22T15:58:29.526Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"FCIHOME_MA_ANALYTIC_V11\" (404)"
+  },
+  "I_CABILLGCYCLE": {
+    "attemptedAt": "2026-11-22T15:58:30.248Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CABILLGCYCLETEXT": {
+    "attemptedAt": "2026-11-22T15:58:30.707Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGDOCHEADER": {
+    "attemptedAt": "2026-11-22T15:58:31.157Z",
+    "found": true,
+    "matched": 54
+  },
+  "I_CABILLGDOCINVCGSTATUS": {
+    "attemptedAt": "2026-11-22T15:58:31.595Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CABILLGDOCINVCGSTATUSTEXT": {
+    "attemptedAt": "2026-11-22T15:58:32.062Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CABILLGDOCITEM": {
+    "attemptedAt": "2026-11-22T15:58:32.539Z",
+    "found": true,
+    "matched": 99
+  },
+  "I_CABILLGDOCITEMCRTNMETHOD": {
+    "attemptedAt": "2026-11-22T15:58:32.989Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGDOCITEMCRTNMETHODTEXT": {
+    "attemptedAt": "2026-11-22T15:58:33.453Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGDOCITEMTP": {
+    "attemptedAt": "2026-11-22T15:58:33.597Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CABILLGDOCITEMTP\" (404)"
+  },
+  "I_CABILLGDOCORIGINPROCESS": {
+    "attemptedAt": "2026-11-22T15:58:34.328Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGDOCORIGINPROCESSTEXT": {
+    "attemptedAt": "2026-11-22T15:58:34.811Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGDOCPAYMENT": {
+    "attemptedAt": "2026-11-22T15:58:35.298Z",
+    "found": true,
+    "matched": 15
+  },
+  "I_CABILLGDOCREFERENCE": {
+    "attemptedAt": "2026-11-22T15:58:35.780Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_CABILLGDOCREVERSALREASON": {
+    "attemptedAt": "2026-11-22T15:58:36.212Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGDOCREVERSALREASONTEXT": {
+    "attemptedAt": "2026-11-22T15:58:36.654Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGDOCSOURCE": {
+    "attemptedAt": "2026-11-22T15:58:37.087Z",
+    "found": true,
+    "matched": 24
+  },
+  "I_CABILLGDOCTAX": {
+    "attemptedAt": "2026-11-22T15:58:37.525Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_CABILLGDOCUMENTITEMTYPE": {
+    "attemptedAt": "2026-11-22T15:58:37.957Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGDOCUMENTITEMTYPETEXT": {
+    "attemptedAt": "2026-11-22T15:58:38.400Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGDOCUMENTTP": {
+    "attemptedAt": "2026-11-23T19:54:06.245Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CABILLGDOCUMENTTP\" (404)"
+  },
+  "I_CABILLGLOCKEDFORINVCG": {
+    "attemptedAt": "2026-11-23T19:54:06.993Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGLOCKEDFORINVCGTEXT": {
+    "attemptedAt": "2026-11-23T19:54:07.437Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGPLN": {
+    "attemptedAt": "2026-11-23T19:54:07.925Z",
+    "found": true,
+    "matched": 31
+  },
+  "I_CABILLGPLNCATEGORY": {
+    "attemptedAt": "2026-11-23T19:54:08.398Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CABILLGPLNCATEGORYTEXT": {
+    "attemptedAt": "2026-11-23T19:54:08.844Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGPLNCREATIONMODE": {
+    "attemptedAt": "2026-11-23T19:54:09.285Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGPLNCREATIONMODETEXT": {
+    "attemptedAt": "2026-11-23T19:54:09.762Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGPLNITEM": {
+    "attemptedAt": "2026-11-23T19:54:10.233Z",
+    "found": true,
+    "matched": 67
+  },
+  "I_CABILLGPLNITEMTP_2": {
+    "attemptedAt": "2026-11-23T19:54:10.391Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CABILLGPLNITEMTP_2\" (404)"
+  },
+  "I_CABILLGPLNITMAMTDATETYPE": {
+    "attemptedAt": "2026-11-23T19:54:11.068Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGPLNITMAMTDATETYPETEXT": {
+    "attemptedAt": "2026-11-23T19:54:11.587Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGPLNITMAMTDETNTYPE": {
+    "attemptedAt": "2026-11-23T19:54:12.052Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGPLNITMAMTDETNTYPETEXT": {
+    "attemptedAt": "2026-11-23T19:54:12.543Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGPLNITMCAT": {
+    "attemptedAt": "2026-11-23T19:54:13.016Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGPLNITMCATTEXT": {
+    "attemptedAt": "2026-11-23T19:54:13.444Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGPLNITMEXCPTNREASON": {
+    "attemptedAt": "2026-11-23T19:54:13.938Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGPLNITMEXCPTNRSNTEXT": {
+    "attemptedAt": "2026-11-23T19:54:14.398Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGPLNITMPRCDATETYPE": {
+    "attemptedAt": "2026-11-23T19:54:14.868Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGPLNITMPRCDATETYPETEXT": {
+    "attemptedAt": "2026-11-23T19:54:15.333Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGPLNITMSTATUS": {
+    "attemptedAt": "2026-11-23T19:54:15.765Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGPLNITMSTATUSTEXT": {
+    "attemptedAt": "2026-11-23T19:54:16.196Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGPLNITMTYPE": {
+    "attemptedAt": "2026-11-23T19:54:16.677Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CABILLGPLNITMTYPETEXT": {
+    "attemptedAt": "2026-11-23T19:54:17.126Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGPLNSTATUS": {
+    "attemptedAt": "2026-11-23T19:54:17.615Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGPLNSTATUSTEXT": {
+    "attemptedAt": "2026-11-23T19:54:18.070Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGPLNTP_2": {
+    "attemptedAt": "2026-11-23T19:54:18.215Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CABILLGPLNTP_2\" (404)"
+  },
+  "I_CABILLGPLNTYPE": {
+    "attemptedAt": "2026-11-23T19:54:18.916Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGPLNTYPETEXT": {
+    "attemptedAt": "2026-11-23T19:54:19.388Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGPROCESS": {
+    "attemptedAt": "2026-11-23T19:54:19.853Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGPROCESSTEXT": {
+    "attemptedAt": "2026-11-23T19:54:20.305Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGREQCATEGORY": {
+    "attemptedAt": "2026-11-23T19:54:20.749Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGREQCATEGORYTEXT": {
+    "attemptedAt": "2026-11-23T19:54:21.241Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGREQREASON": {
+    "attemptedAt": "2026-11-23T19:54:21.671Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CABILLGREQREASONTEXT": {
+    "attemptedAt": "2026-11-23T19:54:22.178Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGREQSTATUS": {
+    "attemptedAt": "2026-11-23T19:54:22.642Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGREQSTATUSTEXT": {
+    "attemptedAt": "2026-11-23T19:54:23.079Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGREQTYPE": {
+    "attemptedAt": "2026-11-23T19:54:23.501Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGREQTYPETEXT": {
+    "attemptedAt": "2026-11-23T19:54:23.996Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGREQUEST": {
+    "attemptedAt": "2026-11-23T19:54:24.471Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_CABILLGREQUESTITEM": {
+    "attemptedAt": "2026-11-23T19:54:24.918Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_CABILLGSUBPROCESS": {
+    "attemptedAt": "2026-11-23T19:54:25.358Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGSUBPROCESSTEXT": {
+    "attemptedAt": "2026-11-23T19:54:25.826Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABILLGTYPE": {
+    "attemptedAt": "2026-11-23T19:54:26.293Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABILLGTYPETEXT": {
+    "attemptedAt": "2026-11-23T19:54:26.754Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABLLBLEITMCLASS": {
+    "attemptedAt": "2026-11-23T19:54:27.208Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABLLBLEITMCLASSTEXT": {
+    "attemptedAt": "2026-11-23T19:54:27.681Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABLLBLEITMCOSTSUBTYPE": {
+    "attemptedAt": "2026-11-24T19:22:42.162Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CABLLBLEITMCOSTSUBTYPETEXT": {
+    "attemptedAt": "2026-11-24T19:22:42.722Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CABLLBLEITMCOSTTYPE": {
+    "attemptedAt": "2026-11-24T19:22:43.245Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CABLLBLEITMCOSTTYPETEXT": {
+    "attemptedAt": "2026-11-24T19:22:43.762Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABLLBLEITMDISCOUNTKEY": {
+    "attemptedAt": "2026-11-24T19:22:44.286Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CABLLBLEITMDISCOUNTKEYTEXT": {
+    "attemptedAt": "2026-11-24T19:22:44.818Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CABLLBLEITMMAINBILLABLE": {
+    "attemptedAt": "2026-11-24T19:22:45.308Z",
+    "found": true,
+    "matched": 145
+  },
+  "I_CABLLBLEITMMAINBILLED": {
+    "attemptedAt": "2026-11-24T19:22:45.834Z",
+    "found": true,
+    "matched": 153
+  },
+  "I_CABLLBLEITMMAINBLLBLEEXCPTD": {
+    "attemptedAt": "2026-11-24T19:22:46.337Z",
+    "found": true,
+    "matched": 149
+  },
+  "I_CABLLBLEITMMAINRAW": {
+    "attemptedAt": "2026-11-24T19:22:46.829Z",
+    "found": true,
+    "matched": 151
+  },
+  "I_CABLLBLEITMMAINRAWEXCPTD": {
+    "attemptedAt": "2026-11-24T19:22:47.361Z",
+    "found": true,
+    "matched": 154
+  },
+  "I_CABLLBLEITMSRCETRANSTYPE": {
+    "attemptedAt": "2026-11-24T19:22:47.902Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CABLLBLEITMSRCETRANSTYPETEXT": {
+    "attemptedAt": "2026-11-24T19:22:48.416Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CADEPENDENTITEMTYPE": {
+    "attemptedAt": "2026-11-24T19:22:48.983Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CADEPENDENTITEMTYPETEXT": {
+    "attemptedAt": "2026-11-24T19:22:49.491Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINTCOPROCEDURE": {
+    "attemptedAt": "2026-11-24T19:22:49.980Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINTCOPROCEDURETEXT": {
+    "attemptedAt": "2026-11-24T19:22:50.504Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINTCOSUBTYPE": {
+    "attemptedAt": "2026-11-24T19:22:51.010Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAINTCOSUBTYPETEXT": {
+    "attemptedAt": "2026-11-24T19:22:51.544Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAINTCOTYPE": {
+    "attemptedAt": "2026-11-24T19:22:52.055Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINTCOTYPETEXT": {
+    "attemptedAt": "2026-11-24T19:22:52.584Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGACCRUALPOSTINGTYPE": {
+    "attemptedAt": "2026-11-24T19:22:53.068Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGACCRUALPOSTINGTYPETXT": {
+    "attemptedAt": "2026-11-24T19:22:53.630Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGBOLLOTAXPOSTSTATTEXT": {
+    "attemptedAt": "2026-11-24T19:22:54.161Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGBOLLOTAXPOSTSTATUS": {
+    "attemptedAt": "2026-11-24T19:22:54.701Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGCATEGORY": {
+    "attemptedAt": "2026-11-24T19:22:55.219Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGCATEGORYTEXT": {
+    "attemptedAt": "2026-11-24T19:22:55.883Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGCHRGANDDISCKEY": {
+    "attemptedAt": "2026-11-24T19:22:56.371Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGCHRGANDDISCKEYTEXT": {
+    "attemptedAt": "2026-11-24T19:22:56.897Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAINVCGCONTROLOFINVCGUNIT": {
+    "attemptedAt": "2026-11-24T19:22:57.429Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGCONTROLOFINVCGUNITTXT": {
+    "attemptedAt": "2026-11-24T19:22:57.917Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGCORRECTIONCAT": {
+    "attemptedAt": "2026-11-24T19:22:58.441Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGCORRECTIONCATTEXT": {
+    "attemptedAt": "2026-11-24T19:22:58.953Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGDOCCHARGEANDDISCOUNT": {
+    "attemptedAt": "2026-11-24T19:22:59.439Z",
+    "found": true,
+    "matched": 12
+  },
+  "I_CAINVCGDOCCHRGANDDISCHISTORY": {
+    "attemptedAt": "2026-11-24T19:23:00.001Z",
+    "found": true,
+    "matched": 11
+  },
+  "I_CAINVCGDOCCREATIONMODE": {
+    "attemptedAt": "2026-11-24T19:23:00.549Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGDOCCREATIONMODETEXT": {
+    "attemptedAt": "2026-11-24T19:23:01.086Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGDOCHEADER": {
+    "attemptedAt": "2026-11-24T19:23:01.575Z",
+    "found": true,
+    "matched": 68
+  },
+  "I_CAINVCGDOCITEM": {
+    "attemptedAt": "2026-11-24T19:23:02.090Z",
+    "found": true,
+    "matched": 90
+  },
+  "I_CAINVCGDOCITEMTP": {
+    "attemptedAt": "2026-11-24T19:23:02.290Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CAINVCGDOCITEMTP\" (404)"
+  },
+  "I_CAINVCGDOCITEMTYPE": {
+    "attemptedAt": "2026-11-24T19:23:03.062Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGDOCITEMTYPETEXT": {
+    "attemptedAt": "2026-11-24T19:23:03.586Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGDOCITMCRTNMETHOD": {
+    "attemptedAt": "2026-11-24T19:23:04.152Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGDOCITMCRTNMETHODTEXT": {
+    "attemptedAt": "2026-11-24T19:23:04.675Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGDOCITMSRCEITMCAT": {
+    "attemptedAt": "2026-11-24T19:23:05.174Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGDOCITMSRCEITMCATTEXT": {
+    "attemptedAt": "2026-11-24T19:23:05.697Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGDOCOFFSETTING": {
+    "attemptedAt": "2026-11-24T19:23:06.219Z",
+    "found": true,
+    "matched": 16
+  },
+  "I_CAINVCGDOCPOSTING": {
+    "attemptedAt": "2026-11-25T18:27:52.447Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_CAINVCGDOCRELATION": {
+    "attemptedAt": "2026-11-25T18:27:52.984Z",
+    "found": true,
+    "matched": 8
+  },
+  "I_CAINVCGDOCREVERSALREASON": {
+    "attemptedAt": "2026-11-25T18:27:53.488Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGDOCREVERSALREASONTEXT": {
+    "attemptedAt": "2026-11-25T18:27:54.020Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGDOCSOURCE": {
+    "attemptedAt": "2026-11-25T18:27:54.552Z",
+    "found": true,
+    "matched": 13
+  },
+  "I_CAINVCGDOCTECHDOCTYPE": {
+    "attemptedAt": "2026-11-25T18:27:55.062Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGDOCTECHDOCTYPETEXT": {
+    "attemptedAt": "2026-11-25T18:27:55.590Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGDOCUMENTTP": {
+    "attemptedAt": "2026-11-25T18:27:55.821Z",
+    "found": false,
+    "reason": "Hub catalog fetch failed for \"I_CAINVCGDOCUMENTTP\" (404)"
+  },
+  "I_CAINVCGFUNCTION": {
+    "attemptedAt": "2026-11-25T18:27:56.576Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGFUNCTIONTEXT": {
+    "attemptedAt": "2026-11-25T18:27:57.068Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGOFFSETTINGACTION": {
+    "attemptedAt": "2026-11-25T18:27:57.610Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGOFFSETTINGACTIONTEXT": {
+    "attemptedAt": "2026-11-25T18:27:58.146Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGOFFSETTINGCATEGORY": {
+    "attemptedAt": "2026-11-25T18:27:58.675Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAINVCGOFFSETTINGCATEGORYTXT": {
+    "attemptedAt": "2026-11-25T18:27:59.179Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGOFFSETTINGPROCEDTXT": {
+    "attemptedAt": "2026-11-25T18:27:59.712Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGOFFSETTINGPROCEDURE": {
+    "attemptedAt": "2026-11-25T18:28:00.236Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGPRELIMINARYCATEGORY": {
+    "attemptedAt": "2026-11-25T18:28:00.734Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGPRELIMINARYCATEGORYT": {
+    "attemptedAt": "2026-11-25T18:28:01.268Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGPROCESS": {
+    "attemptedAt": "2026-11-25T18:28:01.798Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAINVCGPROCESSTEXT": {
+    "attemptedAt": "2026-11-25T18:28:02.290Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAINVCGREFPOSTGDOCTYP": {
+    "attemptedAt": "2026-11-25T18:28:02.827Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGREFPOSTGDOCTYPTXT": {
+    "attemptedAt": "2026-11-25T18:28:03.315Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGSCHEDULE": {
+    "attemptedAt": "2026-11-25T18:28:03.906Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAINVCGSCHEDULETEXT": {
+    "attemptedAt": "2026-11-25T18:28:04.400Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGSOURCEDOCCAT": {
+    "attemptedAt": "2026-11-25T18:28:04.939Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAINVCGSOURCEDOCCATTEXT": {
+    "attemptedAt": "2026-11-25T18:28:05.441Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAINVCGSOURCEDOCTYPE": {
+    "attemptedAt": "2026-11-25T18:28:05.973Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAINVCGSOURCEDOCTYPETEXT": {
+    "attemptedAt": "2026-11-25T18:28:06.515Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAINVCGTYPE": {
+    "attemptedAt": "2026-11-25T18:28:07.042Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAINVCGTYPEPROCTEXT": {
+    "attemptedAt": "2026-11-25T18:28:07.561Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_CAINVCGTYPETEXT": {
+    "attemptedAt": "2026-11-25T18:28:08.177Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CAISREVNACCTGRELEVANT": {
+    "attemptedAt": "2026-11-25T18:28:08.688Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CAISREVNACCTGRELEVANTTEXT": {
+    "attemptedAt": "2026-11-25T18:28:09.311Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAPARTNERSETTLEMENTRULE": {
+    "attemptedAt": "2026-11-25T18:28:09.826Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAPARTNERSETTLEMENTRULET": {
+    "attemptedAt": "2026-11-25T18:28:10.334Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CAPRELIMINARYINVCGDOCSTATUS": {
+    "attemptedAt": "2026-11-25T18:28:10.872Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CAPRELIMINARYINVCGDOCSTATUST": {
+    "attemptedAt": "2026-11-25T18:28:11.402Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_CATAXDATETYPE": {
+    "attemptedAt": "2026-11-25T18:28:11.925Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CATAXDATETYPETEXT": {
+    "attemptedAt": "2026-11-25T18:28:12.471Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_CATAXDETNTYPE": {
+    "attemptedAt": "2026-11-25T18:28:13.019Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_CATAXDETNTYPETEXT": {
+    "attemptedAt": "2026-11-25T18:28:13.557Z",
+    "found": true,
+    "matched": 3
+  },
+  "C_ASSETBALANCE": {
+    "attemptedAt": "2026-11-25T18:28:14.085Z",
+    "found": true,
+    "matched": 102
+  },
+  "C_ASSETHISTORYSHEET": {
+    "attemptedAt": "2026-11-25T18:28:14.663Z",
+    "found": true,
+    "matched": 105
+  },
+  "I_ASSETACCTDETERMINATION": {
+    "attemptedAt": "2026-11-25T18:28:15.187Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ASSETACCTDETERMINATIONTEXT": {
+    "attemptedAt": "2026-11-25T18:28:15.708Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ASSETBALANCECUBE": {
+    "attemptedAt": "2026-11-25T18:28:16.244Z",
+    "found": true,
+    "matched": 143
+  },
+  "I_ASSETCLASS": {
+    "attemptedAt": "2026-11-25T18:28:16.813Z",
+    "found": true,
+    "matched": 18
+  },
+  "I_ASSETCLASSTEXT": {
+    "attemptedAt": "2026-11-26T18:10:12.188Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_ASSETEVALUATIONKEYTEXT": {
+    "attemptedAt": "2026-11-26T18:10:12.642Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_ASSETHISTORYSHEETCUBE": {
+    "attemptedAt": "2026-11-26T18:10:13.156Z",
+    "found": true,
+    "matched": 131
+  },
+  "I_ASSETREDESIGNSWITCHSTATUS": {
+    "attemptedAt": "2026-11-26T18:10:13.654Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_ASSETTRANSACTIONTYPE": {
+    "attemptedAt": "2026-11-26T18:10:14.175Z",
+    "found": true,
+    "matched": 5
+  },
+  "I_ASSETTRANSACTIONTYPETEXT": {
+    "attemptedAt": "2026-11-26T18:10:14.617Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_ASSETVALUATIONFORLEDGER": {
+    "attemptedAt": "2026-11-26T18:10:15.045Z",
+    "found": true,
+    "matched": 33
+  },
+  "I_ASSETVALUATIONSCRAPAMOUNT": {
+    "attemptedAt": "2026-11-26T18:10:15.527Z",
+    "found": true,
+    "matched": 28
+  },
+  "I_CHARTOFDEPRECIATION": {
+    "attemptedAt": "2026-11-26T18:10:15.992Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_CHARTOFDEPRECIATIONTEXT": {
+    "attemptedAt": "2026-11-26T18:10:16.481Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_COMPANYCODEASSET": {
+    "attemptedAt": "2026-11-26T18:10:16.941Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_DEPRAREAFORLEDGERTEXT": {
+    "attemptedAt": "2026-11-26T18:10:17.400Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_DEPRECIATIONAREA": {
+    "attemptedAt": "2026-11-26T18:10:17.830Z",
+    "found": true,
+    "matched": 21
+  },
+  "I_DEPRECIATIONAREAFORLEDGER": {
+    "attemptedAt": "2026-11-26T18:10:18.288Z",
+    "found": true,
+    "matched": 26
+  },
+  "I_DEPRECIATIONKEY": {
+    "attemptedAt": "2026-11-26T18:10:18.765Z",
+    "found": true,
+    "matched": 2
+  },
+  "I_DEPRECIATIONKEYTEXT": {
+    "attemptedAt": "2026-11-26T18:10:19.237Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_FIXEDASSET": {
+    "attemptedAt": "2026-11-26T18:10:19.731Z",
+    "found": true,
+    "matched": 109
+  },
+  "I_FIXEDASSETASSGMT": {
+    "attemptedAt": "2026-11-26T18:10:20.215Z",
+    "found": true,
+    "matched": 38
+  },
+  "I_FIXEDASSETCOUNTRYDATA": {
+    "attemptedAt": "2026-11-26T18:10:20.683Z",
+    "found": true,
+    "matched": 49
+  },
+  "I_FIXEDASSETFORLEDGER": {
+    "attemptedAt": "2026-11-26T18:10:21.154Z",
+    "found": true,
+    "matched": 10
+  },
+  "I_FIXEDASSETGROUP": {
+    "attemptedAt": "2026-11-26T18:10:21.623Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_FIXEDASSETGROUPTEXT": {
+    "attemptedAt": "2026-11-26T18:10:22.097Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_FIXEDASSETSTDVH": {
+    "attemptedAt": "2026-11-26T18:10:22.555Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_GROUP1ASSETEVALUATIONKEY": {
+    "attemptedAt": "2026-11-26T18:10:23.016Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_GROUP1ASSETEVALUATIONKEYTEXT": {
+    "attemptedAt": "2026-11-26T18:10:23.479Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_GROUP2ASSETEVALUATIONKEY": {
+    "attemptedAt": "2026-11-26T18:10:23.919Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_GROUP2ASSETEVALUATIONKEYTEXT": {
+    "attemptedAt": "2026-11-26T18:10:24.366Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_GROUP3ASSETEVALUATIONKEY": {
+    "attemptedAt": "2026-11-26T18:10:25.030Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_GROUP3ASSETEVALUATIONKEYTEXT": {
+    "attemptedAt": "2026-11-26T18:10:25.531Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_GROUP4ASSETEVALUATIONKEY": {
+    "attemptedAt": "2026-11-26T18:10:26.005Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_GROUP4ASSETEVALUATIONKEYTEXT": {
+    "attemptedAt": "2026-11-26T18:10:26.463Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_GROUP5ASSETEVALUATIONKEY": {
+    "attemptedAt": "2026-11-26T18:10:26.949Z",
+    "found": true,
+    "matched": 1
+  },
+  "I_GROUP5ASSETEVALUATIONKEYTEXT": {
+    "attemptedAt": "2026-11-26T18:10:27.397Z",
+    "found": true,
+    "matched": 3
+  },
+  "I_MASTERFIXEDASSET": {
+    "attemptedAt": "2026-11-26T18:10:27.881Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_USERSETTINGSFORDEPRAREA": {
+    "attemptedAt": "2026-11-26T18:10:28.389Z",
+    "found": true,
+    "matched": 2
+  },
+  "C_RECRRGSUPLRINVCTMPL": {
+    "attemptedAt": "2026-11-26T18:10:28.878Z",
+    "found": true,
+    "matched": 80
+  },
+  "C_RECRRGSUPLRINVCTMPLINSTCE": {
+    "attemptedAt": "2026-11-26T18:10:29.373Z",
+    "found": true,
+    "matched": 12
+  },
+  "C_RECRRGSUPLRINVCTMPLITEM": {
+    "attemptedAt": "2026-11-26T18:10:29.812Z",
+    "found": true,
+    "matched": 44
+  },
+  "C_RECRRGSUPLRINVCTMPLWHGDTAX": {
+    "attemptedAt": "2026-11-26T18:10:30.243Z",
+    "found": true,
+    "matched": 7
+  },
+  "I_APCHECKBOOK": {
+    "attemptedAt": "2026-11-26T18:10:30.739Z",
+    "found": true,
+    "matched": 20
+  },
+  "I_OUTGOINGCHECK": {
+    "attemptedAt": "2026-11-26T18:10:31.166Z",
+    "found": true,
+    "matched": 44
+  },
+  "C_FINCUSTOMERINVOICEEDP": {
+    "attemptedAt": "2026-11-26T18:10:31.631Z",
+    "found": true,
+    "matched": 9
+  },
+  "C_FININVOICEHEADERFDP": {
+    "attemptedAt": "2026-11-26T18:10:32.112Z",
+    "found": true,
+    "matched": 43
+  },
+  "C_FININVOICEITEMFDP": {
+    "attemptedAt": "2026-11-26T18:10:32.583Z",
+    "found": true,
+    "matched": 90
+  },
+  "I_BANKSTATEMENT": {
+    "attemptedAt": "2026-11-26T18:10:33.070Z",
+    "found": true,
+    "matched": 21
+  },
+  "I_BANKSTATEMENTITEM": {
+    "attemptedAt": "2026-11-26T18:10:33.621Z",
+    "found": true,
+    "matched": 43
+  },
+  "I_BANKSTATEMENTITEMDETAIL": {
+    "attemptedAt": "2026-11-26T18:10:34.067Z",
+    "found": true,
+    "matched": 20
+  },
+  "I_FINSEPAMANDATE": {
+    "attemptedAt": "2026-11-27T17:53:04.756Z",
+    "found": true,
+    "matched": 104
+  },
+  "I_MANAGESEPASENDERTYPETEXT": {
+    "attemptedAt": "2026-11-27T17:53:05.311Z",
+    "found": true,
+    "matched": 3
+  },
+  "C_BALANCESHEETCURRENCYROLEVH": {
+    "attemptedAt": "2026-11-27T17:53:05.814Z",
+    "found": true,
+    "matched": 8
+  },
+  "C_COSTCENTERPLANACTQ2001": {
+    "attemptedAt": "2026-11-27T17:53:06.341Z",
+    "found": true,
+    "matched": 69
+  },
+  "C_COSTCENTERQ2001": {
+    "attemptedAt": "2026-11-27T17:53:06.897Z",
+    "found": true,
+    "matched": 48
+  },
+  "C_COSTCENTERSEMANTICTAG": {
+    "attemptedAt": "2026-11-27T17:53:07.397Z",
+    "found": true,
+    "matched": 58
+  },
+  "C_COSTCENTERSTATKEYFIGSEMTAG": {
+    "attemptedAt": "2026-11-27T17:53:07.918Z",
+    "found": true,
+    "matched": 37
+  },
+  "C_FINSTMNTCOMPARISONQUERY": {
+    "attemptedAt": "2026-11-27T17:53:08.423Z",
+    "found": true,
+    "matched": 26
+  },
+  "C_FUNCTIONALAREAPLANACTQ2801": {
+    "attemptedAt": "2026-11-27T17:53:08.973Z",
+    "found": true,
+    "matched": 72
+  },
+  "C_FUNCTIONALAREASQ2801": {
+    "attemptedAt": "2026-11-27T17:53:09.509Z",
+    "found": true,
+    "matched": 61
+  },
+  "C_GLACCOUNTFLOW": {
+    "attemptedAt": "2026-11-27T17:53:10.066Z",
+    "found": true,
+    "matched": 247
+  },
+  "C_GLACCOUNTFLOWKPI": {
+    "attemptedAt": "2026-11-27T17:53:10.613Z",
+    "found": true,
+    "matched": 92
+  },
+  "C_GLACCOUNTLINEITEMQUERY": {
+    "attemptedAt": "2026-11-27T17:53:11.109Z",
+    "found": true,
+    "matched": 153
+  },
+  "C_GLACCOUNTYTDBALANCEQ": {
+    "attemptedAt": "2026-11-27T17:53:11.640Z",
+    "found": true,
+    "matched": 86
+  },
+  "C_GLACCTFLOWBYDATEFUNCKPIQ": {
+    "attemptedAt": "2026-11-27T17:53:12.149Z",
+    "found": true,
+    "matched": 85
+  },
+  "C_GLLINEITEMSQ0001": {
+    "attemptedAt": "2026-11-27T17:53:12.647Z",
+    "found": true,
+    "matched": 246
+  },
+  "C_INTERNALORDERPLANACTQ2101": {
+    "attemptedAt": "2026-11-27T17:53:13.191Z",
+    "found": true,
+    "matched": 57
+  },
+  "C_JOURNALENTRYITEMBROWSER": {
+    "attemptedAt": "2026-11-27T17:53:13.752Z",
+    "found": true,
+    "matched": 379
+  },
+  "C_MARKETSEGMENTPLANACTQ2501": {
+    "attemptedAt": "2026-11-27T17:53:14.297Z",
+    "found": true,
+    "matched": 83
+  },
+  "C_MARKETSEGMENTQ2501": {
+    "attemptedAt": "2026-11-27T17:53:14.827Z",
+    "found": true,
+    "matched": 75
+  },
+  "C_PNLPLNACTLCMTMTJRNLENTRITMQ": {
+    "attemptedAt": "2026-11-27T17:53:15.441Z",
+    "found": true,
+    "matched": 34
+  },
+  "C_PROFITANDLOSSPLANACTQ2903": {
+    "attemptedAt": "2026-11-27T17:53:16.011Z",
+    "found": true,
+    "matched": 69
+  },
+  "C_PROFITANDLOSSQ2901": {
+    "attemptedAt": "2026-11-27T17:53:16.512Z",
+    "found": true,
+    "matched": 68
+  },
+  "C_PROFITCENTERPLANACTQ2701": {
+    "attemptedAt": "2026-11-27T17:53:17.054Z",
+    "found": true,
+    "matched": 74
+  },
+  "C_PROFITCENTERQ2701": {
+    "attemptedAt": "2026-11-27T17:53:17.584Z",
+    "found": true,
+    "matched": 63
+  },
+  "C_PROFITCENTERSEMANTICTAG": {
+    "attemptedAt": "2026-11-27T17:53:18.124Z",
+    "found": true,
+    "matched": 65
+  },
+  "C_PROFITCENTERSTATKEYFIGSEMTAG": {
+    "attemptedAt": "2026-11-27T17:53:18.659Z",
+    "found": true,
+    "matched": 43
+  },
+  "C_PROJECTPLANACTQ2201": {
+    "attemptedAt": "2026-11-27T17:53:19.164Z",
+    "found": true,
+    "matched": 74
+  },
+  "C_PROJECTPLANACTQ2203": {
+    "attemptedAt": "2026-11-27T17:53:19.714Z",
+    "found": true,
+    "matched": 53
+  },
+  "C_PROJECTQ2201": {
+    "attemptedAt": "2026-11-27T17:53:20.263Z",
+    "found": true,
+    "matched": 64
+  },
+  "C_SALESORDERQ2301": {
+    "attemptedAt": "2026-11-27T17:53:20.809Z",
+    "found": true,
+    "matched": 53
+  },
+  "C_SERVICEORDERQRY2401": {
+    "attemptedAt": "2026-11-27T17:53:21.343Z",
+    "found": true,
+    "matched": 55
+  },
+  "C_TRIALBALANCEQ0001": {
+    "attemptedAt": "2026-11-27T17:53:21.879Z",
+    "found": true,
+    "matched": 300
+  },
+  "C_TRIALBALANCEQ0002": {
+    "attemptedAt": "2026-11-27T17:53:22.417Z",
+    "found": true,
+    "matched": 416
+  },
+  "I_JOURNALENTRYANALYZERCUBE": {
+    "attemptedAt": "2026-11-27T17:53:22.920Z",
+    "found": true,
+    "matched": 205
+  },
+  "C_CASHFLOWINDIRECTIFRS": {
+    "attemptedAt": "2026-11-27T17:53:23.454Z",
+    "found": true,
+    "matched": 59
+  },
+  "C_CSHFLWINDRCTBSDONACCTTYPE": {
+    "attemptedAt": "2026-11-27T17:53:23.984Z",
+    "found": true,
+    "matched": 59
+  },
+  "C_FINANCIALSTATEMENTKPI": {
+    "attemptedAt": "2026-11-27T17:53:24.539Z",
+    "found": true,
+    "matched": 308
+  },
+  "C_GLACCOUNTLINEITEMSEMTAG": {
+    "attemptedAt": "2026-11-27T17:53:25.075Z",
+    "found": true,
+    "matched": 116
+  },
+  "I_ACTLPLNLINEITEMSEMTAGGLACCT": {
+    "attemptedAt": "2026-11-27T17:53:25.597Z",
+    "found": true,
+    "matched": 331
+  },
+  "I_ACTUALPLANLINEITEMSEMTAG": {
+    "attemptedAt": "2026-11-27T17:53:26.197Z",
+    "found": true,
+    "matched": 429
+  },
+  "I_GLACCOUNTHIERNODEBYSEMTAG": {
+    "attemptedAt": "2026-11-27T17:53:26.743Z",
+    "found": true,
+    "matched": 4
+  },
+  "I_GLACCOUNTLINEITEMSEMTAG": {
+    "attemptedAt": "2026-11-27T17:53:27.307Z",
+    "found": true,
+    "matched": 412
+  },
+  "I_GLACCTLINEITEMSEMTAGGLACCT": {
+    "attemptedAt": "2026-11-27T17:53:27.894Z",
+    "found": true,
+    "matched": 323
+  },
+  "I_HIERRTMERPRSTNADDLATTRIB": {
+    "attemptedAt": "2026-11-27T17:53:28.408Z",
+    "found": true,
+    "matched": 6
+  },
+  "I_HIERRTMERPRSTNNDEADDLATTRIB": {
+    "attemptedAt": "2026-11-27T17:53:29.021Z",
+    "found": true,
+    "matched": 9
+  },
+  "I_HIERRUNTIMEREPRESENTATION": {
+    "attemptedAt": "2026-11-27T17:53:29.642Z",
+    "found": true,
+    "matched": 33
   }
 }

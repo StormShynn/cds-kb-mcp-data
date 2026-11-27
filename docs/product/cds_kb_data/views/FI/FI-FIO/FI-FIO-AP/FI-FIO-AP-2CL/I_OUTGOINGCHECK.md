@@ -37,50 +37,50 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `PaymentCompanyCode` | ✓ | |  |  |  |  |
-| `HouseBank` | ✓ | |  |  |  |  |
-| `HouseBankAccount` | ✓ | |  |  |  |  |
-| `PaymentMethod` | ✓ | |  |  |  |  |
-| `OutgoingCheque` | ✓ | |  |  |  |  |
-| `IsIntercompanyPayment` |  | |  |  |  |  |
-| `ChequeIsManuallyIssued` |  | |  |  |  |  |
-| `ChequebookFirstCheque` |  | |  |  |  |  |
-| `PaymentDocument` |  | |  |  |  |  |
-| `ChequePaymentDate` |  | |  |  |  |  |
-| `PaymentCurrency` |  | |  |  |  |  |
-| `PaidAmountInPaytCurrency` |  | |  |  |  |  |
-| `Supplier` |  | |  |  |  |  |
-| `PaymentDocPrintDate` |  | |  |  |  |  |
-| `PaymentDocPrintTime` |  | |  |  |  |  |
-| `ChequePrintDateTime` |  | |  |  |  |  |
-| `PaymentDocPrintedByUser` |  | |  |  |  |  |
-| `ChequeEncashmentDate` |  | |  |  |  |  |
-| `ChequeLastExtractDate` |  | |  |  |  |  |
-| `ChequeLastExtractDateTime` |  | |  |  |  |  |
-| `PayeeTitle` |  | |  |  |  |  |
-| `PayeeName` |  | |  |  |  |  |
-| `PayeeAdditionalName` |  | |  |  |  |  |
-| `PayeePostalCode` |  | |  |  |  |  |
-| `PayeeCityName` |  | |  |  |  |  |
-| `PayeeStreet` |  | |  |  |  |  |
-| `PayeePOBox` |  | |  |  |  |  |
-| `PayeePOBoxPostalCode` |  | |  |  |  |  |
-| `PayeePOBoxCityName` |  | |  |  |  |  |
-| `Country` |  | |  |  |  |  |
-| `Region` |  | |  |  |  |  |
-| `ChequeVoidReason` |  | |  |  |  |  |
-| `ChequeVoidedDate` |  | |  |  |  |  |
-| `ChequeVoidedByUser` |  | |  |  |  |  |
-| `ChequeIsCashed` |  | |  |  |  |  |
-| `CashDiscountAmount` |  | |  |  |  |  |
-| `FiscalYear` |  | |  |  |  |  |
-| `ChequeType` |  | |  |  |  |  |
-| `VoidedChequeUsage` |  | |  |  |  |  |
-| `ChequeStatus` |  | |  |  |  |  |
-| `ChequeIssuingType` |  | |  |  |  |  |
-| `BankName` |  | | `_HouseBank._Bank` | `BankName` |  |  |
-| `CompanyCodeCountry` |  | | `_Company` | `Country` |  |  |
-| `CompanyCodeName` |  | | `_Company` | `CompanyCodeName` |  |  |
+| `PaymentCompanyCode` | ✓ | |  |  | `CHAR(4)` | Paying Company Code |
+| `HouseBank` | ✓ | |  |  | `CHAR(5)` | Short Key for a House Bank |
+| `HouseBankAccount` | ✓ | |  |  | `CHAR(5)` | ID for Account Details |
+| `PaymentMethod` | ✓ | |  |  | `CHAR(1)` | Payment Method |
+| `OutgoingCheque` | ✓ | |  |  | `CHAR(13)` | Check number |
+| `IsIntercompanyPayment` |  | |  |  | `CHAR(1)` | X - Intercompany Payment |
+| `ChequeIsManuallyIssued` |  | |  |  | `CHAR(1)` | X - Manual check |
+| `ChequebookFirstCheque` |  | |  |  | `CHAR(13)` | Check Number From |
+| `PaymentDocument` |  | |  |  | `CHAR(10)` | Document Number of the Payment Document |
+| `ChequePaymentDate` |  | |  |  | `DATS(8)` | Probable Payment Date (Cash Discount 1 Due) |
+| `PaymentCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `PaidAmountInPaytCurrency` |  | |  |  | `CURR(23)` |  |
+| `Supplier` |  | |  |  | `CHAR(10)` | Customer Number |
+| `PaymentDocPrintDate` |  | |  |  | `DATS(8)` | Print Date |
+| `PaymentDocPrintTime` |  | |  |  | `TIMS(6)` | Print Time |
+| `ChequePrintDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `PaymentDocPrintedByUser` |  | |  |  | `CHAR(12)` | Print User |
+| `ChequeEncashmentDate` |  | |  |  | `DATS(8)` | Check encashment date |
+| `ChequeLastExtractDate` |  | |  |  | `DATS(8)` | Date of Extract Creation |
+| `ChequeLastExtractDateTime` |  | |  |  | `DEC(15)` | UTC Time Stamp in Short Form (YYYYMMDDhhmmss) |
+| `PayeeTitle` |  | |  |  | `CHAR(15)` | Title of the payee |
+| `PayeeName` |  | |  |  | `CHAR(35)` | Name of the payee |
+| `PayeeAdditionalName` |  | |  |  | `CHAR(35)` | Name of the payee |
+| `PayeePostalCode` |  | |  |  | `CHAR(10)` | Postal Code of the Payee |
+| `PayeeCityName` |  | |  |  | `CHAR(35)` | City of the payee |
+| `PayeeStreet` |  | |  |  | `CHAR(35)` | Street and house number of the payee |
+| `PayeePOBox` |  | |  |  | `CHAR(10)` | P.O. box of the payee |
+| `PayeePOBoxPostalCode` |  | |  |  | `CHAR(10)` | P.O. box postal code of the payee |
+| `PayeePOBoxCityName` |  | |  |  | `CHAR(35)` | City of payee's PO box |
+| `Country` |  | |  |  | `CHAR(3)` | Country/Region Key |
+| `Region` |  | |  |  | `CHAR(3)` | Regional code of the payee |
+| `ChequeVoidReason` |  | |  |  | `NUMC(2)` | Check void reason code |
+| `ChequeVoidedDate` |  | |  |  | `DATS(8)` | Voided Check Date |
+| `ChequeVoidedByUser` |  | |  |  | `CHAR(12)` | Voided check user |
+| `ChequeIsCashed` |  | |  |  | `CHAR(1)` | X - Paid Check |
+| `CashDiscountAmount` |  | |  |  | `CURR(23)` | Total Cash Discount for the Pmnt Transactn in Pmnt Currency |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `ChequeType` |  | |  |  | `CHAR(2)` | Type of Check for China Specific |
+| `VoidedChequeUsage` |  | |  |  | `CHAR(2)` |  |
+| `ChequeStatus` |  | |  |  | `CHAR(2)` | Status of Check Document |
+| `ChequeIssuingType` |  | |  |  | `CHAR(2)` | Outgoing Check Output Field |
+| `BankName` |  | | `_HouseBank._Bank` | `BankName` | `CHAR(60)` | Name of Financial Institution |
+| `CompanyCodeCountry` |  | | `_Company` | `Country` | `CHAR(3)` | Country/Region Key |
+| `CompanyCodeName` |  | | `_Company` | `CompanyCodeName` | `CHAR(25)` | Name of Company Code or Company |
 | `_Company` | | ✓ | | | | |
 | `_HouseBank` | | ✓ | | | | |
 | `_VoidReason` | | ✓ | | | | |

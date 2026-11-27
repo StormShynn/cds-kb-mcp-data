@@ -39,9 +39,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAApplicationArea` | ✓ | | `_tfk2617` | `applk` |  |  |
-| `CAInvcgChargeAndDiscountKey` | ✓ | | `_tfk2617` | `chgkey` |  |  |
-| `CAInvcgChrgAndDiscIsIndividual` |  | | `_tfk2617` | `chgindiv` |  |  |
+| `CAApplicationArea` | ✓ | | `_tfk2617` | `applk` | `CHAR(1)` | Application Area |
+| `CAInvcgChargeAndDiscountKey` | ✓ | | `_tfk2617` | `chgkey` | `CHAR(8)` | Charge and Discount Key |
+| `CAInvcgChrgAndDiscIsIndividual` |  | | `_tfk2617` | `chgindiv` | `CHAR(1)` | Charge/Discount Is Individual |
 | `_ApplArea` | | ✓ | | | | |
 | `_CAInvcgChrgAndDiscKeyText` | | ✓ | | | | |
 

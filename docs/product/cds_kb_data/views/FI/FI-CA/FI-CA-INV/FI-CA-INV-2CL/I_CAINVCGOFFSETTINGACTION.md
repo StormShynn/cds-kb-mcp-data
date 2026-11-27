@@ -39,7 +39,7 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgOffsettingAction` | ✓ | |  | `cast( substring( l.domvalue_l ,1,1 ) as inv_offset_action_kk preserving type )` |  |  |
+| `CAInvcgOffsettingAction` | ✓ | |  | `cast( substring( l.domvalue_l ,1,1 ) as inv_offset_action_kk preserving type )` | `CHAR(1)` | Action Code for Offsetting |
 | `_Text` | | ✓ | | | | |
 
 ## Associations

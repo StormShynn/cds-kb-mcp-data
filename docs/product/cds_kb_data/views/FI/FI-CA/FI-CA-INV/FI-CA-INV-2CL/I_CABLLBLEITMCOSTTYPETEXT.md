@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABllbleItmCostType` | ✓ | |  | `co_type` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `CABllbleItmCostTypeText` |  | |  | `text` |  |  |
+| `CABllbleItmCostType` | ✓ | |  | `co_type` | `CHAR(8)` | Billable Item Cost Type |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `CABllbleItmCostTypeText` |  | |  | `text` | `CHAR(50)` | Billable Item Cost Type Name |
 | `_CABllbleItmCostType` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

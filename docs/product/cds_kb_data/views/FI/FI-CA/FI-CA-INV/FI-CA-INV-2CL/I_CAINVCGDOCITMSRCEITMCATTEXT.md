@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgDocItemSourceItmCat` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,5 ) as srcitemcat_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
-| `CAInvcgDocItmSrceItmCatText` |  | |  | `cast ( ddtext as srcitemcat_txt_gfn_kk preserving type )` |  |  |
+| `CAInvcgDocItemSourceItmCat` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,5 ) as srcitemcat_kk preserving type )` | `CHAR(5)` | Category of Source Document Item Invoiced |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAInvcgDocItmSrceItmCatText` |  | |  | `cast ( ddtext as srcitemcat_txt_gfn_kk preserving type )` | `CHAR(60)` | Text for Category of Source Document Item Invoiced |
 | `_CAInvcgDocItmSrceItmCat` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

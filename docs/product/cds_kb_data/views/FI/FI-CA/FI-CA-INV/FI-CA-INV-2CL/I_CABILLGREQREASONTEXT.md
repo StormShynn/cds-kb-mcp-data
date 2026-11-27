@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgReqReason` | ✓ | |  | `billreqrsn` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `CABillgReqReasonText` |  | |  | `cast( billreqrsn_txt as billreqrsn_txt_gfn_kk preserving type )` |  |  |
+| `CABillgReqReason` | ✓ | |  | `billreqrsn` | `CHAR(4)` | Reason for Billing Request |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `CABillgReqReasonText` |  | |  | `cast( billreqrsn_txt as billreqrsn_txt_gfn_kk preserving type )` | `CHAR(50)` | Text for Billing Request Reason |
 | `_CABillgReqReason` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

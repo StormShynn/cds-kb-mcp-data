@@ -50,18 +50,18 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `RecrrgSuplrInvcTmplInstceUUID` | ✓ | | `_Forcast` | `RecrrgSuplrInvcTmplInstceUUID` |  |  |
-| `RecrrgSuplrInvcTmplUUID` |  | | `_Forcast` | `RecrrgSuplrInvcTmplUUID` |  |  |
-| `RecrrgSuplrInvcTmplInstance` |  | | `_Forcast` | `RecrrgSuplrInvcTmplInstance` |  |  |
-| `RecurrenceInstanceStatus` |  | | `_Forcast` | `RecurrenceInstanceStatus` |  |  |
-| `RecurrenceInstanceStatusName` |  | |  | `_RecurrenceStatusText._Text[ Language = $session.system_language ].RecurrenceStatusName` |  |  |
-| `PostingDate` |  | | `_Forcast` | `PostingDate` |  |  |
-| `AccountingDocument` |  | | `_Forcast` | `AccountingDocument` |  |  |
-| `FiscalYear` |  | | `_Forcast` | `FiscalYear` |  |  |
-| `TransactionCurrency` |  | | `_Forcast` | `TransactionCurrency` |  |  |
-| `AmountInTransactionCurrency` |  | | `_Forcast` | `AmountInTransactionCurrency` |  |  |
-| `CompanyCode` |  | | `_Tmpl` | `CompanyCode` |  |  |
-| `OriginalReferenceDocument` |  | | `_Forcast` | `OriginalReferenceDocument` |  |  |
+| `RecrrgSuplrInvcTmplInstceUUID` | ✓ | | `_Forcast` | `RecrrgSuplrInvcTmplInstceUUID` | `RAW(16)` | GUID in Forecast Lines of Recurring Supplier Invoice |
+| `RecrrgSuplrInvcTmplUUID` |  | | `_Forcast` | `RecrrgSuplrInvcTmplUUID` | `RAW(16)` | GUID in recurring supplier invoice template |
+| `RecrrgSuplrInvcTmplInstance` |  | | `_Forcast` | `RecrrgSuplrInvcTmplInstance` | `NUMC(6)` | recurring supplier invoice forecast item number |
+| `RecurrenceInstanceStatus` |  | | `_Forcast` | `RecurrenceInstanceStatus` | `CHAR(1)` | recurring supplier invoice template item posting status |
+| `RecurrenceInstanceStatusName` |  | |  | `_RecurrenceStatusText._Text[ Language = $session.system_language ].RecurrenceStatusName` | `CHAR(60)` | Short Text for Fixed Values |
+| `PostingDate` |  | | `_Forcast` | `PostingDate` | `DATS(8)` | Posting Date in the Document |
+| `AccountingDocument` |  | | `_Forcast` | `AccountingDocument` | `CHAR(10)` | Document Number of an Invoice Document |
+| `FiscalYear` |  | | `_Forcast` | `FiscalYear` | `NUMC(4)` | Fiscal Year |
+| `TransactionCurrency` |  | | `_Forcast` | `TransactionCurrency` | `CUKY(5)` | Currency Key |
+| `AmountInTransactionCurrency` |  | | `_Forcast` | `AmountInTransactionCurrency` | `CURR(23)` | Amount in Document Currency |
+| `CompanyCode` |  | | `_Tmpl` | `CompanyCode` | `CHAR(4)` | Company Code |
+| `OriginalReferenceDocument` |  | | `_Forcast` | `OriginalReferenceDocument` | `CHAR(20)` | Original Reference Document |
 | `_Tmpl` | | ✓ | | | | |
 
 ## Associations

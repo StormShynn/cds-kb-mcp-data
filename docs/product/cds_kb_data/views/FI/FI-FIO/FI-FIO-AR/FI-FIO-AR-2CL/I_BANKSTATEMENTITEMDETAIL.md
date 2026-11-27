@@ -54,26 +54,26 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BankStatementShortID` | ✓ | |  |  |  |  |
-| `BankStatementItem` | ✓ | |  |  |  |  |
-| `BkStmntItemTransactionDetailID` | ✓ | |  |  |  |  |
-| `AmountInTransactionCurrency` |  | |  |  |  |  |
-| `TransactionCurrency` |  | |  |  |  |  |
-| `DebitCreditCode` |  | |  |  |  |  |
-| `PaymentTransactionText` |  | |  |  |  |  |
-| `PaymentFileMsgIdentification` |  | |  |  |  |  |
-| `AccountServicerReference` |  | |  |  |  |  |
-| `PaytInformationIdentification` |  | |  |  |  |  |
-| `PaytInstructionIdentification` |  | |  |  |  |  |
-| `PaymentEndToEndIdentification` |  | |  |  |  |  |
-| `SWIFTTransactionReferenceUUID` |  | |  |  |  |  |
-| `PaytTransactionIdentification` |  | |  |  |  |  |
-| `BankStatementSEPAMandate` |  | |  |  |  |  |
-| `BankStatementCheque` |  | |  |  |  |  |
-| `PaytProcessingIdentification` |  | |  |  |  |  |
-| `PaymentProprietaryType` |  | |  |  |  |  |
-| `PaymentProprietaryReference` |  | |  |  |  |  |
-| `PaymentAdditionalInfoString` |  | |  |  |  |  |
+| `BankStatementShortID` | ✓ | |  |  | `NUMC(8)` | Short Key for Bank Statement (Surrogate Key) |
+| `BankStatementItem` | ✓ | |  |  | `NUMC(5)` | Memo Record Number (Line Item Number in Bank Statement) |
+| `BkStmntItemTransactionDetailID` | ✓ | |  |  | `INT4(10)` | Subitem Record Number |
+| `AmountInTransactionCurrency` |  | |  |  | `CURR(23)` | Amount in Account Currency |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `DebitCreditCode` |  | |  |  | `CHAR(1)` | Debit/Credit Code |
+| `PaymentTransactionText` |  | |  |  | `CHAR(27)` | External Business Transaction |
+| `PaymentFileMsgIdentification` |  | |  |  | `CHAR(35)` | Message Identification |
+| `AccountServicerReference` |  | |  |  | `CHAR(35)` | Unique reference assigned by account servicing institution |
+| `PaytInformationIdentification` |  | |  |  | `CHAR(35)` | Payment Information Identification |
+| `PaytInstructionIdentification` |  | |  |  | `CHAR(35)` | Instruction Identification |
+| `PaymentEndToEndIdentification` |  | |  |  | `CHAR(35)` | End To End Identification |
+| `SWIFTTransactionReferenceUUID` |  | |  |  | `CHAR(36)` | Unique Transaction Reference (UETR) |
+| `PaytTransactionIdentification` |  | |  |  | `CHAR(35)` | Transaction ID |
+| `BankStatementSEPAMandate` |  | |  |  | `CHAR(35)` | Mandate Identification |
+| `BankStatementCheque` |  | |  |  | `CHAR(35)` | Cheque Number |
+| `PaytProcessingIdentification` |  | |  |  | `CHAR(35)` | Processing Identification |
+| `PaymentProprietaryType` |  | |  |  | `CHAR(35)` | Proprietary Type |
+| `PaymentProprietaryReference` |  | |  |  | `CHAR(35)` | Proprietary Reference |
+| `PaymentAdditionalInfoString` |  | |  |  | `CHAR(500)` | Additional Information |
 | `_Item` | | ✓ | | | | |
 | `_BankStatement` | | ✓ | | | | |
 

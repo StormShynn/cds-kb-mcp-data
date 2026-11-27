@@ -54,49 +54,49 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BankStatementShortID` | ✓ | |  | `StatementShortID` |  |  |
-| `BankStatementItem` | ✓ | |  | `StatementItem` |  |  |
-| `CompanyCode` |  | |  |  |  |  |
-| `BankStatementPostingRule` |  | |  | `cast ( BankStmtItem.PostingRule as farp_vgint )` |  |  |
-| `PaymentTransaction` |  | |  | `cast ( BankStmtItem.PaymentTransaction as farp_vorgc )` |  |  |
-| `InterpretationAlgorithm` |  | |  |  |  |  |
-| `MemoLine` |  | | `_MemoLine` | `MemoLine` |  |  |
-| `ValueDate` |  | |  | `cast ( BankStmtItem.ValueDate as farp_valut )` |  |  |
-| `BankPostingDate` |  | |  | `cast ( BankStmtItem.BankPostingDate as farp_bvdat)` |  |  |
-| `PostingDate` |  | |  |  |  |  |
-| `ValueDateTime` |  | |  |  |  |  |
-| `TransactionCurrency` |  | |  |  |  |  |
-| `OriginalCurrency` |  | |  |  |  |  |
-| `AmountInTransactionCurrency` |  | |  | `cast ( case BankStmtItem.DebitCreditCode when 'D' then - abs(BankStmtItem.AmountInAccountCurrency) when 'S' then - abs(BankStmtItem.AmountInAccountCurrency) else BankStmtItem.AmountInAccountCurrency end as kwbtr_eb)` |  |  |
-| `AmountInOriginalCurrency` |  | |  | `cast ( case BankStmtItem.DebitCreditCode when 'D' then - abs(BankStmtItem.ForeignCurrencyAmount) when 'S' then - abs(BankStmtItem.ForeignCurrencyAmount) else BankStmtItem.ForeignCurrencyAmount end as farp_fwbtr )` |  |  |
-| `ExchangeRate` |  | |  | `cast ( BankStmtItem.ExchangeRate as far_curr_rate )` |  |  |
-| `FeeAmountInTransactionCrcy` |  | |  |  |  |  |
-| `FeeAmountInOriginalCrcy` |  | |  | `cast ( BankStmtItem.FeeAmountInOriginalCrcy as farp_spesf )` |  |  |
-| `Supplier` |  | |  | `cast ( case when BankStmtItem.PaymentAdviceAccountType = 'K' then BankStmtItem.PaymentAdviceAccount else '' end as lifnr )` |  |  |
-| `Customer` |  | |  | `cast ( case when BankStmtItem.PaymentAdviceAccountType = 'D' then BankStmtItem.PaymentAdviceAccount else '' end as kunnr )` |  |  |
-| `GLAccount` |  | |  | `cast ( case when BankStmtItem.PaymentAdviceAccountType = 'S' then BankStmtItem.PaymentAdviceAccount else '' end as farp_hkont )` |  |  |
-| `BusinessPartnerName` |  | |  | `cast ( BankStmtItem.BusinessPartnerName as farp_partn )` |  |  |
-| `PaymentManualTransacType` |  | |  | `cast ( BankStmtItem.PaymentManualTransacType as far_vgman )` |  |  |
-| `PaymentExternalTransacType` |  | |  | `cast ( BankStmtItem.PaymentExternalTransacType as farp_vgext )` |  |  |
-| `PaymentAdvice` |  | |  |  |  |  |
-| `Cheque` |  | |  | `case when BankStmtItem.CheckType = 'C' and BankStmtItem.CheckNumber is not initial then BankStmtItem.CheckNumber when BankStmtItem.CheckType = 'C' and BankStmtItem.CheckNumber is initial then BankStmtItem.Cheque else '' end` |  |  |
-| `PaymentMediumReference` |  | |  | `cast ( case when BankStmtItem.CheckType = 'D' and BankStmtItem.CheckNumber is not initial then BankStmtItem.CheckNumber when BankStmtItem.CheckType = 'D' and BankStmtItem.CheckNumber is initial then BankStmtItem.Cheque else '' end as far_chect )` |  |  |
-| `CustomerReferenceNumber` |  | |  | `cast ( case when BankStmtItem.CheckType = '' and BankStmtItem.CheckNumber is not initial then BankStmtItem.CheckNumber when BankStmtItem.CheckType = '' and BankStmtItem.CheckNumber is initial then BankStmtItem.Cheque else '' end as far_chect_orig )` |  |  |
-| `BankLedgerDocument` |  | |  | `cast ( BankStmtItem.BankLedgerDocument as farp_belnr_bank_ledger )` |  |  |
-| `SubledgerDocument` |  | |  | `cast ( BankStmtItem.SubledgerDocument as farp_nbbln )` |  |  |
-| `BankLedgerOnAccountDocument` |  | |  | `cast ( BankStmtItem.BankLedgerOnAccountDocument as farp_ak1bl )` |  |  |
-| `SubledgerOnAccountDocument` |  | |  | `cast ( BankStmtItem.SubledgerOnAccountDocument as farp_akbln )` |  |  |
-| `FiscalYear` |  | |  |  |  |  |
-| `PartnerBankCountry` |  | |  | `cast ( BankStmtItem.PartnerBankCountry as farp_pabks )` |  |  |
-| `PartnerBank` |  | |  | `cast ( BankStmtItem.PartnerBank as farp_pablz )` |  |  |
-| `PartnerBankSWIFTCode` |  | |  | `cast ( BankStmtItem.PartnerBankSWIFTCode as paswi_eb)` |  |  |
-| `PartnerBankAccount` |  | |  | `cast ( BankStmtItem.PartnerBankAccount as farp_pakto )` |  |  |
-| `BankStatementItemDescription1` |  | |  | `ItemDescription1` |  |  |
-| `BankStatementItemDescription2` |  | |  | `ItemDescription2` |  |  |
-| `PartnerBankIBAN` |  | |  |  |  |  |
-| `DocumentItemText` |  | |  |  |  |  |
-| `BankReference` |  | |  | `cast ( BankStmtItem.BankReference as farp_vgref )` |  |  |
-| `IsCompleted` |  | |  |  |  |  |
+| `BankStatementShortID` | ✓ | |  | `StatementShortID` | `NUMC(8)` | Short Key for Bank Statement (Surrogate Key) |
+| `BankStatementItem` | ✓ | |  | `StatementItem` | `NUMC(5)` | Memo Record Number (Line Item Number in Bank Statement) |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `BankStatementPostingRule` |  | |  | `cast ( BankStmtItem.PostingRule as farp_vgint )` | `CHAR(4)` | Bank Statement Posting Rule |
+| `PaymentTransaction` |  | |  | `cast ( BankStmtItem.PaymentTransaction as farp_vorgc )` | `CHAR(3)` | External Payment Transaction |
+| `InterpretationAlgorithm` |  | |  |  | `NUMC(3)` | Interpretation Algorithm |
+| `MemoLine` |  | | `_MemoLine` | `MemoLine` | `CHAR(1333)` | Memo Line |
+| `ValueDate` |  | |  | `cast ( BankStmtItem.ValueDate as farp_valut )` | `DATS(8)` | Value Date |
+| `BankPostingDate` |  | |  | `cast ( BankStmtItem.BankPostingDate as farp_bvdat)` | `DATS(8)` | Posting Date of Bank Statement |
+| `PostingDate` |  | |  |  | `DATS(8)` | Posting Date in the Document |
+| `ValueDateTime` |  | |  |  | `CHAR(6)` | Value Date Time |
+| `TransactionCurrency` |  | |  |  | `CUKY(5)` | Account Currency Key |
+| `OriginalCurrency` |  | |  |  | `CUKY(5)` | Foreign Currency Key (Not Account Currency) |
+| `AmountInTransactionCurrency` |  | |  | `cast ( case BankStmtItem.DebitCreditCode when 'D' then - abs(BankStmtItem.AmountInAccountCurrency) when 'S' then - abs(BankStmtItem.AmountInAccountCurrency) else BankStmtItem.AmountInAccountCurrency end as kwbtr_eb)` | `CURR(23)` | Amount in Account Currency |
+| `AmountInOriginalCurrency` |  | |  | `cast ( case BankStmtItem.DebitCreditCode when 'D' then - abs(BankStmtItem.ForeignCurrencyAmount) when 'S' then - abs(BankStmtItem.ForeignCurrencyAmount) else BankStmtItem.ForeignCurrencyAmount end as farp_fwbtr )` | `CURR(23)` | Payment Amount |
+| `ExchangeRate` |  | |  | `cast ( BankStmtItem.ExchangeRate as far_curr_rate )` | `CHAR(12)` | Exchange Rate: Foreign Currency to Account Currency |
+| `FeeAmountInTransactionCrcy` |  | |  |  | `CURR(23)` | Fees in Account Currency |
+| `FeeAmountInOriginalCrcy` |  | |  | `cast ( BankStmtItem.FeeAmountInOriginalCrcy as farp_spesf )` | `CURR(23)` | Fees in Payment Currency |
+| `Supplier` |  | |  | `cast ( case when BankStmtItem.PaymentAdviceAccountType = 'K' then BankStmtItem.PaymentAdviceAccount else '' end as lifnr )` | `CHAR(10)` | Account Number of Supplier |
+| `Customer` |  | |  | `cast ( case when BankStmtItem.PaymentAdviceAccountType = 'D' then BankStmtItem.PaymentAdviceAccount else '' end as kunnr )` | `CHAR(10)` | Customer Number |
+| `GLAccount` |  | |  | `cast ( case when BankStmtItem.PaymentAdviceAccountType = 'S' then BankStmtItem.PaymentAdviceAccount else '' end as farp_hkont )` | `CHAR(10)` | General Ledger Account |
+| `BusinessPartnerName` |  | |  | `cast ( BankStmtItem.BusinessPartnerName as farp_partn )` | `CHAR(55)` | Business Partner |
+| `PaymentManualTransacType` |  | |  | `cast ( BankStmtItem.PaymentManualTransacType as far_vgman )` | `CHAR(4)` | Manual Transaction |
+| `PaymentExternalTransacType` |  | |  | `cast ( BankStmtItem.PaymentExternalTransacType as farp_vgext )` | `CHAR(27)` | External Transaction |
+| `PaymentAdvice` |  | |  |  | `CHAR(16)` | Payment Advice Number |
+| `Cheque` |  | |  | `case when BankStmtItem.CheckType = 'C' and BankStmtItem.CheckNumber is not initial then BankStmtItem.CheckNumber when BankStmtItem.CheckType = 'C' and BankStmtItem.CheckNumber is initial then BankStmtItem.Cheque else '' end` | `CHAR(13)` | Check number |
+| `PaymentMediumReference` |  | |  | `cast ( case when BankStmtItem.CheckType = 'D' and BankStmtItem.CheckNumber is not initial then BankStmtItem.CheckNumber when BankStmtItem.CheckType = 'D' and BankStmtItem.CheckNumber is initial then BankStmtItem.Cheque else '' end as far_chect )` | `CHAR(13)` | Payment Medium Reference |
+| `CustomerReferenceNumber` |  | |  | `cast ( case when BankStmtItem.CheckType = '' and BankStmtItem.CheckNumber is not initial then BankStmtItem.CheckNumber when BankStmtItem.CheckType = '' and BankStmtItem.CheckNumber is initial then BankStmtItem.Cheque else '' end as far_chect_orig )` | `CHAR(13)` | Customer Reference Number |
+| `BankLedgerDocument` |  | |  | `cast ( BankStmtItem.BankLedgerDocument as farp_belnr_bank_ledger )` | `CHAR(10)` | Number of Bank Ledger Journal Entry |
+| `SubledgerDocument` |  | |  | `cast ( BankStmtItem.SubledgerDocument as farp_nbbln )` | `CHAR(10)` | Number of Subledger Journal Entry |
+| `BankLedgerOnAccountDocument` |  | |  | `cast ( BankStmtItem.BankLedgerOnAccountDocument as farp_ak1bl )` | `CHAR(10)` | Bank Ledger Journal Entry of On-Account Posting |
+| `SubledgerOnAccountDocument` |  | |  | `cast ( BankStmtItem.SubledgerOnAccountDocument as farp_akbln )` | `CHAR(10)` | Subledger Journal Entry of the On-Account Posting |
+| `FiscalYear` |  | |  |  | `NUMC(4)` | Fiscal Year |
+| `PartnerBankCountry` |  | |  | `cast ( BankStmtItem.PartnerBankCountry as farp_pabks )` | `CHAR(3)` | Partner Bank Account: Bank Country/Region Key |
+| `PartnerBank` |  | |  | `cast ( BankStmtItem.PartnerBank as farp_pablz )` | `CHAR(15)` | Partner Bank Account: Bank Number |
+| `PartnerBankSWIFTCode` |  | |  | `cast ( BankStmtItem.PartnerBankSWIFTCode as paswi_eb)` | `CHAR(11)` | SWIFT Code of Partner Bank |
+| `PartnerBankAccount` |  | |  | `cast ( BankStmtItem.PartnerBankAccount as farp_pakto )` | `CHAR(18)` | Partner Bank Account: Account Number |
+| `BankStatementItemDescription1` |  | |  | `ItemDescription1` | `CHAR(30)` | Additional Information 1 |
+| `BankStatementItemDescription2` |  | |  | `ItemDescription2` | `CHAR(30)` | Additional Information 2 |
+| `PartnerBankIBAN` |  | |  |  | `CHAR(34)` | Partner Bank Account: IBAN |
+| `DocumentItemText` |  | |  |  | `CHAR(50)` | Item Text |
+| `BankReference` |  | |  | `cast ( BankStmtItem.BankReference as farp_vgref )` | `CHAR(35)` | Item Reference |
+| `IsCompleted` |  | |  |  | `CHAR(1)` | Line Item Completed |
 | `_Currency` | | ✓ | | | | |
 | `_OriginalCurrency` | | ✓ | | | | |
 

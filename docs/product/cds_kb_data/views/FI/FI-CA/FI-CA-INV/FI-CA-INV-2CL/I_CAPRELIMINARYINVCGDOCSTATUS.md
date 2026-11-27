@@ -40,8 +40,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAPreliminaryInvcgDocStatus` | ✓ | |  | `cast( dd07l.domvalue_l as prlinv_status_kk )` |  |  |
-| `DomainValue` |  | |  | `domvalue_l` |  |  |
+| `CAPreliminaryInvcgDocStatus` | ✓ | |  | `cast( dd07l.domvalue_l as prlinv_status_kk )` | `CHAR(1)` | Status of Preliminary Invoice |
+| `DomainValue` |  | |  | `domvalue_l` | `CHAR(10)` | Values for Domains: Single Value/Lower Limit |
 | `_Text` | | ✓ | | | | |
 
 ## Source Code

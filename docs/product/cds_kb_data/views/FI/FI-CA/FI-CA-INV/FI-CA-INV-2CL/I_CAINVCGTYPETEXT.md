@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgType` | ✓ | | `_tfk2603at` | `inv_type` |  |  |
-| `CAApplicationArea` | ✓ | | `_tfk2603at` | `applk` |  |  |
-| `Language` | ✓ | | `_tfk2603at` | `langu` |  |  |
-| `CAInvcgTypeText` |  | | `_tfk2603at` | `text` |  |  |
+| `CAInvcgType` | ✓ | | `_tfk2603at` | `inv_type` | `CHAR(2)` | Invoicing Type |
+| `CAApplicationArea` | ✓ | | `_tfk2603at` | `applk` | `CHAR(1)` | Application Area |
+| `Language` | ✓ | | `_tfk2603at` | `langu` | `LANG(1)` | Language Key |
+| `CAInvcgTypeText` |  | | `_tfk2603at` | `text` | `CHAR(50)` | Name of Invoicing Type |
 | `_Language` | | ✓ | | | | |
 | `_CAApplicationArea` | | ✓ | | | | |
 | `_CAInvcgType` | | ✓ | | | | |

@@ -39,8 +39,8 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgSourceDocumentCat` | ✓ | |  | `srcdoccat` |  |  |
-| `CAInvcgSourceDocumentSemObj` |  | |  | `semantic_object` |  |  |
+| `CAInvcgSourceDocumentCat` | ✓ | |  | `srcdoccat` | `CHAR(5)` | Category of Source Document To Be Invoiced |
+| `CAInvcgSourceDocumentSemObj` |  | |  | `semantic_object` | `CHAR(30)` | Semantic Object |
 | `_CAInvcgSourceDocCatText` | | ✓ | | | | |
 
 ## Associations

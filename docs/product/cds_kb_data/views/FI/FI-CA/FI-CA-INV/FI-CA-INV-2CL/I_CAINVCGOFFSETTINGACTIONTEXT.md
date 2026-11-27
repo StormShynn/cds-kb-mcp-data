@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgOffsettingAction` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as inv_offset_action_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
-| `CAInvcgOffsettingActionText` |  | |  | `cast( ddtext as inv_offset_action_txt_gfn_kk preserving type )` |  |  |
+| `CAInvcgOffsettingAction` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as inv_offset_action_kk preserving type )` | `CHAR(1)` | Action Code for Offsetting |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAInvcgOffsettingActionText` |  | |  | `cast( ddtext as inv_offset_action_txt_gfn_kk preserving type )` | `CHAR(60)` | Text for Action Code for Offsetting |
 | `_CAInvcgOffsettingAction` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

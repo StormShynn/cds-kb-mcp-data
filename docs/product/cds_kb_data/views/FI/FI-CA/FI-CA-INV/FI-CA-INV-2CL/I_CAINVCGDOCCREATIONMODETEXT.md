@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CAInvcgDocCreationMode` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as inv_crmode_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
-| `CAInvcgDocCreationModeText` |  | |  | `cast ( ddtext as inv_crmode_txt_gfn_kk preserving type )` |  |  |
+| `CAInvcgDocCreationMode` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as inv_crmode_kk preserving type )` | `CHAR(1)` | Creation Mode of Invoicing Document |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CAInvcgDocCreationModeText` |  | |  | `cast ( ddtext as inv_crmode_txt_gfn_kk preserving type )` | `CHAR(60)` | Text for Creation Mode of Invoicing Document |
 | `_CAInvcgDocCreationMode` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 

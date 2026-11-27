@@ -51,27 +51,27 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `BankStatementShortID` | ✓ | |  | `StatementShortID` |  |  |
-| `CompanyCode` |  | |  |  |  |  |
-| `HouseBank` |  | |  |  |  |  |
-| `HouseBankAccount` |  | |  | `cast ( HouseBankAccount as farp_hktid)` |  |  |
-| `BankStatement` |  | |  | `cast ( StatementNumber as farp_aznum )` |  |  |
-| `BankStatementDate` |  | |  | `cast ( StatementDate as farp_azdat )` |  |  |
-| `BankStatementStatus` |  | |  | `StatementStatus` |  |  |
-| `BankStatementPageNumber` |  | |  | `StatementPageNumber` |  |  |
-| `Currency` |  | |  |  |  |  |
-| `OpeningBalanceIsInterim` |  | |  | `cast ( OpeningBalanceIsInterim as farp_opening_bal_interim_ind )` |  |  |
-| `ClosingBalanceIsInterim` |  | |  | `cast ( ClosingBalanceIsInterim as farp_closing_bal_interim_ind )` |  |  |
-| `OpeningBalanceAmtInTransCrcy` |  | |  |  |  |  |
-| `ClosingBalanceAmtInTransCrcy` |  | |  |  |  |  |
-| `InterimOpenBalAmtInTransCrcy` |  | |  |  |  |  |
-| `InterimClsgBalAmtInTransCrcy` |  | |  |  |  |  |
-| `PaymentTransactionTypeGroup` |  | |  |  |  |  |
-| `CreatedByUser` |  | |  |  |  |  |
-| `BankStatementIsManuallyCreated` |  | |  | `cast ( IsManuallyCreated as farp_bsmanuallycreated )` |  |  |
-| `BankStatementFormat` |  | |  | `cast ( StatementInputFormat as farp_input_format )` |  |  |
-| `BankStatementImportDate` |  | |  | `cast ( BankStatementImportDate as farp_edate )` |  |  |
-| `BankStatementImportTime` |  | |  | `cast ( BankStatementImportTime as farp_etime )` |  |  |
+| `BankStatementShortID` | ✓ | |  | `StatementShortID` | `NUMC(8)` | Short Key for Bank Statement (Surrogate Key) |
+| `CompanyCode` |  | |  |  | `CHAR(4)` | Company Code |
+| `HouseBank` |  | |  |  | `CHAR(5)` | Short Key for a House Bank |
+| `HouseBankAccount` |  | |  | `cast ( HouseBankAccount as farp_hktid)` | `CHAR(5)` | House Bank Account ID |
+| `BankStatement` |  | |  | `cast ( StatementNumber as farp_aznum )` | `NUMC(18)` | Bank Statement Number |
+| `BankStatementDate` |  | |  | `cast ( StatementDate as farp_azdat )` | `DATS(8)` | Bank Statement Date |
+| `BankStatementStatus` |  | |  | `StatementStatus` | `CHAR(1)` | Statement Status |
+| `BankStatementPageNumber` |  | |  | `StatementPageNumber` | `NUMC(5)` | Page Number of Statement (5 Digits) |
+| `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
+| `OpeningBalanceIsInterim` |  | |  | `cast ( OpeningBalanceIsInterim as farp_opening_bal_interim_ind )` | `CHAR(1)` | Indicator that the Opening Balance is interim |
+| `ClosingBalanceIsInterim` |  | |  | `cast ( ClosingBalanceIsInterim as farp_closing_bal_interim_ind )` | `CHAR(1)` | Indicator That the Closing Balance is Interim |
+| `OpeningBalanceAmtInTransCrcy` |  | |  |  | `CURR(23)` | Opening Balance Amount |
+| `ClosingBalanceAmtInTransCrcy` |  | |  |  | `CURR(23)` | Ending Balance Amount |
+| `InterimOpenBalAmtInTransCrcy` |  | |  |  | `CURR(23)` | Interim Opening Balance Amount |
+| `InterimClsgBalAmtInTransCrcy` |  | |  |  | `CURR(23)` | Interim Closing Balance Amount |
+| `PaymentTransactionTypeGroup` |  | |  |  | `CHAR(8)` | Transaction Type |
+| `CreatedByUser` |  | |  |  | `CHAR(12)` | User Who Fills the Bank Data Buffer |
+| `BankStatementIsManuallyCreated` |  | |  | `cast ( IsManuallyCreated as farp_bsmanuallycreated )` | `CHAR(1)` | Indicates if a bank statement was created manually |
+| `BankStatementFormat` |  | |  | `cast ( StatementInputFormat as farp_input_format )` | `CHAR(2)` | Bank Statement Format |
+| `BankStatementImportDate` |  | |  | `cast ( BankStatementImportDate as farp_edate )` | `DATS(8)` | Bank Statement Import Date into System |
+| `BankStatementImportTime` |  | |  | `cast ( BankStatementImportTime as farp_etime )` | `TIMS(6)` | Bank Statement Import Time into System |
 | `_Currency` | | ✓ | | | | |
 
 ## Associations

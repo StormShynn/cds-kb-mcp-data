@@ -47,13 +47,13 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `RecrrgSuplrInvcTmplWhgdTaxUUID` | ✓ | | `_Withtax` | `RecrrgSuplrInvcTmplWhgdTaxUUID` |  |  |
-| `RecrrgSuplrInvcTmplUUID` |  | | `_Withtax` | `RecrrgSuplrInvcTmplUUID` |  |  |
-| `WithholdingTaxAmount` |  | | `_Withtax` | `WithholdingTaxAmount` |  |  |
-| `WithholdingTaxBaseAmount` |  | | `_Withtax` | `WithholdingTaxBaseAmount` |  |  |
-| `WithholdingTaxCode` |  | | `_Withtax` | `WithholdingTaxCode` |  |  |
-| `WithholdingTaxType` |  | | `_Withtax` | `WithholdingTaxType` |  |  |
-| `TransactionCurrency` |  | | `_Withtax` | `TransactionCurrency` |  |  |
+| `RecrrgSuplrInvcTmplWhgdTaxUUID` | ✓ | | `_Withtax` | `RecrrgSuplrInvcTmplWhgdTaxUUID` | `RAW(16)` | GUID of Withholding Tax Item |
+| `RecrrgSuplrInvcTmplUUID` |  | | `_Withtax` | `RecrrgSuplrInvcTmplUUID` | `RAW(16)` | GUID in recurring supplier invoice template |
+| `WithholdingTaxAmount` |  | | `_Withtax` | `WithholdingTaxAmount` | `CURR(23)` | Withholding Tax Amount |
+| `WithholdingTaxBaseAmount` |  | | `_Withtax` | `WithholdingTaxBaseAmount` | `CURR(23)` | Withholding Tax Base Amount |
+| `WithholdingTaxCode` |  | | `_Withtax` | `WithholdingTaxCode` | `CHAR(2)` | Withholding Tax Code |
+| `WithholdingTaxType` |  | | `_Withtax` | `WithholdingTaxType` | `CHAR(2)` | Indicator for Withholding Tax Type |
+| `TransactionCurrency` |  | | `_Withtax` | `TransactionCurrency` | `CUKY(5)` | Currency Key |
 | `_Tmpl` | | ✓ | | | | |
 
 ## Associations

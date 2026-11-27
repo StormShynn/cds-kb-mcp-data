@@ -51,11 +51,11 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `AssetTransactionType` | ✓ | |  | `bwasl` |  |  |
-| `AssetTransactionTypeGroup` |  | |  | `bwagrp` |  |  |
-| `AstTransTypeIsFrbdnInMnlPostg` |  | |  | `xabuch` |  |  |
-| `DefaultDebitCreditCode` |  | |  | `anshkz` |  |  |
-| `AstRetirementRevenueIsRequired` |  | |  | `xerlos` |  |  |
+| `AssetTransactionType` | ✓ | |  | `bwasl` | `CHAR(3)` | Asset Transaction Type |
+| `AssetTransactionTypeGroup` |  | |  | `bwagrp` | `CHAR(2)` | Transaction Type Group |
+| `AstTransTypeIsFrbdnInMnlPostg` |  | |  | `xabuch` | `CHAR(1)` | Indicator: Transaction Type Cannot Be Used Manually |
+| `DefaultDebitCreditCode` |  | |  | `anshkz` | `CHAR(1)` | Default Posting Indicator |
+| `AstRetirementRevenueIsRequired` |  | |  | `xerlos` | `CHAR(1)` | Specify Revenue with Asset Retirement |
 | `_Text` | | ✓ | | | | |
 | `_TransactionTypeGroup` | | ✓ | | | | |
 

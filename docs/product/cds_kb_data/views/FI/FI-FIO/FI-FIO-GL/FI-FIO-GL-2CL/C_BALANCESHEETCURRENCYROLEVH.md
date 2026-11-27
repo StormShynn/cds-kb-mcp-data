@@ -54,7 +54,7 @@ tags:
 |---|---|---|---|---|---|---|
 | `Ledger` | ✓ | |  |  | `CHAR(2)` | Ledger in General Ledger Accounting |
 | `CompanyCode` | ✓ | |  |  | `CHAR(4)` | Company Code |
-| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role Field |
+| `CurrencyField` | ✓ | |  |  | `CHAR(4)` | Currency Role |
 | `CurrencyRole` | ✓ | |  |  | `CHAR(2)` | Currency Type |
 | `Currency` |  | |  |  | `CUKY(5)` | Currency Key |
 | `CurrencyRoleName` |  | |  | `cast( P_BalanceSheetCurrencyRole.CurrencyRoleName as fis_crcyrole_txt )` | `CHAR(80)` | Currency Role Name |

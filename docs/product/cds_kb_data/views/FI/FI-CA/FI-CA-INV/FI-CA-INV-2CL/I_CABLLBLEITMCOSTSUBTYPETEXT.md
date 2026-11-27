@@ -41,10 +41,10 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABllbleItmCostType` | ✓ | |  | `cast( co_type as co_type_gfn_kk preserving type )` |  |  |
-| `CABllbleItmCostSubType` | ✓ | |  | `cast( co_subtype as co_subtype_gfn_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `langu` |  |  |
-| `CABllbleItmCostSubtypeText` |  | |  | `cast( text as co_subtype_txt_gfn_kk preserving type )` |  |  |
+| `CABllbleItmCostType` | ✓ | |  | `cast( co_type as co_type_gfn_kk preserving type )` | `CHAR(8)` | Billable Item Cost Type |
+| `CABllbleItmCostSubType` | ✓ | |  | `cast( co_subtype as co_subtype_gfn_kk preserving type )` | `CHAR(8)` | Billable Item Cost Subtype |
+| `Language` | ✓ | |  | `langu` | `LANG(1)` | Language Key |
+| `CABllbleItmCostSubtypeText` |  | |  | `cast( text as co_subtype_txt_gfn_kk preserving type )` | `CHAR(50)` | Billable Item Cost Subtype Text |
 | `_CABllbleItmCostType` | | ✓ | | | | |
 | `_CABllbleItmCostSubtype` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |

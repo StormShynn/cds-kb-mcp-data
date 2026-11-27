@@ -41,9 +41,9 @@ tags:
 
 | Field | Key | Association | Via | Source | Type | Description |
 |---|---|---|---|---|---|---|
-| `CABillgPlnItemPriceDateType` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as bip_price_date_type_kk preserving type )` |  |  |
-| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` |  |  |
-| `CABillgPlnItmPrcDateTypeText` |  | |  | `cast ( ddtext as bip_price_date_type_txt_gfn_kk preserving type )` |  |  |
+| `CABillgPlnItemPriceDateType` | ✓ | |  | `cast ( substring( dd07t.domvalue_l,1,1 ) as bip_price_date_type_kk preserving type )` | `CHAR(1)` | Type of Pricing Date |
+| `Language` | ✓ | |  | `cast ( ddlanguage as spras preserving type )` | `LANG(1)` | Language Key |
+| `CABillgPlnItmPrcDateTypeText` |  | |  | `cast ( ddtext as bip_price_date_type_txt_gfn_kk preserving type )` | `CHAR(60)` | Text for Type of Pricing Date |
 | `_CABillgPlnItmPrcDateType` | | ✓ | | | | |
 | `_Language` | | ✓ | | | | |
 
